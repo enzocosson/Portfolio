@@ -632,7 +632,7 @@
   height: 20vw;
   border-radius: 50%;
   background-color: #70e8cb;
-  border: 4px solid #70e8cb;
+  border: 4px solid #fcfcfc;
   z-index: 4;
   display: flex;
   justify-content: center;
@@ -677,5 +677,21 @@
   border-radius: 50%;
   border: 4px solid #70e8cb;
   z-index: 1;
+  opacity: 0;
+}
+.see_more .transition_title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 14vw;
+  font-weight: bold;
+  color: #70e8cb;
+  font-family: Base Neue;
+  line-height: 20vh;
+  text-align: center;
+  z-index: 0;
+  line-height: 35vh;
+  letter-spacing: 5vw;
   opacity: 0;
 }/*# sourceMappingURL=styles.css.map */

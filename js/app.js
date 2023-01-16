@@ -511,6 +511,10 @@ const pathGreenStrokeCircle = {
   curviness: 1.25,
   values: [{ opacity: 1, top: "50%", width: "20vw", height: "20vw" }],
 };
+const pathTransitionTitle = {
+  curviness: 1.25,
+  values: [{ opacity: 1, letterSpacing: "0vw" }],
+};
 
 const seeMore = new TimelineLite()
   .add(
@@ -536,6 +540,13 @@ const seeMore = new TimelineLite()
   .add(
     TweenLite.to(".stroke_green_circle4", 1, {
       bezier: pathGreenStrokeCircle,
+      ease: Power1.easeInOut,
+    }),
+    "-=0.9"
+  )
+  .add(
+    TweenLite.to(".transition_title", 1, {
+      bezier: pathTransitionTitle,
       ease: Power1.easeInOut,
     }),
     "-=0.9"
