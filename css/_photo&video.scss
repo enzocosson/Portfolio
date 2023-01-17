@@ -1,0 +1,209 @@
+.photoVideoTop {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: $white;
+  overflow: hidden;
+
+  .photoVideoTop__title {
+    width: 150%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    width: 100%;
+    text-align: center;
+    font-size: 20vw;
+    color: $white;
+    -webkit-text-stroke: 3px $green;
+    font-weight: bold;
+    font-family: $font_base;
+    line-height: 15vh;
+    opacity: 0;
+    z-index: 0;
+  }
+  .photoVideoTop__title_front {
+    width: 150%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    width: 100%;
+    text-align: center;
+    font-size: 20vw;
+    color: $white;
+    -webkit-text-stroke: 3px $green;
+    font-weight: bold;
+    font-family: $font_base;
+    line-height: 15vh;
+    opacity: 0;
+    z-index: 2;
+  }
+  .container_photoVideoTop_img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 0%;
+    height: 30%;
+    background-color: $green;
+    border-radius: 1vw;
+    overflow: hidden;
+    z-index: 1;
+
+    .photoVideoTop_img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}
+
+.feed {
+  position: relative;
+  width: 100%;
+  height: 295vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $white;
+
+  // before gradient top
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50vh;
+    background: linear-gradient(to top, rgba(255, 255, 255, 0) 0%, $white);
+    z-index: 10;
+  }
+
+  .container_feed_col {
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 130%;
+    height: auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .col {
+      flex: 1;
+      height: auto;
+      // background-color: red;
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .container_img {
+        position: relative;
+        width: 22vw;
+        height: 31vw;
+        border-radius: 1.5vw;
+        overflow: hidden;
+        // background-color: white;
+        margin-bottom: 3vw;
+
+        .miniatures {
+          position: absolute;
+          bottom: 0%;
+          left: 50%;
+          transform: translate(-50%, 0%);
+          width: 100%;
+          height: 140%;
+          object-fit: cover;
+        }
+      }
+    }
+
+    .container_travel {
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 100%;
+      height: 50vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 10;
+
+      .travel {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: 8;
+        opacity: 0;
+      }
+
+      h1 {
+        font-size: 20vw;
+        font-weight: bold;
+        font-family: $font_base;
+        color: $green;
+        margin: 0 3vw;
+        z-index: 9;
+      }
+      .travel_middle {
+        transform: translateY(-50vh);
+      }
+      .travel_second {
+        transform: translateY(-30vh);
+      }
+      .travel_side {
+        transform: translateY(-10vh);
+      }
+      .travel1 {
+        background: url(/img/photo_video/travel1.png) no-repeat;
+        background-size: cover;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      .travel2 {
+        background: url(/img/photo_video/travel2.png) no-repeat;
+        background-size: cover;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      .travel3 {
+        background: url(/img/photo_video/travel3.png) no-repeat;
+        background-size: cover;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      .travel4 {
+        background: url(/img/photo_video/travel4.png) no-repeat;
+        background-size: cover;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      .travel5 {
+        background: url(/img/photo_video/travel5.png) no-repeat;
+        background-size: cover;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      .travel6 {
+        background: url(/img/photo_video/travel6.png) no-repeat;
+        background-size: cover;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+    }
+  }
+}

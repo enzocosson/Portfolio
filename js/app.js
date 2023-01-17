@@ -473,7 +473,6 @@ const sceneSkills = new ScrollMagic.Scene({
   triggerHook: 0,
 })
   .setTween(skills)
-  .addIndicators()
   .setPin(".skills")
   .addTo(Controller4);
 
@@ -499,7 +498,6 @@ const sceneTransition = new ScrollMagic.Scene({
   triggerHook: 1,
 })
   .setTween(transition)
-  .addIndicators()
   .addTo(Controller2);
 
 // ------------------------------------------------------------
@@ -559,8 +557,218 @@ const sceneSeeMore = new ScrollMagic.Scene({
   triggerHook: 0,
 })
   .setTween(seeMore)
-  .addIndicators()
   .setPin(".see_more")
   .addTo(Controller2);
+
+// ------------------------------------------------------------
+
+const pathTitle = {
+  curviness: 1.25,
+  values: [
+    {
+      opacity: 1,
+      fontSize: "10vw",
+      color: "#70e8cb",
+    },
+  ],
+};
+const pathTitleFront = {
+  curviness: 1.25,
+  values: [
+    {
+      opacity: 1,
+      fontSize: "10vw",
+      color: "transparent",
+    },
+  ],
+};
+const pathBgPhoto = {
+  curviness: 1.25,
+  values: [
+    {
+      width: "100%",
+      borderRadius: "0vw",
+    },
+  ],
+};
+
+const photoVideoTop = new TimelineLite()
+  .add(
+    TweenLite.to(".photoVideoTop__title", 1, {
+      bezier: pathTitle,
+      ease: Power1.easeInOut,
+    })
+  )
+  .add(
+    TweenLite.to(".photoVideoTop__title_front", 1, {
+      bezier: pathTitleFront,
+      ease: Power1.easeInOut,
+    }),
+    "=-1"
+  )
+  .add(
+    TweenLite.to(".container_photoVideoTop_img", 1, {
+      bezier: pathBgPhoto,
+      ease: Power1.easeInOut,
+    })
+  );
+const Controller7 = new ScrollMagic.Controller();
+
+const scenePhotoVideoTop = new ScrollMagic.Scene({
+  triggerElement: ".photoVideoTop",
+  duration: 3000,
+  triggerHook: 0,
+})
+  .setTween(photoVideoTop)
+  .setPin(".photoVideoTop")
+  .addTo(Controller2);
+
+// ------------------------------------------------------------
+
+const pathFeed3 = {
+  curviness: 1.25,
+  values: [
+    {
+      transform: "translateY(-100vh)",
+    },
+  ],
+};
+const pathFeed2 = {
+  curviness: 1.25,
+  values: [
+    {
+      transform: "translateY(-50vh)",
+    },
+  ],
+};
+const pathFeed1 = {
+  curviness: 1.25,
+  values: [
+    {
+      transform: "translateY(-30vh)",
+    },
+  ],
+};
+const pathMiniatures = {
+  curviness: 1.25,
+  values: [
+    {
+      top: "5%",
+    },
+  ],
+};
+const pathTravel = {
+  curviness: 1.25,
+  values: [
+    {
+      transform: "translateY(0vh)",
+      webkitTextFillColor: "transparent",
+    },
+    {
+      transform: "translateY(0vh)",
+      webkitTextFillColor: "#70e8cb",
+    },
+  ],
+};
+const pathTravelImg = {
+  curviness: 1.25,
+  values: [
+    {
+      opacity: 1,
+    },
+  ],
+};
+const feed = new TimelineLite()
+  .add(
+    TweenLite.to(".col3", 1, {
+      bezier: pathFeed3,
+      ease: Power1.easeOut,
+    })
+  )
+  .add(
+    TweenLite.to(".col2", 1, {
+      bezier: pathFeed2,
+      ease: Power1.easeOut,
+    }),
+    "=-1"
+  )
+  .add(
+    TweenLite.to(".col4", 1, {
+      bezier: pathFeed2,
+      ease: Power1.easeOut,
+    }),
+    "=-1"
+  )
+  .add(
+    TweenLite.to(".miniatures", 1, {
+      bezier: pathMiniatures,
+      ease: Power1.easeOut,
+    }),
+    "=-1"
+  )
+  .add(
+    TweenLite.to(".travel_middle", 1, {
+      bezier: pathTravel,
+      ease: Power1.easeOut,
+    })
+  )
+  .add(
+    TweenLite.to(".travel_second", 1, {
+      bezier: pathTravel,
+      ease: Power1.easeOut,
+    }),
+    "=-1"
+  )
+  .add(
+    TweenLite.to(".travel_side", 1, {
+      bezier: pathTravel,
+      ease: Power1.easeOut,
+    }),
+    "=-1"
+  )
+  .add(
+    TweenLite.to(".travel", 1, {
+      bezier: pathTravelImg,
+      ease: Power1.easeOut,
+    }),
+    "=-0.5"
+  );
+const Controller8 = new ScrollMagic.Controller();
+
+const sceneWild = new ScrollMagic.Scene({
+  triggerElement: ".feed",
+  duration: 3500,
+  triggerHook: 0.2,
+})
+  .setTween(feed)
+  .addIndicators()
+  .addTo(Controller8);
+
+// ------------------------------------------------------------
+// const pathNature = {
+//   curviness: 1.25,
+//   values: [
+//     {
+//       top: "-50vh",
+//     },
+//   ],
+// };
+
+// const nature = new TimelineLite().add(
+//   TweenLite.to(".nature_bg", 1, {
+//     bezier: pathNature,
+//     ease: Power1.easeInOut,
+//   })
+// );
+// const Controller9 = new ScrollMagic.Controller();
+
+// const sceneNature = new ScrollMagic.Scene({
+//   triggerElement: ".nature",
+//   duration: 2000,
+//   triggerHook: 1,
+// })
+//   .setTween(nature)
+//   .addIndicators()
+//   .addTo(Controller9);
 
 // ------------------------------------------------------------
