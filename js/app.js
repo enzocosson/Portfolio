@@ -129,7 +129,6 @@ const scene = new ScrollMagic.Scene({
   triggerHook: 0.5,
 })
   .setTween(works)
-  // .addIndicators()
   .addTo(Controller);
 
 // ------------------------------------------------------------
@@ -177,19 +176,16 @@ const sceneSoda = new ScrollMagic.Scene({
   triggerHook: 1,
 })
   .setTween(soda)
-  .addIndicators()
+
   .addTo(Controller2);
 
 // ------------------------------------------------------------
-
-const pathConcept = {
-  curviness: 1.25,
-  values: [{ backgroundColor: "#70e8cb" }],
-};
-// const pathImacGopro = {
+// const r = document.querySelector(":root");
+// const pathConcept = {
 //   curviness: 1.25,
-//   values: [{ width: "70vw", top: "20%" }],
+//   values: [{ backgroundColor: "var(--green)" }],
 // };
+
 const pathIpadImovix = {
   curviness: 1.25,
   values: [
@@ -269,13 +265,13 @@ const concept = new TimelineLite()
     }),
     "-=0.8"
   )
-  .add(
-    TweenLite.to(".concept", 1, {
-      bezier: pathConcept,
-      ease: Power1.easeInOut,
-    }),
-    "-=2"
-  )
+  // .add(
+  //   TweenLite.to(".concept", 1, {
+  //     bezier: pathConcept,
+  //     ease: Power1.easeInOut,
+  //   }),
+  //   "-=2"
+  // )
   .add(
     TweenLite.to(".whiteRectangle", 1, {
       bezier: pathWhiteRectangle,
@@ -305,7 +301,7 @@ const sceneConcept = new ScrollMagic.Scene({
   triggerHook: 0.4,
 })
   .setTween(concept)
-  .addIndicators()
+
   .addTo(Controller3);
 
 // ------------------------------------------------------------
@@ -568,7 +564,6 @@ const pathTitle = {
     {
       opacity: 1,
       fontSize: "10vw",
-      color: "#70e8cb",
     },
   ],
 };
@@ -594,18 +589,19 @@ const pathBgPhoto = {
 
 const photoVideoTop = new TimelineLite()
   .add(
-    TweenLite.to(".photoVideoTop__title", 1, {
-      bezier: pathTitle,
+    TweenLite.to(".photoVideoTop__title_front", 1, {
+      bezier: pathTitleFront,
       ease: Power1.easeInOut,
     })
   )
   .add(
-    TweenLite.to(".photoVideoTop__title_front", 1, {
-      bezier: pathTitleFront,
+    TweenLite.to(".photoVideoTop__title", 1, {
+      bezier: pathTitle,
       ease: Power1.easeInOut,
     }),
-    "=-1"
+    "-=0.7"
   )
+
   .add(
     TweenLite.to(".container_photoVideoTop_img", 1, {
       bezier: pathBgPhoto,
@@ -653,7 +649,7 @@ const pathMiniatures = {
   curviness: 1.25,
   values: [
     {
-      top: "5%",
+      top: "0%",
     },
   ],
 };
@@ -664,17 +660,13 @@ const pathTravel = {
       transform: "translateY(0vh)",
       webkitTextFillColor: "transparent",
     },
-    {
-      transform: "translateY(0vh)",
-      webkitTextFillColor: "#70e8cb",
-    },
   ],
 };
 const pathTravelImg = {
   curviness: 1.25,
   values: [
     {
-      opacity: 1,
+      height: "0%",
     },
   ],
 };
@@ -682,47 +674,48 @@ const feed = new TimelineLite()
   .add(
     TweenLite.to(".col3", 1, {
       bezier: pathFeed3,
-      ease: Power1.easeOut,
+      ease: Power1.easeInOut,
     })
   )
   .add(
     TweenLite.to(".col2", 1, {
       bezier: pathFeed2,
-      ease: Power1.easeOut,
+      ease: Power1.easeInOut,
     }),
     "=-1"
   )
   .add(
     TweenLite.to(".col4", 1, {
       bezier: pathFeed2,
-      ease: Power1.easeOut,
+      ease: Power1.easeInOut,
     }),
     "=-1"
   )
   .add(
     TweenLite.to(".miniatures", 1, {
       bezier: pathMiniatures,
-      ease: Power1.easeOut,
+      ease: Power1.easeInOut,
     }),
     "=-1"
   )
   .add(
     TweenLite.to(".travel_middle", 1, {
       bezier: pathTravel,
-      ease: Power1.easeOut,
-    })
+      ease: Power1.easeInOut,
+    }),
+    "=0.5"
   )
   .add(
     TweenLite.to(".travel_second", 1, {
       bezier: pathTravel,
-      ease: Power1.easeOut,
+      ease: Power1.easeInOut,
     }),
     "=-1"
   )
   .add(
     TweenLite.to(".travel_side", 1, {
       bezier: pathTravel,
-      ease: Power1.easeOut,
+      ease: Power1.easeInOut,
     }),
     "=-1"
   )
@@ -731,7 +724,7 @@ const feed = new TimelineLite()
       bezier: pathTravelImg,
       ease: Power1.easeOut,
     }),
-    "=-0.5"
+    "=0"
   );
 const Controller8 = new ScrollMagic.Controller();
 
@@ -741,34 +734,67 @@ const sceneWild = new ScrollMagic.Scene({
   triggerHook: 0.2,
 })
   .setTween(feed)
-  .addIndicators()
+
   .addTo(Controller8);
 
 // ------------------------------------------------------------
-// const pathNature = {
-//   curviness: 1.25,
-//   values: [
-//     {
-//       top: "-50vh",
-//     },
-//   ],
-// };
+const pathCircleAlbum = {
+  curviness: 1.25,
+  values: [{ opacity: 1, top: "50%", width: "20vw", height: "20vw" }],
+};
 
-// const nature = new TimelineLite().add(
-//   TweenLite.to(".nature_bg", 1, {
-//     bezier: pathNature,
-//     ease: Power1.easeInOut,
-//   })
-// );
-// const Controller9 = new ScrollMagic.Controller();
+const pathCircleAlbum2 = {
+  curviness: 1.25,
+  values: [{ opacity: 1, top: "50%", width: "20vw", height: "20vw" }],
+};
 
-// const sceneNature = new ScrollMagic.Scene({
-//   triggerElement: ".nature",
-//   duration: 2000,
-//   triggerHook: 1,
-// })
-//   .setTween(nature)
-//   .addIndicators()
-//   .addTo(Controller9);
+const pathTransitionTitleAlbum = {
+  curviness: 1.25,
+  values: [{ opacity: 1, letterSpacing: "0vw" }],
+};
 
-// ------------------------------------------------------------
+const seeMoreAlbum = new TimelineLite()
+  .add(
+    TweenLite.to(".album_stroke_green_circle1", 1, {
+      bezier: pathCircleAlbum,
+      ease: Power1.easeInOut,
+    })
+  )
+  .add(
+    TweenLite.to(".album_stroke_green_circle2", 1, {
+      bezier: pathCircleAlbum2,
+      ease: Power1.easeInOut,
+    }),
+    "-=0.9"
+  )
+  .add(
+    TweenLite.to(".album_stroke_green_circle3", 1, {
+      bezier: pathCircleAlbum2,
+      ease: Power1.easeInOut,
+    }),
+    "-=0.9"
+  )
+  .add(
+    TweenLite.to(".album_stroke_green_circle4", 1, {
+      bezier: pathCircleAlbum2,
+      ease: Power1.easeInOut,
+    }),
+    "-=0.9"
+  )
+  .add(
+    TweenLite.to(".album_transition_title", 1, {
+      bezier: pathTransitionTitleAlbum,
+      ease: Power1.easeInOut,
+    }),
+    "-=0.9"
+  );
+const Controller9 = new ScrollMagic.Controller();
+
+const sceneSeeMoreAlbum = new ScrollMagic.Scene({
+  triggerElement: ".see_more_album",
+  duration: 2000,
+  triggerHook: 0,
+})
+  .setTween(seeMoreAlbum)
+  .setPin(".see_more_album")
+  .addTo(Controller9);

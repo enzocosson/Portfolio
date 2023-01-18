@@ -10,14 +10,15 @@
 <body>
     <section class="home">
 <header>
-    <img class="logo" src="./img/white_logo.png" alt="">
+    <a href="index.html"><img class="logo" src="./img/white_logo.png" alt=""></a>
+
 
     <ul>
-        <li><a class="links" href="">Développement Web | Design</a></li>
+        <li><a class="links" href="developpement_web.html">Développement Web | Design</a></li>
         <!-- <li><a class="links" href="">Design</a></li> -->
-        <li><a class="links" href="">Photos | Videos</a></li>
-        <li><a class="links" href="">About Me</a></li>
-        <li><a class="links" id="contact" href="">Contact</a></li>
+        <li><a class="links" href="photo_video.html">Photos | Videos</a></li>
+        <li><a class="links" href="about_me.html">About Me</a></li>
+        <li><a class="links" id="contact" href="contact.html">Contact</a></li>
        <a href=""><img class="logo_dark_mode" src="./img/icon_darkMode.svg" alt=""></a>
     </ul>
 </header>
@@ -34,7 +35,7 @@
 </div>
 
 <div class="home_footer">
-    <a href="">change color ?</a>
+    <button onclick="generateColor()" class="change_color_btn" href="">change color ?</button>
     <p>@2023</p>
 </div>
 
@@ -248,16 +249,49 @@
 
 </div>
 
-<!-- 
-<section class="see_more">
-    <span class="stroke_green_circle1">
+
+<section class="see_more_album">
+    <span class="album_stroke_green_circle1">
         SEE MORE
     </span>
-    <span class="stroke_green_circle2"></span>
-    <span class="stroke_green_circle3"></span>
-    <span class="stroke_green_circle4"></span>
-    <h1 class="transition_title">LOOK AT MY WORK</h1>
-</section> -->
+    <span class="album_stroke_green_circle2"></span>
+    <span class="album_stroke_green_circle3"></span>
+    <span class="album_stroke_green_circle4"></span>
+    <h1 class="album_transition_title">LOOK AT MY ALBUM</h1>
+</section>
+
+<div class="contact">
+    <h1>Un projet en tête ?</h1>
+    <a href="" class="lien_contact">
+        ME CONTACTER
+    </a>
+</div>
+<footer>
+  <div class="info">
+    <div class="reseaux">
+        <h2>Suis moi sur mes réseaux</h2>
+        <div class="logo_reseaux">
+            <a href=""><img src="./img/reseaux/LinkedIn_black.svg" alt=""></a>
+        <a href=""><img src="./img/reseaux/GitHub_black.svg" alt=""></a>
+        <a href=""><img src="./img/reseaux/Dribbble_black.svg" alt=""></a>
+        <a href=""><img src="./img/reseaux/Facebook F_black.svg" alt=""></a>
+        <a href=""><img src="./img/reseaux/Instagram_black.svg" alt=""></a>
+        </div>
+    </div>
+    <div class="site">
+        <h2>Envie d’un site ?</h2>
+        <a href="">WEB DEVELOPPEMENT | DESIGN</a>
+    </div>
+
+    <div class="photo">
+        <h2>Envie de voyager  ?</h2>
+        <a href="">PHOTOGRAPHIE | VIDEO</a>
+    </div>
+  </div>
+  <div class="copyright">
+    <p>@Enzo Cosson | Site réalisé à la main</p>
+  </div>
+</footer>
 
 
 
@@ -273,4 +307,5 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/animation.gsap.js" integrity="sha512-judXDFLnOTJsUwd55lhbrX3uSoSQSOZR6vNrsll+4ViUFv+XOIr/xaIK96soMj6s5jVszd7I97a0H+WhgFwTEg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
 <script src="./js/app.js"></script>
+<script src="./js/changeColor.js"></script>
 </html>
