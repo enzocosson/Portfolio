@@ -798,3 +798,25 @@ const sceneSeeMoreAlbum = new ScrollMagic.Scene({
   .setTween(seeMoreAlbum)
   .setPin(".see_more_album")
   .addTo(Controller9);
+
+// ------------------------------
+// const pathHeader = {
+//   curviness: 1.25,
+//   values: [{ backgroundColor: "transparent" }],
+// };
+
+// const home = new TimelineLite().add(
+//   TweenLite.to("header", 1, {
+//     bezier: pathHeader,
+//     ease: Power1.easeInOut,
+//   })
+// );
+// const Controller10 = new ScrollMagic.Controller();
+
+// const sceneHome = new ScrollMagic.Scene({
+//   triggerElement: ".home",
+//   duration: 2000,
+//   triggerHook: 1,
+// })
+//   .setTween(home)
+//   .addTo(Controller9);

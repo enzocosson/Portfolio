@@ -8,24 +8,44 @@
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
+    <div class="loader">
+        <!-- <img class="loader_logo" src="./img/white_logo.png" alt=""> -->
+        <div class="spinner">
+            <div></div>   
+            <div></div>    
+            <div></div>    
+            <div></div>    
+          </div>
+    </div>
+    <header>
+        <a href="index.html"><img class="logo" src="./img/white_logo.png" alt=""></a>
+    
+    
+        <ul>
+            <li><a class="links" href="developpement_web.html">Développement Web | Design</a></li>
+            <!-- <li><a class="links" href="">Design</a></li> -->
+            <li><a class="links" href="photo_video.html">Photos | Videos</a></li>
+            <li><a class="links" href="about_me.html">About Me</a></li>
+            <li class="li_contact"><a class="links" id="contact" href="contact.html">Contact</a></li>
+    
+           <button onclick="darkMode()" class="darkMode">
+                <img class="logo_dark_mode" src="./img/icon_darkMode_active.svg" alt="">
+                <img class="logo_dark_mode" src="./img/icon_darkMode.svg" alt="">
+            </button>
+           <!-- <button class="container_darkmodeOff"></button> -->
+    
+        </ul>
+    </header>
     <section class="home">
-<header>
-    <a href="index.html"><img class="logo" src="./img/white_logo.png" alt=""></a>
 
-
-    <ul>
-        <li><a class="links" href="developpement_web.html">Développement Web | Design</a></li>
-        <!-- <li><a class="links" href="">Design</a></li> -->
-        <li><a class="links" href="photo_video.html">Photos | Videos</a></li>
-        <li><a class="links" href="about_me.html">About Me</a></li>
-        <li><a class="links" id="contact" href="contact.html">Contact</a></li>
-       <a href=""><img class="logo_dark_mode" src="./img/icon_darkMode.svg" alt=""></a>
-    </ul>
-</header>
 <div class="title">
+    <h1 class="title_name_front">ENZO COSSON</h1>
     <img class="me" src="./img/me3.png" alt="">
-    <h1>PORTFOLIO</h1>
-    <small>BE CREATIVE EVERY DAY</small>
+    <h1 class="title_name_back">ENZO COSSON</h1>
+
+    <h1 class="title_portfolio">PORTFOLIO</h1>
+    <small class="title_small">BE CREATIVE EVERY DAY</small>
+    <small class="title_small2">DEVELOPPEUR WEB & PHOTOGRAPHE</small>
 
     <div class="interaction">
         <a href="">WEB DEVELOPPEMENT | DESIGN</a>
@@ -306,6 +326,6 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/CSSPlugin.min.js" integrity="sha512-ht40uOoiTef4nKq0THVzjIGh3VS108J577LVVgNXnQLXza3doXjoM3owin2vd+Hm6w88k12RIrePIVY2WNzz6Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/animation.gsap.js" integrity="sha512-judXDFLnOTJsUwd55lhbrX3uSoSQSOZR6vNrsll+4ViUFv+XOIr/xaIK96soMj6s5jVszd7I97a0H+WhgFwTEg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-<script src="./js/app.js"></script>
-<script src="./js/changeColor.js"></script>
+<script src="./js/libScrollMagic.js"></script>
+<script src="./js/script.js"></script>
 </html>
