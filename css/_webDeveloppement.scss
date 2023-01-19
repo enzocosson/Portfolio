@@ -213,13 +213,19 @@ header {
         width: 100%;
       }
     }
-    .container_darkmodeOn {
-      display: block;
+    .logo_dark_modeOn {
+      display: none;
       z-index: 2;
     }
-    .container_darkmodeOff {
+    .logo_dark_modeOn_active {
+      display: block;
+    }
+    .logo_dark_modeOff {
       display: block;
       z-index: 1;
+    }
+    .logo_dark_modeOff_active {
+      display: none;
     }
   }
 }

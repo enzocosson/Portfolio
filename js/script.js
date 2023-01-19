@@ -24,15 +24,31 @@ const generateColor = () => {
   r.style.setProperty("--green", "#" + rValue);
 };
 
-// Function to generate a dark mode
+// Function to generate a dark mode when the user clicks on the button but remove it when he clicks again
+// const darkMode = () => {
+//   var r = document.querySelector(":root");
 
-const darkMode = () => {
+//   r.style.setProperty("--white", "#232323");
+//   r.style.setProperty("--black", "#fcfcfc");
+// };
+
+const darkMode = document.querySelector(".darkMode");
+const logo_dark_modeOn = document.querySelector(".logo_dark_modeOn");
+const logo_dark_modeOff = document.querySelector(".logo_dark_modeOff");
+
+darkMode.addEventListener("click", () => {
+  logo_dark_modeOn.classList.toggle("logo_dark_modeOn_active");
+  logo_dark_modeOff.classList.toggle("logo_dark_modeOff_active");
   var r = document.querySelector(":root");
 
-  r.style.setProperty("--white", "#232323");
-  r.style.setProperty("--black", "#fcfcfc");
-};
-
+  if (logo_dark_modeOn.classList.contains("logo_dark_modeOn_active")) {
+    r.style.setProperty("--white", "#232323");
+    r.style.setProperty("--black", "#fcfcfc");
+  } else {
+    r.style.setProperty("--white", "#fcfcfc");
+    r.style.setProperty("--black", "#232323");
+  }
+});
 // Function to animate the mouse move
 
 function mouseMove() {

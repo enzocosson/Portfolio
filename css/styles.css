@@ -205,13 +205,19 @@ header ul .darkMode .logo_dark_mode {
   transform: translate(-50%, -50%);
   width: 100%;
 }
-header ul .container_darkmodeOn {
-  display: block;
+header ul .logo_dark_modeOn {
+  display: none;
   z-index: 2;
 }
-header ul .container_darkmodeOff {
+header ul .logo_dark_modeOn_active {
+  display: block;
+}
+header ul .logo_dark_modeOff {
   display: block;
   z-index: 1;
+}
+header ul .logo_dark_modeOff_active {
+  display: none;
 }
 
 .home {
