@@ -14,7 +14,8 @@ const generateColor = () => {
     "ffadad",
     "ffd6a5",
     "a2d2ff",
-    "ff99c8"
+    "ff99c8",
+    "7a7a7a"
   );
 
   console.log(listeCouleurs);
@@ -40,13 +41,25 @@ darkMode.addEventListener("click", () => {
   logo_dark_modeOn.classList.toggle("logo_dark_modeOn_active");
   logo_dark_modeOff.classList.toggle("logo_dark_modeOff_active");
   var r = document.querySelector(":root");
+  const social_img_white = document.querySelector(".social_img_white");
+  const social_img_black = document.querySelector(".social_img_black");
+  const logo_white = document.querySelector(".logo_white");
+  const logo_black = document.querySelector(".logo_black");
 
   if (logo_dark_modeOn.classList.contains("logo_dark_modeOn_active")) {
     r.style.setProperty("--white", "#232323");
     r.style.setProperty("--black", "#fcfcfc");
+    social_img_white.classList.add("social_img_white_active");
+    social_img_black.classList.add("social_img_black_active");
+    logo_white.classList.add("logo_white_active");
+    logo_black.classList.add("logo_black_active");
   } else {
     r.style.setProperty("--white", "#fcfcfc");
     r.style.setProperty("--black", "#232323");
+    social_img_white.classList.remove("social_img_white_active");
+    social_img_black.classList.remove("social_img_black_active");
+    logo_white.classList.remove("logo_white_active");
+    logo_black.classList.remove("logo_black_active");
   }
 });
 // Function to animate the mouse move

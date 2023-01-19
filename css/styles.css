@@ -153,6 +153,18 @@ header {
 header .logo {
   width: 6vw;
 }
+header .logo_white {
+  display: block;
+}
+header .logo_white_active {
+  display: none;
+}
+header .logo_black {
+  display: none;
+}
+header .logo_black_active {
+  display: block;
+}
 header ul {
   list-style: none;
   display: flex;
@@ -429,6 +441,18 @@ header ul .logo_dark_modeOff_active {
 .home .home_side_left .social img {
   width: 0.9vw;
   margin-top: 2vw;
+}
+.home .home_side_left .social .social_img_white {
+  display: block;
+}
+.home .home_side_left .social .social_img_white_active {
+  display: none;
+}
+.home .home_side_left .social .social_img_black {
+  display: none;
+}
+.home .home_side_left .social .social_img_black_active {
+  display: block;
 }
 .home .home_side_left .social span {
   margin-left: 2px;

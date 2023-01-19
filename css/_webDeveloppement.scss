@@ -154,6 +154,18 @@ header {
   .logo {
     width: 6vw;
   }
+  .logo_white {
+    display: block;
+  }
+  .logo_white_active {
+    display: none;
+  }
+  .logo_black {
+    display: none;
+  }
+  .logo_black_active {
+    display: block;
+  }
   ul {
     list-style: none;
     display: flex;
@@ -451,6 +463,18 @@ header {
       img {
         width: 0.9vw;
         margin-top: 2vw;
+      }
+      .social_img_white {
+        display: block;
+      }
+      .social_img_white_active {
+        display: none;
+      }
+      .social_img_black {
+        display: none;
+      }
+      .social_img_black_active {
+        display: block;
       }
 
       span {
