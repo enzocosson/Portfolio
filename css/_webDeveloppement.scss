@@ -493,9 +493,24 @@ header {
         display: flex;
         justify-content: center;
         align-items: center;
+        border: 3px solid transparent;
+        transition: 0.2s ease-in-out;
 
-        img {
-          width: 70%;
+        &:hover {
+          background-color: var(--green);
+          border: 3px solid var(--white);
+        }
+        &:hover svg path {
+          fill: var(--white);
+        }
+
+        svg {
+          width: 80%;
+          transition: 0.2s ease-in-out;
+          path {
+            fill: var(--green);
+            transition: 0.2s ease-in-out;
+          }
         }
       }
     }

@@ -466,9 +466,23 @@ header ul .logo_dark_modeOff_active {
   display: flex;
   justify-content: center;
   align-items: center;
+  border: 3px solid transparent;
+  transition: 0.2s ease-in-out;
 }
-.home .home_side_left .reseau a img {
-  width: 70%;
+.home .home_side_left .reseau a:hover {
+  background-color: var(--green);
+  border: 3px solid var(--white);
+}
+.home .home_side_left .reseau a:hover svg path {
+  fill: var(--white);
+}
+.home .home_side_left .reseau a svg {
+  width: 80%;
+  transition: 0.2s ease-in-out;
+}
+.home .home_side_left .reseau a svg path {
+  fill: var(--green);
+  transition: 0.2s ease-in-out;
 }
 .home .home_side_right {
   pointer-events: none;
