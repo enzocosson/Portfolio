@@ -9,6 +9,7 @@
 </head>
 <body>
     <div class="loader">
+        <span class="deformation"></span>
         <!-- <img class="loader_logo" src="./img/white_logo.png" alt=""> -->
         <div class="spinner">
             <div></div>   
@@ -17,7 +18,7 @@
             <div></div>    
           </div>
     </div>
-    <header>
+    <header id="rth">
         <a href="index.html">
             <img class="logo logo_white" src="./img/white_logo.png" alt="">
             <img class="logo logo_black" src="./img/black_logo.png" alt="">
@@ -62,8 +63,14 @@
 </div>
 
 <div class="home_footer">
+    <a class="rth" href="#rth">
+        <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 32L5.64 37.64L28 15.32V64H36V15.32L58.32 37.68L64 32L32 0L0 32Z" fill="#FCFCFC"/>
+            </svg>
+            
+    </a>
     <button onclick="generateColor()" class="change_color_btn" href="">change color ?</button>
-    <p>@2023</p>
+    <!-- <p>@2023</p> -->
 </div>
 
 <div class="home_side_right">
@@ -106,10 +113,10 @@
     </div>
 </div>
 
-<span class="home_arrow"></span>
+<a href="#works" class="home_arrow"></a>
     </section>
 
-<section class="works">
+<section id="works" class="works">
     <h1>About My <span>Works</span></h1>
 <img class="iphone iphone1" src="./img/mockup/phone1.png" alt="">
 <img class="iphone iphone2" src="./img/mockup/phone2.png" alt="">

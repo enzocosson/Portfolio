@@ -35,7 +35,9 @@
   margin: 0;
   box-sizing: border-box;
 }
-
+html {
+  scroll-behavior: smooth;
+}
 :root {
   --green: #70e8cb;
   --green_transparent: rgba(112, 232, 203, 0.56);
@@ -135,8 +137,21 @@ $font_sf: SF Pro;
   }
 }
 .loader_finish {
-  opacity: 0;
-  z-index: -9999999;
+  animation: loader 1s cubic-bezier(0.82, 0.02, 0.26, 1.01) forwards 1;
+  @keyframes loader {
+    0% {
+      transform: translate(-50%, -50%);
+      display: block;
+    }
+    95% {
+      transform: translate(-50%, -150%);
+      display: block;
+    }
+    100% {
+      transform: translate(-50%, -150%);
+      display: none;
+    }
+  }
 }
 
 header {
@@ -413,24 +428,49 @@ header {
 
   // home_footer-------------------
   .home_footer {
-    position: absolute;
+    position: fixed;
     bottom: 0;
-    left: 0;
-    width: 100%;
+    right: 0;
+
     display: flex;
+    flex-direction: column;
     justify-content: right;
-    align-items: center;
+    align-items: flex-end;
     padding: 2vw 3vw;
+    z-index: 999999999999;
+
+    .rth {
+      width: 3vw;
+      height: 3vw;
+      margin-bottom: 1vw;
+      border-radius: 50%;
+      background-color: var(--green);
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.011);
+
+      svg {
+        width: 50%;
+        path {
+          fill: var(--white);
+        }
+      }
+    }
 
     .change_color_btn {
       cursor: pointer;
-      background-color: transparent;
+      background-color: var(--green);
+      padding: 0.5vw 1vw;
+      border-radius: 0.5vw;
       border: none;
       color: var(--white);
       font-family: $font_sf;
       font-weight: 500;
       font-size: 1.3vw;
       text-decoration: underline;
+      box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.011);
     }
     p {
       color: var(--white);
@@ -549,6 +589,7 @@ header {
     height: 100%;
     display: flex;
     justify-content: right;
+    letter-spacing: 0.5vw;
     align-items: center;
     padding: 2vw 3vw;
 
@@ -556,7 +597,7 @@ header {
       writing-mode: vertical-rl;
       color: var(--white);
       font-family: $font_sf;
-      font-weight: 100;
+      font-weight: 400;
       font-size: 1.3vw;
       margin-left: 2vw;
     }
@@ -572,6 +613,7 @@ header {
     border-right: 2px solid var(--white);
     border-bottom: 2px solid var(--white);
     transform: rotate(45deg);
+    z-index: 10;
   }
 }
 
@@ -633,8 +675,8 @@ header {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 10vw;
-    height: 10vw;
+    width: 10.5vw;
+    height: 10.5vw;
     background-color: var(--white);
     border-radius: 10000px;
     z-index: 1;
