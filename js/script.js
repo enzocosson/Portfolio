@@ -9,6 +9,7 @@ const generateColor = () => {
   var r = document.querySelector(":root");
 
   var listeCouleurs = new Array(
+    "70e8cb",
     "a2d2ff",
     "deaaff",
     "ffadad",
@@ -45,6 +46,7 @@ darkMode.addEventListener("click", () => {
   const social_img_black = document.querySelector(".social_img_black");
   const logo_white = document.querySelector(".logo_white");
   const logo_black = document.querySelector(".logo_black");
+  const bg_interaction = document.querySelector(".bg_interaction");
 
   if (logo_dark_modeOn.classList.contains("logo_dark_modeOn_active")) {
     r.style.setProperty("--white", "#232323");
@@ -53,6 +55,7 @@ darkMode.addEventListener("click", () => {
     social_img_black.classList.add("social_img_black_active");
     logo_white.classList.add("logo_white_active");
     logo_black.classList.add("logo_black_active");
+    bg_interaction.classList.add("bg_interaction_active");
   } else {
     r.style.setProperty("--white", "#fcfcfc");
     r.style.setProperty("--black", "#232323");
@@ -60,7 +63,56 @@ darkMode.addEventListener("click", () => {
     social_img_black.classList.remove("social_img_black_active");
     logo_white.classList.remove("logo_white_active");
     logo_black.classList.remove("logo_black_active");
+    bg_interaction.classList.remove("bg_interaction_active");
   }
+});
+
+// function to activate title_dev_web_front and title_dev_web_back when the mouse is over the button btn_photo
+const home = document.querySelector(".home");
+const title_dev_web_front = document.querySelector(".title_dev_web_front");
+const title_dev_web_back = document.querySelector(".title_dev_web_back");
+
+const title_photo_video_front = document.querySelector(
+  ".title_photo_video_front"
+);
+const title_photo_video_back = document.querySelector(
+  ".title_photo_video_back"
+);
+const title_portfolio = document.querySelector(".title_portfolio");
+
+const btn_dev = document.querySelector(".btn_dev");
+const btn_photo = document.querySelector(".btn_photo");
+
+btn_dev.addEventListener("mouseover", () => {
+  title_dev_web_front.classList.add("title_dev_web_front_active");
+  title_dev_web_back.classList.add("title_dev_web_back_active");
+
+  title_portfolio.classList.add("title_portfolio_active");
+  home.classList.add("home_active");
+});
+
+btn_dev.addEventListener("mouseout", () => {
+  title_dev_web_front.classList.remove("title_dev_web_front_active");
+  title_dev_web_back.classList.remove("title_dev_web_back_active");
+
+  title_portfolio.classList.remove("title_portfolio_active");
+  home.classList.remove("home_active");
+});
+
+btn_photo.addEventListener("mouseover", () => {
+  title_photo_video_front.classList.add("title_photo_video_front_active");
+  title_photo_video_back.classList.add("title_photo_video_back_active");
+
+  title_portfolio.classList.add("title_portfolio_active");
+  home.classList.add("home_active");
+});
+
+btn_photo.addEventListener("mouseout", () => {
+  title_photo_video_front.classList.remove("title_photo_video_front_active");
+  title_photo_video_back.classList.remove("title_photo_video_back_active");
+
+  title_portfolio.classList.remove("title_portfolio_active");
+  home.classList.remove("home_active");
 });
 // Function to animate the mouse move
 
