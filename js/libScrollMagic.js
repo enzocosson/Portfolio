@@ -166,6 +166,13 @@ const soda = new TimelineLite()
       ease: Power1.easeOut,
     }),
     "-=1"
+  )
+  .add(
+    TweenLite.to(".imac_soda_black", 1, {
+      bezier: pathImacSoda,
+      ease: Power1.easeOut,
+    }),
+    "-=1"
   );
 
 const Controller2 = new ScrollMagic.Controller();
@@ -800,23 +807,4 @@ const sceneSeeMoreAlbum = new ScrollMagic.Scene({
   .addTo(Controller9);
 
 // ------------------------------
-// const pathHeader = {
-//   curviness: 1.25,
-//   values: [{ backgroundColor: "transparent" }],
-// };
-
-// const home = new TimelineLite().add(
-//   TweenLite.to("header", 1, {
-//     bezier: pathHeader,
-//     ease: Power1.easeInOut,
-//   })
-// );
-// const Controller10 = new ScrollMagic.Controller();
-
-// const sceneHome = new ScrollMagic.Scene({
-//   triggerElement: ".home",
-//   duration: 2000,
-//   triggerHook: 1,
-// })
-//   .setTween(home)
-//   .addTo(Controller9);
+//
