@@ -1,0 +1,67 @@
+@font-face {
+  font-family: Base Neue;
+  font-weight: 600;
+  font-stretch: condensed;
+  src: url(/font/base_neue/BaseNeue-CondensedSemiBold-BF63bb6cbca8f3b.ttf)
+    format("truetype");
+}
+@font-face {
+  font-family: SF Pro;
+  font-style: normal;
+  src: url("/font/sf_pro/SF-Pro.ttf") format("truetype");
+}
+@font-face {
+  font-family: SF Pro;
+  font-style: italic;
+  src: url("/font/sf_pro/SF-Pro-Italic.ttf") format("truetype");
+}
+@font-face {
+  font-family: SF Pro;
+  font-weight: bold;
+  src: url("/font/sf_pro/SF-Pro-Text-Bold.otf") format("otf");
+}
+@font-face {
+  font-family: SF Pro;
+  font-weight: 100;
+  src: url("/font/sf_pro/SF-Pro-Text-Light.otf") format("otf");
+}
+@font-face {
+  font-family: SF Pro;
+  font-weight: 200;
+  src: url("/font/sf_pro/SF-Pro-Text-Medium.otf") format("otf");
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+:root {
+  --green: #70e8cb;
+  --green_transparent: rgba(112, 232, 203, 0.56);
+  --white: #fcfcfc;
+  --white_transparent: rgba(252, 252, 252, 0.33);
+  --black: #232323;
+}
+
+[data-theme="dark"] {
+  --white: #232323;
+  --black: #fcfcfc;
+}
+
+$green: #70e8cb;
+
+$green_transparent: rgba(112, 232, 203, 0.56);
+$white: #fcfcfc;
+$white_transparent: rgba(252, 252, 252, 0.33);
+$black: #232323;
+
+$font_base: Base Neue;
+$font_sf: SF Pro;
+
+::selection {
+  background-color: var(--green);
+  color: #fcfcfc;
+}

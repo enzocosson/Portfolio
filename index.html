@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio | Enzo Cosson</title>
+    <title>Enzo Cosson | Portfolio</title>
     <link rel="stylesheet" href="./css/styles.css">
     
 </head>
@@ -20,10 +20,7 @@
           </div>
     </div>
     <header class="header" id="rth">
-        <svg class="bg_svg" width="100" height="100">
-            <path d="M0,0C0,40,40,40,40,0" />
-        </svg>
-        <button onclick="createAnimation()">click</button>
+
         <a href="index.html" class="pagelink">
             <img class="logo logo_white" src="./img/white_logo.png" alt="">
             <img class="logo logo_black" src="./img/black_logo.png" alt="">
@@ -32,21 +29,10 @@
     
         <ul>
             <li><a class="links" href="developpement_web.html">Développement Web | Design</a></li>
-            <!-- <li><a class="links" href="">Design</a></li> -->
             <li><a class="links" href="photo_video.html">Photos | Videos</a></li>
             <li><a class="links" href="about_me.html">About Me</a></li>
             <li class="li_contact"><a class="links" id="contact" href="contact.html">Contact</a></li>
-    
-           <!-- <button onclick="darkMode()" class="darkMode">
-                <img class="logo_dark_mode" src="./img/icon_darkMode_active.svg" alt="">
-                <img class="logo_dark_mode" src="./img/icon_darkMode.svg" alt="">
-            </button> -->
-            <div class="darkMode">
-                <img class="logo_dark_modeOn" src="./img/icon_darkMode_active.svg" alt="">
-                <img class="logo_dark_modeOff" src="./img/icon_darkMode.svg" alt="">
-            </div>
-           <!-- <button class="container_darkmodeOff"></button> -->
-    
+            
         </ul>
     </header>
     <section class="home">
@@ -85,8 +71,11 @@
             </svg>
             
     </a>
+    <div class="darkMode">
+        <img class="logo_dark_modeOn" src="./img/icon_darkMode_active.svg" alt="">
+        <img class="logo_dark_modeOff" src="./img/icon_darkMode.svg" alt="">
+    </div>
     <button onclick="generateColor()" class="change_color_btn" href="">change color ?</button>
-    <!-- <p>@2023</p> -->
 </div>
 
 <div class="home_side_right">
@@ -94,11 +83,12 @@
 </div>
 
 <div class="home_side_left">
-<div class="social">
-    <img class="social_img_white" src="./img/follow_my_socials_networks.svg" alt="">
-    <img class="social_img_black" src="./img/follow_my_socials_networks_black.svg" alt="">
-    <span class="social_line"></span>
-</div>
+    <div class="social">
+        <img class="social_img_white" src="./img/follow_my_socials_networks.svg" alt="">
+        <img class="social_img_black" src="./img/follow_my_socials_networks_black.svg" alt="">
+        <span class="social_line"></span>
+    </div>
+
     <div class="reseau">
         <a href="https://www.linkedin.com/in/enzo-cosson/">
             <svg width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -405,4 +395,7 @@
 <script src="./js/script.js"></script>
 <!-- <script src="./js/animationClick.js"></script> -->
 <script src="./js/morphSvg.js"></script>
+<script src="./js/darkMode.js"></script>
+<script src="./js/loader.js"></script>
+<script src="./js/lazyLoading.js"></script>
 </html>

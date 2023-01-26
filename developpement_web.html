@@ -8,21 +8,172 @@
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-    <header>
-        <a href="index.html"><img class="logo" src="./img/white_logo.png" alt=""></a>
+    <div class="loader">
+        <span class="deformation"></span>
+        <!-- <img class="loader_logo" src="./img/white_logo.png" alt=""> -->
+        <div class="spinner">
+            <div></div>   
+            <div></div>    
+            <div></div>    
+            <div></div>    
+          </div>
+    </div>
+    <header class="header" id="rth">
 
+        <a href="index.html" class="pagelink">
+            <img class="logo logo_white" src="./img/white_logo.png" alt="">
+            <img class="logo logo_black" src="./img/black_logo.png" alt="">
+        </a>
+    
     
         <ul>
             <li><a class="links" href="developpement_web.html">Développement Web | Design</a></li>
-            <!-- <li><a class="links" href="">Design</a></li> -->
             <li><a class="links" href="photo_video.html">Photos | Videos</a></li>
             <li><a class="links" href="about_me.html">About Me</a></li>
-            <li><a class="links" id="contact" href="contact.html">Contact</a></li>
-           <a href=""><img class="logo_dark_mode" src="./img/icon_darkMode.svg" alt=""></a>
+            <li class="li_contact"><a class="links" id="contact" href="contact.html">Contact</a></li>
+           
         </ul>
     </header>
+
+   
+
+    <div class="home_footer">
+        <a class="rth" href="#rth">
+            <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 32L5.64 37.64L28 15.32V64H36V15.32L58.32 37.68L64 32L32 0L0 32Z" fill="#FCFCFC"/>
+                </svg>
+                
+        </a>
+        <div class="darkMode">
+            <img class="logo_dark_modeOn" src="./img/icon_darkMode_active.svg" alt="">
+            <img class="logo_dark_modeOff" src="./img/icon_darkMode.svg" alt="">
+        </div>
+        <button onclick="generateColor()" class="change_color_btn" href="">change color ?</button>
+    </div>
+
+  
+ 
     <section class="developpement_web_page">
-        <h1>Dev Web</h1>
+
+        <div class="myProject">
+            <img class="myProject_img_white" src="./img/myProject_absolute.svg" alt="">
+            <img class="myProject_img_black" src="./img/myProject_absolute_black.svg" alt="">
+        </div>
+
+        <div class="home_side_right">
+            <p>01 / 08</p>
+        </div>
+    
+
+        <div class="container_title">
+            <h1 class="title title_center title_imovix">IMOVIX</h1>
+            <h1 class="title title_next title_book">BOOK</h1>
+            <h1 class="title title_next title_dji">DJI</h1>
+            <h1 class="title title_next title_soda">SODA</h1>
+            <h1 class="title title_next title_dior">DIOR</h1>
+            <h1 class="title title_next title_drugOptimal">DRUGOPTIMAL</h1>
+            <h1 class="title title_next title_flashfood">FLASHFOOD</h1>
+            <h1 class="title title_next title_gopro">GOPRO</h1>
+        </div>
+
+        <img class="imac imac_center imac_imovix" src="./img/mockup/imac_imovix2.png" alt="">
+
+        <img class="imac imac_next imac_book" src="./img/mockup/imac_book.png" alt="">
+
+        <img class="imac imac_next imac_dji" src="./img/mockup/imac_dji.png" alt="">
+
+        <img class="imac imac_next imac_soda2" src="./img/mockup/imac_soda.png" alt="">
+
+        <img class="imac imac_next imac_dior" src="./img/mockup/imac_dior.png" alt="">
+
+        <img class="imac imac_next imac_drugOptimal" src="./img/mockup/drugOptimal.png" alt="">
+
+        <img class="imac imac_next imac_flashFood" src="./img/mockup/imac_flashFood.png" alt="">
+
+        <img class="imac imac_next imac_gopro" src="./img/mockup/imac_gopro2.png" alt="">
+
+  <div class="description">
+    <!-- <h2>Site de streaming car il n’y en a pas assez sur le marché</h2> -->
+    <small class="techno techno_center techno_imovix"><span>TECHNOLOGIE</span> : HTML, SCSS, JS, PHP</small>
+    <small class="techno techno_next techno_book"><span>TECHNOLOGIE</span> : HTML, SCSS, JS, PHP</small>
+    <small class="techno techno_next techno_dji"><span>TECHNOLOGIE</span> : HTML, SCSS, JS, PHP</small>
+    <small class="techno techno_next techno_soda"><span>TECHNOLOGIE</span> : HTML, SCSS, JS, PHP</small>
+    <small class="techno techno_next techno_dior"><span>TECHNOLOGIE</span> : HTML, SCSS, JS, PHP</small>
+    <small class="techno techno_next techno_drugOptimal"><span>TECHNOLOGIE</span> : HTML, SCSS, JS, PHP</small>
+    <small class="techno techno_next techno_flashFood"><span>TECHNOLOGIE</span> : HTML, SCSS, JS, PHP</small>
+    <small class="techno techno_next techno_gopro"><span>TECHNOLOGIE</span> : HTML, SCSS, JS, PHP</small>
+
+    <div class="interaction">
+
+        <button type="button" class="prev">
+            PRECEDENT
+        </button>
+        <button type="button" class="visite">
+            VISITER
+        </button>
+        <button type="button" class="next">
+            SUIVANT
+        </button>
+    </div>
+  </div>
+
     </section>
+    <section class="presentation_site">
+
+    </section>
+
 </body>
+
+<script>
+    const darkMode = document.querySelector(".darkMode");
+    const logo_dark_modeOn = document.querySelector(".logo_dark_modeOn");
+    const logo_dark_modeOff = document.querySelector(".logo_dark_modeOff");
+    const myProject_img_white = document.querySelector(".myProject_img_white");
+    const myProject_img_black = document.querySelector(".myProject_img_black");
+    const logo_white = document.querySelector(".logo_white");
+    const logo_black = document.querySelector(".logo_black");
+
+    darkMode.addEventListener("click", () => {
+    logo_dark_modeOn.classList.toggle("logo_dark_modeOn_active");
+    logo_dark_modeOff.classList.toggle("logo_dark_modeOff_active");
+    var r = document.querySelector(":root");
+
+
+    if (logo_dark_modeOn.classList.contains("logo_dark_modeOn_active")) {
+        r.style.setProperty("--white", "#232323");
+        r.style.setProperty("--black", "#fcfcfc");
+        logo_white.classList.add("logo_white_active");
+        logo_black.classList.add("logo_black_active");
+        myProject_img_white.classList.add("myProject_img_white_active");
+        myProject_img_black.classList.add("myProject_img_black_active");
+    } else {
+        r.style.setProperty("--white", "#fcfcfc");
+        r.style.setProperty("--black", "#232323");
+        logo_white.classList.remove("logo_white_active");
+        logo_black.classList.remove("logo_black_active");
+        myProject_img_white.classList.remove("myProject_img_white_active");
+        myProject_img_black.classList.remove("myProject_img_black_active");
+    }
+    });
+
+</script>
+
+    <script src="./js/MorphSvgPlugin.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js" integrity="sha512-8E3KZoPoZCD+1dgfqhPbejQBnQfBXe8FuwL4z/c8sTrgeDMFEnoyTlH3obB4/fV+6Sg0a0XF+L/6xS4Xx1fUEg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/debug.addIndicators.min.js" integrity="sha512-RvUydNGlqYJapy0t4AH8hDv/It+zKsv4wOQGb+iOnEfa6NnF2fzjXgRy+FDjSpMfC3sjokNUzsfYZaZ8QAwIxg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TimelineLite.min.js" integrity="sha512-I0VFyPo7hdM7YrEbQ0pvX4bX2904k0+B19u/xBrPrQoMprfcSnIDfGFD8kP52GbAhwtDjkEVhXlQvj8+vkJyew==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TimelineMax.min.js" integrity="sha512-lJDBw/vKlGO8aIZB8/6CY4lV+EMAL3qzViHid6wXjH/uDrqUl+uvfCROHXAEL0T/bgdAQHSuE68vRlcFHUdrUw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenLite.min.js" integrity="sha512-/8phkpsAzxsbuX18zNkQ2gCq4Q5JsWoPo1jHLDeZorPUHRtx9YJxpdk+os05oDhPJVCNzA2/NMl4rmJyQ+6Fvg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js" integrity="sha512-8Wy4KH0O+AuzjMm1w5QfZ5j5/y8Q/kcUktK9mPUVaUoBvh3QPUZB822W/vy7ULqri3yR8daH3F58+Y8Z08qzeg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/BezierPlugin.min.js" integrity="sha512-oOy5+mtZRcqjn6b9k4oj+tk2/hVIetzOAM9Y5cndEHgLxiIGavAz1agbHf6JjGzxXZ2SMbu08Uy1DDF0UwA0qQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/CSSPlugin.min.js" integrity="sha512-ht40uOoiTef4nKq0THVzjIGh3VS108J577LVVgNXnQLXza3doXjoM3owin2vd+Hm6w88k12RIrePIVY2WNzz6Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/animation.gsap.js" integrity="sha512-judXDFLnOTJsUwd55lhbrX3uSoSQSOZR6vNrsll+4ViUFv+XOIr/xaIK96soMj6s5jVszd7I97a0H+WhgFwTEg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="./js/libScrollMagic.js"></script>
+    <script src="./js/loader.js"></script>
+    <script src="./js/morphSvg.js"></script>
+    <script src="./js/carrousel.js"></script>
+    <script src="./js/lazyLoading.js"></script>
+
 </html>
