@@ -14,6 +14,8 @@ const imac_gopro = document.querySelector(".imac_gopro");
 const imac = document.querySelectorAll(".imac");
 const title = document.querySelectorAll(".title");
 const techno = document.querySelectorAll(".techno");
+const pages_number = document.querySelectorAll(".pages_number");
+const carrousel_container = document.querySelectorAll(".carrousel_container");
 
 // carrousel infinite
 
@@ -21,6 +23,8 @@ let timeline = 0;
 var numImac = imac.length;
 var numTitle = title.length;
 var numTechno = techno.length;
+var numPages_number = pages_number.length;
+var numSlider = carrousel_container.length;
 
 next.addEventListener("click", () => {
   next.disabled = true;
@@ -31,8 +35,6 @@ next.addEventListener("click", () => {
 
   if (timeline < numImac - 1) {
     timeline++;
-    console.log(timeline);
-    console.log([title[timeline - 1]]);
     prev.disabled = false;
     imac[timeline - 1].classList.add("imac_prev");
     imac[timeline - 1].classList.remove("imac_next");
@@ -45,6 +47,20 @@ next.addEventListener("click", () => {
     techno[timeline - 1].classList.add("techno_prev");
     techno[timeline - 1].classList.remove("techno_next");
     techno[timeline].classList.add("techno_center");
+
+    pages_number[timeline - 1].classList.add("pages_number_prev");
+    pages_number[timeline - 1].classList.remove("pages_number_next");
+    pages_number[timeline].classList.add("pages_number_center");
+
+    carrousel_container[timeline - 1].classList.add(
+      "carrousel_title_stroke_prev"
+    );
+    carrousel_container[timeline - 1].classList.remove(
+      "carrousel_title_stroke_next"
+    );
+    carrousel_container[timeline].classList.add(
+      "carrousel_title_stroke_center"
+    );
   } else {
     next.disabled = true;
   }
@@ -59,7 +75,6 @@ prev.addEventListener("click", () => {
 
   if (timeline > 0) {
     timeline--;
-    console.log(timeline);
     next.disabled = false;
     imac[timeline].classList.remove("imac_prev");
     imac[timeline].classList.add("imac_next");
@@ -75,6 +90,22 @@ prev.addEventListener("click", () => {
     techno[timeline].classList.add("techno_next");
     techno[timeline + 1].classList.remove("techno_center");
     techno[timeline + 1].classList.add("techno_next");
+
+    pages_number[timeline].classList.remove("pages_number_prev");
+    pages_number[timeline].classList.add("pages_number_next");
+    pages_number[timeline + 1].classList.remove("pages_number_center");
+    pages_number[timeline + 1].classList.add("pages_number_next");
+
+    carrousel_container[timeline].classList.remove(
+      "carrousel_title_stroke_prev"
+    );
+    carrousel_container[timeline].classList.add("carrousel_title_stroke_next");
+    carrousel_container[timeline + 1].classList.remove(
+      "carrousel_title_stroke_center"
+    );
+    carrousel_container[timeline + 1].classList.add(
+      "carrousel_title_stroke_next"
+    );
   } else {
     prev.disabled = true;
   }
