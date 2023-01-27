@@ -100,7 +100,31 @@ header {
     justify-content: center;
     align-items: center;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+    .logo_darkmode {
+      width: 60%;
+
+      .vector_darkMode {
+        fill: var(--white);
+        transition: 0.2s ease-in-out;
+      }
+    }
+    &:hover {
+      background-color: var(--white);
+      border: 2px solid var(--green);
+    }
+    &:hover .vector_darkMode {
+      fill: var(--green);
+    }
   }
+  .darkMode_active {
+    background-color: var(--green);
+
+    .vector_darkMode {
+      fill: var(--green);
+    }
+  }
+
   .logo_dark_modeOn {
     width: 60%;
     display: none;
@@ -134,22 +158,48 @@ header {
       width: 50%;
       path {
         fill: var(--white);
+        transition: 0.2s ease-in-out;
       }
+    }
+    &:hover {
+      background-color: var(--white);
+      border: 2px solid var(--green);
+    }
+    &:hover path {
+      fill: var(--green);
     }
   }
 
   .change_color_btn {
     cursor: pointer;
+    width: 3vw;
+    height: 3vw;
+    margin-bottom: 1vw;
+    border: 2px solid var(--green);
+    border-radius: 50%;
     background-color: var(--green);
-    padding: 0.5vw 1vw;
-    border-radius: 0.5vw;
-    border: none;
-    color: var(--white);
-    font-family: $font_sf;
-    font-weight: 500;
-    font-size: 1.3vw;
-    text-decoration: underline;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    transition: 0.2s ease-in-out;
+
+    svg {
+      width: 60%;
+      transition: 0.2s ease-in-out;
+      path {
+        fill: var(--white);
+        transition: 0.2s ease-in-out;
+      }
+    }
+    &:hover {
+      background-color: var(--white);
+      border: 2px solid var(--green);
+    }
+    &:hover path {
+      fill: var(--green);
+    }
   }
   p {
     color: var(--white);

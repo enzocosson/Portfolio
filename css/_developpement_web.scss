@@ -170,7 +170,7 @@
     display: flex;
     align-items: center;
     opacity: 0;
-    transition: 2s cubic-bezier(0.81, -0.01, 0.34, 0.99);
+    transition: 1.5s cubic-bezier(0.81, -0.01, 0.34, 0.99);
 
     .container_slider_anim {
       width: auto;
@@ -213,7 +213,7 @@
     display: flex;
     align-items: center;
     opacity: 1;
-    transition: 2s cubic-bezier(0.81, -0.01, 0.34, 0.99);
+    transition: 1.5s cubic-bezier(0.81, -0.01, 0.34, 0.99);
 
     .container_slider_anim {
       width: auto;
@@ -256,7 +256,7 @@
     display: flex;
     align-items: center;
     opacity: 0;
-    transition: 2s cubic-bezier(0.81, -0.01, 0.34, 0.99);
+    transition: 1.5s cubic-bezier(0.81, -0.01, 0.34, 0.99);
 
     .container_slider_anim {
       width: auto;
@@ -333,6 +333,7 @@
         rotateY(0deg) scale(3.5);
     }
   }
+
   .description {
     position: absolute;
     top: 90%;

@@ -1,10 +1,11 @@
 const darkMode = document.querySelector(".darkMode");
-const logo_dark_modeOn = document.querySelector(".logo_dark_modeOn");
-const logo_dark_modeOff = document.querySelector(".logo_dark_modeOff");
+// const logo_dark_modeOn = document.querySelector(".logo_dark_modeOn");
+// const logo_dark_modeOff = document.querySelector(".logo_dark_modeOff");
 
 darkMode.addEventListener("click", () => {
-  logo_dark_modeOn.classList.toggle("logo_dark_modeOn_active");
-  logo_dark_modeOff.classList.toggle("logo_dark_modeOff_active");
+  // logo_dark_modeOn.classList.toggle("logo_dark_modeOn_active");
+  // logo_dark_modeOff.classList.toggle("logo_dark_modeOff_active");
+
   var r = document.querySelector(":root");
   const social_img_white = document.querySelector(".social_img_white");
   const social_img_black = document.querySelector(".social_img_black");
@@ -14,7 +15,9 @@ darkMode.addEventListener("click", () => {
   const imac_soda = document.querySelector(".imac_soda");
   const imac_soda_black = document.querySelector(".imac_soda_black");
 
-  if (logo_dark_modeOn.classList.contains("logo_dark_modeOn_active")) {
+  darkMode.classList.toggle("darkMode_active");
+
+  if (darkMode.classList.contains("darkMode_active")) {
     r.style.setProperty("--white", "#232323");
     r.style.setProperty("--black", "#fcfcfc");
     imac_soda.classList.add("imac_soda_active");
