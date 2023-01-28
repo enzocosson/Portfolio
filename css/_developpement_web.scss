@@ -296,7 +296,7 @@
     top: 73%;
     left: 115%;
     width: 35vw;
-    transition: 1s cubic-bezier(0.81, -0.01, 0.34, 0.99);
+    transition: 1.2s cubic-bezier(0.72, -0.18, 0.38, 1.01);
     z-index: 2;
   }
   .imac_center {
@@ -306,12 +306,14 @@
     transform: perspective(1000px) translate(-50%, -50%) rotateZ(0deg)
       rotateY(0deg) scale(1);
     width: 35vw;
-    transition: 1s cubic-bezier(0.81, -0.01, 0.34, 0.99);
+    transition: 1.2s cubic-bezier(0.72, -0.18, 0.38, 1.01);
     z-index: 2;
 
     &:hover {
       transform: perspective(1000px) translate(-50%, -50%) rotateZ(-4deg)
         rotateY(-6deg) scale(1.1);
+      filter: drop-shadow(0px 0px 30px #fcfcfc69)
+        drop-shadow(0px 0px 30px var(--green));
     }
   }
   .imac_prev {
@@ -321,7 +323,7 @@
     top: 73%;
     left: -15%;
     width: 35vw;
-    transition: 1s cubic-bezier(0.81, -0.01, 0.34, 0.99);
+    transition: 1.2s cubic-bezier(0.72, -0.18, 0.38, 1.01);
     z-index: 2;
   }
   .imac_center_active {

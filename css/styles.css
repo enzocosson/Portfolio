@@ -47,11 +47,6 @@ html {
   --black: #232323;
 }
 
-[data-theme=dark] {
-  --white: #232323;
-  --black: #fcfcfc;
-}
-
 ::-moz-selection {
   background-color: var(--green);
   color: #fcfcfc;
@@ -1868,7 +1863,7 @@ header ul .li_contact:hover {
   top: 73%;
   left: 115%;
   width: 35vw;
-  transition: 1s cubic-bezier(0.81, -0.01, 0.34, 0.99);
+  transition: 1.2s cubic-bezier(0.72, -0.18, 0.38, 1.01);
   z-index: 2;
 }
 .developpement_web_page .imac_center {
@@ -1877,11 +1872,12 @@ header ul .li_contact:hover {
   left: 50%;
   transform: perspective(1000px) translate(-50%, -50%) rotateZ(0deg) rotateY(0deg) scale(1);
   width: 35vw;
-  transition: 1s cubic-bezier(0.81, -0.01, 0.34, 0.99);
+  transition: 1.2s cubic-bezier(0.72, -0.18, 0.38, 1.01);
   z-index: 2;
 }
 .developpement_web_page .imac_center:hover {
   transform: perspective(1000px) translate(-50%, -50%) rotateZ(-4deg) rotateY(-6deg) scale(1.1);
+  filter: drop-shadow(0px 0px 30px rgba(252, 252, 252, 0.4117647059)) drop-shadow(0px 0px 30px var(--green));
 }
 .developpement_web_page .imac_prev {
   position: absolute;
@@ -1889,7 +1885,7 @@ header ul .li_contact:hover {
   top: 73%;
   left: -15%;
   width: 35vw;
-  transition: 1s cubic-bezier(0.81, -0.01, 0.34, 0.99);
+  transition: 1.2s cubic-bezier(0.72, -0.18, 0.38, 1.01);
   z-index: 2;
 }
 .developpement_web_page .imac_center_active {
