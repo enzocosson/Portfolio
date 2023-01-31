@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900);
+
 @font-face {
   font-family: Base Neue;
   font-weight: 600;
@@ -53,8 +55,11 @@ $white: #fcfcfc;
 $white_transparent: rgba(252, 252, 252, 0.33);
 $black: #232323;
 
+// $font_base: Base Neue;
+// $font_sf: SF Pro;
+
 $font_base: Base Neue;
-$font_sf: SF Pro;
+$font_sf: "Inter", sans-serif;
 
 ::selection {
   background-color: var(--green);
