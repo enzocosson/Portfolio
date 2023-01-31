@@ -7,6 +7,7 @@
   justify-content: center;
   align-items: center;
   overflow: hidden;
+  transition: background-color 0.2s ease-in-out;
 
   .myProject {
     position: absolute;
@@ -57,7 +58,7 @@
     padding: 2vw 3vw;
 
     p {
-      height: 14vh;
+      padding-top: 8vh;
       display: flex;
       justify-content: flex-end;
       align-items: center;
@@ -199,6 +200,7 @@
         color: transparent;
         -webkit-text-stroke: 3px var(--white);
         font-family: $font_base;
+        line-height: 20vh;
       }
     }
   }
@@ -242,6 +244,7 @@
         color: transparent;
         -webkit-text-stroke: 3px var(--white);
         font-family: $font_base;
+        line-height: 20vh;
       }
     }
   }
@@ -285,6 +288,7 @@
         color: transparent;
         -webkit-text-stroke: 3px var(--white);
         font-family: $font_base;
+        line-height: 20vh;
       }
     }
   }
@@ -465,6 +469,144 @@
         color: var(--white);
         font-family: $font_sf;
         font-size: 1.5vw;
+      }
+    }
+  }
+}
+
+.tous_mes_projets {
+  width: 100%;
+  min-height: 100vh;
+  background-color: var(--green);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  h2 {
+    font-size: 5vw;
+    font-weight: 600;
+    color: var(--white);
+    font-family: $font_base;
+    margin-top: 5vh;
+    letter-spacing: 0.2vw;
+  }
+
+  .interaction {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 1vw;
+    margin-top: 5vh;
+
+    .btn_techno {
+      cursor: pointer;
+      width: 15vw;
+      height: 5vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: none;
+      border-radius: 0.6vw;
+      font-size: 1vw;
+      font-weight: 600;
+      background-color: var(--green);
+      color: var(--white);
+      border: 0.2vw solid var(--white);
+      transition: 0.3s ease-in-out;
+      box-shadow: rgba(0, 0, 0, 0) 0px 4px 12px;
+
+      &:hover {
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+        background-color: var(--white);
+        color: var(--green);
+      }
+    }
+    .active {
+      border: 0.2vw solid var(--white);
+      background-color: var(--white);
+      color: var(--green);
+      box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+
+      &:hover {
+        background-color: var(--white);
+        color: var(--green);
+      }
+    }
+  }
+
+  .container__cards {
+    margin-top: 3vh;
+    width: 90vw;
+    height: auto;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+
+    .card {
+      position: relative;
+      width: 21vw;
+      height: 13vw;
+      background-color: var(--white);
+      border-radius: 1vw;
+      margin: 2vh 0.7vw;
+      z-index: 1;
+      border: 0.3vw solid var(--white);
+      transition: transform 1s cubic-bezier(0.81, -0.01, 0.34, 0.99);
+      overflow: hidden;
+
+      .card_img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        transition: 0.5s ease-in-out;
+      }
+      .hover_bg {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        height: 100%;
+        background-color: var(--green);
+        opacity: 0;
+        transition: 0.5s ease-in-out;
+        z-index: 2;
+      }
+      h3 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        margin-top: 0.8vh;
+        font-size: 3vw;
+        font-weight: 600;
+        color: var(--white);
+        font-family: $font_base;
+        letter-spacing: 0.2vw;
+        opacity: 0;
+        z-index: 3;
+        transition: 0.5s ease-in-out;
+      }
+
+      &:hover {
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+        transform: scale(1.1);
+        z-index: 10;
+      }
+
+      &:hover .hover_bg {
+        opacity: 0.8;
+      }
+      &:hover h3 {
+        opacity: 1;
+        color: var(--white);
       }
     }
   }

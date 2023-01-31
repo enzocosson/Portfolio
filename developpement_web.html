@@ -1,33 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DevWeb</title>
-    <link rel="stylesheet" href="./css/styles.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
 
-</head>
-
-<body data-barba="wrapper">
-
-    
+  <body data-barba="wrapper">
     <div class="loader">
-        <span class="deformation"></span>
-        <!-- <img class="loader_logo" src="./img/white_logo.png" alt=""> -->
-        <div class="spinner">
-            <div></div>   
-            <div></div>    
-            <div></div>    
-            <div></div>    
-          </div>
+      <span class="deformation"></span>
+      <!-- <img class="loader_logo" src="./img/white_logo.png" alt=""> -->
+      <div class="spinner">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
     </div>
 
-
-<section class="container_colors">
-    <div class="bg_colors"></div>
-    <div class="choix_couleurs">
+    <section class="container_colors">
+      <div class="bg_colors"></div>
+      <div class="choix_couleurs">
         <button onclick="colorVert()" class="colors vert"></button>
         <button onclick="colorBleu()" class="colors bleu"></button>
         <button onclick="colorViolet()" class="colors violet"></button>
@@ -36,196 +32,386 @@
         <button onclick="colorJaune()" class="colors jaune"></button>
         <button onclick="colorTurquoise()" class="colors turquoise"></button>
         <button onclick="colorRouge()" class="colors rouge"></button>
-    </div>
-</section>
-
-
+      </div>
+    </section>
 
     <header class="header" id="rth">
+      <a href="index.html" class="pagelink">
+        <img class="logo logo_white" src="./img/white_logo.png" alt="" />
+        <img class="logo logo_black" src="./img/black_logo.png" alt="" />
+      </a>
 
-        <a href="index.html" class="pagelink">
-            <img class="logo logo_white" src="./img/white_logo.png" alt="">
-            <img class="logo logo_black" src="./img/black_logo.png" alt="">
-        </a>
-    
-    
-        <ul>
-            <li><a class="links" href="index.html">Accueil</a></li>
-            <li><a class="links" href="developpement_web.html">Développement Web | Design</a></li>
-            <li><a class="links" href="photo_video.html">Photos | Videos</a></li>
-            <li><a class="links" href="about_me.html">About Me</a></li>
-            <li class="li_contact"><a class="links" id="contact" href="contact.html">Contact</a></li>
-           
-        </ul>
+      <ul>
+        <li><a class="links" href="index.html">Accueil</a></li>
+        <li>
+          <a class="links" href="developpement_web.html"
+            >Développement Web | Design</a
+          >
+        </li>
+        <li><a class="links" href="photo_video.html">Photos | Videos</a></li>
+        <li><a class="links" href="about_me.html">About Me</a></li>
+        <li class="li_contact">
+          <a class="links" id="contact" href="contact.html">Contact</a>
+        </li>
+      </ul>
     </header>
 
-   
-
     <div class="home_footer">
-        <a class="rth" href="#rth">
-            <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path  d="M0 32L5.64 37.64L28 15.32V64H36V15.32L58.32 37.68L64 32L32 0L0 32Z" fill="#FCFCFC"/>
-                </svg>
-                
-        </a>
-        <!-- <div class="darkMode">
+      <a class="rth" href="#rth">
+        <svg
+          width="64"
+          height="64"
+          viewBox="0 0 64 64"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M0 32L5.64 37.64L28 15.32V64H36V15.32L58.32 37.68L64 32L32 0L0 32Z"
+            fill="#FCFCFC"
+          />
+        </svg>
+      </a>
+      <!-- <div class="darkMode">
             <img class="logo_dark_modeOn" src="./img/icon_darkMode_active.svg" alt="">
             <img class="logo_dark_modeOff" src="./img/icon_darkMode.svg" alt="">
         </div> -->
-        <div class="darkMode">
-            <svg class="logo_darkmode" width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path class="vector_darkMode" d="M23.2457 44.8802C9.72124 44.8894 -0.981693 33.574 0.0716015 20.2823C0.83074 10.7049 5.87889 4.08024 14.7844 0.374315C16.0552 -0.154627 17.2585 -0.210262 18.3093 0.777043C19.3542 1.75853 19.3684 2.93101 18.9459 4.25129C16.2793 12.594 19.9 21.2555 27.6656 25.0777C31.7271 27.0772 35.9628 27.3512 40.3059 26.0907C41.0801 25.8657 41.8367 25.5302 42.6809 25.7146C44.4533 26.1015 45.4566 27.8519 44.7941 29.5999C41.7501 37.6295 36.0003 42.5669 27.5881 44.4152C26.9131 44.5639 26.2256 44.6685 25.5382 44.7383C24.7299 44.8196 23.9157 44.8412 23.2457 44.8802ZM36.5469 32.6066C29.6847 32.825 23.8032 30.6561 18.9951 25.8616C14.2052 21.0853 12.0562 15.2246 12.2628 8.43301C7.90798 11.61 4.69643 18.0943 6.07055 25.1881C7.40633 32.086 12.9411 37.5382 19.9317 38.7737C26.9556 40.0151 33.362 36.9868 36.5469 32.6066Z" fill="#FCFCFC"/>
-            </svg>                
-        </div>
+      <div class="darkMode">
+        <svg
+          class="logo_darkmode"
+          width="45"
+          height="45"
+          viewBox="0 0 45 45"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            class="vector_darkMode"
+            d="M23.2457 44.8802C9.72124 44.8894 -0.981693 33.574 0.0716015 20.2823C0.83074 10.7049 5.87889 4.08024 14.7844 0.374315C16.0552 -0.154627 17.2585 -0.210262 18.3093 0.777043C19.3542 1.75853 19.3684 2.93101 18.9459 4.25129C16.2793 12.594 19.9 21.2555 27.6656 25.0777C31.7271 27.0772 35.9628 27.3512 40.3059 26.0907C41.0801 25.8657 41.8367 25.5302 42.6809 25.7146C44.4533 26.1015 45.4566 27.8519 44.7941 29.5999C41.7501 37.6295 36.0003 42.5669 27.5881 44.4152C26.9131 44.5639 26.2256 44.6685 25.5382 44.7383C24.7299 44.8196 23.9157 44.8412 23.2457 44.8802ZM36.5469 32.6066C29.6847 32.825 23.8032 30.6561 18.9951 25.8616C14.2052 21.0853 12.0562 15.2246 12.2628 8.43301C7.90798 11.61 4.69643 18.0943 6.07055 25.1881C7.40633 32.086 12.9411 37.5382 19.9317 38.7737C26.9556 40.0151 33.362 36.9868 36.5469 32.6066Z"
+            fill="#FCFCFC"
+          />
+        </svg>
+      </div>
 
-            <button onclick="generateColors()" class="change_color_btn" href="">
-                <svg width="54" height="54" viewBox="0 0 54 54" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M27 0C12.09 0 0 12.09 0 27C0 41.91 12.09 54 27 54C29.49 54 31.5 51.99 31.5 49.5C31.5 48.33 31.05 47.28 30.33 46.47C29.64 45.69 29.19 44.64 29.19 43.5C29.19 41.01 31.2 39 33.69 39H39C47.28 39 54 32.28 54 24C54 10.74 41.91 0 27 0ZM10.5 27C8.01 27 6 24.99 6 22.5C6 20.01 8.01 18 10.5 18C12.99 18 15 20.01 15 22.5C15 24.99 12.99 27 10.5 27ZM19.5 15C17.01 15 15 12.99 15 10.5C15 8.01 17.01 6 19.5 6C21.99 6 24 8.01 24 10.5C24 12.99 21.99 15 19.5 15ZM34.5 15C32.01 15 30 12.99 30 10.5C30 8.01 32.01 6 34.5 6C36.99 6 39 8.01 39 10.5C39 12.99 36.99 15 34.5 15ZM43.5 27C41.01 27 39 24.99 39 22.5C39 20.01 41.01 18 43.5 18C45.99 18 48 20.01 48 22.5C48 24.99 45.99 27 43.5 27Z" fill="white"/>
-                </svg>
-            </button>
-
+      <button onclick="generateColors()" class="change_color_btn" href="">
+        <svg
+          width="54"
+          height="54"
+          viewBox="0 0 54 54"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M27 0C12.09 0 0 12.09 0 27C0 41.91 12.09 54 27 54C29.49 54 31.5 51.99 31.5 49.5C31.5 48.33 31.05 47.28 30.33 46.47C29.64 45.69 29.19 44.64 29.19 43.5C29.19 41.01 31.2 39 33.69 39H39C47.28 39 54 32.28 54 24C54 10.74 41.91 0 27 0ZM10.5 27C8.01 27 6 24.99 6 22.5C6 20.01 8.01 18 10.5 18C12.99 18 15 20.01 15 22.5C15 24.99 12.99 27 10.5 27ZM19.5 15C17.01 15 15 12.99 15 10.5C15 8.01 17.01 6 19.5 6C21.99 6 24 8.01 24 10.5C24 12.99 21.99 15 19.5 15ZM34.5 15C32.01 15 30 12.99 30 10.5C30 8.01 32.01 6 34.5 6C36.99 6 39 8.01 39 10.5C39 12.99 36.99 15 34.5 15ZM43.5 27C41.01 27 39 24.99 39 22.5C39 20.01 41.01 18 43.5 18C45.99 18 48 20.01 48 22.5C48 24.99 45.99 27 43.5 27Z"
+            fill="white"
+          />
+        </svg>
+      </button>
     </div>
 
-  
- 
     <section class="developpement_web_page">
+      <div class="myProject">
+        <img
+          class="myProject_img_white"
+          src="./img/myProject_absolute.svg"
+          alt=""
+        />
+        <img
+          class="myProject_img_black"
+          src="./img/myProject_absolute_black.svg"
+          alt=""
+        />
+      </div>
 
-        <div class="myProject">
-            <img class="myProject_img_white" src="./img/myProject_absolute.svg" alt="">
-            <img class="myProject_img_black" src="./img/myProject_absolute_black.svg" alt="">
-        </div>
+      <div class="home_side_right">
+        <p>
+          <span class="pages_number pages_number_center">01</span>
+          <span class="pages_number pages_number_next">02</span>
+          <span class="pages_number pages_number_next">03</span>
+          <span class="pages_number pages_number_next">04</span>
+          <span class="pages_number pages_number_next">05</span>
+          <span class="pages_number pages_number_next">06</span>
+          <span class="pages_number pages_number_next">07</span>
+          <span class="pages_number pages_number_next">08</span>
+          / 08
+        </p>
+      </div>
 
-        <div class="home_side_right">
-            <p>
-                <span class="pages_number pages_number_center">01</span>
-                <span class="pages_number pages_number_next">02</span>
-                <span class="pages_number pages_number_next">03</span>
-                <span class="pages_number pages_number_next">04</span>
-                <span class="pages_number pages_number_next">05</span> 
-                <span class="pages_number pages_number_next">06</span>
-                <span class="pages_number pages_number_next">07</span>
-                <span class="pages_number pages_number_next">08</span>
-                / 08</p>
-        </div>
-    
-
-        <div class="container_title">
-            <h1 class="title title_center title_imovix">IMOVIX</h1>
-            <h1 class="title title_next title_book">BOOK</h1>
-            <h1 class="title title_next title_dji">DJI</h1>
-            <h1 class="title title_next title_soda">SODA</h1>
-            <h1 class="title title_next title_dior">DIOR</h1>
-            <h1 class="title title_next title_drugOptimal">DRUGOPTIMAL</h1>
-            <h1 class="title title_next title_flashfood">FLASHFOOD</h1>
-            <h1 class="title title_next title_gopro">GOPRO</h1>
-        </div>
+      <div class="container_title">
+        <h1 class="title title_center title_imovix">IMOVIX</h1>
+        <h1 class="title title_next title_book">BOOK</h1>
+        <h1 class="title title_next title_dji">DJI</h1>
+        <h1 class="title title_next title_soda">SODA</h1>
+        <h1 class="title title_next title_dior">DIOR</h1>
+        <h1 class="title title_next title_drugOptimal">DRUGOPTIMAL</h1>
+        <h1 class="title title_next title_flashfood">FLASHFOOD</h1>
+        <h1 class="title title_next title_gopro">GOPRO</h1>
+      </div>
 
       <div class="carrousel_container carrousel_title_stroke_center">
         <div class="container_slider_anim">
-            <h2 class="slider">IMOVIXIMOVIXIMOVIXIMOVIX</h2>
-            <h2 class="slider">IMOVIXIMOVIXIMOVIXIMOVIX</h2>
-        </div>
-      </div>
-
-      <div class="carrousel_container carrousel_title_stroke_next">
-       <div class="container_slider_anim">
-            <h2 class="slider">BOOKBOOKBOOKBOOK</h2>
-            <h2 class="slider">BOOKBOOKBOOKBOOK</h2>
-        </div> 
-      </div>
-
-      <div class="carrousel_container carrousel_title_stroke_next">
-        <div class="container_slider_anim">
-            <h2 class="slider">DJIDJIDJIDJI</h2>
-            <h2 class="slider">DJIDJIDJIDJI</h2>
+          <h2 class="slider">IMOVIXIMOVIXIMOVIXIMOVIX</h2>
+          <h2 class="slider">IMOVIXIMOVIXIMOVIXIMOVIX</h2>
         </div>
       </div>
 
       <div class="carrousel_container carrousel_title_stroke_next">
         <div class="container_slider_anim">
-            <h2 class="slider">SODASODASODA</h2>
-            <h2 class="slider">SODASODASODA</h2>
+          <h2 class="slider">BOOKBOOKBOOKBOOK</h2>
+          <h2 class="slider">BOOKBOOKBOOKBOOK</h2>
         </div>
       </div>
 
       <div class="carrousel_container carrousel_title_stroke_next">
         <div class="container_slider_anim">
-            <h2 class="slider">DIORDIORDIOR</h2>
-            <h2 class="slider">DIORDIORDIOR</h2>
-        </div> 
+          <h2 class="slider">DJIDJIDJIDJI</h2>
+          <h2 class="slider">DJIDJIDJIDJI</h2>
+        </div>
       </div>
 
-        <div class="carrousel_container carrousel_title_stroke_next"_next>
-            <div class="container_slider_anim">
-                <h2 class="slider">DRUGOPTIMALDRUGOPTIMAL</h2>
-                <h2 class="slider">DRUGOPTIMALDRUGOPTIMAL</h2>
-            </div>
-         </div>
-
-        <div class="carrousel_container carrousel_title_stroke_next"_next>
-            <div class="container_slider_anim">
-                <h2 class="slider">FLASHFOODFLASHFOOD</h2>
-                <h2 class="slider">FLASHFOODFLASHFOOD</h2>
-            </div>
-         </div>
-
-         <div class="carrousel_container carrousel_title_stroke_next"_next>
-            <div class="container_slider_anim">
-                <h2 class="slider">GOPROGOPROGOPRO</h2>
-                <h2 class="slider">GOPROGOPROGOPRO</h2>
-            </div>  
-          </div>
-
+      <div class="carrousel_container carrousel_title_stroke_next">
+        <div class="container_slider_anim">
+          <h2 class="slider">SODASODASODA</h2>
+          <h2 class="slider">SODASODASODA</h2>
+        </div>
       </div>
 
-        <img class="imac imac_center imac_imovix" src="./img/mockup/imac_imovix2.png" alt="">
-        <img class="imac imac_next imac_book" src="./img/mockup/imac_book.png" alt="">
-        <img class="imac imac_next imac_dji" src="./img/mockup/imac_dji.png" alt="">
-        <img class="imac imac_next imac_soda2" src="./img/mockup/imac_soda.png" alt="">
-        <img class="imac imac_next imac_dior" src="./img/mockup/imac_dior.png" alt="">
-        <img class="imac imac_next imac_drugOptimal" src="./img/mockup/drugOptimal.png" alt="">
-        <img class="imac imac_next imac_flashFood" src="./img/mockup/imac_flashFood.png" alt="">
-        <img class="imac imac_next imac_gopro" src="./img/mockup/imac_gopro2.png" alt="">
+      <div class="carrousel_container carrousel_title_stroke_next">
+        <div class="container_slider_anim">
+          <h2 class="slider">DIORDIORDIOR</h2>
+          <h2 class="slider">DIORDIORDIOR</h2>
+        </div>
+      </div>
 
-    <div class="description">
+      <div class="carrousel_container carrousel_title_stroke_next" _next>
+        <div class="container_slider_anim">
+          <h2 class="slider">DRUGOPTIMALDRUGOPTIMAL</h2>
+          <h2 class="slider">DRUGOPTIMALDRUGOPTIMAL</h2>
+        </div>
+      </div>
 
+      <div class="carrousel_container carrousel_title_stroke_next" _next>
+        <div class="container_slider_anim">
+          <h2 class="slider">FLASHFOODFLASHFOOD</h2>
+          <h2 class="slider">FLASHFOODFLASHFOOD</h2>
+        </div>
+      </div>
+
+      <div class="carrousel_container carrousel_title_stroke_next" _next>
+        <div class="container_slider_anim">
+          <h2 class="slider">GOPROGOPROGOPRO</h2>
+          <h2 class="slider">GOPROGOPROGOPRO</h2>
+        </div>
+      </div>
+
+      <img
+        class="imac imac_center imac_imovix"
+        src="./img/mockup/imac_imovix2.png"
+        alt=""
+      />
+      <img
+        class="imac imac_next imac_book"
+        src="./img/mockup/imac_book.png"
+        alt=""
+      />
+      <img
+        class="imac imac_next imac_dji"
+        src="./img/mockup/imac_dji.png"
+        alt=""
+      />
+      <img
+        class="imac imac_next imac_soda2"
+        src="./img/mockup/imac_soda.png"
+        alt=""
+      />
+      <img
+        class="imac imac_next imac_dior"
+        src="./img/mockup/imac_dior.png"
+        alt=""
+      />
+      <img
+        class="imac imac_next imac_drugOptimal"
+        src="./img/mockup/drugOptimal.png"
+        alt=""
+      />
+      <img
+        class="imac imac_next imac_flashFood"
+        src="./img/mockup/imac_flashFood.png"
+        alt=""
+      />
+      <img
+        class="imac imac_next imac_gopro"
+        src="./img/mockup/imac_gopro2.png"
+        alt=""
+      />
+
+      <div class="description">
         <div class="presentation_site slide">
-            <h2 class="is-splited">Site de streaming car il n’y en a pas assez sur le marché</h2>
+          <h2 class="is-splited">
+            <p>Site de streaming car il n’y en a pas assez sur le marché</p>
+          </h2>
         </div>
 
         <div>
-            <small class="techno techno_center techno_imovix"><span>TECHNOLOGIE</span> : HTML, SCSS, JS, PHP</small>
-            <small class="techno techno_next techno_book"><span>TECHNOLOGIE</span> : HTML, SCSS, JS, PHP</small>
-            <small class="techno techno_next techno_dji"><span>TECHNOLOGIE</span> : HTML, SCSS, JS, PHP</small>
-            <small class="techno techno_next techno_soda"><span>TECHNOLOGIE</span> : HTML, SCSS, JS, PHP</small>
-            <small class="techno techno_next techno_dior"><span>TECHNOLOGIE</span> : HTML, SCSS, JS, PHP</small>
-            <small class="techno techno_next techno_drugOptimal"><span>TECHNOLOGIE</span> : HTML, SCSS, JS, PHP</small>
-            <small class="techno techno_next techno_flashFood"><span>TECHNOLOGIE</span> : HTML, SCSS, JS, PHP</small>
-            <small class="techno techno_next techno_gopro"><span>TECHNOLOGIE</span> : HTML, SCSS, JS, PHP</small>
+          <small class="techno techno_center techno_imovix"
+            ><span>TECHNOLOGIE</span> : HTML, SCSS, JS, PHP</small
+          >
+          <small class="techno techno_next techno_book"
+            ><span>TECHNOLOGIE</span> : HTML, SCSS, JS, PHP</small
+          >
+          <small class="techno techno_next techno_dji"
+            ><span>TECHNOLOGIE</span> : HTML, SCSS, JS, PHP</small
+          >
+          <small class="techno techno_next techno_soda"
+            ><span>TECHNOLOGIE</span> : HTML, SCSS, JS, PHP</small
+          >
+          <small class="techno techno_next techno_dior"
+            ><span>TECHNOLOGIE</span> : HTML, SCSS, JS, PHP</small
+          >
+          <small class="techno techno_next techno_drugOptimal"
+            ><span>TECHNOLOGIE</span> : HTML, SCSS, JS, PHP</small
+          >
+          <small class="techno techno_next techno_flashFood"
+            ><span>TECHNOLOGIE</span> : HTML, SCSS, JS, PHP</small
+          >
+          <small class="techno techno_next techno_gopro"
+            ><span>TECHNOLOGIE</span> : HTML, SCSS, JS, PHP</small
+          >
 
-            <div class="interaction">
-
-                <button type="button" class="prev">
-                    PRECEDENT
-                </button>
-                <button type="button" onclick="visiteAnimation()" class="visite">
-                    VISITER
-                </button>
-                <button type="button" class="next">
-                    SUIVANT
-                </button>
-            </div>
+          <div class="interaction">
+            <button type="button" onclick="goToPrevSlide()" class="prev">
+              PRECEDENT
+            </button>
+            <button
+              type="button"
+              onclick="visiteAnimation(event)"
+              class="visite"
+              data-slide-index="1"
+            >
+              VISITER
+            </button>
+            <button type="button" onclick="goToNextSlide()" class="next">
+              SUIVANT
+            </button>
+          </div>
         </div>
-    </div>
-
+      </div>
     </section>
-  
 
-</body>
+    <section class="tous_mes_projets">
+      <h2>TOUS MES PROJETS</h2>
 
- <!-- --------------library-cdn------------------ -->
- <script src="https://cdn.jsdelivr.net/npm/@barba/core"></script>
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js" integrity="sha512-8E3KZoPoZCD+1dgfqhPbejQBnQfBXe8FuwL4z/c8sTrgeDMFEnoyTlH3obB4/fV+6Sg0a0XF+L/6xS4Xx1fUEg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+      <div class="interaction">
+        <button
+          type="button"
+          class="btn_techno btn_tous active"
+          data-filter="Tous"
+        >
+          TOUS
+        </button>
+
+        <button type="button" class="btn_techno btn_html" data-filter="html">
+          HTML / CSS / JS
+        </button>
+
+        <button
+          type="button"
+          class="btn_techno btn_threejs"
+          data-filter="threejs"
+        >
+          THREE JS
+        </button>
+
+        <button type="button" class="btn_techno btn_php" data-filter="php">
+          PHP / MYSQL
+        </button>
+      </div>
+
+      <div class="container__cards">
+        <a href="">
+          <div class="card threejs">
+            <img class="card_img" src="./img/cards/cards.png" alt="" />
+            <span class="hover_bg"></span>
+            <h3>IMOVIX</h3>
+          </div>
+        </a>
+        <a href="">
+          <div class="card html">
+            <img class="card_img" src="./img/cards/cards.png" alt="" />
+            <span class="hover_bg"></span>
+            <h3>IMOVIX</h3>
+          </div>
+        </a>
+        <a href="">
+          <div class="card html">
+            <img class="card_img" src="./img/cards/cards.png" alt="" />
+            <span class="hover_bg"></span>
+            <h3>IMOVIX</h3>
+          </div>
+        </a>
+        <a href="">
+          <div class="card html">
+            <img class="card_img" src="./img/cards/cards.png" alt="" />
+            <span class="hover_bg"></span>
+            <h3>IMOVIX</h3>
+          </div>
+        </a>
+        <a href="">
+          <div class="card php">
+            <img class="card_img" src="./img/cards/cards.png" alt="" />
+            <span class="hover_bg"></span>
+            <h3>IMOVIX</h3>
+          </div>
+        </a>
+        <a href="">
+          <div class="card php">
+            <img class="card_img" src="./img/cards/cards.png" alt="" />
+            <span class="hover_bg"></span>
+            <h3>IMOVIX</h3>
+          </div>
+        </a>
+        <a href="">
+          <div class="card php">
+            <img class="card_img" src="./img/cards/cards.png" alt="" />
+            <span class="hover_bg"></span>
+            <h3>IMOVIX</h3>
+          </div>
+        </a>
+        <a href="">
+          <div class="card threejs">
+            <img class="card_img" src="./img/cards/cards.png" alt="" />
+            <span class="hover_bg"></span>
+            <h3>IMOVIX</h3>
+          </div>
+        </a>
+      </div>
+    </section>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.js"
+      integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+      crossorigin="anonymous"
+    ></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $(".btn_techno").click(function () {
+          const value = $(this).attr("data-filter");
+          if (value == "Tous") {
+            $(".card").show("1000");
+          } else {
+            $(".card")
+              .not("." + value)
+              .hide("1000");
+            $(".card")
+              .filter("." + value)
+              .show("1000");
+          }
+        });
+      });
+    </script>
+  </body>
+
+  <!-- --------------library-cdn------------------ -->
+  <!-- <script src="https://cdn.jsdelivr.net/npm/@barba/core"></script> -->
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js" integrity="sha512-8E3KZoPoZCD+1dgfqhPbejQBnQfBXe8FuwL4z/c8sTrgeDMFEnoyTlH3obB4/fV+6Sg0a0XF+L/6xS4Xx1fUEg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/debug.addIndicators.min.js" integrity="sha512-RvUydNGlqYJapy0t4AH8hDv/It+zKsv4wOQGb+iOnEfa6NnF2fzjXgRy+FDjSpMfC3sjokNUzsfYZaZ8QAwIxg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TimelineLite.min.js" integrity="sha512-I0VFyPo7hdM7YrEbQ0pvX4bX2904k0+B19u/xBrPrQoMprfcSnIDfGFD8kP52GbAhwtDjkEVhXlQvj8+vkJyew==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TimelineMax.min.js" integrity="sha512-lJDBw/vKlGO8aIZB8/6CY4lV+EMAL3qzViHid6wXjH/uDrqUl+uvfCROHXAEL0T/bgdAQHSuE68vRlcFHUdrUw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -235,87 +421,101 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/CSSPlugin.min.js" integrity="sha512-ht40uOoiTef4nKq0THVzjIGh3VS108J577LVVgNXnQLXza3doXjoM3owin2vd+Hm6w88k12RIrePIVY2WNzz6Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/animation.gsap.js" integrity="sha512-judXDFLnOTJsUwd55lhbrX3uSoSQSOZR6vNrsll+4ViUFv+XOIr/xaIK96soMj6s5jVszd7I97a0H+WhgFwTEg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
 
- <!-- --------------library-local------------------ -->
+  <!-- --------------library-local------------------ -->
 
-    <script src="./js/local/scrollMagic.min.js"></script>
-    <script src="./js/local/debug.addIndicator.min.js"></script>
-    <script src="./js/local/TimelineLite.min.js"></script>
-    <script src="./js/local/TimelineMax.min.js"></script>
-    <script src="./js/local/TweenLite.min.js"></script>
-    <script src="./js/local/TweenMax.min.js"></script>
-    <script src="./js/local/BezierPlugin.min.js"></script>
-    <script src="./js/local/CSSPlugin.min.js"></script>
-    <script src="./js/local/animation.gsap.js"></script>
+  <script src="./js/local/scrollMagic.min.js"></script>
+  <script src="./js/local/debug.addIndicator.min.js"></script>
+  <script src="./js/local/TimelineLite.min.js"></script>
+  <script src="./js/local/TimelineMax.min.js"></script>
+  <script src="./js/local/TweenLite.min.js"></script>
+  <script src="./js/local/TweenMax.min.js"></script>
+  <script src="./js/local/BezierPlugin.min.js"></script>
+  <script src="./js/local/CSSPlugin.min.js"></script>
+  <script src="./js/local/animation.gsap.js"></script>
 
-    <script src="./js/libScrollMagic.js"></script>
-    <script src="./js/loader.js"></script>
-    <script src="./js/carrousel.js"></script>
-    <script src="./js/lazyLoading.js"></script>
-    <script src="./js/generateColor.js"></script>
-    <script src="./js/barba.js"></script>
+  <script src="./js/dev_scrollreveal.js"></script>
+  <script src="./js/filter.js"></script>
+  <script src="./js/libScrollMagic.js"></script>
+  <script src="./js/loader.js"></script>
+  <script src="./js/carrousel.js"></script>
+  <script src="./js/lazyLoading.js"></script>
+  <script src="./js/generateColor.js"></script>
 
- <!-- --------------page-script------------------ -->
+  <!-- --------------page-script------------------ -->
 
-    <script>
-        const darkMode = document.querySelector(".darkMode");
-        // const logo_dark_modeOn = document.querySelector(".logo_dark_modeOn");
-        // const logo_dark_modeOff = document.querySelector(".logo_dark_modeOff");
-        const myProject_img_white = document.querySelector(".myProject_img_white");
-        const myProject_img_black = document.querySelector(".myProject_img_black");
-        const logo_white = document.querySelector(".logo_white");
-        const logo_black = document.querySelector(".logo_black");
-    
-        darkMode.addEventListener("click", () => {
-        // logo_dark_modeOn.classList.toggle("logo_dark_modeOn_active");
-        // logo_dark_modeOff.classList.toggle("logo_dark_modeOff_active");
-        var r = document.querySelector(":root");
-        darkMode.classList.toggle("darkMode_active");
-    
-        if (darkMode.classList.contains("darkMode_active")) {
-            r.style.setProperty("--white", "#232323");
-            r.style.setProperty("--black", "#fcfcfc");
-            logo_white.classList.add("logo_white_active");
-            logo_black.classList.add("logo_black_active");
-            myProject_img_white.classList.add("myProject_img_white_active");
-            myProject_img_black.classList.add("myProject_img_black_active");
-        } else {
-            r.style.setProperty("--white", "#fcfcfc");
-            r.style.setProperty("--black", "#232323");
-            logo_white.classList.remove("logo_white_active");
-            logo_black.classList.remove("logo_black_active");
-            myProject_img_white.classList.remove("myProject_img_white_active");
-            myProject_img_black.classList.remove("myProject_img_black_active");
-        }
-        });
-    
-    
-        // -----------------------------
-    
-    
-    
-        // -----------------------------
-    
-    
-        function visiteAnimation() {
-            const header = document.querySelector(".header");
-            const imacs = document.querySelectorAll(".imac");
-            home_footer = document.querySelector(".home_footer");
-    
-            header.classList.add("header_active_visited");
-            home_footer.classList.add("home_footer_active_visited");
-            
-            for(let i=0; i<imacs.length; i++){
-                if (imacs[i].classList.contains("imac_center")) {
-                    imacs[i].classList.add("imac_center_active");
-                }
-            }
-            setTimeout(
-            function(){
-                window.location = "developpement_web.html" 
-            },
-            1000);
+  <script>
+    const darkMode = document.querySelector(".darkMode");
+    const myProject_img_white = document.querySelector(".myProject_img_white");
+    const myProject_img_black = document.querySelector(".myProject_img_black");
+    const logo_white = document.querySelector(".logo_white");
+    const logo_black = document.querySelector(".logo_black");
+
+    darkMode.addEventListener("click", () => {
+      var r = document.querySelector(":root");
+      darkMode.classList.toggle("darkMode_active");
+
+      if (darkMode.classList.contains("darkMode_active")) {
+        r.style.setProperty("--white", "#232323");
+        r.style.setProperty("--black", "#fcfcfc");
+        logo_white.classList.add("logo_white_active");
+        logo_black.classList.add("logo_black_active");
+        myProject_img_white.classList.add("myProject_img_white_active");
+        myProject_img_black.classList.add("myProject_img_black_active");
+      } else {
+        r.style.setProperty("--white", "#fcfcfc");
+        r.style.setProperty("--black", "#232323");
+        logo_white.classList.remove("logo_white_active");
+        logo_black.classList.remove("logo_black_active");
+        myProject_img_white.classList.remove("myProject_img_white_active");
+        myProject_img_black.classList.remove("myProject_img_black_active");
+      }
+    });
+
+    // -----------------------------
+    let currentSlideIndex = 1;
+
+    function goToPrevSlide() {
+      currentSlideIndex--;
+      updateSlideIndex(currentSlideIndex);
     }
-    
-    </script>
 
+    function goToNextSlide() {
+      currentSlideIndex++;
+      updateSlideIndex(currentSlideIndex);
+    }
+
+    function updateSlideIndex(index) {
+      const visitButton = document.querySelector(".visite");
+      visitButton.setAttribute("data-slide-index", index);
+    }
+
+    function visiteAnimation(event) {
+      const button = event.target;
+      const slideIndex = button.getAttribute("data-slide-index");
+      const header = document.querySelector(".header");
+      const imacs = document.querySelectorAll(".imac");
+      home_footer = document.querySelector(".home_footer");
+
+      header.classList.add("header_active_visited");
+      home_footer.classList.add("home_footer_active_visited");
+
+      for (let i = 0; i < imacs.length; i++) {
+        if (imacs[i].classList.contains("imac_center")) {
+          imacs[i].classList.add("imac_center_active");
+        }
+      }
+
+      let url = "";
+      if (slideIndex === "1") {
+        url = "imovix.html";
+      } else if (slideIndex === "2") {
+        url = "book.html";
+      }
+
+      setTimeout(function () {
+        window.location = url;
+      }, 1000);
+    }
+    // -----------------------------
+  </script>
 </html>
