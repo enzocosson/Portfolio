@@ -197,8 +197,8 @@ header ul .li_contact:hover {
   margin-bottom: 1vw;
   border-radius: 50%;
   background-color: var(--green);
+  border: 0.2vw solid var(--green);
   cursor: pointer;
-  border: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -210,6 +210,8 @@ header ul .li_contact:hover {
           align-items: center;
   -webkit-box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
           box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
 }
 
 .home_footer .darkMode .logo_darkmode {
@@ -224,7 +226,6 @@ header ul .li_contact:hover {
 
 .home_footer .darkMode:hover {
   background-color: var(--white);
-  border: 2px solid var(--green);
 }
 
 .home_footer .darkMode:hover .vector_darkMode {
@@ -265,6 +266,7 @@ header ul .li_contact:hover {
   margin-bottom: 1vw;
   border-radius: 50%;
   background-color: var(--green);
+  border: 0.2vw solid var(--green);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -276,6 +278,8 @@ header ul .li_contact:hover {
           align-items: center;
   -webkit-box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
           box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
 }
 
 .home_footer .rth svg {
@@ -290,7 +294,6 @@ header ul .li_contact:hover {
 
 .home_footer .rth:hover {
   background-color: var(--white);
-  border: 2px solid var(--green);
 }
 
 .home_footer .rth:hover path {
@@ -302,7 +305,7 @@ header ul .li_contact:hover {
   width: 3vw;
   height: 3vw;
   margin-bottom: 1vw;
-  border: 2px solid var(--green);
+  border: 0.2vw solid var(--green);
   border-radius: 50%;
   background-color: var(--green);
   display: -webkit-box;
@@ -334,7 +337,6 @@ header ul .li_contact:hover {
 
 .home_footer .change_color_btn:hover {
   background-color: var(--white);
-  border: 2px solid var(--green);
 }
 
 .home_footer .change_color_btn:hover path {
@@ -540,7 +542,7 @@ header ul .li_contact:hover {
   width: 11.2px;
   height: 11.2px;
   -webkit-animation: spinner-o824ag 1.4s infinite linear;
-          animation: spinner-o824ag 1.4s infinite linear;
+  animation: spinner-o824ag 1.4s infinite linear;
 }
 
 .loader .spinner div {
@@ -550,7 +552,7 @@ header ul .li_contact:hover {
   background: #fcfcfc;
   border-radius: 50%;
   -webkit-animation: spinner-vse6n7 1.75s infinite ease;
-          animation: spinner-vse6n7 1.75s infinite ease;
+  animation: spinner-vse6n7 1.75s infinite ease;
 }
 
 .loader .spinner div:nth-child(1) {
@@ -609,7 +611,7 @@ header ul .li_contact:hover {
 
 .loader_finish {
   -webkit-animation: loader 1s cubic-bezier(0.82, 0.02, 0.26, 1.01) forwards 1;
-          animation: loader 1s cubic-bezier(0.82, 0.02, 0.26, 1.01) forwards 1;
+  animation: loader 1s cubic-bezier(0.82, 0.02, 0.26, 1.01) forwards 1;
 }
 
 @-webkit-keyframes loader {
@@ -692,7 +694,7 @@ header ul .li_contact:hover {
   font-weight: 600;
   font-size: 17vw;
   position: absolute;
-  top: 52%;
+  top: 60%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%) rotate(353deg);
           transform: translate(-50%, -50%) rotate(353deg);
@@ -702,6 +704,7 @@ header ul .li_contact:hover {
   -webkit-text-stroke: 3px var(--white);
   z-index: 0;
   opacity: 0;
+  line-height: 25vh;
   -webkit-transition: 0.3s ease-out;
   transition: 0.3s ease-out;
 }
@@ -713,7 +716,7 @@ header ul .li_contact:hover {
   font-weight: 600;
   font-size: 17vw;
   position: absolute;
-  top: 52%;
+  top: 60%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%) rotate(353deg);
           transform: translate(-50%, -50%) rotate(353deg);
@@ -723,6 +726,7 @@ header ul .li_contact:hover {
   -webkit-text-stroke: 3px var(--white);
   z-index: -2;
   opacity: 0;
+  line-height: 25vh;
   -webkit-transition: 0.3s ease-out;
   transition: 0.3s ease-out;
 }
@@ -750,6 +754,7 @@ header ul .li_contact:hover {
   -webkit-text-stroke: 3px var(--green);
   z-index: 0;
   opacity: 0;
+  line-height: 25vh;
   -webkit-transition: 0.3s ease-out;
   transition: 0.3s ease-out;
 }
@@ -772,6 +777,7 @@ header ul .li_contact:hover {
   -webkit-text-stroke: 3px var(--green);
   z-index: -2;
   opacity: 0;
+  line-height: 25vh;
   -webkit-transition: 0.5s ease-out;
   transition: 0.5s ease-out;
 }
@@ -786,7 +792,7 @@ header ul .li_contact:hover {
 }
 
 .home .title .me {
-  width: 35vw;
+  height: 90vh;
   position: absolute;
   top: 60%;
   left: 50%;
@@ -809,6 +815,7 @@ header ul .li_contact:hover {
   -webkit-text-stroke: 3px var(--white);
   line-height: 20vh;
   margin-top: 10vh;
+  line-height: 25vh;
   -webkit-transition: 0.3s ease-out;
   transition: 0.3s ease-out;
 }
@@ -834,13 +841,13 @@ header ul .li_contact:hover {
   font-style: normal;
   letter-spacing: 0.5vw;
   -webkit-filter: drop-shadow(0px 2px 0.1vw rgba(0, 0, 0, 0.237));
-          filter: drop-shadow(0px 2px 0.1vw rgba(0, 0, 0, 0.237));
+  filter: drop-shadow(0px 2px 0.1vw rgba(0, 0, 0, 0.237));
   -webkit-transition: 0.5s ease-in-out;
   transition: 0.5s ease-in-out;
 }
 
 .home .title .title_small2 {
-  width: 100%;
+  width: 200%;
   position: absolute;
   top: 105%;
   left: 50%;
@@ -856,7 +863,7 @@ header ul .li_contact:hover {
   font-style: normal;
   letter-spacing: 0.5vw;
   -webkit-filter: drop-shadow(0px 2px 0.1vw rgba(0, 0, 0, 0.237));
-          filter: drop-shadow(0px 2px 0.1vw rgba(0, 0, 0, 0.237));
+  filter: drop-shadow(0px 2px 0.1vw rgba(0, 0, 0, 0.237));
   opacity: 0;
   -webkit-transition: 0.5s ease-in-out;
   transition: 0.5s ease-in-out;
@@ -935,15 +942,15 @@ header ul .li_contact:hover {
   -webkit-box-pack: right;
       -ms-flex-pack: right;
           justify-content: right;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
   padding: 2vw 3vw;
 }
 
 .home .home_side_left .social {
   position: relative;
-  height: 100%;
+  height: 90%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -983,7 +990,7 @@ header ul .li_contact:hover {
 
 .home .home_side_left .social span {
   margin-left: 2px;
-  height: 45%;
+  height: 100%;
   width: 2px;
   background-color: var(--white);
 }
@@ -1083,8 +1090,8 @@ header ul .li_contact:hover {
 
 .home .home_side_right p {
   -webkit-writing-mode: vertical-rl;
-      -ms-writing-mode: tb-rl;
-          writing-mode: vertical-rl;
+  -ms-writing-mode: tb-rl;
+  writing-mode: vertical-rl;
   color: var(--white);
   font-family: "Inter", sans-serif;
   font-weight: 400;
@@ -1248,7 +1255,8 @@ header ul .li_contact:hover {
 }
 
 .works .right_text_absolute {
-  height: 130%;
+  height: 145%;
+  width: 19vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1266,13 +1274,13 @@ header ul .li_contact:hover {
           transform: translate(-50%, -50%);
   -ms-writing-mode: tb-rl;
   -webkit-writing-mode: vertical-lr;
-          writing-mode: vertical-lr;
+  writing-mode: vertical-lr;
   z-index: 5;
   font-family: Base Neue;
   color: var(--green);
   letter-spacing: 2vh;
   -webkit-text-stroke: 3px var(--white);
-  z-index: 5;
+  z-index: 10;
 }
 
 .works .h3_text {
@@ -1287,7 +1295,7 @@ header ul .li_contact:hover {
           align-items: flex-start;
   font-size: 18vw;
   position: absolute;
-  top: 90%;
+  top: 75%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
@@ -1589,7 +1597,7 @@ header ul .li_contact:hover {
   height: 20vw;
   border-radius: 50%;
   background-color: var(--green);
-  border: 4px solid var(--white);
+  border: 0.3vw solid var(--white);
   z-index: 4;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1616,7 +1624,7 @@ header ul .li_contact:hover {
   width: 20vw;
   height: 20vw;
   border-radius: 50%;
-  border: 4px solid var(--green);
+  border: 0.3vw solid var(--green);
   z-index: 3;
   opacity: 0;
 }
@@ -1630,7 +1638,7 @@ header ul .li_contact:hover {
   width: 20vw;
   height: 20vw;
   border-radius: 50%;
-  border: 4px solid var(--green);
+  border: 0.3vw solid var(--green);
   z-index: 2;
   opacity: 0;
 }
@@ -1644,7 +1652,7 @@ header ul .li_contact:hover {
   width: 20vw;
   height: 20vw;
   border-radius: 50%;
-  border: 4px solid var(--green);
+  border: 0.3vw solid var(--green);
   z-index: 1;
   opacity: 0;
 }
@@ -1905,7 +1913,8 @@ header ul .li_contact:hover {
 }
 
 .feed .container_feed_col .container_travel .travel1 {
-  background: url(/img/photo_video/travel1.png) no-repeat;
+  background: url(/img/photo_video/travel1.png) center/contain no-repeat;
+  color: transparent;
   background-size: cover;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -1965,7 +1974,7 @@ header ul .li_contact:hover {
   height: 20vw;
   border-radius: 50%;
   background-color: var(--green);
-  border: 4px solid var(--white);
+  border: 0.3vw solid var(--white);
   z-index: 4;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1992,7 +2001,7 @@ header ul .li_contact:hover {
   width: 20vw;
   height: 20vw;
   border-radius: 50%;
-  border: 4px solid var(--green);
+  border: 0.3vw solid var(--green);
   z-index: 3;
   opacity: 0;
 }
@@ -2006,7 +2015,7 @@ header ul .li_contact:hover {
   width: 20vw;
   height: 20vw;
   border-radius: 50%;
-  border: 4px solid var(--green);
+  border: 0.3vw solid var(--green);
   z-index: 2;
   opacity: 0;
 }
@@ -2020,7 +2029,7 @@ header ul .li_contact:hover {
   width: 20vw;
   height: 20vw;
   border-radius: 50%;
-  border: 4px solid var(--green);
+  border: 0.3vw solid var(--green);
   z-index: 1;
   opacity: 0;
 }
@@ -2089,7 +2098,7 @@ header ul .li_contact:hover {
       -ms-flex-align: center;
           align-items: center;
   background-color: var(--white);
-  border-radius: 5px;
+  border-radius: 0.5vw;
   font-size: 1.5vw;
   letter-spacing: 0.3vw;
   font-weight: bold;

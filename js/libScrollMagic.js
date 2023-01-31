@@ -70,51 +70,51 @@ const pathH3Text = {
   ],
 };
 
-const works = new TimelineLite()
+const works = new TimelineMax()
   .add(
-    TweenLite.to(".green_circle", 1, {
+    TweenMax.to(".green_circle", 1, {
       bezier: pathGreenCircle,
       ease: Power1.easeOut,
     }),
     "-=1"
   )
   .add(
-    TweenLite.to(".white_circle", 1, {
+    TweenMax.to(".white_circle", 1, {
       bezier: pathGreenWhite,
       ease: Power1.easeOut,
     }),
     "-=0.8"
   )
   .add(
-    TweenLite.to(".right_text_absolute", 1, {
+    TweenMax.to(".right_text_absolute", 1, {
       bezier: pathTextAbs,
       ease: Power1.easeInOut,
     }),
     "-=2"
   )
   .add(
-    TweenLite.to(".iphone1", 1, {
+    TweenMax.to(".iphone1", 1, {
       bezier: pathIphone1,
       ease: Power1.easeOut,
     }),
     "-=2"
   )
   .add(
-    TweenLite.to(".iphone2", 1, {
+    TweenMax.to(".iphone2", 1, {
       bezier: pathIphone2,
       ease: Power1.easeOut,
     }),
     "-=1.8"
   )
   .add(
-    TweenLite.to(".iphone3", 1, {
+    TweenMax.to(".iphone3", 1, {
       bezier: pathIphone3,
       ease: Power1.easeOut,
     }),
     "-=1.6"
   )
   .add(
-    TweenLite.to(".h3_text", 1, {
+    TweenMax.to(".h3_text", 1, {
       bezier: pathH3Text,
       ease: Power1.easeOut,
     }),
@@ -145,30 +145,30 @@ const pathImacSoda = {
   curviness: 1.25,
   values: [{ top: "-30%", transform: "rotate(-20deg)" }],
 };
-const soda = new TimelineLite()
+const soda = new TimelineMax()
   .add(
-    TweenLite.to(".first_translate", 1, {
+    TweenMax.to(".first_translate", 1, {
       bezier: pathfirstH3Text,
       ease: Power1.easeInOut,
     }),
     "-=1"
   )
   .add(
-    TweenLite.to(".last_translate", 1, {
+    TweenMax.to(".last_translate", 1, {
       bezier: pathlastH3Text,
       ease: Power1.easeInOut,
     }),
     "-=1"
   )
   .add(
-    TweenLite.to(".imac_soda", 1, {
+    TweenMax.to(".imac_soda", 1, {
       bezier: pathImacSoda,
       ease: Power1.easeOut,
     }),
     "-=1"
   )
   .add(
-    TweenLite.to(".imac_soda_black", 1, {
+    TweenMax.to(".imac_soda_black", 1, {
       bezier: pathImacSoda,
       ease: Power1.easeOut,
     }),
@@ -240,71 +240,65 @@ const pathTitreSkills = {
 };
 const pathBgTitreSkills = {
   curviness: 1.25,
-  values: [{ fontSize: "50vw", opacity: 1 }],
+  values: [{ fontSize: "40vw", opacity: 1 }],
 };
-const concept = new TimelineLite()
+const concept = new TimelineMax()
 
   .add(
-    TweenLite.to(".ipad_imovix", 1, {
+    TweenMax.to(".ipad_imovix", 1, {
       bezier: pathIpadImovix,
       ease: Power1.easeOut,
     }),
     "-=2"
   )
   .add(
-    TweenLite.to(".ipad_spiderman", 1, {
+    TweenMax.to(".ipad_spiderman", 1, {
       bezier: pathIpadImovix2,
       ease: Power1.easeOut,
     }),
     "-=1.7"
   )
   .add(
-    TweenLite.to(".ipad_myList", 1, {
+    TweenMax.to(".ipad_myList", 1, {
       bezier: pathIpadImovix3,
       ease: Power1.easeOut,
     }),
     "-=0.75"
   )
   .add(
-    TweenLite.to(".ipad_log", 1, {
+    TweenMax.to(".ipad_log", 1, {
       bezier: pathIpadImovix4,
       ease: Power1.easeOut,
     }),
     "-=0.8"
   )
-  // .add(
-  //   TweenLite.to(".concept", 1, {
-  //     bezier: pathConcept,
-  //     ease: Power1.easeInOut,
-  //   }),
-  //   "-=2"
-  // )
+
   .add(
-    TweenLite.to(".whiteRectangle", 1, {
+    TweenMax.to(".whiteRectangle", 1, {
       bezier: pathWhiteRectangle,
       ease: Power1.easeInOut,
     }),
-    "-=1.5"
+    "-=1"
   )
   .add(
-    TweenLite.to(".titre_skills", 1, {
+    TweenMax.to(".titre_skills", 1, {
       bezier: pathTitreSkills,
       ease: Power1.easeInOut,
     }),
-    "=-1.2"
+    "=-0.3"
   )
   .add(
-    TweenLite.to(".bg_titre_skills", 1, {
+    TweenMax.to(".bg_titre_skills", 1, {
       bezier: pathBgTitreSkills,
       ease: Power1.easeInOut,
     }),
-    "=-1"
+    "=-0.9"
   );
 const Controller3 = new ScrollMagic.Controller();
 
 const sceneConcept = new ScrollMagic.Scene({
   triggerElement: ".concept",
-  duration: 3000,
+  duration: 3500,
   triggerHook: 0.4,
 })
   .setTween(concept)
@@ -328,141 +322,141 @@ const pathH1Bg = {
   ],
 };
 
-const skills = new TimelineLite()
+const skills = new TimelineMax()
   .add(
-    TweenLite.to(".skills_html", 1, {
+    TweenMax.to(".skills_html", 1, {
       bezier: pathH1,
       ease: Power1.easeInOut,
     })
   )
   .add(
-    TweenLite.to(".skills_html_bg", 0.4, {
+    TweenMax.to(".skills_html_bg", 0.4, {
       bezier: pathH1Bg,
       ease: Power1.easeInOut,
     }),
     "=-0.67"
   )
   .add(
-    TweenLite.to(".skills_css", 1, {
+    TweenMax.to(".skills_css", 1, {
       bezier: pathH1,
       ease: Power1.easeInOut,
     }),
     "=-0.8"
   )
   .add(
-    TweenLite.to(".skills_css_bg", 0.4, {
+    TweenMax.to(".skills_css_bg", 0.4, {
       bezier: pathH1Bg,
       ease: Power1.easeInOut,
     }),
     "=-0.67"
   )
   .add(
-    TweenLite.to(".skills_scss", 1, {
+    TweenMax.to(".skills_scss", 1, {
       bezier: pathH1,
       ease: Power1.easeInOut,
     }),
     "=-0.8"
   )
   .add(
-    TweenLite.to(".skills_scss_bg", 0.4, {
+    TweenMax.to(".skills_scss_bg", 0.4, {
       bezier: pathH1Bg,
       ease: Power1.easeInOut,
     }),
     "=-0.67"
   )
   .add(
-    TweenLite.to(".skills_js", 1, {
+    TweenMax.to(".skills_js", 1, {
       bezier: pathH1,
       ease: Power1.easeInOut,
     }),
     "=-0.8"
   )
   .add(
-    TweenLite.to(".skills_js_bg", 0.3, {
+    TweenMax.to(".skills_js_bg", 0.3, {
       bezier: pathH1Bg,
       ease: Power1.easeInOut,
     }),
     "=-0.67"
   )
   .add(
-    TweenLite.to(".skills_reactJs", 1, {
+    TweenMax.to(".skills_reactJs", 1, {
       bezier: pathH1,
       ease: Power1.easeInOut,
     }),
     "=-0.8"
   )
   .add(
-    TweenLite.to(".skills_reactJs_bg", 0.3, {
+    TweenMax.to(".skills_reactJs_bg", 0.3, {
       bezier: pathH1Bg,
       ease: Power1.easeInOut,
     }),
     "=-0.67"
   )
   .add(
-    TweenLite.to(".skills_threeJs", 1, {
+    TweenMax.to(".skills_threeJs", 1, {
       bezier: pathH1,
       ease: Power1.easeInOut,
     }),
     "=-0.8"
   )
   .add(
-    TweenLite.to(".skills_threeJs_bg", 0.3, {
+    TweenMax.to(".skills_threeJs_bg", 0.3, {
       bezier: pathH1Bg,
       ease: Power1.easeInOut,
     }),
     "=-0.67"
   )
   .add(
-    TweenLite.to(".skills_php", 1, {
+    TweenMax.to(".skills_php", 1, {
       bezier: pathH1,
       ease: Power1.easeInOut,
     }),
     "=-0.8"
   )
   .add(
-    TweenLite.to(".skills_php_bg", 0.3, {
+    TweenMax.to(".skills_php_bg", 0.3, {
       bezier: pathH1Bg,
       ease: Power1.easeInOut,
     }),
     "=-0.67"
   )
   .add(
-    TweenLite.to(".skills_mysql", 1, {
+    TweenMax.to(".skills_mysql", 1, {
       bezier: pathH1,
       ease: Power1.easeInOut,
     }),
     "=-0.8"
   )
   .add(
-    TweenLite.to(".skills_mysql_bg", 0.3, {
+    TweenMax.to(".skills_mysql_bg", 0.3, {
       bezier: pathH1Bg,
       ease: Power1.easeInOut,
     }),
     "=-0.67"
   )
   .add(
-    TweenLite.to(".skills_git", 1, {
+    TweenMax.to(".skills_git", 1, {
       bezier: pathH1,
       ease: Power1.easeInOut,
     }),
     "=-0.8"
   )
   .add(
-    TweenLite.to(".skills_git_bg", 0.3, {
+    TweenMax.to(".skills_git_bg", 0.3, {
       bezier: pathH1Bg,
       ease: Power1.easeInOut,
     }),
     "=-0.67"
   )
   .add(
-    TweenLite.to(".skills_figma", 1, {
+    TweenMax.to(".skills_figma", 1, {
       bezier: pathH1,
       ease: Power1.easeInOut,
     }),
     "=-0.8"
   )
   .add(
-    TweenLite.to(".skills_figma_bg", 0.3, {
+    TweenMax.to(".skills_figma_bg", 0.3, {
       bezier: pathH1Bg,
       ease: Power1.easeInOut,
     }),
@@ -486,8 +480,8 @@ const pathTransitionCircle = {
   values: [{ width: "25vw", height: "20vw", borderRadius: "500vw" }],
 };
 
-const transition = new TimelineLite().add(
-  TweenLite.to(".transition_circle", 1, {
+const transition = new TimelineMax().add(
+  TweenMax.to(".transition_circle", 1, {
     bezier: pathTransitionCircle,
     ease: Power1.easeInOut,
   }),
@@ -517,36 +511,36 @@ const pathTransitionTitle = {
   values: [{ opacity: 1, letterSpacing: "0vw" }],
 };
 
-const seeMore = new TimelineLite()
+const seeMore = new TimelineMax()
   .add(
-    TweenLite.to(".stroke_green_circle1", 1, {
+    TweenMax.to(".stroke_green_circle1", 1, {
       bezier: pathGreenStrokeCircleMain,
       ease: Power1.easeInOut,
     })
   )
   .add(
-    TweenLite.to(".stroke_green_circle2", 1, {
+    TweenMax.to(".stroke_green_circle2", 1, {
       bezier: pathGreenStrokeCircle,
       ease: Power1.easeInOut,
     }),
     "-=0.9"
   )
   .add(
-    TweenLite.to(".stroke_green_circle3", 1, {
+    TweenMax.to(".stroke_green_circle3", 1, {
       bezier: pathGreenStrokeCircle,
       ease: Power1.easeInOut,
     }),
     "-=0.9"
   )
   .add(
-    TweenLite.to(".stroke_green_circle4", 1, {
+    TweenMax.to(".stroke_green_circle4", 1, {
       bezier: pathGreenStrokeCircle,
       ease: Power1.easeInOut,
     }),
     "-=0.9"
   )
   .add(
-    TweenLite.to(".transition_title", 1, {
+    TweenMax.to(".transition_title", 1, {
       bezier: pathTransitionTitle,
       ease: Power1.easeInOut,
     }),
@@ -594,15 +588,15 @@ const pathBgPhoto = {
   ],
 };
 
-const photoVideoTop = new TimelineLite()
+const photoVideoTop = new TimelineMax()
   .add(
-    TweenLite.to(".photoVideoTop__title_front", 1, {
+    TweenMax.to(".photoVideoTop__title_front", 1, {
       bezier: pathTitleFront,
       ease: Power1.easeInOut,
     })
   )
   .add(
-    TweenLite.to(".photoVideoTop__title", 1, {
+    TweenMax.to(".photoVideoTop__title", 1, {
       bezier: pathTitle,
       ease: Power1.easeInOut,
     }),
@@ -610,7 +604,7 @@ const photoVideoTop = new TimelineLite()
   )
 
   .add(
-    TweenLite.to(".container_photoVideoTop_img", 1, {
+    TweenMax.to(".container_photoVideoTop_img", 1, {
       bezier: pathBgPhoto,
       ease: Power1.easeInOut,
     })
@@ -677,67 +671,39 @@ const pathTravelImg = {
     },
   ],
 };
-const feed = new TimelineLite()
+const feed = new TimelineMax()
   .add(
-    TweenLite.to(".col3", 1, {
+    TweenMax.to(".col3", 1, {
       bezier: pathFeed3,
       ease: Power1.easeInOut,
     })
   )
   .add(
-    TweenLite.to(".col2", 1, {
+    TweenMax.to(".col2", 1, {
       bezier: pathFeed2,
       ease: Power1.easeInOut,
     }),
     "=-1"
   )
   .add(
-    TweenLite.to(".col4", 1, {
+    TweenMax.to(".col4", 1, {
       bezier: pathFeed2,
       ease: Power1.easeInOut,
     }),
     "=-1"
   )
   .add(
-    TweenLite.to(".miniatures", 1, {
+    TweenMax.to(".miniatures", 1, {
       bezier: pathMiniatures,
       ease: Power1.easeInOut,
     }),
     "=-1"
-  )
-  .add(
-    TweenLite.to(".travel_middle", 1, {
-      bezier: pathTravel,
-      ease: Power1.easeInOut,
-    }),
-    "=0.5"
-  )
-  .add(
-    TweenLite.to(".travel_second", 1, {
-      bezier: pathTravel,
-      ease: Power1.easeInOut,
-    }),
-    "=-1"
-  )
-  .add(
-    TweenLite.to(".travel_side", 1, {
-      bezier: pathTravel,
-      ease: Power1.easeInOut,
-    }),
-    "=-1"
-  )
-  .add(
-    TweenLite.to(".travel", 1, {
-      bezier: pathTravelImg,
-      ease: Power1.easeOut,
-    }),
-    "=0"
   );
 const Controller8 = new ScrollMagic.Controller();
 
 const sceneWild = new ScrollMagic.Scene({
   triggerElement: ".feed",
-  duration: 3500,
+  duration: 4000,
   triggerHook: 0.2,
 })
   .setTween(feed)
@@ -760,36 +726,36 @@ const pathTransitionTitleAlbum = {
   values: [{ opacity: 1, letterSpacing: "0vw" }],
 };
 
-const seeMoreAlbum = new TimelineLite()
+const seeMoreAlbum = new TimelineMax()
   .add(
-    TweenLite.to(".album_stroke_green_circle1", 1, {
+    TweenMax.to(".album_stroke_green_circle1", 1, {
       bezier: pathCircleAlbum,
       ease: Power1.easeInOut,
     })
   )
   .add(
-    TweenLite.to(".album_stroke_green_circle2", 1, {
+    TweenMax.to(".album_stroke_green_circle2", 1, {
       bezier: pathCircleAlbum2,
       ease: Power1.easeInOut,
     }),
     "-=0.9"
   )
   .add(
-    TweenLite.to(".album_stroke_green_circle3", 1, {
+    TweenMax.to(".album_stroke_green_circle3", 1, {
       bezier: pathCircleAlbum2,
       ease: Power1.easeInOut,
     }),
     "-=0.9"
   )
   .add(
-    TweenLite.to(".album_stroke_green_circle4", 1, {
+    TweenMax.to(".album_stroke_green_circle4", 1, {
       bezier: pathCircleAlbum2,
       ease: Power1.easeInOut,
     }),
     "-=0.9"
   )
   .add(
-    TweenLite.to(".album_transition_title", 1, {
+    TweenMax.to(".album_transition_title", 1, {
       bezier: pathTransitionTitleAlbum,
       ease: Power1.easeInOut,
     }),
