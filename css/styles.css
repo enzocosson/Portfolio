@@ -65,6 +65,48 @@ html {
   color: #fcfcfc;
 }
 
+.cont-bandes {
+  pointer-events: none;
+  width: 100%;
+  height: 100vh;
+  background: transparent;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  overflow: hidden;
+  position: absolute;
+  pointer-events: none;
+  /* background: #000; */
+  z-index: 99999999999;
+}
+
+.bande {
+  width: 10%;
+  height: 0%;
+}
+
+.bande:nth-child(even) {
+  background: var(--green);
+}
+
+.bande:nth-child(odd) {
+  background: var(--white);
+}
+
+.wipe-transition {
+  pointer-events: none;
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background: var(--black);
+  position: absolute;
+  top: -100%;
+  z-index: 99999999999;
+}
+
 header {
   position: absolute;
   top: 0;
@@ -191,6 +233,7 @@ header ul .li_contact:hover {
 }
 
 .home_footer .darkMode {
+  cursor: pointer;
   position: relative;
   width: 3vw;
   height: 3vw;
@@ -261,6 +304,7 @@ header ul .li_contact:hover {
 }
 
 .home_footer .rth {
+  cursor: pointer;
   width: 3vw;
   height: 3vw;
   margin-bottom: 1vw;
@@ -2541,6 +2585,7 @@ header ul .li_contact:hover {
 }
 
 .developpement_web_page .imac_center_active {
+  position: fixed;
   -webkit-transform: perspective(1000px) translate(-50%, -50%) rotateZ(0deg) rotateY(0deg) scale(3.5);
           transform: perspective(1000px) translate(-50%, -50%) rotateZ(0deg) rotateY(0deg) scale(3.5);
   top: 71%;
@@ -2711,6 +2756,7 @@ header ul .li_contact:hover {
   width: 100%;
   height: 5vh;
   text-align: center;
+  background-color: transparent;
 }
 
 .developpement_web_page .description .presentation_site .is-splited {
@@ -2900,6 +2946,65 @@ header ul .li_contact:hover {
 .tous_mes_projets .container__cards .card:hover h3 {
   opacity: 1;
   color: var(--white);
+}
+
+.presentation_site {
+  width: 100%;
+  height: 100vh;
+  background-color: var(--green);
+}
+
+.presentation_site .imac {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 35vw;
+  -webkit-animation: zoom_out 3s cubic-bezier(0.95, 0.01, 0.58, 1) 1 forwards;
+          animation: zoom_out 3s cubic-bezier(0.95, 0.01, 0.58, 1) 1 forwards;
+}
+
+@-webkit-keyframes zoom_out {
+  0% {
+    -webkit-transform: perspective(1000px) translate(-50%, -50%) rotateZ(0deg) rotateY(0deg) scale(3.5);
+            transform: perspective(1000px) translate(-50%, -50%) rotateZ(0deg) rotateY(0deg) scale(3.5);
+    top: 71%;
+    left: 50%;
+  }
+  50% {
+    -webkit-transform: perspective(1000px) translate(-50%, -50%) rotateZ(0deg) rotateY(0deg) scale(1);
+            transform: perspective(1000px) translate(-50%, -50%) rotateZ(0deg) rotateY(0deg) scale(1);
+    top: 50%;
+    left: 50%;
+  }
+  100% {
+    -webkit-transform: perspective(1000px) translate(-50%, -50%) rotateZ(0deg) rotateY(0deg) scale(1.3);
+            transform: perspective(1000px) translate(-50%, -50%) rotateZ(0deg) rotateY(0deg) scale(1.3);
+    top: 50%;
+    left: 10%;
+  }
+}
+
+@keyframes zoom_out {
+  0% {
+    -webkit-transform: perspective(1000px) translate(-50%, -50%) rotateZ(0deg) rotateY(0deg) scale(3.5);
+            transform: perspective(1000px) translate(-50%, -50%) rotateZ(0deg) rotateY(0deg) scale(3.5);
+    top: 71%;
+    left: 50%;
+  }
+  50% {
+    -webkit-transform: perspective(1000px) translate(-50%, -50%) rotateZ(0deg) rotateY(0deg) scale(1);
+            transform: perspective(1000px) translate(-50%, -50%) rotateZ(0deg) rotateY(0deg) scale(1);
+    top: 50%;
+    left: 50%;
+  }
+  100% {
+    -webkit-transform: perspective(1000px) translate(-50%, -50%) rotateZ(0deg) rotateY(0deg) scale(1.3);
+            transform: perspective(1000px) translate(-50%, -50%) rotateZ(0deg) rotateY(0deg) scale(1.3);
+    top: 50%;
+    left: 10%;
+  }
 }
 
 footer {

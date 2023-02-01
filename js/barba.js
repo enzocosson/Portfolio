@@ -1,20 +1,45 @@
+const wipe = document.querySelector('.wipe-transition');
+// const allBandes = document.querySelectorAll('.bande');
+const TLAnim = new TimelineMax();
+
+function delay(n) {
+  return new Promise((done) => {
+    setTimeout(() => {
+      done();
+    }, n)
+  })
+}
+
 barba.init({
+
+  sync: true,
+
   transitions: [
     {
-      name: "opacity-transition",
-      leave(data) {
-        // Use gsap to animate the opacity of the current container to 0
-        return gsap.to(data.current.container, {
-          opacity: 0,
-        });
+      async leave(){
+
+        const done = this.async();
+
+        // TLAnim
+        // .to(allBandes, {height: '100%', stagger: 0.05})
+
+        TLAnim.to(wipe, {top: '0%', ease: "power2.out", duration: 0.5});
+
+        await delay(1500);
+        done();
+
       },
-      enter(data) {
-        // Use gsap to animate the opacity of the next container from 0 to 1
-        return gsap.from(data.next.container, {
-          opacity: 0,
-        });
-      },
-      // You can add other function like before, after and once
-    },
-  ],
-});
+      enter(){
+
+        TLAnim
+        .to(wipe, {top: '100%', ease:"power2.in", duration: 0.5})
+        .set(wipe, {top: '-100%'})
+
+        // TLAnim
+        // .to(allBandes, {height: '0%', stagger: 0.05, ease: "power2.in", duration: 0.5})
+
+      }
+    }
+  ]
+
+})

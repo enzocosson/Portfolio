@@ -1,8 +1,8 @@
 window.sr = ScrollReveal();
 
 sr.reveal('.card', {
-    interval: 250,
-    duration: 3000,
+    interval: 150,
+    duration: 2000,
     origin:'top',
-    distance:'50px',
+    distance:'30px',
 })

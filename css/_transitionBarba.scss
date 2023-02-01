@@ -1,0 +1,35 @@
+.cont-bandes {
+  pointer-events: none;
+  width: 100%;
+  height: 100vh;
+  background: transparent;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  position: absolute;
+  pointer-events: none;
+  /* background: #000; */
+  z-index: 99999999999;
+}
+.bande {
+  width: 10%;
+  height: 0%;
+}
+.bande:nth-child(even) {
+  background: var(--green);
+}
+.bande:nth-child(odd) {
+  background: var(--white);
+}
+
+.wipe-transition {
+  pointer-events: none;
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background: var(--black);
+  // background: linear-gradient(180deg, var(--white), var(--green));
+  position: absolute;
+  top: -100%;
+  z-index: 99999999999;
+}
