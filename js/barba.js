@@ -1,45 +1,36 @@
-const wipe = document.querySelector('.wipe-transition');
-// const allBandes = document.querySelectorAll('.bande');
-const TLAnim = new TimelineMax();
+export function initBarba() {
+  const wipe = document.querySelector(".wipe-transition");
+  const TLAnim = new TimelineMax();
 
-function delay(n) {
-  return new Promise((done) => {
-    setTimeout(() => {
-      done();
-    }, n)
-  })
-}
-
-barba.init({
-
-  sync: true,
-
-  transitions: [
-    {
-      async leave(){
-
-        const done = this.async();
-
-        // TLAnim
-        // .to(allBandes, {height: '100%', stagger: 0.05})
-
-        TLAnim.to(wipe, {top: '0%', ease: "power2.out", duration: 0.5});
-
-        await delay(1500);
+  function delay(n) {
+    return new Promise((done) => {
+      setTimeout(() => {
         done();
+      }, n);
+    });
+  }
 
+  barba.init({
+    sync: true,
+
+    transitions: [
+      {
+        async leave() {
+          const done = this.async();
+
+          TLAnim.to(wipe, { top: "0%", ease: "power2.InOut", duration: 0.5 });
+
+          await delay(1500);
+          done();
+        },
+        enter() {
+          TLAnim.to(wipe, {
+            top: "100%",
+            ease: "power2.in",
+            duration: 0.5,
+          }).set(wipe, { top: "-100%", ease: "power2.InOut" });
+        },
       },
-      enter(){
-
-        TLAnim
-        .to(wipe, {top: '100%', ease:"power2.in", duration: 0.5})
-        .set(wipe, {top: '-100%'})
-
-        // TLAnim
-        // .to(allBandes, {height: '0%', stagger: 0.05, ease: "power2.in", duration: 0.5})
-
-      }
-    }
-  ]
-
-})
+    ],
+  });
+}

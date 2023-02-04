@@ -5,6 +5,7 @@ var r = document.querySelector(":root");
 function generateColors() {
   container_colors.classList.toggle("container_colors_active");
 }
+
 function colorVert() {
   r.style.setProperty("--green", "#98f5e1");
 }
