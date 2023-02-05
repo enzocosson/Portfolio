@@ -10,19 +10,8 @@
   </head>
 
   <body data-barba="wrapper">
-    <div class="cont-bandes">
-      <div class="bande"></div>
-      <div class="bande"></div>
-      <div class="bande"></div>
-      <div class="bande"></div>
-      <div class="bande"></div>
-      <div class="bande"></div>
-      <div class="bande"></div>
-      <div class="bande"></div>
-      <div class="bande"></div>
-      <div class="bande"></div>
-    </div>
-    <div class="wipe-transition"></div>
+
+    <div class="transition_slide_enter"></div>
 
     <section class="container_colors">
       <div class="bg_colors"></div>
@@ -106,16 +95,30 @@
         </svg>
       </button>
     </div>
+
+
     <main data-barba="container" data-barba-namespace="pageDev">
       <section
         class="presentation_site barba-container"
         data-namespace="imovix"
       >
-        <img class="imac" src="./img/mockup/imac_imovix2.png" alt="" />
+        <img class="bg_website" src="./img/cards/card_imovix.png" alt="" />
+        <div class="presentation_site_top">
+      
+          <img class="presentation_title" src="./img/title/IMOVIX.png" alt="">
+        </div>
+        <div class="presentation_site_bottom">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec rutrum, dui ac facilisis blandit, sapien augue efficitur nulla, quis fringilla leo ante sed risus. Proin elementum, massa eget blandit dapibus, enim mi sagittis urna, vitae semper diam ante vitae orci. Nulla nec orci erat. Sed volutpat lectus ante, at consectetur ipsum tristique et. Quisque vel quam sit amet mi aliquam efficitur a et est. Nulla eleifend felis dapibus convallis cursus. Etiam porta tellus turpis, vitae laoreet odio molestie sit amet. Morbi finibus euismod nisi at feugiat. Nulla facilisi. Aliquam in elit enim. Pellentesque enim lectus, commodo nec tempor at, porttitor maximus arcu. Nam id posuere metus.
+          </p>
+        </div>
       </section>
     </main>
+
+
+
+
   </body>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.1/gsap.min.js"></script>
-  <script src="https://unpkg.com/@barba/core"></script>
-  <script src="./js/barba.js"></script>
+  <script src="./js/generateColor.js"></script>
+  <script type="module" src="./js/app.js"></script>
 </html>

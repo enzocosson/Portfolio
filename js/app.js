@@ -6,6 +6,8 @@ import { filter } from "./filter.js";
 import { devScrollReveal } from "./dev_scrollreveal.js";
 import { darkModeIndex } from "./darkMode.js";
 import { darkModeDev } from "./darkMode.js";
+import { darkModeSite } from "./darkMode.js";
+import { siteScrollReveal } from "./site_scrollreveal.js";
 
 function getURL() {
   return console.log(window.location.href);
@@ -19,34 +21,37 @@ switch (url) {
   case "http://192.168.1.70:5500/":
     loader();
     darkModeIndex();
-    // initBarba();
     initScrollMagic();
     break;
   case "http://192.168.1.70:5500/index.html":
     loader();
     darkModeIndex();
-    // initBarba();
     initScrollMagic();
     break;
   case "https://www.enzo-cosson.fr/index.html":
     loader();
     darkModeIndex();
-    // initBarba();
     initScrollMagic();
     break;
   case "http://192.168.1.70:5500/developpement_web.html":
-    // initBarba();
     darkModeDev();
     carrousel();
     filter();
     devScrollReveal();
     break;
   case "https://www.enzo-cosson.fr/developpement_web.html":
-    // initBarba();
     darkModeDev();
     carrousel();
     filter();
     devScrollReveal();
+    break;
+  case "http://192.168.1.70:5500/imovix.html":
+    darkModeSite();
+    siteScrollReveal;
+    break;
+  case "https://www.enzo-cosson.fr/imovix.html":
+    darkModeSite();
+    siteScrollReveal;
     break;
 
   default:

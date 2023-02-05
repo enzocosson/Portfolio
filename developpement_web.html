@@ -10,20 +10,6 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
 
-  <body data-barba="wrapper">
-    <div class="cont-bandes">
-      <div class="bande"></div>
-      <div class="bande"></div>
-      <div class="bande"></div>
-      <div class="bande"></div>
-      <div class="bande"></div>
-      <div class="bande"></div>
-      <div class="bande"></div>
-      <div class="bande"></div>
-      <div class="bande"></div>
-      <div class="bande"></div>
-    </div>
-    <div class="wipe-transition"></div>
 
     <section class="container_colors">
       <div class="bg_colors"></div>
@@ -113,6 +99,7 @@
     </div>
 
     <main data-barba="container" data-barba-namespace="pageDev">
+      <div class="transition_slide"></div>
       <section class="developpement_web_page">
         <div class="myProject">
           <img
@@ -448,9 +435,14 @@
       const imacs = document.querySelectorAll(".imac");
       home_footer = document.querySelector(".home_footer");
 
+  
+
       header.classList.add("header_active_visited");
       home_footer.classList.add("home_footer_active_visited");
 
+      const transitionSlide = document.querySelector(".transition_slide");
+      transitionSlide.classList.add("transition_slide_active");
+      
       for (let i = 0; i < imacs.length; i++) {
         if (imacs[i].classList.contains("imac_center")) {
           imacs[i].classList.add("imac_center_active");
@@ -464,9 +456,12 @@
         url = "book.html";
       }
 
+    
+
+
       setTimeout(function () {
         window.location = url;
-      }, 1000);
+      }, 2500);
     }
     // -----------------------------
   </script>

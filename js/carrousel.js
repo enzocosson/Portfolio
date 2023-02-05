@@ -22,10 +22,6 @@ export function carrousel() {
 
   let timeline = 0;
   var numImac = imac.length;
-  var numTitle = title.length;
-  var numTechno = techno.length;
-  var numPages_number = pages_number.length;
-  var numSlider = carrousel_container.length;
 
   next.addEventListener("click", () => {
     next.disabled = true;
