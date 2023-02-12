@@ -92,6 +92,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 
   h1 {
     color: var(--green);
@@ -119,7 +120,25 @@
     width: 15%;
     z-index: 3;
   }
-  .description {
+  .mockup_iphone_book {
+    position: absolute;
+    top: 150%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    width: 10%;
+    z-index: 3;
+  }
+  .mockup_ipad_soda {
+    position: absolute;
+    top: 50%;
+    left: -50%;
+    transform: translate(-50%, -50%);
+    width: 40%;
+    z-index: 3;
+  }
+  .description,
+  .description_book,
+  .description_soda {
     position: absolute;
     top: 67%;
     left: 60%;
@@ -146,6 +165,43 @@
       margin-left: -15vw;
       opacity: 0;
     }
+  }
+  .description_book {
+    top: 50%;
+    left: 60%;
+  }
+  .description_soda {
+    width: 40vw;
+    top: 50%;
+    left: 23%;
+  }
+
+  .spiderman_illu {
+    position: absolute;
+    bottom: 0%;
+    right: 0%;
+    transform: translate(0%, 0%);
+    height: 100%;
+    opacity: 0;
+    z-index: 2;
+  }
+  .moon_illu {
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    opacity: 0;
+    z-index: 2;
+  }
+  .canette_illu {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 100%;
+    opacity: 0;
+    z-index: 2;
   }
   .white_circle_bottom {
     position: absolute;
@@ -214,7 +270,7 @@
   position: relative;
   width: 100%;
   height: 100vh;
-  background-color: var(--white);
+  background-color: var(--black);
   z-index: 0;
   overflow: hidden;
 
@@ -224,8 +280,8 @@
 
   .container_illu {
     position: relative;
-    width: 30%;
-    height: 30%;
+    width: 50%;
+    height: 0%;
     overflow: hidden;
     border-radius: 2vw;
     z-index: 2;
@@ -246,7 +302,7 @@
       .titre_bdd {
         width: 100%;
         text-align: center;
-        color: var(--white);
+        color: var(--black);
         font-family: $font_base;
         font-size: 7vw;
         opacity: 0;
@@ -285,24 +341,113 @@
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-      width: 100%;
-      height: 100%;
+      width: 110%;
+      height: 110%;
       object-fit: cover;
 
       z-index: 1;
     }
   }
   .titre_bdd_bg {
-    width: 200%;
     text-align: center;
     position: absolute;
     top: 50%;
-    left: 60%;
+    left: 50%;
     transform: translate(-50%, -50%);
-    color: transparent;
+    color: var(--green);
     -webkit-text-stroke: 0.1vw var(--green);
     font-family: Base Neue;
-    font-size: 20vw;
+    font-size: 10vw;
     z-index: 1;
+  }
+}
+
+.bdd_more {
+  position: relative;
+  width: 100%;
+  height: 50vh;
+  background-color: var(--black);
+  z-index: 0;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .bdd_text {
+    max-width: 80%;
+    color: var(--white);
+    font-family: $font_sf;
+    font-size: 1.5vw;
+    text-align: center;
+    font-style: italic;
+  }
+  .bdd_redirection {
+    cursor: pointer;
+    margin-top: 5vh;
+    width: 20vw;
+    height: 5vh;
+    background-color: var(--green);
+    border-radius: 2vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--white);
+    font-family: $font_base;
+    text-decoration: none;
+    font-size: 1.5vw;
+    box-shadow: 0px 0px 10px 5px rgba(255, 255, 255, 0);
+    transition: 0.4s ease-in-out;
+    &:hover {
+      background-color: var(--black);
+      color: var(--green);
+      border: 0.1vw solid var(--green);
+      box-shadow: 0px 0px 10px 5px rgba(255, 255, 255, 0.123);
+    }
+  }
+}
+
+.autres_sites {
+  position: relative;
+  width: 100%;
+  height: 50vh;
+  background-color: var(--black);
+  z-index: 0;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  overflow-y: auto;
+  overflow-x: scroll;
+
+  &::-webkit-scrollbar {
+    height: 1vh;
+    background-color: var(--black);
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: var(--white);
+  }
+
+  .autres_sites_cards {
+    cursor: pointer;
+    width: 30vw;
+    height: 17vw;
+    background-color: var(--white);
+    border-radius: 2vw;
+    flex-shrink: 0;
+    margin: 0 2vw;
+    border: 0vw solid rgba(255, 255, 255, 0);
+    box-shadow: 0px 0px 10px 5px rgba(255, 255, 255, 0);
+    transition: 0.3s ease-in-out;
+
+    &:hover {
+      box-shadow: 0px 0px 41px -15px rgba(255, 255, 255, 0.29);
+    }
+  }
+  .autres_sites_cards_img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 2vw;
   }
 }
