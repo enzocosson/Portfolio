@@ -10,7 +10,8 @@ import { darkModeSite } from "./darkMode.js";
 import { scrollMagicImovix } from "./scrollMagicImovix.js";
 import { scrollMagicBook } from "./scrollMagicBook.js";
 import { scrollMagicSoda } from "./scrollMagicSoda.js";
-
+import { scrollMagicArt } from "./scrollMagicArt.js";
+import { scrollMagicSpider } from "./scrollMagicSpider.js";
 
 function getURL() {
   return console.log(window.location.href);
@@ -135,6 +136,44 @@ switch (url) {
     darkModeSite();
     scrollMagicSoda();
     break;
+
+        
+      // -----------
+  case "http://192.168.1.70:5500/art.html":
+    darkModeSite();
+    scrollMagicArt();
+    break;
+  case "http://10.152.22.39:5500/art.html":
+    darkModeSite();
+    scrollMagicArt();
+    break;
+     case "http://192.168.1.77:5500/art.html":
+    darkModeSite();
+    scrollMagicArt();
+    break;
+  case "https://www.enzo-cosson.fr/art.html":
+    darkModeSite();
+    scrollMagicArt();
+    break;
+
+       // -----------
+  case "http://192.168.1.70:5500/spider_threejs.html":
+    darkModeSite();
+    scrollMagicSpider();
+    break;
+  case "http://10.152.22.39:5500/spider_threejs.html":
+    darkModeSite();
+    scrollMagicSpider();
+    break;
+     case "http://192.168.1.77:5500/spider_threejs.html":
+    darkModeSite();
+    scrollMagicSpider();
+    break;
+  case "https://www.enzo-cosson.fr/spider_threejs.html":
+    darkModeSite();
+    scrollMagicSpider();
+    break;
+
 
 
   default:
