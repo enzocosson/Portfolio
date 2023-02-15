@@ -103,7 +103,7 @@
 
   .green_rect {
     position: absolute;
-    top: 60%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 0%;
@@ -156,10 +156,30 @@
     border-radius: 0vw;
     z-index: 3;
   }
+  .custom_air_mobile {
+    position: absolute;
+    top: 150%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    width: 20%;
+    border-radius: 1vw;
+    z-index: 3;
+  }
+  .imac_school2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 0%;
+    border-radius: 1vw;
+    z-index: 3;
+  }
   .description,
   .description_book,
   .description_soda,
-  .description_art {
+  .description_art,
+  .description_customAir,
+  .description_school {
     position: absolute;
     top: 67%;
     left: 60%;
@@ -201,7 +221,16 @@
     top: 50%;
     left: 25%;
   }
-
+  .description_customAir {
+    width: 40vw;
+    top: 50%;
+    left: 60%;
+  }
+  .description_school {
+    width: 40vw;
+    top: 50%;
+    left: 25%;
+  }
   .spiderman_illu {
     position: absolute;
     bottom: 0%;
@@ -230,6 +259,15 @@
     z-index: 2;
   }
   .art_illu {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 100%;
+    opacity: 0;
+    z-index: 2;
+  }
+  .avion_illu {
     position: absolute;
     top: 50%;
     left: 50%;

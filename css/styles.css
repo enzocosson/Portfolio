@@ -3121,7 +3121,7 @@ header ul .li_contact:hover {
 
 .more_info .green_rect {
   position: absolute;
-  top: 60%;
+  top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
@@ -3187,10 +3187,34 @@ header ul .li_contact:hover {
   z-index: 3;
 }
 
+.more_info .custom_air_mobile {
+  position: absolute;
+  top: 150%;
+  left: 25%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 20%;
+  border-radius: 1vw;
+  z-index: 3;
+}
+
+.more_info .imac_school2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 0%;
+  border-radius: 1vw;
+  z-index: 3;
+}
+
 .more_info .description,
 .more_info .description_book,
 .more_info .description_soda,
-.more_info .description_art {
+.more_info .description_art,
+.more_info .description_customAir,
+.more_info .description_school {
   position: absolute;
   top: 67%;
   left: 60%;
@@ -3215,7 +3239,9 @@ header ul .li_contact:hover {
 .more_info .description .more_info_titre,
 .more_info .description_book .more_info_titre,
 .more_info .description_soda .more_info_titre,
-.more_info .description_art .more_info_titre {
+.more_info .description_art .more_info_titre,
+.more_info .description_customAir .more_info_titre,
+.more_info .description_school .more_info_titre {
   color: var(--white);
   font-family: Base Neue;
   font-size: 6vw;
@@ -3226,7 +3252,9 @@ header ul .li_contact:hover {
 .more_info .description .description_paragraphe,
 .more_info .description_book .description_paragraphe,
 .more_info .description_soda .description_paragraphe,
-.more_info .description_art .description_paragraphe {
+.more_info .description_art .description_paragraphe,
+.more_info .description_customAir .description_paragraphe,
+.more_info .description_school .description_paragraphe {
   width: 100%;
   color: var(--white);
   font-family: "Inter", sans-serif;
@@ -3248,6 +3276,18 @@ header ul .li_contact:hover {
 }
 
 .more_info .description_art {
+  width: 40vw;
+  top: 50%;
+  left: 25%;
+}
+
+.more_info .description_customAir {
+  width: 40vw;
+  top: 50%;
+  left: 60%;
+}
+
+.more_info .description_school {
   width: 40vw;
   top: 50%;
   left: 25%;
@@ -3287,6 +3327,17 @@ header ul .li_contact:hover {
 }
 
 .more_info .art_illu {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  height: 100%;
+  opacity: 0;
+  z-index: 2;
+}
+
+.more_info .avion_illu {
   position: absolute;
   top: 50%;
   left: 50%;

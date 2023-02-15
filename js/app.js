@@ -12,6 +12,8 @@ import { scrollMagicBook } from "./scrollMagicBook.js";
 import { scrollMagicSoda } from "./scrollMagicSoda.js";
 import { scrollMagicArt } from "./scrollMagicArt.js";
 import { scrollMagicSpider } from "./scrollMagicSpider.js";
+import { scrollMagicCustomAir } from "./scrollMagicCustomAir.js";
+import { scrollMagicSchool } from "./scrollMagicSchool.js";
 
 function getURL() {
   return console.log(window.location.href);
@@ -172,6 +174,42 @@ switch (url) {
   case "https://www.enzo-cosson.fr/spider_threejs.html":
     darkModeSite();
     scrollMagicSpider();
+    break;
+
+           // -----------
+  case "http://192.168.1.70:5500/custom_air.html":
+    darkModeSite();
+    scrollMagicCustomAir();
+    break;
+  case "http://10.152.22.39:5500/custom_air.html":
+    darkModeSite();
+    scrollMagicCustomAir();
+    break;
+     case "http://192.168.1.77:5500/custom_air.html":
+    darkModeSite();
+    scrollMagicCustomAir();
+    break;
+  case "https://www.enzo-cosson.fr/custom_air.html":
+    darkModeSite();
+    scrollMagicCustomAir();
+    break;
+
+               // -----------
+  case "http://192.168.1.70:5500/school.html":
+    darkModeSite();
+    scrollMagicSchool();
+    break;
+  case "http://10.152.22.39:5500/school.html":
+    darkModeSite();
+    scrollMagicSchool();
+    break;
+     case "http://192.168.1.77:5500/school.html":
+    darkModeSite();
+    scrollMagicSchool();
+    break;
+  case "https://www.enzo-cosson.fr/school.html":
+    darkModeSite();
+    scrollMagicSchool();
     break;
 
 
