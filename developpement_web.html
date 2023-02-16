@@ -318,7 +318,7 @@
           </button>
         </div>
 
-        <div class="container__cards">
+        <div class="container_cards">
           <a href="imovix.html">
             <div class="card php">
               <img class="card_img" src="./img/cards/card_imovix.png" alt="" />
@@ -352,6 +352,13 @@
               <img class="card_img" src="./img/cards/cards_art3.png" alt="" />
               <span class="hover_bg"></span>
               <h3>ART</h3>
+            </div>
+          </a>
+          <a href="art.html">
+            <div class="card html">
+              <img class="card_img" src="./img/cards/cards_custom_air.png" alt="" />
+              <span class="hover_bg"></span>
+              <h3>CUSTOM AIR</h3>
             </div>
           </a>
           <a href="https://mmi21e03.mmi-troyes.fr/tech">
@@ -461,8 +468,13 @@
       header.classList.add("header_active_visited");
       home_footer.classList.add("home_footer_active_visited");
 
-      const transitionSlide = document.querySelector(".transition_slide");
-      transitionSlide.classList.add("transition_slide_active");
+    
+
+        const transitionSlide = document.querySelector(".transition_slide");
+        setTimeout(function() {
+        transitionSlide.classList.add("transition_slide_active");
+      }, 300);
+
       
       for (let i = 0; i < imacs.length; i++) {
         if (imacs[i].classList.contains("imac_center")) {

@@ -54,7 +54,7 @@ export function scrollMagicSchool() {
   const pathSchoolImac = {
     curviness: 1.25,
     values: [
-      {left: "50%",width: "40%" },{left: "65%", width: "50%" }
+      {left: "50%",width: "40%" },{left: "70%", width: "40%" }
     ],
   };
 

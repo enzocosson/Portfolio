@@ -1,27 +1,29 @@
 .transition_slide {
-  width: 50vw;
-  height: 50vh;
-  position: fixed;
-  top: -50%;
-  left: 50%;
-  transform: translate(-50%, -50%) perspective(1000px) rotateX(120deg)
-    rotateY(0deg) rotateZ(0deg) scale(0);
-  background-color: var(--black);
-  border-radius: 0 0 100vw 100vw;
-  transition: 1.8s cubic-bezier(0.82, 0, 0.21, 1);
-  z-index: 99999999999999999999999;
-}
-.transition_slide_active {
-  width: 100vw;
+  pointer-events: none;
+  width: 100%;
   height: 100vh;
   position: fixed;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%) perspective(1000px) rotateX(0deg)
-    rotateY(0deg) rotateZ(0deg) scale(1);
+  transform: translate(-50%, -50%);
+  background-color: var(--green);
+  border-radius: 10vw 10vw 10vw 10vw;
+  transition: 1s ease-in-out;
+  z-index: 99999999999999999999999;
+  opacity: 0;
+}
+.transition_slide_active {
+  pointer-events: none;
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
   background-color: var(--green);
   border-radius: 0 0 0 0;
   z-index: 99999999999999999999999;
+  opacity: 1;
 }
 .developpement_web_page {
   position: relative;
@@ -566,9 +568,10 @@
     }
   }
 
-  .container__cards {
+  .container_cards {
     margin-top: 3vh;
-    width: 90vw;
+    width: 100%;
+    padding: 1vw;
     height: auto;
 
     display: flex;
@@ -578,11 +581,11 @@
 
     .card {
       position: relative;
-      width: 21vw;
-      height: 13vw;
+      width: 400px;
+      height: 250px;
       background-color: var(--white);
       border-radius: 1vw;
-      margin: 2vh 0.7vw;
+      margin: 2vh 1vw;
       z-index: 1;
       border: 0.3vw solid var(--white);
       transition: transform 1s cubic-bezier(0.81, -0.01, 0.34, 0.99);
@@ -617,8 +620,8 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        margin-top: 0.8vh;
-        font-size: 3vw;
+        margin-top: 5px;
+        font-size: 50px;
         font-weight: 600;
         color: var(--white);
         font-family: $font_base;
