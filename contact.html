@@ -1,29 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://code.jquery.com/jquery-3.6.3.js"
+      integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM="
+      crossorigin="anonymous"
+    ></script>
     <title>Contact</title>
-    <link rel="stylesheet" href="./css/styles.css">
-</head>
-<body>
-    <header>
-        <a href="index.html"><img class="logo" src="./img/white_logo.png" alt=""></a>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <header class="header" id="rth">
+      <a href="index.html" class="pagelink">
+        <img class="logo logo_white" src="./img/white_logo.png" alt="" />
+        <img class="logo logo_black" src="./img/black_logo.png" alt="" />
+      </a>
 
-    
-        <ul>
-            <li><a class="links" href="index.html">Accueil</a></li>
-            <li><a class="links" href="developpement_web.html">Développement Web | Design</a></li>
-            <!-- <li><a class="links" href="">Design</a></li> -->
-            <li><a class="links" href="photo_video.html">Photos | Videos</a></li>
-            <li><a class="links" href="about_me.html">About Me</a></li>
-            <li><a class="links" id="contact" href="contact.html">Contact</a></li>
-           <a href=""><img class="logo_dark_mode" src="./img/icon_darkMode.svg" alt=""></a>
-        </ul>
+      <ul>
+        <li><a class="links barba-link" href="index.html">Accueil</a></li>
+        <li>
+          <a class="links barba-link" href="developpement_web.html"
+            >Développement Web | Design</a
+          >
+        </li>
+        <li><a class="links" href="photo_video.html">Photos | Videos</a></li>
+        <li><a class="links" href="about_me.html">About Me</a></li>
+        <li class="li_contact">
+          <a class="links" id="contact" href="contact.html">Contact</a>
+        </li>
+      </ul>
     </header>
-    <section class="developpement_web_page">
-        <h1>Contact</h1>
+    <section class="contact_page">
+      <div class="container_formulaire_bg">
+        <img class="word_contact" src="./img/contact/word_contact.png" alt="" />
+      </div>
+      <div class="container_formulaire">
+        <p class="entete">
+          Un projet en tête ? Développement web, Photo, Vidéo ?<br />
+          N’hésitez pas à me contacter !
+        </p>
+        <form action="contact_verif.php" method="POST" id="contact-form">
+          <div class="identite">
+            <input
+              type="text"
+              id="prenom"
+              name="prenom"
+              class="prenom"
+              placeholder="Prénom"
+              required
+            />
+            <input
+              type="text"
+              id="nom"
+              name="nom"
+              class="nom"
+              placeholder="Nom"
+              required
+            />
+          </div>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            class="email"
+            placeholder="Email"
+            required
+          />
+          <div class="theme">
+            <button class="choix" data-option="developpement_web" type="button">
+              DEVELOPPEMENT WEB
+            </button>
+            <button class="choix" data-option="photo_video" type="button">
+              PHOTO / VIDEO
+            </button>
+          </div>
+
+          <textarea
+            name="message"
+            id="message"
+            placeholder="Message"
+            cols="30"
+            rows="10"
+            class="message"
+            required
+          ></textarea>
+          <input type="submit" value="Envoyer" class="envoyer" />
+        </form>
+        <script>
+          const form = document.querySelector("form");
+          const submitButton = document.querySelector(".envoyer");
+          const choices = document.querySelectorAll(".choix");
+
+          form.addEventListener("submit", (event) => {
+            let isChoiceSelected = false;
+
+            for (let i = 0; i < choices.length; i++) {
+              if (choices[i] === document.activeElement) {
+                isChoiceSelected = true;
+                break;
+              }
+            }
+
+            if (!isChoiceSelected) {
+              event.preventDefault(); // Empêche l'envoi du formulaire
+              alert("Veuillez sélectionner au moins un thème.");
+            }
+          });
+        </script>
+      </div>
     </section>
-</body>
+  </body>
 </html>
