@@ -48,7 +48,7 @@ html {
 }
 
 :root {
-  --green: #41f0c6;
+  --green: #41f0d0;
   --green_transparent: rgba(112, 232, 203, 0.56);
   --white: #fcfcfc;
   --white_transparent: rgba(252, 252, 252, 0.33);
@@ -2124,6 +2124,8 @@ header ul .li_contact:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.041);
+          box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.041);
 }
 
 .contact h1 {
@@ -2138,26 +2140,34 @@ header ul .li_contact:hover {
 }
 
 .contact .lien_contact {
-  width: 25vw;
   margin-top: 10vh;
-  height: 6vh;
+  padding: 1.5vh 1.5vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   background-color: var(--white);
   border-radius: 0.5vw;
-  font-size: 1.5vw;
+  font-size: 1.2vw;
   letter-spacing: 0.3vw;
   font-weight: bold;
   text-decoration: none;
   color: var(--green);
-  font-family: "Inter", sans-serif;
+  font-family: Base Neue;
+  border: 0.2vw solid var(--white);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.contact .lien_contact:hover {
+  border: 0.2vw solid var(--white);
+  background-color: var(--green);
+  color: var(--white);
 }
 
 .transition_slide {
@@ -2996,6 +3006,96 @@ header ul .li_contact:hover {
   color: var(--white);
 }
 
+.photo_video_web_page {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-color: var(--green);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+  -webkit-transition: background-color 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.photo_video_web_page .container_photo,
+.photo_video_web_page .container_video {
+  position: relative;
+  width: 50%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.photo_video_web_page .container_photo .couverture,
+.photo_video_web_page .container_video .couverture {
+  width: 40vw;
+  height: 40vw;
+  position: relative;
+  overflow: hidden;
+  border-radius: 1vw;
+  border: 0.5vw solid transparent;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+.photo_video_web_page .container_photo .couverture .couverture_titre,
+.photo_video_web_page .container_video .couverture .couverture_titre {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 100%;
+  font-size: 5vw;
+  text-align: center;
+  color: var(--white);
+  font-weight: bold;
+  font-family: Base Neue;
+  -webkit-filter: drop-shadow(0px 2px 0.1vw rgba(0, 0, 0, 0.237));
+  filter: drop-shadow(0px 0px 0.2vw rgba(0, 0, 0, 0.192));
+  transition: color 0.5s ease-out, -webkit-text-stroke 0.5s ease-out;
+  z-index: 2;
+}
+
+.photo_video_web_page .container_photo .couverture img,
+.photo_video_web_page .container_video .couverture img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  opacity: 1;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  z-index: 0;
+}
+
+.photo_video_web_page .container_photo .couverture:hover,
+.photo_video_web_page .container_video .couverture:hover {
+  border: 0.5vw solid var(--white);
+}
+
+.photo_video_web_page .container_photo .couverture:hover img,
+.photo_video_web_page .container_video .couverture:hover img {
+  opacity: 0.3;
+}
+
 .transition_slide_enter {
   width: 100vw;
   height: 100vh;
@@ -3731,6 +3831,20 @@ header ul .li_contact:hover {
   height: 99%;
 }
 
+.contact_page .container_formulaire_bg .word_contact_black {
+  position: absolute;
+  top: 50%;
+  left: -5%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  height: 99%;
+  display: none;
+}
+
+.contact_page .container_formulaire_bg .word_contact_black_active {
+  display: block;
+}
+
 .contact_page .container_formulaire {
   background-color: var(--white);
   width: 38vw;
@@ -3805,6 +3919,7 @@ header ul .li_contact:hover {
   border: 0.25vw solid var(--green);
   border-radius: 0.7vw;
   padding: 0 1vw;
+  background-color: var(--white);
   font-family: "Inter", sans-serif;
   font-size: 0.8vw;
 }
@@ -3813,6 +3928,7 @@ header ul .li_contact:hover {
   width: 100%;
   height: 6vh;
   border: 0.25vw solid var(--green);
+  background-color: var(--white);
   border-radius: 0.7vw;
   padding: 0 1vw;
   margin-bottom: 3vh;
@@ -3841,6 +3957,7 @@ header ul .li_contact:hover {
   height: 4.5vh;
   border: 0.25vw solid var(--green);
   background-color: var(--white);
+  color: var(--black);
   border-radius: 0.7vw;
   padding: 0 1vw;
   font-weight: bold;
@@ -3869,6 +3986,7 @@ header ul .li_contact:hover {
 .contact_page .container_formulaire form .message {
   width: 100%;
   height: 25vh;
+  background-color: var(--white);
   border: 0.25vw solid var(--green);
   border-radius: 0.7vw;
   padding: 2vh 1vw;
@@ -3897,6 +4015,121 @@ header ul .li_contact:hover {
 .contact_page .container_formulaire form .envoyer:hover {
   background-color: var(--white);
   color: var(--green);
+}
+
+.a_propos_web_page {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-color: var(--green);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+  -webkit-transition: background-color 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.a_propos_web_page .circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 30vw;
+  height: 30vw;
+  border-radius: 50%;
+  background-color: var(--white);
+  border: 0.3vw solid var(--green);
+  -webkit-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+          box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  z-index: 1;
+}
+
+.a_propos_web_page .circle .title_back {
+  width: 200%;
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-family: Base Neue;
+  font-size: 15vw;
+  font-weight: 200;
+  color: var(--white);
+  -webkit-text-stroke: 0.2vw var(--white);
+  text-align: center;
+  z-index: 1;
+  -webkit-filter: drop-shadow(0px 2px 0.1vw rgba(0, 0, 0, 0.237));
+  filter: drop-shadow(0px -5px 0.5vw rgba(0, 0, 0, 0.082));
+  transition: color 0.5s ease-out, -webkit-text-stroke 0.5s ease-out;
+}
+
+.a_propos_web_page .circle .pp {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  height: 110%;
+  z-index: 2;
+}
+
+.a_propos_web_page .circle .title_front {
+  width: 200%;
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-family: Base Neue;
+  font-size: 15vw;
+  font-weight: 200;
+  color: transparent;
+  -webkit-text-stroke: 0.2vw var(--white);
+  text-align: center;
+  z-index: 3;
+  transition: color 0.5s ease-out, -webkit-text-stroke 0.5s ease-out;
+}
+
+.a_propos_web_page .circle:hover .title_back {
+  color: var(--green);
+  -webkit-text-stroke: 0.2vw var(--green);
+}
+
+.presentation {
+  width: 100%;
+  background-color: var(--green);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.presentation .presentation_texte {
+  width: 50%;
+  font-family: "Inter", sans-serif;
+  font-size: 1.3vw;
+  font-weight: bold;
+  color: var(--black);
+  text-align: justify;
+  margin-bottom: 10vh;
+  line-height: 4vh;
+}
+
+.presentation .presentation_texte .selection {
+  color: var(--white);
 }
 
 footer {

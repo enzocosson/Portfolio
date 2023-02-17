@@ -1,0 +1,98 @@
+.a_propos_web_page {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-color: var(--green);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  transition: background-color 0.2s ease-in-out;
+
+  .circle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 30vw;
+    height: 30vw;
+    border-radius: 50%;
+    background-color: var(--white);
+    border: 0.3vw solid var(--green);
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    z-index: 1;
+    // transition: 0.2s ease-out;
+
+    .title_back {
+      width: 200%;
+      position: absolute;
+      top: 75%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-family: $font_base;
+      font-size: 15vw;
+      font-weight: 200;
+      color: var(--white);
+      -webkit-text-stroke: 0.2vw var(--white);
+      text-align: center;
+      z-index: 1;
+      -webkit-filter: drop-shadow(0px 2px 0.1vw rgba(0, 0, 0, 0.237));
+
+      filter: drop-shadow(0px -5px 0.5vw rgba(0, 0, 0, 0.082));
+      transition: color 0.5s ease-out, -webkit-text-stroke 0.5s ease-out;
+    }
+
+    .pp {
+      position: absolute;
+      top: 45%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      height: 110%;
+      z-index: 2;
+      // transition: 0.2s ease-out;
+    }
+    .title_front {
+      width: 200%;
+      position: absolute;
+      top: 75%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-family: $font_base;
+      font-size: 15vw;
+      font-weight: 200;
+      color: transparent;
+      -webkit-text-stroke: 0.2vw var(--white);
+      text-align: center;
+      z-index: 3;
+      transition: color 0.5s ease-out, -webkit-text-stroke 0.5s ease-out;
+    }
+
+    &:hover .title_back {
+      color: var(--green);
+      -webkit-text-stroke: 0.2vw var(--green);
+    }
+  }
+}
+.presentation {
+  width: 100%;
+  background-color: var(--green);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .presentation_texte {
+    width: 50%;
+    font-family: $font_sf;
+    font-size: 1.3vw;
+    font-weight: bold;
+    color: var(--black);
+    text-align: justify;
+    margin-bottom: 10vh;
+    line-height: 4vh;
+
+    .selection {
+      color: var(--white);
+    }
+  }
+}

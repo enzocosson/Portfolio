@@ -90,3 +90,33 @@ export function darkModeSite() {
     }
   });
 }
+
+
+
+
+export function darkModeSiteContact() {
+  const darkMode = document.querySelector(".darkMode");
+  const logo_white = document.querySelector(".logo_white");
+  const logo_black = document.querySelector(".logo_black");
+  const word_contact_black = document.querySelector(".word_contact_black");
+
+  darkMode.addEventListener("click", () => {
+    var r = document.querySelector(":root");
+    darkMode.classList.toggle("darkMode_active");
+
+    if (darkMode.classList.contains("darkMode_active")) {
+      r.style.setProperty("--white", "#232323");
+      r.style.setProperty("--black", "#fcfcfc");
+      logo_white.classList.add("logo_white_active");
+      logo_black.classList.add("logo_black_active");
+      word_contact_black.classList.add("word_contact_black_active");
+
+    } else {
+      r.style.setProperty("--white", "#fcfcfc");
+      r.style.setProperty("--black", "#232323");
+      logo_white.classList.remove("logo_white_active");
+      logo_black.classList.remove("logo_black_active");
+      word_contact_black.classList.remove("word_contact_black_active");
+    }
+  });
+}

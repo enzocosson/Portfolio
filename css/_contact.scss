@@ -23,6 +23,17 @@
       transform: translate(-50%, -50%);
       height: 99%;
     }
+    .word_contact_black {
+      position: absolute;
+      top: 50%;
+      left: -5%;
+      transform: translate(-50%, -50%);
+      height: 99%;
+      display: none;
+    }
+    .word_contact_black_active {
+      display: block;
+    }
   }
 
   .container_formulaire {
@@ -72,6 +83,7 @@
           border: 0.25vw solid var(--green);
           border-radius: 0.7vw;
           padding: 0 1vw;
+          background-color: var(--white);
           //   font-style: italic;
           font-family: $font-sf;
           font-size: 0.8vw;
@@ -81,6 +93,7 @@
         width: 100%;
         height: 6vh;
         border: 0.25vw solid var(--green);
+        background-color: var(--white);
         border-radius: 0.7vw;
         padding: 0 1vw;
         // font-style: italic;
@@ -102,6 +115,7 @@
           height: 4.5vh;
           border: 0.25vw solid var(--green);
           background-color: var(--white);
+          color: var(--black);
           border-radius: 0.7vw;
           padding: 0 1vw;
           font-weight: bold;
@@ -128,6 +142,7 @@
       .message {
         width: 100%;
         height: 25vh;
+        background-color: var(--white);
         border: 0.25vw solid var(--green);
         border-radius: 0.7vw;
         padding: 2vh 1vw;
