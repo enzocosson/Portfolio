@@ -4,7 +4,7 @@ import { initScrollMagic } from "./libScrollMagic.js";
 import { carrousel } from "./carrousel.js";
 import { filter } from "./filter.js";
 import { devScrollReveal } from "./dev_scrollreveal.js";
-import { darkModeIndex, darkModeSiteContact } from "./darkMode.js";
+import { darkModeIndex, darkModeSiteContact, darkModeGalerie } from "./darkMode.js";
 import { darkModeDev } from "./darkMode.js";
 import { darkModeSite } from "./darkMode.js";
 import { scrollMagicImovix } from "./scrollMagicImovix.js";
@@ -14,6 +14,7 @@ import { scrollMagicArt } from "./scrollMagicArt.js";
 import { scrollMagicSpider } from "./scrollMagicSpider.js";
 import { scrollMagicCustomAir } from "./scrollMagicCustomAir.js";
 import { scrollMagicSchool } from "./scrollMagicSchool.js";
+import { scrollMagicGalerie } from "./scrollMagicGalerie.js";
 
 function getURL() {
   return console.log(window.location.href);
@@ -95,6 +96,53 @@ switch (url) {
     darkModeSite();
     break;
   case "https://www.enzo-cosson.fr/photo_video.html":
+    darkModeSite();
+    break;
+
+                         // -----------
+  case "http://192.168.1.70:5500/photo.html":
+    darkModeSite();
+    break;
+  case "http://10.152.22.39:5500/photo.html":
+    darkModeSite();
+    break;
+     case "http://192.168.1.77:5500/photo.html":
+    darkModeSite();
+    break;
+  case "https://www.enzo-cosson.fr/photo.html":
+    darkModeSite();
+    break;
+
+                             // -----------
+  case "http://192.168.1.70:5500/mountain.html":
+    darkModeGalerie();
+    scrollMagicGalerie();
+    break;
+  case "http://10.152.22.39:5500/mountain.html":
+    darkModeGalerie();
+    scrollMagicGalerie();
+    break;
+     case "http://192.168.1.77:5500/mountain.html":
+      darkModeGalerie();
+      scrollMagicGalerie();
+    break;
+  case "https://www.enzo-cosson.fr/mountain.html":
+    darkModeGalerie();
+    scrollMagicGalerie();
+    break;
+
+
+                         // -----------
+  case "http://192.168.1.70:5500/video.html":
+    darkModeSite();
+    break;
+  case "http://10.152.22.39:5500/video.html":
+    darkModeSite();
+    break;
+     case "http://192.168.1.77:5500/video.html":
+    darkModeSite();
+    break;
+  case "https://www.enzo-cosson.fr/video.html":
     darkModeSite();
     break;
                    // -----------

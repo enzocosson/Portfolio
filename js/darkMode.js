@@ -120,3 +120,29 @@ export function darkModeSiteContact() {
     }
   });
 }
+
+export function darkModeGalerie() {
+  const darkMode = document.querySelector(".darkMode");
+  const logo_white_galerie = document.querySelector(".logo_white_galerie");
+  const logo_black_galerie = document.querySelector(".logo_black_galerie");
+
+  darkMode.addEventListener("click", () => {
+    var r = document.querySelector(":root");
+    darkMode.classList.toggle("darkMode_active");
+
+    if (darkMode.classList.contains("darkMode_active")) {
+      r.style.setProperty("--white", "#232323");
+      r.style.setProperty("--black", "#fcfcfc");
+      logo_white_galerie.classList.add("logo_white_galerie_active");
+      logo_black_galerie.classList.add("logo_black_galerie_active");
+
+
+    } else {
+      r.style.setProperty("--white", "#fcfcfc");
+      r.style.setProperty("--black", "#232323");
+      logo_white_galerie.classList.remove("logo_white_galerie_active");
+      logo_black_galerie.classList.remove("logo_black_galerie_active");
+
+    }
+  });
+}

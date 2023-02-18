@@ -14,17 +14,34 @@ header {
   .logo {
     width: 6vw;
   }
+
+  //-----------
   .logo_white {
     display: block;
-  }
-  .logo_white_active {
-    display: none;
   }
   .logo_black {
     display: none;
   }
+  .logo_white_active {
+    display: none;
+  }
   .logo_black_active {
     display: block;
+  }
+
+  //-----------
+
+  .logo_white_galerie {
+    display: none;
+  }
+  .logo_black_galerie {
+    display: block;
+  }
+  .logo_white_galerie_active {
+    display: block;
+  }
+  .logo_black_galerie_active {
+    display: none;
   }
   ul {
     list-style: none;
@@ -70,7 +87,30 @@ header {
     }
   }
 }
+.header_galerie {
+  .links {
+    text-decoration: none;
+    color: var(--black);
+    font-family: $font_sf;
+    font-weight: 300;
+    font-size: 1.1vw;
+    transition: 0.2s ease-in-out;
+  }
+  #contact {
+    color: var(--green);
+    padding: 0.5vh 2.5vw;
+    background-color: var(--black);
+    border-radius: 0.4vw;
+    font-weight: bold;
+    border: 3px solid transparent;
 
+    &:hover {
+      background-color: transparent;
+      color: var(--white);
+      border: 3px solid var(--white);
+    }
+  }
+}
 .header_active_visited {
   opacity: 0;
 }
