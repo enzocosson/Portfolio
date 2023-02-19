@@ -186,14 +186,17 @@ header ul {
 }
 
 header ul li {
-  margin: 1vh 1.5vw;
+  position: relative;
+  padding: 1vh 1vw;
+  margin: 0vh 0.5vw;
   -webkit-transition: 250ms ease-in-out;
   transition: 250ms ease-in-out;
+  overflow: hidden;
+  border-radius: 0.4vw;
 }
 
-header ul li:hover {
-  -webkit-transform: translateY(-3px);
-          transform: translateY(-3px);
+header ul li:hover .links {
+  color: var(--green);
 }
 
 header ul li .links {
@@ -204,6 +207,7 @@ header ul li .links {
   font-size: 1.1vw;
   -webkit-transition: 0.2s ease-in-out;
   transition: 0.2s ease-in-out;
+  z-index: 3;
 }
 
 header ul li #contact {
@@ -221,13 +225,44 @@ header ul li #contact:hover {
   border: 3px solid var(--white);
 }
 
+header ul li::before, header ul li::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 0%;
+  height: 100%;
+  background-color: var(--white);
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  z-index: -1;
+}
+
+header ul li::before {
+  left: 0;
+}
+
+header ul li::after {
+  right: 0;
+}
+
+header ul li:hover::before {
+  width: 100%;
+}
+
+header ul li:hover::after {
+  width: 100%;
+}
+
+header ul li:hover {
+  overflow: hidden;
+}
+
 header ul .li_contact {
   margin-right: 0;
 }
 
-header ul .li_contact:hover {
-  -webkit-transform: translateY(0px);
-          transform: translateY(0px);
+header ul .li_contact::before, header ul .li_contact::after {
+  display: none;
 }
 
 .header_galerie .links {
@@ -3848,8 +3883,106 @@ header ul .li_contact:hover {
 .auvergne_web_page {
   position: relative;
   width: 100%;
-  height: 100vh;
+  height: auto;
   background-color: var(--white);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+}
+
+.guadeloupe_web_page .container_video_100vh,
+.auvergne_web_page .container_video_100vh {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.guadeloupe_web_page .container_video_100vh h2,
+.auvergne_web_page .container_video_100vh h2 {
+  margin-top: 2vh;
+  font-size: 2.5rem;
+  font-weight: 100;
+  color: var(--black);
+  font-family: Base Neue;
+}
+
+.guadeloupe_web_page .container_video_100vh h2 span,
+.auvergne_web_page .container_video_100vh h2 span {
+  font-weight: bold;
+}
+
+.guadeloupe_web_page .autres_projets,
+.auvergne_web_page .autres_projets {
+  width: 80%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 5vh 0;
+}
+
+.guadeloupe_web_page .autres_projets h2,
+.auvergne_web_page .autres_projets h2 {
+  font-size: 4vw;
+  font-weight: 600;
+  margin-bottom: 2vw;
+  font-family: Base Neue;
+  color: var(--black);
+}
+
+.guadeloupe_web_page .autres_projets .suggestion,
+.auvergne_web_page .autres_projets .suggestion {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  row-gap: 4vh;
+}
+
+.guadeloupe_web_page .autres_projets .suggestion .suggestion_top,
+.guadeloupe_web_page .autres_projets .suggestion .suggestion_bottom,
+.auvergne_web_page .autres_projets .suggestion .suggestion_top,
+.auvergne_web_page .autres_projets .suggestion .suggestion_bottom {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3859,7 +3992,227 @@ header ul .li_contact:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.guadeloupe_web_page .autres_projets .suggestion .suggestion_top .container_miniatures,
+.guadeloupe_web_page .autres_projets .suggestion .suggestion_bottom .container_miniatures,
+.auvergne_web_page .autres_projets .suggestion .suggestion_top .container_miniatures,
+.auvergne_web_page .autres_projets .suggestion .suggestion_bottom .container_miniatures {
+  cursor: pointer;
+  position: relative;
+  width: 48%;
+  height: 15vw;
+  border-radius: 1.5vw;
   overflow: hidden;
+  border: 0.5vw solid transparent;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.guadeloupe_web_page .autres_projets .suggestion .suggestion_top .container_miniatures .titre_minia,
+.guadeloupe_web_page .autres_projets .suggestion .suggestion_bottom .container_miniatures .titre_minia,
+.auvergne_web_page .autres_projets .suggestion .suggestion_top .container_miniatures .titre_minia,
+.auvergne_web_page .autres_projets .suggestion .suggestion_bottom .container_miniatures .titre_minia {
+  position: absolute;
+  bottom: 0%;
+  left: 0%;
+  margin: 1vh 1vw;
+  font-size: 3vw;
+  font-family: Base Neue;
+  font-weight: 600;
+  color: #fcfcfc;
+  z-index: 2;
+}
+
+.guadeloupe_web_page .autres_projets .suggestion .suggestion_top .container_miniatures .miniatures,
+.guadeloupe_web_page .autres_projets .suggestion .suggestion_bottom .container_miniatures .miniatures,
+.auvergne_web_page .autres_projets .suggestion .suggestion_top .container_miniatures .miniatures,
+.auvergne_web_page .autres_projets .suggestion .suggestion_bottom .container_miniatures .miniatures {
+  position: absolute;
+  bottom: 0%;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0%);
+          transform: translate(-50%, 0%);
+  width: 100%;
+  height: 150%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: 1;
+  -webkit-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.guadeloupe_web_page .autres_projets .suggestion .suggestion_top .container_miniatures:hover,
+.guadeloupe_web_page .autres_projets .suggestion .suggestion_bottom .container_miniatures:hover,
+.auvergne_web_page .autres_projets .suggestion .suggestion_top .container_miniatures:hover,
+.auvergne_web_page .autres_projets .suggestion .suggestion_bottom .container_miniatures:hover {
+  border: 0.5vw solid var(--green);
+}
+
+.guadeloupe_web_page .autres_projets .suggestion .suggestion_top .container_miniatures:hover img,
+.guadeloupe_web_page .autres_projets .suggestion .suggestion_bottom .container_miniatures:hover img,
+.auvergne_web_page .autres_projets .suggestion .suggestion_top .container_miniatures:hover img,
+.auvergne_web_page .autres_projets .suggestion .suggestion_bottom .container_miniatures:hover img {
+  opacity: 0.8;
+}
+
+.guadeloupe_web_page .information_supplementaire,
+.auvergne_web_page .information_supplementaire {
+  position: relative;
+  width: 100%;
+  background-color: var(--black);
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10vh 0;
+}
+
+.guadeloupe_web_page .information_supplementaire .container_information_supplementaire,
+.auvergne_web_page .information_supplementaire .container_information_supplementaire {
+  position: relative;
+  width: 80%;
+  background-color: var(--black);
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.guadeloupe_web_page .information_supplementaire .container_information_supplementaire .setup,
+.guadeloupe_web_page .information_supplementaire .container_information_supplementaire .photo,
+.auvergne_web_page .information_supplementaire .container_information_supplementaire .setup,
+.auvergne_web_page .information_supplementaire .container_information_supplementaire .photo {
+  position: relative;
+  height: 50vh;
+  width: 48%;
+  border-radius: 1.5vw;
+  padding: 2vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+          box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+
+.guadeloupe_web_page .information_supplementaire .container_information_supplementaire .setup,
+.auvergne_web_page .information_supplementaire .container_information_supplementaire .setup {
+  background-color: var(--white);
+}
+
+.guadeloupe_web_page .information_supplementaire .container_information_supplementaire .setup h4,
+.auvergne_web_page .information_supplementaire .container_information_supplementaire .setup h4 {
+  font-size: 4vw;
+  font-weight: 600;
+  font-family: Base Neue;
+  color: var(--green);
+  margin-bottom: 1vw;
+}
+
+.guadeloupe_web_page .information_supplementaire .container_information_supplementaire .setup .specialite,
+.auvergne_web_page .information_supplementaire .container_information_supplementaire .setup .specialite {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  row-gap: 3vh;
+}
+
+.guadeloupe_web_page .information_supplementaire .container_information_supplementaire .setup .specialite .spe,
+.auvergne_web_page .information_supplementaire .container_information_supplementaire .setup .specialite .spe {
+  line-height: 0.5vh;
+}
+
+.guadeloupe_web_page .information_supplementaire .container_information_supplementaire .setup .specialite .spe h5,
+.auvergne_web_page .information_supplementaire .container_information_supplementaire .setup .specialite .spe h5 {
+  font-size: 1.1vw;
+  font-weight: 600;
+  font-family: "Inter", sans-serif;
+  color: var(--black);
+  margin-bottom: 1vw;
+}
+
+.guadeloupe_web_page .information_supplementaire .container_information_supplementaire .setup .specialite .spe p,
+.auvergne_web_page .information_supplementaire .container_information_supplementaire .setup .specialite .spe p {
+  font-size: 1.1vw;
+  font-weight: 400;
+  font-family: "Inter", sans-serif;
+  color: var(--black);
+  margin-bottom: 1vw;
+}
+
+.guadeloupe_web_page .information_supplementaire .container_information_supplementaire .photo,
+.auvergne_web_page .information_supplementaire .container_information_supplementaire .photo {
+  background-color: var(--green);
+}
+
+.guadeloupe_web_page .information_supplementaire .container_information_supplementaire .photo h4,
+.auvergne_web_page .information_supplementaire .container_information_supplementaire .photo h4 {
+  font-size: 4vw;
+  font-weight: 600;
+  font-family: Base Neue;
+  color: var(--white);
+  margin-bottom: 1vw;
+}
+
+.guadeloupe_web_page .information_supplementaire .container_information_supplementaire .photo a,
+.auvergne_web_page .information_supplementaire .container_information_supplementaire .photo a {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 9vw;
+  -webkit-transition: width 0.2s ease-in-out;
+  transition: width 0.2s ease-in-out;
+}
+
+.guadeloupe_web_page .information_supplementaire .container_information_supplementaire .photo a:hover,
+.auvergne_web_page .information_supplementaire .container_information_supplementaire .photo a:hover {
+  width: 10vw;
+}
+
+.guadeloupe_web_page .information_supplementaire .container_information_supplementaire .photo a .illu_photo,
+.auvergne_web_page .information_supplementaire .container_information_supplementaire .photo a .illu_photo {
+  width: 100%;
+}
+
+.guadeloupe_web_page .information_supplementaire .container_information_supplementaire .photo a .illu_photo path,
+.auvergne_web_page .information_supplementaire .container_information_supplementaire .photo a .illu_photo path {
+  width: 100%;
+  fill: var(--white);
 }
 
 .transition_slide_enter {

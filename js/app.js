@@ -131,6 +131,78 @@ switch (url) {
     scrollMagicGalerie();
     break;
 
+                                 // -----------
+  case "http://192.168.1.70:5500/tropical.html":
+    darkModeGalerie();
+    scrollMagicGalerie();
+    break;
+  case "http://10.152.22.39:5500/tropical.html":
+    darkModeGalerie();
+    scrollMagicGalerie();
+    break;
+     case "http://192.168.1.77:5500/tropical.html":
+      darkModeGalerie();
+      scrollMagicGalerie();
+    break;
+  case "https://www.enzo-cosson.fr/tropical.html":
+    darkModeGalerie();
+    scrollMagicGalerie();
+    break;
+
+                                 // -----------
+  case "http://192.168.1.70:5500/golden_hour.html":
+    darkModeGalerie();
+    scrollMagicGalerie();
+    break;
+  case "http://10.152.22.39:5500/golden_hour.html":
+    darkModeGalerie();
+    scrollMagicGalerie();
+    break;
+     case "http://192.168.1.77:5500/golden_hour.html":
+      darkModeGalerie();
+      scrollMagicGalerie();
+    break;
+  case "https://www.enzo-cosson.fr/golden_hour.html":
+    darkModeGalerie();
+    scrollMagicGalerie();
+    break;
+
+                                 // -----------
+  case "http://192.168.1.70:5500/by_night.html":
+    darkModeGalerie();
+    scrollMagicGalerie();
+    break;
+  case "http://10.152.22.39:5500/by_night.html":
+    darkModeGalerie();
+    scrollMagicGalerie();
+    break;
+     case "http://192.168.1.77:5500/by_night.html":
+      darkModeGalerie();
+      scrollMagicGalerie();
+    break;
+  case "https://www.enzo-cosson.fr/by_night.html":
+    darkModeGalerie();
+    scrollMagicGalerie();
+    break;
+
+    // -----------
+    case "http://192.168.1.70:5500/my_dog.html":
+    darkModeGalerie();
+    scrollMagicGalerie();
+    break;
+  case "http://10.152.22.39:5500/my_dog.html":
+    darkModeGalerie();
+    scrollMagicGalerie();
+    break;
+      case "http://192.168.1.77:5500/my_dog.html":
+      darkModeGalerie();
+      scrollMagicGalerie();
+    break;
+  case "https://www.enzo-cosson.fr/my_dog.html":
+    darkModeGalerie();
+    scrollMagicGalerie();
+    break;
+                              
 
                          // -----------
   case "http://192.168.1.70:5500/video.html":
