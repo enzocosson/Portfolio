@@ -607,6 +607,7 @@
   }
 
   .right_text_absolute {
+    pointer-events: none;
     height: 145%;
 
     width: 19vw;
@@ -655,6 +656,7 @@
 
   .first_translate,
   .last_translate {
+    pointer-events: none;
     width: 220%;
     position: absolute;
 
@@ -680,6 +682,7 @@
     z-index: 13;
   }
   .imac_soda {
+    pointer-events: none;
     opacity: 1;
     position: absolute;
     top: 100%;
@@ -693,6 +696,7 @@
     opacity: 0;
   }
   .imac_soda_black {
+    pointer-events: none;
     opacity: 0;
     position: absolute;
     top: 100%;
@@ -876,13 +880,25 @@
   height: 100vh;
   background-color: var(--white);
   overflow: hidden;
+  transition: background-color 1s cubic-bezier(0.81, 0, 0.4, 0.99);
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50vh;
+    background: linear-gradient(to top, var(--white), transparent);
+    z-index: 1;
+  }
 
   .stroke_green_circle1 {
     cursor: pointer;
     position: absolute;
     top: -50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%) scale(1);
     width: 20vw;
     height: 20vw;
     border-radius: 50%;
@@ -898,6 +914,10 @@
     font-size: 4vw;
     padding-top: 1vh;
     opacity: 0;
+    transition: transform 1s cubic-bezier(0.81, 0, 0.4, 0.99);
+  }
+  .stroke_green_circle1_active {
+    transform: translate(-50%, -50%) scale(1.2);
   }
   .stroke_green_circle2 {
     position: absolute;
@@ -953,5 +973,13 @@
     line-height: 35vh;
     letter-spacing: 5vw;
     opacity: 0;
+    transition: color 1s cubic-bezier(0.81, 0, 0.4, 0.99);
+    z-index: 1;
   }
+  .transition_title_active {
+    color: var(--white);
+  }
+}
+.see_more_active {
+  background-color: var(--green);
 }

@@ -230,6 +230,18 @@
   height: 100vh;
   background-color: var(--white);
   overflow: hidden;
+  transition: background-color 1s cubic-bezier(0.81, 0, 0.4, 0.99);
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50vh;
+    background: linear-gradient(to top, var(--white), transparent);
+    z-index: 1;
+  }
 
   .album_stroke_green_circle1 {
     cursor: pointer;
@@ -252,6 +264,10 @@
     font-size: 4vw;
     padding-top: 1vh;
     opacity: 0;
+    transition: transform 1s cubic-bezier(0.81, 0, 0.4, 0.99);
+  }
+  .album_stroke_green_circle1_active {
+    transform: translate(-50%, -50%) scale(1.2);
   }
   .album_stroke_green_circle2 {
     position: absolute;
@@ -306,7 +322,15 @@
     line-height: 35vh;
     letter-spacing: 5vw;
     opacity: 0;
+    transition: color 1s cubic-bezier(0.81, 0, 0.4, 0.99);
+    z-index: 1;
   }
+  .album_transition_title_active {
+    color: var(--white);
+  }
+}
+.see_more_album_active {
+  background-color: var(--green);
 }
 
 .contact {

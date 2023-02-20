@@ -74,8 +74,9 @@
   }
 }
 .presentation {
+  position: relative;
   width: 100%;
-  background-color: var(--green);
+  background-color: var(--white);
 
   display: flex;
   justify-content: center;
@@ -88,11 +89,12 @@
     font-weight: bold;
     color: var(--black);
     text-align: justify;
-    margin-bottom: 10vh;
+    margin: 10vh 0;
     line-height: 4vh;
+    z-index: 1;
 
     .selection {
-      color: var(--white);
+      color: var(--green);
     }
   }
 }

@@ -210,21 +210,6 @@ header ul li .links {
   z-index: 3;
 }
 
-header ul li #contact {
-  color: var(--green);
-  padding: 0.5vh 2.5vw;
-  background-color: var(--white);
-  border-radius: 0.4vw;
-  font-weight: bold;
-  border: 3px solid transparent;
-}
-
-header ul li #contact:hover {
-  background-color: transparent;
-  color: var(--white);
-  border: 3px solid var(--white);
-}
-
 header ul li::before, header ul li::after {
   content: "";
   position: absolute;
@@ -259,13 +244,47 @@ header ul li:hover {
 
 header ul .li_contact {
   margin-right: 0;
+  padding: calc(1vh - (3px)) 1vw;
+  margin: 0vh 0.5vw;
+  border-radius: 0.4vw;
+  background-color: var(--white);
+  border: 3px solid var(--white);
+}
+
+header ul .li_contact #contact {
+  color: var(--green);
+  font-weight: bold;
+}
+
+header ul .li_contact:hover #contact {
+  background-color: transparent;
+  color: var(--white);
+}
+
+header ul .li_contact:hover {
+  background-color: transparent;
+  color: var(--white);
 }
 
 header ul .li_contact::before, header ul .li_contact::after {
   display: none;
 }
 
-.header_galerie .links {
+.header_galerie li {
+  position: relative;
+  padding: 1vh 1vw;
+  margin: 0vh 0.5vw;
+  -webkit-transition: 250ms ease-in-out;
+  transition: 250ms ease-in-out;
+  overflow: hidden;
+  border-radius: 0.4vw;
+}
+
+.header_galerie li:hover .links {
+  color: var(--green);
+}
+
+.header_galerie li .links {
   text-decoration: none;
   color: var(--black);
   font-family: "Inter", sans-serif;
@@ -273,21 +292,67 @@ header ul .li_contact::before, header ul .li_contact::after {
   font-size: 1.1vw;
   -webkit-transition: 0.2s ease-in-out;
   transition: 0.2s ease-in-out;
+  z-index: 3;
 }
 
-.header_galerie #contact {
-  color: var(--green);
-  padding: 0.5vh 2.5vw;
+.header_galerie li::before, .header_galerie li::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 0%;
+  height: 100%;
   background-color: var(--black);
-  border-radius: 0.4vw;
-  font-weight: bold;
-  border: 3px solid transparent;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  z-index: -1;
 }
 
-.header_galerie #contact:hover {
+.header_galerie li::before {
+  left: 0;
+}
+
+.header_galerie li::after {
+  right: 0;
+}
+
+.header_galerie li:hover::before {
+  width: 100%;
+}
+
+.header_galerie li:hover::after {
+  width: 100%;
+}
+
+.header_galerie li:hover {
+  overflow: hidden;
+}
+
+.header_galerie .li_contact {
+  margin-right: 0;
+  padding: calc(1vh - (3px)) 1vw;
+  margin: 0vh 0.5vw;
+  border-radius: 0.4vw;
+  background-color: var(--black);
+  border: 3px solid var(--black);
+}
+
+.header_galerie .li_contact #contact {
+  color: var(--green);
+  font-weight: bold;
+}
+
+.header_galerie .li_contact:hover #contact {
   background-color: transparent;
-  color: var(--white);
-  border: 3px solid var(--white);
+  color: var(--black);
+}
+
+.header_galerie .li_contact:hover {
+  background-color: transparent;
+  color: var(--black);
+}
+
+.header_galerie .li_contact::before, .header_galerie .li_contact::after {
+  display: none;
 }
 
 .header_active_visited {
@@ -1384,6 +1449,7 @@ header ul .li_contact::before, header ul .li_contact::after {
 }
 
 .works .right_text_absolute {
+  pointer-events: none;
   height: 145%;
   width: 19vw;
   display: -webkit-box;
@@ -1445,6 +1511,7 @@ header ul .li_contact::before, header ul .li_contact::after {
 
 .soda .first_translate,
 .soda .last_translate {
+  pointer-events: none;
   width: 220%;
   position: absolute;
   color: var(--green);
@@ -1475,6 +1542,7 @@ header ul .li_contact::before, header ul .li_contact::after {
 }
 
 .soda .imac_soda {
+  pointer-events: none;
   opacity: 1;
   position: absolute;
   top: 100%;
@@ -1492,6 +1560,7 @@ header ul .li_contact::before, header ul .li_contact::after {
 }
 
 .soda .imac_soda_black {
+  pointer-events: none;
   opacity: 0;
   position: absolute;
   top: 100%;
@@ -1713,6 +1782,20 @@ header ul .li_contact::before, header ul .li_contact::after {
   height: 100vh;
   background-color: var(--white);
   overflow: hidden;
+  -webkit-transition: background-color 1s cubic-bezier(0.81, 0, 0.4, 0.99);
+  transition: background-color 1s cubic-bezier(0.81, 0, 0.4, 0.99);
+}
+
+.see_more::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50vh;
+  background: -webkit-gradient(linear, left bottom, left top, from(var(--white)), to(transparent));
+  background: linear-gradient(to top, var(--white), transparent);
+  z-index: 1;
 }
 
 .see_more .stroke_green_circle1 {
@@ -1720,8 +1803,8 @@ header ul .li_contact::before, header ul .li_contact::after {
   position: absolute;
   top: -50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%) scale(1);
+          transform: translate(-50%, -50%) scale(1);
   width: 20vw;
   height: 20vw;
   border-radius: 50%;
@@ -1742,6 +1825,15 @@ header ul .li_contact::before, header ul .li_contact::after {
   font-size: 4vw;
   padding-top: 1vh;
   opacity: 0;
+  -webkit-transition: -webkit-transform 1s cubic-bezier(0.81, 0, 0.4, 0.99);
+  transition: -webkit-transform 1s cubic-bezier(0.81, 0, 0.4, 0.99);
+  transition: transform 1s cubic-bezier(0.81, 0, 0.4, 0.99);
+  transition: transform 1s cubic-bezier(0.81, 0, 0.4, 0.99), -webkit-transform 1s cubic-bezier(0.81, 0, 0.4, 0.99);
+}
+
+.see_more .stroke_green_circle1_active {
+  -webkit-transform: translate(-50%, -50%) scale(1.2);
+          transform: translate(-50%, -50%) scale(1.2);
 }
 
 .see_more .stroke_green_circle2 {
@@ -1803,6 +1895,17 @@ header ul .li_contact::before, header ul .li_contact::after {
   line-height: 35vh;
   letter-spacing: 5vw;
   opacity: 0;
+  -webkit-transition: color 1s cubic-bezier(0.81, 0, 0.4, 0.99);
+  transition: color 1s cubic-bezier(0.81, 0, 0.4, 0.99);
+  z-index: 1;
+}
+
+.see_more .transition_title_active {
+  color: var(--white);
+}
+
+.see_more_active {
+  background-color: var(--green);
 }
 
 .photoVideoTop {
@@ -2090,6 +2193,20 @@ header ul .li_contact::before, header ul .li_contact::after {
   height: 100vh;
   background-color: var(--white);
   overflow: hidden;
+  -webkit-transition: background-color 1s cubic-bezier(0.81, 0, 0.4, 0.99);
+  transition: background-color 1s cubic-bezier(0.81, 0, 0.4, 0.99);
+}
+
+.see_more_album::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50vh;
+  background: -webkit-gradient(linear, left bottom, left top, from(var(--white)), to(transparent));
+  background: linear-gradient(to top, var(--white), transparent);
+  z-index: 1;
 }
 
 .see_more_album .album_stroke_green_circle1 {
@@ -2119,6 +2236,15 @@ header ul .li_contact::before, header ul .li_contact::after {
   font-size: 4vw;
   padding-top: 1vh;
   opacity: 0;
+  -webkit-transition: -webkit-transform 1s cubic-bezier(0.81, 0, 0.4, 0.99);
+  transition: -webkit-transform 1s cubic-bezier(0.81, 0, 0.4, 0.99);
+  transition: transform 1s cubic-bezier(0.81, 0, 0.4, 0.99);
+  transition: transform 1s cubic-bezier(0.81, 0, 0.4, 0.99), -webkit-transform 1s cubic-bezier(0.81, 0, 0.4, 0.99);
+}
+
+.see_more_album .album_stroke_green_circle1_active {
+  -webkit-transform: translate(-50%, -50%) scale(1.2);
+          transform: translate(-50%, -50%) scale(1.2);
 }
 
 .see_more_album .album_stroke_green_circle2 {
@@ -2180,6 +2306,17 @@ header ul .li_contact::before, header ul .li_contact::after {
   line-height: 35vh;
   letter-spacing: 5vw;
   opacity: 0;
+  -webkit-transition: color 1s cubic-bezier(0.81, 0, 0.4, 0.99);
+  transition: color 1s cubic-bezier(0.81, 0, 0.4, 0.99);
+  z-index: 1;
+}
+
+.see_more_album .album_transition_title_active {
+  color: var(--white);
+}
+
+.see_more_album_active {
+  background-color: var(--green);
 }
 
 .contact {
@@ -2514,6 +2651,7 @@ header ul .li_contact::before, header ul .li_contact::after {
 }
 
 .developpement_web_page .carrousel_title_stroke_next .container_slider_anim {
+  pointer-events: none;
   width: auto;
   position: absolute;
   top: 50%;
@@ -2554,6 +2692,7 @@ header ul .li_contact::before, header ul .li_contact::after {
 }
 
 .developpement_web_page .carrousel_title_stroke_next .container_slider_anim .slider {
+  pointer-events: none;
   font-size: 25vw;
   color: transparent;
   -webkit-text-stroke: 3px var(--white);
@@ -3178,7 +3317,7 @@ header ul .li_contact::before, header ul .li_contact::after {
   position: relative;
   width: 100%;
   height: auto;
-  background-color: var(--green);
+  background-color: var(--white);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3200,9 +3339,12 @@ header ul .li_contact::before, header ul .li_contact::after {
 
 .photo_web_page .titre,
 .video_web_page .titre {
-  font-size: 5vw;
+  font-size: 6vw;
+  font-weight: bold;
   font-family: Base Neue;
-  color: var(--white);
+  color: var(--black);
+  text-transform: uppercase;
+  margin: 5vh 0;
 }
 
 .photo_web_page .theme,
@@ -3229,13 +3371,14 @@ header ul .li_contact::before, header ul .li_contact::after {
   width: 100%;
   font-size: 5vw;
   text-align: center;
-  color: var(--white);
+  color: #fcfcfc;
   font-weight: bold;
   font-family: Base Neue;
   -webkit-filter: drop-shadow(0px 2px 0.1vw rgba(0, 0, 0, 0.237));
   filter: drop-shadow(0px 0px 0.2vw rgba(0, 0, 0, 0.192));
-  transition: color 0.5s ease-out, -webkit-text-stroke 0.5s ease-out;
-  z-index: 2;
+  -webkit-transition: color 0.5s ease-out;
+  transition: color 0.5s ease-out;
+  z-index: 3;
 }
 
 .photo_web_page .theme .theme_img,
@@ -3251,6 +3394,23 @@ header ul .li_contact::before, header ul .li_contact::after {
      object-fit: cover;
   -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
+  z-index: 2;
+}
+
+.photo_web_page .theme .guadeloupe_video_hover,
+.video_web_page .theme .guadeloupe_video_hover {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 100%;
+  height: 110%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  z-index: 1;
 }
 
 .photo_web_page .theme .mountain,
@@ -3267,12 +3427,112 @@ header ul .li_contact::before, header ul .li_contact::after {
 
 .photo_web_page .theme:hover,
 .video_web_page .theme:hover {
-  border: 0.5vw solid var(--white);
+  border: 0.5vw solid var(--green);
+}
+
+.photo_web_page .theme:hover .theme_titre,
+.video_web_page .theme:hover .theme_titre {
+  color: var(--green);
 }
 
 .photo_web_page .theme:hover img,
 .video_web_page .theme:hover img {
-  opacity: 0.3;
+  opacity: 0.7;
+}
+
+.photo_web_page .theme_video,
+.video_web_page .theme_video {
+  position: relative;
+  text-decoration: none;
+  width: 90vw;
+  height: 60vh;
+  border-radius: 1.5vw;
+  overflow: hidden;
+  margin: 3vh 0;
+  border: 0.5vw solid transparent;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+.photo_web_page .theme_video .theme_titre,
+.video_web_page .theme_video .theme_titre {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 100%;
+  font-size: 5vw;
+  text-align: center;
+  color: #fcfcfc;
+  font-weight: bold;
+  font-family: Base Neue;
+  -webkit-filter: drop-shadow(0px 2px 0.1vw rgba(0, 0, 0, 0.237));
+  filter: drop-shadow(0px 0px 0.2vw rgba(0, 0, 0, 0.192));
+  -webkit-transition: color 0.5s ease-out;
+  transition: color 0.5s ease-out;
+  z-index: 3;
+}
+
+.photo_web_page .theme_video .theme_img,
+.video_web_page .theme_video .theme_img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 100%;
+  height: 110%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  z-index: 2;
+}
+
+.photo_web_page .theme_video .guadeloupe_video_hover,
+.photo_web_page .theme_video .auvergne_video_hover,
+.video_web_page .theme_video .guadeloupe_video_hover,
+.video_web_page .theme_video .auvergne_video_hover {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  z-index: 1;
+}
+
+.photo_web_page .theme_video .mountain,
+.video_web_page .theme_video .mountain {
+  -o-object-position: top;
+     object-position: top;
+}
+
+.photo_web_page .theme_video .tropical,
+.video_web_page .theme_video .tropical {
+  -o-object-position: center;
+     object-position: center;
+}
+
+.photo_web_page .theme_video:hover,
+.video_web_page .theme_video:hover {
+  border: 0.5vw solid var(--green);
+}
+
+.photo_web_page .theme_video:hover .theme_titre,
+.video_web_page .theme_video:hover .theme_titre {
+  color: var(--green);
+}
+
+.photo_web_page .theme_video:hover img,
+.video_web_page .theme_video:hover img {
+  opacity: 0;
 }
 
 .galerie_web_page {
@@ -5223,8 +5483,9 @@ header ul .li_contact::before, header ul .li_contact::after {
 }
 
 .presentation {
+  position: relative;
   width: 100%;
-  background-color: var(--green);
+  background-color: var(--white);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -5243,12 +5504,30 @@ header ul .li_contact::before, header ul .li_contact::after {
   font-weight: bold;
   color: var(--black);
   text-align: justify;
-  margin-bottom: 10vh;
+  margin: 10vh 0;
   line-height: 4vh;
+  z-index: 1;
 }
 
 .presentation .presentation_texte .selection {
-  color: var(--white);
+  color: var(--green);
+}
+
+.cursor_follow {
+  position: fixed;
+  width: 20px;
+  height: 20px;
+  border: 3px solid var(--white);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background-color: var(--white);
+  border-radius: 50%;
+  z-index: 99999999999999999999999999999999;
+  pointer-events: none;
+  -webkit-transition: width 0.15s ease-out, height 0.15s ease-out;
+  transition: width 0.15s ease-out, height 0.15s ease-out;
+  -webkit-box-shadow: 0px 0px 15px 0px var(--green);
+          box-shadow: 0px 0px 15px 0px var(--green);
 }
 
 footer {

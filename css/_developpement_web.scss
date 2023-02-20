@@ -205,6 +205,7 @@
     transition: 1.5s cubic-bezier(0.81, -0.01, 0.34, 0.99);
 
     .container_slider_anim {
+      pointer-events: none;
       width: auto;
       position: absolute;
       top: 50%;
@@ -227,6 +228,7 @@
       }
 
       .slider {
+        pointer-events: none;
         font-size: 25vw;
         color: transparent;
         -webkit-text-stroke: 3px var(--white);

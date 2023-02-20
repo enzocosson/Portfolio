@@ -71,21 +71,6 @@ header {
         z-index: 3;
       }
 
-      #contact {
-        color: var(--green);
-        padding: 0.5vh 2.5vw;
-        background-color: var(--white);
-        border-radius: 0.4vw;
-        font-weight: bold;
-        border: 3px solid transparent;
-
-        &:hover {
-          background-color: transparent;
-          color: var(--white);
-          border: 3px solid var(--white);
-        }
-      }
-
       &::before,
       &::after {
         content: "";
@@ -118,10 +103,27 @@ header {
         overflow: hidden;
       }
     }
-
     .li_contact {
       margin-right: 0;
+      padding: calc(1vh - (3px)) 1vw;
+      margin: 0vh 0.5vw;
+      border-radius: 0.4vw;
 
+      background-color: var(--white);
+      border: 3px solid var(--white);
+
+      #contact {
+        color: var(--green);
+        font-weight: bold;
+      }
+      &:hover #contact {
+        background-color: transparent;
+        color: var(--white);
+      }
+      &:hover {
+        background-color: transparent;
+        color: var(--white);
+      }
       &::before,
       &::after {
         display: none;
@@ -129,27 +131,86 @@ header {
     }
   }
 }
+
 .header_galerie {
-  .links {
-    text-decoration: none;
-    color: var(--black);
-    font-family: $font_sf;
-    font-weight: 300;
-    font-size: 1.1vw;
-    transition: 0.2s ease-in-out;
-  }
-  #contact {
-    color: var(--green);
-    padding: 0.5vh 2.5vw;
-    background-color: var(--black);
+  li {
+    position: relative;
+    padding: 1vh 1vw;
+    margin: 0vh 0.5vw;
+    transition: 250ms ease-in-out;
+    overflow: hidden;
     border-radius: 0.4vw;
-    font-weight: bold;
-    border: 3px solid transparent;
+
+    &:hover .links {
+      color: var(--green);
+    }
+
+    .links {
+      text-decoration: none;
+      color: var(--black);
+      font-family: $font_sf;
+      font-weight: 300;
+      font-size: 1.1vw;
+      transition: 0.2s ease-in-out;
+      z-index: 3;
+    }
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      width: 0%;
+      height: 100%;
+      background-color: var(--black);
+      transition: all 0.5s ease-in-out;
+      z-index: -1;
+    }
+
+    &::before {
+      left: 0;
+    }
+
+    &::after {
+      right: 0;
+    }
+
+    &:hover::before {
+      width: 100%;
+    }
+
+    &:hover::after {
+      width: 100%;
+    }
 
     &:hover {
+      overflow: hidden;
+    }
+  }
+  .li_contact {
+    margin-right: 0;
+    padding: calc(1vh - (3px)) 1vw;
+    margin: 0vh 0.5vw;
+    border-radius: 0.4vw;
+
+    background-color: var(--black);
+    border: 3px solid var(--black);
+
+    #contact {
+      color: var(--green);
+      font-weight: bold;
+    }
+    &:hover #contact {
       background-color: transparent;
-      color: var(--white);
-      border: 3px solid var(--white);
+      color: var(--black);
+    }
+    &:hover {
+      background-color: transparent;
+      color: var(--black);
+    }
+    &::before,
+    &::after {
+      display: none;
     }
   }
 }
