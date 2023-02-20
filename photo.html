@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
+    <div class="cursor_follow"></div>
+
     <section class="container_colors">
       <div class="bg_colors"></div>
       <div class="choix_couleurs">
@@ -22,10 +24,18 @@
       </div>
     </section>
 
-    <header class="header" id="rth">
+    <header class="header header_galerie" id="rth">
       <a href="index.html" class="pagelink">
-        <img class="logo logo_white" src="./img/white_logo.png" alt="" />
-        <img class="logo logo_black" src="./img/black_logo.png" alt="" />
+        <img
+          class="logo logo_white_galerie"
+          src="./img/white_logo.png"
+          alt=""
+        />
+        <img
+          class="logo logo_black_galerie"
+          src="./img/black_logo.png"
+          alt=""
+        />
       </a>
 
       <ul>
@@ -59,7 +69,7 @@
         </svg>
       </a>
 
-      <div class="darkMode">
+      <button class="darkMode">
         <svg
           class="logo_darkmode"
           width="45"
@@ -74,7 +84,7 @@
             fill="#FCFCFC"
           />
         </svg>
-      </div>
+      </button>
 
       <button onclick="generateColors()" class="change_color_btn" href="">
         <svg
@@ -92,12 +102,12 @@
       </button>
     </div>
     <section class="photo_web_page">
-      <h1 class="titre">Découvrez mes différentes thématiques</h1>
+      <h1 class="titre">Thématiques</h1>
 
       <a href="mountain.html" class="theme">
         <h2 class="theme_titre">MOUNTAIN</h2>
         <img
-          src="./img/photo/theme/mountain.png"
+          src="./img/photo/theme/resize/mountain.png"
           class="theme_img mountain"
           alt=""
         />
@@ -105,27 +115,35 @@
       <a href="tropical.html" class="theme">
         <h2 class="theme_titre">TROPICAL</h2>
         <img
-          src="./img/photo/theme/waterwall.jpg"
+          src="./img/photo/theme/resize/waterwall.jpg"
           class="theme_img tropical"
           alt=""
         />
       </a>
       <a href="golden_hour.html" class="theme">
         <h2 class="theme_titre">GOLDEN HOUR</h2>
-        <img src="./img/photo/theme/gold.JPG" class="theme_img" alt="" />
+        <img src="./img/photo/theme/resize/gold.JPG" class="theme_img" alt="" />
       </a>
       <a href="by_night.html" class="theme">
         <h2 class="theme_titre">BY NIGHT</h2>
-        <img src="./img/photo/theme/stars.jpg" class="theme_img" alt="" />
+        <img
+          src="./img/photo/theme/resize/stars.jpg"
+          class="theme_img"
+          alt=""
+        />
       </a>
       <a href="my_dog.html" class="theme">
         <h2 class="theme_titre">MY DOG</h2>
-        <img src="./img/photo/theme/tipsy.jpg" class="theme_img" alt="" />
+        <img
+          src="./img/photo/theme/resize/tipsy.jpg"
+          class="theme_img"
+          alt=""
+        />
       </a>
     </section>
     <div class="contact">
       <h1>Un projet en tête ?</h1>
-      <a href="contact.html" class="lien_contact"> ME CONTACTER </a>
+      <a href="contact.html" class="lien_contact">ME CONTACTER</a>
     </div>
     <footer>
       <div class="info">
@@ -206,12 +224,12 @@
         </div>
         <div class="site">
           <h2>Envie d’un site ?</h2>
-          <a href="">WEB DEVELOPPEMENT | DESIGN</a>
+          <a href="developpement_web.html">WEB DEVELOPPEMENT | DESIGN</a>
         </div>
 
         <div class="photo">
           <h2>Envie de voyager ?</h2>
-          <a href="">PHOTOGRAPHIE | VIDEO</a>
+          <a href="photo_video.html">PHOTOGRAPHIE | VIDEO</a>
         </div>
       </div>
       <div class="copyright">

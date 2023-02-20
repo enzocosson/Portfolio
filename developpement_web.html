@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
 
+  <body>
+    <div class="cursor_follow"></div>
 
     <section class="container_colors">
       <div class="bg_colors"></div>
@@ -62,7 +64,7 @@
         </svg>
       </a>
 
-      <div class="darkMode">
+      <button class="darkMode">
         <svg
           class="logo_darkmode"
           width="45"
@@ -77,7 +79,7 @@
             fill="#FCFCFC"
           />
         </svg>
-      </div>
+      </button>
 
       <button onclick="generateColors()" class="change_color_btn" href="">
         <svg
@@ -351,9 +353,13 @@
               <h3>ART</h3>
             </div>
           </a>
-          <a href="art.html">
+          <a href="custom_air.html">
             <div class="card html">
-              <img class="card_img" src="./img/cards/cards_custom_air.png" alt="" />
+              <img
+                class="card_img"
+                src="./img/cards/cards_custom_air.png"
+                alt=""
+              />
               <span class="hover_bg"></span>
               <h3>CUSTOM AIR</h3>
             </div>
@@ -381,14 +387,22 @@
           </a>
           <a href="https://mmi21e03.mmi-troyes.fr/drugOptimal">
             <div class="card html">
-              <img class="card_img" src="./img/cards/cards_drugoptimal.png" alt="" />
+              <img
+                class="card_img"
+                src="./img/cards/cards_drugoptimal.png"
+                alt=""
+              />
               <span class="hover_bg"></span>
               <h3>DRUGOPTIMAL</h3>
             </div>
           </a>
           <a href="https://mmi21e03.mmi-troyes.fr/flashfood">
             <div class="card html">
-              <img class="card_img" src="./img/cards/cards_flashfood.png" alt="" />
+              <img
+                class="card_img"
+                src="./img/cards/cards_flashfood.png"
+                alt=""
+              />
               <span class="hover_bg"></span>
               <h3>FLASHFOOD</h3>
             </div>
@@ -404,14 +418,17 @@
       </section>
       <div class="contact">
         <h1>Un projet en tête ?</h1>
-        <a href="contact.html" class="lien_contact"> ME CONTACTER </a>
+        <a href="contact.html" class="lien_contact">ME CONTACTER</a>
       </div>
       <footer>
         <div class="info">
           <div class="reseaux">
             <h2>Suis moi sur mes réseaux</h2>
             <div class="logo_reseaux">
-              <a href="https://www.linkedin.com/in/enzo-cosson/" target="_blank">
+              <a
+                href="https://www.linkedin.com/in/enzo-cosson/"
+                target="_blank"
+              >
                 <svg
                   width="31"
                   height="31"
@@ -485,12 +502,12 @@
           </div>
           <div class="site">
             <h2>Envie d’un site ?</h2>
-            <a href="">WEB DEVELOPPEMENT | DESIGN</a>
+            <a href="developpement_web.html">WEB DEVELOPPEMENT | DESIGN</a>
           </div>
-  
+
           <div class="photo">
             <h2>Envie de voyager ?</h2>
-            <a href="">PHOTOGRAPHIE | VIDEO</a>
+            <a href="photo_video.html">PHOTOGRAPHIE | VIDEO</a>
           </div>
         </div>
         <div class="copyright">
@@ -522,14 +539,17 @@
     </script>
   </body>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js" integrity="sha512-f8mwTB+Bs8a5c46DEm7HQLcJuHMBaH/UFlcgyetMqqkvTcYg4g5VXsYR71b3qC82lZytjNYvBj2pf0VekA9/FQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="./js/generateColor.js"></script>
-    <script type="module" src="./js/app.js"></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"
+    integrity="sha512-f8mwTB+Bs8a5c46DEm7HQLcJuHMBaH/UFlcgyetMqqkvTcYg4g5VXsYR71b3qC82lZytjNYvBj2pf0VekA9/FQ=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+  <script src="./js/generateColor.js"></script>
+  <script type="module" src="./js/app.js"></script>
   <!-- --------------page-script------------------ -->
 
   <script>
-  
-
     // -----------------------------
     let currentSlideIndex = 1;
 
@@ -555,19 +575,14 @@
       const imacs = document.querySelectorAll(".imac");
       home_footer = document.querySelector(".home_footer");
 
-  
-
       header.classList.add("header_active_visited");
       home_footer.classList.add("home_footer_active_visited");
 
-    
-
-        const transitionSlide = document.querySelector(".transition_slide");
-        setTimeout(function() {
+      const transitionSlide = document.querySelector(".transition_slide");
+      setTimeout(function () {
         transitionSlide.classList.add("transition_slide_active");
       }, 300);
 
-      
       for (let i = 0; i < imacs.length; i++) {
         if (imacs[i].classList.contains("imac_center")) {
           imacs[i].classList.add("imac_center_active");
@@ -579,26 +594,19 @@
         url = "imovix.html";
       } else if (slideIndex === "2") {
         url = "book.html";
-      }
-      else if (slideIndex === "3") {
+      } else if (slideIndex === "3") {
         url = "spider_threejs.html";
-      }
-      else if (slideIndex === "4") {
+      } else if (slideIndex === "4") {
         url = "school.html";
-      }
-      else if (slideIndex === "5") {
+      } else if (slideIndex === "5") {
         url = "soda.html";
-      }
-      else if (slideIndex === "6") {
+      } else if (slideIndex === "6") {
         url = "art.html";
-      }
-      else if (slideIndex === "7") {
+      } else if (slideIndex === "7") {
         url = "flashfood.html";
-      }
-      else if (slideIndex === "8") {
+      } else if (slideIndex === "8") {
         url = "gopro.html";
       }
-
 
       setTimeout(function () {
         window.location = url;

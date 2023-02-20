@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
+    <div class="cursor_follow"></div>
+
     <section class="container_colors">
       <div class="bg_colors"></div>
       <div class="choix_couleurs">
@@ -22,10 +24,18 @@
       </div>
     </section>
 
-    <header class="header" id="rth">
+    <header class="header header_galerie" id="rth">
       <a href="index.html" class="pagelink">
-        <img class="logo logo_white" src="./img/white_logo.png" alt="" />
-        <img class="logo logo_black" src="./img/black_logo.png" alt="" />
+        <img
+          class="logo logo_white_galerie"
+          src="./img/white_logo.png"
+          alt=""
+        />
+        <img
+          class="logo logo_black_galerie"
+          src="./img/black_logo.png"
+          alt=""
+        />
       </a>
 
       <ul>
@@ -59,7 +69,7 @@
         </svg>
       </a>
 
-      <div class="darkMode">
+      <button class="darkMode">
         <svg
           class="logo_darkmode"
           width="45"
@@ -74,7 +84,7 @@
             fill="#FCFCFC"
           />
         </svg>
-      </div>
+      </button>
 
       <button onclick="generateColors()" class="change_color_btn" href="">
         <svg
@@ -92,28 +102,26 @@
       </button>
     </div>
     <section class="video_web_page">
-      <h1 class="titre">Découvrez mes différentes thématiques</h1>
+      <h1 class="titre">Thématiques</h1>
 
-      <a href="mountain.html" class="theme">
-        <h2 class="theme_titre">MOUNTAIN</h2>
-        <img
-          src="./img/photo/theme/mountain.png"
-          class="theme_img mountain"
-          alt=""
-        />
+      <a href="guadeloupe.html" class="theme_video">
+        <h2 class="theme_titre">GUADELOUPE</h2>
+        <img src="./img/video/guadeloupe.png" class="theme_img" alt="" />
+        <video class="guadeloupe_video_hover" autoplay loop muted>
+          <source src="./video/film/guadeloupe_hover.mp4" type="video/mp4" />
+        </video>
       </a>
-      <a href="tropical.html" class="theme">
-        <h2 class="theme_titre">TROPICAL</h2>
-        <img
-          src="./img/photo/theme/waterwall.jpg"
-          class="theme_img tropical"
-          alt=""
-        />
+      <a href="auvergne.html" class="theme_video">
+        <h2 class="theme_titre">AUVERGNE</h2>
+        <img src="./img/video/auvergne.png" class="theme_img" alt="" />
+        <video class="auvergne_video_hover" autoplay loop muted>
+          <source src="./video/film/auvergne_hover.mp4" type="video/mp4" />
+        </video>
       </a>
     </section>
     <div class="contact">
       <h1>Un projet en tête ?</h1>
-      <a href="contact.html" class="lien_contact"> ME CONTACTER </a>
+      <a href="contact.html" class="lien_contact">ME CONTACTER</a>
     </div>
     <footer>
       <div class="info">
@@ -194,12 +202,12 @@
         </div>
         <div class="site">
           <h2>Envie d’un site ?</h2>
-          <a href="">WEB DEVELOPPEMENT | DESIGN</a>
+          <a href="developpement_web.html">WEB DEVELOPPEMENT | DESIGN</a>
         </div>
 
         <div class="photo">
           <h2>Envie de voyager ?</h2>
-          <a href="">PHOTOGRAPHIE | VIDEO</a>
+          <a href="photo_video.html">PHOTOGRAPHIE | VIDEO</a>
         </div>
       </div>
       <div class="copyright">
