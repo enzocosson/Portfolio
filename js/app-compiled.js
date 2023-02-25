@@ -7,10 +7,10 @@ function getURL() {
 var url = window.location.href;
 getURL();
 switch (url) {
-  case "http://192.168.1.70:5500/":
+  case "http://192.168.1.75:5500/":
     (0, loader)();
     break;
-  case "http://192.168.1.70:5500/index.html":
+  case "http://192.168.1.75:5500/index.html":
     (0, loader)();
     break;
   case "https://www.enzo-cosson.fr/index.html":
