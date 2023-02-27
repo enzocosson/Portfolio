@@ -7,3 +7,13 @@ export function burgerMenuToggle() {
     burger.classList.toggle("burger_active");
   });
 }
+
+export function burgerMenuBlackToggle() {
+  const menuBlack = document.querySelector(".menu_mobile_black");
+  const burger = document.querySelector(".burger");
+
+  burger.addEventListener("click", () => {
+    menuBlack.classList.toggle("menu_mobile_black_active");
+    burger.classList.toggle("burger_active");
+  });
+}

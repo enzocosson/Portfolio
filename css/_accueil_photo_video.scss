@@ -333,56 +333,57 @@
   background-color: var(--green);
 }
 
-.contact {
-  position: relative;
-  width: 100%;
-  height: 40vh;
-  background-color: var(--green);
+//-----------------responsive------------------------------------------
 
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  border-top: 0.3vw solid var(--white);
-  box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.041);
-
-  h1 {
-    font-size: 6vw;
-    font-weight: bold;
-    font-family: $font_base;
-    color: var(--white);
-    margin: 0 3vw;
-    z-index: 11;
-    filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.132));
+@media screen and (max-width: 780px) {
+  .photoVideoTop {
+    .photoVideoTop__title_front {
+      width: 200%;
+      font-size: 40vw;
+      line-height: 5vh;
+      -webkit-text-stroke: 1px var(--green);
+    }
+    .photoVideoTop__title {
+      width: 200%;
+      font-size: 40vw;
+      line-height: 5vh;
+      -webkit-text-stroke: 1px var(--green);
+    }
+    .container_photoVideoTop_img {
+      height: 60%;
+    }
   }
-
-  .lien_contact {
-    margin-top: 10vh;
-    padding: 1.5vh 1.5vw;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    background-color: var(--white);
-    border-radius: 0.5vw;
-    font-size: 1.2vw;
-    letter-spacing: 0.3vw;
-    font-weight: bold;
-    text-decoration: none;
-    color: var(--green);
-    font-family: $font_base;
-    border: 0.2vw solid var(--white);
-    transition: 0.3s ease-in-out;
-
-    &:hover {
-      border: 0.2vw solid var(--white);
-      background-color: var(--green);
-      color: var(--white);
+  .feed {
+    height: 155vh;
+    .container_feed_col {
+      width: 191%;
+      .col {
+        .container_img {
+          width: 35vw;
+          height: 48vw;
+        }
+      }
+    }
+  }
+  .see_more_album {
+    .album_transition_title {
+      width: 100%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 26vw;
+      font-weight: bold;
+      color: var(--green);
+      font-family: Base Neue;
+      line-height: 20vh;
+      text-align: center;
+      z-index: 0;
+      line-height: 12vh;
+      letter-spacing: 5vw;
+      opacity: 0;
+      transition: color 1s cubic-bezier(0.81, 0, 0.4, 0.99);
+      z-index: 1;
     }
   }
 }
