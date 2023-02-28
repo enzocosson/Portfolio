@@ -141,7 +141,7 @@ header {
   flex-direction: column;
   justify-content: right;
   align-items: flex-end;
-  padding: 2vw 3vw;
+  padding: 1vw 2vw;
   z-index: 999999999;
   transition: 0.2s ease-in-out;
 
@@ -569,5 +569,36 @@ header {
     transition: 1s ease-in-out;
     flex-direction: column;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  }
+
+  .home_footer {
+    .rth {
+      cursor: pointer;
+      width: 10vw;
+      height: 10vw;
+    }
+    .rth:hover {
+      background-color: var(--white);
+    }
+    .darkMode {
+      cursor: pointer;
+      position: relative;
+      width: 10vw;
+      height: 10vw;
+    }
+    .darkMode:hover {
+      background-color: var(--white);
+    }
+    .darkMode_active {
+      background-color: var(--green);
+    }
+    .change_color_btn {
+      cursor: pointer;
+      width: 10vw;
+      height: 10vw;
+    }
+    .change_color_btn:hover {
+      background-color: var(--white);
+    }
   }
 }

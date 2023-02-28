@@ -11,3 +11,8 @@
   transition: width 0.15s ease-out, height 0.15s ease-out;
   box-shadow: 0px 0px 15px 0px var(--green);
 }
+@media screen and (max-width: 780px) {
+  .cursor_follow {
+    display: none;
+  }
+}

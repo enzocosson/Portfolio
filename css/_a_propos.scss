@@ -98,3 +98,32 @@
     }
   }
 }
+
+//-----------------responsive------------------------------------------
+
+@media screen and (max-width: 780px) {
+  .a_propos_web_page {
+    .circle {
+      width: 65vw;
+      height: 65vw;
+      z-index: 1;
+      .title_back {
+        font-size: 27vw;
+      }
+      .title_front {
+        font-size: 27vw;
+      }
+    }
+  }
+  .presentation .presentation_texte {
+    width: 80%;
+    font-family: "Inter", sans-serif;
+    font-size: 3vw;
+    font-weight: bold;
+    color: var(--black);
+    text-align: justify;
+    margin: 10vh 0;
+    line-height: 4vh;
+    z-index: 1;
+  }
+}

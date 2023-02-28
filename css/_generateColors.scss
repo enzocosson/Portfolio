@@ -115,3 +115,34 @@
   pointer-events: all;
   opacity: 1;
 }
+
+//-----------------responsive------------------------------------------
+
+@media screen and (max-width: 780px) {
+  .container_colors {
+    .choix_couleurs {
+      width: 70vw;
+      height: 70vh;
+      .colors {
+        position: relative;
+        cursor: pointer;
+        width: 25vw;
+        height: 25vw;
+        border: none;
+        border-radius: 3vw;
+        margin: 2vw;
+
+        &:hover::before {
+          width: 20vw;
+          height: 20vw;
+          border-radius: 1vw;
+        }
+        &:hover::after {
+          width: 17vw;
+          height: 17vw;
+          border-radius: 1vw;
+        }
+      }
+    }
+  }
+}
