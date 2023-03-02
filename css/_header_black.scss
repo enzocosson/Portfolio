@@ -73,60 +73,10 @@
       }
     }
   }
-  .burger {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-end;
-    width: 8vw;
-    height: 6vw;
-
-    .line1,
-    .line2,
-    .line3 {
-      width: 100%;
-      height: 1.4px;
-      background-color: var(--black);
-      transition: 0.2s ease-in-out;
-    }
-    .line1 {
-      width: 100%;
-    }
-    .line2 {
-      width: 80%;
-    }
-    .line3 {
-      width: 60%;
-    }
-  }
-  .burger_active {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-end;
-    width: 8vw;
-    height: 6vw;
-
-    .line1,
-    .line2,
-    .line3 {
-      width: 100%;
-      height: 1.4px;
-      background-color: var(--black);
-      transition: 0.3s ease-in-out;
-    }
-    .line1 {
-      width: 100%;
-    }
-    .line2 {
-      width: 100%;
-    }
-    .line3 {
-      width: 100%;
-    }
-  }
 }
-
+.menu_mobile_black {
+  display: none;
+}
 //-----------------responsive------------------------------------------
 
 @media screen and (max-width: 780px) {
@@ -239,5 +189,57 @@
     transition: 1s ease-in-out;
     flex-direction: column;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  }
+  .burger {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 8vw;
+    height: 6vw;
+
+    .line1,
+    .line2,
+    .line3 {
+      width: 100%;
+      height: 1.4px;
+      background-color: var(--black);
+      transition: 0.2s ease-in-out;
+    }
+    .line1 {
+      width: 100%;
+    }
+    .line2 {
+      width: 80%;
+    }
+    .line3 {
+      width: 60%;
+    }
+  }
+  .burger_active {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 8vw;
+    height: 6vw;
+
+    .line1,
+    .line2,
+    .line3 {
+      width: 100%;
+      height: 1.4px;
+      background-color: var(--black);
+      transition: 0.3s ease-in-out;
+    }
+    .line1 {
+      width: 100%;
+    }
+    .line2 {
+      width: 100%;
+    }
+    .line3 {
+      width: 100%;
+    }
   }
 }
