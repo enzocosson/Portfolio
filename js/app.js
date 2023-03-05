@@ -357,36 +357,45 @@ switch (url) {
   case "http://192.168.1.75:5500/a_propos.html":
     darkModeSite();
     cursorFollow();
+    burgerMenuToggle();
     break;
   case "http://10.152.21.92:5500/a_propos.html":
     darkModeSite();
     cursorFollow();
+    burgerMenuToggle();
     break;
   case "http://192.168.1.77:5500/a_propos.html":
     darkModeSite();
     cursorFollow();
+    burgerMenuToggle();
     break;
   case "https://www.enzo-cosson.fr/a_propos.html":
     darkModeSite();
     cursorFollow();
+    burgerMenuToggle();
     break;
 
   // -----------
   case "http://192.168.1.75:5500/contact.html":
     darkModeSiteContact();
     cursorFollow();
+    burgerMenuToggle();
     break;
   case "http://10.152.21.92:5500/contact.html":
     darkModeSiteContact();
     cursorFollow();
+    burgerMenuToggle();
     break;
   case "http://192.168.1.77:5500/contact.html":
     darkModeSiteContact();
     cursorFollow();
+    burgerMenuToggle();
     break;
   case "https://www.enzo-cosson.fr/contact.html":
     darkModeSiteContact();
     cursorFollow();
+    burgerMenuToggle();
+    
     break;
 
   // -----------
@@ -394,21 +403,25 @@ switch (url) {
     darkModeSite();
     scrollMagicImovix();
     cursorFollow();
+    burgerMenuToggle();
     break;
   case "http://10.152.21.92:5500/imovix.html":
     darkModeSite();
     scrollMagicImovix();
     cursorFollow();
+    burgerMenuToggle();
     break;
   case "http://192.168.1.77:5500/imovix.html":
     darkModeSite();
     scrollMagicImovix();
     cursorFollow();
+    burgerMenuToggle();
     break;
   case "https://www.enzo-cosson.fr/imovix.html":
     darkModeSite();
     scrollMagicImovix();
     cursorFollow();
+    burgerMenuToggle();
     break;
 
   // -----------
@@ -416,21 +429,25 @@ switch (url) {
     darkModeSite();
     scrollMagicBook();
     cursorFollow();
+    burgerMenuToggle();
     break;
   case "http://10.152.21.92:5500/book.html":
     darkModeSite();
     scrollMagicBook();
     cursorFollow();
+    burgerMenuToggle();
     break;
   case "http://192.168.1.77:5500/book.html":
     darkModeSite();
     scrollMagicBook();
     cursorFollow();
+    burgerMenuToggle();
     break;
   case "https://www.enzo-cosson.fr/book.html":
     darkModeSite();
     scrollMagicBook();
     cursorFollow();
+    burgerMenuToggle();
     break;
 
   // -----------
@@ -438,21 +455,25 @@ switch (url) {
     darkModeSite();
     scrollMagicSoda();
     cursorFollow();
+    burgerMenuToggle();
     break;
   case "http://10.152.21.92:5500/soda.html":
     darkModeSite();
     scrollMagicSoda();
     cursorFollow();
+    burgerMenuToggle();
     break;
   case "http://192.168.1.77:5500/soda.html":
     darkModeSite();
     scrollMagicSoda();
     cursorFollow();
+    burgerMenuToggle();
     break;
   case "https://www.enzo-cosson.fr/soda.html":
     darkModeSite();
     scrollMagicSoda();
     cursorFollow();
+    burgerMenuToggle();
     break;
 
   // -----------
@@ -460,21 +481,25 @@ switch (url) {
     darkModeSite();
     scrollMagicArt();
     cursorFollow();
+    burgerMenuToggle();
     break;
   case "http://10.152.21.92:5500/art.html":
     darkModeSite();
     scrollMagicArt();
     cursorFollow();
+    burgerMenuToggle();
     break;
   case "http://192.168.1.77:5500/art.html":
     darkModeSite();
     scrollMagicArt();
     cursorFollow();
+    burgerMenuToggle();
     break;
   case "https://www.enzo-cosson.fr/art.html":
     darkModeSite();
     scrollMagicArt();
     cursorFollow();
+    burgerMenuToggle();
     break;
 
   // -----------
@@ -482,21 +507,25 @@ switch (url) {
     darkModeSite();
     scrollMagicSpider();
     cursorFollow();
+    burgerMenuToggle();
     break;
   case "http://10.152.21.92:5500/spider_threejs.html":
     darkModeSite();
     scrollMagicSpider();
     cursorFollow();
+    burgerMenuToggle();
     break;
   case "http://192.168.1.77:5500/spider_threejs.html":
     darkModeSite();
     scrollMagicSpider();
     cursorFollow();
+    burgerMenuToggle();
     break;
   case "https://www.enzo-cosson.fr/spider_threejs.html":
     darkModeSite();
     scrollMagicSpider();
     cursorFollow();
+    burgerMenuToggle();
     break;
 
   // -----------
@@ -504,21 +533,25 @@ switch (url) {
     darkModeSite();
     scrollMagicCustomAir();
     cursorFollow();
+    burgerMenuToggle();
     break;
   case "http://10.152.21.92:5500/custom_air.html":
     darkModeSite();
     scrollMagicCustomAir();
     cursorFollow();
+    burgerMenuToggle();
     break;
   case "http://192.168.1.77:5500/custom_air.html":
     darkModeSite();
     scrollMagicCustomAir();
     cursorFollow();
+    burgerMenuToggle();
     break;
   case "https://www.enzo-cosson.fr/custom_air.html":
     darkModeSite();
     scrollMagicCustomAir();
     cursorFollow();
+    burgerMenuToggle();
     break;
 
   // -----------
@@ -526,21 +559,25 @@ switch (url) {
     darkModeSite();
     scrollMagicSchool();
     cursorFollow();
+    burgerMenuToggle();
     break;
   case "http://10.152.21.92:5500/school.html":
     darkModeSite();
     scrollMagicSchool();
     cursorFollow();
+    burgerMenuToggle();
     break;
   case "http://192.168.1.77:5500/school.html":
     darkModeSite();
     scrollMagicSchool();
     cursorFollow();
+    burgerMenuToggle();
     break;
   case "https://www.enzo-cosson.fr/school.html":
     darkModeSite();
     scrollMagicSchool();
     cursorFollow();
+    burgerMenuToggle();
     break;
 
   default:

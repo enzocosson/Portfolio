@@ -543,3 +543,262 @@
     }
   }
 }
+
+//-----------------responsive------------------------------------------
+
+@media screen and (max-width: 780px) {
+  .presentation_site {
+    .bg_title {
+      position: absolute;
+      top: 35%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%) scale(1);
+      transform: translate(-50%, -50%) scale(1);
+      color: var(--white);
+      -webkit-text-stroke: 0.5vw var(--white);
+      font-family: Base Neue;
+      font-size: 25vw;
+      letter-spacing: 1vw;
+      z-index: 1;
+    }
+    .imac {
+      position: absolute;
+      top: 55%;
+      left: 50%;
+      -webkit-transform-origin: center;
+      transform-origin: center;
+      -webkit-perspective-origin: center;
+      perspective-origin: center;
+      -webkit-transform: translateX(-50%) translateY(-50%);
+      transform: translateX(-50%) translateY(-50%);
+      width: 70vw;
+      letter-spacing: 0vw;
+      z-index: 2;
+    }
+  }
+
+  .more_info {
+    h1 {
+      color: var(--green);
+      font-family: Base Neue;
+      font-size: 20vw;
+      z-index: 0;
+      text-align: center;
+      line-height: 8vh;
+    }
+    .green_rect {
+      border-radius: 20vw;
+    }
+    .mockup_spiderman {
+      position: absolute;
+      top: 150%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      transform: translate(-24%, -81%);
+      width: 77% !important;
+      z-index: 3;
+    }
+    .moon_illu {
+      position: absolute;
+      top: 76%;
+      left: 43%;
+      -webkit-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      width: 168%;
+      opacity: 0;
+      z-index: 2;
+    }
+    .mockup_iphone_book {
+      -webkit-transform: translate(-50%, -50%);
+      transform: translate(27%, -75%);
+      width: 32% !important;
+      z-index: 3;
+    }
+    .mockup_ipad_art {
+      position: absolute;
+      top: 50%;
+      left: 150%;
+      -webkit-transform: translate(-50%, -70%);
+      transform: translate(-87%, -70%);
+      width: 70% !important;
+      z-index: 3;
+    }
+    .custom_air_mobile {
+      position: absolute;
+      top: 150%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      transform: translate(-50%, -85%);
+      width: 40% !important;
+      border-radius: 3vw;
+      z-index: 3;
+    }
+    .mockup_ipad_soda {
+      position: absolute;
+      top: 50%;
+      left: -50%;
+      -webkit-transform: translate(-50%, -65%);
+      transform: translate(-50%, -65%);
+      width: 80% !important;
+      z-index: 3;
+      left: 50% !important;
+    }
+
+    .imac_school2 {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-100%, -72%) scale(1.5) !important;
+      transform: translate(-100%, -72%) scale(1.5) !important;
+      width: 0%;
+      border-radius: 1vw;
+      z-index: 3;
+    }
+    .description,
+    .description_book,
+    .description_soda,
+    .description_art,
+    .description_customAir,
+    .description_school {
+      position: absolute;
+      top: 67%;
+      left: 60%;
+      -webkit-transform: translate(-50%, -50%);
+      width: 80%;
+      transform: translate(-62%, -37%);
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-align: start;
+      -ms-flex-align: start;
+      align-items: flex-start;
+      z-index: 3;
+
+      .more_info_titre {
+        color: var(--white);
+        font-family: Base Neue;
+        font-size: 10vw;
+        margin-left: -15vw;
+        opacity: 0;
+      }
+      .description_paragraphe {
+        width: 100%;
+        color: var(--white);
+        font-family: "Inter", sans-serif;
+        font-size: 3.2vw;
+        text-align: justify;
+        margin-left: -15vw;
+        opacity: 0;
+      }
+    }
+    .description_soda {
+      top: 75%;
+    }
+    .white_circle_bottom h2 {
+      color: transparent;
+      font-family: Base Neue;
+      font-weight: bold;
+      -webkit-text-stroke: 0.1vw var(--black);
+      font-size: 40vw;
+      letter-spacing: 1vw;
+      opacity: 0;
+    }
+    .rect2 h2 {
+      color: transparent;
+      font-family: Base Neue;
+      font-weight: bold;
+      -webkit-text-stroke: 0.1vw var(--green);
+      font-size: 40vw;
+      letter-spacing: 1vw;
+    }
+  }
+  .bdd {
+    .container_illu {
+      position: relative;
+      width: 50%;
+      height: 0%;
+      overflow: hidden;
+      border-radius: 10vw;
+      z-index: 2;
+
+      .title {
+        .titre_bdd {
+          font-size: 20vw;
+        }
+      }
+    }
+    .titre_bdd_bg {
+      font-size: 15vw;
+    }
+  }
+  .bdd_more {
+    .bdd_text {
+      max-width: 80%;
+      color: var(--white);
+      font-family: "Inter", sans-serif;
+      font-size: 4vw;
+      text-align: center;
+      font-style: italic;
+    }
+
+    .bdd_redirection {
+      cursor: pointer;
+      margin-top: 5vh;
+      width: 40vw;
+      height: 6vh;
+      background-color: var(--green);
+      border-radius: 2vw;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      color: var(--white);
+      font-family: Base Neue;
+      text-decoration: none;
+      font-size: 5vw;
+      -webkit-box-shadow: 0px 0px 10px 5px rgba(255, 255, 255, 0);
+      box-shadow: 0px 0px 10px 5px rgba(255, 255, 255, 0);
+      -webkit-transition: 0.4s ease-in-out;
+      transition: 0.4s ease-in-out;
+    }
+  }
+  .container_autres_sites {
+    .autres_sites_title {
+      h1 {
+        font-size: 11vw;
+        color: var(--white);
+        font-family: Base Neue;
+        text-transform: uppercase;
+      }
+    }
+    .autres_sites {
+      .autres_sites_cards {
+        cursor: pointer;
+        width: 90vw;
+        height: 51vw;
+        background-color: var(--white);
+        border-radius: 4vw;
+        -ms-flex-negative: 0;
+        flex-shrink: 0;
+        margin: 0 2vw;
+        border: 0vw solid rgba(255, 255, 255, 0);
+        -webkit-box-shadow: 0px 0px 10px 5px rgba(255, 255, 255, 0);
+        box-shadow: 0px 0px 10px 5px rgba(255, 255, 255, 0);
+        -webkit-transition: 0.3s ease-in-out;
+        transition: 0.3s ease-in-out;
+      }
+    }
+  }
+}
