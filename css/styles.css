@@ -5400,6 +5400,12 @@ header .burger {
   opacity: 0.8;
 }
 
+.galerie_web_page .autres_projets .suggestion .suggestion_bottom {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .galerie_web_page .information_supplementaire {
   position: relative;
   width: 100%;
