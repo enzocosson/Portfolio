@@ -5655,15 +5655,45 @@ header .burger {
     width: 60vw;
     height: 49vh;
   }
+  .galerie_web_page .container_galerie_bottom {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+  }
+  .galerie_web_page .container_galerie_bottom .container_img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    width: 70%;
+    height: 70%;
+    border-radius: 5vw;
+    overflow: hidden;
+  }
+  .galerie_web_page .container_galerie_bottom .container_img .miniatures {
+    position: absolute;
+    bottom: 0%;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0%);
+            transform: translate(-50%, 0%);
+    width: 100%;
+    height: 150%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .galerie_web_page .autres_projets {
+    width: 90%;
+  }
   .galerie_web_page .autres_projets h2 {
-    font-size: 9vw;
+    font-size: 12vw;
     font-weight: 600;
-    margin-bottom: 2vw;
+    margin-bottom: 5vw;
     font-family: Base Neue;
     color: var(--black);
   }
   .galerie_web_page .autres_projets .suggestion {
-    row-gap: 1vh;
+    row-gap: 4vh;
   }
   .galerie_web_page .autres_projets .suggestion .suggestion_top,
   .galerie_web_page .autres_projets .suggestion .suggestion_bottom {
@@ -5681,15 +5711,15 @@ header .burger {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    row-gap: 1vh;
+    row-gap: 4vh;
   }
   .galerie_web_page .autres_projets .suggestion .suggestion_top .container_miniatures,
   .galerie_web_page .autres_projets .suggestion .suggestion_bottom .container_miniatures {
     cursor: pointer;
     position: relative;
     width: 100%;
-    height: 30vw;
-    border-radius: 1.5vw;
+    height: 40vw;
+    border-radius: 3vw;
     overflow: hidden;
     border: 0.5vw solid transparent;
     -webkit-transition: 0.3s ease-in-out;
@@ -5698,7 +5728,7 @@ header .burger {
   .galerie_web_page .autres_projets .suggestion .suggestion_top .container_miniatures .titre_minia,
   .galerie_web_page .autres_projets .suggestion .suggestion_bottom .container_miniatures .titre_minia {
     margin: 1vh 3vw;
-    font-size: 6vw;
+    font-size: 9vw;
   }
   .galerie_web_page .information_supplementaire .container_information_supplementaire {
     -webkit-box-orient: vertical;
