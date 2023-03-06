@@ -4450,6 +4450,7 @@ header .burger {
   font-family: "Inter", sans-serif;
   margin-bottom: 5vh;
   row-gap: 3vh;
+  color: var(--black);
 }
 .guadeloupe_web_page .description span,
 .auvergne_web_page .description span {
