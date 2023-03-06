@@ -45,14 +45,14 @@ switch (url) {
     cursorFollow();
     burgerMenuToggle();
     break;
-  case "http://10.152.21.92:5500/": //change ip
+  case "http://10.152.20.145:5500/": //change ip
     loader();
     darkModeIndex();
     initScrollMagic();
     cursorFollow();
     burgerMenuToggle();
     break;
-  case "http://10.152.21.92:5500/index.html":
+  case "http://10.152.20.145:5500/index.html":
     loader();
     darkModeIndex();
     initScrollMagic();
@@ -89,7 +89,7 @@ switch (url) {
     cursorFollow();
     burgerMenuToggle();
     break;
-  case "http://10.152.21.92:5500/developpement_web.html":
+  case "http://10.152.20.145:5500/developpement_web.html":
     darkModeDev();
     carrousel();
     filter();
@@ -119,7 +119,7 @@ switch (url) {
     cursorFollow();
     burgerMenuToggle();
     break;
-  case "http://10.152.21.92:5500/photo_video.html":
+  case "http://10.152.20.145:5500/photo_video.html":
     darkModeSite();
     cursorFollow();
     burgerMenuToggle();
@@ -141,7 +141,7 @@ switch (url) {
     cursorFollow();
     burgerMenuBlackToggle();
     break;
-  case "http://10.152.21.92:5500/photo.html":
+  case "http://10.152.20.145:5500/photo.html":
     darkModeGalerie();
     cursorFollow();
     burgerMenuBlackToggle();
@@ -164,7 +164,7 @@ switch (url) {
     cursorFollow();
     burgerMenuToggle();
     break;
-  case "http://10.152.21.92:5500/mountain.html":
+  case "http://10.152.20.145:5500/mountain.html":
     darkModeGalerie();
     scrollMagicGalerie();
     cursorFollow();
@@ -190,7 +190,7 @@ switch (url) {
     cursorFollow();
     burgerMenuBlackToggle();
     break;
-  case "http://10.152.21.92:5500/tropical.html":
+  case "http://10.152.20.145:5500/tropical.html":
     darkModeGalerie();
     scrollMagicGalerie();
     cursorFollow();
@@ -216,7 +216,7 @@ switch (url) {
     cursorFollow();
     burgerMenuBlackToggle();
     break;
-  case "http://10.152.21.92:5500/golden_hour.html":
+  case "http://10.152.20.145:5500/golden_hour.html":
     darkModeGalerie();
     scrollMagicGalerie();
     cursorFollow();
@@ -242,7 +242,7 @@ switch (url) {
     cursorFollow();
     burgerMenuBlackToggle();
     break;
-  case "http://10.152.21.92:5500/by_night.html":
+  case "http://10.152.20.145:5500/by_night.html":
     darkModeGalerie();
     scrollMagicGalerie();
     cursorFollow();
@@ -268,7 +268,7 @@ switch (url) {
     cursorFollow();
     burgerMenuBlackToggle();
     break;
-  case "http://10.152.21.92:5500/my_dog.html":
+  case "http://10.152.20.145:5500/my_dog.html":
     darkModeGalerie();
     scrollMagicGalerie();
     cursorFollow();
@@ -293,7 +293,7 @@ switch (url) {
     cursorFollow();
     burgerMenuBlackToggle();
     break;
-  case "http://10.152.21.92:5500/video.html":
+  case "http://10.152.20.145:5500/video.html":
     darkModeGalerie();
     cursorFollow();
     burgerMenuBlackToggle();
@@ -315,7 +315,7 @@ switch (url) {
     cursorFollow();
     burgerMenuBlackToggle();
     break;
-  case "http://10.152.21.92:5500/guadeloupe.html":
+  case "http://10.152.20.145:5500/guadeloupe.html":
     darkModeGalerie();
     cursorFollow();
     burgerMenuBlackToggle();
@@ -337,7 +337,7 @@ switch (url) {
     cursorFollow();
     burgerMenuBlackToggle();
     break;
-  case "http://10.152.21.92:5500/auvergne.html":
+  case "http://10.152.20.145:5500/auvergne.html":
     darkModeGalerie();
     cursorFollow();
     burgerMenuBlackToggle();
@@ -359,7 +359,7 @@ switch (url) {
     cursorFollow();
     burgerMenuToggle();
     break;
-  case "http://10.152.21.92:5500/a_propos.html":
+  case "http://10.152.20.145:5500/a_propos.html":
     darkModeSite();
     cursorFollow();
     burgerMenuToggle();
@@ -381,7 +381,7 @@ switch (url) {
     cursorFollow();
     burgerMenuToggle();
     break;
-  case "http://10.152.21.92:5500/contact.html":
+  case "http://10.152.20.145:5500/contact.html":
     darkModeSiteContact();
     cursorFollow();
     burgerMenuToggle();
@@ -395,7 +395,7 @@ switch (url) {
     darkModeSiteContact();
     cursorFollow();
     burgerMenuToggle();
-    
+
     break;
 
   // -----------
@@ -405,7 +405,7 @@ switch (url) {
     cursorFollow();
     burgerMenuToggle();
     break;
-  case "http://10.152.21.92:5500/imovix.html":
+  case "http://10.152.20.145:5500/imovix.html":
     darkModeSite();
     scrollMagicImovix();
     cursorFollow();
@@ -431,7 +431,7 @@ switch (url) {
     cursorFollow();
     burgerMenuToggle();
     break;
-  case "http://10.152.21.92:5500/book.html":
+  case "http://10.152.20.145:5500/book.html":
     darkModeSite();
     scrollMagicBook();
     cursorFollow();
@@ -457,7 +457,7 @@ switch (url) {
     cursorFollow();
     burgerMenuToggle();
     break;
-  case "http://10.152.21.92:5500/soda.html":
+  case "http://10.152.20.145:5500/soda.html":
     darkModeSite();
     scrollMagicSoda();
     cursorFollow();
@@ -483,7 +483,7 @@ switch (url) {
     cursorFollow();
     burgerMenuToggle();
     break;
-  case "http://10.152.21.92:5500/art.html":
+  case "http://10.152.20.145:5500/art.html":
     darkModeSite();
     scrollMagicArt();
     cursorFollow();
@@ -509,7 +509,7 @@ switch (url) {
     cursorFollow();
     burgerMenuToggle();
     break;
-  case "http://10.152.21.92:5500/spider_threejs.html":
+  case "http://10.152.20.145:5500/spider_threejs.html":
     darkModeSite();
     scrollMagicSpider();
     cursorFollow();
@@ -535,7 +535,7 @@ switch (url) {
     cursorFollow();
     burgerMenuToggle();
     break;
-  case "http://10.152.21.92:5500/custom_air.html":
+  case "http://10.152.20.145:5500/custom_air.html":
     darkModeSite();
     scrollMagicCustomAir();
     cursorFollow();
@@ -561,7 +561,7 @@ switch (url) {
     cursorFollow();
     burgerMenuToggle();
     break;
-  case "http://10.152.21.92:5500/school.html":
+  case "http://10.152.20.145:5500/school.html":
     darkModeSite();
     scrollMagicSchool();
     cursorFollow();
