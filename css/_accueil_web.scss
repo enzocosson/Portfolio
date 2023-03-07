@@ -125,7 +125,7 @@
   position: relative;
   width: 100%;
   height: 100vh;
-  background-color: var(--green);
+  background-color: var(--primary-color);
 
   display: flex;
   justify-content: center;
@@ -198,7 +198,7 @@
       width: 100vw;
       height: 100%;
       color: transparent;
-      -webkit-text-stroke: 3px var(--green);
+      -webkit-text-stroke: 3px var(--primary-color);
       z-index: 0;
       opacity: 0;
       line-height: 25vh;
@@ -217,8 +217,8 @@
       transform: translate(-50%, -50%) scale(0.5);
       width: 100vw;
       height: 100%;
-      color: var(--green);
-      -webkit-text-stroke: 3px var(--green);
+      color: var(--primary-color);
+      -webkit-text-stroke: 3px var(--primary-color);
       z-index: -2;
       opacity: 0;
       line-height: 25vh;
@@ -326,7 +326,7 @@
       z-index: 10;
 
       a {
-        color: var(--green);
+        color: var(--primary-color);
         background-color: var(--white);
         width: 20vw;
         font-weight: 500;
@@ -433,7 +433,7 @@
         transition: 0.2s ease-in-out;
 
         &:hover {
-          background-color: var(--green);
+          background-color: var(--primary-color);
           border: 3px solid var(--white);
         }
         &:hover svg path {
@@ -444,7 +444,7 @@
           width: 80%;
           transition: 0.2s ease-in-out;
           path {
-            fill: var(--green);
+            fill: var(--primary-color);
             transition: 0.2s ease-in-out;
           }
         }
@@ -508,7 +508,7 @@
     text-align: center;
     margin-top: 5vh;
     font-size: 10vw;
-    color: var(--green);
+    color: var(--primary-color);
     font-weight: bold;
     font-family: $font_sf;
     line-height: 15vh;
@@ -516,7 +516,7 @@
     span {
       // text-transform: uppercase;
       color: transparent;
-      -webkit-text-stroke: 3px var(--green);
+      -webkit-text-stroke: 3px var(--primary-color);
     }
   }
 
@@ -541,7 +541,7 @@
     transform: translate(-50%, -50%);
     width: 10vw;
     height: 10vw;
-    background-color: var(--green);
+    background-color: var(--primary-color);
     border-radius: 10000px;
     z-index: 0;
   }
@@ -565,7 +565,7 @@
     transform: translate(-50%, -50%);
     width: 10vw;
     height: 10vw;
-    background-color: var(--green);
+    background-color: var(--primary-color);
     border-radius: 10000px;
     z-index: 2;
   }
@@ -623,7 +623,7 @@
     writing-mode: vertical-lr;
     z-index: 5;
     font-family: Base Neue;
-    color: var(--green);
+    color: var(--primary-color);
     letter-spacing: 2vh;
     -webkit-text-stroke: 3px var(--white);
     z-index: 10;
@@ -658,14 +658,14 @@
     width: 220%;
     position: absolute;
 
-    color: var(--green);
+    color: var(--primary-color);
     font-family: Base Neue;
     font-size: 10vw;
     z-index: 11;
 
     span {
       color: var(--white);
-      -webkit-text-stroke: 3px var(--green);
+      -webkit-text-stroke: 3px var(--primary-color);
     }
   }
   .first_translate {
@@ -715,7 +715,7 @@
   position: relative;
   width: 100%;
   height: 300vh;
-  background: linear-gradient(to top, var(--green), var(--white));
+  background: linear-gradient(to top, var(--primary-color), var(--white));
   overflow: hidden;
   display: flex;
   flex-direction: column;
@@ -725,14 +725,14 @@
   h1 {
     font-size: 15vw;
     font-weight: bold;
-    color: var(--green);
+    color: var(--primary-color);
     font-family: Base Neue;
     line-height: 20vh;
     text-align: center;
 
     span {
       color: var(--white);
-      -webkit-text-stroke: 3px var(--green);
+      -webkit-text-stroke: 3px var(--primary-color);
     }
   }
 
@@ -789,7 +789,7 @@
       transform: translate(-50%, -50%);
       font-size: 0vw;
       font-weight: bold;
-      color: var(--green);
+      color: var(--primary-color);
       font-family: Base Neue;
       line-height: 20vh;
       text-align: center;
@@ -806,7 +806,7 @@
       font-family: Base Neue;
       transform: translate(-50%, -50%);
       color: transparent;
-      -webkit-text-stroke: 3px var(--green);
+      -webkit-text-stroke: 3px var(--primary-color);
       opacity: 0;
       z-index: 1;
     }
@@ -829,7 +829,7 @@
     transform: translate(-50%, -50%);
     font-size: 6vw;
     font-weight: bold;
-    color: var(--green);
+    color: var(--primary-color);
     font-family: Base Neue;
     opacity: 0;
     z-index: 2;
@@ -844,7 +844,7 @@
     font-size: 30vw;
     font-weight: bold;
     color: transparent;
-    -webkit-text-stroke: 3px var(--green);
+    -webkit-text-stroke: 3px var(--primary-color);
     font-family: Base Neue;
     z-index: 1;
     opacity: 0;
@@ -867,7 +867,7 @@
     height: 40vw;
     text-align: center;
     border-radius: 0%;
-    background-color: var(--green);
+    background-color: var(--primary-color);
     z-index: 10;
   }
 }
@@ -900,7 +900,7 @@
     width: 20vw;
     height: 20vw;
     border-radius: 50%;
-    background-color: var(--green);
+    background-color: var(--primary-color);
     border: 0.3vw solid var(--white);
     z-index: 4;
 
@@ -925,7 +925,7 @@
     width: 20vw;
     height: 20vw;
     border-radius: 50%;
-    border: 0.3vw solid var(--green);
+    border: 0.3vw solid var(--primary-color);
     z-index: 3;
     opacity: 0;
   }
@@ -937,7 +937,7 @@
     width: 20vw;
     height: 20vw;
     border-radius: 50%;
-    border: 0.3vw solid var(--green);
+    border: 0.3vw solid var(--primary-color);
     z-index: 2;
     opacity: 0;
   }
@@ -950,7 +950,7 @@
     width: 20vw;
     height: 20vw;
     border-radius: 50%;
-    border: 0.3vw solid var(--green);
+    border: 0.3vw solid var(--primary-color);
     z-index: 1;
     opacity: 0;
   }
@@ -963,7 +963,7 @@
     transform: translate(-50%, -50%);
     font-size: 14vw;
     font-weight: bold;
-    color: var(--green);
+    color: var(--primary-color);
     font-family: Base Neue;
     line-height: 20vh;
     text-align: center;
@@ -979,7 +979,7 @@
   }
 }
 .see_more_active {
-  background-color: var(--green);
+  background-color: var(--primary-color);
 }
 
 //-----------------responsive------------------------------------------
@@ -1112,7 +1112,7 @@
         flex-direction: column;
 
         a {
-          color: var(--green);
+          color: var(--primary-color);
           background-color: var(--white);
           width: 50vw;
           font-weight: 500;
@@ -1153,14 +1153,14 @@
       text-align: center;
       margin-top: 5vh;
       font-size: 19vw;
-      color: var(--green);
+      color: var(--primary-color);
       font-weight: bold;
       font-family: "Inter", sans-serif;
       line-height: 10vh;
 
       span {
         color: transparent;
-        -webkit-text-stroke: 2px var(--green);
+        -webkit-text-stroke: 2px var(--primary-color);
       }
     }
     .right_text_absolute {
@@ -1178,7 +1178,7 @@
       writing-mode: vertical-lr;
       z-index: 5;
       font-family: Base Neue;
-      color: var(--green);
+      color: var(--primary-color);
       letter-spacing: 2vh;
       -webkit-text-stroke: 2px var(--white);
       z-index: 10;
@@ -1213,7 +1213,7 @@
       transform: translate(-50%, -50%);
       width: 50vw;
       height: 50vw;
-      background-color: var(--green);
+      background-color: var(--primary-color);
       border-radius: 10000px;
       z-index: 0;
     }
@@ -1240,7 +1240,7 @@
       transform: translate(-50%, -50%);
       z-index: 5;
       font-family: Base Neue;
-      color: var(--green);
+      color: var(--primary-color);
       letter-spacing: 2vh;
       z-index: 10;
     }
@@ -1251,7 +1251,7 @@
       pointer-events: none;
       width: 1000%;
       position: absolute;
-      color: var(--green);
+      color: var(--primary-color);
       font-family: Base Neue;
       font-size: 50vw;
       z-index: 11;
@@ -1273,7 +1273,7 @@
     h1 {
       font-size: 20vw;
       font-weight: bold;
-      color: var(--green);
+      color: var(--primary-color);
       font-family: Base Neue;
       line-height: 10vh;
       text-align: center;
@@ -1321,7 +1321,7 @@
         transform: translate(-50%, -50%);
         font-size: 0vw;
         font-weight: bold;
-        color: var(--green);
+        color: var(--primary-color);
         font-family: Base Neue;
         line-height: 20vh;
         text-align: center;
@@ -1338,7 +1338,7 @@
         font-family: Base Neue;
         transform: translate(-50%, -50%);
         color: transparent;
-        -webkit-text-stroke: 1px var(--green);
+        -webkit-text-stroke: 1px var(--primary-color);
         opacity: 1;
         z-index: 1;
       }
@@ -1354,7 +1354,7 @@
       transform: translate(-50%, -50%);
       font-size: 35vw;
       font-weight: bold;
-      color: var(--green);
+      color: var(--primary-color);
       font-family: Base Neue;
       opacity: 0;
       z-index: 2;
@@ -1369,7 +1369,7 @@
       font-size: 50vw;
       font-weight: bold;
       color: transparent;
-      -webkit-text-stroke: 1px var(--green);
+      -webkit-text-stroke: 1px var(--primary-color);
       font-family: Base Neue;
       z-index: 1;
       opacity: 0;
@@ -1397,7 +1397,7 @@
       width: 20vw;
       height: 20vw;
       border-radius: 50%;
-      background-color: var(--green);
+      background-color: var(--primary-color);
       border: 0.3vw solid var(--white);
       z-index: 4;
       display: flex;
@@ -1416,7 +1416,7 @@
       height: 50vw;
       text-align: center;
       border-radius: 0%;
-      background-color: var(--green);
+      background-color: var(--primary-color);
       z-index: 10;
     }
     .transition_title {
@@ -1427,7 +1427,7 @@
       transform: translate(-50%, -50%);
       font-size: 26vw;
       font-weight: bold;
-      color: var(--green);
+      color: var(--primary-color);
       font-family: Base Neue;
       line-height: 20vh;
       text-align: center;
@@ -1449,8 +1449,8 @@
       width: 100%;
       text-align: center;
       font-size: 40vw;
-      color: var(--green);
-      -webkit-text-stroke: 3px var(--green);
+      color: var(--primary-color);
+      -webkit-text-stroke: 3px var(--primary-color);
       font-weight: bold;
       font-family: Base Neue;
       line-height: 8vh;

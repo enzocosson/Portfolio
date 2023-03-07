@@ -7,7 +7,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 2vw 3vw;
-  // background-color: var(--green);
+  // background-color: var(--primary-color);
   z-index: 999999;
   transition: 0.2s ease-in-out;
 
@@ -59,7 +59,7 @@ header {
       border-radius: 0.4vw;
 
       &:hover .links {
-        color: var(--green);
+        color: var(--primary-color);
       }
 
       .links {
@@ -106,7 +106,7 @@ header {
       border: 3px solid var(--white);
 
       #contact {
-        color: var(--green);
+        color: var(--primary-color);
         font-weight: bold;
       }
       &:hover #contact {
@@ -152,8 +152,8 @@ header {
     height: 3vw;
     margin-bottom: 1vw;
     border-radius: 50%;
-    background-color: var(--green);
-    border: 0.2vw solid var(--green);
+    background-color: var(--primary-color);
+    border: 0.2vw solid var(--primary-color);
     cursor: pointer;
     display: flex;
     justify-content: center;
@@ -173,14 +173,14 @@ header {
       background-color: var(--white);
     }
     &:hover .vector_darkMode {
-      fill: var(--green);
+      fill: var(--primary-color);
     }
   }
   .darkMode_active {
-    background-color: var(--green);
+    background-color: var(--primary-color);
 
     .vector_darkMode {
-      fill: var(--green);
+      fill: var(--primary-color);
     }
   }
 
@@ -207,8 +207,8 @@ header {
     height: 3vw;
     margin-bottom: 1vw;
     border-radius: 50%;
-    background-color: var(--green);
-    border: 0.2vw solid var(--green);
+    background-color: var(--primary-color);
+    border: 0.2vw solid var(--primary-color);
 
     display: flex;
     justify-content: center;
@@ -227,7 +227,7 @@ header {
       background-color: var(--white);
     }
     &:hover path {
-      fill: var(--green);
+      fill: var(--primary-color);
     }
   }
 
@@ -236,9 +236,9 @@ header {
     width: 3vw;
     height: 3vw;
     margin-bottom: 1vw;
-    border: 0.2vw solid var(--green);
+    border: 0.2vw solid var(--primary-color);
     border-radius: 50%;
-    background-color: var(--green);
+    background-color: var(--primary-color);
 
     display: flex;
     justify-content: center;
@@ -258,7 +258,7 @@ header {
       background-color: var(--white);
     }
     &:hover path {
-      fill: var(--green);
+      fill: var(--primary-color);
     }
   }
   p {
@@ -290,7 +290,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 4vw;
-    // background-color: var(--green);
+    // background-color: var(--primary-color);
     z-index: 9999999999;
     transition: 0.2s ease-in-out;
 
@@ -393,7 +393,7 @@ header {
       border-radius: 0.4vw;
 
       &:hover .links {
-        color: var(--green);
+        color: var(--primary-color);
       }
 
       .links {
@@ -440,7 +440,7 @@ header {
       border: 3px solid var(--black);
 
       #contact {
-        color: var(--green);
+        color: var(--primary-color);
         font-weight: bold;
       }
       &:hover #contact {
@@ -520,7 +520,7 @@ header {
     transform: translate(-50%, 0%);
     width: 100%;
     height: 100vh;
-    background-color: var(--green);
+    background-color: var(--primary-color);
     list-style: none;
     display: flex;
     padding-top: 10vh;
@@ -540,7 +540,7 @@ header {
       border-radius: 1.5vw;
 
       &:hover .links {
-        color: var(--green);
+        color: var(--primary-color);
       }
 
       .links {
@@ -587,7 +587,7 @@ header {
       border: 3px solid var(--white);
 
       #contact {
-        color: var(--green);
+        color: var(--primary-color);
         font-weight: bold;
       }
       &:hover #contact {
@@ -611,7 +611,7 @@ header {
     transform: translate(-50%, 0%);
     width: 100%;
     height: 55vh;
-    background-color: var(--green);
+    background-color: var(--primary-color);
     list-style: none;
     display: flex;
     padding-top: 10vh;
@@ -643,7 +643,7 @@ header {
       background-color: var(--white);
     }
     .darkMode_active {
-      background-color: var(--green);
+      background-color: var(--primary-color);
     }
     .change_color_btn {
       cursor: pointer;

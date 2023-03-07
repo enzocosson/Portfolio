@@ -41,7 +41,7 @@ html {
   scroll-behavior: smooth;
 }
 :root {
-  --green: #41f0d0;
+  --primary-color: #41f0d0;
 
   --green_transparent: rgba(112, 232, 203, 0.56);
   --white: #fcfcfc;
@@ -62,7 +62,7 @@ $font_base: Base Neue;
 $font_sf: "Inter", sans-serif;
 
 ::selection {
-  background-color: var(--green);
+  background-color: var(--primary-color);
   color: #fcfcfc;
 }
 ::-webkit-scrollbar {
@@ -70,5 +70,5 @@ $font_sf: "Inter", sans-serif;
   background-color: var(--white);
 }
 ::-webkit-scrollbar-thumb {
-  background-color: var(--green);
+  background-color: var(--primary-color);
 }

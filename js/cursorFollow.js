@@ -13,7 +13,7 @@ export function cursorFollow() {
         cursorDiv.style.width = "60px";
         cursorDiv.style.height = "60px";
         cursorDiv.style.backgroundColor = "transparent"
-        cursorDiv.style.boxShadow = "0px 0px 15px 0px var(--green) inset";
+        cursorDiv.style.boxShadow = "0px 0px 15px 0px var(--primary-color) inset";
       });
       
       // Réinitialiser la taille du curseur lorsque l'utilisateur sort du lien
@@ -21,7 +21,7 @@ export function cursorFollow() {
         cursorDiv.style.width = "20px";
         cursorDiv.style.height = "20px";
         cursorDiv.style.backgroundColor = "var(--white)"
-        cursorDiv.style.boxShadow = "0px 0px 15px 0px var(--green)";
+        cursorDiv.style.boxShadow = "0px 0px 15px 0px var(--primary-color)";
       });
     }
 
@@ -31,7 +31,7 @@ export function cursorFollow() {
         cursorDiv.style.width = "60px";
         cursorDiv.style.height = "60px";
         cursorDiv.style.backgroundColor = "transparent"
-        cursorDiv.style.boxShadow = "0px 0px 15px 0px var(--green) inset";
+        cursorDiv.style.boxShadow = "0px 0px 15px 0px var(--primary-color) inset";
       });
       
       // Réinitialiser la taille du curseur lorsque l'utilisateur sort du lien
@@ -39,7 +39,7 @@ export function cursorFollow() {
         cursorDiv.style.width = "20px";
         cursorDiv.style.height = "20px";
         cursorDiv.style.backgroundColor = "var(--white)"
-        cursorDiv.style.boxShadow = "0px 0px 15px 0px var(--green)";
+        cursorDiv.style.boxShadow = "0px 0px 15px 0px var(--primary-color)";
       });
     }
 
@@ -49,7 +49,7 @@ export function cursorFollow() {
         cursorDiv.style.width = "60px";
         cursorDiv.style.height = "60px";
         cursorDiv.style.backgroundColor = "transparent"
-        cursorDiv.style.boxShadow = "0px 0px 15px 0px var(--green) inset";
+        cursorDiv.style.boxShadow = "0px 0px 15px 0px var(--primary-color) inset";
       });
       
       // Réinitialiser la taille du curseur lorsque l'utilisateur sort du lien
@@ -57,7 +57,7 @@ export function cursorFollow() {
         cursorDiv.style.width = "20px";
         cursorDiv.style.height = "20px";
         cursorDiv.style.backgroundColor = "var(--white)"
-        cursorDiv.style.boxShadow = "0px 0px 15px 0px var(--green)";
+        cursorDiv.style.boxShadow = "0px 0px 15px 0px var(--primary-color)";
       });
     }
 

@@ -196,7 +196,7 @@
       line-height: 0vh;
     }
     .travel_back {
-      color: var(--green);
+      color: var(--primary-color);
       z-index: 0;
     }
     .travel_front {
@@ -368,7 +368,7 @@
           }
 
           &:hover {
-            border: 0.5vw solid var(--green);
+            border: 0.5vw solid var(--primary-color);
           }
           &:hover img {
             opacity: 0.8;
@@ -421,7 +421,7 @@
           font-size: 4vw;
           font-weight: 600;
           font-family: $font-base;
-          color: var(--green);
+          color: var(--primary-color);
           margin-bottom: 1vw;
         }
         .specialite {
@@ -450,7 +450,7 @@
         }
       }
       .video {
-        background-color: var(--green);
+        background-color: var(--primary-color);
 
         h4 {
           font-size: 4vw;

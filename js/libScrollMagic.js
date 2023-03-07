@@ -191,7 +191,7 @@ export function initScrollMagic() {
   // const r = document.querySelector(":root");
   // const pathConcept = {
   //   curviness: 1.25,
-  //   values: [{ backgroundColor: "var(--green)" }],
+  //   values: [{ backgroundColor: "var(--primary-color)" }],
   // };
 
   const pathIpadImovix = {

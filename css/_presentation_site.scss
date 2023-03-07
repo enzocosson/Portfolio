@@ -6,7 +6,7 @@
   left: 0%;
   transform: perspective(1000px) rotateX(0deg) rotateY(0deg) rotateZ(0deg)
     scale(1);
-  background-color: var(--green);
+  background-color: var(--primary-color);
   border-radius: 0 0 0 0;
   z-index: 99999999999999999999999;
   transform-origin: bottom;
@@ -16,7 +16,7 @@
   @-webkit-keyframes transition_slide_enter {
     0% {
       height: 100vh;
-      background-color: var(--green);
+      background-color: var(--primary-color);
       transform: perspective(1000px) rotateX(0deg) rotateY(0deg) rotateZ(0deg)
         scale(1);
     }
@@ -31,7 +31,7 @@
   @keyframes transition_slide_enter {
     0% {
       height: 100vh;
-      background-color: var(--green);
+      background-color: var(--primary-color);
       transform: perspective(1000px) rotateX(0deg) rotateY(0deg) rotateZ(0deg)
         scale(1);
     }
@@ -48,7 +48,7 @@
   position: relative;
   width: 100%;
   height: 100vh;
-  background-color: var(--green);
+  background-color: var(--primary-color);
 
   display: flex;
   flex-direction: column;
@@ -95,7 +95,7 @@
   overflow: hidden;
 
   h1 {
-    color: var(--green);
+    color: var(--primary-color);
     font-family: $font_base;
     font-size: 10vw;
     z-index: 0;
@@ -109,7 +109,7 @@
     width: 0%;
     height: 0%;
     border-radius: 1vw;
-    background-color: var(--green);
+    background-color: var(--primary-color);
     z-index: 1;
   }
   .mockup_spiderman {
@@ -309,7 +309,7 @@
     transform: translate(-50%, 0%);
     width: 100%;
     height: 0%;
-    background-color: var(--green);
+    background-color: var(--primary-color);
     box-shadow: 0px 0px 25px -2px #00000076;
     z-index: 6;
   }
@@ -332,7 +332,7 @@
       color: transparent;
       font-family: $font_base;
       font-weight: bold;
-      -webkit-text-stroke: 0.1vw var(--green);
+      -webkit-text-stroke: 0.1vw var(--primary-color);
       font-size: 10vw;
       letter-spacing: 1vw;
     }
@@ -389,7 +389,7 @@
       left: 0;
       width: 100%;
       height: 100%;
-      background-color: var(--green);
+      background-color: var(--primary-color);
       z-index: 2;
       opacity: 1;
     }
@@ -427,8 +427,8 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: var(--green);
-    -webkit-text-stroke: 0.1vw var(--green);
+    color: var(--primary-color);
+    -webkit-text-stroke: 0.1vw var(--primary-color);
     font-family: Base Neue;
     font-size: 10vw;
     z-index: 1;
@@ -460,7 +460,7 @@
     margin-top: 5vh;
     width: 20vw;
     height: 5vh;
-    background-color: var(--green);
+    background-color: var(--primary-color);
     border-radius: 2vw;
     display: flex;
     justify-content: center;
@@ -473,8 +473,8 @@
     transition: 0.4s ease-in-out;
     &:hover {
       background-color: var(--black);
-      color: var(--green);
-      border: 0.1vw solid var(--green);
+      color: var(--primary-color);
+      border: 0.1vw solid var(--primary-color);
       box-shadow: 0px 0px 10px 5px rgba(255, 255, 255, 0.123);
     }
   }
@@ -579,7 +579,7 @@
 
   .more_info {
     h1 {
-      color: var(--green);
+      color: var(--primary-color);
       font-family: Base Neue;
       font-size: 20vw;
       z-index: 0;
@@ -714,7 +714,7 @@
       color: transparent;
       font-family: Base Neue;
       font-weight: bold;
-      -webkit-text-stroke: 0.1vw var(--green);
+      -webkit-text-stroke: 0.1vw var(--primary-color);
       font-size: 40vw;
       letter-spacing: 1vw;
     }
@@ -753,7 +753,7 @@
       margin-top: 5vh;
       width: 40vw;
       height: 6vh;
-      background-color: var(--green);
+      background-color: var(--primary-color);
       border-radius: 2vw;
       display: -webkit-box;
       display: -ms-flexbox;

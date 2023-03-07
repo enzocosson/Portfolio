@@ -7,28 +7,28 @@ function generateColors() {
 }
 
 function colorVert() {
-  r.style.setProperty("--green", "#98f5e1");
+  r.style.setProperty("--primary-color", "#98f5e1");
 }
 function colorBleu() {
-  r.style.setProperty("--green", "#a0c4ff");
+  r.style.setProperty("--primary-color", "#a0c4ff");
 }
 function colorViolet() {
-  r.style.setProperty("--green", "#bdb2ff");
+  r.style.setProperty("--primary-color", "#bdb2ff");
 }
 function colorOrange() {
-  r.style.setProperty("--green", "#ffd6a5");
+  r.style.setProperty("--primary-color", "#ffd6a5");
 }
 function colorRose() {
-  r.style.setProperty("--green", "#ffc6ff");
+  r.style.setProperty("--primary-color", "#ffc6ff");
 }
 function colorJaune() {
-  r.style.setProperty("--green", "#ffd97d");
+  r.style.setProperty("--primary-color", "#ffd97d");
 }
 function colorTurquoise() {
-  r.style.setProperty("--green", "#9bf6ff");
+  r.style.setProperty("--primary-color", "#9bf6ff");
 }
 function colorRouge() {
-  r.style.setProperty("--green", "#ffadad");
+  r.style.setProperty("--primary-color", "#ffadad");
 }
 
 function tapOnScreen() {

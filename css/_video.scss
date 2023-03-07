@@ -67,9 +67,9 @@
           height: 10vw;
           background-color: transparent;
           border-radius: 50%;
-          border: 0.3vw solid var(--green);
+          border: 0.3vw solid var(--primary-color);
           font-size: 1vw;
-          color: var(--green);
+          color: var(--primary-color);
           z-index: 2;
           display: flex;
           justify-content: center;
@@ -79,7 +79,7 @@
           transition: 0.2s ease-in-out;
 
           &:hover {
-            background-color: var(--green);
+            background-color: var(--primary-color);
             color: var(--white);
           }
         }
@@ -134,7 +134,7 @@
     .titre {
       font-weight: bold;
       font-size: 1.5vw;
-      color: var(--green);
+      color: var(--primary-color);
       filter: drop-shadow(0px 0px 1px rgba(0, 0, 0, 0.089));
     }
 
@@ -215,7 +215,7 @@
           }
 
           &:hover {
-            border: 0.5vw solid var(--green);
+            border: 0.5vw solid var(--primary-color);
           }
           &:hover img {
             opacity: 0.8;
@@ -265,7 +265,7 @@
           font-size: 4vw;
           font-weight: 600;
           font-family: $font-base;
-          color: var(--green);
+          color: var(--primary-color);
           margin-bottom: 1vw;
         }
         .specialite {
@@ -294,7 +294,7 @@
         }
       }
       .photo {
-        background-color: var(--green);
+        background-color: var(--primary-color);
 
         h4 {
           font-size: 4vw;
@@ -354,7 +354,7 @@
         width: 20vw;
         height: 20vw;
         font-size: 5vw;
-        border: 0.5vw solid var(--green);
+        border: 0.5vw solid var(--primary-color);
       }
     }
   }
@@ -365,7 +365,7 @@
       .titre {
         font-weight: bold;
         font-size: 4.5vw;
-        color: var(--green);
+        color: var(--primary-color);
         filter: drop-shadow(0px 0px 1px rgba(0, 0, 0, 0.089));
       }
     }

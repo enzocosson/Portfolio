@@ -16,7 +16,7 @@
   height: 0%;
 }
 .bande:nth-child(even) {
-  background: var(--green);
+  background: var(--primary-color);
 }
 .bande:nth-child(odd) {
   background: var(--white);
@@ -28,7 +28,7 @@
   width: 100%;
   height: 100vh;
   background: var(--black);
-  // background: linear-gradient(180deg, var(--white), var(--green));
+  // background: linear-gradient(180deg, var(--white), var(--primary-color));
   position: absolute;
   top: -100%;
   z-index: 99999999999;

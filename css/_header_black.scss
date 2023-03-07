@@ -9,7 +9,7 @@
       border-radius: 0.4vw;
 
       &:hover .links {
-        color: var(--green);
+        color: var(--primary-color);
       }
 
       .links {
@@ -56,7 +56,7 @@
       border: 3px solid var(--black);
 
       #contact {
-        color: var(--green);
+        color: var(--primary-color);
         font-weight: bold;
       }
       &:hover #contact {
@@ -154,7 +154,7 @@
       border: 3px solid var(--white);
 
       #contact {
-        color: var(--green);
+        color: var(--primary-color);
         font-weight: bold;
       }
       &:hover #contact {
