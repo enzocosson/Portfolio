@@ -1276,19 +1276,19 @@ header .burger {
 }
 
 .container_colors .choix_couleurs .vert {
-  background-color: #98f5e1;
+  background-color: #2e2e2e;
 }
 
 .container_colors .choix_couleurs .bleu {
-  background-color: #a0c4ff;
-}
-
-.container_colors .choix_couleurs .violet {
   background-color: #bdb2ff;
 }
 
+.container_colors .choix_couleurs .violet {
+  background-color: #a0c4ff;
+}
+
 .container_colors .choix_couleurs .orange {
-  background-color: #ffd6a5;
+  background-color: #41f0d0;
 }
 
 .container_colors .choix_couleurs .rose {
@@ -1296,11 +1296,11 @@ header .burger {
 }
 
 .container_colors .choix_couleurs .jaune {
-  background-color: #ffd97d;
+  background-color: #ffee93;
 }
 
 .container_colors .choix_couleurs .turquoise {
-  background-color: #9bf6ff;
+  background-color: #ffd6a5;
 }
 
 .container_colors .choix_couleurs .rouge {

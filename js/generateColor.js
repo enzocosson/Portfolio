@@ -7,25 +7,25 @@ function generateColors() {
 }
 
 function colorVert() {
-  r.style.setProperty("--primary-color", "#98f5e1");
+  r.style.setProperty("--primary-color", "#2e2e2e");
 }
 function colorBleu() {
-  r.style.setProperty("--primary-color", "#a0c4ff");
-}
-function colorViolet() {
   r.style.setProperty("--primary-color", "#bdb2ff");
 }
+function colorViolet() {
+  r.style.setProperty("--primary-color", "#a0c4ff");
+}
 function colorOrange() {
-  r.style.setProperty("--primary-color", "#ffd6a5");
+  r.style.setProperty("--primary-color", "#41f0d0");
 }
 function colorRose() {
   r.style.setProperty("--primary-color", "#ffc6ff");
 }
 function colorJaune() {
-  r.style.setProperty("--primary-color", "#ffd97d");
+  r.style.setProperty("--primary-color", "#ffee93");
 }
 function colorTurquoise() {
-  r.style.setProperty("--primary-color", "#9bf6ff");
+  r.style.setProperty("--primary-color", "#ffd6a5");
 }
 function colorRouge() {
   r.style.setProperty("--primary-color", "#ffadad");
