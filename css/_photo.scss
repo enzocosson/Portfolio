@@ -163,16 +163,19 @@
 //-----------------responsive------------------------------------------
 
 @media screen and (max-width: 780px) {
-  .photo_web_page {
-    .titre {
-      font-size: 10vw;
+  .photo_web_page,
+  .video_web_page {
+    .titre,
+    .theme_titre {
+      font-size: 9vw;
     }
-    .theme {
+    .theme,
+    .theme_video {
       position: relative;
       text-decoration: none;
       width: 90vw;
-      height: 20vh;
-      border-radius: 2vw;
+      height: 25vh;
+      border-radius: 3vw;
       overflow: hidden;
       margin: 2vh 0;
       border: 0.5vw solid transparent;

@@ -21,6 +21,7 @@ import { scrollMagicSchool } from "./scrollMagicSchool.js";
 import { scrollMagicGalerie } from "./scrollMagicGalerie.js";
 import { cursorFollow } from "./cursorFollow.js";
 import { burgerMenuToggle, burgerMenuBlackToggle } from "./burgerMenu.js";
+import { onPlayButtonVideo } from "./onPlayButtonVideo.js";
 
 function getURL() {
   return console.log(window.location.href);
@@ -314,21 +315,25 @@ switch (url) {
     darkModeGalerie();
     cursorFollow();
     burgerMenuBlackToggle();
+    onPlayButtonVideo();
     break;
   case "http://10.152.20.145:5500/guadeloupe.html":
     darkModeGalerie();
     cursorFollow();
     burgerMenuBlackToggle();
+    onPlayButtonVideo();
     break;
   case "http://192.168.1.77:5500/guadeloupe.html":
     darkModeGalerie();
     cursorFollow();
     burgerMenuBlackToggle();
+    onPlayButtonVideo();
     break;
   case "https://www.enzo-cosson.fr/guadeloupe.html":
     darkModeGalerie();
     cursorFollow();
     burgerMenuBlackToggle();
+    onPlayButtonVideo();
     break;
 
   // -----------
@@ -336,21 +341,51 @@ switch (url) {
     darkModeGalerie();
     cursorFollow();
     burgerMenuBlackToggle();
+    onPlayButtonVideo()
     break;
   case "http://10.152.20.145:5500/auvergne.html":
     darkModeGalerie();
     cursorFollow();
     burgerMenuBlackToggle();
+    onPlayButtonVideo()
     break;
   case "http://192.168.1.77:5500/auvergne.html":
     darkModeGalerie();
     cursorFollow();
     burgerMenuBlackToggle();
+    onPlayButtonVideo()
     break;
   case "https://www.enzo-cosson.fr/auvergne.html":
     darkModeGalerie();
     cursorFollow();
     burgerMenuBlackToggle();
+    onPlayButtonVideo()
+    break;
+
+    // -----------
+  case "http://192.168.1.75:5500/dream-by-kenzo.html":
+    darkModeGalerie();
+    cursorFollow();
+    burgerMenuBlackToggle();
+    onPlayButtonVideo()
+    break;
+  case "http://10.152.20.145:5500/dream-by-kenzo.html":
+    darkModeGalerie();
+    cursorFollow();
+    burgerMenuBlackToggle();
+    onPlayButtonVideo()
+    break;
+  case "http://192.168.1.77:5500/dream-by-kenzo.html":
+    darkModeGalerie();
+    cursorFollow();
+    burgerMenuBlackToggle();
+    onPlayButtonVideo()
+    break;
+  case "https://www.enzo-cosson.fr/dream-by-kenzo.html":
+    darkModeGalerie();
+    cursorFollow();
+    burgerMenuBlackToggle();
+    onPlayButtonVideo()
     break;
 
   // -----------
