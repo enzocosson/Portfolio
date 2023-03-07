@@ -4672,9 +4672,9 @@ header .burger {
   }
   .photo_video_web_page .container_photo .couverture,
   .photo_video_web_page .container_video .couverture {
-    width: 75vw;
-    height: 75vw;
-    border-radius: 2vw;
+    width: 90%;
+    height: 70%;
+    border-radius: 3vw;
   }
   .photo_video_web_page .container_photo .couverture .couverture_titre,
   .photo_video_web_page .container_video .couverture .couverture_titre {
@@ -5812,6 +5812,7 @@ header .burger {
   position: relative;
   width: 100%;
   height: 100vh;
+  padding-top: 5vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -5825,6 +5826,20 @@ header .burger {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.guadeloupe_web_page .container_video_100vh h2,
+.auvergne_web_page .container_video_100vh h2 {
+  margin-top: 2vh;
+  font-size: 2.5rem;
+  font-weight: 100;
+  color: var(--black);
+  font-family: Base Neue;
+}
+
+.guadeloupe_web_page .container_video_100vh h2 span,
+.auvergne_web_page .container_video_100vh h2 span {
+  font-weight: bold;
 }
 
 .guadeloupe_web_page .container_video_100vh .video_container,
@@ -5917,20 +5932,6 @@ header .burger {
 .auvergne_web_page .container_video_100vh .video_container .couverture .play:hover {
   background-color: var(--primary-color);
   color: var(--white);
-}
-
-.guadeloupe_web_page .container_video_100vh .video_container .couverture h2,
-.auvergne_web_page .container_video_100vh .video_container .couverture h2 {
-  margin-top: 2vh;
-  font-size: 2.5rem;
-  font-weight: 100;
-  color: var(--white);
-  font-family: Base Neue;
-}
-
-.guadeloupe_web_page .container_video_100vh .video_container .couverture h2 span,
-.auvergne_web_page .container_video_100vh .video_container .couverture h2 span {
-  font-weight: bold;
 }
 
 .guadeloupe_web_page .container_video_100vh .video_container .couverture_active,
