@@ -32,6 +32,13 @@ var url = window.location.href;
 getURL();
 
 switch (url) {
+  case "https://www.enzo-cosson.fr/":
+    loader();
+    darkModeIndex();
+    initScrollMagic();
+    cursorFollow();
+    burgerMenuToggle();
+    break;
   case "http://192.168.1.75:5500/":
     loader();
     darkModeIndex();
