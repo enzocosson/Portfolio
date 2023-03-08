@@ -572,8 +572,9 @@ header {
   .home_footer {
     .rth {
       cursor: pointer;
-      width: 10vw;
-      height: 10vw;
+      width: 13vw;
+      height: 13vw;
+      border: 0.7vw solid var(--primary-color);
     }
     .rth:hover {
       background-color: var(--white);
@@ -581,8 +582,9 @@ header {
     .darkMode {
       cursor: pointer;
       position: relative;
-      width: 10vw;
-      height: 10vw;
+      width: 13vw;
+      height: 13vw;
+      border: 0.7vw solid var(--primary-color);
     }
     .darkMode:hover {
       background-color: var(--white);
@@ -592,8 +594,9 @@ header {
     }
     .change_color_btn {
       cursor: pointer;
-      width: 10vw;
-      height: 10vw;
+      width: 13vw;
+      height: 13vw;
+      border: 0.7vw solid var(--primary-color);
     }
     .change_color_btn:hover {
       background-color: var(--white);

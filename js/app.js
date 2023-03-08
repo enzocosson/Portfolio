@@ -21,7 +21,11 @@ import { scrollMagicSchool } from "./scrollMagicSchool.js";
 import { scrollMagicGalerie } from "./scrollMagicGalerie.js";
 import { cursorFollow } from "./cursorFollow.js";
 import { burgerMenuToggle, burgerMenuBlackToggle } from "./burgerMenu.js";
-import { onPlayButtonVideo } from "./onPlayButtonVideo.js";
+import {
+  onPlayButtonVideoGuadeloupe,
+  onPlayButtonVideoAuvergne,
+  onPlayButtonVideoKenzo,
+} from "./onPlayButtonVideo.js";
 
 function getURL() {
   return console.log(window.location.href);
@@ -53,14 +57,14 @@ switch (url) {
     cursorFollow();
     burgerMenuToggle();
     break;
-  case "http://10.152.20.145:5500/":
+  case "http://10.152.21.50:5500/":
     loader(); //change ip
     darkModeIndex();
     initScrollMagic();
     cursorFollow();
     burgerMenuToggle();
     break;
-  case "http://10.152.20.145:5500/index.html":
+  case "http://10.152.21.50:5500/index.html":
     loader();
     darkModeIndex();
     initScrollMagic();
@@ -98,7 +102,7 @@ switch (url) {
     cursorFollow();
     burgerMenuToggle();
     break;
-  case "http://10.152.20.145:5500/developpement_web.html":
+  case "http://10.152.21.50:5500/developpement_web.html":
     loader();
     darkModeDev();
     carrousel();
@@ -132,7 +136,7 @@ switch (url) {
     cursorFollow();
     burgerMenuToggle();
     break;
-  case "http://10.152.20.145:5500/photo_video.html":
+  case "http://10.152.21.50:5500/photo_video.html":
     loader();
     darkModeSite();
     cursorFollow();
@@ -158,7 +162,7 @@ switch (url) {
     cursorFollow();
     burgerMenuBlackToggle();
     break;
-  case "http://10.152.20.145:5500/photo.html":
+  case "http://10.152.21.50:5500/photo.html":
     loader();
     darkModeGalerie();
     cursorFollow();
@@ -185,7 +189,7 @@ switch (url) {
     cursorFollow();
     burgerMenuToggle();
     break;
-  case "http://10.152.20.145:5500/mountain.html":
+  case "http://10.152.21.50:5500/mountain.html":
     loader();
     darkModeGalerie();
     scrollMagicGalerie();
@@ -215,7 +219,7 @@ switch (url) {
     cursorFollow();
     burgerMenuBlackToggle();
     break;
-  case "http://10.152.20.145:5500/tropical.html":
+  case "http://10.152.21.50:5500/tropical.html":
     loader();
     darkModeGalerie();
     scrollMagicGalerie();
@@ -245,7 +249,7 @@ switch (url) {
     cursorFollow();
     burgerMenuBlackToggle();
     break;
-  case "http://10.152.20.145:5500/golden_hour.html":
+  case "http://10.152.21.50:5500/golden_hour.html":
     loader();
     darkModeGalerie();
     scrollMagicGalerie();
@@ -275,7 +279,7 @@ switch (url) {
     cursorFollow();
     burgerMenuBlackToggle();
     break;
-  case "http://10.152.20.145:5500/by_night.html":
+  case "http://10.152.21.50:5500/by_night.html":
     loader();
     darkModeGalerie();
     scrollMagicGalerie();
@@ -305,7 +309,7 @@ switch (url) {
     cursorFollow();
     burgerMenuBlackToggle();
     break;
-  case "http://10.152.20.145:5500/my_dog.html":
+  case "http://10.152.21.50:5500/my_dog.html":
     loader();
     darkModeGalerie();
     scrollMagicGalerie();
@@ -334,7 +338,7 @@ switch (url) {
     cursorFollow();
     burgerMenuBlackToggle();
     break;
-  case "http://10.152.20.145:5500/video.html":
+  case "http://10.152.21.50:5500/video.html":
     loader();
     darkModeGalerie();
     cursorFollow();
@@ -359,28 +363,28 @@ switch (url) {
     darkModeGalerie();
     cursorFollow();
     burgerMenuBlackToggle();
-    onPlayButtonVideo();
+    onPlayButtonVideoGuadeloupe();
     break;
-  case "http://10.152.20.145:5500/guadeloupe.html":
+  case "http://10.152.21.50:5500/guadeloupe.html":
     loader();
     darkModeGalerie();
     cursorFollow();
     burgerMenuBlackToggle();
-    onPlayButtonVideo();
+    onPlayButtonVideoGuadeloupe();
     break;
   case "http://192.168.1.77:5500/guadeloupe.html":
     loader();
     darkModeGalerie();
     cursorFollow();
     burgerMenuBlackToggle();
-    onPlayButtonVideo();
+    onPlayButtonVideoGuadeloupe();
     break;
   case "https://www.enzo-cosson.fr/guadeloupe.html":
     loader();
     darkModeGalerie();
     cursorFollow();
     burgerMenuBlackToggle();
-    onPlayButtonVideo();
+    onPlayButtonVideoGuadeloupe();
     break;
 
   // -----------
@@ -389,28 +393,28 @@ switch (url) {
     darkModeGalerie();
     cursorFollow();
     burgerMenuBlackToggle();
-    onPlayButtonVideo();
+    onPlayButtonVideoAuvergne();
     break;
-  case "http://10.152.20.145:5500/auvergne.html":
+  case "http://10.152.21.50:5500/auvergne.html":
     loader();
     darkModeGalerie();
     cursorFollow();
     burgerMenuBlackToggle();
-    onPlayButtonVideo();
+    onPlayButtonVideoAuvergne();
     break;
   case "http://192.168.1.77:5500/auvergne.html":
     loader();
     darkModeGalerie();
     cursorFollow();
     burgerMenuBlackToggle();
-    onPlayButtonVideo();
+    onPlayButtonVideoAuvergne();
     break;
   case "https://www.enzo-cosson.fr/auvergne.html":
     loader();
     darkModeGalerie();
     cursorFollow();
     burgerMenuBlackToggle();
-    onPlayButtonVideo();
+    onPlayButtonVideoAuvergne();
     break;
 
   // -----------
@@ -419,28 +423,28 @@ switch (url) {
     darkModeGalerie();
     cursorFollow();
     burgerMenuBlackToggle();
-    onPlayButtonVideo();
+    onPlayButtonVideoKenzo();
     break;
-  case "http://10.152.20.145:5500/dream-by-kenzo.html":
+  case "http://10.152.21.50:5500/dream-by-kenzo.html":
     loader();
     darkModeGalerie();
     cursorFollow();
     burgerMenuBlackToggle();
-    onPlayButtonVideo();
+    onPlayButtonVideoKenzo();
     break;
   case "http://192.168.1.77:5500/dream-by-kenzo.html":
     loader();
     darkModeGalerie();
     cursorFollow();
     burgerMenuBlackToggle();
-    onPlayButtonVideo();
+    onPlayButtonVideoKenzo();
     break;
   case "https://www.enzo-cosson.fr/dream-by-kenzo.html":
     loader();
     darkModeGalerie();
     cursorFollow();
     burgerMenuBlackToggle();
-    onPlayButtonVideo();
+    onPlayButtonVideoKenzo();
     break;
 
   // -----------
@@ -450,7 +454,7 @@ switch (url) {
     cursorFollow();
     burgerMenuToggle();
     break;
-  case "http://10.152.20.145:5500/a_propos.html":
+  case "http://10.152.21.50:5500/a_propos.html":
     loader();
     darkModeSite();
     cursorFollow();
@@ -476,7 +480,7 @@ switch (url) {
     cursorFollow();
     burgerMenuToggle();
     break;
-  case "http://10.152.20.145:5500/contact.html":
+  case "http://10.152.21.50:5500/contact.html":
     loader();
     darkModeSiteContact();
     cursorFollow();
@@ -504,7 +508,7 @@ switch (url) {
     cursorFollow();
     burgerMenuToggle();
     break;
-  case "http://10.152.20.145:5500/imovix.html":
+  case "http://10.152.21.50:5500/imovix.html":
     loader();
     darkModeSite();
     scrollMagicImovix();
@@ -534,7 +538,7 @@ switch (url) {
     cursorFollow();
     burgerMenuToggle();
     break;
-  case "http://10.152.20.145:5500/book.html":
+  case "http://10.152.21.50:5500/book.html":
     loader();
     darkModeSite();
     scrollMagicBook();
@@ -564,7 +568,7 @@ switch (url) {
     cursorFollow();
     burgerMenuToggle();
     break;
-  case "http://10.152.20.145:5500/soda.html":
+  case "http://10.152.21.50:5500/soda.html":
     loader();
     darkModeSite();
     scrollMagicSoda();
@@ -594,7 +598,7 @@ switch (url) {
     cursorFollow();
     burgerMenuToggle();
     break;
-  case "http://10.152.20.145:5500/art.html":
+  case "http://10.152.21.50:5500/art.html":
     loader();
     darkModeSite();
     scrollMagicArt();
@@ -624,7 +628,7 @@ switch (url) {
     cursorFollow();
     burgerMenuToggle();
     break;
-  case "http://10.152.20.145:5500/spider_threejs.html":
+  case "http://10.152.21.50:5500/spider_threejs.html":
     loader();
     darkModeSite();
     scrollMagicSpider();
@@ -654,7 +658,7 @@ switch (url) {
     cursorFollow();
     burgerMenuToggle();
     break;
-  case "http://10.152.20.145:5500/custom_air.html":
+  case "http://10.152.21.50:5500/custom_air.html":
     loader();
     darkModeSite();
     scrollMagicCustomAir();
@@ -684,7 +688,7 @@ switch (url) {
     cursorFollow();
     burgerMenuToggle();
     break;
-  case "http://10.152.20.145:5500/school.html":
+  case "http://10.152.21.50:5500/school.html":
     loader();
     darkModeSite();
     scrollMagicSchool();
