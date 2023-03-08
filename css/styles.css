@@ -1104,6 +1104,7 @@ header .burger {
   opacity: 0;
   -webkit-transition: 0.2s ease-in-out;
   transition: 0.2s ease-in-out;
+  z-index: 9999999999;
 }
 
 .container_colors .bg_colors {
