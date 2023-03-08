@@ -38,8 +38,11 @@
   box-sizing: border-box;
 }
 html {
+  position: relative;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
+
 :root {
   --primary-color: #41f0d0;
 

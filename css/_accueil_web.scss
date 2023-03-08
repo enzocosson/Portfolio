@@ -481,12 +481,11 @@
     position: absolute;
     bottom: 2%;
     left: 50%;
-    transform: translate(-50%, -50%);
     width: 1vw;
     height: 1vw;
     border-right: 2px solid var(--white);
     border-bottom: 2px solid var(--white);
-    transform: rotate(45deg);
+    transform: translate(-50%, -50%) rotate(45deg);
     z-index: 10;
   }
 }
@@ -986,6 +985,10 @@
 
 @media screen and (max-width: 780px) {
   .home {
+    .home_arrow {
+      width: 4vw;
+      height: 4vw;
+    }
     .title {
       margin-bottom: 10vh;
       .me {
@@ -1114,13 +1117,13 @@
         a {
           color: var(--primary-color);
           background-color: var(--white);
-          width: 50vw;
+          width: 65vw;
           font-weight: 500;
           display: flex;
           justify-content: center;
           align-items: center;
           text-decoration: none;
-          font-size: 2.5vw;
+          font-size: 3vw;
           font-family: "Inter", sans-serif;
           margin: 1vh 1vw;
           padding: 1.5vh 1vw;
