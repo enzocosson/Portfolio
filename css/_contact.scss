@@ -64,6 +64,10 @@
       justify-content: center;
       align-items: center;
 
+      // input[type="radio"] {
+      //   display: none;
+      // }
+
       input,
       textarea {
         outline: none;
@@ -109,6 +113,31 @@
         margin-bottom: 3vh;
         font-size: 0.8vw;
 
+        .option {
+          cursor: pointer;
+          width: 47%;
+          height: 4.5vh;
+          border: 0.25vw solid var(--primary-color);
+          background-color: var(--white);
+          color: var(--black);
+          border-radius: 0.7vw;
+          padding: 0 1vw;
+          font-weight: bold;
+          font-family: $font-base;
+          font-size: 1vw;
+          letter-spacing: 0.05vw;
+          transition: all 0.2s ease-in-out;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          transition: 0.2s ease-in-out;
+        }
+        #option-1:checked:checked ~ .option-1,
+        #option-2:checked:checked ~ .option-2 {
+          border: 0.25vw solid var(--primary-color);
+          background-color: var(--primary-color);
+          color: var(--white);
+        }
         .choix {
           cursor: pointer;
           width: 47%;

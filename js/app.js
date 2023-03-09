@@ -474,25 +474,25 @@ switch (url) {
     break;
 
   // -----------
-  case "http://192.168.1.75:5500/contact.html":
+  case "http://192.168.1.75:5500/contact.php":
     loader();
     darkModeSiteContact();
     cursorFollow();
     burgerMenuToggle();
     break;
-  case "http://10.152.21.50:5500/contact.html":
+  case "http://10.152.21.50:5500/contact.php":
     loader();
     darkModeSiteContact();
     cursorFollow();
     burgerMenuToggle();
     break;
-  case "http://192.168.1.77:5500/contact.html":
+  case "http://192.168.1.77:5500/contact.php":
     loader();
     darkModeSiteContact();
     cursorFollow();
     burgerMenuToggle();
     break;
-  case "https://www.enzo-cosson.fr/contact.html":
+  case "https://www.enzo-cosson.fr/contact.php":
     loader();
     darkModeSiteContact();
     cursorFollow();

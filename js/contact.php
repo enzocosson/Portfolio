@@ -110,20 +110,38 @@
                 <input type="email" name="email" id="email" class="email" placeholder="Email" required />
 
                 <div class="theme">
-                    <input type="radio" name="theme" id="option-1" value="DEVELOPPEMENT WEB">
-                    <input type="radio" name="theme" id="option-2" value="PHOTO / VIDEO">
-
-                    <label for="option-1" class="option option-1">
-                        <span>DEVELOPPEMENT WEB</span>
-                    </label>
-                    <label for="option-2" class="option option-2">
-                        <span>PHOTO / VIDEO</span>
-                    </label>
+                    <input type="radio" name="theme" value="DEVELOPPEMENT WEB">
+                    <input type="radio" name="theme" value="PHOTO / VIDEO">
                 </div>
 
                 <textarea name="message" id="message" placeholder="Message" cols="30" rows="10" class="message" required></textarea>
                 <input type="submit" value="Envoyer" class="envoyer" />
             </form>
+            <script>
+                const form = document.querySelector("#contact-form");
+                const choices = document.querySelectorAll(".choix");
+                const themeInput = document.querySelector("#selected_theme");
+                let theme = '';
+
+                for (let i = 0; i < choices.length; i++) {
+                    choices[i].addEventListener("click", () => {
+                        theme = choices[i].value;
+                        themeInput.value = theme;
+                    });
+                }
+
+                const messageInput = document.querySelector("#message");
+                messageInput.addEventListener("mousedown", (event) => {
+                    event.preventDefault();
+                });
+
+                form.addEventListener("submit", (event) => {
+                    if (theme == "") {
+                        event.preventDefault(); // Empêche l'envoi du formulaire
+                        alert("Veuillez sélectionner au moins un thème.");
+                    }
+                })
+            </script>
         </div>
 
 
