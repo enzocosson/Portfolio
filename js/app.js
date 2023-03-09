@@ -501,6 +501,20 @@ switch (url) {
     break;
 
   // -----------
+  case "http://192.168.1.75:5500/validation.php":
+    cursorFollow();
+    break;
+  case "http://10.152.21.50:5500/validation.php":
+    cursorFollow();
+    break;
+  case "http://192.168.1.77:5500/validation.php":
+    cursorFollow();
+    break;
+  case "https://www.enzo-cosson.fr/validation.php":
+    cursorFollow();
+    break;
+
+  // -----------
   case "http://192.168.1.75:5500/imovix.html":
     loader();
     darkModeSite();

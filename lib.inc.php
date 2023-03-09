@@ -25,7 +25,6 @@ function sendMessage($co, $prenom, $nom, $email, $theme, $message)
     $req = 'INSERT INTO portfolio (prenom, nom, email, theme, message, date, heure) 
     VALUES ("' . $prenom . '","' . $nom . '","' . $email . '","' . $theme . '","' . $message . '","' . $date . '","' . $heure . '")';
 
-    echo $req;
     try {
         $resultat = $co->prepare($req);
         $resultat->execute();
@@ -50,10 +49,10 @@ function sendMessage($co, $prenom, $nom, $email, $theme, $message)
         $headers = "From: enzolemercier@gmail.com";
         mail($to, $subject, $body, $headers);
 
-        // header('location:index.html');
+        header('location:validation.php');
     } else {
         echo "<h1>Une erreur est survenue</h1>";
-        // header('location:contact.php');
+        header('location:contact.php');
         die();
     }
 }

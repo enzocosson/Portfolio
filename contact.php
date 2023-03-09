@@ -99,8 +99,7 @@
 
         <div class="container_formulaire">
             <p class="entete">
-                Un projet en tête ? Développement web, Photo, Vidéo ?<br />
-                N’hésitez pas à me contacter !
+                Un projet en tête ?
             </p>
             <form action="contact_verif.php" method="POST" id="contact-form">
                 <div class="identite">
