@@ -50,7 +50,7 @@
             <li><a class="links" href="photo_video.html">Photos | Videos</a></li>
             <li><a class="links" href="a_propos.html">About Me</a></li>
             <li class="li_contact">
-                <a class="links" id="contact" href="mailto:enzolemercier@gmail.com">Contact</a>
+                <a class="links" id="contact" href="contact.php">Contact</a>
             </li>
         </ul>
 
@@ -68,7 +68,7 @@
         <li><a class="links" href="photo_video.html">Photos | Videos</a></li>
         <li><a class="links" href="a_propos.html">About Me</a></li>
         <li class="li_contact">
-            <a class="links" id="contact" href="mailto:enzolemercier@gmail.com">Contact</a>
+            <a class="links" id="contact" href="contact.php">Contact</a>
         </li>
     </ul>
 
