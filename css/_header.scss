@@ -52,7 +52,7 @@ header {
 
     li {
       position: relative;
-      padding: 1vh 1vw;
+      padding: 1vh 0vw;
       margin: 0vh 0.5vw;
       transition: 250ms ease-in-out;
       overflow: hidden;
@@ -63,6 +63,7 @@ header {
       }
 
       .links {
+        padding: 1vh 1vw;
         text-decoration: none;
         color: var(--white);
         font-family: $font_sf;
@@ -70,30 +71,30 @@ header {
         font-size: 1.1vw;
         transition: 0.2s ease-in-out;
         z-index: 3;
-      }
 
-      &::before {
-        content: "";
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        height: 0%;
-        background-color: var(--white);
-        transition: all 0.3s ease-in-out;
-        z-index: -1;
-      }
+        &::before {
+          content: "";
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 100%;
+          height: 0%;
+          background-color: var(--white);
+          transition: all 0.3s ease-in-out;
+          z-index: -1;
+        }
 
-      &::before {
-        height: 0;
-      }
+        &::before {
+          height: 0;
+        }
 
-      &:hover::before {
-        height: 100%;
-      }
+        &:hover::before {
+          height: 100%;
+        }
 
-      &:hover {
-        overflow: hidden;
+        &:hover {
+          overflow: hidden;
+        }
       }
     }
     .li_contact {
@@ -108,6 +109,10 @@ header {
       #contact {
         color: var(--primary-color);
         font-weight: bold;
+
+        &::before {
+          display: none;
+        }
       }
       &:hover #contact {
         background-color: transparent;
@@ -277,7 +282,32 @@ header {
 .menu_mobile {
   display: none;
 }
+//-----------------responsive------------------------------------------
 
+@media screen and (max-width: 1124px) {
+  header {
+    .logo {
+      width: 10vw;
+    }
+    .menu li .links {
+      font-size: 1.5vw;
+    }
+  }
+  .home_footer {
+    .rth {
+      width: 5vw;
+      height: 5vw;
+    }
+    .change_color_btn {
+      width: 5vw;
+      height: 5vw;
+    }
+    .darkMode {
+      width: 5vw;
+      height: 5vw;
+    }
+  }
+}
 //-----------------responsive------------------------------------------
 
 @media screen and (max-width: 780px) {
@@ -384,80 +414,6 @@ header {
     }
   }
 
-  .header_galerie {
-    li {
-      position: relative;
-      padding: 1vh 1vw;
-      margin: 0vh 0.5vw;
-      transition: 250ms ease-in-out;
-      overflow: hidden;
-      border-radius: 0.4vw;
-
-      &:hover .links {
-        color: var(--primary-color);
-      }
-
-      .links {
-        text-decoration: none;
-        color: var(--black);
-        font-family: $font_sf;
-        font-weight: 500;
-        font-size: 1.1vw;
-        transition: 0.2s ease-in-out;
-        z-index: 3;
-      }
-
-      &::before {
-        content: "";
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        height: 0%;
-        background-color: var(--black);
-        transition: all 0.3s ease-in-out;
-        z-index: -1;
-      }
-
-      &::before {
-        height: 0;
-      }
-
-      &:hover::before {
-        height: 100%;
-      }
-
-      &:hover {
-        overflow: hidden;
-      }
-    }
-    .li_contact {
-      margin-right: 0;
-      padding: calc(1vh - (3px)) 1vw;
-      margin: 0vh 0.5vw;
-      border-radius: 0.4vw;
-
-      background-color: var(--black);
-      border: 3px solid var(--black);
-
-      #contact {
-        color: var(--primary-color);
-        font-weight: bold;
-      }
-      &:hover #contact {
-        background-color: transparent;
-        color: var(--black);
-      }
-      &:hover {
-        background-color: transparent;
-        color: var(--black);
-      }
-      &::before,
-      &::after {
-        display: none;
-      }
-    }
-  }
   .home_footer {
     row-gap: 1vh;
   }

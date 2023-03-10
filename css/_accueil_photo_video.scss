@@ -332,7 +332,10 @@
 .see_more_album_active {
   background-color: var(--primary-color);
 }
+//-----------------responsive------------------------------------------
 
+@media screen and (max-width: 1124px) {
+}
 //-----------------responsive------------------------------------------
 
 @media screen and (max-width: 780px) {

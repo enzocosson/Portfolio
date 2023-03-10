@@ -5,13 +5,14 @@
   .menu {
     li {
       position: relative;
-      padding: 1vh 1vw;
+      padding: 1vh 0vw;
       margin: 0vh 0.5vw;
       transition: 250ms ease-in-out;
       overflow: hidden;
       border-radius: 0.4vw;
 
       .links {
+        padding: 1vh 1vw;
         text-decoration: none;
         color: var(--black);
         font-family: $font_sf;
@@ -19,33 +20,33 @@
         font-size: 1.1vw;
         transition: 0.2s ease-in-out;
         z-index: 3;
-      }
 
-      &::before {
-        content: "";
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        height: 0%;
-        background-color: var(--black);
-        transition: all 0.3s ease-in-out;
-        z-index: -1;
-      }
+        &::before {
+          content: "";
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 100%;
+          height: 0%;
+          background-color: var(--black);
+          transition: all 0.3s ease-in-out;
+          z-index: -1;
+        }
 
-      &::before {
-        height: 0;
-      }
+        &::before {
+          height: 0;
+        }
 
-      &:hover::before {
-        height: 100%;
-      }
+        &:hover::before {
+          height: 100%;
+        }
 
-      &:hover {
-        overflow: hidden;
-      }
-      &:hover .links {
-        color: var(--primary-color);
+        &:hover {
+          overflow: hidden;
+        }
+        &:hover .links {
+          color: var(--primary-color);
+        }
       }
     }
     .li_contact {
