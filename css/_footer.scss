@@ -53,18 +53,19 @@
 footer {
   position: relative;
   width: 100%;
-  height: 20vh;
+  height: 30vh;
   background-color: #232323;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  row-gap: 3vh;
 
   .info {
     width: 80%;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
 
     .reseaux {
       display: flex;
@@ -80,11 +81,11 @@ footer {
         margin-bottom: 2vh;
       }
       .logo_reseaux {
+        width: 100%;
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
         a {
-          margin-right: 1vw;
           width: 2vw;
           height: 2vw;
           background-color: #fcfcfc;
@@ -177,6 +178,69 @@ footer {
 }
 
 //-----------------responsive------------------------------------------
+
+@media screen and (max-width: 1124px) {
+  .contact {
+    h1 {
+      font-size: 7vw;
+    }
+    .lien_contact {
+      margin-top: 10vh;
+      padding: 1.2vh 4vw;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: var(--white);
+      border-radius: 1vw;
+      font-size: 3vw;
+      letter-spacing: 0.3vw;
+      font-weight: bold;
+      text-decoration: none;
+      color: var(--primary-color);
+      font-family: Base Neue;
+      border: 0.5vw solid var(--white);
+      transition: 0.3s ease-in-out;
+
+      &:hover {
+        border: 0.5vw solid var(--white);
+        background-color: var(--primary-color);
+        color: var(--white);
+      }
+    }
+  }
+  footer {
+    .info {
+      .reseaux,
+      .site,
+      .photo {
+        h2 {
+          font-size: 2.5vw;
+        }
+      }
+      .reseaux {
+        .logo_reseaux {
+          a {
+            width: 3vw;
+            height: 3vw;
+          }
+        }
+      }
+      .site {
+        a {
+          font-size: 1.5vw;
+        }
+      }
+      .photo {
+        a {
+          font-size: 1.5vw;
+        }
+      }
+    }
+    .copyright p {
+      font-size: 1.2vw;
+    }
+  }
+}
 
 @media screen and (max-width: 780px) {
   .contact {
