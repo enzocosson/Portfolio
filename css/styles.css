@@ -855,6 +855,27 @@ header .burger {
   display: none;
 }
 
+@media screen and (max-width: 1124px) {
+  .header_galerie .logo {
+    width: 10vw;
+  }
+  .header_galerie .menu li .links {
+    font-size: 1.5vw;
+  }
+  .home_footer .rth {
+    width: 5vw;
+    height: 5vw;
+  }
+  .home_footer .change_color_btn {
+    width: 5vw;
+    height: 5vw;
+  }
+  .home_footer .darkMode {
+    width: 5vw;
+    height: 5vw;
+  }
+}
+
 @media screen and (max-width: 780px) {
   .header_galerie .burger {
     cursor: pointer;
