@@ -54,11 +54,11 @@
       margin: 0vh 0.5vw;
       border-radius: 0.4vw;
 
-      background-color: var(--black);
-      border: 3px solid var(--black);
+      background-color: var(--primary-color);
+      border: 3px solid var(--primary-color);
 
       #contact {
-        color: var(--primary-color);
+        color: var(--white);
         font-weight: bold;
       }
       &:hover #contact {
