@@ -4354,6 +4354,63 @@ header .burger {
 }
 
 @media screen and (max-width: 1124px) {
+  .developpement_web_page .myProject img {
+    width: 1.3vw;
+  }
+  .developpement_web_page .home_side_right p {
+    padding-top: 6vh;
+    font-size: 2vw;
+  }
+  .developpement_web_page .imac_center {
+    width: 45vw;
+  }
+  .developpement_web_page .container_title .title_center {
+    font-size: 20vw;
+  }
+  .developpement_web_page .description .techno_center {
+    position: absolute;
+    bottom: -70%;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0%);
+    transform: translate(-50%, 0%);
+    font-size: 1.4vw;
+    font-weight: 400;
+  }
+  .developpement_web_page .description .presentation_site .is-splited {
+    color: var(--white);
+    font-family: "Inter", sans-serif;
+    font-size: 2vw;
+  }
+  .developpement_web_page .description .interaction button {
+    cursor: pointer;
+    width: 23vw;
+    height: 5.5vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border: none;
+    border-radius: 1vw;
+    font-size: 1.8vw;
+    font-weight: 600;
+    background-color: var(--white);
+    color: var(--primary-color);
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+    -webkit-box-shadow: rgba(0, 0, 0, 0) 0px 4px 12px;
+    box-shadow: rgba(0, 0, 0, 0) 0px 4px 12px;
+  }
+  .developpement_web_page .description .interaction .next,
+  .developpement_web_page .description .interaction .prev {
+    border: 0.3vw solid var(--white);
+    background-color: var(--primary-color);
+    color: var(--white);
+  }
   .developpement_web_page .imac_center_active {
     position: fixed;
     -webkit-transform: perspective(1000px) translate(-50%, -50%) rotateZ(0deg) rotateY(0deg) scale(7);
@@ -4363,6 +4420,38 @@ header .burger {
   .developpement_web_page .imac_center_active:hover {
     -webkit-transform: perspective(1000px) translate(-50%, -50%) rotateZ(0deg) rotateY(0deg) scale(7);
             transform: perspective(1000px) translate(-50%, -50%) rotateZ(0deg) rotateY(0deg) scale(7);
+  }
+  .tous_mes_projets .interaction .btn_techno {
+    cursor: pointer;
+    width: 18vw;
+    height: 5.5vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border: none;
+    border-radius: 1vw;
+    font-size: 1.5vw;
+    font-weight: 600;
+    background-color: var(--primary-color);
+    color: var(--white);
+    border: 0.3vw solid var(--white);
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+    -webkit-box-shadow: rgba(0, 0, 0, 0) 0px 4px 12px;
+    box-shadow: rgba(0, 0, 0, 0) 0px 4px 12px;
+  }
+  .tous_mes_projets .interaction .active {
+    border: 0.3vw solid var(--white);
+    background-color: var(--white);
+    color: var(--primary-color);
+    -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
   }
 }
 
