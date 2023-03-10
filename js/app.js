@@ -26,6 +26,7 @@ import {
   onPlayButtonVideoAuvergne,
   onPlayButtonVideoKenzo,
 } from "./onPlayButtonVideo.js";
+import { soundButton } from "./soundButton.js";
 
 function getURL() {
   return console.log(window.location.href);
@@ -188,6 +189,8 @@ switch (url) {
     scrollMagicGalerie();
     cursorFollow();
     burgerMenuToggle();
+    soundButton();
+
     break;
   case "http://10.152.21.50:5500/mountain.html":
     loader();
@@ -195,6 +198,8 @@ switch (url) {
     scrollMagicGalerie();
     cursorFollow();
     burgerMenuBlackToggle();
+    soundButton();
+
     break;
   case "http://192.168.1.77:5500/mountain.html":
     loader();
@@ -202,6 +207,8 @@ switch (url) {
     scrollMagicGalerie();
     cursorFollow();
     burgerMenuBlackToggle();
+    soundButton();
+
     break;
   case "https://www.enzo-cosson.fr/mountain.html":
     loader();
@@ -209,6 +216,8 @@ switch (url) {
     scrollMagicGalerie();
     cursorFollow();
     burgerMenuBlackToggle();
+    soundButton();
+
     break;
 
   // -----------
@@ -218,6 +227,8 @@ switch (url) {
     scrollMagicGalerie();
     cursorFollow();
     burgerMenuBlackToggle();
+    soundButton();
+
     break;
   case "http://10.152.21.50:5500/tropical.html":
     loader();
@@ -225,6 +236,7 @@ switch (url) {
     scrollMagicGalerie();
     cursorFollow();
     burgerMenuBlackToggle();
+    soundButton();
     break;
   case "http://192.168.1.77:5500/tropical.html":
     loader();
@@ -232,6 +244,7 @@ switch (url) {
     scrollMagicGalerie();
     cursorFollow();
     burgerMenuBlackToggle();
+    soundButton();
     break;
   case "https://www.enzo-cosson.fr/tropical.html":
     loader();
@@ -239,6 +252,7 @@ switch (url) {
     scrollMagicGalerie();
     cursorFollow();
     burgerMenuBlackToggle();
+    soundButton();
     break;
 
   // -----------
@@ -248,6 +262,8 @@ switch (url) {
     scrollMagicGalerie();
     cursorFollow();
     burgerMenuBlackToggle();
+    soundButton();
+
     break;
   case "http://10.152.21.50:5500/golden_hour.html":
     loader();
@@ -255,6 +271,8 @@ switch (url) {
     scrollMagicGalerie();
     cursorFollow();
     burgerMenuBlackToggle();
+    soundButton();
+
     break;
   case "http://192.168.1.77:5500/golden_hour.html":
     loader();
@@ -262,6 +280,8 @@ switch (url) {
     scrollMagicGalerie();
     cursorFollow();
     burgerMenuBlackToggle();
+    soundButton();
+
     break;
   case "https://www.enzo-cosson.fr/golden_hour.html":
     loader();
@@ -269,6 +289,8 @@ switch (url) {
     scrollMagicGalerie();
     cursorFollow();
     burgerMenuBlackToggle();
+    soundButton();
+
     break;
 
   // -----------
@@ -278,6 +300,8 @@ switch (url) {
     scrollMagicGalerie();
     cursorFollow();
     burgerMenuBlackToggle();
+    soundButton();
+
     break;
   case "http://10.152.21.50:5500/by_night.html":
     loader();
@@ -285,6 +309,8 @@ switch (url) {
     scrollMagicGalerie();
     cursorFollow();
     burgerMenuBlackToggle();
+    soundButton();
+
     break;
   case "http://192.168.1.77:5500/by_night.html":
     loader();
@@ -292,6 +318,8 @@ switch (url) {
     scrollMagicGalerie();
     cursorFollow();
     burgerMenuBlackToggle();
+    soundButton();
+
     break;
   case "https://www.enzo-cosson.fr/by_night.html":
     loader();
@@ -299,6 +327,8 @@ switch (url) {
     scrollMagicGalerie();
     cursorFollow();
     burgerMenuBlackToggle();
+    soundButton();
+
     break;
 
   // -----------
@@ -308,6 +338,8 @@ switch (url) {
     scrollMagicGalerie();
     cursorFollow();
     burgerMenuBlackToggle();
+    soundButton();
+
     break;
   case "http://10.152.21.50:5500/my_dog.html":
     loader();
@@ -315,6 +347,8 @@ switch (url) {
     scrollMagicGalerie();
     cursorFollow();
     burgerMenuBlackToggle();
+    soundButton();
+
     break;
   case "http://192.168.1.77:5500/my_dog.html":
     loader();
@@ -322,6 +356,8 @@ switch (url) {
     scrollMagicGalerie();
     cursorFollow();
     burgerMenuBlackToggle();
+    soundButton();
+
     break;
   case "https://www.enzo-cosson.fr/my_dog.html":
     loader();
@@ -329,6 +365,8 @@ switch (url) {
     scrollMagicGalerie();
     cursorFollow();
     burgerMenuBlackToggle();
+    soundButton();
+
     break;
 
   // -----------

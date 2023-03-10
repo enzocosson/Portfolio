@@ -469,6 +469,135 @@ header .burger {
   opacity: 0;
 }
 
+.container_sound_button {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: right;
+  -ms-flex-pack: right;
+  justify-content: right;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  padding: 1vw 2vw;
+  z-index: 999999999;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+
+.container_sound_button .sound_button {
+  width: 1.8vw;
+  height: 2.2vw;
+  margin-bottom: 1vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.container_sound_button .sound_button .sound_line {
+  width: 0.3vw;
+  height: 100%;
+  background-color: var(--primary-color);
+}
+
+.container_sound_button .sound_button .line1 {
+  -webkit-animation: sound_line 3s infinite ease-in-out;
+          animation: sound_line 3s infinite ease-in-out;
+}
+
+.container_sound_button .sound_button .line2 {
+  -webkit-animation: sound_line 3s infinite ease-in-out;
+          animation: sound_line 3s infinite ease-in-out;
+  -webkit-animation-delay: 300ms;
+          animation-delay: 300ms;
+}
+
+.container_sound_button .sound_button .line3 {
+  -webkit-animation: sound_line 3s infinite ease-in-out;
+          animation: sound_line 3s infinite ease-in-out;
+  -webkit-animation-delay: 600ms;
+          animation-delay: 600ms;
+}
+
+@-webkit-keyframes sound_line {
+  0% {
+    height: 0%;
+  }
+  20% {
+    height: 65%;
+  }
+  30% {
+    height: 20%;
+  }
+  40% {
+    height: 95%;
+  }
+  50% {
+    height: 75%;
+  }
+  60% {
+    height: 50%;
+  }
+  70% {
+    height: 100%;
+  }
+  80% {
+    height: 0%;
+  }
+  90% {
+    height: 30%;
+  }
+  100% {
+    height: 0%;
+  }
+}
+
+@keyframes sound_line {
+  0% {
+    height: 0%;
+  }
+  20% {
+    height: 65%;
+  }
+  30% {
+    height: 20%;
+  }
+  40% {
+    height: 95%;
+  }
+  50% {
+    height: 75%;
+  }
+  60% {
+    height: 50%;
+  }
+  70% {
+    height: 100%;
+  }
+  80% {
+    height: 0%;
+  }
+  90% {
+    height: 30%;
+  }
+  100% {
+    height: 0%;
+  }
+}
+
 .menu_mobile {
   display: none;
 }
@@ -861,18 +990,6 @@ header .burger {
   }
   .header_galerie .menu li .links {
     font-size: 1.5vw;
-  }
-  .home_footer .rth {
-    width: 5vw;
-    height: 5vw;
-  }
-  .home_footer .change_color_btn {
-    width: 5vw;
-    height: 5vw;
-  }
-  .home_footer .darkMode {
-    width: 5vw;
-    height: 5vw;
   }
 }
 
