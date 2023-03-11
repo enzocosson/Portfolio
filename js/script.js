@@ -45,6 +45,7 @@ btn_photo.addEventListener("mouseout", () => {
   title_portfolio.classList.remove("title_portfolio_active");
   home.classList.remove("home_active");
 });
+
 // Function to animate the mouse move
 
 function mouseMove() {

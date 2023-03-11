@@ -97,6 +97,9 @@
 
 @media screen and (max-width: 780px) {
   .header_galerie {
+    .logo {
+      width: 20vw;
+    }
     .burger {
       cursor: pointer;
       display: flex;

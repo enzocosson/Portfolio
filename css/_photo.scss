@@ -46,7 +46,7 @@
 
       -webkit-filter: drop-shadow(0px 2px 0.1vw rgba(0, 0, 0, 0.237));
       filter: drop-shadow(0px 0px 0.2vw rgba(0, 0, 0, 0.192));
-      transition: color 0.5s ease-out;
+      transition: color 0.5s ease-out, font-size 1s ease-out;
       z-index: 3;
     }
 
@@ -54,11 +54,11 @@
       position: absolute;
       top: 50%;
       left: 50%;
-      transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%) scale(1.1);
       width: 100%;
       height: 110%;
       object-fit: cover;
-      transition: 0.3s ease-in-out;
+      transition: opacity 0.5s ease-in-out, transform 1s ease-in-out;
       z-index: 2;
     }
     .guadeloupe_video_hover {
@@ -84,9 +84,11 @@
     }
     &:hover .theme_titre {
       color: var(--primary-color);
+      font-size: 5.5vw;
     }
     &:hover img {
       opacity: 0.7;
+      transform: translate(-50%, -50%) scale(1);
     }
   }
   .theme_video {
@@ -107,6 +109,7 @@
       transform: translate(-50%, -50%);
       width: 100%;
       font-size: 5vw;
+      border-radius: 1.5vw;
       text-align: center;
       color: #fcfcfc;
       font-weight: bold;
@@ -125,7 +128,10 @@
       transform: translate(-50%, -50%);
       width: 100%;
       height: 110%;
+      border-radius: 1.5vw;
       object-fit: cover;
+      border-radius: inherit; /* Ajout de cette ligne */
+      overflow: hidden; /* Ajout de cette ligne */
       transition: 0.3s ease-in-out;
       z-index: 2;
     }
@@ -137,9 +143,11 @@
       transform: translate(-50%, -50%);
       width: 100%;
       height: 100%;
+      opacity: 1;
       object-fit: cover;
       transition: 0.3s ease-in-out;
       z-index: 1;
+      border-radius: 1vw;
     }
     .mountain {
       object-position: top;
@@ -159,10 +167,9 @@
     }
   }
 }
-
 //-----------------responsive------------------------------------------
 
-@media screen and (max-width: 780px) {
+@media screen and (max-width: 1124px) {
   .photo_web_page,
   .video_web_page {
     .titre,
@@ -174,7 +181,44 @@
       position: relative;
       text-decoration: none;
       width: 90vw;
-      height: 25vh;
+      height: 40vh;
+      border-radius: 2vw;
+      overflow: hidden;
+      margin: 2vh 0;
+      border: 0.5vw solid transparent;
+      -webkit-transition: 0.5s ease-in-out;
+      transition: 0.5s ease-in-out;
+      .theme_titre {
+        font-size: 7vw;
+      }
+      &:hover .theme_titre {
+        color: var(--primary-color);
+        font-size: 7.5vw;
+      }
+
+      .guadeloupe_video_hover,
+      .auvergne_video_hover {
+        border-radius: 1.5vw;
+      }
+    }
+  }
+}
+
+//-----------------responsive------------------------------------------
+
+@media screen and (max-width: 780px) {
+  .photo_web_page,
+  .video_web_page {
+    .titre,
+    .theme_titre {
+      font-size: 15vw;
+    }
+    .theme,
+    .theme_video {
+      position: relative;
+      text-decoration: none;
+      width: 90vw;
+      height: 23vh;
       border-radius: 3vw;
       overflow: hidden;
       margin: 2vh 0;
@@ -183,6 +227,17 @@
       transition: 0.5s ease-in-out;
       .theme_titre {
         font-size: 9vw;
+        transition: 0.5s ease-in-out;
+      }
+
+      &:hover .theme_titre {
+        color: var(--primary-color);
+        font-size: 9.5vw;
+      }
+
+      .guadeloupe_video_hover,
+      .auvergne_video_hover {
+        border-radius: 2.8vw;
       }
     }
   }

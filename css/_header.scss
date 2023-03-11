@@ -390,6 +390,12 @@ header {
       height: 5vw;
     }
   }
+  .container_sound_button {
+    .sound_button {
+      width: 5vw;
+      height: 5vw;
+    }
+  }
 }
 //-----------------responsive------------------------------------------
 
@@ -639,6 +645,13 @@ header {
     }
     .change_color_btn:hover {
       background-color: var(--white);
+    }
+  }
+  .container_sound_button {
+    .sound_button {
+      width: 13vw;
+      height: 13vw;
+      border: 0.7vw solid var(--primary-color);
     }
   }
 }
