@@ -232,7 +232,6 @@ switch (url) {
     cursorFollow();
     burgerMenuBlackToggle();
     soundButtonTropical();
-    // soundButtonTropical();
 
     break;
   case "http://10.152.21.50:5500/tropical.html":
@@ -242,7 +241,7 @@ switch (url) {
     cursorFollow();
     burgerMenuBlackToggle();
     soundButtonTropical();
-    // soundButtonTropical();
+
     break;
   case "http://192.168.1.77:5500/tropical.html":
     loader();
@@ -251,7 +250,7 @@ switch (url) {
     cursorFollow();
     burgerMenuBlackToggle();
     soundButtonTropical();
-    // soundButtonTropical();
+
     break;
   case "https://www.enzo-cosson.fr/tropical.html":
     loader();
@@ -260,7 +259,7 @@ switch (url) {
     cursorFollow();
     burgerMenuBlackToggle();
     soundButtonTropical();
-    // soundButtonTropical();
+
     break;
 
   // -----------
