@@ -301,71 +301,60 @@ header {
   transition: 0.2s ease-in-out;
 
   .sound_button {
+    position: relative;
     cursor: pointer;
-    width: 1.8vw;
-    height: 2.2vw;
+    width: 3vw;
+    height: 3vw;
     margin-bottom: 1vw;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    border: 0.2vw solid var(--primary-color);
+    transition: 0.3s ease-in-out;
+    background-color: var(--primary-color);
+    overflow: hidden;
+    column-gap: 0.3vw;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 
     display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-    transition: 0.3s ease-in-out;
+    justify-content: center;
+    align-items: center;
 
-    .sound_line {
-      width: 0.3vw;
-      height: 100%;
-      background-color: var(--primary-color);
-      animation: sound_line 3s infinite ease-in-out;
-      transition: 0.3s ease-in-out;
+    .sound_on,
+    .sound_off {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 50%;
+      transition: 0.2s ease-in-out;
+      path {
+        fill: var(--white);
+        transition: 0.2s ease-in-out;
+      }
     }
-    .line1 {
-      height: 60%;
+    .sound_on {
+      opacity: 1;
     }
-    .line2 {
-      height: 100%;
-      animation-delay: 300ms;
+    .sound_off {
+      opacity: 0;
     }
-    .line3 {
-      height: 40%;
-      animation-delay: 600ms;
+
+    &:hover {
+      background-color: var(--white);
     }
-    @keyframes sound_line {
-      0% {
-        height: 0%;
-      }
-      20% {
-        height: 65%;
-      }
-      30% {
-        height: 20%;
-      }
-      40% {
-        height: 95%;
-      }
-      50% {
-        height: 75%;
-      }
-      60% {
-        height: 50%;
-      }
-      70% {
-        height: 100%;
-      }
-      80% {
-        height: 0%;
-      }
-      90% {
-        height: 30%;
-      }
-      100% {
-        height: 0%;
-      }
+    &:hover path {
+      fill: var(--primary-color);
     }
   }
 
   .sound_button_muted {
-    .sound_line {
-      animation: none;
+    .sound_on {
+      opacity: 0;
+    }
+    .sound_off {
+      opacity: 1;
     }
   }
 
