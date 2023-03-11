@@ -493,6 +493,7 @@ header .burger {
 }
 
 .container_sound_button .sound_button {
+  cursor: pointer;
   width: 1.8vw;
   height: 2.2vw;
   margin-bottom: 1vw;
@@ -505,29 +506,32 @@ header .burger {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 
 .container_sound_button .sound_button .sound_line {
   width: 0.3vw;
   height: 100%;
   background-color: var(--primary-color);
+  -webkit-animation: sound_line 3s infinite ease-in-out;
+          animation: sound_line 3s infinite ease-in-out;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 
 .container_sound_button .sound_button .line1 {
-  -webkit-animation: sound_line 3s infinite ease-in-out;
-          animation: sound_line 3s infinite ease-in-out;
+  height: 60%;
 }
 
 .container_sound_button .sound_button .line2 {
-  -webkit-animation: sound_line 3s infinite ease-in-out;
-          animation: sound_line 3s infinite ease-in-out;
+  height: 100%;
   -webkit-animation-delay: 300ms;
           animation-delay: 300ms;
 }
 
 .container_sound_button .sound_button .line3 {
-  -webkit-animation: sound_line 3s infinite ease-in-out;
-          animation: sound_line 3s infinite ease-in-out;
+  height: 40%;
   -webkit-animation-delay: 600ms;
           animation-delay: 600ms;
 }
@@ -596,6 +600,15 @@ header .burger {
   100% {
     height: 0%;
   }
+}
+
+.container_sound_button .sound_button_muted .sound_line {
+  -webkit-animation: none;
+          animation: none;
+}
+
+.container_sound_button .sound {
+  z-index: 999999999999999999;
 }
 
 .menu_mobile {

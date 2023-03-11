@@ -26,7 +26,11 @@ import {
   onPlayButtonVideoAuvergne,
   onPlayButtonVideoKenzo,
 } from "./onPlayButtonVideo.js";
-import { soundButton } from "./soundButton.js";
+import {
+  soundButtonTropical,
+  soundButtonMountain,
+  soundButtonNight,
+} from "./soundButton.js";
 
 function getURL() {
   return console.log(window.location.href);
@@ -189,7 +193,7 @@ switch (url) {
     scrollMagicGalerie();
     cursorFollow();
     burgerMenuToggle();
-    soundButton();
+    soundButtonMountain();
 
     break;
   case "http://10.152.21.50:5500/mountain.html":
@@ -198,7 +202,7 @@ switch (url) {
     scrollMagicGalerie();
     cursorFollow();
     burgerMenuBlackToggle();
-    soundButton();
+    soundButtonMountain();
 
     break;
   case "http://192.168.1.77:5500/mountain.html":
@@ -207,7 +211,7 @@ switch (url) {
     scrollMagicGalerie();
     cursorFollow();
     burgerMenuBlackToggle();
-    soundButton();
+    soundButtonMountain();
 
     break;
   case "https://www.enzo-cosson.fr/mountain.html":
@@ -216,7 +220,7 @@ switch (url) {
     scrollMagicGalerie();
     cursorFollow();
     burgerMenuBlackToggle();
-    soundButton();
+    soundButtonMountain();
 
     break;
 
@@ -227,7 +231,8 @@ switch (url) {
     scrollMagicGalerie();
     cursorFollow();
     burgerMenuBlackToggle();
-    soundButton();
+    soundButtonTropical();
+    // soundButtonTropical();
 
     break;
   case "http://10.152.21.50:5500/tropical.html":
@@ -236,7 +241,8 @@ switch (url) {
     scrollMagicGalerie();
     cursorFollow();
     burgerMenuBlackToggle();
-    soundButton();
+    soundButtonTropical();
+    // soundButtonTropical();
     break;
   case "http://192.168.1.77:5500/tropical.html":
     loader();
@@ -244,7 +250,8 @@ switch (url) {
     scrollMagicGalerie();
     cursorFollow();
     burgerMenuBlackToggle();
-    soundButton();
+    soundButtonTropical();
+    // soundButtonTropical();
     break;
   case "https://www.enzo-cosson.fr/tropical.html":
     loader();
@@ -252,7 +259,8 @@ switch (url) {
     scrollMagicGalerie();
     cursorFollow();
     burgerMenuBlackToggle();
-    soundButton();
+    soundButtonTropical();
+    // soundButtonTropical();
     break;
 
   // -----------
@@ -262,7 +270,7 @@ switch (url) {
     scrollMagicGalerie();
     cursorFollow();
     burgerMenuBlackToggle();
-    soundButton();
+    soundButtonTropical();
 
     break;
   case "http://10.152.21.50:5500/golden_hour.html":
@@ -271,7 +279,7 @@ switch (url) {
     scrollMagicGalerie();
     cursorFollow();
     burgerMenuBlackToggle();
-    soundButton();
+    soundButtonTropical();
 
     break;
   case "http://192.168.1.77:5500/golden_hour.html":
@@ -280,7 +288,7 @@ switch (url) {
     scrollMagicGalerie();
     cursorFollow();
     burgerMenuBlackToggle();
-    soundButton();
+    soundButtonTropical();
 
     break;
   case "https://www.enzo-cosson.fr/golden_hour.html":
@@ -289,7 +297,7 @@ switch (url) {
     scrollMagicGalerie();
     cursorFollow();
     burgerMenuBlackToggle();
-    soundButton();
+    soundButtonTropical();
 
     break;
 
@@ -300,7 +308,7 @@ switch (url) {
     scrollMagicGalerie();
     cursorFollow();
     burgerMenuBlackToggle();
-    soundButton();
+    soundButtonNight();
 
     break;
   case "http://10.152.21.50:5500/by_night.html":
@@ -309,7 +317,7 @@ switch (url) {
     scrollMagicGalerie();
     cursorFollow();
     burgerMenuBlackToggle();
-    soundButton();
+    soundButtonNight();
 
     break;
   case "http://192.168.1.77:5500/by_night.html":
@@ -318,7 +326,7 @@ switch (url) {
     scrollMagicGalerie();
     cursorFollow();
     burgerMenuBlackToggle();
-    soundButton();
+    soundButtonNight();
 
     break;
   case "https://www.enzo-cosson.fr/by_night.html":
@@ -327,7 +335,7 @@ switch (url) {
     scrollMagicGalerie();
     cursorFollow();
     burgerMenuBlackToggle();
-    soundButton();
+    soundButtonNight();
 
     break;
 
@@ -338,7 +346,7 @@ switch (url) {
     scrollMagicGalerie();
     cursorFollow();
     burgerMenuBlackToggle();
-    soundButton();
+    soundButtonTropical();
 
     break;
   case "http://10.152.21.50:5500/my_dog.html":
@@ -347,7 +355,7 @@ switch (url) {
     scrollMagicGalerie();
     cursorFollow();
     burgerMenuBlackToggle();
-    soundButton();
+    soundButtonTropical();
 
     break;
   case "http://192.168.1.77:5500/my_dog.html":
@@ -356,7 +364,7 @@ switch (url) {
     scrollMagicGalerie();
     cursorFollow();
     burgerMenuBlackToggle();
-    soundButton();
+    soundButtonTropical();
 
     break;
   case "https://www.enzo-cosson.fr/my_dog.html":
@@ -365,7 +373,7 @@ switch (url) {
     scrollMagicGalerie();
     cursorFollow();
     burgerMenuBlackToggle();
-    soundButton();
+    soundButtonTropical();
 
     break;
 

@@ -301,6 +301,7 @@ header {
   transition: 0.2s ease-in-out;
 
   .sound_button {
+    cursor: pointer;
     width: 1.8vw;
     height: 2.2vw;
     margin-bottom: 1vw;
@@ -308,21 +309,24 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
+    transition: 0.3s ease-in-out;
 
     .sound_line {
       width: 0.3vw;
       height: 100%;
       background-color: var(--primary-color);
+      animation: sound_line 3s infinite ease-in-out;
+      transition: 0.3s ease-in-out;
     }
     .line1 {
-      animation: sound_line 3s infinite ease-in-out;
+      height: 60%;
     }
     .line2 {
-      animation: sound_line 3s infinite ease-in-out;
+      height: 100%;
       animation-delay: 300ms;
     }
     .line3 {
-      animation: sound_line 3s infinite ease-in-out;
+      height: 40%;
       animation-delay: 600ms;
     }
     @keyframes sound_line {
@@ -357,6 +361,16 @@ header {
         height: 0%;
       }
     }
+  }
+
+  .sound_button_muted {
+    .sound_line {
+      animation: none;
+    }
+  }
+
+  .sound {
+    z-index: 999999999999999999;
   }
 }
 .menu_mobile {
