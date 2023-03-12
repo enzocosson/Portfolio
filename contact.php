@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+<?php session_start() ?>
 
 <head>
     <meta charset="UTF-8" />
@@ -7,6 +8,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
     <title>Portfolio | Contact</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="./img/favicon/site.webmanifest">
+    <link rel="mask-icon" href="./img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#00aba9">
+    <meta name="theme-color" content="#ffffff">
     <link rel="stylesheet" href="./css/styles.css" />
 </head>
 
@@ -92,10 +100,10 @@
         </button>
     </div>
     <section class="contact_page">
-        <div class="container_formulaire_bg">
+        <!-- <div class="container_formulaire_bg">
             <img class="word_contact" src="./img/contact/word_contact.png" alt="" />
             <img class="word_contact_black" src="./img/contact/word_contact_black.png" alt="" />
-        </div>
+        </div> -->
 
         <div class="container_formulaire">
             <p class="entete">
@@ -106,8 +114,21 @@
                     <input type="text" id="prenom" name="prenom" class="prenom" placeholder="Prénom" required />
                     <input type="text" id="nom" name="nom" class="nom" placeholder="Nom" required />
                 </div>
+                <?php
+                if (isset($_SESSION['erreur_prenom'])) {
+                    echo $_SESSION['erreur_prenom'];
+                    unset($_SESSION['erreur_prenom']);
+                }
+                if (isset($_SESSION['erreur_nom'])) {
+                    echo $_SESSION['erreur_nom'];
+                    unset($_SESSION['erreur_nom']);
+                }
+                ?>
                 <input type="email" name="email" id="email" class="email" placeholder="Email" required />
-
+                <?php if (isset($_SESSION['erreur_email'])) {
+                    echo $_SESSION['erreur_email'];
+                    unset($_SESSION['erreur_email']);
+                } ?>
                 <div class="theme">
                     <input type="radio" name="theme" id="option-1" value="DEVELOPPEMENT WEB">
                     <input type="radio" name="theme" id="option-2" value="PHOTO / VIDEO">
@@ -121,7 +142,12 @@
                 </div>
 
                 <textarea name="message" id="message" placeholder="Message" cols="30" rows="10" class="message" required></textarea>
+                <?php if (isset($_SESSION['erreur_message'])) {
+                    echo $_SESSION['erreur_message'];
+                    unset($_SESSION['erreur_message']);
+                } ?>
                 <input type="submit" value="Envoyer" class="envoyer" />
+
             </form>
         </div>
 
