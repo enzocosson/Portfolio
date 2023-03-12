@@ -7647,6 +7647,7 @@ header .burger {
           box-shadow: 0px 0px 10px 5px rgba(255, 255, 255, 0);
   -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
+  overflow: hidden;
 }
 
 .container_autres_sites .autres_sites .autres_sites_cards:hover {
@@ -7659,7 +7660,209 @@ header .burger {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  border-radius: 2vw;
+}
+
+@media screen and (max-width: 1124px) {
+  .presentation_site .bg_title {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%) scale(1);
+    transform: translate(-50%, -50%) scale(1);
+    color: var(--white);
+    -webkit-text-stroke: 0.5vw var(--white);
+    font-family: Base Neue;
+    font-size: 25vw;
+    letter-spacing: 1vw;
+    z-index: 1;
+  }
+  .presentation_site .imac {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    -webkit-transform-origin: center;
+    transform-origin: center;
+    -webkit-perspective-origin: center;
+    perspective-origin: center;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    width: 50vw;
+    letter-spacing: 0vw;
+    z-index: 2;
+  }
+  .more_info h1 {
+    color: var(--primary-color);
+    font-family: Base Neue;
+    font-size: 18vw;
+    z-index: 0;
+    text-align: center;
+    line-height: 15vh;
+  }
+  .more_info .green_rect {
+    border-radius: 20vw;
+  }
+  .more_info .mockup_spiderman {
+    position: absolute;
+    top: 150%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-24%, -81%);
+    width: 77% !important;
+    z-index: 3;
+  }
+  .more_info .moon_illu {
+    position: absolute;
+    top: 76%;
+    left: 43%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 168%;
+    opacity: 0;
+    z-index: 2;
+  }
+  .more_info .mockup_iphone_book {
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(27%, -75%);
+    width: 32% !important;
+    z-index: 3;
+  }
+  .more_info .mockup_ipad_art {
+    position: absolute;
+    top: 50%;
+    left: 150%;
+    -webkit-transform: translate(-50%, -70%);
+    transform: translate(-87%, -70%);
+    width: 70% !important;
+    z-index: 3;
+  }
+  .more_info .custom_air_mobile {
+    position: absolute;
+    top: 150%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -85%);
+    width: 40% !important;
+    border-radius: 3vw;
+    z-index: 3;
+  }
+  .more_info .mockup_ipad_soda {
+    position: absolute;
+    top: 50%;
+    left: -50%;
+    -webkit-transform: translate(-50%, -65%);
+    transform: translate(-50%, -65%);
+    width: 80% !important;
+    z-index: 3;
+    left: 50% !important;
+  }
+  .more_info .imac_school2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-100%, -72%) scale(1.5) !important;
+    transform: translate(-100%, -72%) scale(1.5) !important;
+    width: 0%;
+    border-radius: 1vw;
+    z-index: 3;
+  }
+  .more_info .description,
+  .more_info .description_book,
+  .more_info .description_soda,
+  .more_info .description_art,
+  .more_info .description_customAir,
+  .more_info .description_school {
+    position: absolute;
+    top: 67%;
+    left: 50%;
+    width: 70vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .more_info .description .more_info_titre,
+  .more_info .description_book .more_info_titre,
+  .more_info .description_soda .more_info_titre,
+  .more_info .description_art .more_info_titre,
+  .more_info .description_customAir .more_info_titre,
+  .more_info .description_school .more_info_titre {
+    font-size: 6vw;
+  }
+  .more_info .description .description_paragraphe,
+  .more_info .description_book .description_paragraphe,
+  .more_info .description_soda .description_paragraphe,
+  .more_info .description_art .description_paragraphe,
+  .more_info .description_customAir .description_paragraphe,
+  .more_info .description_school .description_paragraphe {
+    font-size: 1.8vw;
+  }
+  .more_info .description_soda {
+    top: 75%;
+  }
+  .more_info .white_circle_bottom h2 {
+    color: transparent;
+    font-family: Base Neue;
+    font-weight: bold;
+    -webkit-text-stroke: 0.2vw var(--black);
+    font-size: 30vw;
+    letter-spacing: 1vw;
+    opacity: 0;
+  }
+  .more_info .rect2 h2 {
+    color: transparent;
+    font-family: Base Neue;
+    font-weight: bold;
+    -webkit-text-stroke: 0.2vw var(--primary-color);
+    font-size: 30vw;
+    letter-spacing: 1vw;
+  }
+  .bdd_more .bdd_text {
+    max-width: 80%;
+    color: var(--white);
+    font-family: "Inter", sans-serif;
+    font-size: 2vw;
+    text-align: center;
+    font-style: italic;
+  }
+  .bdd_more .bdd_redirection {
+    cursor: pointer;
+    margin-top: 5vh;
+    width: 40vw;
+    height: 6vh;
+    border: 0.3vw solid var(--primary-color);
+    background-color: var(--primary-color);
+    border-radius: 1.3vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    color: var(--white);
+    font-family: Base Neue;
+    text-decoration: none;
+    font-size: 3vw;
+  }
+  .bdd_more .bdd_redirection:hover {
+    border: 0.3vw solid var(--primary-color);
+  }
+  .container_autres_sites .autres_sites_title h1 {
+    font-size: 8vw;
+  }
+  .container_autres_sites .autres_sites .autres_sites_cards {
+    width: 42vw;
+    height: 24vw;
+    background-color: var(--white);
+    border-radius: 1vw;
+  }
 }
 
 @media screen and (max-width: 780px) {
@@ -7826,7 +8029,7 @@ header .burger {
     color: transparent;
     font-family: Base Neue;
     font-weight: bold;
-    -webkit-text-stroke: 0.1vw var(--black);
+    -webkit-text-stroke: 0.4vw var(--black);
     font-size: 40vw;
     letter-spacing: 1vw;
     opacity: 0;
@@ -7835,7 +8038,7 @@ header .burger {
     color: transparent;
     font-family: Base Neue;
     font-weight: bold;
-    -webkit-text-stroke: 0.1vw var(--primary-color);
+    -webkit-text-stroke: 0.4vw var(--primary-color);
     font-size: 40vw;
     letter-spacing: 1vw;
   }
