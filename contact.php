@@ -46,8 +46,8 @@
 
     <header class="header" id="rth">
         <a href="index.html" class="pagelink">
-            <img class="logo logo_white" src="./img/white_logo.png" alt="" />
-            <img class="logo logo_black" src="./img/black_logo.png" alt="" />
+            <img class="logo logo_white" src="./img/white_logo.png" alt="logo du site" />
+            <img class="logo logo_black" src="./img/black_logo.png" alt="logo du site" />
         </a>
 
         <ul class="menu">
@@ -101,8 +101,8 @@
     </div>
     <section class="contact_page">
         <!-- <div class="container_formulaire_bg">
-            <img class="word_contact" src="./img/contact/word_contact.png" alt="" />
-            <img class="word_contact_black" src="./img/contact/word_contact_black.png" alt="" />
+            <img class="word_contact" src="./img/contact/word_contact.png" alt="texte de décoration contact" />
+            <img class="word_contact_black" src="./img/contact/word_contact_black.png" alt="texte de décoration contact" />
         </div> -->
 
         <div class="container_formulaire">

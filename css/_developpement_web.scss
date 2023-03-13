@@ -666,6 +666,11 @@
       font-size: 20vw;
     }
     .description {
+      .techno_next {
+        left: 180%;
+        width: 100%;
+      }
+
       .techno_center {
         position: absolute;
         bottom: -70%;
@@ -674,6 +679,11 @@
         transform: translate(-50%, 0%);
         font-size: 1.4vw;
         font-weight: 400;
+      }
+      .techno_prev {
+        left: -80%;
+        bottom: -130%;
+        width: 100%;
       }
       .presentation_site .is-splited {
         color: var(--white);
