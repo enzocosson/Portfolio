@@ -7,7 +7,7 @@ function connexionBD()
 {
     $mabd = null;
     try {
-        $mabd = new PDO('mysql:host=localhost;port=3306;dbname=mmi21e03;charset=UTF8;', LUTILISATEUR, LEMOTDEPASSE);
+        $mabd = new PDO('mysql:host=localhost;port=3306;dbname=portfolio;charset=UTF8;', LUTILISATEUR, LEMOTDEPASSE);
         $mabd->query('SET NAMES utf8;');
     } catch (PDOException $e) {
         print 'Erreur : ' . $e->getMessage() . '<br />';
@@ -44,7 +44,7 @@ function sendMessage($co, $prenom, $nom, $email, $theme, $message)
         return;
     }
 
-    $req = 'INSERT INTO portfolio (prenom, nom, email, theme, message, date, heure) 
+    $req = 'INSERT INTO contact (prenom, nom, email, theme, message, date, heure) 
             VALUES (:prenom, :nom, :email, :theme, :message, :date, :heure)';
 
     try {

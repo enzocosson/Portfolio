@@ -29,6 +29,7 @@
             <div></div>
         </div>
     </div>
+    <div class="transition_leave"></div>
 
     <section class="container_colors">
         <div class="bg_colors"></div>
