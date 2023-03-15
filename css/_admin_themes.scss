@@ -1,0 +1,133 @@
+.container_table {
+  padding-top: 15vh;
+  position: relative;
+  width: 100%;
+  height: auto;
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  transition: background-color 0.2s ease-in-out;
+
+  .table {
+    position: relative;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .table_card {
+      width: 35%;
+      height: 30vh;
+      border-radius: 1.5vw;
+      box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+        rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+      //   background-color: red;
+
+      .information_photo {
+        width: 100%;
+        height: 80%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .container_img {
+          width: 35%;
+          height: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          overflow: hidden;
+          border-radius: 1.5vw;
+          border: 0.5vw solid transparent;
+          transition: all 0.5s ease;
+
+          .img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+            transition: opacity 0.5s ease-in-out, transform 1s ease-in-out;
+          }
+        }
+        .container_settings {
+          width: 65%;
+          height: 80%;
+          padding: 0.5vw;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          align-items: center;
+
+          .setting_alt {
+            width: 100%;
+            font-family: $font-base;
+            font-size: 1.2vw;
+            color: var(--black);
+            text-align: center;
+            text-transform: uppercase;
+            transition: color 0.2s ease-in-out;
+          }
+          .setting_iso,
+          .setting_ouverture,
+          .setting_duree,
+          .setting_focale {
+            width: 100%;
+            font-family: $font-sf;
+            font-size: 1vw;
+            color: var(--black);
+            text-align: center;
+            text-transform: uppercase;
+            transition: color 0.2s ease-in-out;
+          }
+        }
+      }
+      .interaction_photo {
+        width: 100%;
+        height: 20%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        column-gap: 2vw;
+
+        button {
+          cursor: pointer;
+          width: 40%;
+          height: 70%;
+          border-radius: 0.4vw;
+          font-size: 1vw;
+          letter-spacing: 0.1vw;
+          border: none;
+          font-family: $font-base;
+          transition: 0.2s ease-in-out;
+        }
+
+        .modifier {
+          background-color: var(--primary-color);
+          color: var(--white);
+          border: 0.2vw solid var(--primary-color);
+
+          &:hover {
+            background-color: transparent;
+            color: var(--primary-color);
+          }
+        }
+        .supprimer {
+          background-color: var(--red);
+          color: var(--white);
+          border: 0.2vw solid var(--red);
+
+          &:hover {
+            background-color: transparent;
+            color: var(--red);
+          }
+        }
+      }
+    }
+  }
+}

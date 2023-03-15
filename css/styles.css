@@ -55,6 +55,7 @@ html {
   --white: #fcfcfc;
   --white_transparent: rgba(252, 252, 252, 0.33);
   --black: #232323;
+  --red: #f17979;
 }
 
 ::-moz-selection {
@@ -8837,6 +8838,411 @@ header .burger {
   .cursor_follow {
     display: none;
   }
+}
+
+.administration {
+  width: 100%;
+  height: 100vh;
+  background-color: var(--white);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: background-color 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.administration h1 {
+  font-size: 8vw;
+  color: var(--black);
+  font-family: Base Neue;
+  text-align: center;
+  text-transform: uppercase;
+  -webkit-transition: color 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out;
+}
+
+.administration h2 {
+  font-size: 2.5vw;
+  color: var(--black);
+  font-family: Base Neue;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 5vh;
+  -webkit-transition: color 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out;
+}
+
+.administration .theme_photo {
+  position: relative;
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.administration .theme_photo .card_photo {
+  position: relative;
+  width: 18vw;
+  height: 18vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 1.5vw;
+  overflow: hidden;
+  border: 0.5vw solid transparent;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  cursor: pointer;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  z-index: 0;
+}
+
+.administration .theme_photo .card_photo .theme_img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%) scale(1.1);
+          transform: translate(-50%, -50%) scale(1.1);
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  -webkit-transition: opacity 0.5s ease-in-out, -webkit-transform 1s ease-in-out;
+  transition: opacity 0.5s ease-in-out, -webkit-transform 1s ease-in-out;
+  transition: opacity 0.5s ease-in-out, transform 1s ease-in-out;
+  transition: opacity 0.5s ease-in-out, transform 1s ease-in-out, -webkit-transform 1s ease-in-out;
+}
+
+.administration .theme_photo .card_photo .theme_titre {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-transition: color 0.5s ease-out, font-size 1s ease-out;
+  transition: color 0.5s ease-out, font-size 1s ease-out;
+  color: var(--white);
+  font-size: 2.5vw;
+  font-family: Base Neue;
+  text-align: center;
+  text-transform: uppercase;
+  z-index: 1;
+}
+
+.administration .theme_photo .card_photo:hover {
+  background-color: var(--white);
+  color: var(--black);
+}
+
+.administration .theme_photo .card_photo h3 {
+  font-size: 2.5vw;
+  color: var(--white);
+  font-family: Base Neue;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.administration .theme_photo .card_photo:hover {
+  border: 0.5vw solid var(--primary-color);
+}
+
+.administration .theme_photo .card_photo:hover .theme_titre {
+  color: var(--primary-color);
+  font-size: 3vw;
+}
+
+.administration .theme_photo .card_photo:hover img {
+  opacity: 0.7;
+  -webkit-transform: translate(-50%, -50%) scale(1);
+          transform: translate(-50%, -50%) scale(1);
+}
+
+@media screen and (max-width: 1124px) {
+  .administration h1 {
+    font-size: 11vw;
+  }
+  .administration h2 {
+    font-size: 4.5vw;
+  }
+  .administration .theme_photo {
+    row-gap: 1vh;
+  }
+  .administration .theme_photo .card_photo {
+    width: 39.5vw;
+    height: 23vw;
+    border: 0.6vw solid transparent;
+  }
+  .administration .theme_photo .card_photo .theme_titre {
+    font-size: 4.5vw;
+  }
+  .administration .theme_photo .card_photo:hover {
+    border: 0.6vw solid var(--primary-color);
+  }
+  .administration .theme_photo .card_photo:hover .theme_titre {
+    font-size: 5vw;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .administration {
+    padding-top: 10vh;
+    height: auto;
+  }
+  .administration h1 {
+    font-size: 13vw;
+  }
+  .administration h2 {
+    font-size: 5vw;
+  }
+  .administration .theme_photo {
+    row-gap: 1vh;
+  }
+  .administration .theme_photo .card_photo {
+    border-radius: 2.5vw;
+    width: 80vw;
+    height: 40vw;
+    border: 0.8vw solid transparent;
+  }
+  .administration .theme_photo .card_photo .theme_titre {
+    font-size: 10vw;
+  }
+  .administration .theme_photo .card_photo:hover {
+    border: 0.8vw solid var(--primary-color);
+  }
+  .administration .theme_photo .card_photo:hover .theme_titre {
+    font-size: 11vw;
+  }
+}
+
+.container_table {
+  padding-top: 15vh;
+  position: relative;
+  width: 100%;
+  height: auto;
+  background-color: var(--white);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: background-color 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.container_table .table {
+  position: relative;
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container_table .table .table_card {
+  width: 35%;
+  height: 30vh;
+  border-radius: 1.5vw;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+          box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+}
+
+.container_table .table .table_card .information_photo {
+  width: 100%;
+  height: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container_table .table .table_card .information_photo .container_img {
+  width: 35%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+  border-radius: 1.5vw;
+  border: 0.5vw solid transparent;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.container_table .table .table_card .information_photo .container_img .img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  -webkit-transition: opacity 0.5s ease-in-out, -webkit-transform 1s ease-in-out;
+  transition: opacity 0.5s ease-in-out, -webkit-transform 1s ease-in-out;
+  transition: opacity 0.5s ease-in-out, transform 1s ease-in-out;
+  transition: opacity 0.5s ease-in-out, transform 1s ease-in-out, -webkit-transform 1s ease-in-out;
+}
+
+.container_table .table .table_card .information_photo .container_settings {
+  width: 65%;
+  height: 80%;
+  padding: 0.5vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container_table .table .table_card .information_photo .container_settings .setting_alt {
+  width: 100%;
+  font-family: Base Neue;
+  font-size: 1.2vw;
+  color: var(--black);
+  text-align: center;
+  text-transform: uppercase;
+  -webkit-transition: color 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out;
+}
+
+.container_table .table .table_card .information_photo .container_settings .setting_iso,
+.container_table .table .table_card .information_photo .container_settings .setting_ouverture,
+.container_table .table .table_card .information_photo .container_settings .setting_duree,
+.container_table .table .table_card .information_photo .container_settings .setting_focale {
+  width: 100%;
+  font-family: "Inter", sans-serif;
+  font-size: 1vw;
+  color: var(--black);
+  text-align: center;
+  text-transform: uppercase;
+  -webkit-transition: color 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out;
+}
+
+.container_table .table .table_card .interaction_photo {
+  width: 100%;
+  height: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 2vw;
+          column-gap: 2vw;
+}
+
+.container_table .table .table_card .interaction_photo button {
+  cursor: pointer;
+  width: 40%;
+  height: 70%;
+  border-radius: 0.4vw;
+  font-size: 1vw;
+  letter-spacing: 0.1vw;
+  border: none;
+  font-family: Base Neue;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+
+.container_table .table .table_card .interaction_photo .modifier {
+  background-color: var(--primary-color);
+  color: var(--white);
+  border: 0.2vw solid var(--primary-color);
+}
+
+.container_table .table .table_card .interaction_photo .modifier:hover {
+  background-color: transparent;
+  color: var(--primary-color);
+}
+
+.container_table .table .table_card .interaction_photo .supprimer {
+  background-color: var(--red);
+  color: var(--white);
+  border: 0.2vw solid var(--red);
+}
+
+.container_table .table .table_card .interaction_photo .supprimer:hover {
+  background-color: transparent;
+  color: var(--red);
 }
 
 .contact {

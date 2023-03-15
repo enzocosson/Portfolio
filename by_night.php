@@ -151,7 +151,7 @@ require 'lib.inc.php';
 
         <div class="suggestion_bottom">
           <a href="gold.php" class="container_miniatures">
-            <h3 class="titre_minia">gold</h3>
+            <h3 class="titre_minia">GOLD</h3>
             <img src="./img/photo/theme/resize75/gold.jpg" alt="couché de soleil avec un jeune dans la forêt" class="miniatures" />
           </a>
           <!-- <a href="my_dog.html" class="container_miniatures">

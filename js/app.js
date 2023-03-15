@@ -42,6 +42,71 @@ var url = window.location.href;
 getURL();
 
 switch (url) {
+  // -----------
+
+  case "https://www.enzo-cosson.fr/admin/":
+    loader();
+    darkModeDev();
+    cursorFollow();
+    burgerMenuBlackToggle();
+    transitionPages();
+    break;
+
+  case "https://www.enzo-cosson.fr/admin/index.html":
+    loader();
+    darkModeDev();
+    cursorFollow();
+    burgerMenuBlackToggle();
+    transitionPages();
+    break;
+  case "https://www.enzo-cosson.fr/admin/#rth":
+    loader();
+    darkModeDev();
+    cursorFollow();
+    burgerMenuBlackToggle();
+    transitionPages();
+    break;
+  case "https://www.enzo-cosson.fr/admin/index.html#rth":
+    loader();
+    darkModeDev();
+    cursorFollow();
+    burgerMenuBlackToggle();
+    transitionPages();
+    break;
+
+  // -----------
+  case "http://192.168.1.77:5500/admin/admin_mountain.html":
+    loader();
+    darkModeDev();
+    cursorFollow();
+    burgerMenuBlackToggle();
+    transitionPages();
+    break;
+  case "http://192.168.1.77:5500/admin/admin_mountain.html#rth":
+    loader();
+    darkModeDev();
+    cursorFollow();
+    burgerMenuBlackToggle();
+    transitionPages();
+    break;
+  // -----------
+  case "https://www.enzo-cosson.fr/admin/admin_mountain.php":
+    loader();
+    darkModeDev();
+    cursorFollow();
+    burgerMenuBlackToggle();
+    transitionPages();
+    break;
+  case "https://www.enzo-cosson.fr/admin/admin_mountain.php#rth":
+    loader();
+    darkModeDev();
+    cursorFollow();
+    burgerMenuBlackToggle();
+    transitionPages();
+    break;
+
+  // -----------
+
   case "https://www.enzo-cosson.fr/":
     loader();
     darkModeIndex();

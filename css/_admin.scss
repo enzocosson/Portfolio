@@ -1,0 +1,166 @@
+.administration {
+  width: 100%;
+  height: 100vh;
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.2s ease-in-out;
+
+  h1 {
+    font-size: 8vw;
+    color: var(--black);
+    font-family: $font-base;
+    text-align: center;
+    text-transform: uppercase;
+    transition: color 0.2s ease-in-out;
+  }
+  h2 {
+    font-size: 2.5vw;
+    color: var(--black);
+    font-family: $font-base;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 5vh;
+    transition: color 0.2s ease-in-out;
+  }
+
+  .theme_photo {
+    position: relative;
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+    .card_photo {
+      position: relative;
+      width: 18vw;
+      height: 18vw;
+      display: flex;
+      border-radius: 1.5vw;
+      overflow: hidden;
+      border: 0.5vw solid transparent;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      cursor: pointer;
+      transition: all 0.5s ease;
+      z-index: 0;
+
+      .theme_img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) scale(1.1);
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+        transition: opacity 0.5s ease-in-out, transform 1s ease-in-out;
+      }
+      .theme_titre {
+        width: 100%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        transition: color 0.5s ease-out, font-size 1s ease-out;
+        color: var(--white);
+        font-size: 2.5vw;
+        font-family: $font-base;
+        text-align: center;
+        text-transform: uppercase;
+        z-index: 1;
+      }
+      &:hover {
+        background-color: var(--white);
+        color: var(--black);
+      }
+
+      h3 {
+        font-size: 2.5vw;
+        color: var(--white);
+        font-family: $font-base;
+        text-align: center;
+        text-transform: uppercase;
+      }
+
+      &:hover {
+        border: 0.5vw solid var(--primary-color);
+      }
+      &:hover .theme_titre {
+        color: var(--primary-color);
+        font-size: 3vw;
+      }
+      &:hover img {
+        opacity: 0.7;
+        transform: translate(-50%, -50%) scale(1);
+      }
+    }
+  }
+}
+
+//-----------------responsive------------------------------------------
+
+@media screen and (max-width: 1124px) {
+  .administration {
+    h1 {
+      font-size: 11vw;
+    }
+    h2 {
+      font-size: 4.5vw;
+    }
+    .theme_photo {
+      row-gap: 1vh;
+      .card_photo {
+        width: 39.5vw;
+        height: 23vw;
+        border: 0.6vw solid transparent;
+        .theme_titre {
+          font-size: 4.5vw;
+        }
+        &:hover {
+          border: 0.6vw solid var(--primary-color);
+        }
+        &:hover .theme_titre {
+          font-size: 5vw;
+        }
+      }
+    }
+  }
+}
+
+//-----------------responsive------------------------------------------
+
+@media screen and (max-width: 780px) {
+  .administration {
+    padding-top: 10vh;
+    height: auto;
+    h1 {
+      font-size: 13vw;
+    }
+    h2 {
+      font-size: 5vw;
+    }
+    .theme_photo {
+      row-gap: 1vh;
+      .card_photo {
+        border-radius: 2.5vw;
+        width: 80vw;
+        height: 40vw;
+        border: 0.8vw solid transparent;
+        .theme_titre {
+          font-size: 10vw;
+        }
+        &:hover {
+          border: 0.8vw solid var(--primary-color);
+        }
+        &:hover .theme_titre {
+          font-size: 11vw;
+        }
+      }
+    }
+  }
+}
