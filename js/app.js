@@ -242,7 +242,53 @@ switch (url) {
     break;
 
   // -----------
-  case "http://192.168.1.75:5500/mountain.html":
+  // case "http://192.168.1.75:5500/mountain.php":
+  //   loader();
+  //   darkModeGalerie();
+  //   scrollMagicGalerie();
+  //   cursorFollow();
+  //   burgerMenuToggle();
+  //   soundButtonMountain();
+  //   infoPhoto();
+  //   transitionPages();
+
+  //   break;
+  // case "http://10.152.21.50:5500/mountain.php":
+  //   loader();
+  //   darkModeGalerie();
+  //   scrollMagicGalerie();
+  //   cursorFollow();
+  //   burgerMenuBlackToggle();
+  //   soundButtonMountain();
+  //   infoPhoto();
+  //   transitionPages();
+
+  //   break;
+  // case "http://192.168.1.77:5500/mountain.php":
+  //   loader();
+  //   darkModeGalerie();
+  //   scrollMagicGalerie();
+  //   cursorFollow();
+  //   burgerMenuBlackToggle();
+  //   soundButtonMountain();
+  //   infoPhoto();
+  //   transitionPages();
+
+  //   break;
+  // case "https://www.enzo-cosson.fr/mountain.php":
+  //   loader();
+  //   darkModeGalerie();
+  //   scrollMagicGalerie();
+  //   cursorFollow();
+  //   burgerMenuBlackToggle();
+  //   soundButtonMountain();
+  //   infoPhoto();
+  //   transitionPages();
+
+  //   break;
+
+  // -----------
+  case "http://192.168.1.75:5500/mountain.php":
     loader();
     darkModeGalerie();
     scrollMagicGalerie();
@@ -253,7 +299,7 @@ switch (url) {
     transitionPages();
 
     break;
-  case "http://10.152.21.50:5500/mountain.html":
+  case "http://10.152.21.50:5500/mountain.php":
     loader();
     darkModeGalerie();
     scrollMagicGalerie();
@@ -264,7 +310,7 @@ switch (url) {
     transitionPages();
 
     break;
-  case "http://192.168.1.77:5500/mountain.html":
+  case "http://192.168.1.77:5500/mountain.php":
     loader();
     darkModeGalerie();
     scrollMagicGalerie();
@@ -275,7 +321,7 @@ switch (url) {
     transitionPages();
 
     break;
-  case "https://www.enzo-cosson.fr/mountain.html":
+  case "https://www.enzo-cosson.fr/mountain.php":
     loader();
     darkModeGalerie();
     scrollMagicGalerie();
@@ -288,7 +334,7 @@ switch (url) {
     break;
 
   // -----------
-  case "http://192.168.1.75:5500/tropical.html":
+  case "http://192.168.1.75:5500/tropical.php":
     loader();
     darkModeGalerie();
     scrollMagicGalerie();
@@ -299,7 +345,7 @@ switch (url) {
     transitionPages();
 
     break;
-  case "http://10.152.21.50:5500/tropical.html":
+  case "http://10.152.21.50:5500/tropical.php":
     loader();
     darkModeGalerie();
     scrollMagicGalerie();
@@ -310,7 +356,7 @@ switch (url) {
     transitionPages();
 
     break;
-  case "http://192.168.1.77:5500/tropical.html":
+  case "http://192.168.1.77:5500/tropical.php":
     loader();
     darkModeGalerie();
     scrollMagicGalerie();
@@ -321,7 +367,54 @@ switch (url) {
     transitionPages();
 
     break;
-  case "https://www.enzo-cosson.fr/tropical.html":
+  case "https://www.enzo-cosson.fr/tropical.php":
+    loader();
+    darkModeGalerie();
+    scrollMagicGalerie();
+    cursorFollow();
+    burgerMenuBlackToggle();
+    soundButtonTropical();
+    infoPhoto();
+    transitionPages();
+
+    break;
+
+  //-------
+
+  case "http://192.168.1.75:5500/tropical.php":
+    loader();
+    darkModeGalerie();
+    scrollMagicGalerie();
+    cursorFollow();
+    burgerMenuBlackToggle();
+    soundButtonTropical();
+    infoPhoto();
+    transitionPages();
+
+    break;
+  case "http://10.152.21.50:5500/tropical.php":
+    loader();
+    darkModeGalerie();
+    scrollMagicGalerie();
+    cursorFollow();
+    burgerMenuBlackToggle();
+    soundButtonTropical();
+    infoPhoto();
+    transitionPages();
+
+    break;
+  case "http://192.168.1.77:5500/tropical.php":
+    loader();
+    darkModeGalerie();
+    scrollMagicGalerie();
+    cursorFollow();
+    burgerMenuBlackToggle();
+    soundButtonTropical();
+    infoPhoto();
+    transitionPages();
+
+    break;
+  case "https://www.enzo-cosson.fr/tropical.php":
     loader();
     darkModeGalerie();
     scrollMagicGalerie();
@@ -334,7 +427,7 @@ switch (url) {
     break;
 
   // -----------
-  case "http://192.168.1.75:5500/golden_hour.html":
+  case "http://192.168.1.75:5500/gold.php":
     loader();
     darkModeGalerie();
     scrollMagicGalerie();
@@ -345,7 +438,7 @@ switch (url) {
     transitionPages();
 
     break;
-  case "http://10.152.21.50:5500/golden_hour.html":
+  case "http://10.152.21.50:5500/gold.php":
     loader();
     darkModeGalerie();
     scrollMagicGalerie();
@@ -356,7 +449,7 @@ switch (url) {
     transitionPages();
 
     break;
-  case "http://192.168.1.77:5500/golden_hour.html":
+  case "http://192.168.1.77:5500/gold.php":
     loader();
     darkModeGalerie();
     scrollMagicGalerie();
@@ -367,7 +460,7 @@ switch (url) {
     transitionPages();
 
     break;
-  case "https://www.enzo-cosson.fr/golden_hour.html":
+  case "https://www.enzo-cosson.fr/gold.php":
     loader();
     darkModeGalerie();
     scrollMagicGalerie();
@@ -380,7 +473,53 @@ switch (url) {
     break;
 
   // -----------
-  case "http://192.168.1.75:5500/by_night.html":
+  case "http://192.168.1.75:5500/golden_hour.php":
+    loader();
+    darkModeGalerie();
+    scrollMagicGalerie();
+    cursorFollow();
+    burgerMenuBlackToggle();
+    soundButtonTropical();
+    infoPhoto();
+    transitionPages();
+
+    break;
+  case "http://10.152.21.50:5500/golden_hour.php":
+    loader();
+    darkModeGalerie();
+    scrollMagicGalerie();
+    cursorFollow();
+    burgerMenuBlackToggle();
+    soundButtonTropical();
+    infoPhoto();
+    transitionPages();
+
+    break;
+  case "http://192.168.1.77:5500/golden_hour.php":
+    loader();
+    darkModeGalerie();
+    scrollMagicGalerie();
+    cursorFollow();
+    burgerMenuBlackToggle();
+    soundButtonTropical();
+    infoPhoto();
+    transitionPages();
+
+    break;
+  case "https://www.enzo-cosson.fr/golden_hour.php":
+    loader();
+    darkModeGalerie();
+    scrollMagicGalerie();
+    cursorFollow();
+    burgerMenuBlackToggle();
+    soundButtonTropical();
+    infoPhoto();
+    transitionPages();
+
+    break;
+
+  // -----------
+  case "http://192.168.1.75:5500/by_night.php":
     loader();
     darkModeGalerie();
     scrollMagicGalerie();
@@ -391,7 +530,7 @@ switch (url) {
     transitionPages();
 
     break;
-  case "http://10.152.21.50:5500/by_night.html":
+  case "http://10.152.21.50:5500/by_night.php":
     loader();
     darkModeGalerie();
     scrollMagicGalerie();
@@ -402,7 +541,7 @@ switch (url) {
     transitionPages();
 
     break;
-  case "http://192.168.1.77:5500/by_night.html":
+  case "http://192.168.1.77:5500/by_night.php":
     loader();
     darkModeGalerie();
     scrollMagicGalerie();
@@ -413,7 +552,53 @@ switch (url) {
     transitionPages();
 
     break;
-  case "https://www.enzo-cosson.fr/by_night.html":
+  case "https://www.enzo-cosson.fr/by_night.php":
+    loader();
+    darkModeGalerie();
+    scrollMagicGalerie();
+    cursorFollow();
+    burgerMenuBlackToggle();
+    soundButtonNight();
+    infoPhoto();
+    transitionPages();
+
+    break;
+
+  // -----------
+  case "http://192.168.1.75:5500/by_night.php":
+    loader();
+    darkModeGalerie();
+    scrollMagicGalerie();
+    cursorFollow();
+    burgerMenuBlackToggle();
+    soundButtonNight();
+    infoPhoto();
+    transitionPages();
+
+    break;
+  case "http://10.152.21.50:5500/by_night.php":
+    loader();
+    darkModeGalerie();
+    scrollMagicGalerie();
+    cursorFollow();
+    burgerMenuBlackToggle();
+    soundButtonNight();
+    infoPhoto();
+    transitionPages();
+
+    break;
+  case "http://192.168.1.77:5500/by_night.php":
+    loader();
+    darkModeGalerie();
+    scrollMagicGalerie();
+    cursorFollow();
+    burgerMenuBlackToggle();
+    soundButtonNight();
+    infoPhoto();
+    transitionPages();
+
+    break;
+  case "https://www.enzo-cosson.fr/by_night.php":
     loader();
     darkModeGalerie();
     scrollMagicGalerie();

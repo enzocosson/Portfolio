@@ -15,7 +15,10 @@ function connexionBD()
     }
     return $mabd;
 }
-
+function deconnexionBD(&$mabd)
+{
+    return $mabd = null;
+}
 
 function sendMessage($co, $prenom, $nom, $email, $theme, $message)
 {
@@ -71,11 +74,413 @@ function sendMessage($co, $prenom, $nom, $email, $theme, $message)
     }
 }
 
+// galerie mountain
 
-
-
-
-function deconnexionBD(&$mabd)
+function mountainPortrait($co)
 {
-    return $mabd = null;
+    $req = 'SELECT * FROM mountain_portrait';
+    try {
+        $resultat = $co->prepare($req);
+        $resultat->execute();
+    } catch (PDOException $e) {
+        echo '<p>Erreur : ' . $e->getMessage() . '</p>';
+        die();
+    }
+    if ($resultat !== false) {
+        $output = '';
+        while ($row = $resultat->fetch(PDO::FETCH_ASSOC)) {
+
+            $filename = $row['photo_src'];
+            $alt = $row['photo_alt'];
+            $iso = $row['photo_iso'];
+            $f_stop = $row['photo_ouverture'];
+            $shutter_speed = $row['photo_duree'];
+            $focal_length = $row['photo_focale'];
+
+
+            $output .= '<div class="container_img">';
+            $output .= '<img class="miniatures" src="./img/photo/mountain/portrait/' . $filename . '" alt="' . $alt . '"/>';
+            $output .= '<div class="parametres">';
+            $output .= '<p>ISO ' . $iso . '</p>';
+            $output .= '<p>' . $f_stop . '</p>';
+            $output .= '<p>' . $shutter_speed . '</p>';
+            $output .= '<p>' . $focal_length . ' mm</p>';
+            $output .= '</div>';
+            $output .= '<div class="info_photo">i</div>';
+            $output .= '</div>';
+        }
+        return $output;
+    } else {
+        echo "<h1>Une erreur est survenue</h1>";
+        die();
+    }
+}
+
+function mountainPaysage($co)
+{
+    $req = 'SELECT * FROM mountain_paysage';
+    try {
+        $resultat = $co->prepare($req);
+        $resultat->execute();
+    } catch (PDOException $e) {
+        echo '<p>Erreur : ' . $e->getMessage() . '</p>';
+        die();
+    }
+    if ($resultat !== false) {
+        $output = '';
+        while ($row = $resultat->fetch(PDO::FETCH_ASSOC)) {
+
+            $filename = $row['photo_src'];
+            $alt = $row['photo_alt'];
+            $iso = $row['photo_iso'];
+            $f_stop = $row['photo_ouverture'];
+            $shutter_speed = $row['photo_duree'];
+            $focal_length = $row['photo_focale'];
+
+
+            $output .= '<div class="container_img">';
+            $output .= '<img class="miniatures" src="./img/photo/mountain/paysage/' . $filename . '" alt="' . $alt . '"/>';
+            $output .= '<div class="parametres">';
+            $output .= '<p>ISO ' . $iso . '</p>';
+            $output .= '<p>' . $f_stop . '</p>';
+            $output .= '<p>' . $shutter_speed . '</p>';
+            $output .= '<p>' . $focal_length . ' mm</p>';
+            $output .= '</div>';
+            $output .= '<div class="info_photo">i</div>';
+            $output .= '</div>';
+        }
+        return $output;
+    } else {
+        echo "<h1>Une erreur est survenue</h1>";
+        die();
+    }
+}
+
+function mountainFullImage($co)
+{
+    $req = 'SELECT * FROM mountain_fullimage';
+    try {
+        $resultat = $co->prepare($req);
+        $resultat->execute();
+    } catch (PDOException $e) {
+        echo '<p>Erreur : ' . $e->getMessage() . '</p>';
+        die();
+    }
+    if ($resultat !== false) {
+        $output = '';
+        while ($row = $resultat->fetch(PDO::FETCH_ASSOC)) {
+
+            $filename = $row['photo_src'];
+            $alt = $row['photo_alt'];
+
+
+            $output .= '<div class="container_img">';
+            $output .= '<img class="miniatures" src="./img/photo/mountain/fullimage/' . $filename . '" alt="' . $alt . '"/>';
+            $output .= '</div>';
+        }
+        return $output;
+    } else {
+        echo "<h1>Une erreur est survenue</h1>";
+        die();
+    }
+}
+
+// galerie tropicale
+
+function tropicalPortrait($co)
+{
+    $req = 'SELECT * FROM tropical_portrait';
+    try {
+        $resultat = $co->prepare($req);
+        $resultat->execute();
+    } catch (PDOException $e) {
+        echo '<p>Erreur : ' . $e->getMessage() . '</p>';
+        die();
+    }
+    if ($resultat !== false) {
+        $output = '';
+        while ($row = $resultat->fetch(PDO::FETCH_ASSOC)) {
+
+            $filename = $row['photo_src'];
+            $alt = $row['photo_alt'];
+            $iso = $row['photo_iso'];
+            $f_stop = $row['photo_ouverture'];
+            $shutter_speed = $row['photo_duree'];
+            $focal_length = $row['photo_focale'];
+
+
+            $output .= '<div class="container_img">';
+            $output .= '<img class="miniatures" src="./img/photo/tropical/portrait/' . $filename . '" alt="' . $alt . '"/>';
+            $output .= '<div class="parametres">';
+            $output .= '<p>ISO ' . $iso . '</p>';
+            $output .= '<p>' . $f_stop . '</p>';
+            $output .= '<p>' . $shutter_speed . '</p>';
+            $output .= '<p>' . $focal_length . ' mm</p>';
+            $output .= '</div>';
+            $output .= '<div class="info_photo">i</div>';
+            $output .= '</div>';
+        }
+        return $output;
+    } else {
+        echo "<h1>Une erreur est survenue</h1>";
+        die();
+    }
+}
+
+function tropicalPaysage($co)
+{
+    $req = 'SELECT * FROM tropical_paysage';
+    try {
+        $resultat = $co->prepare($req);
+        $resultat->execute();
+    } catch (PDOException $e) {
+        echo '<p>Erreur : ' . $e->getMessage() . '</p>';
+        die();
+    }
+    if ($resultat !== false) {
+        $output = '';
+        while ($row = $resultat->fetch(PDO::FETCH_ASSOC)) {
+
+            $filename = $row['photo_src'];
+            $alt = $row['photo_alt'];
+            $iso = $row['photo_iso'];
+            $f_stop = $row['photo_ouverture'];
+            $shutter_speed = $row['photo_duree'];
+            $focal_length = $row['photo_focale'];
+
+
+            $output .= '<div class="container_img">';
+            $output .= '<img class="miniatures" src="./img/photo/tropical/paysage/' . $filename . '" alt="' . $alt . '"/>';
+            $output .= '<div class="parametres">';
+            $output .= '<p>ISO ' . $iso . '</p>';
+            $output .= '<p>' . $f_stop . '</p>';
+            $output .= '<p>' . $shutter_speed . '</p>';
+            $output .= '<p>' . $focal_length . ' mm</p>';
+            $output .= '</div>';
+            $output .= '<div class="info_photo">i</div>';
+            $output .= '</div>';
+        }
+        return $output;
+    } else {
+        echo "<h1>Une erreur est survenue</h1>";
+        die();
+    }
+}
+
+function tropicalFullImage($co)
+{
+    $req = 'SELECT * FROM mountain_fullimage';
+    try {
+        $resultat = $co->prepare($req);
+        $resultat->execute();
+    } catch (PDOException $e) {
+        echo '<p>Erreur : ' . $e->getMessage() . '</p>';
+        die();
+    }
+    if ($resultat !== false) {
+        $output = '';
+        while ($row = $resultat->fetch(PDO::FETCH_ASSOC)) {
+
+            $filename = $row['photo_src'];
+            $alt = $row['photo_alt'];
+
+
+            $output .= '<div class="container_img">';
+            $output .= '<img class="miniatures" src="./img/photo/tropical/fullimage/' . $filename . '" alt="' . $alt . '"/>';
+            $output .= '</div>';
+        }
+        return $output;
+    } else {
+        echo "<h1>Une erreur est survenue</h1>";
+        die();
+    }
+}
+
+// galerie gold
+
+function goldPortrait($co)
+{
+    $req = 'SELECT * FROM gold_portrait';
+    try {
+        $resultat = $co->prepare($req);
+        $resultat->execute();
+    } catch (PDOException $e) {
+        echo '<p>Erreur : ' . $e->getMessage() . '</p>';
+        die();
+    }
+    if ($resultat !== false) {
+        $output = '';
+        $count = 0;
+        while ($row = $resultat->fetch(PDO::FETCH_ASSOC)) {
+
+            $filename = $row['photo_src'];
+            $alt = $row['photo_alt'];
+            $iso = $row['photo_iso'];
+            $f_stop = $row['photo_ouverture'];
+            $shutter_speed = $row['photo_duree'];
+            $focal_length = $row['photo_focale'];
+
+            $count++;
+            if ($count > 27) {
+                $focal_length = $focal_length . ' mm';
+                $iso = 'ISO ' . $iso;
+            }
+
+
+            $output .= '<div class="container_img">';
+            $output .= '<img class="miniatures" src="./img/photo/golden_hour/portrait/' . $filename . '" alt="' . $alt . '"/>';
+            $output .= '<div class="parametres">';
+            $output .= '<p>' . $iso . '</p>';
+            $output .= '<p>' . $f_stop . '</p>';
+            $output .= '<p>' . $shutter_speed . '</p>';
+            $output .= '<p>' . $focal_length . '</p>';
+            $output .= '</div>';
+            $output .= '<div class="info_photo">i</div>';
+            $output .= '</div>';
+        }
+        return $output;
+    } else {
+        echo "<h1>Une erreur est survenue</h1>";
+        die();
+    }
+}
+
+function goldPaysage($co)
+{
+    $req = 'SELECT * FROM gold_paysage';
+    try {
+        $resultat = $co->prepare($req);
+        $resultat->execute();
+    } catch (PDOException $e) {
+        echo '<p>Erreur : ' . $e->getMessage() . '</p>';
+        die();
+    }
+    if ($resultat !== false) {
+        $output = '';
+        while ($row = $resultat->fetch(PDO::FETCH_ASSOC)) {
+
+            $filename = $row['photo_src'];
+            $alt = $row['photo_alt'];
+            $iso = $row['photo_iso'];
+            $f_stop = $row['photo_ouverture'];
+            $shutter_speed = $row['photo_duree'];
+            $focal_length = $row['photo_focale'];
+
+
+            $output .= '<div class="container_img">';
+            $output .= '<img class="miniatures" src="./img/photo/golden_hour/paysage/' . $filename . '" alt="' . $alt . '"/>';
+            $output .= '<div class="parametres">';
+            $output .= '<p>ISO ' . $iso . '</p>';
+            $output .= '<p>' . $f_stop . '</p>';
+            $output .= '<p>' . $shutter_speed . '</p>';
+            $output .= '<p>' . $focal_length . ' mm</p>';
+            $output .= '</div>';
+            $output .= '<div class="info_photo">i</div>';
+            $output .= '</div>';
+        }
+        return $output;
+    } else {
+        echo "<h1>Une erreur est survenue</h1>";
+        die();
+    }
+}
+
+function goldFullImage($co)
+{
+    $req = 'SELECT * FROM mountain_fullimage';
+    try {
+        $resultat = $co->prepare($req);
+        $resultat->execute();
+    } catch (PDOException $e) {
+        echo '<p>Erreur : ' . $e->getMessage() . '</p>';
+        die();
+    }
+    if ($resultat !== false) {
+        $output = '';
+        while ($row = $resultat->fetch(PDO::FETCH_ASSOC)) {
+
+            $filename = $row['photo_src'];
+            $alt = $row['photo_alt'];
+
+
+            $output .= '<div class="container_img">';
+            $output .= '<img class="miniatures" src="./img/photo/golden_hour/fullimage/' . $filename . '" alt="' . $alt . '"/>';
+            $output .= '</div>';
+        }
+        return $output;
+    } else {
+        echo "<h1>Une erreur est survenue</h1>";
+        die();
+    }
+}
+
+// galerie by night
+
+function nightPortrait($co)
+{
+    $req = 'SELECT * FROM night_portrait';
+    try {
+        $resultat = $co->prepare($req);
+        $resultat->execute();
+    } catch (PDOException $e) {
+        echo '<p>Erreur : ' . $e->getMessage() . '</p>';
+        die();
+    }
+    if ($resultat !== false) {
+        $output = '';
+        while ($row = $resultat->fetch(PDO::FETCH_ASSOC)) {
+
+            $filename = $row['photo_src'];
+            $alt = $row['photo_alt'];
+            $iso = $row['photo_iso'];
+            $f_stop = $row['photo_ouverture'];
+            $shutter_speed = $row['photo_duree'];
+            $focal_length = $row['photo_focale'];
+
+
+            $output .= '<div class="container_img">';
+            $output .= '<img class="miniatures" src="./img/photo/by_night/portrait/' . $filename . '" alt="' . $alt . '"/>';
+            $output .= '<div class="parametres">';
+            $output .= '<p>ISO ' . $iso . '</p>';
+            $output .= '<p>' . $f_stop . '</p>';
+            $output .= '<p>' . $shutter_speed . '</p>';
+            $output .= '<p>' . $focal_length . ' mm</p>';
+            $output .= '</div>';
+            $output .= '<div class="info_photo">i</div>';
+            $output .= '</div>';
+        }
+        return $output;
+    } else {
+        echo "<h1>Une erreur est survenue</h1>";
+        die();
+    }
+}
+
+function nightFullImage($co)
+{
+    $req = 'SELECT * FROM mountain_fullimage';
+    try {
+        $resultat = $co->prepare($req);
+        $resultat->execute();
+    } catch (PDOException $e) {
+        echo '<p>Erreur : ' . $e->getMessage() . '</p>';
+        die();
+    }
+    if ($resultat !== false) {
+        $output = '';
+        while ($row = $resultat->fetch(PDO::FETCH_ASSOC)) {
+
+            $filename = $row['photo_src'];
+            $alt = $row['photo_alt'];
+
+
+            $output .= '<div class="container_img">';
+            $output .= '<img class="miniatures" src="./img/photo/by_night/fullimage/' . $filename . '" alt="' . $alt . '"/>';
+            $output .= '</div>';
+        }
+        return $output;
+    } else {
+        echo "<h1>Une erreur est survenue</h1>";
+        die();
+    }
 }
