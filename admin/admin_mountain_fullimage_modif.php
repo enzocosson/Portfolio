@@ -78,7 +78,7 @@ require '../lib.inc.php';
       $id = $_GET['id'];
 
 
-      $req = "SELECT * FROM mountain_portrait WHERE photo_id = $id";
+      $req = "SELECT * FROM mountain_fullimage WHERE photo_id = $id";
       $resultat = $co->prepare($req);
       $resultat->execute([$id]);
 
@@ -88,13 +88,9 @@ require '../lib.inc.php';
         $row = $resultat->fetch(PDO::FETCH_ASSOC);
         $filename = $row['photo_src'];
         $alt = $row['photo_alt'];
-        $iso = $row['photo_iso'];
-        $f_stop = $row['photo_ouverture'];
-        $shutter_speed = $row['photo_duree'];
-        $focal_length = $row['photo_focale'];
 
 
-        echo '<form id="form_modif" method="post" onsubmit="return confirmerModification()" action="mountain_portrait_modif_traitement.php" >';
+        echo '<form id="form_modif" method="post" onsubmit="return confirmerModification()" action="mountain_fullimage_modif_traitement.php" >';
         echo '<input type="hidden" name="id" value="' . $id . '" />';
 
         echo '<div class="label_input">';
@@ -109,38 +105,9 @@ require '../lib.inc.php';
         echo '<input type="text" name="alt" value="' . $alt . '" />';
         echo '</div>';
 
-        echo '<br />';
-
-        echo '<div class="label_input">';
-        echo '<label>ISO :</label>';
-        echo '<input type="text" name="iso" value="' . $iso . '" />';
-        echo '</div>';
-
-        echo '<br />';
-
-        echo '<div class="label_input">';
-        echo '<label>Ouverture :</label>';
-        echo '<input type="text" name="f_stop" value="' . $f_stop . '" />';
-        echo '</div>';
-
-        echo '<br />';
-
-        echo '<div class="label_input">';
-        echo '<label>Durée :</label>';
-        echo '<input type="text" name="shutter_speed" value="' . $shutter_speed . '" />';
-        echo '</div>';
-
-        echo '<br />';
-
-        echo '<div class="label_input">';
-        echo '<label>Focale :</label>';
-        echo '<input type="text" name="focal_length" value="' . $focal_length . '" />';
-        echo '</div>';
-
-        echo '<br />';
 
         echo '<div class="interaction">';
-        echo '<a class="retour" href="./admin_mountain_portrait.php">Retour</a>';
+        echo '<a class="retour" href="./admin_mountain_fullimage.php">Retour</a>';
         echo '<input class="envoyer" type="submit" value="Modifier"/>';
 
         echo '</div>';

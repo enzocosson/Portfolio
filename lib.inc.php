@@ -907,6 +907,7 @@ function adminCards_by_nightPortrait($co)
 function adminCards_by_nightPaysage($co)
 {
     $req = 'SELECT * FROM night_paysage';
+
     try {
         $resultat = $co->prepare($req);
         $resultat->execute();

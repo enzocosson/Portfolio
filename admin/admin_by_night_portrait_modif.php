@@ -8,7 +8,7 @@ require '../lib.inc.php';
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portfolio | Photo - Mountain</title>
+  <title>Portfolio | Photo - By Night</title>
   <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/apple-touch-icon.png" />
   <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png" />
   <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png" />
@@ -78,7 +78,7 @@ require '../lib.inc.php';
       $id = $_GET['id'];
 
 
-      $req = "SELECT * FROM mountain_portrait WHERE photo_id = $id";
+      $req = "SELECT * FROM night_portrait WHERE photo_id = $id";
       $resultat = $co->prepare($req);
       $resultat->execute([$id]);
 
@@ -94,7 +94,7 @@ require '../lib.inc.php';
         $focal_length = $row['photo_focale'];
 
 
-        echo '<form id="form_modif" method="post" onsubmit="return confirmerModification()" action="mountain_portrait_modif_traitement.php" >';
+        echo '<form id="form_modif" method="post" onsubmit="return confirmerModification()" action="by_night_portrait_modif_traitement.php" >';
         echo '<input type="hidden" name="id" value="' . $id . '" />';
 
         echo '<div class="label_input">';
@@ -140,7 +140,7 @@ require '../lib.inc.php';
         echo '<br />';
 
         echo '<div class="interaction">';
-        echo '<a class="retour" href="./admin_mountain_portrait.php">Retour</a>';
+        echo '<a class="retour" href="./admin_by_night_portrait.php">Retour</a>';
         echo '<input class="envoyer" type="submit" value="Modifier"/>';
 
         echo '</div>';
