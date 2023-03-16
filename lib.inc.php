@@ -484,3 +484,47 @@ function nightFullImage($co)
         die();
     }
 }
+
+
+// administration cards
+
+function adminCards_mountainPortrait($co)
+{
+    $req = 'SELECT * FROM mountain_portrait';
+    try {
+        $resultat = $co->prepare($req);
+        $resultat->execute();
+    } catch (PDOException $e) {
+        echo '<p>Erreur : ' . $e->getMessage() . '</p>';
+        die();
+    }
+    if ($resultat !== false) {
+        while ($row = $resultat->fetch(PDO::FETCH_ASSOC)) {
+            $filename = $row['photo_src'];
+            $alt = $row['photo_alt'];
+            $iso = $row['photo_iso'];
+            $f_stop = $row['photo_ouverture'];
+            $shutter_speed = $row['photo_duree'];
+            $focal_length = $row['photo_focale'];
+
+            echo '<div class="cards">';
+            echo '<div class="information_photo">';
+            echo '<div class="container_img">';
+            echo '<img src="../img/photo/mountain/portrait/' . $filename . '" alt="' . $alt . '" class="img" />';
+            echo '</div>';
+            echo '<div class="container_settings">';
+            echo '<p class="setting_alt">' . $alt . '</p>';
+            echo '<p class="setting_iso">ISO ' . $iso . '</p>';
+            echo '<p class="setting_ouverture">' . $f_stop . '</p>';
+            echo '<p class="setting_duree">' . $shutter_speed . '</p>';
+            echo '<p class="setting_focale">' . $focal_length . ' mm</p>';
+            echo '</div>';
+            echo '</div>';
+            echo '<div class="interaction_photo">';
+            echo '<button class="modifier">Modifier</button>';
+            echo '<button class="supprimer">Supprimer</button>';
+            echo '</div>';
+            echo '</div>';
+        }
+    }
+}

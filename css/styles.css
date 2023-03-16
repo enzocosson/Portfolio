@@ -8987,6 +8987,18 @@ header .burger {
           transform: translate(-50%, -50%) scale(1);
 }
 
+.administration .theme_photo .spe {
+  background-color: var(--primary-color);
+}
+
+.administration .spe {
+  -webkit-column-gap: 2vw;
+          column-gap: 2vw;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 @media screen and (max-width: 1124px) {
   .administration h1 {
     font-size: 11vw;
@@ -9044,7 +9056,7 @@ header .burger {
   }
 }
 
-.container_table {
+.container_cards_admin {
   padding-top: 15vh;
   position: relative;
   width: 100%;
@@ -9067,25 +9079,27 @@ header .burger {
   transition: background-color 0.2s ease-in-out;
 }
 
-.container_table .table {
+.container_cards_admin .container_cards {
   position: relative;
-  width: 80%;
+  width: 95%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  row-gap: 2vh;
 }
 
-.container_table .table .table_card {
-  width: 35%;
+.container_cards_admin .container_cards .cards {
+  width: 30%;
   height: 30vh;
-  border-radius: 1.5vw;
+  border-radius: 1vw;
   -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
           box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
   display: -webkit-box;
@@ -9104,7 +9118,7 @@ header .burger {
   overflow: hidden;
 }
 
-.container_table .table .table_card .information_photo {
+.container_cards_admin .container_cards .cards .information_photo {
   width: 100%;
   height: 80%;
   display: -webkit-box;
@@ -9118,7 +9132,7 @@ header .burger {
           justify-content: center;
 }
 
-.container_table .table .table_card .information_photo .container_img {
+.container_cards_admin .container_cards .cards .information_photo .container_img {
   width: 35%;
   height: 100%;
   display: -webkit-box;
@@ -9137,7 +9151,7 @@ header .burger {
   transition: all 0.5s ease;
 }
 
-.container_table .table .table_card .information_photo .container_img .img {
+.container_cards_admin .container_cards .cards .information_photo .container_img .img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
@@ -9150,7 +9164,7 @@ header .burger {
   transition: opacity 0.5s ease-in-out, transform 1s ease-in-out, -webkit-transform 1s ease-in-out;
 }
 
-.container_table .table .table_card .information_photo .container_settings {
+.container_cards_admin .container_cards .cards .information_photo .container_settings {
   width: 65%;
   height: 80%;
   padding: 0.5vw;
@@ -9169,7 +9183,7 @@ header .burger {
           align-items: center;
 }
 
-.container_table .table .table_card .information_photo .container_settings .setting_alt {
+.container_cards_admin .container_cards .cards .information_photo .container_settings .setting_alt {
   width: 100%;
   font-family: Base Neue;
   font-size: 1.2vw;
@@ -9180,10 +9194,10 @@ header .burger {
   transition: color 0.2s ease-in-out;
 }
 
-.container_table .table .table_card .information_photo .container_settings .setting_iso,
-.container_table .table .table_card .information_photo .container_settings .setting_ouverture,
-.container_table .table .table_card .information_photo .container_settings .setting_duree,
-.container_table .table .table_card .information_photo .container_settings .setting_focale {
+.container_cards_admin .container_cards .cards .information_photo .container_settings .setting_iso,
+.container_cards_admin .container_cards .cards .information_photo .container_settings .setting_ouverture,
+.container_cards_admin .container_cards .cards .information_photo .container_settings .setting_duree,
+.container_cards_admin .container_cards .cards .information_photo .container_settings .setting_focale {
   width: 100%;
   font-family: "Inter", sans-serif;
   font-size: 1vw;
@@ -9194,7 +9208,7 @@ header .burger {
   transition: color 0.2s ease-in-out;
 }
 
-.container_table .table .table_card .interaction_photo {
+.container_cards_admin .container_cards .cards .interaction_photo {
   width: 100%;
   height: 20%;
   display: -webkit-box;
@@ -9210,7 +9224,7 @@ header .burger {
           column-gap: 2vw;
 }
 
-.container_table .table .table_card .interaction_photo button {
+.container_cards_admin .container_cards .cards .interaction_photo button {
   cursor: pointer;
   width: 40%;
   height: 70%;
@@ -9223,24 +9237,24 @@ header .burger {
   transition: 0.2s ease-in-out;
 }
 
-.container_table .table .table_card .interaction_photo .modifier {
+.container_cards_admin .container_cards .cards .interaction_photo .modifier {
   background-color: var(--primary-color);
   color: var(--white);
   border: 0.2vw solid var(--primary-color);
 }
 
-.container_table .table .table_card .interaction_photo .modifier:hover {
+.container_cards_admin .container_cards .cards .interaction_photo .modifier:hover {
   background-color: transparent;
   color: var(--primary-color);
 }
 
-.container_table .table .table_card .interaction_photo .supprimer {
+.container_cards_admin .container_cards .cards .interaction_photo .supprimer {
   background-color: var(--red);
   color: var(--white);
   border: 0.2vw solid var(--red);
 }
 
-.container_table .table .table_card .interaction_photo .supprimer:hover {
+.container_cards_admin .container_cards .cards .interaction_photo .supprimer:hover {
   background-color: transparent;
   color: var(--red);
 }
