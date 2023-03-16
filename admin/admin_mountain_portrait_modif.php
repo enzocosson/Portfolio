@@ -20,17 +20,7 @@ require '../lib.inc.php';
 </head>
 
 <body>
-  <div class="cursor_follow"></div>
-  <div class="loader">
-    <span class="deformation"></span>
-    <div class="spinner">
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-    </div>
-  </div>
-  <div class="transition_leave"></div>
+
 
   <section class="container_colors">
     <div class="bg_colors"></div>
@@ -81,30 +71,66 @@ require '../lib.inc.php';
     </li>
   </ul>
 
-  <div class="home_footer">
-    <a class="rth" href="#rth">
-      <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M0 32L5.64 37.64L28 15.32V64H36V15.32L58.32 37.68L64 32L32 0L0 32Z" fill="#FCFCFC" />
-      </svg>
-    </a>
 
-    <button class="darkMode">
-      <svg class="logo_darkmode" width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path class="vector_darkMode" d="M23.2457 44.8802C9.72124 44.8894 -0.981693 33.574 0.0716015 20.2823C0.83074 10.7049 5.87889 4.08024 14.7844 0.374315C16.0552 -0.154627 17.2585 -0.210262 18.3093 0.777043C19.3542 1.75853 19.3684 2.93101 18.9459 4.25129C16.2793 12.594 19.9 21.2555 27.6656 25.0777C31.7271 27.0772 35.9628 27.3512 40.3059 26.0907C41.0801 25.8657 41.8367 25.5302 42.6809 25.7146C44.4533 26.1015 45.4566 27.8519 44.7941 29.5999C41.7501 37.6295 36.0003 42.5669 27.5881 44.4152C26.9131 44.5639 26.2256 44.6685 25.5382 44.7383C24.7299 44.8196 23.9157 44.8412 23.2457 44.8802ZM36.5469 32.6066C29.6847 32.825 23.8032 30.6561 18.9951 25.8616C14.2052 21.0853 12.0562 15.2246 12.2628 8.43301C7.90798 11.61 4.69643 18.0943 6.07055 25.1881C7.40633 32.086 12.9411 37.5382 19.9317 38.7737C26.9556 40.0151 33.362 36.9868 36.5469 32.6066Z" fill="#FCFCFC" />
-      </svg>
-    </button>
-
-    <button onclick="generateColors()" class="change_color_btn" href="">
-      <svg width="54" height="54" viewBox="0 0 54 54" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M27 0C12.09 0 0 12.09 0 27C0 41.91 12.09 54 27 54C29.49 54 31.5 51.99 31.5 49.5C31.5 48.33 31.05 47.28 30.33 46.47C29.64 45.69 29.19 44.64 29.19 43.5C29.19 41.01 31.2 39 33.69 39H39C47.28 39 54 32.28 54 24C54 10.74 41.91 0 27 0ZM10.5 27C8.01 27 6 24.99 6 22.5C6 20.01 8.01 18 10.5 18C12.99 18 15 20.01 15 22.5C15 24.99 12.99 27 10.5 27ZM19.5 15C17.01 15 15 12.99 15 10.5C15 8.01 17.01 6 19.5 6C21.99 6 24 8.01 24 10.5C24 12.99 21.99 15 19.5 15ZM34.5 15C32.01 15 30 12.99 30 10.5C30 8.01 32.01 6 34.5 6C36.99 6 39 8.01 39 10.5C39 12.99 36.99 15 34.5 15ZM43.5 27C41.01 27 39 24.99 39 22.5C39 20.01 41.01 18 43.5 18C45.99 18 48 20.01 48 22.5C48 24.99 45.99 27 43.5 27Z" fill="white" />
-      </svg>
-    </button>
-  </div>
   <section class="container_cards_admin">
     <div class="container_cards">
       <?php
       $co = connexionBD();
-      adminCards_mountainPortrait($co);
+
+
+      if (isset($_GET['id'])) {
+
+        $id = $_GET['id'];
+
+
+        $req = "SELECT * FROM mountain_portrait WHERE photo_id = $id";
+        $resultat = $co->prepare($req);
+        $resultat->execute([$id]);
+
+
+        if ($resultat->rowCount() == 1) {
+
+          $row = $resultat->fetch(PDO::FETCH_ASSOC);
+          $filename = $row['photo_src'];
+          $alt = $row['photo_alt'];
+          $iso = $row['photo_iso'];
+          $f_stop = $row['photo_ouverture'];
+          $shutter_speed = $row['photo_duree'];
+          $focal_length = $row['photo_focale'];
+
+
+          echo '<form method="post" action="traitement_modifier_photo.php">';
+          echo '<input type="hidden" name="id" value="' . $id . '" />';
+          echo '<label>Photo :</label>';
+          echo '<input type="text" name="filename" value="' . $filename . '" />';
+          echo '<br />';
+          echo '<label>Alt :</label>';
+          echo '<input type="text" name="alt" value="' . $alt . '" />';
+          echo '<br />';
+          echo '<label>ISO :</label>';
+          echo '<input type="text" name="iso" value="' . $iso . '" />';
+          echo '<br />';
+          echo '<label>Ouverture :</label>';
+          echo '<input type="text" name="f_stop" value="' . $f_stop . '" />';
+          echo '<br />';
+          echo '<label>Durée :</label>';
+          echo '<input type="text" name="shutter_speed" value="' . $shutter_speed . '" />';
+          echo '<br />';
+          echo '<label>Focale :</label>';
+          echo '<input type="text" name="focal_length" value="' . $focal_length . '" />';
+          echo '<br />';
+          echo '<input type="submit" value="Modifier" />';
+          echo '</form>';
+        } else {
+
+          echo '<p>La photo demandée n\'existe pas.</p>';
+        }
+      } else {
+        // Si l'identifiant de la photo n'est pas présent dans l'URL, afficher un message d'erreur
+        echo '<p>Aucune photo à modifier.</p>';
+      }
+
+
       deconnexionBD($co);
       ?>
     </div>

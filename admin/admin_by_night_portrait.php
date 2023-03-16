@@ -8,7 +8,7 @@ require '../lib.inc.php';
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portfolio | Admin - Mountain</title>
+  <title>Portfolio | Photo - By Night</title>
   <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/apple-touch-icon.png" />
   <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png" />
   <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png" />
@@ -100,19 +100,15 @@ require '../lib.inc.php';
       </svg>
     </button>
   </div>
-  <section class="administration">
-    <div class="theme_photo spe">
-      <a href="admin_mountain_portrait.php" class="card_photo spe">
-        <h3 class="theme_titre">Portrait</h3>
-      </a>
-      <a href="admin_mountain_paysage.php" class="card_photo spe">
-        <h3 class="theme_titre">Paysage</h3>
-      </a>
-      <a href="admin_mountain_fullimage.php" class="card_photo spe">
-        <h3 class="theme_titre">Fullimage</h3>
-      </a>
+  <section class="container_cards_admin">
+    <div class="container_cards">
+      <?php
+      $co = connexionBD();
+      adminCards_by_nightPortrait($co);
+      deconnexionBD($co);
+      ?>
     </div>
-    <a class="retour" href="./index.php">Retour</a>
+    <a class="retour" href="./admin_by_night.php">Retour</a>
   </section>
 </body>
 <script src="../js/generateColor.js"></script>

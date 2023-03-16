@@ -52,7 +52,7 @@ switch (url) {
     transitionPages();
     break;
 
-  case "https://www.enzo-cosson.fr/admin/index.html":
+  case "https://www.enzo-cosson.fr/admin/index.php":
     loader();
     darkModeDev();
     cursorFollow();
@@ -66,7 +66,7 @@ switch (url) {
     burgerMenuBlackToggle();
     transitionPages();
     break;
-  case "https://www.enzo-cosson.fr/admin/index.html#rth":
+  case "https://www.enzo-cosson.fr/admin/index.php#rth":
     loader();
     darkModeDev();
     cursorFollow();
@@ -90,6 +90,52 @@ switch (url) {
     transitionPages();
     break;
   // -----------
+  case "https://www.enzo-cosson.fr/admin/admin_mountain_portrait.php":
+    loader();
+    darkModeDev();
+    cursorFollow();
+    burgerMenuBlackToggle();
+    transitionPages();
+    break;
+  case "https://www.enzo-cosson.fr/admin/admin_mountain_portrait.php#rth":
+    loader();
+    darkModeDev();
+    cursorFollow();
+    burgerMenuBlackToggle();
+    transitionPages();
+    break;
+
+  // -----------
+  case "https://www.enzo-cosson.fr/admin/admin_mountain_paysage.php":
+    loader();
+    darkModeDev();
+    cursorFollow();
+    burgerMenuBlackToggle();
+    transitionPages();
+    break;
+  case "https://www.enzo-cosson.fr/admin/admin_mountain_paysage.php#rth":
+    loader();
+    darkModeDev();
+    cursorFollow();
+    burgerMenuBlackToggle();
+    transitionPages();
+    break;
+  // -----------
+  case "https://www.enzo-cosson.fr/admin/admin_mountain_fullimage.php":
+    loader();
+    darkModeDev();
+    cursorFollow();
+    burgerMenuBlackToggle();
+    transitionPages();
+    break;
+  case "https://www.enzo-cosson.fr/admin/admin_mountain_fullimage.php#rth":
+    loader();
+    darkModeDev();
+    cursorFollow();
+    burgerMenuBlackToggle();
+    transitionPages();
+    break;
+  // -----------
   case "https://www.enzo-cosson.fr/admin/admin_tropical.php":
     loader();
     darkModeDev();
@@ -98,6 +144,51 @@ switch (url) {
     transitionPages();
     break;
   case "https://www.enzo-cosson.fr/admin/admin_tropical.php#rth":
+    loader();
+    darkModeDev();
+    cursorFollow();
+    burgerMenuBlackToggle();
+    transitionPages();
+    break;
+  // -----------
+  case "https://www.enzo-cosson.fr/admin/admin_tropical_portrait.php":
+    loader();
+    darkModeDev();
+    cursorFollow();
+    burgerMenuBlackToggle();
+    transitionPages();
+    break;
+  case "https://www.enzo-cosson.fr/admin/admin_tropical_portrait.php#rth":
+    loader();
+    darkModeDev();
+    cursorFollow();
+    burgerMenuBlackToggle();
+    transitionPages();
+    break;
+  // -----------
+  case "https://www.enzo-cosson.fr/admin/admin_tropical_paysage.php":
+    loader();
+    darkModeDev();
+    cursorFollow();
+    burgerMenuBlackToggle();
+    transitionPages();
+    break;
+  case "https://www.enzo-cosson.fr/admin/admin_tropical_paysage.php#rth":
+    loader();
+    darkModeDev();
+    cursorFollow();
+    burgerMenuBlackToggle();
+    transitionPages();
+    break;
+  // -----------
+  case "https://www.enzo-cosson.fr/admin/admin_tropical_fullimage.php":
+    loader();
+    darkModeDev();
+    cursorFollow();
+    burgerMenuBlackToggle();
+    transitionPages();
+    break;
+  case "https://www.enzo-cosson.fr/admin/admin_tropical_fullimage.php#rth":
     loader();
     darkModeDev();
     cursorFollow();
@@ -120,6 +211,51 @@ switch (url) {
     transitionPages();
     break;
   // -----------
+  case "https://www.enzo-cosson.fr/admin/admin_gold_portrait.php":
+    loader();
+    darkModeDev();
+    cursorFollow();
+    burgerMenuBlackToggle();
+    transitionPages();
+    break;
+  case "https://www.enzo-cosson.fr/admin/admin_gold_portrait.php#rth":
+    loader();
+    darkModeDev();
+    cursorFollow();
+    burgerMenuBlackToggle();
+    transitionPages();
+    break;
+  // -----------
+  case "https://www.enzo-cosson.fr/admin/admin_gold_paysage.php":
+    loader();
+    darkModeDev();
+    cursorFollow();
+    burgerMenuBlackToggle();
+    transitionPages();
+    break;
+  case "https://www.enzo-cosson.fr/admin/admin_gold_paysage.php#rth":
+    loader();
+    darkModeDev();
+    cursorFollow();
+    burgerMenuBlackToggle();
+    transitionPages();
+    break;
+  // -----------
+  case "https://www.enzo-cosson.fr/admin/admin_gold_fullimage.php":
+    loader();
+    darkModeDev();
+    cursorFollow();
+    burgerMenuBlackToggle();
+    transitionPages();
+    break;
+  case "https://www.enzo-cosson.fr/admin/admin_gold_fullimage.php#rth":
+    loader();
+    darkModeDev();
+    cursorFollow();
+    burgerMenuBlackToggle();
+    transitionPages();
+    break;
+  // -----------
   case "https://www.enzo-cosson.fr/admin/admin_by_night.php":
     loader();
     darkModeDev();
@@ -135,14 +271,44 @@ switch (url) {
     transitionPages();
     break;
   // -----------
-  case "https://www.enzo-cosson.fr/admin/admin_mountain_portrait.php":
+  case "https://www.enzo-cosson.fr/admin/admin_by_night_portrait.php":
     loader();
     darkModeDev();
     cursorFollow();
     burgerMenuBlackToggle();
     transitionPages();
     break;
-  case "https://www.enzo-cosson.fr/admin/admin_mountain_portrait.php#rth":
+  case "https://www.enzo-cosson.fr/admin/admin_by_night_portrait.php#rth":
+    loader();
+    darkModeDev();
+    cursorFollow();
+    burgerMenuBlackToggle();
+    transitionPages();
+    break;
+  // -----------
+  case "https://www.enzo-cosson.fr/admin/admin_by_night_paysage.php":
+    loader();
+    darkModeDev();
+    cursorFollow();
+    burgerMenuBlackToggle();
+    transitionPages();
+    break;
+  case "https://www.enzo-cosson.fr/admin/admin_by_night_paysage.php#rth":
+    loader();
+    darkModeDev();
+    cursorFollow();
+    burgerMenuBlackToggle();
+    transitionPages();
+    break;
+  // -----------
+  case "https://www.enzo-cosson.fr/admin/admin_by_night_fullimage.php":
+    loader();
+    darkModeDev();
+    cursorFollow();
+    burgerMenuBlackToggle();
+    transitionPages();
+    break;
+  case "https://www.enzo-cosson.fr/admin/admin_bynight_fullimage.php#rth":
     loader();
     darkModeDev();
     cursorFollow();

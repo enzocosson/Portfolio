@@ -8999,6 +8999,27 @@ header .burger {
           justify-content: center;
 }
 
+.administration .retour {
+  margin-top: 3vh;
+  background-color: var(--primary-color);
+  color: var(--white);
+  border: 0.2vw solid var(--primary-color);
+  border-radius: 0.4vw;
+  padding: 1vh 3vw;
+  font-size: 1.3vw;
+  font-family: Base Neue;
+  text-align: center;
+  text-decoration: none;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+
+.administration .retour:hover {
+  background-color: transparent;
+  color: var(--primary-color);
+  border: 0.2vw solid var(--primary-color);
+}
+
 @media screen and (max-width: 1124px) {
   .administration h1 {
     font-size: 11vw;
@@ -9057,7 +9078,7 @@ header .burger {
 }
 
 .container_cards_admin {
-  padding-top: 15vh;
+  padding: 15vh 0;
   position: relative;
   width: 100%;
   height: auto;
@@ -9235,12 +9256,33 @@ header .burger {
   font-family: Base Neue;
   -webkit-transition: 0.2s ease-in-out;
   transition: 0.2s ease-in-out;
+  text-decoration: none;
 }
 
 .container_cards_admin .container_cards .cards .interaction_photo .modifier {
+  cursor: pointer;
+  width: 40%;
+  height: 70%;
+  border-radius: 0.4vw;
+  font-size: 1vw;
+  letter-spacing: 0.1vw;
+  border: none;
+  font-family: Base Neue;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+  text-decoration: none;
   background-color: var(--primary-color);
   color: var(--white);
   border: 0.2vw solid var(--primary-color);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .container_cards_admin .container_cards .cards .interaction_photo .modifier:hover {
@@ -9257,6 +9299,81 @@ header .burger {
 .container_cards_admin .container_cards .cards .interaction_photo .supprimer:hover {
   background-color: transparent;
   color: var(--red);
+}
+
+.container_cards_admin .retour {
+  margin-top: 3vh;
+  background-color: var(--primary-color);
+  color: var(--white);
+  border: 0.2vw solid var(--primary-color);
+  border-radius: 0.4vw;
+  padding: 1vh 3vw;
+  font-size: 1.3vw;
+  font-family: Base Neue;
+  text-align: center;
+  text-decoration: none;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+
+.container_cards_admin .retour:hover {
+  background-color: transparent;
+  color: var(--primary-color);
+}
+
+@media screen and (max-width: 1124px) {
+  .container_cards_admin .container_cards .cards {
+    width: 49%;
+    height: 25vh;
+  }
+  .container_cards_admin .container_cards .cards .information_photo .container_settings .setting_alt {
+    font-size: 2vw;
+  }
+  .container_cards_admin .container_cards .cards .information_photo .container_settings .setting_iso,
+  .container_cards_admin .container_cards .cards .information_photo .container_settings .setting_ouverture,
+  .container_cards_admin .container_cards .cards .information_photo .container_settings .setting_duree,
+  .container_cards_admin .container_cards .cards .information_photo .container_settings .setting_focale {
+    font-size: 1.5vw;
+  }
+  .container_cards_admin .container_cards .cards .interaction_photo button {
+    font-size: 1.5vw;
+  }
+  .container_cards_admin .retour {
+    padding: 0.8vh 3vw;
+    font-size: 2.5vw;
+    border: 0.3vw solid var(--primary-color);
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .container_cards_admin .container_cards {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .container_cards_admin .container_cards .cards {
+    width: 100%;
+    height: 25vh;
+  }
+  .container_cards_admin .container_cards .cards .information_photo .container_settings .setting_alt {
+    font-size: 4vw;
+  }
+  .container_cards_admin .container_cards .cards .information_photo .container_settings .setting_iso,
+  .container_cards_admin .container_cards .cards .information_photo .container_settings .setting_ouverture,
+  .container_cards_admin .container_cards .cards .information_photo .container_settings .setting_duree,
+  .container_cards_admin .container_cards .cards .information_photo .container_settings .setting_focale {
+    font-size: 2.5vw;
+  }
+  .container_cards_admin .container_cards .cards .interaction_photo button {
+    font-size: 3vw;
+    border-radius: 1.5vw;
+  }
+  .container_cards_admin .retour {
+    border: 0.8vw solid var(--primary-color);
+    border-radius: 1.5vw;
+    padding: 0.5vh 8vw;
+    font-size: 5vw;
+  }
 }
 
 .contact {

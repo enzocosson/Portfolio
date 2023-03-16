@@ -47,20 +47,20 @@ require '../lib.inc.php';
     </section>
 
     <header class="header header_galerie" id="rth">
-        <a href="index.html" class="pagelink">
+        <a href="../index.html" class="pagelink">
             <img class="logo logo_white_galerie" src="../img/white_logo.png" alt="logo du site" />
             <img class="logo logo_black_galerie" src="../img/black_logo.png" alt="logo du site" />
         </a>
 
         <ul class="menu">
-            <li><a class="links" href="index.html">Accueil</a></li>
+            <li><a class="links" href="../index.html">Accueil</a></li>
             <li>
-                <a class="links" href="developpement_web.html">Développement Web | Design</a>
+                <a class="links" href="../developpement_web.html">Développement Web | Design</a>
             </li>
-            <li><a class="links" href="photo_video.html">Photos | Videos</a></li>
-            <li><a class="links" href="a_propos.html">About Me</a></li>
+            <li><a class="links" href="../photo_video.html">Photos | Videos</a></li>
+            <li><a class="links" href="../a_propos.html">About Me</a></li>
             <li class="li_contact">
-                <a class="links" id="contact" href="contact.php">Contact</a>
+                <a class="links" id="contact" href="../contact.php">Contact</a>
             </li>
         </ul>
         <div class="burger">
@@ -70,14 +70,14 @@ require '../lib.inc.php';
     </header>
 
     <ul class="menu_mobile_black">
-        <li><a class="links barba-link" href="index.html">Accueil</a></li>
+        <li><a class="links barba-link" href="../index.html">Accueil</a></li>
         <li>
-            <a class="links barba-link" href="developpement_web.html">Développement Web | Design</a>
+            <a class="links barba-link" href="../developpement_web.html">Développement Web | Design</a>
         </li>
-        <li><a class="links" href="photo_video.html">Photos | Videos</a></li>
-        <li><a class="links" href="a_propos.html">About Me</a></li>
+        <li><a class="links" href="../photo_video.html">Photos | Videos</a></li>
+        <li><a class="links" href="../a_propos.html">About Me</a></li>
         <li class="li_contact">
-            <a class="links" id="contact" href="contact.php">Contact</a>
+            <a class="links" id="contact" href="../contact.php">Contact</a>
         </li>
     </ul>
 
@@ -112,6 +112,7 @@ require '../lib.inc.php';
                 <h3 class="theme_titre">Fullimage</h3>
             </a>
         </div>
+        <a class="retour" href="./index.php">Retour</a>
     </section>
 </body>
 <script src="../js/generateColor.js"></script>

@@ -1,5 +1,5 @@
 .container_cards_admin {
-  padding-top: 15vh;
+  padding: 15vh 0;
   position: relative;
   width: 100%;
   height: auto;
@@ -107,12 +107,27 @@
           border: none;
           font-family: $font-base;
           transition: 0.2s ease-in-out;
+          text-decoration: none;
         }
 
         .modifier {
+          cursor: pointer;
+          width: 40%;
+          height: 70%;
+          border-radius: 0.4vw;
+          font-size: 1vw;
+          letter-spacing: 0.1vw;
+          border: none;
+          font-family: $font-base;
+          transition: 0.2s ease-in-out;
+          text-decoration: none;
           background-color: var(--primary-color);
           color: var(--white);
           border: 0.2vw solid var(--primary-color);
+
+          display: flex;
+          justify-content: center;
+          align-items: center;
 
           &:hover {
             background-color: transparent;
@@ -130,6 +145,97 @@
           }
         }
       }
+    }
+  }
+
+  .retour {
+    margin-top: 3vh;
+    background-color: var(--primary-color);
+    color: var(--white);
+    border: 0.2vw solid var(--primary-color);
+    border-radius: 0.4vw;
+    padding: 1vh 3vw;
+    font-size: 1.3vw;
+    font-family: $font-base;
+    text-align: center;
+    text-decoration: none;
+    transition: 0.2s ease-in-out;
+
+    &:hover {
+      background-color: transparent;
+      color: var(--primary-color);
+    }
+  }
+}
+
+//-----------------responsive------------------------------------------
+
+@media screen and (max-width: 1124px) {
+  .container_cards_admin {
+    .container_cards .cards {
+      width: 49%;
+      height: 25vh;
+
+      .information_photo {
+        .container_settings {
+          .setting_alt {
+            font-size: 2vw;
+          }
+          .setting_iso,
+          .setting_ouverture,
+          .setting_duree,
+          .setting_focale {
+            font-size: 1.5vw;
+          }
+        }
+      }
+      .interaction_photo button {
+        font-size: 1.5vw;
+      }
+    }
+    .retour {
+      padding: 0.8vh 3vw;
+      font-size: 2.5vw;
+      border: 0.3vw solid var(--primary-color);
+    }
+  }
+}
+
+//-----------------responsive------------------------------------------
+
+@media screen and (max-width: 780px) {
+  .container_cards_admin {
+    .container_cards {
+      justify-content: center;
+
+      .cards {
+        width: 100%;
+        height: 25vh;
+
+        .information_photo {
+          .container_settings {
+            .setting_alt {
+              font-size: 4vw;
+            }
+            .setting_iso,
+            .setting_ouverture,
+            .setting_duree,
+            .setting_focale {
+              font-size: 2.5vw;
+            }
+          }
+        }
+        .interaction_photo button {
+          font-size: 3vw;
+          border-radius: 1.5vw;
+        }
+      }
+    }
+    .retour {
+      border: 0.8vw solid var(--primary-color);
+      border-radius: 1.5vw;
+      padding: 0.5vh 8vw;
+      font-size: 5vw;
     }
   }
 }
