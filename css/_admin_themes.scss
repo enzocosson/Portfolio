@@ -10,6 +10,72 @@
   align-items: center;
   transition: background-color 0.2s ease-in-out;
 
+  .confirmation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+
+    .pupUp {
+      background-color: var(--white);
+      width: 50vw;
+      height: 50vh;
+      border-radius: 1.5vw;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      row-gap: 3vh;
+
+      h1 {
+        font-size: 2.5vw;
+        font-family: $font-base;
+        color: var(--black);
+        text-align: center;
+      }
+      .interaction {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        column-gap: 2vw;
+        .oui,
+        .non {
+          cursor: pointer;
+          background-color: var(--primary-color);
+          color: var(--white);
+          border: 0.2vw solid var(--primary-color);
+          border-radius: 0.4vw;
+          padding: 1vh 5vw;
+          font-size: 1.3vw;
+          font-family: $font-base;
+          text-align: center;
+          text-decoration: none;
+          transition: 0.2s ease-in-out;
+
+          &:hover {
+            background-color: transparent;
+            color: var(--primary-color);
+          }
+        }
+        .non {
+          border: 0.2vw solid var(--red);
+          background-color: var(--red);
+
+          &:hover {
+            background-color: transparent;
+            color: var(--red);
+          }
+        }
+      }
+    }
+  }
+
   .container_cards {
     position: relative;
     width: 95%;
@@ -97,20 +163,8 @@
         align-items: center;
         column-gap: 2vw;
 
-        button {
-          cursor: pointer;
-          width: 40%;
-          height: 70%;
-          border-radius: 0.4vw;
-          font-size: 1vw;
-          letter-spacing: 0.1vw;
-          border: none;
-          font-family: $font-base;
-          transition: 0.2s ease-in-out;
-          text-decoration: none;
-        }
-
-        .modifier {
+        .modifier,
+        .supprimer {
           cursor: pointer;
           width: 40%;
           height: 70%;

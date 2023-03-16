@@ -101,13 +101,79 @@ require '../lib.inc.php';
     </button>
   </div>
   <section class="container_cards_admin">
+
+
+
     <div class="container_cards">
       <?php
       $co = connexionBD();
-      adminCards_mountainPortrait($co);
-      deconnexionBD($co);
+      $req = 'SELECT * FROM mountain_portrait';
+      try {
+        $resultat = $co->prepare($req);
+        $resultat->execute();
+      } catch (PDOException $e) {
+        echo '<p>Erreur : ' . $e->getMessage() . '</p>';
+        die();
+      }
+      if ($resultat !== false) {
+        while ($row = $resultat->fetch(PDO::FETCH_ASSOC)) {
+          $filename = $row['photo_src'];
+          $alt = $row['photo_alt'];
+          $iso = $row['photo_iso'];
+          $f_stop = $row['photo_ouverture'];
+          $shutter_speed = $row['photo_duree'];
+          $focal_length = $row['photo_focale'];
+          $id = $row['photo_id'];
+
+          echo '<div class="cards">';
+          echo '<div class="information_photo">';
+          echo '<div class="container_img">';
+          echo '<img src="../img/photo/mountain/portrait/' . $filename . '" alt="' . $alt . '" class="img" />';
+          echo '</div>';
+          echo '<div class="container_settings">';
+          echo '<p class="setting_alt">' . $alt . '</p>';
+          echo '<p class="setting_iso">ISO ' . $iso . '</p>';
+          echo '<p class="setting_ouverture">' . $f_stop . '</p>';
+          echo '<p class="setting_duree">' . $shutter_speed . '</p>';
+          echo '<p class="setting_focale">' . $focal_length . ' mm</p>';
+          echo '</div>';
+          echo '</div>';
+          echo '<div class="interaction_photo">';
+          echo '<a class="modifier" href="admin_mountain_portrait_modif.php?id=' . $id . '">Modifier</a>';
+          echo '<div class="supprimer suppression-photo">Supprimer</div>';
+          echo '</div>';
+          echo '</div>';
+        }
+      }
+
       ?>
     </div>
+
+    <div class="confirmation" style="display: none;">
+      <div class="pupUp">
+        <h1>Es-tu sur de vouloir supprimer cette photo ?</h1>
+        <div class="interaction">
+          <button class="non" onclick="document.querySelector('.confirmation').style.display = 'none';">Non</button>
+          <a href="admin_mountain_portrait_suppr.php?id=<?php echo $id; ?>" class="oui">Oui</a>
+        </div>
+      </div>
+    </div>
+
+    <?php
+    deconnexionBD($co);
+    ?>
+    <script>
+      const suppressionPhotos = document.querySelectorAll('.suppression-photo');
+
+      suppressionPhotos.forEach((suppressionPhoto) => {
+        suppressionPhoto.addEventListener('click', (event) => {
+
+          document.querySelector('.confirmation').style.display = 'flex';
+        });
+      });
+    </script>
+
+
     <a class="retour" href="./admin_mountain.php">Retour</a>
   </section>
 </body>

@@ -493,49 +493,7 @@ function nightFullImage($co)
 }
 
 
-// administration cards
 
-function adminCards_mountainPortrait($co)
-{
-    $req = 'SELECT * FROM mountain_portrait';
-    try {
-        $resultat = $co->prepare($req);
-        $resultat->execute();
-    } catch (PDOException $e) {
-        echo '<p>Erreur : ' . $e->getMessage() . '</p>';
-        die();
-    }
-    if ($resultat !== false) {
-        while ($row = $resultat->fetch(PDO::FETCH_ASSOC)) {
-            $filename = $row['photo_src'];
-            $alt = $row['photo_alt'];
-            $iso = $row['photo_iso'];
-            $f_stop = $row['photo_ouverture'];
-            $shutter_speed = $row['photo_duree'];
-            $focal_length = $row['photo_focale'];
-            $id = $row['photo_id'];
-
-            echo '<div class="cards">';
-            echo '<div class="information_photo">';
-            echo '<div class="container_img">';
-            echo '<img src="../img/photo/mountain/portrait/' . $filename . '" alt="' . $alt . '" class="img" />';
-            echo '</div>';
-            echo '<div class="container_settings">';
-            echo '<p class="setting_alt">' . $alt . '</p>';
-            echo '<p class="setting_iso">ISO ' . $iso . '</p>';
-            echo '<p class="setting_ouverture">' . $f_stop . '</p>';
-            echo '<p class="setting_duree">' . $shutter_speed . '</p>';
-            echo '<p class="setting_focale">' . $focal_length . ' mm</p>';
-            echo '</div>';
-            echo '</div>';
-            echo '<div class="interaction_photo">';
-            echo '<a class="modifier" href="admin_mountain_portrait_modif.php?id=' . $id . '">Modifier</a>';
-            echo '<button class="supprimer">Supprimer</button>';
-            echo '</div>';
-            echo '</div>';
-        }
-    }
-}
 
 function adminCards_mountainPaysage($co)
 {
@@ -572,7 +530,7 @@ function adminCards_mountainPaysage($co)
             echo '</div>';
             echo '<div class="interaction_photo">';
             echo '<a class="modifier" href="admin_mountain_paysage_modif.php?id=' . $id . '">Modifier</a>';
-            echo '<button class="supprimer">Supprimer</button>';
+            echo '<a class="supprimer" href="admin_mountain_portrait_suppr.php?id=' . $id . '">Supprimer</a>';
             echo '</div>';
             echo '</div>';
         }
@@ -607,7 +565,7 @@ function adminCards_mountainFullimage($co)
             echo '</div>';
             echo '<div class="interaction_photo">';
             echo '<a class="modifier" href="admin_mountain_fullimage_modif.php?id=' . $id . '">Modifier</a>';
-            echo '<button class="supprimer">Supprimer</button>';
+            echo '<a class="supprimer" href="admin_mountain_portrait_suppr.php?id=' . $id . '">Supprimer</a>';
             echo '</div>';
             echo '</div>';
         }
@@ -650,7 +608,7 @@ function adminCards_tropicalPortrait($co)
             echo '</div>';
             echo '<div class="interaction_photo">';
             echo '<a class="modifier" href="admin_tropical_portrait_modif.php?id=' . $id . '">Modifier</a>';
-            echo '<button class="supprimer">Supprimer</button>';
+            echo '<a class="supprimer" href="admin_mountain_portrait_suppr.php?id=' . $id . '">Supprimer</a>';
             echo '</div>';
             echo '</div>';
         }
@@ -692,7 +650,7 @@ function adminCards_tropicalPaysage($co)
             echo '</div>';
             echo '<div class="interaction_photo">';
             echo '<a class="modifier" href="admin_tropical_paysage_modif.php?id=' . $id . '">Modifier</a>';
-            echo '<button class="supprimer">Supprimer</button>';
+            echo '<a class="supprimer" href="admin_mountain_portrait_suppr.php?id=' . $id . '">Supprimer</a>';
             echo '</div>';
             echo '</div>';
         }
@@ -727,7 +685,7 @@ function adminCards_tropicalFullimage($co)
             echo '</div>';
             echo '<div class="interaction_photo">';
             echo '<a class="modifier" href="admin_tropical_fullimage_modif.php?id=' . $id . '">Modifier</a>';
-            echo '<button class="supprimer">Supprimer</button>';
+            echo '<a class="supprimer" href="admin_mountain_portrait_suppr.php?id=' . $id . '">Supprimer</a>';
             echo '</div>';
             echo '</div>';
         }
@@ -777,7 +735,7 @@ function adminCards_goldPortrait($co)
             echo '</div>';
             echo '<div class="interaction_photo">';
             echo '<a class="modifier" href="admin_gold_portrait_modif.php?id=' . $id . '">Modifier</a>';
-            echo '<button class="supprimer">Supprimer</button>';
+            echo '<a class="supprimer" href="admin_mountain_portrait_suppr.php?id=' . $id . '">Supprimer</a>';
             echo '</div>';
             echo '</div>';
         }
@@ -819,7 +777,7 @@ function adminCards_goldPaysage($co)
             echo '</div>';
             echo '<div class="interaction_photo">';
             echo '<a class="modifier" href="admin_gold_paysage_modif.php?id=' . $id . '">Modifier</a>';
-            echo '<button class="supprimer">Supprimer</button>';
+            echo '<a class="supprimer" href="admin_mountain_portrait_suppr.php?id=' . $id . '">Supprimer</a>';
             echo '</div>';
             echo '</div>';
         }
@@ -854,7 +812,7 @@ function adminCards_goldFullimage($co)
             echo '</div>';
             echo '<div class="interaction_photo">';
             echo '<a class="modifier" href="admin_gold_fullimage_modif.php?id=' . $id . '">Modifier</a>';
-            echo '<button class="supprimer">Supprimer</button>';
+            echo '<a class="supprimer" href="admin_mountain_portrait_suppr.php?id=' . $id . '">Supprimer</a>';
             echo '</div>';
             echo '</div>';
         }
@@ -897,7 +855,7 @@ function adminCards_by_nightPortrait($co)
             echo '</div>';
             echo '<div class="interaction_photo">';
             echo '<a class="modifier" href="admin_by_night_portrait_modif.php?id=' . $id . '">Modifier</a>';
-            echo '<button class="supprimer">Supprimer</button>';
+            echo '<a class="supprimer" href="admin_mountain_portrait_suppr.php?id=' . $id . '">Supprimer</a>';
             echo '</div>';
             echo '</div>';
         }
@@ -940,7 +898,7 @@ function adminCards_by_nightPaysage($co)
             echo '</div>';
             echo '<div class="interaction_photo">';
             echo '<a class="modifier" href="admin_by_night_paysage_modif.php?id=' . $id . '">Modifier</a>';
-            echo '<button class="supprimer">Supprimer</button>';
+            echo '<a class="supprimer" href="admin_mountain_portrait_suppr.php?id=' . $id . '">Supprimer</a>';
             echo '</div>';
             echo '</div>';
         }
@@ -975,7 +933,7 @@ function adminCards_by_nightFullimage($co)
             echo '</div>';
             echo '<div class="interaction_photo">';
             echo '<a class="modifier" href="admin_by_night_fullimage_modif.php?id=' . $id . '">Modifier</a>';
-            echo '<button class="supprimer">Supprimer</button>';
+            echo '<a class="supprimer" href="admin_mountain_portrait_suppr.php?id=' . $id . '">Supprimer</a>';
             echo '</div>';
             echo '</div>';
         }
