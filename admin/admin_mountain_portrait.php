@@ -173,7 +173,7 @@ require '../lib.inc.php';
       });
     </script>
 
-
+    <a class="ajouter_une_photo" href="./ajout/admin_mountain_portrait_ajout.php">Ajouter une photo</a>
     <a class="retour" href="./admin_mountain.php">Retour</a>
   </section>
 </body>

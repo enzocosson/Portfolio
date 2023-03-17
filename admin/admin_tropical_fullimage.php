@@ -162,6 +162,7 @@ require '../lib.inc.php';
         });
       });
     </script>
+    <a class="ajouter_une_photo" href="./ajout/admin_tropical_fullimage_ajout.php">Ajouter une photo</a>
     <a class="retour" href="./admin_tropical.php">Retour</a>
   </section>
 </body>

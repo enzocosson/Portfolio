@@ -463,6 +463,47 @@ function nightPortrait($co)
     }
 }
 
+function nightPaysage($co)
+{
+    $req = 'SELECT * FROM night_paysage';
+    try {
+        $resultat = $co->prepare($req);
+        $resultat->execute();
+    } catch (PDOException $e) {
+        echo '<p>Erreur : ' . $e->getMessage() . '</p>';
+        die();
+    }
+    if ($resultat !== false) {
+        $output = '';
+        while ($row = $resultat->fetch(PDO::FETCH_ASSOC)) {
+
+            $filename = $row['photo_src'];
+            $alt = $row['photo_alt'];
+            $iso = $row['photo_iso'];
+            $f_stop = $row['photo_ouverture'];
+            $shutter_speed = $row['photo_duree'];
+            $focal_length = $row['photo_focale'];
+            $id = $row['photo_id'];
+
+
+            $output .= '<div class="container_img">';
+            $output .= '<img class="miniatures" src="./img/photo/by_night/paysage/' . $filename . '" alt="' . $alt . '"/>';
+            $output .= '<div class="parametres">';
+            $output .= '<p>ISO ' . $iso . '</p>';
+            $output .= '<p>' . $f_stop . '</p>';
+            $output .= '<p>' . $shutter_speed . '</p>';
+            $output .= '<p>' . $focal_length . ' mm</p>';
+            $output .= '</div>';
+            $output .= '<div class="info_photo">i</div>';
+            $output .= '</div>';
+        }
+        return $output;
+    } else {
+        echo "<h1>Une erreur est survenue</h1>";
+        die();
+    }
+}
+
 function nightFullImage($co)
 {
     $req = 'SELECT * FROM mountain_fullimage';

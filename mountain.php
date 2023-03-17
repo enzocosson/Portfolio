@@ -118,6 +118,7 @@ require 'lib.inc.php';
     <h1>Mountain</h1>
 
     <div class="container_galerie_top">
+
       <div class="galerie_portrait">
         <?php
         $co = connexionBD();
@@ -130,6 +131,7 @@ require 'lib.inc.php';
         echo mountainPaysage($co);
         ?>
       </div>
+
     </div>
 
     <div class="container_galerie_bottom">

@@ -170,6 +170,7 @@ require '../lib.inc.php';
         });
       });
     </script>
+    <a class="ajouter_une_photo" href="./ajout/admin_gold_paysage_ajout.php">Ajouter une photo</a>
     <a class="retour" href="./admin_gold.php">Retour</a>
   </section>
 </body>

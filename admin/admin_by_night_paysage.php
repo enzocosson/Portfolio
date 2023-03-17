@@ -170,6 +170,7 @@ require '../lib.inc.php';
         });
       });
     </script>
+    <a class="ajouter_une_photo" href="./ajout/admin_by_night_paysage_ajout.php">Ajouter une photo</a>
     <a class="retour" href="./admin_by_night.php">Retour</a>
   </section>
 </body>

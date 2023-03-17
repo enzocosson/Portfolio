@@ -124,6 +124,12 @@ require 'lib.inc.php';
         echo nightPortrait($co);
         ?>
       </div>
+
+      <div class="galerie_paysage">
+        <?php
+        echo nightPaysage($co);
+        ?>
+      </div>
     </div>
 
     <div class="container_galerie_bottom">

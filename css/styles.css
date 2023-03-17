@@ -9382,8 +9382,9 @@ header .burger {
   color: var(--red);
 }
 
+.container_cards_admin .ajouter,
 .container_cards_admin .retour {
-  margin-top: 3vh;
+  margin-top: 0vh;
   background-color: var(--primary-color);
   color: var(--white);
   border: 0.2vw solid var(--primary-color);
@@ -9397,7 +9398,28 @@ header .burger {
   transition: 0.2s ease-in-out;
 }
 
+.container_cards_admin .ajouter:hover,
 .container_cards_admin .retour:hover {
+  background-color: transparent;
+  color: var(--primary-color);
+}
+
+.container_cards_admin .ajouter_une_photo {
+  margin-bottom: 3vh;
+  background-color: var(--primary-color);
+  color: var(--white);
+  border: 0.2vw solid var(--primary-color);
+  border-radius: 0.4vw;
+  padding: 1vh 3vw;
+  font-size: 1.3vw;
+  font-family: Base Neue;
+  text-align: center;
+  text-decoration: none;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+
+.container_cards_admin .ajouter_une_photo:hover {
   background-color: transparent;
   color: var(--primary-color);
 }
@@ -9475,6 +9497,14 @@ header .burger {
       -ms-flex-align: center;
           align-items: center;
   background-color: var(--white);
+}
+
+.container_formulaire .confirmation-message {
+  font-size: 1.3vw;
+  font-family: Base Neue;
+  color: var(--black);
+  text-align: center;
+  margin-top: 3vh;
 }
 
 .container_formulaire .confirmation {
@@ -9585,6 +9615,7 @@ header .burger {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  row-gap: 1vh;
 }
 
 .container_formulaire form .erreur {
@@ -9649,8 +9680,8 @@ header .burger {
   color: var(--white);
   border: 0.2vw solid var(--primary-color);
   border-radius: 0.4vw;
-  padding: 1vh 5vw;
-  font-size: 1.3vw;
+  padding: 1vh 3vw;
+  font-size: 1.2vw;
   font-family: Base Neue;
   text-align: center;
   text-decoration: none;
@@ -9672,6 +9703,27 @@ header .burger {
 .container_formulaire form .interaction .envoyer:hover {
   background-color: transparent;
   color: var(--red);
+}
+
+.container_formulaire form .ajouter {
+  margin-top: 0vh;
+  cursor: pointer;
+  background-color: var(--primary-color);
+  color: var(--white);
+  border: 0.2vw solid var(--primary-color);
+  border-radius: 0.4vw;
+  padding: 1vh 5vw;
+  font-size: 1.3vw;
+  font-family: Base Neue;
+  text-align: center;
+  text-decoration: none;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+
+.container_formulaire form .ajouter:hover {
+  background-color: transparent;
+  color: var(--primary-color);
 }
 
 .contact {

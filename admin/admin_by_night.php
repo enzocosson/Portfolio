@@ -101,6 +101,7 @@ require '../lib.inc.php';
         </button>
     </div>
     <section class="administration">
+        <h1>By Night</h1>
         <div class="theme_photo spe">
             <a href="admin_by_night_portrait.php" class="card_photo spe">
                 <h3 class="theme_titre">Portrait</h3>
