@@ -28,22 +28,22 @@ function sendMessage($co, $prenom, $nom, $email, $theme, $message)
     // Validation des données d'entrée utilisateur
     if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
         $_SESSION['erreur_email'] = "<p class='erreur'>Adresse email invalide</p>";
-        header('location:contact.php');
+        header('location:/contact');
         return;
     }
     if (!preg_match("/^[a-zA-Z ]*$/", $prenom)) {
         $_SESSION['erreur_prenom'] = "<p class='erreur'>Le prénom doit contenir uniquement des lettres et des espaces</p>";
-        header('location:contact.php');
+        header('location:/contact');
         return;
     }
     if (!preg_match("/^[a-zA-Z ]*$/", $nom)) {
         $_SESSION['erreur_nom'] = "<p class='erreur'>Le nom doit contenir uniquement des lettres et des espaces</p>";
-        header('location:contact.php');
+        header('location:/contact');
         return;
     }
     if (strlen($message) > 1000) {
         $_SESSION['erreur_message'] = "<p class='erreur'>Le message est trop long</p>";
-        header('location:contact.php');
+        header('location:/contact');
         return;
     }
 
@@ -69,7 +69,7 @@ function sendMessage($co, $prenom, $nom, $email, $theme, $message)
         header('location:validation.php');
     } else {
         echo "<h1>Une erreur est survenue</h1>";
-        header('location:contact.php');
+        header('location:/contact');
         die();
     }
 }

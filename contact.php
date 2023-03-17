@@ -46,20 +46,20 @@
     </section>
 
     <header class="header" id="rth">
-        <a href="index.html" class="pagelink">
+        <a href="/accueil" class="pagelink">
             <img class="logo logo_white" src="./img/white_logo.png" alt="logo du site" />
             <img class="logo logo_black" src="./img/black_logo.png" alt="logo du site" />
         </a>
 
         <ul class="menu">
-            <li><a class="links barba-link" href="index.html">Accueil</a></li>
+            <li><a class="links barba-link" href="/accueil">Accueil</a></li>
             <li>
-                <a class="links barba-link" href="developpement_web.html">Développement Web | Design</a>
+                <a class="links barba-link" href="/developpement-web">Développement web | Design</a>
             </li>
-            <li><a class="links" href="photo_video.html">Photos | Videos</a></li>
-            <li><a class="links" href="a_propos.html">About Me</a></li>
+            <li><a class="links" href="/photo-video">Photos | Videos</a></li>
+            <li><a class="links" href="/a-propos">À propos</a></li>
             <li class="li_contact">
-                <a class="links" id="contact" href="contact.php">Contact</a>
+                <a class="links" id="contact" href="/contact">Contact</a>
             </li>
         </ul>
 
@@ -70,14 +70,14 @@
     </header>
 
     <ul class="menu_mobile">
-        <li><a class="links barba-link" href="index.html">Accueil</a></li>
+        <li><a class="links barba-link" href="/accueil">Accueil</a></li>
         <li>
-            <a class="links barba-link" href="developpement_web.html">Développement Web | Design</a>
+            <a class="links barba-link" href="/developpement-web">Développement web | Design</a>
         </li>
-        <li><a class="links" href="photo_video.html">Photos | Videos</a></li>
-        <li><a class="links" href="a_propos.html">About Me</a></li>
+        <li><a class="links" href="/photo-video">Photos | Videos</a></li>
+        <li><a class="links" href="/a-propos">À propos</a></li>
         <li class="li_contact">
-            <a class="links" id="contact" href="contact.php">Contact</a>
+            <a class="links" id="contact" href="/contact">Contact</a>
         </li>
     </ul>
 
@@ -189,12 +189,12 @@
             </div>
             <div class="site">
                 <h2>Envie d’un site ?</h2>
-                <a href="developpement_web.html">WEB DEVELOPPEMENT | DESIGN</a>
+                <a href="/developpement-web">WEB DEVELOPPEMENT | DESIGN</a>
             </div>
 
             <div class="photo">
                 <h2>Envie de voyager ?</h2>
-                <a href="photo_video.html">PHOTOGRAPHIE | VIDEO</a>
+                <a href="/photo-video">PHOTOGRAPHIE | VIDEO</a>
             </div>
         </div>
         <div class="copyright">

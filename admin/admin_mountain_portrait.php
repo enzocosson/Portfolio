@@ -47,20 +47,20 @@ require '../lib.inc.php';
   </section>
 
   <header class="header header_galerie" id="rth">
-    <a href="../index.html" class="pagelink">
+    <a href="../accueil" class="pagelink">
       <img class="logo logo_white_galerie" src="../img/white_logo.png" alt="logo du site" />
       <img class="logo logo_black_galerie" src="../img/black_logo.png" alt="logo du site" />
     </a>
 
     <ul class="menu">
-      <li><a class="links" href="../index.html">Accueil</a></li>
+      <li><a class="links" href="../accueil">Accueil</a></li>
       <li>
-        <a class="links" href="../developpement_web.html">Développement Web | Design</a>
+        <a class="links" href="../developpement-web">Développement web | Design</a>
       </li>
-      <li><a class="links" href="../photo_video.html">Photos | Videos</a></li>
-      <li><a class="links" href="../a_propos.html">About Me</a></li>
+      <li><a class="links" href="../photo-video">Photos | Videos</a></li>
+      <li><a class="links" href="../a-propos">À propos</a></li>
       <li class="li_contact">
-        <a class="links" id="contact" href="../contact.php">Contact</a>
+        <a class="links" id="contact" href="../contact">Contact</a>
       </li>
     </ul>
     <div class="burger">
@@ -70,14 +70,14 @@ require '../lib.inc.php';
   </header>
 
   <ul class="menu_mobile_black">
-    <li><a class="links barba-link" href="../index.html">Accueil</a></li>
+    <li><a class="links barba-link" href="../accueil">Accueil</a></li>
     <li>
-      <a class="links barba-link" href="../developpement_web.html">Développement Web | Design</a>
+      <a class="links barba-link" href="../developpement-web">Développement web | Design</a>
     </li>
-    <li><a class="links" href="../photo_video.html">Photos | Videos</a></li>
-    <li><a class="links" href="../a_propos.html">About Me</a></li>
+    <li><a class="links" href="../photo-video">Photos | Videos</a></li>
+    <li><a class="links" href="../a-propos">À propos</a></li>
     <li class="li_contact">
-      <a class="links" id="contact" href="../contact.php">Contact</a>
+      <a class="links" id="contact" href="../contact">Contact</a>
     </li>
   </ul>
 
@@ -174,7 +174,7 @@ require '../lib.inc.php';
     </script>
 
     <a class="ajouter_une_photo" href="./ajout/admin_mountain_portrait_ajout.php">Ajouter une photo</a>
-    <a class="retour" href="./admin_mountain.php">Retour</a>
+    <a class="retour" href="./admin_/photo/mountain">Retour</a>
   </section>
 </body>
 <script src="../js/generateColor.js"></script>

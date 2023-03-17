@@ -10,10 +10,10 @@ switch (url) {
   case "http://192.168.1.75:5500/":
     (0, loader)();
     break;
-  case "http://192.168.1.75:5500/index.html":
+  case "http://192.168.1.75:5500//accueil":
     (0, loader)();
     break;
-  case "https://www.enzo-cosson.fr/index.html":
+  case "https://www.enzo-cosson.fr//accueil":
     (0, loader)();
     break;
   default:

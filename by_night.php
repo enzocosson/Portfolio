@@ -47,20 +47,20 @@ require 'lib.inc.php';
   </section>
 
   <header class="header header_galerie" id="rth">
-    <a href="index.html" class="pagelink">
+    <a href="/accueil" class="pagelink">
       <img class="logo logo_white_galerie" src="./img/white_logo.png" alt="logo du site" />
       <img class="logo logo_black_galerie" src="./img/black_logo.png" alt="logo du site" />
     </a>
 
     <ul class="menu">
-      <li><a class="links" href="index.html">Accueil</a></li>
+      <li><a class="links" href="/accueil">Accueil</a></li>
       <li>
-        <a class="links" href="developpement_web.html">Développement Web | Design</a>
+        <a class="links" href="/developpement-web">Développement web | Design</a>
       </li>
-      <li><a class="links" href="photo_video.html">Photos | Videos</a></li>
-      <li><a class="links" href="a_propos.html">About Me</a></li>
+      <li><a class="links" href="/photo-video">Photos | Videos</a></li>
+      <li><a class="links" href="/a-propos">À propos</a></li>
       <li class="li_contact">
-        <a class="links" id="contact" href="contact.php">Contact</a>
+        <a class="links" id="contact" href="/contact">Contact</a>
       </li>
     </ul>
     <div class="burger">
@@ -70,14 +70,14 @@ require 'lib.inc.php';
   </header>
 
   <ul class="menu_mobile_black">
-    <li><a class="links barba-link" href="index.html">Accueil</a></li>
+    <li><a class="links barba-link" href="/accueil">Accueil</a></li>
     <li>
-      <a class="links barba-link" href="developpement_web.html">Développement Web | Design</a>
+      <a class="links barba-link" href="/developpement-web">Développement web | Design</a>
     </li>
-    <li><a class="links" href="photo_video.html">Photos | Videos</a></li>
-    <li><a class="links" href="a_propos.html">About Me</a></li>
+    <li><a class="links" href="/photo-video">Photos | Videos</a></li>
+    <li><a class="links" href="/a-propos">À propos</a></li>
     <li class="li_contact">
-      <a class="links" id="contact" href="contact.php">Contact</a>
+      <a class="links" id="contact" href="/contact">Contact</a>
     </li>
   </ul>
 
@@ -145,18 +145,18 @@ require 'lib.inc.php';
 
       <div class="suggestion">
         <div class="suggestion_top">
-          <a href="mountain.php" class="container_miniatures">
+          <a href="/mountain" class="container_miniatures">
             <h3 class="titre_minia">MOUNTAIN</h3>
             <img src="./img/photo/theme/resize75/mountain.png" alt="paysage de montagne" class="miniatures" />
           </a>
-          <a href="tropical.php" class="container_miniatures">
+          <a href="/tropical" class="container_miniatures">
             <h3 class="titre_minia">TROPICAL</h3>
             <img src="./img/photo/theme/resize75/waterwall.jpg" alt="paysage tropical" class="miniatures" />
           </a>
         </div>
 
         <div class="suggestion_bottom">
-          <a href="gold.php" class="container_miniatures">
+          <a href="/gold" class="container_miniatures">
             <h3 class="titre_minia">GOLD</h3>
             <img src="./img/photo/theme/resize75/gold.jpg" alt="couché de soleil avec un jeune dans la forêt" class="miniatures" />
           </a>
@@ -201,7 +201,7 @@ require 'lib.inc.php';
         </div>
         <div class="video">
           <h4>VIDEO</h4>
-          <a href="video.html">
+          <a href="/video">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="play">
               <path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-3 17v-10l9 5.146-9 4.854z" />
             </svg>
@@ -212,7 +212,7 @@ require 'lib.inc.php';
   </section>
   <div class="contact">
     <h1>Un projet en tête ?</h1>
-    <a href="contact.php" class="lien_contact">ME CONTACTER</a>
+    <a href="/contact" class="lien_contact">ME CONTACTER</a>
   </div>
   <footer>
     <div class="info">
@@ -248,12 +248,12 @@ require 'lib.inc.php';
       </div>
       <div class="site">
         <h2>Envie d’un site ?</h2>
-        <a href="developpement_web.html">WEB DEVELOPPEMENT | DESIGN</a>
+        <a href="/developpement-web">WEB DEVELOPPEMENT | DESIGN</a>
       </div>
 
       <div class="photo">
         <h2>Envie de voyager ?</h2>
-        <a href="photo_video.html">PHOTOGRAPHIE | VIDEO</a>
+        <a href="/photo-video">PHOTOGRAPHIE | VIDEO</a>
       </div>
     </div>
     <div class="copyright">
