@@ -69,63 +69,69 @@ require '../lib.inc.php';
       </div>
     </div>
 
-    <?php
-    $co = connexionBD();
+    <div class="information_photo">
+
+      <?php
+      $co = connexionBD();
 
 
-    if (isset($_GET['id'])) {
+      if (isset($_GET['id'])) {
 
-      $id = $_GET['id'];
-
-
-      $req = "SELECT * FROM tropical_fullimage WHERE photo_id = $id";
-      $resultat = $co->prepare($req);
-      $resultat->execute([$id]);
+        $id = $_GET['id'];
 
 
-      if ($resultat->rowCount() == 1) {
-
-        $row = $resultat->fetch(PDO::FETCH_ASSOC);
-        $filename = $row['photo_src'];
-        $alt = $row['photo_alt'];
+        $req = "SELECT * FROM tropical_fullimage WHERE photo_id = $id";
+        $resultat = $co->prepare($req);
+        $resultat->execute([$id]);
 
 
-        echo '<form id="form_modif" method="post" onsubmit="return confirmerModification()" action="tropical_fullimage_modif_traitement.php" >';
-        echo '<input type="hidden" name="id" value="' . $id . '" />';
+        if ($resultat->rowCount() == 1) {
 
-        echo '<div class="label_input">';
-        echo '<label>Photo :</label>';
-        echo '<input type="text" name="filename" value="' . $filename . '" />';
-        echo '</div>';
-
-        echo '<br />';
-
-        echo '<div class="label_input">';
-        echo '<label>Alt :</label>';
-        echo '<input type="text" name="alt" value="' . $alt . '" />';
-        echo '</div>';
+          $row = $resultat->fetch(PDO::FETCH_ASSOC);
+          $filename = $row['photo_src'];
+          $alt = $row['photo_alt'];
 
 
-        echo '<div class="interaction">';
-        echo '<a class="retour" href="./admin_tropical_fullimage.php">Retour</a>';
-        echo '<input class="envoyer" type="submit" value="Modifier"/>';
+          echo '<form id="form_modif" method="post" onsubmit="return confirmerModification()" action="tropical_fullimage_modif_traitement.php" >';
+          echo '<input type="hidden" name="id" value="' . $id . '" />';
 
-        echo '</div>';
+          echo '<div class="label_input">';
+          echo '<label>Photo :</label>';
+          echo '<input type="text" name="filename" value="' . $filename . '" />';
+          echo '</div>';
 
-        echo '</form>';
+          echo '<br />';
+
+          echo '<div class="label_input">';
+          echo '<label>Alt :</label>';
+          echo '<input type="text" name="alt" value="' . $alt . '" />';
+          echo '</div>';
+
+
+          echo '<div class="interaction">';
+          echo '<a class="retour" href="./admin_tropical_fullimage.php">Retour</a>';
+          echo '<input class="envoyer" type="submit" value="Modifier"/>';
+
+          echo '</div>';
+
+          echo '</form>';
+        } else {
+
+          echo '<p>La photo demandée n\'existe pas.</p>';
+        }
       } else {
-
-        echo '<p>La photo demandée n\'existe pas.</p>';
+        // Si l'identifiant de la photo n'est pas présent dans l'URL, afficher un message d'erreur
+        echo '<p>Aucune photo à modifier.</p>';
       }
-    } else {
-      // Si l'identifiant de la photo n'est pas présent dans l'URL, afficher un message d'erreur
-      echo '<p>Aucune photo à modifier.</p>';
-    }
+      ?>
+      <div class="container_photo">
+        <img src="../img/photo/tropical/fullimage/<?php echo $filename; ?>" alt="<?php echo $alt; ?>" />
+      </div>
 
-
-    deconnexionBD($co);
-    ?>
-
+      <?php
+      deconnexionBD($co);
+      ?>
+    </div>
 
 
   </section>

@@ -9208,6 +9208,7 @@ header .burger {
       -ms-flex-align: center;
           align-items: center;
   row-gap: 2vh;
+  margin-bottom: 5vh;
 }
 
 .container_cards_admin .container_cards .cards {
@@ -9600,8 +9601,46 @@ header .burger {
   color: var(--red);
 }
 
-.container_formulaire form {
-  width: 30%;
+.container_formulaire .information_photo {
+  width: 80%;
+  height: 60vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container_formulaire .information_photo .container_photo {
+  width: 50%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+}
+
+.container_formulaire .information_photo .container_photo img {
+  width: 70%;
+  height: 100%;
+  border-radius: 1vw;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.container_formulaire .information_photo form {
+  width: 50%;
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -9618,13 +9657,13 @@ header .burger {
   row-gap: 1vh;
 }
 
-.container_formulaire form .erreur {
+.container_formulaire .information_photo form .erreur {
   color: red;
   font-size: 0.8vw;
   font-family: "Inter", sans-serif;
 }
 
-.container_formulaire form .label_input {
+.container_formulaire .information_photo form .label_input {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -9637,7 +9676,7 @@ header .burger {
           align-items: center;
 }
 
-.container_formulaire form .label_input label {
+.container_formulaire .information_photo form .label_input label {
   font-size: 1.5vw;
   font-family: Base Neue;
   font-weight: bold;
@@ -9645,7 +9684,7 @@ header .burger {
   color: var(--black);
 }
 
-.container_formulaire form .label_input input {
+.container_formulaire .information_photo form .label_input input {
   outline: none;
   width: 70%;
   height: 5vh;
@@ -9657,7 +9696,7 @@ header .burger {
   font-size: 0.8vw;
 }
 
-.container_formulaire form .interaction {
+.container_formulaire .information_photo form .interaction {
   margin-top: 3vh;
   width: 100%;
   display: -webkit-box;
@@ -9673,8 +9712,8 @@ header .burger {
           column-gap: 2vw;
 }
 
-.container_formulaire form .interaction .retour,
-.container_formulaire form .interaction .envoyer {
+.container_formulaire .information_photo form .interaction .retour,
+.container_formulaire .information_photo form .interaction .envoyer {
   cursor: pointer;
   background-color: var(--primary-color);
   color: var(--white);
@@ -9689,23 +9728,23 @@ header .burger {
   transition: 0.2s ease-in-out;
 }
 
-.container_formulaire form .interaction .retour:hover,
-.container_formulaire form .interaction .envoyer:hover {
+.container_formulaire .information_photo form .interaction .retour:hover,
+.container_formulaire .information_photo form .interaction .envoyer:hover {
   background-color: transparent;
   color: var(--primary-color);
 }
 
-.container_formulaire form .interaction .envoyer {
+.container_formulaire .information_photo form .interaction .envoyer {
   border: 0.2vw solid var(--red);
   background-color: var(--red);
 }
 
-.container_formulaire form .interaction .envoyer:hover {
+.container_formulaire .information_photo form .interaction .envoyer:hover {
   background-color: transparent;
   color: var(--red);
 }
 
-.container_formulaire form .ajouter {
+.container_formulaire .information_photo form .ajouter {
   margin-top: 0vh;
   cursor: pointer;
   background-color: var(--primary-color);
@@ -9721,7 +9760,7 @@ header .burger {
   transition: 0.2s ease-in-out;
 }
 
-.container_formulaire form .ajouter:hover {
+.container_formulaire .information_photo form .ajouter:hover {
   background-color: transparent;
   color: var(--primary-color);
 }
