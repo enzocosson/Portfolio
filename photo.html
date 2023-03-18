@@ -31,6 +31,7 @@
     <meta name="msapplication-TileColor" content="#00aba9" />
     <meta name="theme-color" content="#ffffff" />
     <link rel="stylesheet" href="./css/styles.css" />
+    <script src="https://unpkg.com/scrollreveal"></script>
   </head>
   <body>
     <div class="cursor_follow"></div>
@@ -189,15 +190,19 @@
           alt="couverture de la thématique by night"
         />
       </a>
-      <!-- <a href="my_dog.html" class="theme">
-        <h2 class="theme_titre">MY DOG</h2>
-        <img
-          src="./img/photo/theme/resize/tipsy.jpg"
-          class="theme_img"
-          alt="couverture de la thématique my dog"
-        />
-      </a> -->
     </section>
+
+    <script>
+      window.sr = ScrollReveal();
+
+      sr.reveal(".theme", {
+        duration: 1000,
+        origin: "center",
+        scale: 0.85,
+        reset: true,
+      });
+    </script>
+
     <div class="contact">
       <h1>Un projet en tête ?</h1>
       <a href="/contact" class="lien_contact">ME CONTACTER</a>

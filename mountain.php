@@ -17,6 +17,7 @@ require 'lib.inc.php';
   <meta name="msapplication-TileColor" content="#00aba9" />
   <meta name="theme-color" content="#ffffff" />
   <link rel="stylesheet" href="./css/styles.css" />
+  <script src="https://unpkg.com/scrollreveal"></script>
 </head>
 
 <body>
@@ -112,7 +113,7 @@ require 'lib.inc.php';
     </div>
   </div>
 
-  <audio class="sound mountain_sound" autoplay loop src="./audio/mountain_sound.mp3"></audio>
+  <audio class="sound mountain_sound" loop src="./audio/mountain_sound.mp3"></audio>
 
   <section class="galerie_web_page">
     <h1>Mountain</h1>
@@ -131,7 +132,16 @@ require 'lib.inc.php';
         echo mountainPaysage($co);
         ?>
       </div>
+      <script>
+        window.sr = ScrollReveal();
 
+        sr.reveal(".container_img", {
+          duration: 1200,
+          origin: "center",
+          scale: 0.85,
+          reset: true,
+        });
+      </script>
     </div>
 
     <div class="container_galerie_bottom">

@@ -5,9 +5,11 @@ export function onPlayButtonVideoGuadeloupe() {
 
   play_guadeloupe.addEventListener("click", () => {
     couverture.classList.add("couverture_active");
-    video_guadeloupe.src = "?autoplay=1";
+    video_guadeloupe.src =
+      "https://www.youtube.com/embed/InO2JlZUKEU?autoplay=1";
   });
 }
+
 export function onPlayButtonVideoAuvergne() {
   const play_auvergne = document.querySelector(".play_auvergne");
   const couverture = document.querySelector(".couverture");
@@ -18,6 +20,7 @@ export function onPlayButtonVideoAuvergne() {
     video_auvergne.src = "https://www.youtube.com/embed/a-VOREJWetA?autoplay=1";
   });
 }
+
 export function onPlayButtonVideoKenzo() {
   const play_kenzo = document.querySelector(".play_kenzo");
   const couverture = document.querySelector(".couverture");

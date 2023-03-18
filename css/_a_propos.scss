@@ -98,7 +98,7 @@
     width: 50%;
     font-family: $font_sf;
     font-size: 1.3vw;
-    font-weight: bold;
+    font-weight: 400;
     color: var(--black);
     text-align: justify;
     margin: 10vh 0;
@@ -106,7 +106,7 @@
     z-index: 1;
 
     .selection {
-      color: var(--primary-color);
+      background-color: var(--primary-color);
     }
   }
 }

@@ -17,6 +17,7 @@ require 'lib.inc.php';
   <meta name="msapplication-TileColor" content="#00aba9" />
   <meta name="theme-color" content="#ffffff" />
   <link rel="stylesheet" href="./css/styles.css" />
+  <script src="https://unpkg.com/scrollreveal"></script>
 </head>
 
 <body>
@@ -115,6 +116,17 @@ require 'lib.inc.php';
         <?php
         echo goldPaysage($co);
         ?>
+
+        <script>
+          window.sr = ScrollReveal();
+
+          sr.reveal(".container_img", {
+            duration: 1200,
+            origin: "center",
+            scale: 0.85,
+            reset: true,
+          });
+        </script>
       </div>
     </div>
 

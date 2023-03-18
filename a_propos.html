@@ -31,6 +31,7 @@
     <meta name="msapplication-TileColor" content="#00aba9" />
     <meta name="theme-color" content="#ffffff" />
     <link rel="stylesheet" href="./css/styles.css" />
+    <script src="https://unpkg.com/scrollreveal"></script>
   </head>
   <body>
     <div class="cursor_follow"></div>
@@ -161,7 +162,7 @@
         <h1 class="title_back">A PROPOS</h1>
         <img
           class="pp"
-          src="./img/a-propos/me.png"
+          src="./img/a_propos/me.png"
           alt="photo de profil d'Enzo Cosson"
         />
         <h1 class="title_front">A PROPOS</h1>
@@ -287,6 +288,16 @@
       </div>
     </footer>
   </body>
+  <script>
+    window.sr = ScrollReveal();
+
+    sr.reveal(".selection", {
+      interval: 100,
+      duration: 1500,
+      origin: "bottom",
+      distance: "50px",
+    });
+  </script>
   <script>
     const pp = document.querySelector(".pp");
     const title_back = document.querySelector(".title_back");
