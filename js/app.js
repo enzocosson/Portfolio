@@ -32,6 +32,9 @@ import {
 } from "./soundButton.js";
 import { infoPhoto } from "./infoPhoto.js";
 import { transitionPages } from "./transitionPages.js";
+// import { feedback } from "./feedback.js";
+
+// getURL------------------------------------------------------------
 
 function getURL() {
   return console.log(window.location.href);
@@ -50,6 +53,7 @@ switch (url) {
     cursorFollow();
     burgerMenuBlackToggle();
     transitionPages();
+    // feedback();
     break;
 
   case "https://www.enzo-cosson.fr/admin/index.php":

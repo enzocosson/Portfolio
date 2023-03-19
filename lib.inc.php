@@ -74,6 +74,60 @@ function sendMessage($co, $prenom, $nom, $email, $theme, $message)
     }
 }
 
+function sendFeedback($co, $prenom, $nom, $email, $note, $commentaire)
+{
+
+    if (!empty($prenom) && !preg_match("/^[a-zA-Z ]*$/", $prenom)) {
+        $_SESSION['erreur_prenom'] = "<p class='erreur'>Le prénom doit contenir uniquement des lettres et des espaces</p>";
+        // header('location:/contact');
+        return;
+    }
+    if (!empty($nom) && !preg_match("/^[a-zA-Z ]*$/", $nom)) {
+        $_SESSION['erreur_nom'] = "<p class='erreur'>Le nom doit contenir uniquement des lettres et des espaces</p>";
+        // header('location:/contact');
+        return;
+    }
+    if (!empty($email) && !filter_var($email, FILTER_VALIDATE_EMAIL)) {
+        $_SESSION['erreur_email'] = "<p class='erreur'>Adresse email invalide</p>";
+        // header('location:/contact');
+        return;
+    }
+    if (strlen($commentaire) > 1000) {
+        $_SESSION['erreur_message'] = "<p class='erreur'>Le message est trop long</p>";
+        // header('location:/contact');
+        return;
+    }
+
+    $req = 'INSERT INTO feedback (prenom, nom, email, note, commentaire) 
+            VALUES (:prenom, :nom, :email, :note, :commentaire)';
+
+    try {
+        $resultat = $co->prepare($req);
+        $resultat->bindParam(':prenom', $prenom, PDO::PARAM_STR);
+        $resultat->bindParam(':nom', $nom, PDO::PARAM_STR);
+        $resultat->bindParam(':email', $email, PDO::PARAM_STR);
+        $resultat->bindParam(':note', $note, PDO::PARAM_INT);
+        $resultat->bindParam(':commentaire', $commentaire, PDO::PARAM_STR);
+        $resultat->execute();
+    } catch (PDOException $e) {
+        echo '<p>Erreur : ' . $e->getMessage() . '</p>';
+        die();
+    }
+    if ($resultat !== false) {
+        if (!empty($prenom)) {
+            $_SESSION['prenom_user'] = htmlspecialchars($prenom);
+        }
+        // header('location:validation.php');
+    } else {
+        echo "<h1>Une erreur est survenue</h1>";
+        // header('location:/contact');
+        die();
+    }
+}
+
+
+
+
 // galerie mountain
 
 function mountainPortrait($co)

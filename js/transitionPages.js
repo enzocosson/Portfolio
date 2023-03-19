@@ -1,12 +1,12 @@
 export function transitionPages() {
-  const links = document.querySelectorAll("a:not(.rth)");
+  const links = document.querySelectorAll(
+    "a:not(.rth, .flashfood, .bdd_redirection, .bdd_redirection_top, .logo_reseaux a, .reseau a)"
+  );
   const transitionLeave = document.querySelector(".transition_leave");
 
-  // Ajoutez un écouteur d'événements à l'objet window pour l'événement "popstate"
   window.addEventListener("popstate", (event) => {
-    // Réinitialisez la classe CSS qui déclenche l'animation
     transitionLeave.classList.remove("transition_leave_active");
-    // Rechargez la page précédente en utilisant l'URL de l'état précédent
+
     window.location.replace(event.state.url);
   });
 

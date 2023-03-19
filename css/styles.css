@@ -458,6 +458,49 @@ header .burger {
   fill: var(--primary-color);
 }
 
+.home_footer .feedback_btn {
+  cursor: pointer;
+  width: 3vw;
+  height: 3vw;
+  margin-bottom: 1vw;
+  border: 0.2vw solid var(--primary-color);
+  border-radius: 50%;
+  background-color: var(--primary-color);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+          box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+
+.home_footer .feedback_btn svg {
+  width: 50%;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+
+.home_footer .feedback_btn svg path {
+  fill: var(--white);
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+
+.home_footer .feedback_btn:hover {
+  background-color: var(--white);
+}
+
+.home_footer .feedback_btn:hover path {
+  fill: var(--primary-color);
+}
+
 .home_footer p {
   color: var(--white);
   font-family: "Inter", sans-serif;
@@ -596,6 +639,321 @@ header .burger {
   z-index: 9999999999999999999999999;
 }
 
+.container_feedback {
+  pointer-events: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 100;
+  opacity: 0;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+  z-index: 9999999999;
+}
+
+.container_feedback .bg_colors_feedback {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.411);
+  z-index: 1;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+
+.container_feedback .feedback {
+  position: relative;
+  background-color: var(--white);
+  width: 40vw;
+  height: 70vh;
+  border-radius: 1vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 2vw;
+  -webkit-box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+          box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+  z-index: 2;
+}
+
+.container_feedback .feedback form {
+  width: 90%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container_feedback .feedback form .title {
+  font-family: Base Neue;
+  font-size: 1.5vw;
+  color: var(--black);
+}
+
+.container_feedback .feedback form p {
+  font-family: "Inter", sans-serif;
+  font-size: 1vw;
+  text-align: justify;
+  color: var(--black);
+}
+
+.container_feedback .feedback form p span {
+  font-weight: bold;
+}
+
+.container_feedback .feedback form .error-message {
+  color: var(--red);
+  font-size: 0.8vw;
+  display: none;
+}
+
+.container_feedback .feedback form .identite {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  row-gap: 1vh;
+}
+
+.container_feedback .feedback form .identite .name {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container_feedback .feedback form .identite .name input {
+  width: 48%;
+  height: 4.5vh;
+  border: 0.15vw solid #383838;
+  border-radius: 0.5vw;
+  padding: 0.5vw;
+  font-family: "Inter", sans-serif;
+  font-size: 0.9vw;
+  color: var(--black);
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+
+.container_feedback .feedback form .identite .name input:focus {
+  outline: none;
+  border: 0.15vw solid var(--primary-color);
+}
+
+.container_feedback .feedback form .identite .email {
+  width: 100%;
+  height: 4.5vh;
+  border: 0.15vw solid #383838;
+  border-radius: 0.5vw;
+  padding: 0.5vw;
+  font-family: "Inter", sans-serif;
+  font-size: 0.9vw;
+  color: var(--black);
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+
+.container_feedback .feedback form .identite .email:focus {
+  outline: none;
+  border: 0.15vw solid var(--primary-color);
+}
+
+.container_feedback .feedback form .notation {
+  position: relative;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container_feedback .feedback form .notation .option {
+  cursor: pointer;
+  width: 2vw;
+  height: 2vw;
+  border: 0.15vw solid var(--black);
+  background-color: var(--white);
+  color: var(--black);
+  border-radius: 50%;
+  font-weight: bold;
+  font-family: Base Neue;
+  font-size: 1vw;
+  letter-spacing: 0.05vw;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+
+.container_feedback .feedback form .notation .option:hover {
+  border: 0.15vw solid var(--primary-color);
+  background-color: var(--primary-color);
+  color: var(--white);
+}
+
+.container_feedback .feedback form .notation span {
+  -webkit-transform: translate(0px, 0.05vh);
+          transform: translate(0px, 0.05vh);
+}
+
+.container_feedback .feedback form .notation input[type="radio" i] {
+  display: none;
+}
+
+.container_feedback .feedback form .notation #option-1:checked:checked ~ .option-1,
+.container_feedback .feedback form .notation #option-2:checked:checked ~ .option-2,
+.container_feedback .feedback form .notation #option-3:checked:checked ~ .option-3,
+.container_feedback .feedback form .notation #option-4:checked:checked ~ .option-4,
+.container_feedback .feedback form .notation #option-5:checked:checked ~ .option-5,
+.container_feedback .feedback form .notation #option-6:checked:checked ~ .option-6,
+.container_feedback .feedback form .notation #option-7:checked:checked ~ .option-7,
+.container_feedback .feedback form .notation #option-8:checked:checked ~ .option-8,
+.container_feedback .feedback form .notation #option-9:checked:checked ~ .option-9,
+.container_feedback .feedback form .notation #option-10:checked:checked ~ .option-10 {
+  border: 0.1vw solid var(--black);
+  background-color: var(--black);
+  color: var(--white);
+}
+
+.container_feedback .feedback form .message {
+  width: 100%;
+  height: 15vh;
+  background-color: var(--white);
+  border: 0.15vw solid #383838;
+  border-radius: 0.5vw;
+  padding: 2vh 1vw;
+  font-family: "Inter", sans-serif;
+  font-size: 0.9vw;
+}
+
+.container_feedback .feedback form .message:focus {
+  outline: none;
+  border: 0.15vw solid var(--primary-color);
+}
+
+.container_feedback .feedback form .interaction {
+  width: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container_feedback .feedback form .interaction .btn {
+  cursor: pointer;
+  width: 48%;
+  height: 4.5vh;
+  border-radius: 0.5vw;
+  font-family: Base Neue;
+  font-size: 1.3vw;
+  color: var(--black);
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+  text-transform: uppercase;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container_feedback .feedback form .interaction .btn_fermer {
+  border: 0.15vw solid var(--black);
+  background-color: var(--black);
+  color: var(--white);
+}
+
+.container_feedback .feedback form .interaction .btn_fermer:hover {
+  background-color: transparent;
+  color: var(--black);
+}
+
+.container_feedback .feedback form .interaction .btn_envoyer {
+  border: 0.15vw solid var(--primary-color);
+  background-color: var(--primary-color);
+  color: var(--white);
+}
+
+.container_feedback .feedback form .interaction .btn_envoyer:hover {
+  background-color: transparent;
+  color: var(--primary-color);
+}
+
+.container_feedback_active {
+  pointer-events: all;
+  opacity: 1;
+  z-index: 9999999999;
+}
+
 @media screen and (max-width: 1124px) {
   header .logo {
     width: 10vw;
@@ -615,13 +973,54 @@ header .burger {
     width: 5vw;
     height: 5vw;
   }
+  .home_footer .feedback_btn {
+    width: 5vw;
+    height: 5vw;
+  }
   .container_sound_button .sound_button {
     width: 5vw;
     height: 5vw;
   }
+  .container_feedback .feedback {
+    width: 70vw;
+    height: 70vh;
+  }
+  .container_feedback .feedback form .title {
+    font-size: 3vw;
+  }
+  .container_feedback .feedback form p {
+    font-size: 1.5vw;
+  }
+  .container_feedback .feedback form .identite .name input {
+    border: 0.2vw solid #383838;
+    font-size: 1.5vw;
+  }
+  .container_feedback .feedback form .identite .email {
+    border: 0.2vw solid #383838;
+    font-size: 1.5vw;
+  }
+  .container_feedback .feedback form .notation .option {
+    width: 4vw;
+    height: 4vw;
+    border: 0.2vw solid var(--black);
+    font-size: 2vw;
+  }
+  .container_feedback .feedback form .message {
+    border: 0.2vw solid #383838;
+    font-size: 1.5vw;
+  }
+  .container_feedback .feedback form .interaction .btn {
+    font-size: 2.5vw;
+  }
+  .container_feedback .feedback form .interaction .btn_envoyer {
+    border: 0.3vw solid var(--primary-color);
+  }
+  .container_feedback .feedback form .interaction .btn_fermer {
+    border: 0.3vw solid var(--black);
+  }
 }
 
-@media screen and (max-width: 780px) {
+@media screen and (max-width: 1124px) and (max-width: 780px) {
   header {
     position: absolute;
     top: 0;
@@ -892,10 +1291,77 @@ header .burger {
   .home_footer .change_color_btn:hover {
     background-color: var(--white);
   }
+  .home_footer .feedback_btn {
+    width: 13vw;
+    height: 13vw;
+    border: 0.7vw solid var(--primary-color);
+  }
   .container_sound_button .sound_button {
     width: 13vw;
     height: 13vw;
     border: 0.7vw solid var(--primary-color);
+  }
+  .container_feedback .feedback {
+    width: 80vw;
+    height: 70vh;
+    border-radius: 2vw;
+  }
+  .container_feedback .feedback form .title {
+    font-size: 5vw;
+  }
+  .container_feedback .feedback form p {
+    font-size: 3vw;
+  }
+  .container_feedback .feedback form .identite .name {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    row-gap: 1vh;
+  }
+  .container_feedback .feedback form .identite .name input {
+    height: 5vh;
+    width: 100%;
+    border: 0.5vw solid #383838;
+    font-size: 3vw;
+    border-radius: 1.2vw;
+    padding: 0vh 1.5vw;
+  }
+  .container_feedback .feedback form .identite .email {
+    height: 5vh;
+    border: 0.5vw solid #383838;
+    font-size: 3vw;
+    border-radius: 1.2vw;
+    padding: 0vh 1.5vw;
+  }
+  .container_feedback .feedback form .notation .option {
+    width: 6vw;
+    height: 6vw;
+    border: 0.5vw solid var(--black);
+    font-size: 3vw;
+  }
+  .container_feedback .feedback form .message {
+    border: 0.5vw solid #383838;
+    font-size: 3vw;
+    border-radius: 1.2vw;
+    padding: 2vh 1.5vw;
+  }
+  .container_feedback .feedback form .interaction {
+    width: 80%;
+  }
+  .container_feedback .feedback form .interaction .btn {
+    font-size: 3.5vw;
+  }
+  .container_feedback .feedback form .interaction .btn_envoyer {
+    border: 0.5vw solid var(--primary-color);
+    border-radius: 1.2vw;
+  }
+  .container_feedback .feedback form .interaction .btn_fermer {
+    border: 0.5vw solid var(--black);
+    border-radius: 1.2vw;
   }
 }
 
@@ -4770,10 +5236,12 @@ header .burger {
 .photo_video_web_page .container_photo .couverture img,
 .photo_video_web_page .container_video .couverture img {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%) scale(1.1);
-          transform: translate(-50%, -50%) scale(1.1);
+  top: 0%;
+  left: 0%;
+  -webkit-transform: translate(0%, 0%) scale(1.1);
+          transform: translate(0%, 0%) scale(1.1);
+  -webkit-transform-origin: center;
+          transform-origin: center;
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
@@ -4796,8 +5264,8 @@ header .burger {
 .photo_video_web_page .container_photo .couverture:hover img,
 .photo_video_web_page .container_video .couverture:hover img {
   opacity: 0.3;
-  -webkit-transform: translate(-50%, -50%) scale(1);
-          transform: translate(-50%, -50%) scale(1);
+  -webkit-transform: translate(0%, 0%) scale(1);
+          transform: translate(0%, 0%) scale(1);
 }
 
 @media screen and (max-width: 1124px) {
@@ -7129,6 +7597,45 @@ header .burger {
   z-index: 2;
 }
 
+.presentation_site .bdd_redirection_top {
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  cursor: pointer;
+  width: 20vw;
+  height: 5vh;
+  background-color: var(--white);
+  border-radius: 0.5vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: var(--primary-color);
+  font-family: Base Neue;
+  text-decoration: none;
+  font-size: 1.5vw;
+  -webkit-box-shadow: 0px 0px 10px 5px rgba(255, 255, 255, 0);
+          box-shadow: 0px 0px 10px 5px rgba(255, 255, 255, 0);
+  border: 0.2vw solid var(--white);
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+  z-index: 10;
+}
+
+.presentation_site .bdd_redirection_top:hover {
+  background-color: var(--primary-color);
+  color: var(--white);
+  -webkit-box-shadow: 0px 0px 10px 5px rgba(255, 255, 255, 0.123);
+          box-shadow: 0px 0px 10px 5px rgba(255, 255, 255, 0.123);
+}
+
 .more_info {
   position: relative;
   width: 100%;
@@ -7614,12 +8121,16 @@ header .burger {
 }
 
 .bdd_more .bdd_redirection {
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   cursor: pointer;
-  margin-top: 5vh;
   width: 20vw;
   height: 5vh;
   background-color: var(--primary-color);
-  border-radius: 2vw;
+  border-radius: 0.5vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -7629,20 +8140,21 @@ header .burger {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  color: var(--white);
+  color: var(--black);
   font-family: Base Neue;
   text-decoration: none;
   font-size: 1.5vw;
   -webkit-box-shadow: 0px 0px 10px 5px rgba(255, 255, 255, 0);
           box-shadow: 0px 0px 10px 5px rgba(255, 255, 255, 0);
+  border: 0.2vw solid var(--primary-color);
   -webkit-transition: 0.4s ease-in-out;
   transition: 0.4s ease-in-out;
+  z-index: 10;
 }
 
 .bdd_more .bdd_redirection:hover {
   background-color: var(--black);
   color: var(--primary-color);
-  border: 0.1vw solid var(--primary-color);
   -webkit-box-shadow: 0px 0px 10px 5px rgba(255, 255, 255, 0.123);
           box-shadow: 0px 0px 10px 5px rgba(255, 255, 255, 0.123);
 }

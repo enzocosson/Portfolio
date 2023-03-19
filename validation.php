@@ -36,6 +36,7 @@ header("Refresh: 4;URL=/accueil");
 
 </body>
 <script src="./js/generateColor.js"></script>
+<script src="./js/feedback.js"></script>
 <script type="module" src="./js/app.js"></script>
 
 </html>

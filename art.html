@@ -63,6 +63,107 @@
       </div>
     </section>
 
+    <section class="container_feedback">
+      <div class="bg_colors_feedback"></div>
+      <div class="feedback">
+        <form
+          class="form_feedback"
+          action="feedback_traitement.php"
+          method="post"
+        >
+          <h1 class="title">Votre avis compte !</h1>
+          <p>
+            Vos commentaires m'aideront à comprendre comment les visiteurs
+            perçoivent mon travail et à trouver des moyens pour l'améliorer.
+            <br />
+            <span>Prénom</span>, <span>Nom</span> et <span>Email</span> sont
+            facultatifs
+          </p>
+
+          <div class="identite">
+            <div class="name">
+              <input
+                type="text"
+                placeholder="Prénom"
+                name="prenom"
+                id="prenom"
+              />
+              <input type="text" placeholder="Nom" name="nom" id="nom" />
+            </div>
+            <input
+              class="email"
+              type="email"
+              name="email"
+              placeholder="Email"
+            />
+          </div>
+          <div class="notation">
+            <input type="radio" name="note" id="option-1" value="1" required />
+            <input type="radio" name="note" id="option-2" value="2" required />
+            <input type="radio" name="note" id="option-3" value="3" required />
+            <input type="radio" name="note" id="option-4" value="4" required />
+            <input type="radio" name="note" id="option-5" value="5" required />
+            <input type="radio" name="note" id="option-6" value="6" required />
+            <input type="radio" name="note" id="option-7" value="7" required />
+            <input type="radio" name="note" id="option-8" value="8" required />
+            <input type="radio" name="note" id="option-9" value="9" required />
+            <input
+              type="radio"
+              name="note"
+              id="option-10"
+              value="10"
+              required
+            />
+
+            <label for="option-1" class="option option-1">
+              <span>1</span>
+            </label>
+            <label for="option-2" class="option option-2">
+              <span>2</span>
+            </label>
+            <label for="option-3" class="option option-3">
+              <span>3</span>
+            </label>
+            <label for="option-4" class="option option-4">
+              <span>4</span>
+            </label>
+            <label for="option-5" class="option option-5">
+              <span>5</span>
+            </label>
+            <label for="option-6" class="option option-6">
+              <span>6</span>
+            </label>
+            <label for="option-7" class="option option-7">
+              <span>7</span>
+            </label>
+            <label for="option-8" class="option option-8">
+              <span>8</span>
+            </label>
+            <label for="option-9" class="option option-9">
+              <span>9</span>
+            </label>
+            <label for="option-10" class="option option-10">
+              <span>10</span>
+            </label>
+          </div>
+          <p class="error-message">Merci de noter le site sur 10</p>
+          <textarea
+            class="message"
+            name="commentaire"
+            id="commentaire"
+            cols="30"
+            rows="10"
+            placeholder="Votre commentaire"
+            required
+          ></textarea>
+          <div class="interaction">
+            <div class="btn btn_fermer">Fermer</div>
+            <button class="btn btn_envoyer" type="submit">Envoyer</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
     <header class="header" id="rth">
       <a href="/accueil" class="pagelink">
         <img
@@ -143,7 +244,7 @@
         </svg>
       </button>
 
-      <button onclick="generateColors()" class="change_color_btn" href="">
+      <button onclick="generateColors()" class="change_color_btn">
         <svg
           width="54"
           height="54"
@@ -157,19 +258,36 @@
           />
         </svg>
       </button>
+      <button onclick="generateFeedback()" class="feedback_btn" href="">
+        <svg
+          width="80"
+          height="80"
+          viewBox="0 0 80 80"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M72 0H8C3.6 0 0.04 3.6 0.04 8L0 80L16 64H72C76.4 64 80 60.4 80 56V8C80 3.6 76.4 0 72 0ZM64 48H16V40H64V48ZM64 36H16V28H64V36ZM64 24H16V16H64V24Z"
+            fill="#FCFCFC"
+          />
+        </svg>
+      </button>
     </div>
 
     <main data-barba="container" data-barba-namespace="pageDev">
-      <section
-        class="presentation_site barba-container"
-        data-namespace="imovix"
-      >
+      <section class="presentation_site">
         <h1 class="bg_title">ART</h1>
         <img
           class="imac"
           src="./img/mockup/imac_art.webp"
           alt="imac sur le site d'une galerie d'art"
         />
+        <a
+          class="bdd_redirection_top"
+          href="https://mmi21e03.mmi-troyes.fr/galerie-art"
+          target="_blank"
+          >Y accéder</a
+        >
       </section>
 
       <div class="more_info">
@@ -272,13 +390,13 @@
             />
           </a>
 
-          <a href="" class="autres_sites_cards">
+          <!-- <a href="" class="autres_sites_cards">
             <img
               class="autres_sites_cards_img"
               src="./img/cards/cards_dji.png"
               alt="site dji"
             />
-          </a>
+          </a> -->
 
           <a href="/soda" class="autres_sites_cards">
             <img
@@ -288,21 +406,21 @@
             />
           </a>
 
-          <a href="" class="autres_sites_cards">
+          <!--    <a href="" class="autres_sites_cards">
             <img
               class="autres_sites_cards_img"
               src="./img/cards/cards_dior.png"
               alt="site dior"
             />
-          </a>
+          </a> -->
 
-          <a href="" class="autres_sites_cards">
+          <!--   <a href="" class="autres_sites_cards">
             <img
               class="autres_sites_cards_img"
               src="./img/cards/cards_drugoptimal.png"
               alt="site drug optimal"
             />
-          </a>
+          </a> -->
 
           <a href="" class="autres_sites_cards">
             <img
@@ -312,13 +430,13 @@
             />
           </a>
 
-          <a href="" class="autres_sites_cards">
+          <!--   <a href="" class="autres_sites_cards">
             <img
               class="autres_sites_cards_img"
               src="./img/cards/cards_gopro.png"
               alt="site gopro"
             />
-          </a>
+          </a> -->
         </div>
       </div>
 
@@ -464,5 +582,6 @@
     referrerpolicy="no-referrer"
   ></script>
   <script src="./js/generateColor.js"></script>
+  <script src="./js/feedback.js"></script>
   <script type="module" src="./js/app.js"></script>
 </html>
