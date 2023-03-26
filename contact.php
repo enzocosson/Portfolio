@@ -209,13 +209,13 @@
                     unset($_SESSION['erreur_email']);
                 } ?>
                 <div class="theme">
-                    <input type="radio" name="theme" id="option-1" value="DEVELOPPEMENT WEB">
-                    <input type="radio" name="theme" id="option-2" value="PHOTO / VIDEO">
+                    <input type="radio" name="theme" id="option-1_contact" value="DEVELOPPEMENT WEB">
+                    <input type="radio" name="theme" id="option-2_contact" value="PHOTO / VIDEO">
 
-                    <label for="option-1" class="option option-1">
+                    <label for="option-1_contact" class="option_contact option-1_contact">
                         <span>DEVELOPPEMENT WEB</span>
                     </label>
-                    <label for="option-2" class="option option-2">
+                    <label for="option-2_contact" class="option_contact option-2_contact">
                         <span>PHOTO / VIDEO</span>
                     </label>
                 </div>

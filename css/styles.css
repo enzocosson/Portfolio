@@ -8853,7 +8853,7 @@ header .burger {
   font-size: 0.8vw;
 }
 
-.contact_page .container_formulaire form .theme .option {
+.contact_page .container_formulaire form .theme .option_contact {
   cursor: pointer;
   width: 47%;
   height: 4.5vh;
@@ -8885,8 +8885,8 @@ header .burger {
   display: none;
 }
 
-.contact_page .container_formulaire form .theme #option-1:checked:checked ~ .option-1,
-.contact_page .container_formulaire form .theme #option-2:checked:checked ~ .option-2 {
+.contact_page .container_formulaire form .theme #option-1_contact:checked:checked ~ .option-1_contact,
+.contact_page .container_formulaire form .theme #option-2_contact:checked:checked ~ .option-2_contact {
   border: 0.25vw solid var(--primary-color);
   background-color: var(--primary-color);
   color: var(--white);
@@ -9368,10 +9368,123 @@ header .burger {
   font-style: italic;
 }
 
+.validation_feedback {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background-color: var(--black);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.validation_feedback .loading_redirection {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100vh;
+  background-color: var(--primary-color);
+  z-index: 1;
+  -webkit-animation: loading_redirection 2s ease-in-out 1 forwards;
+          animation: loading_redirection 2s ease-in-out 1 forwards;
+}
+
+@keyframes loading_redirection {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+.validation_feedback .validation__container {
+  background-color: var(--white);
+  width: 40vw;
+  height: 40vh;
+  border-radius: 2vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+          box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  z-index: 2;
+}
+
+.validation_feedback .validation__container .validation__title {
+  font-size: 2vw;
+  color: var(--black);
+  font-family: Base Neue;
+  text-align: center;
+  margin-bottom: 1vh;
+}
+
+.validation_feedback .validation__container .validation__text {
+  font-size: 1.2vw;
+  color: var(--black);
+  font-family: "Inter", sans-serif;
+  text-align: center;
+  margin-bottom: 6vh;
+}
+
+.validation_feedback .validation__container .validation__redirection {
+  font-size: 0.8vw;
+  color: var(--black);
+  font-family: "Inter", sans-serif;
+  text-align: center;
+  font-style: italic;
+}
+
+@media screen and (max-width: 1124px) {
+  .validation .validation__container {
+    width: 80vw;
+    height: 40vh;
+    padding: 4vw;
+  }
+  .validation .validation__container .validation__title {
+    font-size: 5vw;
+  }
+  .validation .validation__container .validation__text {
+    font-size: 3vw;
+  }
+  .validation .validation__container .validation__redirection {
+    font-size: 2.5vw;
+  }
+  .validation_feedback .validation__container {
+    width: 80vw;
+    height: 40vh;
+    padding: 4vw;
+  }
+  .validation_feedback .validation__container .validation__title {
+    font-size: 5vw;
+  }
+  .validation_feedback .validation__container .validation__redirection {
+    font-size: 2.5vw;
+  }
+}
+
 @media screen and (max-width: 780px) {
   .validation .validation__container {
     width: 90vw;
     height: 40vh;
+    padding: 5vw;
   }
   .validation .validation__container .validation__title {
     font-size: 6.5vw;
@@ -9380,6 +9493,20 @@ header .burger {
     font-size: 5.2vw;
   }
   .validation .validation__container .validation__redirection {
+    font-size: 3vw;
+  }
+  .validation_feedback .validation__container {
+    width: 90vw;
+    height: 40vh;
+    padding: 5vw;
+  }
+  .validation_feedback .validation__container .validation__title {
+    font-size: 6.5vw;
+  }
+  .validation_feedback .validation__container .validation__text {
+    font-size: 5.2vw;
+  }
+  .validation_feedback .validation__container .validation__redirection {
     font-size: 3vw;
   }
 }

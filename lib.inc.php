@@ -117,10 +117,10 @@ function sendFeedback($co, $prenom, $nom, $email, $note, $commentaire)
         if (!empty($prenom)) {
             $_SESSION['prenom_user'] = htmlspecialchars($prenom);
         }
-        // header('location:validation.php');
+        header('location:validation_feedback.php');
     } else {
         echo "<h1>Une erreur est survenue</h1>";
-        // header('location:/contact');
+        header('location:/accueil');
         die();
     }
 }
