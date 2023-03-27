@@ -529,53 +529,6 @@ switch (url) {
     transitionPages();
     break;
 
-  // -----------
-  // case "http://192.168.1.75:5500/mountain":
-  //   loader();
-  //   darkModeGalerie();
-  //   scrollMagicGalerie();
-  //   cursorFollow();
-  //   burgerMenuToggle();
-  //   soundButtonMountain();
-  //   infoPhoto();
-  //   transitionPages();
-
-  //   break;
-  // case "http://10.152.21.50:5500/mountain":
-  //   loader();
-  //   darkModeGalerie();
-  //   scrollMagicGalerie();
-  //   cursorFollow();
-  //   burgerMenuBlackToggle();
-  //   soundButtonMountain();
-  //   infoPhoto();
-  //   transitionPages();
-
-  //   break;
-  // case "http://192.168.1.77:5500/mountain":
-  //   loader();
-  //   darkModeGalerie();
-  //   scrollMagicGalerie();
-  //   cursorFollow();
-  //   burgerMenuBlackToggle();
-  //   soundButtonMountain();
-  //   infoPhoto();
-  //   transitionPages();
-
-  //   break;
-  // case "https://www.enzo-cosson.fr/mountain":
-  //   loader();
-  //   darkModeGalerie();
-  //   scrollMagicGalerie();
-  //   cursorFollow();
-  //   burgerMenuBlackToggle();
-  //   soundButtonMountain();
-  //   infoPhoto();
-  //   transitionPages();
-
-  //   break;
-
-  // -----------
   case "http://192.168.1.75:5500/mountain":
     loader();
     darkModeGalerie();

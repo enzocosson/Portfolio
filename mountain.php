@@ -192,7 +192,7 @@ require 'lib.inc.php';
     </div>
   </div>
 
-  <audio class="sound mountain_sound" loop src="./audio/mountain_sound.mp3"></audio>
+  <audio class="sound mountain_sound" autoplay loop src="./audio/mountain_sound.mp3"></audio>
 
   <section class="galerie_web_page">
     <h1>Mountain</h1>
