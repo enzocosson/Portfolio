@@ -165,29 +165,35 @@
     </section>
 
     <header class="header" id="rth">
-      <a href="/accueil" class="pagelink">
-        <img
-          class="logo logo_white"
-          src="./img/white_logo.png"
-          alt="logo du site"
-        />
-        <img
-          class="logo logo_black"
-          src="./img/black_logo.png"
-          alt="logo du site"
-        />
-      </a>
+      <li style="--i: 0" class="logo_li">
+        <a href="/accueil" class="pagelink">
+          <img
+            class="logo logo_white"
+            src="./img/white_logo.png"
+            alt="logo du site"
+          />
+          <img
+            class="logo logo_black"
+            src="./img/black_logo.png"
+            alt="logo du site"
+          />
+        </a>
+      </li>
 
       <ul class="menu">
-        <li><a class="links barba-link" href="/accueil">Accueil</a></li>
-        <li>
+        <li style="--i: 1">
+          <a class="links barba-link" href="/accueil">Accueil</a>
+        </li>
+        <li style="--i: 2">
           <a class="links barba-link" href="/developpement-web"
             >Développement web | Design</a
           >
         </li>
-        <li><a class="links" href="/photo-video">Photos | Videos</a></li>
-        <li><a class="links" href="/a-propos">À propos</a></li>
-        <li class="li_contact">
+        <li style="--i: 3">
+          <a class="links" href="/photo-video">Photos | Videos</a>
+        </li>
+        <li style="--i: 4"><a class="links" href="/a-propos">À propos</a></li>
+        <li style="--i: 5" class="li_contact">
           <a class="links" id="contact" href="/contact">Contact</a>
         </li>
       </ul>
@@ -557,6 +563,11 @@
       </footer>
     </main>
   </body>
+  <script>
+    window.addEventListener("load", function () {
+      document.body.classList.add("body_loaded");
+    });
+  </script>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/BezierPlugin.min.js"></script>
   <script

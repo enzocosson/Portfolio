@@ -59,7 +59,8 @@
 
     form {
       width: 80%;
-      height: 70%;
+      // height: 70%;
+      row-gap: 2vh;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
@@ -88,7 +89,7 @@
         .prenom,
         .nom {
           width: 47%;
-          height: 6vh;
+          height: 3.5vw;
           border: 0.25vw solid var(--primary-color);
           border-radius: 0.7vw;
           padding: 0 1vw;
@@ -100,7 +101,7 @@
       }
       .email {
         width: 100%;
-        height: 6vh;
+        height: 3.5vw;
         border: 0.25vw solid var(--primary-color);
         background-color: var(--white);
         border-radius: 0.7vw;
@@ -121,7 +122,7 @@
         .option_contact {
           cursor: pointer;
           width: 47%;
-          height: 4.5vh;
+          height: 3vw;
           border: 0.25vw solid var(--primary-color);
           background-color: var(--white);
           color: var(--black);
@@ -178,7 +179,7 @@
       }
       .message {
         width: 100%;
-        height: 25vh;
+        height: 17vw;
         background-color: var(--white);
         border: 0.25vw solid var(--primary-color);
         border-radius: 0.7vw;
@@ -238,10 +239,11 @@
           border: 0.4vw solid var(--primary-color);
         }
         .theme {
-          .option {
+          .option_contact {
             cursor: pointer;
-            font-size: 1.1vw;
+            font-size: 1.5vw;
             border: 0.4vw solid var(--primary-color);
+            height: 3.5vw;
           }
         }
         .message {
@@ -274,23 +276,27 @@
         .identite {
           .nom,
           .prenom {
+            height: 6vw;
             font-size: 1.5vw;
             border: 0.5vw solid var(--primary-color);
           }
         }
 
         .email {
+          height: 6vw;
           font-size: 1.5vw;
           border: 0.5vw solid var(--primary-color);
         }
         .theme {
-          .option {
+          .option_contact {
             cursor: pointer;
-            font-size: 1.5vw;
+            font-size: 1.8vw;
             border: 0.5vw solid var(--primary-color);
+            height: 5vw;
           }
         }
         .message {
+          height: 25vw;
           padding: 2vh 3vw;
           font-size: 1.5vw;
           border: 0.5vw solid var(--primary-color);
@@ -314,11 +320,14 @@
     .container_formulaire {
       width: 95vw;
       height: 84vh;
-
+      box-shadow: none;
+      background-color: transparent;
       .entete {
-        font-size: 5vw;
+        font-size: 10vw;
+        color: var(--white);
       }
       form {
+        width: 90%;
         .erreur {
           font-size: 2vw;
         }
@@ -328,35 +337,47 @@
 
           .nom,
           .prenom {
+            height: 10vw;
             width: 100%;
             font-size: 3vw;
             padding: 0 3vw;
             border-radius: 1.5vw;
-            border: 0.8vw solid var(--primary-color);
+            border: 0.8vw solid var(--white);
           }
         }
         .email {
+          height: 10vw;
           font-size: 3vw;
           padding: 0 3vw;
           border-radius: 1.5vw;
-          border: 0.8vw solid var(--primary-color);
+          border: 0.8vw solid var(--white);
         }
         .theme {
-          .option {
+          .option_contact {
             cursor: pointer;
-            border: 0.8vw solid var(--primary-color);
+            border: 0.8vw solid var(--white);
+            background-color: var(--primary-color);
+            color: var(--white);
             border-radius: 1.2vw;
-            font-size: 3vw;
+            font-size: 3.5vw;
+            height: 9vw;
+          }
+          #option-1_contact:checked:checked ~ .option-1_contact,
+          #option-2_contact:checked:checked ~ .option-2_contact {
+            border: 0.8vw solid var(--white);
+            background-color: var(--white);
+            color: var(--primary-color);
           }
         }
         .message {
+          height: 40vw;
           font-size: 3vw;
           padding: 2vh 3vw;
           border-radius: 1.5vw;
-          border: 0.8vw solid var(--primary-color);
+          border: 0.8vw solid var(--white);
         }
         .envoyer {
-          border: 0.8vw solid var(--primary-color);
+          border: 0.8vw solid var(--white);
           border-radius: 1.5vw;
           font-size: 4vw;
         }

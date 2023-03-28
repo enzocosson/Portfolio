@@ -43,6 +43,7 @@ header {
   .logo_black_galerie_active {
     display: none;
   }
+
   .menu {
     position: relative;
     list-style: none;
@@ -97,6 +98,7 @@ header {
         }
       }
     }
+
     .li_contact {
       margin-right: 0;
       padding: calc(1vh - (3px)) 1vw;
@@ -127,6 +129,11 @@ header {
         display: none;
       }
     }
+  }
+  .logo_li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
   }
   .burger {
     display: none;
@@ -642,6 +649,54 @@ header {
   opacity: 1;
   z-index: 9999999999;
 }
+
+.body_loaded {
+  li {
+    animation: links_animation 1.5s 1 cubic-bezier(0.75, 0, 0.35, 0.98) forwards;
+    animation-delay: calc(0.2s + (var(--i) * 0.1s));
+  }
+
+  @keyframes links_animation {
+    from {
+      transform: translateY(-100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0%);
+      opacity: 1;
+    }
+  }
+
+  .me {
+    animation: me_animation 2s 1 cubic-bezier(0.89, 0.01, 0.58, 1) forwards;
+    animation-delay: 2s;
+  }
+  @keyframes me_animation {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  .title_portfolio {
+    &::before {
+      animation: title_portfolio_animation 2s 1
+        cubic-bezier(0.89, 0.01, 0.58, 1) forwards;
+      animation-delay: 0.3s;
+    }
+    @keyframes title_portfolio_animation {
+      from {
+        width: 100%;
+      }
+      to {
+        width: 0%;
+      }
+    }
+  }
+}
+
 //-----------------responsive------------------------------------------
 
 @media screen and (max-width: 1124px) {

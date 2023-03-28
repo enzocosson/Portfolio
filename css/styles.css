@@ -272,6 +272,12 @@ header .menu .li_contact::before, header .menu .li_contact::after {
   display: none;
 }
 
+header .logo_li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
 header .burger {
   display: none;
 }
@@ -952,6 +958,89 @@ header .burger {
   pointer-events: all;
   opacity: 1;
   z-index: 9999999999;
+}
+
+.body_loaded li {
+  -webkit-animation: links_animation 1.5s 1 cubic-bezier(0.75, 0, 0.35, 0.98) forwards;
+          animation: links_animation 1.5s 1 cubic-bezier(0.75, 0, 0.35, 0.98) forwards;
+  -webkit-animation-delay: calc(0.2s + (var(--i) * 0.1s));
+          animation-delay: calc(0.2s + (var(--i) * 0.1s));
+}
+
+@-webkit-keyframes links_animation {
+  from {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
+@keyframes links_animation {
+  from {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
+.body_loaded .me {
+  -webkit-animation: me_animation 2s 1 cubic-bezier(0.89, 0.01, 0.58, 1) forwards;
+          animation: me_animation 2s 1 cubic-bezier(0.89, 0.01, 0.58, 1) forwards;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+}
+
+@-webkit-keyframes me_animation {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes me_animation {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.body_loaded .title_portfolio::before {
+  -webkit-animation: title_portfolio_animation 2s 1 cubic-bezier(0.89, 0.01, 0.58, 1) forwards;
+          animation: title_portfolio_animation 2s 1 cubic-bezier(0.89, 0.01, 0.58, 1) forwards;
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s;
+}
+
+@-webkit-keyframes title_portfolio_animation {
+  from {
+    width: 100%;
+  }
+  to {
+    width: 0%;
+  }
+}
+
+@keyframes title_portfolio_animation {
+  from {
+    width: 100%;
+  }
+  to {
+    width: 0%;
+  }
 }
 
 @media screen and (max-width: 1124px) {
@@ -2128,11 +2217,13 @@ header .burger {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   z-index: -1;
+  opacity: 0;
   -webkit-transition: 0.5s ease-out;
   transition: 0.5s ease-out;
 }
 
 .home .title .title_portfolio {
+  position: relative;
   pointer-events: none;
   font-family: Base Neue;
   font-weight: 600;
@@ -2145,6 +2236,21 @@ header .burger {
   line-height: 20vh;
   margin-top: 10vh;
   line-height: 25vh;
+  -webkit-transition: 0.3s ease-out;
+  transition: 0.3s ease-out;
+}
+
+.home .title .title_portfolio::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 100%;
+  height: 110%;
+  background-color: var(--primary-color);
+  z-index: 1;
   -webkit-transition: 0.3s ease-out;
   transition: 0.3s ease-out;
 }
@@ -4856,6 +4962,31 @@ header .burger {
   color: var(--white);
 }
 
+.maj {
+  width: 100%;
+  height: 10vh;
+  background-color: var(--white);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.maj p {
+  font-size: 1.5vw;
+  font-family: Base Neue;
+  color: var(--black);
+}
+
 @media screen and (max-width: 1124px) {
   .developpement_web_page .myProject img {
     width: 1.3vw;
@@ -4965,6 +5096,31 @@ header .burger {
     -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
   }
+}
+
+.maj {
+  width: 100%;
+  height: 10vh;
+  background-color: var(--white);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.maj p {
+  font-size: 1.9vw;
+  font-family: Base Neue;
+  color: var(--black);
 }
 
 @media screen and (max-width: 780px) {
@@ -5164,6 +5320,31 @@ header .burger {
     transition: transform 1s cubic-bezier(0.81, -0.01, 0.34, 0.99);
     transition: transform 1s cubic-bezier(0.81, -0.01, 0.34, 0.99), -webkit-transform 1s cubic-bezier(0.81, -0.01, 0.34, 0.99);
     overflow: hidden;
+  }
+  .maj {
+    width: 100%;
+    height: 10vh;
+    background-color: var(--white);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .maj p {
+    text-align: center;
+    width: 80%;
+    font-size: 3vw;
+    font-family: Base Neue;
+    color: var(--black);
   }
 }
 
@@ -8776,7 +8957,7 @@ header .burger {
 
 .contact_page .container_formulaire form {
   width: 80%;
-  height: 70%;
+  row-gap: 2vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -8819,7 +9000,7 @@ header .burger {
 .contact_page .container_formulaire form .identite .prenom,
 .contact_page .container_formulaire form .identite .nom {
   width: 47%;
-  height: 6vh;
+  height: 3.5vw;
   border: 0.25vw solid var(--primary-color);
   border-radius: 0.7vw;
   padding: 0 1vw;
@@ -8830,7 +9011,7 @@ header .burger {
 
 .contact_page .container_formulaire form .email {
   width: 100%;
-  height: 6vh;
+  height: 3.5vw;
   border: 0.25vw solid var(--primary-color);
   background-color: var(--white);
   border-radius: 0.7vw;
@@ -8856,7 +9037,7 @@ header .burger {
 .contact_page .container_formulaire form .theme .option_contact {
   cursor: pointer;
   width: 47%;
-  height: 4.5vh;
+  height: 3vw;
   border: 0.25vw solid var(--primary-color);
   background-color: var(--white);
   color: var(--black);
@@ -8926,7 +9107,7 @@ header .burger {
 
 .contact_page .container_formulaire form .message {
   width: 100%;
-  height: 25vh;
+  height: 17vw;
   background-color: var(--white);
   border: 0.25vw solid var(--primary-color);
   border-radius: 0.7vw;
@@ -8976,10 +9157,11 @@ header .burger {
     font-size: 1.1vw;
     border: 0.4vw solid var(--primary-color);
   }
-  .contact_page .container_formulaire form .theme .option {
+  .contact_page .container_formulaire form .theme .option_contact {
     cursor: pointer;
-    font-size: 1.1vw;
+    font-size: 1.5vw;
     border: 0.4vw solid var(--primary-color);
+    height: 3.5vw;
   }
   .contact_page .container_formulaire form .message {
     padding: 2vh 3vw;
@@ -9005,19 +9187,23 @@ header .burger {
   }
   .contact_page .container_formulaire form .identite .nom,
   .contact_page .container_formulaire form .identite .prenom {
+    height: 6vw;
     font-size: 1.5vw;
     border: 0.5vw solid var(--primary-color);
   }
   .contact_page .container_formulaire form .email {
+    height: 6vw;
     font-size: 1.5vw;
     border: 0.5vw solid var(--primary-color);
   }
-  .contact_page .container_formulaire form .theme .option {
+  .contact_page .container_formulaire form .theme .option_contact {
     cursor: pointer;
-    font-size: 1.5vw;
+    font-size: 1.8vw;
     border: 0.5vw solid var(--primary-color);
+    height: 5vw;
   }
   .contact_page .container_formulaire form .message {
+    height: 25vw;
     padding: 2vh 3vw;
     font-size: 1.5vw;
     border: 0.5vw solid var(--primary-color);
@@ -9035,9 +9221,16 @@ header .burger {
   .contact_page .container_formulaire {
     width: 95vw;
     height: 84vh;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    background-color: transparent;
   }
   .contact_page .container_formulaire .entete {
-    font-size: 5vw;
+    font-size: 10vw;
+    color: var(--white);
+  }
+  .contact_page .container_formulaire form {
+    width: 90%;
   }
   .contact_page .container_formulaire form .erreur {
     font-size: 2vw;
@@ -9051,32 +9244,44 @@ header .burger {
   }
   .contact_page .container_formulaire form .identite .nom,
   .contact_page .container_formulaire form .identite .prenom {
+    height: 10vw;
     width: 100%;
     font-size: 3vw;
     padding: 0 3vw;
     border-radius: 1.5vw;
-    border: 0.8vw solid var(--primary-color);
+    border: 0.8vw solid var(--white);
   }
   .contact_page .container_formulaire form .email {
+    height: 10vw;
     font-size: 3vw;
     padding: 0 3vw;
     border-radius: 1.5vw;
-    border: 0.8vw solid var(--primary-color);
+    border: 0.8vw solid var(--white);
   }
-  .contact_page .container_formulaire form .theme .option {
+  .contact_page .container_formulaire form .theme .option_contact {
     cursor: pointer;
-    border: 0.8vw solid var(--primary-color);
+    border: 0.8vw solid var(--white);
+    background-color: var(--primary-color);
+    color: var(--white);
     border-radius: 1.2vw;
-    font-size: 3vw;
+    font-size: 3.5vw;
+    height: 9vw;
+  }
+  .contact_page .container_formulaire form .theme #option-1_contact:checked:checked ~ .option-1_contact,
+  .contact_page .container_formulaire form .theme #option-2_contact:checked:checked ~ .option-2_contact {
+    border: 0.8vw solid var(--white);
+    background-color: var(--white);
+    color: var(--primary-color);
   }
   .contact_page .container_formulaire form .message {
+    height: 40vw;
     font-size: 3vw;
     padding: 2vh 3vw;
     border-radius: 1.5vw;
-    border: 0.8vw solid var(--primary-color);
+    border: 0.8vw solid var(--white);
   }
   .contact_page .container_formulaire form .envoyer {
-    border: 0.8vw solid var(--primary-color);
+    border: 0.8vw solid var(--white);
     border-radius: 1.5vw;
     font-size: 4vw;
   }

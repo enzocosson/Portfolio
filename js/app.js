@@ -32,7 +32,7 @@ import {
 } from "./soundButton.js";
 import { infoPhoto } from "./infoPhoto.js";
 import { transitionPages } from "./transitionPages.js";
-// import { feedback } from "./feedback.js";
+import { revealAnimtaion } from "./revealAnimation.js";
 
 // getURL------------------------------------------------------------
 
@@ -329,6 +329,7 @@ switch (url) {
     cursorFollow();
     burgerMenuToggle();
     transitionPages();
+    revealAnimtaion();
     break;
   case "https://www.enzo-cosson.fr/#works":
     loader();
@@ -337,6 +338,7 @@ switch (url) {
     cursorFollow();
     burgerMenuToggle();
     transitionPages();
+    revealAnimtaion();
     break;
   case "https://www.enzo-cosson.fr/#rth":
     loader();
@@ -345,6 +347,7 @@ switch (url) {
     cursorFollow();
     burgerMenuToggle();
     transitionPages();
+    revealAnimtaion();
     break;
   case "http://192.168.1.75:5500/accueil#works":
     loader();
@@ -353,6 +356,7 @@ switch (url) {
     cursorFollow();
     burgerMenuToggle();
     transitionPages();
+    revealAnimtaion();
     break;
 
   case "http://192.168.1.77:5500/":
@@ -362,6 +366,7 @@ switch (url) {
     cursorFollow();
     burgerMenuToggle();
     transitionPages();
+    revealAnimtaion();
     break;
   case "http://192.168.1.77:5500/accueil":
     loader();
@@ -370,6 +375,7 @@ switch (url) {
     cursorFollow();
     burgerMenuToggle();
     transitionPages();
+    revealAnimtaion();
     break;
   case "http://192.168.1.77:5500/accueil#works":
     loader();
@@ -378,6 +384,7 @@ switch (url) {
     cursorFollow();
     burgerMenuToggle();
     transitionPages();
+    revealAnimtaion();
     break;
   case "http://192.168.1.77:5500/accueil#rth":
     loader();
@@ -386,6 +393,7 @@ switch (url) {
     cursorFollow();
     burgerMenuToggle();
     transitionPages();
+    revealAnimtaion();
     break;
   case "https://www.enzo-cosson.fr/accueil":
     loader();
@@ -394,6 +402,7 @@ switch (url) {
     cursorFollow();
     burgerMenuToggle();
     transitionPages();
+    revealAnimtaion();
     break;
   case "https://www.enzo-cosson.fr/accueil#rth":
     loader();
@@ -402,6 +411,7 @@ switch (url) {
     cursorFollow();
     burgerMenuToggle();
     transitionPages();
+    revealAnimtaion();
     break;
   // -----------
 
@@ -414,6 +424,7 @@ switch (url) {
     cursorFollow();
     burgerMenuToggle();
     transitionPages();
+    revealAnimtaion();
     break;
   case "http://10.152.21.50:5500/developpement-web":
     loader();
@@ -424,6 +435,7 @@ switch (url) {
     cursorFollow();
     burgerMenuToggle();
     transitionPages();
+    revealAnimtaion();
     break;
   case "http://192.168.1.77:5500/developpement-web":
     loader();
@@ -434,6 +446,7 @@ switch (url) {
     cursorFollow();
     burgerMenuToggle();
     transitionPages();
+    revealAnimtaion();
     break;
   case "https://www.enzo-cosson.fr/developpement-web":
     loader();
@@ -444,6 +457,7 @@ switch (url) {
     cursorFollow();
     burgerMenuToggle();
     transitionPages();
+    revealAnimtaion();
     break;
   case "https://www.enzo-cosson.fr/developpement-web#rth":
     loader();
@@ -454,6 +468,7 @@ switch (url) {
     cursorFollow();
     burgerMenuToggle();
     transitionPages();
+    revealAnimtaion();
     break;
   // -----------
   case "http://192.168.1.75:5500/photo-video":
