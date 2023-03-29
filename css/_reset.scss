@@ -44,14 +44,23 @@ html {
 }
 
 :root {
-  --primary-color: #41f0d0;
+  --primary-color: #fcfcfc;
 
-  --green_transparent: rgba(112, 232, 203, 0.56);
-  --white: #fcfcfc;
+  --green_transparent: #2e2e2e56;
+  --white: #2e2e2e;
   --white_transparent: rgba(252, 252, 252, 0.33);
   --black: #232323;
   --red: #f17979;
 }
+// :root {
+//   --primary-color: #2e2e2e;
+
+//   --green_transparent: #2e2e2e56;
+//   --white: #fcfcfc;
+//   --white_transparent: rgba(252, 252, 252, 0.33);
+//   --black: #232323;
+//   --red: #f17979;
+// }
 
 $green: #70e8cb;
 $green_transparent: rgba(112, 232, 203, 0.56);

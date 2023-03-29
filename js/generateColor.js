@@ -34,7 +34,7 @@ function colorOrange() {
   setColorAndStoreData("#41f0d0");
 }
 function colorRose() {
-  setColorAndStoreData("#ffc6ff");
+  setColorAndStoreData("#fcfcfc");
 }
 function colorJaune() {
   setColorAndStoreData("#ffee93");

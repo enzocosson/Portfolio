@@ -1,58 +1,55 @@
 // function to activate title_dev_web_front and title_dev_web_back when the mouse is over the button btn_photo
-const home = document.querySelector(".home");
-const title_dev_web_front = document.querySelector(".title_dev_web_front");
-const title_dev_web_back = document.querySelector(".title_dev_web_back");
-
-const title_photo_video_front = document.querySelector(
-  ".title_photo_video_front"
-);
-const title_photo_video_back = document.querySelector(
-  ".title_photo_video_back"
-);
-const title_portfolio = document.querySelector(".title_portfolio");
-
-const btn_dev = document.querySelector(".btn_dev");
-const btn_photo = document.querySelector(".btn_photo");
-
-btn_dev.addEventListener("mouseover", () => {
-  title_dev_web_front.classList.add("title_dev_web_front_active");
-  title_dev_web_back.classList.add("title_dev_web_back_active");
-
-  title_portfolio.classList.add("title_portfolio_active");
-  home.classList.add("home_active");
-});
-
-btn_dev.addEventListener("mouseout", () => {
-  title_dev_web_front.classList.remove("title_dev_web_front_active");
-  title_dev_web_back.classList.remove("title_dev_web_back_active");
-
-  title_portfolio.classList.remove("title_portfolio_active");
-  home.classList.remove("home_active");
-});
-
-btn_photo.addEventListener("mouseover", () => {
-  title_photo_video_front.classList.add("title_photo_video_front_active");
-  title_photo_video_back.classList.add("title_photo_video_back_active");
-
-  title_portfolio.classList.add("title_portfolio_active");
-  home.classList.add("home_active");
-});
-
-btn_photo.addEventListener("mouseout", () => {
-  title_photo_video_front.classList.remove("title_photo_video_front_active");
-  title_photo_video_back.classList.remove("title_photo_video_back_active");
-
-  title_portfolio.classList.remove("title_portfolio_active");
-  home.classList.remove("home_active");
-});
-
-// Function to animate the mouse move
-
 function mouseMove() {
   const home = document.querySelector(".home");
+  const title_dev_web_front = document.querySelector(".title_dev_web_front");
+  const title_dev_web_back = document.querySelector(".title_dev_web_back");
+
+  const title_photo_video_front = document.querySelector(
+    ".title_photo_video_front"
+  );
+  const title_photo_video_back = document.querySelector(
+    ".title_photo_video_back"
+  );
+  const title_portfolio = document.querySelector(".title_portfolio");
+
+  const btn_dev = document.querySelector(".btn_dev");
+  const btn_photo = document.querySelector(".btn_photo");
+
+  btn_dev.addEventListener("mouseover", () => {
+    title_dev_web_front.classList.add("title_dev_web_front_active");
+    title_dev_web_back.classList.add("title_dev_web_back_active");
+
+    title_portfolio.classList.add("title_portfolio_active");
+    home.classList.add("home_active");
+  });
+
+  btn_dev.addEventListener("mouseout", () => {
+    title_dev_web_front.classList.remove("title_dev_web_front_active");
+    title_dev_web_back.classList.remove("title_dev_web_back_active");
+
+    title_portfolio.classList.remove("title_portfolio_active");
+    home.classList.remove("home_active");
+  });
+
+  btn_photo.addEventListener("mouseover", () => {
+    title_photo_video_front.classList.add("title_photo_video_front_active");
+    title_photo_video_back.classList.add("title_photo_video_back_active");
+
+    title_portfolio.classList.add("title_portfolio_active");
+    home.classList.add("home_active");
+  });
+
+  btn_photo.addEventListener("mouseout", () => {
+    title_photo_video_front.classList.remove("title_photo_video_front_active");
+    title_photo_video_back.classList.remove("title_photo_video_back_active");
+
+    title_portfolio.classList.remove("title_portfolio_active");
+    home.classList.remove("home_active");
+  });
+
+  // Function to animate the mouse move
 
   const me = document.querySelector(".me");
-  const title_portfolio = document.querySelector(".title_portfolio");
   const title_name_front = document.querySelector(".title_name_front");
   const title_name_back = document.querySelector(".title_name_back");
 
@@ -95,16 +92,9 @@ function mouseMove() {
       valueY +
       "px,0)";
   });
-}
-mouseMove();
 
-// Function to change title
+  // Function to change title
 
-function changeTitle() {
-  const me = document.querySelector(".me");
-  const title_portfolio = document.querySelector(".title_portfolio");
-  const title_name_front = document.querySelector(".title_name_front");
-  const title_name_back = document.querySelector(".title_name_back");
   const title_small = document.querySelector(".title_small");
   const title_small2 = document.querySelector(".title_small2");
 
@@ -124,4 +114,8 @@ function changeTitle() {
     title_small2.classList.remove("title_small2_active");
   });
 }
-changeTitle();
+document.addEventListener("DOMContentLoaded", function () {
+  setTimeout(function () {
+    mouseMove();
+  }, 3000);
+});

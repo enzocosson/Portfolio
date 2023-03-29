@@ -60,9 +60,4 @@ export function cursorFollow() {
       cursorDiv.style.boxShadow = "0px 0px 15px 0px var(--primary-color)";
     });
   }
-  document.addEventListener("DOMContentLoaded", function () {
-    setTimeout(function () {
-      cursorFollow();
-    }, 4000);
-  });
 }

@@ -158,6 +158,7 @@ header {
   transition: 0.2s ease-in-out;
 
   .darkMode {
+    opacity: 0;
     cursor: pointer;
     position: relative;
     width: 3vw;
@@ -214,6 +215,7 @@ header {
   }
 
   .rth {
+    opacity: 0;
     cursor: pointer;
     width: 3vw;
     height: 3vw;
@@ -244,6 +246,7 @@ header {
   }
 
   .change_color_btn {
+    opacity: 0;
     cursor: pointer;
     width: 3vw;
     height: 3vw;
@@ -274,6 +277,7 @@ header {
     }
   }
   .feedback_btn {
+    opacity: 0;
     cursor: pointer;
     width: 3vw;
     height: 3vw;
@@ -668,7 +672,7 @@ header {
   }
 
   .me {
-    animation: me_animation 2s 1 cubic-bezier(0.89, 0.01, 0.58, 1) forwards;
+    animation: me_animation 1s 1 cubic-bezier(0.89, 0.01, 0.58, 1) forwards;
     animation-delay: 2s;
   }
   @keyframes me_animation {
@@ -681,22 +685,152 @@ header {
   }
 
   .title_portfolio {
-    &::before {
-      animation: title_portfolio_animation 2s 1
-        cubic-bezier(0.89, 0.01, 0.58, 1) forwards;
-      animation-delay: 0.3s;
+    animation: title_portfolio 2s 1 cubic-bezier(0.89, 0.01, 0.58, 1);
+    animation-delay: 0.3s;
+  }
+  @keyframes title_portfolio {
+    0% {
+      opacity: 0;
     }
-    @keyframes title_portfolio_animation {
-      from {
-        width: 100%;
-      }
-      to {
-        width: 0%;
-      }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  .title_small {
+    animation: title_small 3.5s 1 cubic-bezier(0.89, 0.01, 0.58, 1);
+    animation-delay: 0.3s;
+  }
+  @keyframes title_small {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  .btn_dev {
+    animation: btn_dev 3s 1 cubic-bezier(0.89, 0.01, 0.39, 0.9) forwards;
+    animation-delay: 0.4s;
+  }
+  @keyframes btn_dev {
+    0% {
+      opacity: 0;
+      transform: translateY(100%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+  .btn_photo {
+    animation: btn_photo 3s 1 cubic-bezier(0.89, 0.01, 0.39, 0.9) forwards;
+    animation-delay: 0.6s;
+  }
+  @keyframes btn_photo {
+    0% {
+      opacity: 0;
+      transform: translateY(100%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
     }
   }
 }
 
+.home_side_right {
+  p {
+    animation: p_animation 2s 1 cubic-bezier(0.89, 0.01, 0.58, 1) forwards;
+    animation-delay: 2s;
+  }
+  @keyframes p_animation {
+    from {
+      opacity: 0;
+      transform: translateX(100%);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0%);
+    }
+  }
+}
+.social_line {
+  animation: social_line_animation 5s 1 cubic-bezier(0.46, 0, 0.16, 0.99)
+    forwards;
+  animation-delay: 2s;
+}
+@keyframes social_line_animation {
+  from {
+    // opacity: 0;
+    // transform: translateX(-10px);
+    height: 0%;
+  }
+  to {
+    // opacity: 1;
+    // transform: translateX(0vw);
+    height: 50%;
+  }
+}
+.social_img_white,
+.social_img_black {
+  animation: social_img_animation 2s 1 cubic-bezier(0.89, 0.01, 0.58, 1)
+    forwards;
+  animation-delay: 2.5s;
+}
+@keyframes social_img_animation {
+  from {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}
+.reseau {
+  a {
+    animation: reseau_animation 2s 1 cubic-bezier(0.89, 0.01, 0.58, 1) forwards;
+    animation-delay: calc(2s + (var(--a) * 0.1s));
+  }
+  @keyframes reseau_animation {
+    from {
+      opacity: 0;
+      transform: translateY(100%);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+}
+
+.rth {
+  animation: menu_btn_animation 2s 1 cubic-bezier(0.89, 0.01, 0.58, 1) forwards;
+  animation-delay: 2s;
+}
+.darkMode {
+  animation: menu_btn_animation 2s 1 cubic-bezier(0.89, 0.01, 0.58, 1) forwards;
+  animation-delay: 2.1s;
+}
+.change_color_btn {
+  animation: menu_btn_animation 2s 1 cubic-bezier(0.89, 0.01, 0.58, 1) forwards;
+  animation-delay: 2.2s;
+}
+.feedback_btn {
+  animation: menu_btn_animation 2s 1 cubic-bezier(0.89, 0.01, 0.58, 1) forwards;
+  animation-delay: 2.3s;
+}
+@keyframes menu_btn_animation {
+  from {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
 //-----------------responsive------------------------------------------
 
 @media screen and (max-width: 1124px) {
