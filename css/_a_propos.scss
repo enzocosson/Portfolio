@@ -99,7 +99,7 @@
     font-family: $font_sf;
     font-size: 1.3vw;
     font-weight: 400;
-    color: var(--black);
+    color: var(--primary-color);
     text-align: justify;
     margin: 10vh 0;
     line-height: 4vh;
@@ -107,6 +107,7 @@
 
     .selection {
       background-color: var(--primary-color);
+      color: var(--white);
     }
   }
 }

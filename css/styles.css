@@ -50,9 +50,9 @@ html {
 }
 
 :root {
-  --primary-color: #fcfcfc;
+  --primary-color: #2e2e2e;
   --green_transparent: #2e2e2e56;
-  --white: #2e2e2e;
+  --white: #fcfcfc;
   --white_transparent: rgba(252, 252, 252, 0.33);
   --black: #232323;
   --red: #f17979;
@@ -141,6 +141,13 @@ header {
 
 header .logo {
   width: 6vw;
+}
+
+header .logo path,
+header .logo circle {
+  fill: var(--white);
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
 }
 
 header .logo_white {
@@ -1196,8 +1203,7 @@ header .burger {
   }
 }
 
-.social_img_white,
-.social_img_black {
+.social_img {
   -webkit-animation: social_img_animation 2s 1 cubic-bezier(0.89, 0.01, 0.58, 1) forwards;
           animation: social_img_animation 2s 1 cubic-bezier(0.89, 0.01, 0.58, 1) forwards;
   -webkit-animation-delay: 2.5s;
@@ -2115,8 +2121,8 @@ header .burger {
 }
 
 .container_colors .choix_couleurs .colors:focus {
-  -webkit-transform: rotate(360deg) scale(1.1);
-          transform: rotate(360deg) scale(1.1);
+  -webkit-transform: rotate(180deg) scale(1.1);
+          transform: rotate(180deg) scale(1.1);
   -webkit-transition: -webkit-transform 1.5s cubic-bezier(0.21, 1.36, 0.64, 1);
   transition: -webkit-transform 1.5s cubic-bezier(0.21, 1.36, 0.64, 1);
   transition: transform 1.5s cubic-bezier(0.21, 1.36, 0.64, 1);
@@ -2681,28 +2687,18 @@ header .burger {
           justify-content: flex-start;
 }
 
-.home .home_side_left .social img {
+.home .home_side_left .social .social_img {
   width: 0.9vw;
   margin-top: 2vw;
   pointer-events: none;
-}
-
-.home .home_side_left .social .social_img_white {
   opacity: 0;
   display: block;
 }
 
-.home .home_side_left .social .social_img_white_active {
-  display: none;
-}
-
-.home .home_side_left .social .social_img_black {
-  opacity: 0;
-  display: none;
-}
-
-.home .home_side_left .social .social_img_black_active {
-  display: block;
+.home .home_side_left .social .social_img path {
+  fill: var(--white);
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
 }
 
 .home .home_side_left .social span {
@@ -5691,7 +5687,7 @@ header .burger {
   width: 100%;
   font-size: 5vw;
   text-align: center;
-  color: var(--white);
+  color: var(--primary-color);
   font-weight: bold;
   font-family: Base Neue;
   -webkit-filter: drop-shadow(0px 2px 0.1vw rgba(0, 0, 0, 0.237));
@@ -5726,6 +5722,11 @@ header .burger {
 .photo_video_web_page .container_photo .couverture:hover,
 .photo_video_web_page .container_video .couverture:hover {
   border: 0.5vw solid var(--white);
+}
+
+.photo_video_web_page .container_photo .couverture:hover .couverture_titre,
+.photo_video_web_page .container_video .couverture:hover .couverture_titre {
+  color: var(--white);
 }
 
 .photo_video_web_page .container_photo .couverture:hover img,
@@ -5812,7 +5813,7 @@ header .burger {
   position: relative;
   width: 100%;
   height: auto;
-  background-color: var(--white);
+  background-color: var(--primary-color);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -5837,7 +5838,7 @@ header .burger {
   font-size: 6vw;
   font-weight: bold;
   font-family: Base Neue;
-  color: var(--black);
+  color: var(--white);
   text-transform: uppercase;
   margin: 5vh 0;
 }
@@ -5866,7 +5867,7 @@ header .burger {
   width: 100%;
   font-size: 5vw;
   text-align: center;
-  color: #fcfcfc;
+  color: var(--primary-color);
   font-weight: bold;
   font-family: Base Neue;
   -webkit-filter: drop-shadow(0px 2px 0.1vw rgba(0, 0, 0, 0.237));
@@ -5929,8 +5930,8 @@ header .burger {
 
 .photo_web_page .theme:hover .theme_titre,
 .video_web_page .theme:hover .theme_titre {
-  color: var(--primary-color);
   font-size: 5.5vw;
+  color: var(--white);
 }
 
 .photo_web_page .theme:hover img,
@@ -5965,13 +5966,13 @@ header .burger {
   font-size: 5vw;
   border-radius: 1.5vw;
   text-align: center;
-  color: #fcfcfc;
+  color: var(--primary-color);
   font-weight: bold;
   font-family: Base Neue;
   -webkit-filter: drop-shadow(0px 2px 0.1vw rgba(0, 0, 0, 0.237));
   filter: drop-shadow(0px 0px 0.2vw rgba(0, 0, 0, 0.192));
-  -webkit-transition: color 0.5s ease-out;
-  transition: color 0.5s ease-out;
+  -webkit-transition: color 0.5s ease-out, font-size 1s ease-out;
+  transition: color 0.5s ease-out, font-size 1s ease-out;
   z-index: 3;
 }
 
@@ -6035,7 +6036,8 @@ header .burger {
 
 .photo_web_page .theme_video:hover .theme_titre,
 .video_web_page .theme_video:hover .theme_titre {
-  color: var(--primary-color);
+  font-size: 5.5vw;
+  color: var(--white);
 }
 
 .photo_web_page .theme_video:hover img,
@@ -6075,7 +6077,7 @@ header .burger {
   .photo_web_page .theme_video:hover .theme_titre,
   .video_web_page .theme:hover .theme_titre,
   .video_web_page .theme_video:hover .theme_titre {
-    color: var(--primary-color);
+    color: var(--white);
     font-size: 7.5vw;
   }
   .photo_web_page .theme .guadeloupe_video_hover,
@@ -6142,7 +6144,7 @@ header .burger {
 .galerie_web_page {
   position: relative;
   width: 100%;
-  background-color: var(--white);
+  background-color: var(--primary-color);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -6170,7 +6172,7 @@ header .burger {
   font-size: 6vw;
   font-family: Base Neue;
   font-weight: bold;
-  color: var(--black);
+  color: var(--white);
   margin: 5vh 0;
   z-index: 2;
   text-transform: uppercase;
@@ -6205,8 +6207,8 @@ header .burger {
           transform: translateX(-50%);
   width: 120%;
   height: 20vh;
-  background: -webkit-gradient(linear, left top, left bottom, from(var(--white)), to(transparent));
-  background: linear-gradient(180deg, var(--white), transparent);
+  background: -webkit-gradient(linear, left top, left bottom, from(var(--primary-color)), to(transparent));
+  background: linear-gradient(180deg, var(--primary-color), transparent);
   z-index: 1;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
@@ -6712,7 +6714,7 @@ header .burger {
   font-weight: 600;
   margin-bottom: 2vw;
   font-family: Base Neue;
-  color: var(--black);
+  color: var(--white);
 }
 
 .galerie_web_page .autres_projets .suggestion {
@@ -6897,7 +6899,7 @@ header .burger {
   font-size: 1.1vw;
   font-weight: 600;
   font-family: "Inter", sans-serif;
-  color: var(--black);
+  color: var(--primary-color);
   margin-bottom: 1vw;
 }
 
@@ -6905,7 +6907,7 @@ header .burger {
   font-size: 1.1vw;
   font-weight: 400;
   font-family: "Inter", sans-serif;
-  color: var(--black);
+  color: var(--primary-color);
   margin-bottom: 1vw;
 }
 
@@ -7249,7 +7251,7 @@ header .burger {
   position: relative;
   width: 100%;
   height: auto;
-  background-color: var(--white);
+  background-color: var(--primary-color);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -7292,7 +7294,7 @@ header .burger {
   margin-top: 2vh;
   font-size: 2.5rem;
   font-weight: 100;
-  color: var(--black);
+  color: var(--white);
   font-family: Base Neue;
 }
 
@@ -7450,7 +7452,7 @@ header .burger {
   font-family: "Inter", sans-serif;
   margin-bottom: 5vh;
   row-gap: 3vh;
-  color: var(--black);
+  color: var(--white);
 }
 
 .guadeloupe_web_page .description span,
@@ -7462,7 +7464,7 @@ header .burger {
 .auvergne_web_page .description .titre {
   font-weight: bold;
   font-size: 1.5vw;
-  color: var(--primary-color);
+  color: var(--white);
   -webkit-filter: drop-shadow(0px 0px 1px rgba(0, 0, 0, 0.089));
           filter: drop-shadow(0px 0px 1px rgba(0, 0, 0, 0.089));
 }
@@ -7470,7 +7472,7 @@ header .burger {
 .guadeloupe_web_page .description a,
 .auvergne_web_page .description a {
   text-decoration: none;
-  color: var(--black);
+  color: var(--white);
 }
 
 .guadeloupe_web_page .description p:first-child,
@@ -7501,7 +7503,7 @@ header .burger {
   font-weight: 600;
   margin-bottom: 2vw;
   font-family: Base Neue;
-  color: var(--black);
+  color: var(--white);
 }
 
 .guadeloupe_web_page .autres_projets .suggestion,
@@ -7702,7 +7704,7 @@ header .burger {
   font-size: 1.1vw;
   font-weight: 600;
   font-family: "Inter", sans-serif;
-  color: var(--black);
+  color: var(--primary-color);
   margin-bottom: 1vw;
 }
 
@@ -7711,7 +7713,7 @@ header .burger {
   font-size: 1.1vw;
   font-weight: 400;
   font-family: "Inter", sans-serif;
-  color: var(--black);
+  color: var(--primary-color);
   margin-bottom: 1vw;
 }
 
@@ -9692,7 +9694,7 @@ header .burger {
   font-family: "Inter", sans-serif;
   font-size: 1.3vw;
   font-weight: 400;
-  color: var(--black);
+  color: var(--primary-color);
   text-align: justify;
   margin: 10vh 0;
   line-height: 4vh;
@@ -9701,6 +9703,7 @@ header .burger {
 
 .presentation .presentation_texte .selection {
   background-color: var(--primary-color);
+  color: var(--white);
 }
 
 @media screen and (max-width: 1124px) {

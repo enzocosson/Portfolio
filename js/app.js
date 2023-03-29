@@ -19,7 +19,7 @@ import { scrollMagicCustomAir } from "./scrollMagicCustomAir.js";
 import { scrollMagicSchool } from "./scrollMagicSchool.js";
 import { scrollMagicGalerie } from "./scrollMagicGalerie.js";
 import { cursorFollow } from "./cursorFollow.js";
-import { burgerMenuToggle, burgerMenuBlackToggle } from "./burgerMenu.js";
+import { burgerMenuToggle } from "./burgerMenu.js";
 import {
   onPlayButtonVideoGuadeloupe,
   onPlayButtonVideoAuvergne,
@@ -51,7 +51,7 @@ switch (url) {
     loader();
     darkModeDev();
     cursorFollow();
-    burgerMenuBlackToggle();
+    burgerMenuToggle();
     transitionPages();
     // feedback();
     break;
@@ -60,21 +60,21 @@ switch (url) {
     loader();
     darkModeDev();
     cursorFollow();
-    burgerMenuBlackToggle();
+    burgerMenuToggle();
     transitionPages();
     break;
   case "https://www.enzo-cosson.fr/admin/#rth":
     loader();
     darkModeDev();
     cursorFollow();
-    burgerMenuBlackToggle();
+    burgerMenuToggle();
     transitionPages();
     break;
   case "https://www.enzo-cosson.fr/admin/index.php#rth":
     loader();
     darkModeDev();
     cursorFollow();
-    burgerMenuBlackToggle();
+    burgerMenuToggle();
     transitionPages();
     break;
 
@@ -83,14 +83,14 @@ switch (url) {
     loader();
     darkModeDev();
     cursorFollow();
-    burgerMenuBlackToggle();
+    burgerMenuToggle();
     transitionPages();
     break;
   case "https://www.enzo-cosson.fr/admin/admin_mountain.php#rth":
     loader();
     darkModeDev();
     cursorFollow();
-    burgerMenuBlackToggle();
+    burgerMenuToggle();
     transitionPages();
     break;
   // -----------
@@ -98,14 +98,14 @@ switch (url) {
     loader();
     darkModeDev();
     cursorFollow();
-    burgerMenuBlackToggle();
+    burgerMenuToggle();
     transitionPages();
     break;
   case "https://www.enzo-cosson.fr/admin/admin_mountain_portrait.php#rth":
     loader();
     darkModeDev();
     cursorFollow();
-    burgerMenuBlackToggle();
+    burgerMenuToggle();
     transitionPages();
     break;
 
@@ -114,14 +114,14 @@ switch (url) {
     loader();
     darkModeDev();
     cursorFollow();
-    burgerMenuBlackToggle();
+    burgerMenuToggle();
     transitionPages();
     break;
   case "https://www.enzo-cosson.fr/admin/admin_mountain_paysage.php#rth":
     loader();
     darkModeDev();
     cursorFollow();
-    burgerMenuBlackToggle();
+    burgerMenuToggle();
     transitionPages();
     break;
   // -----------
@@ -129,14 +129,14 @@ switch (url) {
     loader();
     darkModeDev();
     cursorFollow();
-    burgerMenuBlackToggle();
+    burgerMenuToggle();
     transitionPages();
     break;
   case "https://www.enzo-cosson.fr/admin/admin_mountain_fullimage.php#rth":
     loader();
     darkModeDev();
     cursorFollow();
-    burgerMenuBlackToggle();
+    burgerMenuToggle();
     transitionPages();
     break;
   // -----------
@@ -144,14 +144,14 @@ switch (url) {
     loader();
     darkModeDev();
     cursorFollow();
-    burgerMenuBlackToggle();
+    burgerMenuToggle();
     transitionPages();
     break;
   case "https://www.enzo-cosson.fr/admin/admin_tropical.php#rth":
     loader();
     darkModeDev();
     cursorFollow();
-    burgerMenuBlackToggle();
+    burgerMenuToggle();
     transitionPages();
     break;
   // -----------
@@ -159,14 +159,14 @@ switch (url) {
     loader();
     darkModeDev();
     cursorFollow();
-    burgerMenuBlackToggle();
+    burgerMenuToggle();
     transitionPages();
     break;
   case "https://www.enzo-cosson.fr/admin/admin_tropical_portrait.php#rth":
     loader();
     darkModeDev();
     cursorFollow();
-    burgerMenuBlackToggle();
+    burgerMenuToggle();
     transitionPages();
     break;
   // -----------
@@ -174,14 +174,14 @@ switch (url) {
     loader();
     darkModeDev();
     cursorFollow();
-    burgerMenuBlackToggle();
+    burgerMenuToggle();
     transitionPages();
     break;
   case "https://www.enzo-cosson.fr/admin/admin_tropical_paysage.php#rth":
     loader();
     darkModeDev();
     cursorFollow();
-    burgerMenuBlackToggle();
+    burgerMenuToggle();
     transitionPages();
     break;
   // -----------
@@ -189,14 +189,14 @@ switch (url) {
     loader();
     darkModeDev();
     cursorFollow();
-    burgerMenuBlackToggle();
+    burgerMenuToggle();
     transitionPages();
     break;
   case "https://www.enzo-cosson.fr/admin/admin_tropical_fullimage.php#rth":
     loader();
     darkModeDev();
     cursorFollow();
-    burgerMenuBlackToggle();
+    burgerMenuToggle();
     transitionPages();
     break;
   // -----------
@@ -204,14 +204,14 @@ switch (url) {
     loader();
     darkModeDev();
     cursorFollow();
-    burgerMenuBlackToggle();
+    burgerMenuToggle();
     transitionPages();
     break;
   case "https://www.enzo-cosson.fr/admin/admin_gold.php#rth":
     loader();
     darkModeDev();
     cursorFollow();
-    burgerMenuBlackToggle();
+    burgerMenuToggle();
     transitionPages();
     break;
   // -----------
@@ -219,14 +219,14 @@ switch (url) {
     loader();
     darkModeDev();
     cursorFollow();
-    burgerMenuBlackToggle();
+    burgerMenuToggle();
     transitionPages();
     break;
   case "https://www.enzo-cosson.fr/admin/admin_gold_portrait.php#rth":
     loader();
     darkModeDev();
     cursorFollow();
-    burgerMenuBlackToggle();
+    burgerMenuToggle();
     transitionPages();
     break;
   // -----------
@@ -234,14 +234,14 @@ switch (url) {
     loader();
     darkModeDev();
     cursorFollow();
-    burgerMenuBlackToggle();
+    burgerMenuToggle();
     transitionPages();
     break;
   case "https://www.enzo-cosson.fr/admin/admin_gold_paysage.php#rth":
     loader();
     darkModeDev();
     cursorFollow();
-    burgerMenuBlackToggle();
+    burgerMenuToggle();
     transitionPages();
     break;
   // -----------
@@ -249,14 +249,14 @@ switch (url) {
     loader();
     darkModeDev();
     cursorFollow();
-    burgerMenuBlackToggle();
+    burgerMenuToggle();
     transitionPages();
     break;
   case "https://www.enzo-cosson.fr/admin/admin_gold_fullimage.php#rth":
     loader();
     darkModeDev();
     cursorFollow();
-    burgerMenuBlackToggle();
+    burgerMenuToggle();
     transitionPages();
     break;
   // -----------
@@ -264,14 +264,14 @@ switch (url) {
     loader();
     darkModeDev();
     cursorFollow();
-    burgerMenuBlackToggle();
+    burgerMenuToggle();
     transitionPages();
     break;
   case "https://www.enzo-cosson.fr/admin/admin_by_night.php#rth":
     loader();
     darkModeDev();
     cursorFollow();
-    burgerMenuBlackToggle();
+    burgerMenuToggle();
     transitionPages();
     break;
   // -----------
@@ -279,14 +279,14 @@ switch (url) {
     loader();
     darkModeDev();
     cursorFollow();
-    burgerMenuBlackToggle();
+    burgerMenuToggle();
     transitionPages();
     break;
   case "https://www.enzo-cosson.fr/admin/admin_by_night_portrait.php#rth":
     loader();
     darkModeDev();
     cursorFollow();
-    burgerMenuBlackToggle();
+    burgerMenuToggle();
     transitionPages();
     break;
   // -----------
@@ -294,14 +294,14 @@ switch (url) {
     loader();
     darkModeDev();
     cursorFollow();
-    burgerMenuBlackToggle();
+    burgerMenuToggle();
     transitionPages();
     break;
   case "https://www.enzo-cosson.fr/admin/admin_by_night_paysage.php#rth":
     loader();
     darkModeDev();
     cursorFollow();
-    burgerMenuBlackToggle();
+    burgerMenuToggle();
     transitionPages();
     break;
   // -----------
@@ -309,14 +309,14 @@ switch (url) {
     loader();
     darkModeDev();
     cursorFollow();
-    burgerMenuBlackToggle();
+    burgerMenuToggle();
     transitionPages();
     break;
   case "https://www.enzo-cosson.fr/admin/admin_bynight_fullimage.php#rth":
     loader();
     darkModeDev();
     cursorFollow();
-    burgerMenuBlackToggle();
+    burgerMenuToggle();
     transitionPages();
     break;
 
@@ -512,35 +512,35 @@ switch (url) {
     loader();
     darkModeGalerie();
     cursorFollow();
-    burgerMenuBlackToggle();
+    burgerMenuToggle();
     transitionPages();
     break;
   case "http://10.152.21.50:5500/photo":
     loader();
     darkModeGalerie();
     cursorFollow();
-    burgerMenuBlackToggle();
+    burgerMenuToggle();
     transitionPages();
     break;
   case "http://192.168.1.77:5500/photo":
     loader();
     darkModeGalerie();
     cursorFollow();
-    burgerMenuBlackToggle();
+    burgerMenuToggle();
     transitionPages();
     break;
   case "https://www.enzo-cosson.fr/photo":
     loader();
     darkModeGalerie();
     cursorFollow();
-    burgerMenuBlackToggle();
+    burgerMenuToggle();
     transitionPages();
     break;
   case "https://www.enzo-cosson.fr/photo#rth":
     loader();
     darkModeGalerie();
     cursorFollow();
-    burgerMenuBlackToggle();
+    burgerMenuToggle();
     transitionPages();
     break;
 
@@ -560,7 +560,7 @@ switch (url) {
     darkModeGalerie();
     scrollMagicGalerie();
     cursorFollow();
-    burgerMenuBlackToggle();
+    burgerMenuToggle();
     soundButtonMountain();
     infoPhoto();
     transitionPages();
@@ -571,7 +571,7 @@ switch (url) {
     darkModeGalerie();
     scrollMagicGalerie();
     cursorFollow();
-    burgerMenuBlackToggle();
+    burgerMenuToggle();
     soundButtonMountain();
     infoPhoto();
     transitionPages();
@@ -582,7 +582,7 @@ switch (url) {
     darkModeGalerie();
     scrollMagicGalerie();
     cursorFollow();
-    burgerMenuBlackToggle();
+    burgerMenuToggle();
     soundButtonMountain();
     infoPhoto();
     transitionPages();
@@ -594,7 +594,7 @@ switch (url) {
     darkModeGalerie();
     scrollMagicGalerie();
     cursorFollow();
-    burgerMenuBlackToggle();
+    burgerMenuToggle();
     soundButtonMountain();
     infoPhoto();
     transitionPages();
@@ -607,7 +607,7 @@ switch (url) {
     darkModeGalerie();
     scrollMagicGalerie();
     cursorFollow();
-    burgerMenuBlackToggle();
+    burgerMenuToggle();
     soundButtonTropical();
     infoPhoto();
     transitionPages();
@@ -618,7 +618,7 @@ switch (url) {
     darkModeGalerie();
     scrollMagicGalerie();
     cursorFollow();
-    burgerMenuBlackToggle();
+    burgerMenuToggle();
     soundButtonTropical();
     infoPhoto();
     transitionPages();
@@ -629,7 +629,7 @@ switch (url) {
     darkModeGalerie();
     scrollMagicGalerie();
     cursorFollow();
-    burgerMenuBlackToggle();
+    burgerMenuToggle();
     soundButtonTropical();
     infoPhoto();
     transitionPages();
@@ -640,7 +640,7 @@ switch (url) {
     darkModeGalerie();
     scrollMagicGalerie();
     cursorFollow();
-    burgerMenuBlackToggle();
+    burgerMenuToggle();
     soundButtonTropical();
     infoPhoto();
     transitionPages();
@@ -651,7 +651,7 @@ switch (url) {
     darkModeGalerie();
     scrollMagicGalerie();
     cursorFollow();
-    burgerMenuBlackToggle();
+    burgerMenuToggle();
     soundButtonTropical();
     infoPhoto();
     transitionPages();
@@ -665,7 +665,7 @@ switch (url) {
     darkModeGalerie();
     scrollMagicGalerie();
     cursorFollow();
-    burgerMenuBlackToggle();
+    burgerMenuToggle();
     soundButtonTropical();
     infoPhoto();
     transitionPages();
@@ -676,7 +676,7 @@ switch (url) {
     darkModeGalerie();
     scrollMagicGalerie();
     cursorFollow();
-    burgerMenuBlackToggle();
+    burgerMenuToggle();
     soundButtonTropical();
     infoPhoto();
     transitionPages();
@@ -687,7 +687,7 @@ switch (url) {
     darkModeGalerie();
     scrollMagicGalerie();
     cursorFollow();
-    burgerMenuBlackToggle();
+    burgerMenuToggle();
     soundButtonTropical();
     infoPhoto();
     transitionPages();
@@ -698,7 +698,7 @@ switch (url) {
     darkModeGalerie();
     scrollMagicGalerie();
     cursorFollow();
-    burgerMenuBlackToggle();
+    burgerMenuToggle();
     soundButtonTropical();
     infoPhoto();
     transitionPages();
@@ -709,7 +709,7 @@ switch (url) {
     darkModeGalerie();
     scrollMagicGalerie();
     cursorFollow();
-    burgerMenuBlackToggle();
+    burgerMenuToggle();
     soundButtonTropical();
     infoPhoto();
     transitionPages();
@@ -722,7 +722,7 @@ switch (url) {
     darkModeGalerie();
     scrollMagicGalerie();
     cursorFollow();
-    burgerMenuBlackToggle();
+    burgerMenuToggle();
     soundButtonTropical();
     infoPhoto();
     transitionPages();
@@ -733,7 +733,7 @@ switch (url) {
     darkModeGalerie();
     scrollMagicGalerie();
     cursorFollow();
-    burgerMenuBlackToggle();
+    burgerMenuToggle();
     soundButtonTropical();
     infoPhoto();
     transitionPages();
@@ -744,7 +744,7 @@ switch (url) {
     darkModeGalerie();
     scrollMagicGalerie();
     cursorFollow();
-    burgerMenuBlackToggle();
+    burgerMenuToggle();
     soundButtonTropical();
     infoPhoto();
     transitionPages();
@@ -755,7 +755,7 @@ switch (url) {
     darkModeGalerie();
     scrollMagicGalerie();
     cursorFollow();
-    burgerMenuBlackToggle();
+    burgerMenuToggle();
     soundButtonTropical();
     infoPhoto();
     transitionPages();
@@ -767,7 +767,7 @@ switch (url) {
     darkModeGalerie();
     scrollMagicGalerie();
     cursorFollow();
-    burgerMenuBlackToggle();
+    burgerMenuToggle();
     soundButtonTropical();
     infoPhoto();
     transitionPages();
@@ -781,7 +781,7 @@ switch (url) {
     darkModeGalerie();
     scrollMagicGalerie();
     cursorFollow();
-    burgerMenuBlackToggle();
+    burgerMenuToggle();
     soundButtonNight();
     infoPhoto();
     transitionPages();
@@ -792,7 +792,7 @@ switch (url) {
     darkModeGalerie();
     scrollMagicGalerie();
     cursorFollow();
-    burgerMenuBlackToggle();
+    burgerMenuToggle();
     soundButtonNight();
     infoPhoto();
     transitionPages();
@@ -803,7 +803,7 @@ switch (url) {
     darkModeGalerie();
     scrollMagicGalerie();
     cursorFollow();
-    burgerMenuBlackToggle();
+    burgerMenuToggle();
     soundButtonNight();
     infoPhoto();
     transitionPages();
@@ -814,7 +814,7 @@ switch (url) {
     darkModeGalerie();
     scrollMagicGalerie();
     cursorFollow();
-    burgerMenuBlackToggle();
+    burgerMenuToggle();
     soundButtonNight();
     infoPhoto();
     transitionPages();
@@ -825,7 +825,7 @@ switch (url) {
     darkModeGalerie();
     scrollMagicGalerie();
     cursorFollow();
-    burgerMenuBlackToggle();
+    burgerMenuToggle();
     soundButtonNight();
     infoPhoto();
     transitionPages();
@@ -837,7 +837,7 @@ switch (url) {
     darkModeGalerie();
     scrollMagicGalerie();
     cursorFollow();
-    burgerMenuBlackToggle();
+    burgerMenuToggle();
     soundButtonTropical();
     transitionPages();
 
@@ -847,7 +847,7 @@ switch (url) {
     darkModeGalerie();
     scrollMagicGalerie();
     cursorFollow();
-    burgerMenuBlackToggle();
+    burgerMenuToggle();
     soundButtonTropical();
     transitionPages();
 
@@ -857,7 +857,7 @@ switch (url) {
     darkModeGalerie();
     scrollMagicGalerie();
     cursorFollow();
-    burgerMenuBlackToggle();
+    burgerMenuToggle();
     soundButtonTropical();
     transitionPages();
 
@@ -867,7 +867,7 @@ switch (url) {
     darkModeGalerie();
     scrollMagicGalerie();
     cursorFollow();
-    burgerMenuBlackToggle();
+    burgerMenuToggle();
     soundButtonTropical();
     transitionPages();
 
@@ -878,35 +878,35 @@ switch (url) {
     loader();
     darkModeGalerie();
     cursorFollow();
-    burgerMenuBlackToggle();
+    burgerMenuToggle();
     transitionPages();
     break;
   case "http://10.152.21.50:5500/video":
     loader();
     darkModeGalerie();
     cursorFollow();
-    burgerMenuBlackToggle();
+    burgerMenuToggle();
     transitionPages();
     break;
   case "http://192.168.1.77:5500/video":
     loader();
     darkModeGalerie();
     cursorFollow();
-    burgerMenuBlackToggle();
+    burgerMenuToggle();
     transitionPages();
     break;
   case "https://www.enzo-cosson.fr/video":
     loader();
     darkModeGalerie();
     cursorFollow();
-    burgerMenuBlackToggle();
+    burgerMenuToggle();
     transitionPages();
     break;
   case "https://www.enzo-cosson.fr/video#rth":
     loader();
     darkModeGalerie();
     cursorFollow();
-    burgerMenuBlackToggle();
+    burgerMenuToggle();
     transitionPages();
     break;
   // -----------
@@ -914,7 +914,7 @@ switch (url) {
     loader();
     darkModeGalerie();
     cursorFollow();
-    burgerMenuBlackToggle();
+    burgerMenuToggle();
     onPlayButtonVideoGuadeloupe();
     transitionPages();
     break;
@@ -922,7 +922,7 @@ switch (url) {
     loader();
     darkModeGalerie();
     cursorFollow();
-    burgerMenuBlackToggle();
+    burgerMenuToggle();
     onPlayButtonVideoGuadeloupe();
     transitionPages();
     break;
@@ -930,7 +930,7 @@ switch (url) {
     loader();
     darkModeGalerie();
     cursorFollow();
-    burgerMenuBlackToggle();
+    burgerMenuToggle();
     onPlayButtonVideoGuadeloupe();
     transitionPages();
     break;
@@ -938,7 +938,7 @@ switch (url) {
     loader();
     darkModeGalerie();
     cursorFollow();
-    burgerMenuBlackToggle();
+    burgerMenuToggle();
     onPlayButtonVideoGuadeloupe();
     transitionPages();
     break;
@@ -946,7 +946,7 @@ switch (url) {
     loader();
     darkModeGalerie();
     cursorFollow();
-    burgerMenuBlackToggle();
+    burgerMenuToggle();
     onPlayButtonVideoGuadeloupe();
     transitionPages();
     break;
@@ -955,7 +955,7 @@ switch (url) {
     loader();
     darkModeGalerie();
     cursorFollow();
-    burgerMenuBlackToggle();
+    burgerMenuToggle();
     onPlayButtonVideoAuvergne();
     transitionPages();
     break;
@@ -963,7 +963,7 @@ switch (url) {
     loader();
     darkModeGalerie();
     cursorFollow();
-    burgerMenuBlackToggle();
+    burgerMenuToggle();
     onPlayButtonVideoAuvergne();
     transitionPages();
     break;
@@ -971,7 +971,7 @@ switch (url) {
     loader();
     darkModeGalerie();
     cursorFollow();
-    burgerMenuBlackToggle();
+    burgerMenuToggle();
     onPlayButtonVideoAuvergne();
     transitionPages();
     break;
@@ -979,7 +979,7 @@ switch (url) {
     loader();
     darkModeGalerie();
     cursorFollow();
-    burgerMenuBlackToggle();
+    burgerMenuToggle();
     onPlayButtonVideoAuvergne();
     transitionPages();
     break;
@@ -987,7 +987,7 @@ switch (url) {
     loader();
     darkModeGalerie();
     cursorFollow();
-    burgerMenuBlackToggle();
+    burgerMenuToggle();
     onPlayButtonVideoAuvergne();
     transitionPages();
     break;
@@ -997,7 +997,7 @@ switch (url) {
     loader();
     darkModeGalerie();
     cursorFollow();
-    burgerMenuBlackToggle();
+    burgerMenuToggle();
     onPlayButtonVideoKenzo();
     transitionPages();
     break;
@@ -1005,7 +1005,7 @@ switch (url) {
     loader();
     darkModeGalerie();
     cursorFollow();
-    burgerMenuBlackToggle();
+    burgerMenuToggle();
     onPlayButtonVideoKenzo();
     transitionPages();
     break;
@@ -1013,7 +1013,7 @@ switch (url) {
     loader();
     darkModeGalerie();
     cursorFollow();
-    burgerMenuBlackToggle();
+    burgerMenuToggle();
     onPlayButtonVideoKenzo();
     transitionPages();
     break;
@@ -1021,7 +1021,7 @@ switch (url) {
     loader();
     darkModeGalerie();
     cursorFollow();
-    burgerMenuBlackToggle();
+    burgerMenuToggle();
     onPlayButtonVideoKenzo();
     transitionPages();
     break;
@@ -1029,7 +1029,7 @@ switch (url) {
     loader();
     darkModeGalerie();
     cursorFollow();
-    burgerMenuBlackToggle();
+    burgerMenuToggle();
     onPlayButtonVideoKenzo();
     transitionPages();
     break;

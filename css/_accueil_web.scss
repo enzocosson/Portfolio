@@ -378,24 +378,17 @@
       align-items: flex-start;
       justify-content: flex-start;
 
-      img {
+      .social_img {
         width: 0.9vw;
         margin-top: 2vw;
         pointer-events: none;
-      }
-      .social_img_white {
         opacity: 0;
         display: block;
-      }
-      .social_img_white_active {
-        display: none;
-      }
-      .social_img_black {
-        opacity: 0;
-        display: none;
-      }
-      .social_img_black_active {
-        display: block;
+
+        path {
+          fill: var(--white);
+          transition: 0.5s ease-in-out;
+        }
       }
 
       span {

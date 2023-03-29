@@ -1,7 +1,7 @@
 .galerie_web_page {
   position: relative;
   width: 100%;
-  background-color: var(--white);
+  background-color: var(--primary-color);
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -19,7 +19,7 @@
     font-size: 6vw;
     font-family: $font_base;
     font-weight: bold;
-    color: var(--black);
+    color: var(--white);
     margin: 5vh 0;
     z-index: 2;
     text-transform: uppercase;
@@ -46,7 +46,7 @@
         transform: translateX(-50%);
         width: 120%;
         height: 20vh;
-        background: linear-gradient(180deg, var(--white), transparent);
+        background: linear-gradient(180deg, var(--primary-color), transparent);
         z-index: 1;
         transition: all 0.2s ease-in-out;
       }
@@ -440,7 +440,7 @@
       font-weight: 600;
       margin-bottom: 2vw;
       font-family: $font-base;
-      color: var(--black);
+      color: var(--white);
     }
 
     .suggestion {
@@ -563,14 +563,14 @@
               font-size: 1.1vw;
               font-weight: 600;
               font-family: $font-sf;
-              color: var(--black);
+              color: var(--primary-color);
               margin-bottom: 1vw;
             }
             p {
               font-size: 1.1vw;
               font-weight: 400;
               font-family: $font-sf;
-              color: var(--black);
+              color: var(--primary-color);
               margin-bottom: 1vw;
             }
           }

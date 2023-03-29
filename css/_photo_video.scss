@@ -36,7 +36,7 @@
         width: 100%;
         font-size: 5vw;
         text-align: center;
-        color: var(--white);
+        color: var(--primary-color);
         font-weight: bold;
         font-family: $font_base;
 
@@ -63,6 +63,9 @@
 
       &:hover {
         border: 0.5vw solid var(--white);
+      }
+      &:hover .couverture_titre {
+        color: var(--white);
       }
       &:hover img {
         opacity: 0.3;
