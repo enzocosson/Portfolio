@@ -3,11 +3,17 @@ const bg_colors = document.querySelector(".bg_colors");
 const r = document.querySelector(":root");
 let isWhite = false;
 
+var sound_click_colors = document.querySelector(".sound_click_colors");
+var select_colors_sound = document.querySelector(".select_colors_sound");
+// var leave_colors_sound = document.querySelector(".leave_colors_sound");
+
 function generateColors() {
   container_colors.classList.toggle("container_colors_active");
+  sound_click_colors.play();
 }
 
 function setColorAndStoreData(color) {
+  select_colors_sound.play();
   const isWhite = color === "#fcfcfc";
   if (isWhite) {
     r.style.setProperty("--white", "#2e2e2e");
@@ -95,3 +101,13 @@ function tapOnScreen() {
 getStoredColor();
 
 tapOnScreen();
+
+function rthSound() {
+  var rth_sound = document.querySelector(".rth_sound");
+  const rth = document.querySelector(".rth");
+
+  rth.addEventListener("click", () => {
+    rth_sound.play();
+  });
+}
+rthSound();

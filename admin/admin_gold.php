@@ -82,6 +82,12 @@ require '../lib.inc.php';
     </ul>
 
     <div class="home_footer">
+        <audio class="rth_sound" src="./audio/click/rth-sound.mp3"></audio>
+
+        <audio class="sound_click_feedback" src="./audio/click/click-sound.mp3"></audio>
+
+        <audio class="sound_click_colors" src="./audio/click/click-sound.mp3"></audio>
+        <audio class="select_colors_sound" src="./audio/click/select-colors-sound.mp3"></audio>
         <a class="rth" href="#rth">
             <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M0 32L5.64 37.64L28 15.32V64H36V15.32L58.32 37.68L64 32L32 0L0 32Z" fill="#FCFCFC" />

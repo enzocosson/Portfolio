@@ -459,7 +459,7 @@ header {
 
   .feedback {
     position: relative;
-    background-color: var(--white);
+    background-color: #f2f2f2;
     width: 40vw;
     height: 70vh;
     border-radius: 1vw;
@@ -482,13 +482,13 @@ header {
       .title {
         font-family: $font_base;
         font-size: 1.5vw;
-        color: var(--black);
+        color: #2e2e2e;
       }
       p {
         font-family: $font_sf;
         font-size: 1vw;
         text-align: justify;
-        color: var(--black);
+        color: #2e2e2e;
 
         span {
           font-weight: bold;
@@ -515,32 +515,32 @@ header {
           input {
             width: 48%;
             height: 4.5vh;
-            border: 0.15vw solid rgb(56, 56, 56);
+            border: 0.15vw solid #2e2e2e;
             border-radius: 0.5vw;
             padding: 0.5vw;
             font-family: $font_sf;
             font-size: 0.9vw;
-            color: var(--black);
+            color: #2e2e2e;
             transition: 0.2s ease-in-out;
             &:focus {
               outline: none;
-              border: 0.15vw solid var(--primary-color);
+              border: 0.15vw solid #2e2e2e;
             }
           }
         }
         .email {
           width: 100%;
           height: 4.5vh;
-          border: 0.15vw solid rgb(56, 56, 56);
+          border: 0.15vw solid #2e2e2e;
           border-radius: 0.5vw;
           padding: 0.5vw;
           font-family: $font_sf;
           font-size: 0.9vw;
-          color: var(--black);
+          color: #2e2e2e;
           transition: 0.2s ease-in-out;
           &:focus {
             outline: none;
-            border: 0.15vw solid var(--primary-color);
+            border: 0.15vw solid #2e2e2e;
           }
         }
       }
@@ -555,9 +555,9 @@ header {
           cursor: pointer;
           width: 2vw;
           height: 2vw;
-          border: 0.15vw solid var(--black);
-          background-color: var(--white);
-          color: var(--black);
+          border: 0.15vw solid #2e2e2e;
+          background-color: #f2f2f2;
+          color: #2e2e2e;
           border-radius: 50%;
           font-weight: bold;
           font-family: $font-base;
@@ -570,9 +570,9 @@ header {
           transition: 0.2s ease-in-out;
 
           &:hover {
-            border: 0.15vw solid var(--primary-color);
+            border: 0.15vw solid #2e2e2e;
             background-color: var(--primary-color);
-            color: var(--white);
+            color: #2e2e2e;
           }
         }
         span {
@@ -591,16 +591,16 @@ header {
         #option-8:checked:checked ~ .option-8,
         #option-9:checked:checked ~ .option-9,
         #option-10:checked:checked ~ .option-10 {
-          border: 0.1vw solid var(--black);
-          background-color: var(--black);
-          color: var(--white);
+          border: 0.1vw solid #2e2e2e;
+          background-color: #2e2e2e;
+          color: #f2f2f2;
         }
       }
       .message {
         width: 100%;
         height: 15vh;
-        background-color: var(--white);
-        border: 0.15vw solid rgb(56, 56, 56);
+        background-color: #f2f2f2;
+        border: 0.15vw solid #2e2e2e;
         border-radius: 0.5vw;
         padding: 2vh 1vw;
         font-family: $font-sf;
@@ -608,7 +608,7 @@ header {
 
         &:focus {
           outline: none;
-          border: 0.15vw solid var(--primary-color);
+          border: 0.15vw solid #2e2e2e;
         }
       }
       .interaction {
@@ -632,21 +632,21 @@ header {
           align-items: center;
         }
         .btn_fermer {
-          border: 0.15vw solid var(--black);
-          background-color: var(--black);
-          color: var(--white);
+          border: 0.15vw solid #2e2e2e;
+          background-color: #2e2e2e;
+          color: #f2f2f2;
           &:hover {
             background-color: transparent;
             color: var(--black);
           }
         }
         .btn_envoyer {
-          border: 0.15vw solid var(--primary-color);
-          background-color: var(--primary-color);
-          color: var(--white);
+          border: 0.15vw solid #2e2e2e;
+          background-color: #2e2e2e;
+          color: #f2f2f2;
           &:hover {
             background-color: transparent;
-            color: var(--primary-color);
+            color: #2e2e2e;
           }
         }
       }
@@ -886,12 +886,12 @@ header {
         .identite {
           .name {
             input {
-              border: 0.2vw solid #383838;
+              border: 0.2vw solid #2e2e2e;
               font-size: 1.5vw;
             }
           }
           .email {
-            border: 0.2vw solid #383838;
+            border: 0.2vw solid #2e2e2e;
             font-size: 1.5vw;
           }
         }
@@ -899,12 +899,12 @@ header {
           .option {
             width: 4vw;
             height: 4vw;
-            border: 0.2vw solid var(--black);
+            border: 0.2vw solid #2e2e2e;
             font-size: 2vw;
           }
         }
         .message {
-          border: 0.2vw solid #383838;
+          border: 0.2vw solid #2e2e2e;
           font-size: 1.5vw;
         }
         .interaction {
@@ -912,10 +912,10 @@ header {
             font-size: 2.5vw;
           }
           .btn_envoyer {
-            border: 0.3vw solid var(--primary-color);
+            border: 0.3vw solid #2e2e2e;
           }
           .btn_fermer {
-            border: 0.3vw solid var(--black);
+            border: 0.3vw solid #2e2e2e;
           }
         }
       }
@@ -933,7 +933,6 @@ header {
       justify-content: space-between;
       align-items: center;
       padding: 4vw;
-      // background-color: var(--primary-color);
       z-index: 9999999999;
       transition: 0.2s ease-in-out;
 
@@ -1205,7 +1204,7 @@ header {
               input {
                 height: 5vh;
                 width: 100%;
-                border: 0.5vw solid #383838;
+                border: 0.5vw solid #2e2e2e;
                 font-size: 3vw;
                 border-radius: 1.2vw;
                 padding: 0vh 1.5vw;
@@ -1213,7 +1212,7 @@ header {
             }
             .email {
               height: 5vh;
-              border: 0.5vw solid #383838;
+              border: 0.5vw solid #2e2e2e;
               font-size: 3vw;
               border-radius: 1.2vw;
               padding: 0vh 1.5vw;
@@ -1223,12 +1222,12 @@ header {
             .option {
               width: 6vw;
               height: 6vw;
-              border: 0.5vw solid var(--black);
+              border: 0.5vw solid #2e2e2e;
               font-size: 3vw;
             }
           }
           .message {
-            border: 0.5vw solid #383838;
+            border: 0.5vw solid #2e2e2e;
             font-size: 3vw;
             border-radius: 1.2vw;
             padding: 2vh 1.5vw;
@@ -1239,11 +1238,11 @@ header {
               font-size: 3.5vw;
             }
             .btn_envoyer {
-              border: 0.5vw solid var(--primary-color);
+              border: 0.5vw solid #2e2e2e;
               border-radius: 1.2vw;
             }
             .btn_fermer {
-              border: 0.5vw solid var(--black);
+              border: 0.5vw solid #2e2e2e;
               border-radius: 1.2vw;
             }
           }
