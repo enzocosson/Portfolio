@@ -9165,7 +9165,7 @@ header .burger {
 .contact_page {
   position: relative;
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   background-color: var(--primary-color);
   display: -webkit-box;
   display: -ms-flexbox;
@@ -9178,46 +9178,13 @@ header .burger {
           align-items: center;
 }
 
-.contact_page .container_formulaire_bg {
-  position: absolute;
-  width: 38vw;
-  height: auto;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  border-radius: 2vw;
-  z-index: 0;
-}
-
-.contact_page .container_formulaire_bg .word_contact {
-  position: absolute;
-  top: 50%;
-  left: -5%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  height: 99%;
-}
-
-.contact_page .container_formulaire_bg .word_contact_black {
-  position: absolute;
-  top: 50%;
-  left: -5%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  height: 99%;
-  display: none;
-}
-
-.contact_page .container_formulaire_bg .word_contact_black_active {
-  display: block;
-}
-
 .contact_page .container_formulaire {
   background-color: #f2f2f2;
   width: 38vw;
   height: auto;
+  padding: 3vw;
   border-radius: 2vw;
+  margin: 15vh 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -9238,14 +9205,15 @@ header .burger {
 }
 
 .contact_page .container_formulaire .entete {
-  font-size: 2vw;
+  width: 100%;
+  font-size: 2.5vw;
   color: #232323;
   font-family: Base Neue;
   text-align: center;
 }
 
 .contact_page .container_formulaire form {
-  width: 80%;
+  width: 100%;
   row-gap: 2vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -9320,7 +9288,7 @@ header .burger {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-size: 0.8vw;
+  font-size: 1vw;
 }
 
 .contact_page .container_formulaire form .theme .option_contact {
@@ -9334,7 +9302,7 @@ header .burger {
   padding: 0 1vw;
   font-weight: bold;
   font-family: Base Neue;
-  font-size: 1vw;
+  font-size: 1.2vw;
   letter-spacing: 0.05vw;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
@@ -9373,7 +9341,7 @@ header .burger {
   padding: 0 1vw;
   font-weight: bold;
   font-family: Base Neue;
-  font-size: 1vw;
+  font-size: 1.2vw;
   letter-spacing: 0.05vw;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
@@ -9408,7 +9376,7 @@ header .burger {
 .contact_page .container_formulaire form .envoyer {
   cursor: pointer;
   width: 47%;
-  height: 5.5vh;
+  height: 3.5vw;
   border: 0.25vw solid #232323;
   background-color: #232323;
   border-radius: 0.7vw;
@@ -9429,7 +9397,6 @@ header .burger {
 @media screen and (max-width: 1600px) {
   .contact_page .container_formulaire {
     width: 65vw;
-    height: 80vh;
   }
   .contact_page .container_formulaire .entete {
     font-size: 3vw;
@@ -9440,33 +9407,35 @@ header .burger {
   .contact_page .container_formulaire form .identite .nom,
   .contact_page .container_formulaire form .identite .prenom {
     font-size: 1.1vw;
-    border: 0.4vw solid var(--primary-color);
+    border: 0.35vw solid #232323;
+    height: 4.5vw;
   }
   .contact_page .container_formulaire form .email {
     font-size: 1.1vw;
-    border: 0.4vw solid var(--primary-color);
+    border: 0.35vw solid #232323;
+    height: 4.5vw;
   }
   .contact_page .container_formulaire form .theme .option_contact {
     cursor: pointer;
-    font-size: 1.5vw;
-    border: 0.4vw solid var(--primary-color);
-    height: 3.5vw;
+    font-size: 1.8vw;
+    border: 0.35vw solid #232323;
+    height: 4vw;
   }
   .contact_page .container_formulaire form .message {
-    padding: 2vh 3vw;
+    padding: 2vh 1vw;
     font-size: 1.1vw;
-    border: 0.4vw solid var(--primary-color);
+    border: 0.35vw solid #232323;
   }
   .contact_page .container_formulaire form .envoyer {
-    border: 0.4vw solid var(--primary-color);
+    border: 0.35vw solid #232323;
     font-size: 1.7vw;
+    height: 4.5vw;
   }
 }
 
 @media screen and (max-width: 1124px) {
   .contact_page .container_formulaire {
     width: 75vw;
-    height: 80vh;
   }
   .contact_page .container_formulaire .entete {
     font-size: 4vw;
@@ -9478,27 +9447,28 @@ header .burger {
   .contact_page .container_formulaire form .identite .prenom {
     height: 6vw;
     font-size: 1.5vw;
-    border: 0.5vw solid var(--primary-color);
+    border: 0.5vw solid #232323;
   }
   .contact_page .container_formulaire form .email {
     height: 6vw;
     font-size: 1.5vw;
-    border: 0.5vw solid var(--primary-color);
+    border: 0.5vw solid #232323;
   }
   .contact_page .container_formulaire form .theme .option_contact {
     cursor: pointer;
-    font-size: 1.8vw;
-    border: 0.5vw solid var(--primary-color);
+    font-size: 2vw;
+    border: 0.5vw solid #232323;
     height: 5vw;
   }
   .contact_page .container_formulaire form .message {
     height: 25vw;
-    padding: 2vh 3vw;
+    padding: 2vh 1vw;
     font-size: 1.5vw;
-    border: 0.5vw solid var(--primary-color);
+    border: 0.5vw solid #232323;
   }
   .contact_page .container_formulaire form .envoyer {
-    border: 0.5vw solid var(--primary-color);
+    height: 6vw;
+    border: 0.5vw solid #232323;
     font-size: 2vw;
   }
 }
@@ -9509,7 +9479,6 @@ header .burger {
   }
   .contact_page .container_formulaire {
     width: 95vw;
-    height: 84vh;
     -webkit-box-shadow: none;
             box-shadow: none;
     background-color: transparent;
@@ -9560,19 +9529,21 @@ header .burger {
   .contact_page .container_formulaire form .theme #option-2_contact:checked:checked ~ .option-2_contact {
     border: 0.8vw solid var(--white);
     background-color: var(--white);
-    color: var(--primary-color);
+    color: #232323;
   }
   .contact_page .container_formulaire form .message {
     height: 40vw;
     font-size: 3vw;
-    padding: 2vh 3vw;
+    padding: 2vh 1vw;
     border-radius: 1.5vw;
     border: 0.8vw solid var(--white);
   }
   .contact_page .container_formulaire form .envoyer {
+    height: 10vw;
     border: 0.8vw solid var(--white);
     border-radius: 1.5vw;
     font-size: 4vw;
+    background-color: transparent;
   }
 }
 
