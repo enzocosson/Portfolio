@@ -3522,6 +3522,9 @@ header .burger {
 }
 
 @media screen and (max-width: 780px) {
+  .home .home_side_right p {
+    display: none;
+  }
   .home .home_arrow {
     width: 4vw;
     height: 4vw;
@@ -8080,7 +8083,7 @@ header .burger {
   cursor: pointer;
   width: 20vw;
   height: 5vh;
-  background-color: var(--white);
+  background-color: #f2f2f2;
   border-radius: 0.5vw;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -8091,13 +8094,13 @@ header .burger {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  color: var(--primary-color);
+  color: #2e2e2e;
   font-family: Base Neue;
   text-decoration: none;
   font-size: 1.5vw;
   -webkit-box-shadow: 0px 0px 10px 5px rgba(255, 255, 255, 0);
           box-shadow: 0px 0px 10px 5px rgba(255, 255, 255, 0);
-  border: 0.2vw solid var(--white);
+  border: 0.2vw solid #f2f2f2;
   -webkit-transition: 0.4s ease-in-out;
   transition: 0.4s ease-in-out;
   z-index: 10;
@@ -8105,7 +8108,7 @@ header .burger {
 
 .presentation_site .bdd_redirection_top:hover {
   background-color: var(--primary-color);
-  color: var(--white);
+  color: #f2f2f2;
   -webkit-box-shadow: 0px 0px 10px 5px rgba(255, 255, 255, 0.123);
           box-shadow: 0px 0px 10px 5px rgba(255, 255, 255, 0.123);
 }
@@ -8379,7 +8382,7 @@ header .burger {
   width: 0%;
   height: 0%;
   border-radius: 1vw 1vw 0vw 0vw;
-  background-color: var(--white);
+  background-color: #f2f2f2;
   z-index: 5;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -8397,7 +8400,7 @@ header .burger {
   color: transparent;
   font-family: Base Neue;
   font-weight: bold;
-  -webkit-text-stroke: 0.1vw var(--black);
+  -webkit-text-stroke: 0.1vw #2e2e2e;
   font-size: 10vw;
   letter-spacing: 1vw;
   opacity: 0;
@@ -8411,7 +8414,7 @@ header .burger {
           transform: translate(-50%, 0%);
   width: 100%;
   height: 0%;
-  background-color: var(--primary-color);
+  background-color: var(--black);
   -webkit-box-shadow: 0px 0px 25px -2px #00000076;
           box-shadow: 0px 0px 25px -2px #00000076;
   z-index: 6;
@@ -8425,7 +8428,7 @@ header .burger {
           transform: translate(-50%, 0%);
   width: 100%;
   height: 0%;
-  background-color: var(--black);
+  background-color: var(--primary-color);
   z-index: 7;
   overflow: hidden;
   display: -webkit-box;
@@ -8443,7 +8446,7 @@ header .burger {
   color: transparent;
   font-family: Base Neue;
   font-weight: bold;
-  -webkit-text-stroke: 0.1vw var(--primary-color);
+  -webkit-text-stroke: 0.1vw var(--white);
   font-size: 10vw;
   letter-spacing: 1vw;
 }
@@ -8583,11 +8586,12 @@ header .burger {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  row-gap: 4vh;
 }
 
 .bdd_more .bdd_text {
   max-width: 80%;
-  color: var(--white);
+  color: #f2f2f2;
   font-family: "Inter", sans-serif;
   font-size: 1.5vw;
   text-align: center;
@@ -8595,15 +8599,10 @@ header .burger {
 }
 
 .bdd_more .bdd_redirection {
-  position: absolute;
-  top: 90%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
   cursor: pointer;
   width: 20vw;
   height: 5vh;
-  background-color: var(--primary-color);
+  background-color: #f2f2f2;
   border-radius: 0.5vw;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -8614,21 +8613,21 @@ header .burger {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  color: var(--black);
+  color: #2e2e2e;
   font-family: Base Neue;
   text-decoration: none;
   font-size: 1.5vw;
   -webkit-box-shadow: 0px 0px 10px 5px rgba(255, 255, 255, 0);
           box-shadow: 0px 0px 10px 5px rgba(255, 255, 255, 0);
-  border: 0.2vw solid var(--primary-color);
+  border: 0.2vw solid #f2f2f2;
   -webkit-transition: 0.4s ease-in-out;
   transition: 0.4s ease-in-out;
   z-index: 10;
 }
 
 .bdd_more .bdd_redirection:hover {
-  background-color: var(--black);
-  color: var(--primary-color);
+  background-color: #2e2e2e;
+  color: #f2f2f2;
   -webkit-box-shadow: 0px 0px 10px 5px rgba(255, 255, 255, 0.123);
           box-shadow: 0px 0px 10px 5px rgba(255, 255, 255, 0.123);
 }
@@ -8654,8 +8653,8 @@ header .burger {
 }
 
 .container_autres_sites .autres_sites_title h1 {
-  font-size: 4vw;
-  color: var(--white);
+  font-size: 5vw;
+  color: #f2f2f2;
   font-family: Base Neue;
   text-transform: uppercase;
 }
@@ -8743,6 +8742,25 @@ header .burger {
     width: 50vw;
     letter-spacing: 0vw;
     z-index: 2;
+  }
+  .presentation_site .bdd_redirection_top {
+    cursor: pointer;
+    margin-top: 5vh;
+    width: 40vw;
+    height: 6vh;
+    border-radius: 1.1vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    font-family: Base Neue;
+    text-decoration: none;
+    font-size: 3vw;
   }
   .more_info h1 {
     color: var(--primary-color);
@@ -8871,7 +8889,6 @@ header .burger {
     color: transparent;
     font-family: Base Neue;
     font-weight: bold;
-    -webkit-text-stroke: 0.2vw var(--primary-color);
     font-size: 30vw;
     letter-spacing: 1vw;
   }
@@ -8888,8 +8905,6 @@ header .burger {
     margin-top: 5vh;
     width: 40vw;
     height: 6vh;
-    border: 0.3vw solid var(--primary-color);
-    background-color: var(--primary-color);
     border-radius: 1.3vw;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -8900,13 +8915,9 @@ header .burger {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    color: var(--white);
     font-family: Base Neue;
     text-decoration: none;
     font-size: 3vw;
-  }
-  .bdd_more .bdd_redirection:hover {
-    border: 0.3vw solid var(--primary-color);
   }
   .container_autres_sites .autres_sites_title h1 {
     font-size: 8vw;
@@ -8946,6 +8957,29 @@ header .burger {
     width: 70vw;
     letter-spacing: 0vw;
     z-index: 2;
+  }
+  .presentation_site .bdd_redirection_top {
+    cursor: pointer;
+    margin-top: 5vh;
+    width: 40vw;
+    height: 6vh;
+    border-radius: 1vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    font-family: Base Neue;
+    text-decoration: none;
+    font-size: 5vw;
+    -webkit-box-shadow: 0px 0px 10px 5px rgba(255, 255, 255, 0);
+    box-shadow: 0px 0px 10px 5px rgba(255, 255, 255, 0);
+    -webkit-transition: 0.4s ease-in-out;
+    transition: 0.4s ease-in-out;
   }
   .more_info h1 {
     color: var(--primary-color);
@@ -9123,8 +9157,7 @@ header .burger {
     margin-top: 5vh;
     width: 40vw;
     height: 6vh;
-    background-color: var(--primary-color);
-    border-radius: 2vw;
+    border-radius: 1vw;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -9134,7 +9167,6 @@ header .burger {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    color: var(--white);
     font-family: Base Neue;
     text-decoration: none;
     font-size: 5vw;
@@ -9145,7 +9177,6 @@ header .burger {
   }
   .container_autres_sites .autres_sites_title h1 {
     font-size: 11vw;
-    color: var(--white);
     font-family: Base Neue;
     text-transform: uppercase;
   }
