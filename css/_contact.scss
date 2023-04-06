@@ -8,7 +8,7 @@
   align-items: center;
 
   .container_formulaire {
-    background-color: #f2f2f2;
+    background-color: #fcfcfc;
     width: 38vw;
     height: auto;
     padding: 3vw;
@@ -62,7 +62,7 @@
           border: 0.25vw solid #232323;
           border-radius: 0.7vw;
           padding: 0 1vw;
-          background-color: #f2f2f2;
+          background-color: #fcfcfc;
           font-family: $font-sf;
           font-size: 0.8vw;
         }
@@ -71,7 +71,7 @@
         width: 100%;
         height: 3.5vw;
         border: 0.25vw solid #232323;
-        background-color: #f2f2f2;
+        background-color: #fcfcfc;
         border-radius: 0.7vw;
         padding: 0 1vw;
         font-family: $font-sf;
@@ -89,7 +89,7 @@
           width: 47%;
           height: 3vw;
           border: 0.25vw solid #232323;
-          background-color: #f2f2f2;
+          background-color: #fcfcfc;
           color: #232323;
           border-radius: 0.7vw;
           padding: 0 1vw;
@@ -110,14 +110,14 @@
         #option-2_contact:checked:checked ~ .option-2_contact {
           border: 0.25vw solid #232323;
           background-color: #232323;
-          color: #f2f2f2;
+          color: #fcfcfc;
         }
         .choix {
           cursor: pointer;
           width: 47%;
           height: 4.5vh;
           border: 0.25vw solid #232323;
-          background-color: #f2f2f2;
+          background-color: #fcfcfc;
           color: #232323;
           border-radius: 0.7vw;
           padding: 0 1vw;
@@ -129,15 +129,15 @@
 
           &:hover {
             background-color: #232323;
-            color: #f2f2f2;
+            color: #fcfcfc;
           }
 
           &:focus {
-            background-color: #f2f2f2;
+            background-color: #fcfcfc;
             color: #232323;
           }
           &:active {
-            background-color: #f2f2f2;
+            background-color: #fcfcfc;
             color: #232323;
           }
         }
@@ -145,7 +145,7 @@
       .message {
         width: 100%;
         height: 17vw;
-        background-color: #f2f2f2;
+        background-color: #fcfcfc;
         border: 0.25vw solid #232323;
         border-radius: 0.7vw;
         padding: 2vh 1vw;
@@ -160,14 +160,14 @@
         background-color: #232323;
         border-radius: 0.7vw;
         padding: 0 1vw;
-        color: #f2f2f2;
+        color: #fcfcfc;
         font-weight: bold;
         font-size: 1vw;
         text-transform: uppercase;
         transition: all 0.2s ease-in-out;
 
         &:hover {
-          background-color: #f2f2f2;
+          background-color: #fcfcfc;
           color: #232323;
         }
       }

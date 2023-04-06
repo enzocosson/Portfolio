@@ -459,7 +459,7 @@ header {
 
   .feedback {
     position: relative;
-    background-color: #f2f2f2;
+    background-color: #fcfcfc;
     width: 40vw;
     height: 70vh;
     border-radius: 1vw;
@@ -558,7 +558,7 @@ header {
           width: 2vw;
           height: 2vw;
           border: 0.15vw solid #2e2e2e;
-          background-color: #f2f2f2;
+          background-color: #fcfcfc;
           color: #2e2e2e;
           border-radius: 50%;
           font-weight: bold;
@@ -595,13 +595,13 @@ header {
         #option-10:checked:checked ~ .option-10 {
           border: 0.1vw solid #2e2e2e;
           background-color: #2e2e2e;
-          color: #f2f2f2;
+          color: #fcfcfc;
         }
       }
       .message {
         width: 100%;
         height: 15vh;
-        background-color: #f2f2f2;
+        background-color: #fcfcfc;
         border: 0.15vw solid #2e2e2e;
         border-radius: 0.5vw;
         padding: 2vh 1vw;
@@ -636,7 +636,7 @@ header {
         .btn_fermer {
           border: 0.15vw solid #2e2e2e;
           background-color: #2e2e2e;
-          color: #f2f2f2;
+          color: #fcfcfc;
           &:hover {
             background-color: transparent;
             color: var(--black);
@@ -645,7 +645,7 @@ header {
         .btn_envoyer {
           border: 0.15vw solid #2e2e2e;
           background-color: #2e2e2e;
-          color: #f2f2f2;
+          color: #fcfcfc;
           &:hover {
             background-color: transparent;
             color: #2e2e2e;

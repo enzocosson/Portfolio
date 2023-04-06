@@ -1034,3 +1034,11 @@ function adminCards_by_nightFullimage($co)
         }
     }
 }
+
+
+
+
+
+function affichage_message()
+{
+}

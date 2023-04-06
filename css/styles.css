@@ -697,7 +697,7 @@ header .burger {
 
 .container_feedback .feedback {
   position: relative;
-  background-color: #f2f2f2;
+  background-color: #fcfcfc;
   width: 40vw;
   height: 70vh;
   border-radius: 1vw;
@@ -842,7 +842,7 @@ header .burger {
   width: 2vw;
   height: 2vw;
   border: 0.15vw solid #2e2e2e;
-  background-color: #f2f2f2;
+  background-color: #fcfcfc;
   color: #2e2e2e;
   border-radius: 50%;
   font-weight: bold;
@@ -891,13 +891,13 @@ header .burger {
 .container_feedback .feedback form .notation #option-10:checked:checked ~ .option-10 {
   border: 0.1vw solid #2e2e2e;
   background-color: #2e2e2e;
-  color: #f2f2f2;
+  color: #fcfcfc;
 }
 
 .container_feedback .feedback form .message {
   width: 100%;
   height: 15vh;
-  background-color: #f2f2f2;
+  background-color: #fcfcfc;
   border: 0.15vw solid #2e2e2e;
   border-radius: 0.5vw;
   padding: 2vh 1vw;
@@ -948,7 +948,7 @@ header .burger {
 .container_feedback .feedback form .interaction .btn_fermer {
   border: 0.15vw solid #2e2e2e;
   background-color: #2e2e2e;
-  color: #f2f2f2;
+  color: #fcfcfc;
 }
 
 .container_feedback .feedback form .interaction .btn_fermer:hover {
@@ -959,7 +959,7 @@ header .burger {
 .container_feedback .feedback form .interaction .btn_envoyer {
   border: 0.15vw solid #2e2e2e;
   background-color: #2e2e2e;
-  color: #f2f2f2;
+  color: #fcfcfc;
 }
 
 .container_feedback .feedback form .interaction .btn_envoyer:hover {
@@ -6797,7 +6797,7 @@ header .burger {
 
 .galerie_web_page .autres_projets .suggestion .suggestion_top .container_miniatures:hover,
 .galerie_web_page .autres_projets .suggestion .suggestion_bottom .container_miniatures:hover {
-  border: 0.5vw solid var(--primary-color);
+  border: 0.5vw solid #fcfcfc;
 }
 
 .galerie_web_page .autres_projets .suggestion .suggestion_top .container_miniatures:hover img,
@@ -7597,7 +7597,7 @@ header .burger {
 .guadeloupe_web_page .autres_projets .suggestion .suggestion_bottom .container_miniatures:hover,
 .auvergne_web_page .autres_projets .suggestion .suggestion_top .container_miniatures:hover,
 .auvergne_web_page .autres_projets .suggestion .suggestion_bottom .container_miniatures:hover {
-  border: 0.5vw solid var(--primary-color);
+  border: 0.5vw solid #fcfcfc;
 }
 
 .guadeloupe_web_page .autres_projets .suggestion .suggestion_top .container_miniatures:hover img,
@@ -8083,7 +8083,7 @@ header .burger {
   cursor: pointer;
   width: 20vw;
   height: 5vh;
-  background-color: #f2f2f2;
+  background-color: #fcfcfc;
   border-radius: 0.5vw;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -8100,7 +8100,7 @@ header .burger {
   font-size: 1.5vw;
   -webkit-box-shadow: 0px 0px 10px 5px rgba(255, 255, 255, 0);
           box-shadow: 0px 0px 10px 5px rgba(255, 255, 255, 0);
-  border: 0.2vw solid #f2f2f2;
+  border: 0.2vw solid #fcfcfc;
   -webkit-transition: 0.4s ease-in-out;
   transition: 0.4s ease-in-out;
   z-index: 10;
@@ -8108,7 +8108,7 @@ header .burger {
 
 .presentation_site .bdd_redirection_top:hover {
   background-color: var(--primary-color);
-  color: #f2f2f2;
+  color: #fcfcfc;
   -webkit-box-shadow: 0px 0px 10px 5px rgba(255, 255, 255, 0.123);
           box-shadow: 0px 0px 10px 5px rgba(255, 255, 255, 0.123);
 }
@@ -8382,7 +8382,7 @@ header .burger {
   width: 0%;
   height: 0%;
   border-radius: 1vw 1vw 0vw 0vw;
-  background-color: #f2f2f2;
+  background-color: #fcfcfc;
   z-index: 5;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -8591,7 +8591,7 @@ header .burger {
 
 .bdd_more .bdd_text {
   max-width: 80%;
-  color: #f2f2f2;
+  color: #fcfcfc;
   font-family: "Inter", sans-serif;
   font-size: 1.5vw;
   text-align: center;
@@ -8602,7 +8602,7 @@ header .burger {
   cursor: pointer;
   width: 20vw;
   height: 5vh;
-  background-color: #f2f2f2;
+  background-color: #fcfcfc;
   border-radius: 0.5vw;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -8619,7 +8619,7 @@ header .burger {
   font-size: 1.5vw;
   -webkit-box-shadow: 0px 0px 10px 5px rgba(255, 255, 255, 0);
           box-shadow: 0px 0px 10px 5px rgba(255, 255, 255, 0);
-  border: 0.2vw solid #f2f2f2;
+  border: 0.2vw solid #fcfcfc;
   -webkit-transition: 0.4s ease-in-out;
   transition: 0.4s ease-in-out;
   z-index: 10;
@@ -8627,7 +8627,7 @@ header .burger {
 
 .bdd_more .bdd_redirection:hover {
   background-color: #2e2e2e;
-  color: #f2f2f2;
+  color: #fcfcfc;
   -webkit-box-shadow: 0px 0px 10px 5px rgba(255, 255, 255, 0.123);
           box-shadow: 0px 0px 10px 5px rgba(255, 255, 255, 0.123);
 }
@@ -8654,7 +8654,7 @@ header .burger {
 
 .container_autres_sites .autres_sites_title h1 {
   font-size: 5vw;
-  color: #f2f2f2;
+  color: #fcfcfc;
   font-family: Base Neue;
   text-transform: uppercase;
 }
@@ -9126,7 +9126,7 @@ header .burger {
     color: transparent;
     font-family: Base Neue;
     font-weight: bold;
-    -webkit-text-stroke: 0.4vw var(--primary-color);
+    -webkit-text-stroke: 0.4vw var(--white);
     font-size: 40vw;
     letter-spacing: 1vw;
   }
@@ -9214,7 +9214,7 @@ header .burger {
 }
 
 .contact_page .container_formulaire {
-  background-color: #f2f2f2;
+  background-color: #fcfcfc;
   width: 38vw;
   height: auto;
   padding: 3vw;
@@ -9296,7 +9296,7 @@ header .burger {
   border: 0.25vw solid #232323;
   border-radius: 0.7vw;
   padding: 0 1vw;
-  background-color: #f2f2f2;
+  background-color: #fcfcfc;
   font-family: "Inter", sans-serif;
   font-size: 0.8vw;
 }
@@ -9305,7 +9305,7 @@ header .burger {
   width: 100%;
   height: 3.5vw;
   border: 0.25vw solid #232323;
-  background-color: #f2f2f2;
+  background-color: #fcfcfc;
   border-radius: 0.7vw;
   padding: 0 1vw;
   font-family: "Inter", sans-serif;
@@ -9331,7 +9331,7 @@ header .burger {
   width: 47%;
   height: 3vw;
   border: 0.25vw solid #232323;
-  background-color: #f2f2f2;
+  background-color: #fcfcfc;
   color: #232323;
   border-radius: 0.7vw;
   padding: 0 1vw;
@@ -9362,7 +9362,7 @@ header .burger {
 .contact_page .container_formulaire form .theme #option-2_contact:checked:checked ~ .option-2_contact {
   border: 0.25vw solid #232323;
   background-color: #232323;
-  color: #f2f2f2;
+  color: #fcfcfc;
 }
 
 .contact_page .container_formulaire form .theme .choix {
@@ -9370,7 +9370,7 @@ header .burger {
   width: 47%;
   height: 4.5vh;
   border: 0.25vw solid #232323;
-  background-color: #f2f2f2;
+  background-color: #fcfcfc;
   color: #232323;
   border-radius: 0.7vw;
   padding: 0 1vw;
@@ -9384,23 +9384,23 @@ header .burger {
 
 .contact_page .container_formulaire form .theme .choix:hover {
   background-color: #232323;
-  color: #f2f2f2;
+  color: #fcfcfc;
 }
 
 .contact_page .container_formulaire form .theme .choix:focus {
-  background-color: #f2f2f2;
+  background-color: #fcfcfc;
   color: #232323;
 }
 
 .contact_page .container_formulaire form .theme .choix:active {
-  background-color: #f2f2f2;
+  background-color: #fcfcfc;
   color: #232323;
 }
 
 .contact_page .container_formulaire form .message {
   width: 100%;
   height: 17vw;
-  background-color: #f2f2f2;
+  background-color: #fcfcfc;
   border: 0.25vw solid #232323;
   border-radius: 0.7vw;
   padding: 2vh 1vw;
@@ -9416,7 +9416,7 @@ header .burger {
   background-color: #232323;
   border-radius: 0.7vw;
   padding: 0 1vw;
-  color: #f2f2f2;
+  color: #fcfcfc;
   font-weight: bold;
   font-size: 1vw;
   text-transform: uppercase;
@@ -9425,7 +9425,7 @@ header .burger {
 }
 
 .contact_page .container_formulaire form .envoyer:hover {
-  background-color: #f2f2f2;
+  background-color: #fcfcfc;
   color: #232323;
 }
 
@@ -10037,7 +10037,7 @@ header .burger {
 
 .administration {
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   background-color: var(--white);
   display: -webkit-box;
   display: -ms-flexbox;
@@ -10077,9 +10077,27 @@ header .burger {
   transition: color 0.2s ease-in-out;
 }
 
-.administration .theme_photo {
-  position: relative;
+.administration section {
   width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  row-gap: 4vh;
+}
+
+.administration section .theme_photo {
+  position: relative;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -10093,7 +10111,7 @@ header .burger {
           align-items: center;
 }
 
-.administration .theme_photo .card_photo {
+.administration section .theme_photo .card_photo {
   position: relative;
   width: 18vw;
   height: 18vw;
@@ -10119,7 +10137,7 @@ header .burger {
   z-index: 0;
 }
 
-.administration .theme_photo .card_photo .theme_img {
+.administration section .theme_photo .card_photo .theme_img {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -10137,7 +10155,7 @@ header .burger {
   transition: opacity 0.5s ease-in-out, transform 1s ease-in-out, -webkit-transform 1s ease-in-out;
 }
 
-.administration .theme_photo .card_photo .theme_titre {
+.administration section .theme_photo .card_photo .theme_titre {
   width: 100%;
   position: absolute;
   top: 50%;
@@ -10154,12 +10172,12 @@ header .burger {
   z-index: 1;
 }
 
-.administration .theme_photo .card_photo:hover {
+.administration section .theme_photo .card_photo:hover {
   background-color: var(--white);
   color: var(--black);
 }
 
-.administration .theme_photo .card_photo h3 {
+.administration section .theme_photo .card_photo h3 {
   font-size: 2.5vw;
   color: var(--white);
   font-family: Base Neue;
@@ -10167,23 +10185,83 @@ header .burger {
   text-transform: uppercase;
 }
 
-.administration .theme_photo .card_photo:hover {
+.administration section .theme_photo .card_photo:hover {
   border: 0.5vw solid var(--primary-color);
 }
 
-.administration .theme_photo .card_photo:hover .theme_titre {
+.administration section .theme_photo .card_photo:hover .theme_titre {
   color: var(--primary-color);
   font-size: 3vw;
 }
 
-.administration .theme_photo .card_photo:hover img {
+.administration section .theme_photo .card_photo:hover img {
   opacity: 0.7;
   -webkit-transform: translate(-50%, -50%) scale(1);
           transform: translate(-50%, -50%) scale(1);
 }
 
-.administration .theme_photo .spe {
+.administration section .theme_photo .spe {
   background-color: var(--primary-color);
+}
+
+.administration section .boites_messages {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  row-gap: 4vh;
+}
+
+.administration section .boites_messages .boite {
+  font-family: "Inter", sans-serif;
+  color: var(--white);
+  padding: 1vw;
+  border-radius: 0.5vw;
+  width: 100%;
+  border: 0.2vw solid var(--primary-color);
+  background-color: var(--primary-color);
+}
+
+.administration section .boites_messages .boite h3 {
+  margin-bottom: 2vh;
+  font-size: 1.5vw;
+}
+
+.administration section .boites_messages .boite .message {
+  width: 100%;
+  padding: 0.5vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: var(--white);
+  color: var(--black);
+  font-size: 0.8vw;
+  font-weight: normal;
+  border-radius: 0.3vw;
+}
+
+.administration section .boites_messages .boite .message p {
+  font-family: "Inter", sans-serif;
+}
+
+.administration section .boites_messages .boite .message .container_message {
+  width: 30%;
 }
 
 .administration .spe {

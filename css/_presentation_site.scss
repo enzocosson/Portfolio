@@ -87,7 +87,7 @@
     cursor: pointer;
     width: 20vw;
     height: 5vh;
-    background-color: #f2f2f2;
+    background-color: #fcfcfc;
     border-radius: 0.5vw;
     display: flex;
     justify-content: center;
@@ -97,12 +97,12 @@
     text-decoration: none;
     font-size: 1.5vw;
     box-shadow: 0px 0px 10px 5px rgba(255, 255, 255, 0);
-    border: 0.2vw solid #f2f2f2;
+    border: 0.2vw solid #fcfcfc;
     transition: 0.4s ease-in-out;
     z-index: 10;
     &:hover {
       background-color: var(--primary-color);
-      color: #f2f2f2;
+      color: #fcfcfc;
       box-shadow: 0px 0px 10px 5px rgba(255, 255, 255, 0.123);
     }
   }
@@ -311,7 +311,7 @@
     width: 0%;
     height: 0%;
     border-radius: 1vw 1vw 0vw 0vw;
-    background-color: #f2f2f2;
+    background-color: #fcfcfc;
     z-index: 5;
 
     display: flex;
@@ -477,7 +477,7 @@
 
   .bdd_text {
     max-width: 80%;
-    color: #f2f2f2;
+    color: #fcfcfc;
     font-family: $font_sf;
     font-size: 1.5vw;
     text-align: center;
@@ -487,7 +487,7 @@
     cursor: pointer;
     width: 20vw;
     height: 5vh;
-    background-color: #f2f2f2;
+    background-color: #fcfcfc;
     border-radius: 0.5vw;
     display: flex;
     justify-content: center;
@@ -497,12 +497,12 @@
     text-decoration: none;
     font-size: 1.5vw;
     box-shadow: 0px 0px 10px 5px rgba(255, 255, 255, 0);
-    border: 0.2vw solid #f2f2f2;
+    border: 0.2vw solid #fcfcfc;
     transition: 0.4s ease-in-out;
     z-index: 10;
     &:hover {
       background-color: #2e2e2e;
-      color: #f2f2f2;
+      color: #fcfcfc;
       box-shadow: 0px 0px 10px 5px rgba(255, 255, 255, 0.123);
     }
   }
@@ -521,7 +521,7 @@
 
     h1 {
       font-size: 5vw;
-      color: #f2f2f2;
+      color: #fcfcfc;
       font-family: $font_base;
       text-transform: uppercase;
     }
@@ -980,7 +980,7 @@
       color: transparent;
       font-family: Base Neue;
       font-weight: bold;
-      -webkit-text-stroke: 0.4vw var(--primary-color);
+      -webkit-text-stroke: 0.4vw var(--white);
       font-size: 40vw;
       letter-spacing: 1vw;
     }
