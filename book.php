@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Portfolio | Site - Book</title>
+  <meta name="description" content="Découvrez mes réalisations créatives et variées à travers mon book de projets personnels. De la conception graphique à la photographie, en passant par la vidéographie et la création de sites web, explorez mes compétences et mon style artistique unique. Laissez-vous inspirer et découvrez comment mes projets peuvent répondre à vos besoins créatifs">
   <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/apple-touch-icon.png" />
   <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png" />
   <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png" />

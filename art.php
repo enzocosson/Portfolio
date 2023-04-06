@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Portfolio | Site - Art</title>
+  <meta name="description" content="Découvrez une galerie d'art en ligne remplit d'œuvres exceptionnelles. Explorez la créativité et le talent de l'artiste à travers des réalisations remarquables dans diverses formes d'art. Parcourez cette collection unique et laissez-vous inspirer par l'originalité de cet artiste.">
   <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/apple-touch-icon.png" />
   <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png" />
   <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png" />

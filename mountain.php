@@ -9,6 +9,8 @@ require 'lib.inc.php';
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Portfolio | Photo - Mountain</title>
+  <meta name="description" content="Découvrez la beauté de la montagne à travers les yeux d'un photographe passionné. Explorez ma collection de photos, capturant la majesté de la nature et l'essence de l'aventure en montagne. Laissez-vous inspirer par ma passion pour la photographie et notre amour de la nature sauvage.">
+
   <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/apple-touch-icon.png" />
   <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png" />
   <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png" />

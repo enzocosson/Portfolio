@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Portfolio | Vidéo - Guadeloupe</title>
+  <meta name="description" content="Découvrez mon voyage inoubliable en Guadeloupe à travers cette vidéo captivante. Explorez les merveilles naturelles de cette île paradisiaque, ses plages immaculées, ses forêts luxuriantes et ses montagnes majestueuses. Suivez-moi dans cette aventure incroyable et laissez-vous emporter par la beauté de la Guadeloupe.">
   <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/apple-touch-icon.png" />
   <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png" />
   <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png" />

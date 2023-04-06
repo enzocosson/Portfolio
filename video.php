@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Portfolio | Vidéo</title>
+  <meta name="description" content="Découvrez une sélection de vidéos captivantes dans mon portfolio en ligne. Explorez des univers visuels variés, allant des vidéos de voyage aux vidéos promotionnelles. Laissez-vous inspirer par mes réalisations et découvrez de nouvelles idées pour votre prochain projet vidéo.">
   <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/apple-touch-icon.png" />
   <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png" />
   <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png" />

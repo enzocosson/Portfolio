@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Portfolio | Photo</title>
+  <meta name="description" content="Plongez dans l'univers de mes photographies et explorez une variété de sujets captivants, allant de la nature à l'architecture en passant par les portraits. Découvrez mon style artistique unique et laissez-vous transporter dans des moments figés à travers mes photographies.">
   <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/apple-touch-icon.png" />
   <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png" />
   <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png" />

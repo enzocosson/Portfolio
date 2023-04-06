@@ -9,6 +9,7 @@ require 'lib.inc.php';
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Portfolio | Photo - By Night</title>
+  <meta name="description" content="Découvrez mon portfolio de photographies nocturnes, mettant en lumière des merveilles célestes comme la Voie lactée et les étoiles. Plongez dans un monde captivant et mystique, où la beauté de la nuit est mise en valeur par la magie de la photographie. Explorez mes projets et laissez-vous inspirer par ces moments éphémères capturés pour l'éternité.">
   <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/apple-touch-icon.png" />
   <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png" />
   <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png" />

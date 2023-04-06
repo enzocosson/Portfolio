@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Portfolio | Site - imovix</title>
+  <meta name="description" content="Je suis fier de présenter mon projet de site de streaming fictif Imovix. Découvrez une expérience immersive et passionnante de streaming vidéo en ligne, avec une interface utilisateur élégante et facile à naviguer.">
   <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/apple-touch-icon.png" />
   <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png" />
   <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png" />

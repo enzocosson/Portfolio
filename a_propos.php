@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Portfolio | À Propos</title>
+  <meta name="description" content="Découvrez qui se cache derrière le portfolio en ligne d'Enzo Cosson. Avec une passion pour la conception créative, l'art et la programmation, Enzo Cosson vous présente son parcours et ses compétences en tant qu'artiste multidisciplinaire. Explorez cette page pour en savoir plus sur son histoire, ses projets et sa philosophie de création.">
   <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/apple-touch-icon.png" />
   <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png" />
   <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png" />
