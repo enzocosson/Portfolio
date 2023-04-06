@@ -5691,7 +5691,7 @@ header .burger {
   width: 100%;
   font-size: 5vw;
   text-align: center;
-  color: var(--primary-color);
+  color: #fcfcfc;
   font-weight: bold;
   font-family: Base Neue;
   -webkit-filter: drop-shadow(0px 2px 0.1vw rgba(0, 0, 0, 0.237));
@@ -5730,7 +5730,7 @@ header .burger {
 
 .photo_video_web_page .container_photo .couverture:hover .couverture_titre,
 .photo_video_web_page .container_video .couverture:hover .couverture_titre {
-  color: var(--white);
+  color: var(--primary-color);
 }
 
 .photo_video_web_page .container_photo .couverture:hover img,
@@ -5871,7 +5871,7 @@ header .burger {
   width: 100%;
   font-size: 5vw;
   text-align: center;
-  color: var(--primary-color);
+  color: #fcfcfc;
   font-weight: bold;
   font-family: Base Neue;
   -webkit-filter: drop-shadow(0px 2px 0.1vw rgba(0, 0, 0, 0.237));
@@ -5935,7 +5935,7 @@ header .burger {
 .photo_web_page .theme:hover .theme_titre,
 .video_web_page .theme:hover .theme_titre {
   font-size: 5.5vw;
-  color: var(--white);
+  color: var(--primary-color);
 }
 
 .photo_web_page .theme:hover img,
@@ -5970,7 +5970,7 @@ header .burger {
   font-size: 5vw;
   border-radius: 1.5vw;
   text-align: center;
-  color: var(--primary-color);
+  color: #fcfcfc;
   font-weight: bold;
   font-family: Base Neue;
   -webkit-filter: drop-shadow(0px 2px 0.1vw rgba(0, 0, 0, 0.237));
@@ -6041,7 +6041,7 @@ header .burger {
 .photo_web_page .theme_video:hover .theme_titre,
 .video_web_page .theme_video:hover .theme_titre {
   font-size: 5.5vw;
-  color: var(--white);
+  color: var(--primary-color);
 }
 
 .photo_web_page .theme_video:hover img,
@@ -6081,7 +6081,6 @@ header .burger {
   .photo_web_page .theme_video:hover .theme_titre,
   .video_web_page .theme:hover .theme_titre,
   .video_web_page .theme_video:hover .theme_titre {
-    color: var(--white);
     font-size: 7.5vw;
   }
   .photo_web_page .theme .guadeloupe_video_hover,
@@ -6130,7 +6129,6 @@ header .burger {
   .photo_web_page .theme_video:hover .theme_titre,
   .video_web_page .theme:hover .theme_titre,
   .video_web_page .theme_video:hover .theme_titre {
-    color: var(--primary-color);
     font-size: 9.5vw;
   }
   .photo_web_page .theme .guadeloupe_video_hover,
@@ -10037,8 +10035,8 @@ header .burger {
 
 .administration {
   width: 100%;
-  min-height: 100vh;
-  background-color: var(--white);
+  height: 110vh;
+  background-color: #fcfcfc;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -10058,7 +10056,7 @@ header .burger {
 
 .administration h1 {
   font-size: 8vw;
-  color: var(--black);
+  color: #2e2e2e;
   font-family: Base Neue;
   text-align: center;
   text-transform: uppercase;
@@ -10068,7 +10066,7 @@ header .burger {
 
 .administration h2 {
   font-size: 2.5vw;
-  color: var(--black);
+  color: #2e2e2e;
   font-family: Base Neue;
   text-align: center;
   text-transform: uppercase;
@@ -10164,7 +10162,7 @@ header .burger {
           transform: translate(-50%, -50%);
   -webkit-transition: color 0.5s ease-out, font-size 1s ease-out;
   transition: color 0.5s ease-out, font-size 1s ease-out;
-  color: var(--white);
+  color: #fcfcfc;
   font-size: 2.5vw;
   font-family: Base Neue;
   text-align: center;
@@ -10173,24 +10171,24 @@ header .burger {
 }
 
 .administration section .theme_photo .card_photo:hover {
-  background-color: var(--white);
-  color: var(--black);
+  background-color: #fcfcfc;
+  color: #2e2e2e;
 }
 
 .administration section .theme_photo .card_photo h3 {
   font-size: 2.5vw;
-  color: var(--white);
+  color: #fcfcfc;
   font-family: Base Neue;
   text-align: center;
   text-transform: uppercase;
 }
 
 .administration section .theme_photo .card_photo:hover {
-  border: 0.5vw solid var(--primary-color);
+  border: 0.5vw solid #2e2e2e;
 }
 
 .administration section .theme_photo .card_photo:hover .theme_titre {
-  color: var(--primary-color);
+  color: #2e2e2e;
   font-size: 3vw;
 }
 
@@ -10201,7 +10199,7 @@ header .burger {
 }
 
 .administration section .theme_photo .spe {
-  background-color: var(--primary-color);
+  background-color: #2e2e2e;
 }
 
 .administration section .boites_messages {
@@ -10224,12 +10222,12 @@ header .burger {
 
 .administration section .boites_messages .boite {
   font-family: "Inter", sans-serif;
-  color: var(--white);
+  color: #fcfcfc;
   padding: 1vw;
   border-radius: 0.5vw;
   width: 100%;
-  border: 0.2vw solid var(--primary-color);
-  background-color: var(--primary-color);
+  border: 0.2vw solid #2e2e2e;
+  background-color: #2e2e2e;
 }
 
 .administration section .boites_messages .boite h3 {
@@ -10249,8 +10247,8 @@ header .burger {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: var(--white);
-  color: var(--black);
+  background-color: #fcfcfc;
+  color: #2e2e2e;
   font-size: 0.8vw;
   font-weight: normal;
   border-radius: 0.3vw;
@@ -10274,9 +10272,9 @@ header .burger {
 
 .administration .retour {
   margin-top: 3vh;
-  background-color: var(--primary-color);
-  color: var(--white);
-  border: 0.2vw solid var(--primary-color);
+  background-color: #2e2e2e;
+  color: #fcfcfc;
+  border: 0.2vw solid #2e2e2e;
   border-radius: 0.4vw;
   padding: 1vh 3vw;
   font-size: 1.3vw;
@@ -10289,8 +10287,8 @@ header .burger {
 
 .administration .retour:hover {
   background-color: transparent;
-  color: var(--primary-color);
-  border: 0.2vw solid var(--primary-color);
+  color: #2e2e2e;
+  border: 0.2vw solid #2e2e2e;
 }
 
 @media screen and (max-width: 1124px) {
@@ -10312,7 +10310,7 @@ header .burger {
     font-size: 4.5vw;
   }
   .administration .theme_photo .card_photo:hover {
-    border: 0.6vw solid var(--primary-color);
+    border: 0.6vw solid #2e2e2e;
   }
   .administration .theme_photo .card_photo:hover .theme_titre {
     font-size: 5vw;
@@ -10343,7 +10341,7 @@ header .burger {
     font-size: 10vw;
   }
   .administration .theme_photo .card_photo:hover {
-    border: 0.8vw solid var(--primary-color);
+    border: 0.8vw solid #2e2e2e;
   }
   .administration .theme_photo .card_photo:hover .theme_titre {
     font-size: 11vw;

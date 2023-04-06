@@ -40,7 +40,7 @@
       width: 100%;
       font-size: 5vw;
       text-align: center;
-      color: var(--primary-color);
+      color: #fcfcfc;
       font-weight: bold;
       font-family: $font_base;
 
@@ -84,7 +84,7 @@
     }
     &:hover .theme_titre {
       font-size: 5.5vw;
-      color: var(--white);
+      color: var(--primary-color);
     }
     &:hover img {
       opacity: 0.7;
@@ -111,7 +111,7 @@
       font-size: 5vw;
       border-radius: 1.5vw;
       text-align: center;
-      color: var(--primary-color);
+      color: #fcfcfc;
       font-weight: bold;
       font-family: $font_base;
 
@@ -161,7 +161,7 @@
     }
     &:hover .theme_titre {
       font-size: 5.5vw;
-      color: var(--white);
+      color: var(--primary-color);
     }
     &:hover img {
       opacity: 0;
@@ -193,7 +193,6 @@
         font-size: 7vw;
       }
       &:hover .theme_titre {
-        color: var(--white);
         font-size: 7.5vw;
       }
 
@@ -232,7 +231,6 @@
       }
 
       &:hover .theme_titre {
-        color: var(--primary-color);
         font-size: 9.5vw;
       }
 

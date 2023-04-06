@@ -34,7 +34,7 @@
             <p>PLAY</p>
           </div>
         </div>
-        <iframe class="video_auvergne" src="https://www.youtube.com/embed/a-VOREJWetA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <iframe class="video_auvergne" src="https://www.youtube.com/embed/a-VOREJWetA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; playsinline; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
       </div>
       <h2><span>AUVERGNE </span>- Enzo Cosson</h2>
     </div>

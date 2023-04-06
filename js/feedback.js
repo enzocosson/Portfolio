@@ -22,7 +22,6 @@ function tapOnScreen() {
       container_feedback.classList.remove("container_feedback_active");
     }
   });
-  leave_colors_sound.play();
 }
 tapOnScreen();
 

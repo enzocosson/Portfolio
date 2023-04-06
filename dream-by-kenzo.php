@@ -33,7 +33,7 @@
             <p>PLAY</p>
           </div>
         </div>
-        <iframe class="video_kenzo" src="https://www.youtube.com/embed/mAo0UBh1jPQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <iframe class="video_kenzo" src="https://www.youtube.com/embed/mAo0UBh1jPQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; playsinline; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
       </div>
       <h2><span>Dream By Kenzo </span>- Enzo Cosson</h2>
     </div>

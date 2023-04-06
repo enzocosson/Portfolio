@@ -47,7 +47,6 @@ switch (url) {
 
   case "https://www.enzo-cosson.fr/admin/":
     loader();
-    // darkModeDev();
     cursorFollow();
     burgerMenuToggle();
     transitionPages();
@@ -319,6 +318,34 @@ switch (url) {
     break;
 
   // -----------
+
+  case "https://enzo-cosson.fr/":
+    loader();
+    // darkModeIndex();
+    initScrollMagic();
+    cursorFollow();
+    burgerMenuToggle();
+    transitionPages();
+    revealAnimtaion();
+    break;
+  case "https://enzo-cosson.fr/#works":
+    loader();
+    // darkModeIndex();
+    initScrollMagic();
+    cursorFollow();
+    burgerMenuToggle();
+    transitionPages();
+    revealAnimtaion();
+    break;
+  case "https://enzo-cosson.fr/#rth":
+    loader();
+    // darkModeIndex();
+    initScrollMagic();
+    cursorFollow();
+    burgerMenuToggle();
+    transitionPages();
+    revealAnimtaion();
+    break;
 
   case "https://www.enzo-cosson.fr/":
     loader();
