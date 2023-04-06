@@ -796,6 +796,7 @@ header .burger {
   color: #2e2e2e;
   -webkit-transition: 0.2s ease-in-out;
   transition: 0.2s ease-in-out;
+  background-color: transparent;
 }
 
 .container_feedback .feedback form .identite .name input:focus {
@@ -814,6 +815,7 @@ header .burger {
   color: #2e2e2e;
   -webkit-transition: 0.2s ease-in-out;
   transition: 0.2s ease-in-out;
+  background-color: transparent;
 }
 
 .container_feedback .feedback form .identite .email:focus {
@@ -6240,7 +6242,7 @@ header .burger {
   cursor: pointer;
   width: 2vw;
   height: 2vw;
-  border: 0.1vw solid var(--primary-color);
+  border: 0.15vw solid var(--primary-color);
   background-color: var(--primary-color);
   border-radius: 50%;
   display: -webkit-box;
@@ -6255,14 +6257,16 @@ header .burger {
   -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
   z-index: 2;
-  font-size: 1vw;
+  font-size: 1.1vw;
   font-family: "Inter", sans-serif;
-  color: var(--black);
+  color: var(--white);
+  font-weight: bold;
   opacity: 0;
 }
 
 .galerie_web_page .container_galerie_top .galerie_portrait .container_img .info_photo:hover {
   background-color: transparent;
+  color: var(--primary-color);
 }
 
 .galerie_web_page .container_galerie_top .galerie_portrait .container_img:hover .info_photo {

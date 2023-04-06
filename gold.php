@@ -131,9 +131,9 @@ require 'lib.inc.php';
     </li>
 
     <ul class="menu_mobile">
-      <li><a class="links barba-link" href="/accueil">Accueil</a></li>
+      <li><a class="links " href="/accueil">Accueil</a></li>
       <li>
-        <a class="links barba-link" href="/developpement-web">Développement web | Design</a>
+        <a class="links " href="/developpement-web">Développement web | Design</a>
       </li>
       <li><a class="links" href="/photo-video">Photos | Videos</a></li>
       <li><a class="links" href="/a-propos">À propos</a></li>
@@ -149,9 +149,9 @@ require 'lib.inc.php';
   </header>
 
   <ul class="menu_mobile_black">
-    <li><a class="links barba-link" href="/accueil">Accueil</a></li>
+    <li><a class="links " href="/accueil">Accueil</a></li>
     <li>
-      <a class="links barba-link" href="/developpement-web">Développement web | Design</a>
+      <a class="links " href="/developpement-web">Développement web | Design</a>
     </li>
     <li><a class="links" href="/photo-video">Photos | Videos</a></li>
     <li><a class="links" href="/a-propos">À propos</a></li>

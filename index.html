@@ -181,10 +181,10 @@
 
       <ul class="menu">
         <li style="--i: 1">
-          <a class="links barba-link" href="/accueil">Accueil</a>
+          <a class="links" href="/accueil">Accueil</a>
         </li>
         <li style="--i: 2">
-          <a class="links barba-link" href="/developpement-web"
+          <a class="links" href="/developpement-web"
             >Développement web | Design</a
           >
         </li>
@@ -204,9 +204,9 @@
     </header>
 
     <ul class="menu_mobile">
-      <li><a class="links barba-link" href="/accueil">Accueil</a></li>
+      <li><a class="links" href="/accueil">Accueil</a></li>
       <li>
-        <a class="links barba-link" href="/developpement-web"
+        <a class="links" href="/developpement-web"
           >Développement web | Design</a
         >
       </li>
@@ -217,7 +217,7 @@
       </li>
     </ul>
 
-    <main data-barba="container" data-barba-namespace="accueil">
+    <main ="container" -namespace="accueil">
       <section class="home">
         <div class="title">
           <h1 class="title_name_front">ENZO COSSON</h1>
@@ -244,13 +244,22 @@
           </div>
         </div>
 
-       <div class="home_footer">
+        <div class="home_footer">
           <audio class="rth_sound" src="./audio/click/rth-sound.mp3"></audio>
 
-          <audio class="sound_click_feedback" src="./audio/click/click-sound.mp3"></audio>
+          <audio
+            class="sound_click_feedback"
+            src="./audio/click/click-sound.mp3"
+          ></audio>
 
-          <audio class="sound_click_colors" src="./audio/click/click-sound.mp3"></audio>
-          <audio class="select_colors_sound" src="./audio/click/select-colors-sound.mp3"></audio>
+          <audio
+            class="sound_click_colors"
+            src="./audio/click/click-sound.mp3"
+          ></audio>
+          <audio
+            class="select_colors_sound"
+            src="./audio/click/select-colors-sound.mp3"
+          ></audio>
 
           <a class="rth" href="#rth">
             <svg
@@ -283,8 +292,6 @@
               />
             </svg>
           </button> -->
-
-
 
           <button onclick="generateColors()" class="change_color_btn" href="">
             <svg
@@ -463,7 +470,7 @@
           DIGITAL DESIGN EXPERIENCE
           <span>DIGITAL DESIGN EXPERIENCE</span> DIGITAL DESIGN EXPERIENCE
         </h4>
-   
+
         <img
           class="imac_soda"
           src="./img/mockup/soda_black.webp"

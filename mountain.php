@@ -132,10 +132,10 @@ require 'lib.inc.php';
 
     <ul class="menu">
       <li style="--i: 1">
-        <a class="links barba-link" href="/accueil">Accueil</a>
+        <a class="links " href="/accueil">Accueil</a>
       </li>
       <li style="--i: 2">
-        <a class="links barba-link" href="/developpement-web">Développement web | Design</a>
+        <a class="links " href="/developpement-web">Développement web | Design</a>
       </li>
       <li style="--i: 3">
         <a class="links" href="/photo-video">Photos | Videos</a>
@@ -153,9 +153,9 @@ require 'lib.inc.php';
   </header>
 
   <ul class="menu_mobile">
-    <li><a class="links barba-link" href="/accueil">Accueil</a></li>
+    <li><a class="links " href="/accueil">Accueil</a></li>
     <li>
-      <a class="links barba-link" href="/developpement-web">Développement web | Design</a>
+      <a class="links " href="/developpement-web">Développement web | Design</a>
     </li>
     <li><a class="links" href="/photo-video">Photos | Videos</a></li>
     <li><a class="links" href="/a-propos">À propos</a></li>
