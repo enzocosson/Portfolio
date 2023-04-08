@@ -1,7 +1,7 @@
 .administration {
   width: 100%;
-  height: 100vh;
-  background-color: var(--white);
+  height: 110vh;
+  background-color: #fcfcfc;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -10,7 +10,7 @@
 
   h1 {
     font-size: 8vw;
-    color: var(--black);
+    color: #2e2e2e;
     font-family: $font-base;
     text-align: center;
     text-transform: uppercase;
@@ -18,7 +18,7 @@
   }
   h2 {
     font-size: 2.5vw;
-    color: var(--black);
+    color: #2e2e2e;
     font-family: $font-base;
     text-align: center;
     text-transform: uppercase;
@@ -26,81 +26,133 @@
     transition: color 0.2s ease-in-out;
   }
 
-  .theme_photo {
-    position: relative;
+  section {
     width: 80%;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
-
-    .card_photo {
+    row-gap: 4vh;
+    .theme_photo {
       position: relative;
-      width: 18vw;
-      height: 18vw;
+      width: 100%;
       display: flex;
-      border-radius: 1.5vw;
-      overflow: hidden;
-      border: 0.5vw solid transparent;
-      justify-content: center;
+      flex-wrap: wrap;
+      justify-content: space-between;
       align-items: center;
-      flex-direction: column;
-      cursor: pointer;
-      transition: all 0.5s ease;
-      z-index: 0;
 
-      .theme_img {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%) scale(1.1);
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        object-position: center;
-        transition: opacity 0.5s ease-in-out, transform 1s ease-in-out;
-      }
-      .theme_titre {
-        width: 100%;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        transition: color 0.5s ease-out, font-size 1s ease-out;
-        color: var(--white);
-        font-size: 2.5vw;
-        font-family: $font-base;
-        text-align: center;
-        text-transform: uppercase;
-        z-index: 1;
-      }
-      &:hover {
-        background-color: var(--white);
-        color: var(--black);
-      }
+      .card_photo {
+        position: relative;
+        width: 18vw;
+        height: 18vw;
+        display: flex;
+        border-radius: 1.5vw;
+        overflow: hidden;
+        border: 0.5vw solid transparent;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        cursor: pointer;
+        transition: all 0.5s ease;
+        z-index: 0;
 
-      h3 {
-        font-size: 2.5vw;
-        color: var(--white);
-        font-family: $font-base;
-        text-align: center;
-        text-transform: uppercase;
-      }
+        .theme_img {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%) scale(1.1);
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          object-position: center;
+          transition: opacity 0.5s ease-in-out, transform 1s ease-in-out;
+        }
+        .theme_titre {
+          width: 100%;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          transition: color 0.5s ease-out, font-size 1s ease-out;
+          color: #fcfcfc;
+          font-size: 2.5vw;
+          font-family: $font-base;
+          text-align: center;
+          text-transform: uppercase;
+          z-index: 1;
+        }
+        &:hover {
+          background-color: #fcfcfc;
+          color: #2e2e2e;
+        }
 
-      &:hover {
-        border: 0.5vw solid var(--primary-color);
+        h3 {
+          font-size: 2.5vw;
+          color: #fcfcfc;
+          font-family: $font-base;
+          text-align: center;
+          text-transform: uppercase;
+        }
+
+        &:hover {
+          border: 0.5vw solid #2e2e2e;
+        }
+        &:hover .theme_titre {
+          color: #2e2e2e;
+          font-size: 3vw;
+        }
+        &:hover img {
+          opacity: 0.7;
+          transform: translate(-50%, -50%) scale(1);
+        }
       }
-      &:hover .theme_titre {
-        color: var(--primary-color);
-        font-size: 3vw;
-      }
-      &:hover img {
-        opacity: 0.7;
-        transform: translate(-50%, -50%) scale(1);
+      .spe {
+        background-color: #2e2e2e;
       }
     }
-    .spe {
-      background-color: var(--primary-color);
+
+    .boites_messages {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      row-gap: 4vh;
+      .boite {
+        font-family: $font_sf;
+        color: #fcfcfc;
+        padding: 1vw;
+        border-radius: 0.5vw;
+        width: 100%;
+        border: 0.2vw solid #2e2e2e;
+        background-color: #2e2e2e;
+
+        h3 {
+          margin-bottom: 2vh;
+          font-size: 1.5vw;
+        }
+
+        .message {
+          width: 100%;
+          padding: 0.5vw;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          background-color: #fcfcfc;
+          color: #2e2e2e;
+          font-size: 0.8vw;
+          font-weight: normal;
+          border-radius: 0.3vw;
+
+          p {
+            font-family: $font_sf;
+          }
+
+          .container_message {
+            width: 30%;
+          }
+        }
+      }
     }
   }
 
@@ -110,9 +162,9 @@
   }
   .retour {
     margin-top: 3vh;
-    background-color: var(--primary-color);
-    color: var(--white);
-    border: 0.2vw solid var(--primary-color);
+    background-color: #2e2e2e;
+    color: #fcfcfc;
+    border: 0.2vw solid #2e2e2e;
     border-radius: 0.4vw;
     padding: 1vh 3vw;
     font-size: 1.3vw;
@@ -123,8 +175,8 @@
 
     &:hover {
       background-color: transparent;
-      color: var(--primary-color);
-      border: 0.2vw solid var(--primary-color);
+      color: #2e2e2e;
+      border: 0.2vw solid #2e2e2e;
     }
   }
 }
@@ -149,7 +201,7 @@
           font-size: 4.5vw;
         }
         &:hover {
-          border: 0.6vw solid var(--primary-color);
+          border: 0.6vw solid #2e2e2e;
         }
         &:hover .theme_titre {
           font-size: 5vw;
@@ -182,7 +234,7 @@
           font-size: 10vw;
         }
         &:hover {
-          border: 0.8vw solid var(--primary-color);
+          border: 0.8vw solid #2e2e2e;
         }
         &:hover .theme_titre {
           font-size: 11vw;

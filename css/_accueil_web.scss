@@ -1093,10 +1093,14 @@
     }
   }
 }
+
 //-----------------responsive------------------------------------------
 
 @media screen and (max-width: 780px) {
   .home {
+    .home_side_right p {
+      display: none;
+    }
     .home_arrow {
       width: 4vw;
       height: 4vw;

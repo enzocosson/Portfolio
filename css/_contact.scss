@@ -1,46 +1,19 @@
 .contact_page {
   position: relative;
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   background-color: var(--primary-color);
   display: flex;
   justify-content: center;
   align-items: center;
-  .container_formulaire_bg {
-    position: absolute;
-    width: 38vw;
-    height: 80vh;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    border-radius: 2vw;
-    z-index: 0;
-
-    .word_contact {
-      position: absolute;
-      top: 50%;
-      left: -5%;
-      transform: translate(-50%, -50%);
-      height: 99%;
-    }
-    .word_contact_black {
-      position: absolute;
-      top: 50%;
-      left: -5%;
-      transform: translate(-50%, -50%);
-      height: 99%;
-      display: none;
-    }
-    .word_contact_black_active {
-      display: block;
-    }
-  }
 
   .container_formulaire {
-    background-color: #f2f2f2;
+    background-color: #fcfcfc;
     width: 38vw;
-    height: 80vh;
+    height: auto;
+    padding: 3vw;
     border-radius: 2vw;
+    margin: 15vh 0;
 
     display: flex;
     flex-direction: column;
@@ -51,24 +24,21 @@
     row-gap: 4vh;
 
     .entete {
-      font-size: 2vw;
+      width: 100%;
+      font-size: 2.5vw;
       color: #232323;
       font-family: $font-base;
       text-align: center;
     }
 
     form {
-      width: 80%;
-      // height: 70%;
+      width: 100%;
       row-gap: 2vh;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
       align-items: center;
 
-      // input[type="radio"] {
-      //   display: none;
-      // }
       .erreur {
         color: red;
         font-size: 0.8vw;
@@ -84,7 +54,6 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        // margin-bottom: 3vh;
 
         .prenom,
         .nom {
@@ -93,8 +62,7 @@
           border: 0.25vw solid #232323;
           border-radius: 0.7vw;
           padding: 0 1vw;
-          background-color: #f2f2f2;
-          //   font-style: italic;
+          background-color: #fcfcfc;
           font-family: $font-sf;
           font-size: 0.8vw;
         }
@@ -103,11 +71,9 @@
         width: 100%;
         height: 3.5vw;
         border: 0.25vw solid #232323;
-        background-color: #f2f2f2;
+        background-color: #fcfcfc;
         border-radius: 0.7vw;
         padding: 0 1vw;
-        // font-style: italic;
-        // margin-bottom: 3vh;
         font-family: $font-sf;
         font-size: 0.8vw;
       }
@@ -116,21 +82,20 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        // margin-bottom: 3vh;
-        font-size: 0.8vw;
+        font-size: 1vw;
 
         .option_contact {
           cursor: pointer;
           width: 47%;
           height: 3vw;
           border: 0.25vw solid #232323;
-          background-color: #f2f2f2;
+          background-color: #fcfcfc;
           color: #232323;
           border-radius: 0.7vw;
           padding: 0 1vw;
           font-weight: bold;
           font-family: $font-base;
-          font-size: 1vw;
+          font-size: 1.2vw;
           letter-spacing: 0.05vw;
           transition: all 0.2s ease-in-out;
           display: flex;
@@ -145,34 +110,34 @@
         #option-2_contact:checked:checked ~ .option-2_contact {
           border: 0.25vw solid #232323;
           background-color: #232323;
-          color: #f2f2f2;
+          color: #fcfcfc;
         }
         .choix {
           cursor: pointer;
           width: 47%;
           height: 4.5vh;
           border: 0.25vw solid #232323;
-          background-color: #f2f2f2;
+          background-color: #fcfcfc;
           color: #232323;
           border-radius: 0.7vw;
           padding: 0 1vw;
           font-weight: bold;
           font-family: $font-base;
-          font-size: 1vw;
+          font-size: 1.2vw;
           letter-spacing: 0.05vw;
           transition: all 0.2s ease-in-out;
 
           &:hover {
             background-color: #232323;
-            color: #f2f2f2;
+            color: #fcfcfc;
           }
 
           &:focus {
-            background-color: #f2f2f2;
+            background-color: #fcfcfc;
             color: #232323;
           }
           &:active {
-            background-color: #f2f2f2;
+            background-color: #fcfcfc;
             color: #232323;
           }
         }
@@ -180,32 +145,29 @@
       .message {
         width: 100%;
         height: 17vw;
-        background-color: #f2f2f2;
+        background-color: #fcfcfc;
         border: 0.25vw solid #232323;
         border-radius: 0.7vw;
         padding: 2vh 1vw;
-        // font-style: italic;
-        // margin-bottom: 3vh;
         font-family: $font-sf;
         font-size: 0.8vw;
       }
       .envoyer {
         cursor: pointer;
         width: 47%;
-        height: 5.5vh;
+        height: 3.5vw;
         border: 0.25vw solid #232323;
         background-color: #232323;
         border-radius: 0.7vw;
         padding: 0 1vw;
-        // margin-bottom: 1.3vh;
-        color: #f2f2f2;
+        color: #fcfcfc;
         font-weight: bold;
         font-size: 1vw;
         text-transform: uppercase;
         transition: all 0.2s ease-in-out;
 
         &:hover {
-          background-color: #f2f2f2;
+          background-color: #fcfcfc;
           color: #232323;
         }
       }
@@ -218,7 +180,6 @@
   .contact_page {
     .container_formulaire {
       width: 65vw;
-      height: 80vh;
       .entete {
         font-size: 3vw;
       }
@@ -230,30 +191,33 @@
           .nom,
           .prenom {
             font-size: 1.1vw;
-            border: 0.4vw solid var(--primary-color);
+            border: 0.35vw solid #232323;
+            height: 4.5vw;
           }
         }
 
         .email {
           font-size: 1.1vw;
-          border: 0.4vw solid var(--primary-color);
+          border: 0.35vw solid #232323;
+          height: 4.5vw;
         }
         .theme {
           .option_contact {
             cursor: pointer;
-            font-size: 1.5vw;
-            border: 0.4vw solid var(--primary-color);
-            height: 3.5vw;
+            font-size: 1.8vw;
+            border: 0.35vw solid #232323;
+            height: 4vw;
           }
         }
         .message {
-          padding: 2vh 3vw;
+          padding: 2vh 1vw;
           font-size: 1.1vw;
-          border: 0.4vw solid var(--primary-color);
+          border: 0.35vw solid #232323;
         }
         .envoyer {
-          border: 0.4vw solid var(--primary-color);
+          border: 0.35vw solid #232323;
           font-size: 1.7vw;
+          height: 4.5vw;
         }
       }
     }
@@ -265,7 +229,6 @@
   .contact_page {
     .container_formulaire {
       width: 75vw;
-      height: 80vh;
       .entete {
         font-size: 4vw;
       }
@@ -278,31 +241,32 @@
           .prenom {
             height: 6vw;
             font-size: 1.5vw;
-            border: 0.5vw solid var(--primary-color);
+            border: 0.5vw solid #232323;
           }
         }
 
         .email {
           height: 6vw;
           font-size: 1.5vw;
-          border: 0.5vw solid var(--primary-color);
+          border: 0.5vw solid #232323;
         }
         .theme {
           .option_contact {
             cursor: pointer;
-            font-size: 1.8vw;
-            border: 0.5vw solid var(--primary-color);
+            font-size: 2vw;
+            border: 0.5vw solid #232323;
             height: 5vw;
           }
         }
         .message {
           height: 25vw;
-          padding: 2vh 3vw;
+          padding: 2vh 1vw;
           font-size: 1.5vw;
-          border: 0.5vw solid var(--primary-color);
+          border: 0.5vw solid #232323;
         }
         .envoyer {
-          border: 0.5vw solid var(--primary-color);
+          height: 6vw;
+          border: 0.5vw solid #232323;
           font-size: 2vw;
         }
       }
@@ -319,7 +283,6 @@
     }
     .container_formulaire {
       width: 95vw;
-      height: 84vh;
       box-shadow: none;
       background-color: transparent;
       .entete {
@@ -366,20 +329,22 @@
           #option-2_contact:checked:checked ~ .option-2_contact {
             border: 0.8vw solid var(--white);
             background-color: var(--white);
-            color: var(--primary-color);
+            color: #232323;
           }
         }
         .message {
           height: 40vw;
           font-size: 3vw;
-          padding: 2vh 3vw;
+          padding: 2vh 1vw;
           border-radius: 1.5vw;
           border: 0.8vw solid var(--white);
         }
         .envoyer {
+          height: 10vw;
           border: 0.8vw solid var(--white);
           border-radius: 1.5vw;
           font-size: 4vw;
+          background-color: transparent;
         }
       }
     }

@@ -87,22 +87,22 @@
     cursor: pointer;
     width: 20vw;
     height: 5vh;
-    background-color: var(--white);
+    background-color: #fcfcfc;
     border-radius: 0.5vw;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: var(--primary-color);
+    color: #2e2e2e;
     font-family: $font_base;
     text-decoration: none;
     font-size: 1.5vw;
     box-shadow: 0px 0px 10px 5px rgba(255, 255, 255, 0);
-    border: 0.2vw solid var(--white);
+    border: 0.2vw solid #fcfcfc;
     transition: 0.4s ease-in-out;
     z-index: 10;
     &:hover {
       background-color: var(--primary-color);
-      color: var(--white);
+      color: #fcfcfc;
       box-shadow: 0px 0px 10px 5px rgba(255, 255, 255, 0.123);
     }
   }
@@ -311,7 +311,7 @@
     width: 0%;
     height: 0%;
     border-radius: 1vw 1vw 0vw 0vw;
-    background-color: var(--white);
+    background-color: #fcfcfc;
     z-index: 5;
 
     display: flex;
@@ -323,7 +323,7 @@
       color: transparent;
       font-family: $font_base;
       font-weight: bold;
-      -webkit-text-stroke: 0.1vw var(--black);
+      -webkit-text-stroke: 0.1vw #2e2e2e;
       font-size: 10vw;
       letter-spacing: 1vw;
       opacity: 0;
@@ -336,7 +336,7 @@
     transform: translate(-50%, 0%);
     width: 100%;
     height: 0%;
-    background-color: var(--primary-color);
+    background-color: var(--black);
     box-shadow: 0px 0px 25px -2px #00000076;
     z-index: 6;
   }
@@ -347,7 +347,7 @@
     transform: translate(-50%, 0%);
     width: 100%;
     height: 0%;
-    background-color: var(--black);
+    background-color: var(--primary-color);
     z-index: 7;
     overflow: hidden;
 
@@ -359,7 +359,7 @@
       color: transparent;
       font-family: $font_base;
       font-weight: bold;
-      -webkit-text-stroke: 0.1vw var(--primary-color);
+      -webkit-text-stroke: 0.1vw var(--white);
       font-size: 10vw;
       letter-spacing: 1vw;
     }
@@ -473,39 +473,36 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  row-gap: 4vh;
 
   .bdd_text {
     max-width: 80%;
-    color: var(--white);
+    color: #fcfcfc;
     font-family: $font_sf;
     font-size: 1.5vw;
     text-align: center;
     font-style: italic;
   }
   .bdd_redirection {
-    position: absolute;
-    top: 90%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     cursor: pointer;
     width: 20vw;
     height: 5vh;
-    background-color: var(--primary-color);
+    background-color: #fcfcfc;
     border-radius: 0.5vw;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: var(--black);
+    color: #2e2e2e;
     font-family: $font_base;
     text-decoration: none;
     font-size: 1.5vw;
     box-shadow: 0px 0px 10px 5px rgba(255, 255, 255, 0);
-    border: 0.2vw solid var(--primary-color);
+    border: 0.2vw solid #fcfcfc;
     transition: 0.4s ease-in-out;
     z-index: 10;
     &:hover {
-      background-color: var(--black);
-      color: var(--primary-color);
+      background-color: #2e2e2e;
+      color: #fcfcfc;
       box-shadow: 0px 0px 10px 5px rgba(255, 255, 255, 0.123);
     }
   }
@@ -523,8 +520,8 @@
     width: 100%;
 
     h1 {
-      font-size: 4vw;
-      color: var(--white);
+      font-size: 5vw;
+      color: #fcfcfc;
       font-family: $font_base;
       text-transform: uppercase;
     }
@@ -604,6 +601,25 @@
       width: 50vw;
       letter-spacing: 0vw;
       z-index: 2;
+    }
+    .bdd_redirection_top {
+      cursor: pointer;
+      margin-top: 5vh;
+      width: 40vw;
+      height: 6vh;
+      border-radius: 1.1vw;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      font-family: Base Neue;
+      text-decoration: none;
+      font-size: 3vw;
     }
   }
   .more_info {
@@ -720,7 +736,6 @@
       color: transparent;
       font-family: Base Neue;
       font-weight: bold;
-      -webkit-text-stroke: 0.2vw var(--primary-color);
       font-size: 30vw;
       letter-spacing: 1vw;
     }
@@ -740,8 +755,6 @@
       margin-top: 5vh;
       width: 40vw;
       height: 6vh;
-      border: 0.3vw solid var(--primary-color);
-      background-color: var(--primary-color);
       border-radius: 1.3vw;
       display: -webkit-box;
       display: -ms-flexbox;
@@ -752,14 +765,9 @@
       -webkit-box-align: center;
       -ms-flex-align: center;
       align-items: center;
-      color: var(--white);
       font-family: Base Neue;
       text-decoration: none;
       font-size: 3vw;
-
-      &:hover {
-        border: 0.3vw solid var(--primary-color);
-      }
     }
   }
   .container_autres_sites {
@@ -809,6 +817,29 @@
       width: 70vw;
       letter-spacing: 0vw;
       z-index: 2;
+    }
+    .bdd_redirection_top {
+      cursor: pointer;
+      margin-top: 5vh;
+      width: 40vw;
+      height: 6vh;
+      border-radius: 1vw;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      font-family: Base Neue;
+      text-decoration: none;
+      font-size: 5vw;
+      -webkit-box-shadow: 0px 0px 10px 5px rgba(255, 255, 255, 0);
+      box-shadow: 0px 0px 10px 5px rgba(255, 255, 255, 0);
+      -webkit-transition: 0.4s ease-in-out;
+      transition: 0.4s ease-in-out;
     }
   }
 
@@ -949,7 +980,7 @@
       color: transparent;
       font-family: Base Neue;
       font-weight: bold;
-      -webkit-text-stroke: 0.4vw var(--primary-color);
+      -webkit-text-stroke: 0.4vw var(--white);
       font-size: 40vw;
       letter-spacing: 1vw;
     }
@@ -988,8 +1019,7 @@
       margin-top: 5vh;
       width: 40vw;
       height: 6vh;
-      background-color: var(--primary-color);
-      border-radius: 2vw;
+      border-radius: 1vw;
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
@@ -999,7 +1029,6 @@
       -webkit-box-align: center;
       -ms-flex-align: center;
       align-items: center;
-      color: var(--white);
       font-family: Base Neue;
       text-decoration: none;
       font-size: 5vw;
@@ -1013,7 +1042,6 @@
     .autres_sites_title {
       h1 {
         font-size: 11vw;
-        color: var(--white);
         font-family: Base Neue;
         text-transform: uppercase;
       }

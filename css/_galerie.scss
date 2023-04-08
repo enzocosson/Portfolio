@@ -70,7 +70,7 @@
           cursor: pointer;
           width: 2vw;
           height: 2vw;
-          border: 0.1vw solid var(--primary-color);
+          border: 0.15vw solid var(--primary-color);
           background-color: var(--primary-color);
           border-radius: 50%;
           display: flex;
@@ -78,13 +78,15 @@
           align-items: center;
           transition: 0.3s ease-in-out;
           z-index: 2;
-          font-size: 1vw;
+          font-size: 1.1vw;
           font-family: $font_sf;
-          color: var(--black);
+          color: var(--white);
+          font-weight: bold;
           opacity: 0;
 
           &:hover {
             background-color: transparent;
+            color: var(--primary-color);
           }
         }
         &:hover .info_photo {
@@ -495,7 +497,7 @@
           }
 
           &:hover {
-            border: 0.5vw solid var(--primary-color);
+            border: 0.5vw solid #fcfcfc;
           }
           &:hover img {
             opacity: 0.8;
