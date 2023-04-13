@@ -1133,6 +1133,15 @@ switch (url) {
 
     break;
 
+  // ----------------
+
+  case "https://www.enzo-cosson.fr/404.php":
+    loader();
+    cursorFollow();
+    burgerMenuToggle();
+    transitionPages();
+
+    break;
   // -----------
   case "http://192.168.1.75:5500/validation.php":
     cursorFollow();

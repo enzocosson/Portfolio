@@ -1,15 +1,28 @@
 .not_found {
+  position: relative;
   width: 100%;
   height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #2e2e2e;
+  background-color: var(--primary-color);
 
   h1 {
-    font-size: 4vw;
-    color: #fcfcfc;
+    text-align: center;
+    font-size: 6vw;
+    width: 60%;
+    color: var(--white);
     font-family: $font_base;
+    z-index: 1;
+    -webkit-text-stroke: 3px var(--primary-color);
+  }
+  .lottie {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 0;
+    width: 50% !important;
   }
 }
