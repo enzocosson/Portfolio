@@ -11,7 +11,9 @@
 <?php require 'header.php'; ?>
 
 <body>
-  <h1>On dirait que vous vous êtes égaré</h1>
+  <section class="not_found">
+    <h1>On dirait que vous vous êtes égaré</h1>
+  </section>
 </body>
 
 </html>
