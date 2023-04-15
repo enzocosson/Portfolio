@@ -59,9 +59,10 @@
     </p>
   </section>
 
-  <?php require 'footer.php'; ?>
+
 
 </body>
+<?php require 'footer.php'; ?>
 <script>
   window.addEventListener("load", function() {
     document.body.classList.add("body_loaded");
@@ -104,8 +105,5 @@
   });
 </script>
 
-<script src="./js/generateColor.js"></script>
-<script src="./js/feedback.js"></script>
-<script type="module" src="./js/app.js"></script>
 
 </html>

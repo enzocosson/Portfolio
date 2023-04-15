@@ -1,4 +1,4 @@
-export function filter() {
+function filter() {
   const btn_tous = document.querySelector(".btn_tous");
   const btn_html = document.querySelector(".btn_html");
   const btn_php = document.querySelector(".btn_php");
@@ -32,3 +32,4 @@ export function filter() {
     btn_threejs.classList.add("active");
   });
 }
+filter();

@@ -120,8 +120,7 @@
     </section>
 </body>
 <?php require 'footer.php'; ?>
-<script src="./js/generateColor.js"></script>
-<script src="./js/feedback.js"></script>
+
 <script type="module" src="./js/app.js"></script>
 
 </html>

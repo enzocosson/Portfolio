@@ -1,4 +1,4 @@
-export function devScrollReveal() {
+function devScrollReveal() {
   window.sr = ScrollReveal();
 
   sr.reveal(".card", {
@@ -8,3 +8,5 @@ export function devScrollReveal() {
     distance: "30px",
   });
 }
+
+devScrollReveal();

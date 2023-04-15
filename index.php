@@ -282,10 +282,11 @@
     </section>
 
 
-    <?php require 'footer.php'; ?>
+
 
   </main>
 </body>
+<?php require 'footer.php'; ?>
 <script>
   window.addEventListener("load", function() {
     document.body.classList.add("body_loaded");
@@ -330,6 +331,127 @@
     transitionTitleAlbum.classList.remove("album_transition_title_active");
     circleAlbum.classList.remove("album_stroke_green_circle1_active");
   });
+
+  function mouseMove() {
+    const home = document.querySelector(".home");
+    const title_dev_web_front = document.querySelector(".title_dev_web_front");
+    const title_dev_web_back = document.querySelector(".title_dev_web_back");
+
+    const title_photo_video_front = document.querySelector(
+      ".title_photo_video_front"
+    );
+    const title_photo_video_back = document.querySelector(
+      ".title_photo_video_back"
+    );
+    const title_portfolio = document.querySelector(".title_portfolio");
+
+    const btn_dev = document.querySelector(".btn_dev");
+    const btn_photo = document.querySelector(".btn_photo");
+
+    btn_dev.addEventListener("mouseover", () => {
+      title_dev_web_front.classList.add("title_dev_web_front_active");
+      title_dev_web_back.classList.add("title_dev_web_back_active");
+
+      title_portfolio.classList.add("title_portfolio_active");
+      home.classList.add("home_active");
+    });
+
+    btn_dev.addEventListener("mouseout", () => {
+      title_dev_web_front.classList.remove("title_dev_web_front_active");
+      title_dev_web_back.classList.remove("title_dev_web_back_active");
+
+      title_portfolio.classList.remove("title_portfolio_active");
+      home.classList.remove("home_active");
+    });
+
+    btn_photo.addEventListener("mouseover", () => {
+      title_photo_video_front.classList.add("title_photo_video_front_active");
+      title_photo_video_back.classList.add("title_photo_video_back_active");
+
+      title_portfolio.classList.add("title_portfolio_active");
+      home.classList.add("home_active");
+    });
+
+    btn_photo.addEventListener("mouseout", () => {
+      title_photo_video_front.classList.remove("title_photo_video_front_active");
+      title_photo_video_back.classList.remove("title_photo_video_back_active");
+
+      title_portfolio.classList.remove("title_portfolio_active");
+      home.classList.remove("home_active");
+    });
+
+    // Function to animate the mouse move
+
+    const me = document.querySelector(".me");
+    const title_name_front = document.querySelector(".title_name_front");
+    const title_name_back = document.querySelector(".title_name_back");
+
+    home.addEventListener("mousemove", (e) => {
+      var valueX = (e.clientX * -1) / 10;
+      var valueY = (e.clientY * -1) / 10;
+
+      me.style.transform =
+        "translate(-35%, -45%) translate3d(" + valueX + "px," + valueY + "px,0)";
+    });
+
+    home.addEventListener("mousemove", (e) => {
+      var valueX = (e.clientX * -1) / 20;
+      var valueY = (e.clientY * -1) / 20;
+
+      title_portfolio.style.transform =
+        "translateX(5%) translate3d(" + valueX + "px," + valueY + "px,0)";
+    });
+
+    home.addEventListener("mousemove", (e) => {
+      var valueX = (e.clientX * -1) / 5;
+      var valueY = (e.clientY * -1) / 5;
+
+      title_name_front.style.transform =
+        "translate(-39%, -45%) rotate(353deg) translate3d(" +
+        valueX +
+        "px," +
+        valueY +
+        "px,0)";
+    });
+
+    home.addEventListener("mousemove", (e) => {
+      var valueX = (e.clientX * -1) / 5;
+      var valueY = (e.clientY * -1) / 5;
+
+      title_name_back.style.transform =
+        "translate(-39%, -45%) rotate(353deg) translate3d(" +
+        valueX +
+        "px," +
+        valueY +
+        "px,0)";
+    });
+
+    // Function to change title
+
+    const title_small = document.querySelector(".title_small");
+    const title_small2 = document.querySelector(".title_small2");
+
+    me.addEventListener("mouseover", () => {
+      title_name_front.classList.add("title_name_front_active");
+      title_name_back.classList.add("title_name_back_active");
+      title_portfolio.classList.add("title_portfolio_active");
+      title_small.classList.add("title_small_active");
+      title_small2.classList.add("title_small2_active");
+    });
+
+    me.addEventListener("mouseout", () => {
+      title_name_front.classList.remove("title_name_front_active");
+      title_name_back.classList.remove("title_name_back_active");
+      title_portfolio.classList.remove("title_portfolio_active");
+      title_small.classList.remove("title_small_active");
+      title_small2.classList.remove("title_small2_active");
+    });
+  }
+  document.addEventListener("DOMContentLoaded", function() {
+    setTimeout(function() {
+      mouseMove();
+    }, 3000);
+  });
 </script>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/BezierPlugin.min.js"></script>
@@ -340,9 +462,6 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/debug.addIndicators.min.js" integrity="sha512-RvUydNGlqYJapy0t4AH8hDv/It+zKsv4wOQGb+iOnEfa6NnF2fzjXgRy+FDjSpMfC3sjokNUzsfYZaZ8QAwIxg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/animation.gsap.js" integrity="sha512-judXDFLnOTJsUwd55lhbrX3uSoSQSOZR6vNrsll+4ViUFv+XOIr/xaIK96soMj6s5jVszd7I97a0H+WhgFwTEg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-<script src="./js/script.js"></script>
-<script src="./js/generateColor.js"></script>
-<script src="./js/feedback.js"></script>
-<script type="module" defer src="./js/app.js"></script>
+<script src="./js/libScrollMagic.js"></script>
 
 </html>

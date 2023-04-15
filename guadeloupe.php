@@ -116,8 +116,6 @@
     document.body.classList.add("body_loaded");
   });
 </script>
-<script src="./js/generateColor.js"></script>
-<script src="./js/feedback.js"></script>
-<script type="module" src="./js/app.js"></script>
+<script src="./js/onPlayButtonGuadeloupe.js"></script>
 
 </html>

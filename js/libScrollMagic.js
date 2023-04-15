@@ -1,4 +1,4 @@
-export function initScrollMagic() {
+function initScrollMagic() {
   const pathGreenCircle = {
     curviness: 1.25,
     values: [
@@ -775,3 +775,4 @@ export function initScrollMagic() {
 
   // ------------------------------
 }
+initScrollMagic();

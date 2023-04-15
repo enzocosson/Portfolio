@@ -1,4 +1,4 @@
-export function cursorFollow() {
+function cursorFollow() {
   var cursorDiv = document.querySelector(".cursor_follow");
 
   document.addEventListener("mousemove", function (e) {
@@ -108,3 +108,4 @@ export function cursorFollow() {
     });
   }
 }
+cursorFollow();

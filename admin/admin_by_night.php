@@ -127,7 +127,6 @@ require '../lib.inc.php';
         <a class="retour" href="./index.php">Retour</a>
     </section>
 </body>
-<script src="../js/generateColor.js"></script>
-<script type="module" src="../js/app.js"></script>
+<?php require '../footer.php'; ?>
 
 </html>

@@ -1,37 +1,3 @@
-import { loader } from "./loader.js";
-import { initScrollMagic } from "./libScrollMagic.js";
-import { carrousel } from "./carrousel.js";
-import { filter } from "./filter.js";
-import { devScrollReveal } from "./dev_scrollreveal.js";
-// import {
-//   darkModeIndex,
-//   darkModeSiteContact,
-//   darkModeGalerie,
-// } from "./darkMode.js";
-import { scrollMagicImovix } from "./scrollMagicImovix.js";
-import { scrollMagicBook } from "./scrollMagicBook.js";
-import { scrollMagicSoda } from "./scrollMagicSoda.js";
-import { scrollMagicArt } from "./scrollMagicArt.js";
-import { scrollMagicSpider } from "./scrollMagicSpider.js";
-import { scrollMagicCustomAir } from "./scrollMagicCustomAir.js";
-import { scrollMagicSchool } from "./scrollMagicSchool.js";
-import { scrollMagicGalerie } from "./scrollMagicGalerie.js";
-import { cursorFollow } from "./cursorFollow.js";
-import { burgerMenuToggle } from "./burgerMenu.js";
-import {
-  onPlayButtonVideoGuadeloupe,
-  onPlayButtonVideoAuvergne,
-  onPlayButtonVideoKenzo,
-} from "./onPlayButtonVideo.js";
-import {
-  soundButtonTropical,
-  soundButtonMountain,
-  soundButtonNight,
-} from "./soundButton.js";
-import { infoPhoto } from "./infoPhoto.js";
-import { transitionPages } from "./transitionPages.js";
-import { revealAnimtaion } from "./revealAnimation.js";
-
 // getURL------------------------------------------------------------
 
 function getURL() {
@@ -44,6 +10,56 @@ getURL();
 
 switch (url) {
   // -----------
+  case "http://192.168.1.75:5500/developpement-web":
+    loader();
+    // darkModeDev();
+    carrousel();
+    filter();
+    devScrollReveal();
+    cursorFollow();
+    burgerMenuToggle();
+    transitionPages();
+    break;
+  case "http://10.152.21.50:5500/developpement-web":
+    loader();
+    // darkModeDev();
+    carrousel();
+    filter();
+    devScrollReveal();
+    cursorFollow();
+    burgerMenuToggle();
+    transitionPages();
+    break;
+  case "http://192.168.1.77:5500/developpement-web":
+    loader();
+    // darkModeDev();
+    carrousel();
+    filter();
+    devScrollReveal();
+    cursorFollow();
+    burgerMenuToggle();
+    transitionPages();
+    break;
+  case "https://www.enzo-cosson.fr/developpement-web":
+    loader();
+    // darkModeDev();
+    carrousel();
+    filter();
+    devScrollReveal();
+    cursorFollow();
+    burgerMenuToggle();
+    transitionPages();
+    break;
+  case "https://www.enzo-cosson.fr/developpement-web#rth":
+    loader();
+    // darkModeDev();
+    carrousel();
+    filter();
+    devScrollReveal();
+    cursorFollow();
+    burgerMenuToggle();
+    transitionPages();
+    break;
 
   case "https://www.enzo-cosson.fr/admin/":
     loader();
@@ -312,258 +328,6 @@ switch (url) {
   case "https://www.enzo-cosson.fr/admin/admin_bynight_fullimage.php#rth":
     loader();
     // darkModeDev();
-    cursorFollow();
-    burgerMenuToggle();
-    transitionPages();
-    break;
-
-  // -----------
-
-  case "https://enzo-cosson.fr/":
-    loader();
-    // darkModeIndex();
-    initScrollMagic();
-    cursorFollow();
-    burgerMenuToggle();
-    transitionPages();
-    revealAnimtaion();
-    break;
-  case "https://enzo-cosson.fr/#works":
-    loader();
-    // darkModeIndex();
-    initScrollMagic();
-    cursorFollow();
-    burgerMenuToggle();
-    transitionPages();
-    revealAnimtaion();
-    break;
-  case "https://enzo-cosson.fr/#rth":
-    loader();
-    // darkModeIndex();
-    initScrollMagic();
-    cursorFollow();
-    burgerMenuToggle();
-    transitionPages();
-    revealAnimtaion();
-    break;
-
-  case "https://www.enzo-cosson.fr/":
-    loader();
-    // darkModeIndex();
-    initScrollMagic();
-    cursorFollow();
-    burgerMenuToggle();
-    transitionPages();
-    revealAnimtaion();
-    break;
-  case "https://www.enzo-cosson.fr/#works":
-    loader();
-    // darkModeIndex();
-    initScrollMagic();
-    cursorFollow();
-    burgerMenuToggle();
-    transitionPages();
-    revealAnimtaion();
-    break;
-  case "https://www.enzo-cosson.fr/#rth":
-    loader();
-    // darkModeIndex();
-    initScrollMagic();
-    cursorFollow();
-    burgerMenuToggle();
-    transitionPages();
-    revealAnimtaion();
-    break;
-  case "http://192.168.1.75:5500/accueil#works":
-    loader();
-    // darkModeIndex();
-    initScrollMagic();
-    cursorFollow();
-    burgerMenuToggle();
-    transitionPages();
-    revealAnimtaion();
-    break;
-
-  case "http://192.168.1.77:5500/":
-    loader();
-    // darkModeIndex();
-    initScrollMagic();
-    cursorFollow();
-    burgerMenuToggle();
-    transitionPages();
-    revealAnimtaion();
-    break;
-  case "http://192.168.1.77:5500/accueil":
-    loader();
-    // darkModeIndex();
-    initScrollMagic();
-    cursorFollow();
-    burgerMenuToggle();
-    transitionPages();
-    revealAnimtaion();
-    break;
-  case "http://192.168.1.77:5500/accueil#works":
-    loader();
-    // darkModeIndex();
-    initScrollMagic();
-    cursorFollow();
-    burgerMenuToggle();
-    transitionPages();
-    revealAnimtaion();
-    break;
-  case "http://192.168.1.77:5500/accueil#rth":
-    loader();
-    // darkModeIndex();
-    initScrollMagic();
-    cursorFollow();
-    burgerMenuToggle();
-    transitionPages();
-    revealAnimtaion();
-    break;
-  case "https://www.enzo-cosson.fr/accueil":
-    loader();
-    // darkModeIndex();
-    initScrollMagic();
-    cursorFollow();
-    burgerMenuToggle();
-    transitionPages();
-    revealAnimtaion();
-    break;
-  case "https://www.enzo-cosson.fr/accueil#rth":
-    loader();
-    // darkModeIndex();
-    initScrollMagic();
-    cursorFollow();
-    burgerMenuToggle();
-    transitionPages();
-    revealAnimtaion();
-    break;
-  // -----------
-
-  case "http://192.168.1.75:5500/developpement-web":
-    loader();
-    // darkModeDev();
-    carrousel();
-    filter();
-    devScrollReveal();
-    cursorFollow();
-    burgerMenuToggle();
-    transitionPages();
-    revealAnimtaion();
-    break;
-  case "http://10.152.21.50:5500/developpement-web":
-    loader();
-    // darkModeDev();
-    carrousel();
-    filter();
-    devScrollReveal();
-    cursorFollow();
-    burgerMenuToggle();
-    transitionPages();
-    revealAnimtaion();
-    break;
-  case "http://192.168.1.77:5500/developpement-web":
-    loader();
-    // darkModeDev();
-    carrousel();
-    filter();
-    devScrollReveal();
-    cursorFollow();
-    burgerMenuToggle();
-    transitionPages();
-    revealAnimtaion();
-    break;
-  case "https://www.enzo-cosson.fr/developpement-web":
-    loader();
-    // darkModeDev();
-    carrousel();
-    filter();
-    devScrollReveal();
-    cursorFollow();
-    burgerMenuToggle();
-    transitionPages();
-    revealAnimtaion();
-    break;
-  case "https://www.enzo-cosson.fr/developpement-web#rth":
-    loader();
-    // darkModeDev();
-    carrousel();
-    filter();
-    devScrollReveal();
-    cursorFollow();
-    burgerMenuToggle();
-    transitionPages();
-    revealAnimtaion();
-    break;
-  // -----------
-  case "http://192.168.1.75:5500/photo-video":
-    loader();
-    // darkModeSite();
-    cursorFollow();
-    burgerMenuToggle();
-    transitionPages();
-    break;
-  case "http://10.152.21.50:5500/photo-video":
-    loader();
-    // darkModeSite();
-    cursorFollow();
-    burgerMenuToggle();
-    transitionPages();
-    break;
-  case "http://192.168.1.77:5500/photo-video":
-    loader();
-    // darkModeSite();
-    cursorFollow();
-    burgerMenuToggle();
-    transitionPages();
-    break;
-  case "https://www.enzo-cosson.fr/photo-video":
-    loader();
-    // darkModeSite();
-    cursorFollow();
-    burgerMenuToggle();
-    transitionPages();
-    break;
-  case "https://www.enzo-cosson.fr/photo-video#rth":
-    loader();
-    // darkModeSite();
-    cursorFollow();
-    burgerMenuToggle();
-    transitionPages();
-    break;
-
-  // -----------
-  case "http://192.168.1.75:5500/photo":
-    loader();
-    // darkModeGalerie();
-    cursorFollow();
-    burgerMenuToggle();
-    transitionPages();
-    break;
-  case "http://10.152.21.50:5500/photo":
-    loader();
-    // darkModeGalerie();
-    cursorFollow();
-    burgerMenuToggle();
-    transitionPages();
-    break;
-  case "http://192.168.1.77:5500/photo":
-    loader();
-    // darkModeGalerie();
-    cursorFollow();
-    burgerMenuToggle();
-    transitionPages();
-    break;
-  case "https://www.enzo-cosson.fr/photo":
-    loader();
-    // darkModeGalerie();
-    cursorFollow();
-    burgerMenuToggle();
-    transitionPages();
-    break;
-  case "https://www.enzo-cosson.fr/photo#rth":
-    loader();
-    // darkModeGalerie();
     cursorFollow();
     burgerMenuToggle();
     transitionPages();
@@ -856,292 +620,7 @@ switch (url) {
     transitionPages();
 
     break;
-  // -----------
-  case "http://192.168.1.75:5500/my_dog.html":
-    loader();
-    // darkModeGalerie();
-    scrollMagicGalerie();
-    cursorFollow();
-    burgerMenuToggle();
-    soundButtonTropical();
-    transitionPages();
 
-    break;
-  case "http://10.152.21.50:5500/my_dog.html":
-    loader();
-    // darkModeGalerie();
-    scrollMagicGalerie();
-    cursorFollow();
-    burgerMenuToggle();
-    soundButtonTropical();
-    transitionPages();
-
-    break;
-  case "http://192.168.1.77:5500/my_dog.html":
-    loader();
-    // darkModeGalerie();
-    scrollMagicGalerie();
-    cursorFollow();
-    burgerMenuToggle();
-    soundButtonTropical();
-    transitionPages();
-
-    break;
-  case "https://www.enzo-cosson.fr/my_dog.html":
-    loader();
-    // darkModeGalerie();
-    scrollMagicGalerie();
-    cursorFollow();
-    burgerMenuToggle();
-    soundButtonTropical();
-    transitionPages();
-
-    break;
-
-  // -----------
-  case "http://192.168.1.75:5500/video":
-    loader();
-    // darkModeGalerie();
-    cursorFollow();
-    burgerMenuToggle();
-    transitionPages();
-    break;
-  case "http://10.152.21.50:5500/video":
-    loader();
-    // darkModeGalerie();
-    cursorFollow();
-    burgerMenuToggle();
-    transitionPages();
-    break;
-  case "http://192.168.1.77:5500/video":
-    loader();
-    // darkModeGalerie();
-    cursorFollow();
-    burgerMenuToggle();
-    transitionPages();
-    break;
-  case "https://www.enzo-cosson.fr/video":
-    loader();
-    // darkModeGalerie();
-    cursorFollow();
-    burgerMenuToggle();
-    transitionPages();
-    break;
-  case "https://www.enzo-cosson.fr/video#rth":
-    loader();
-    // darkModeGalerie();
-    cursorFollow();
-    burgerMenuToggle();
-    transitionPages();
-    break;
-  // -----------
-  case "http://192.168.1.75:5500/guadeloupe":
-    loader();
-    // darkModeGalerie();
-    cursorFollow();
-    burgerMenuToggle();
-    onPlayButtonVideoGuadeloupe();
-    transitionPages();
-    break;
-  case "http://10.152.21.50:5500/guadeloupe":
-    loader();
-    // darkModeGalerie();
-    cursorFollow();
-    burgerMenuToggle();
-    onPlayButtonVideoGuadeloupe();
-    transitionPages();
-    break;
-  case "http://192.168.1.77:5500/guadeloupe":
-    loader();
-    // darkModeGalerie();
-    cursorFollow();
-    burgerMenuToggle();
-    onPlayButtonVideoGuadeloupe();
-    transitionPages();
-    break;
-  case "https://www.enzo-cosson.fr/guadeloupe":
-    loader();
-    // darkModeGalerie();
-    cursorFollow();
-    burgerMenuToggle();
-    onPlayButtonVideoGuadeloupe();
-    transitionPages();
-    break;
-  case "https://www.enzo-cosson.fr/guadeloupe#rth":
-    loader();
-    // darkModeGalerie();
-    cursorFollow();
-    burgerMenuToggle();
-    onPlayButtonVideoGuadeloupe();
-    transitionPages();
-    break;
-  // -----------
-  case "http://192.168.1.75:5500/auvergne":
-    loader();
-    // darkModeGalerie();
-    cursorFollow();
-    burgerMenuToggle();
-    onPlayButtonVideoAuvergne();
-    transitionPages();
-    break;
-  case "http://10.152.21.50:5500/auvergne":
-    loader();
-    // darkModeGalerie();
-    cursorFollow();
-    burgerMenuToggle();
-    onPlayButtonVideoAuvergne();
-    transitionPages();
-    break;
-  case "http://192.168.1.77:5500/auvergne":
-    loader();
-    // darkModeGalerie();
-    cursorFollow();
-    burgerMenuToggle();
-    onPlayButtonVideoAuvergne();
-    transitionPages();
-    break;
-  case "https://www.enzo-cosson.fr/auvergne":
-    loader();
-    // darkModeGalerie();
-    cursorFollow();
-    burgerMenuToggle();
-    onPlayButtonVideoAuvergne();
-    transitionPages();
-    break;
-  case "https://www.enzo-cosson.fr/auvergne#rth":
-    loader();
-    // darkModeGalerie();
-    cursorFollow();
-    burgerMenuToggle();
-    onPlayButtonVideoAuvergne();
-    transitionPages();
-    break;
-
-  // -----------
-  case "http://192.168.1.75:5500/dream-by-kenzo":
-    loader();
-    // darkModeGalerie();
-    cursorFollow();
-    burgerMenuToggle();
-    onPlayButtonVideoKenzo();
-    transitionPages();
-    break;
-  case "http://10.152.21.50:5500/dream-by-kenzo":
-    loader();
-    // darkModeGalerie();
-    cursorFollow();
-    burgerMenuToggle();
-    onPlayButtonVideoKenzo();
-    transitionPages();
-    break;
-  case "http://192.168.1.77:5500/dream-by-kenzo":
-    loader();
-    // darkModeGalerie();
-    cursorFollow();
-    burgerMenuToggle();
-    onPlayButtonVideoKenzo();
-    transitionPages();
-    break;
-  case "https://www.enzo-cosson.fr/dream-by-kenzo":
-    loader();
-    // darkModeGalerie();
-    cursorFollow();
-    burgerMenuToggle();
-    onPlayButtonVideoKenzo();
-    transitionPages();
-    break;
-  case "https://www.enzo-cosson.fr/dream-by-kenzo#rth":
-    loader();
-    // darkModeGalerie();
-    cursorFollow();
-    burgerMenuToggle();
-    onPlayButtonVideoKenzo();
-    transitionPages();
-    break;
-
-  // -----------
-  case "http://192.168.1.75:5500/a-propos":
-    loader();
-    // darkModeSite();
-    cursorFollow();
-    burgerMenuToggle();
-    transitionPages();
-    break;
-  case "http://10.152.21.50:5500/a-propos":
-    loader();
-    // darkModeSite();
-    cursorFollow();
-    burgerMenuToggle();
-    transitionPages();
-    break;
-  case "http://192.168.1.77:5500/a-propos":
-    loader();
-    // darkModeSite();
-    cursorFollow();
-    burgerMenuToggle();
-    transitionPages();
-    break;
-  case "https://www.enzo-cosson.fr/a-propos":
-    loader();
-    // darkModeSite();
-    cursorFollow();
-    burgerMenuToggle();
-    transitionPages();
-    break;
-  case "https://www.enzo-cosson.fr/a-propos#rth":
-    loader();
-    // darkModeSite();
-    cursorFollow();
-    burgerMenuToggle();
-    transitionPages();
-    break;
-  case "https://www.enzo-cosson.fr/a-propos#presentation":
-    loader();
-    // darkModeSite();
-    cursorFollow();
-    burgerMenuToggle();
-    transitionPages();
-    break;
-  // -----------
-  case "http://192.168.1.75:5500/contact":
-    loader();
-    // darkModeSiteContact();
-    cursorFollow();
-    burgerMenuToggle();
-    transitionPages();
-    break;
-  case "http://10.152.21.50:5500/contact":
-    loader();
-    // darkModeSiteContact();
-    cursorFollow();
-    burgerMenuToggle();
-    transitionPages();
-    break;
-  case "http://192.168.1.77:5500/contact":
-    loader();
-    // darkModeSiteContact();
-    cursorFollow();
-    burgerMenuToggle();
-    transitionPages();
-    break;
-  case "https://www.enzo-cosson.fr/contact":
-    loader();
-    // darkModeSiteContact();
-    cursorFollow();
-    burgerMenuToggle();
-    transitionPages();
-
-    break;
-
-  // ----------------
-
-  case "https://www.enzo-cosson.fr/404.php":
-    loader();
-    cursorFollow();
-    burgerMenuToggle();
-    transitionPages();
-
-    break;
   // -----------
   case "http://192.168.1.75:5500/validation.php":
     cursorFollow();
@@ -1159,7 +638,6 @@ switch (url) {
   // -----------
   case "http://192.168.1.75:5500/imovix":
     loader();
-    // // darkModeSite();
     scrollMagicImovix();
     cursorFollow();
     burgerMenuToggle();
@@ -1167,7 +645,6 @@ switch (url) {
     break;
   case "http://10.152.21.50:5500/imovix":
     loader();
-    // darkModeSite();
     scrollMagicImovix();
     cursorFollow();
     burgerMenuToggle();

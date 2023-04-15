@@ -1,4 +1,4 @@
-export function infoPhoto() {
+function infoPhoto() {
   var cursorDiv = document.querySelector(".cursor_follow");
   var infoInfo = document.querySelectorAll(".info_photo");
   var container_img = document.querySelectorAll(".container_img");
@@ -23,3 +23,4 @@ export function infoPhoto() {
     });
   });
 }
+infoPhoto();

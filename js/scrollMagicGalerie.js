@@ -1,4 +1,4 @@
-export function scrollMagicGalerie() {
+function scrollMagicGalerie() {
   // --------------------------------------------
 
   const pathLanscape = {
@@ -67,3 +67,5 @@ export function scrollMagicGalerie() {
     .setTween(suggestion)
     .addTo(Controller5);
 }
+
+scrollMagicGalerie();

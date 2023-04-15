@@ -48,3 +48,10 @@
         <p>@Enzo Cosson | Site réalisé à la 🖐 et avec le ❤️</p>
     </div>
 </footer>
+
+<script src="./js/loader.js"></script>
+<script src="./js/cursorFollow.js"></script>
+<script src="./js/burgerMenu.js"></script>
+<script src="./js/transitionPages.js"></script>
+<script src="./js/generateColor.js"></script>
+<script src="./js/feedback.js"></script>

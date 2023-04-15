@@ -1,4 +1,4 @@
-export function transitionPages() {
+function transitionPages() {
   const links = document.querySelectorAll(
     "a:not(.rth, .flashfood, .bdd_redirection, .bdd_redirection_top, .logo_reseaux a, .reseau a)"
   );
@@ -24,3 +24,4 @@ export function transitionPages() {
     });
   });
 }
+transitionPages();

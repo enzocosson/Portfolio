@@ -159,7 +159,6 @@ require '../lib.inc.php';
     <a class="retour" href="./admin_/photo/mountain">Retour</a>
   </section>
 </body>
-<script src="../js/generateColor.js"></script>
-<script type="module" src="../js/app.js"></script>
+<?php require '../footer.php'; ?>
 
 </html>

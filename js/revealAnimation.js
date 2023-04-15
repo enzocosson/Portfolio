@@ -1,4 +1,4 @@
-export function revealAnimtaion() {
+export function () {
   //   window.sr = ScrollReveal();
   //   sr.reveal(".menu li", {
   //     delay: 300,

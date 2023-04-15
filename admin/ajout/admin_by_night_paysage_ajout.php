@@ -117,7 +117,6 @@ require '../../lib.inc.php';
         });
     </script>
 </body>
-<script src="../js/generateColor.js"></script>
-<script type="module" src="../js/app.js"></script>
+<?php require '../footer.php'; ?>
 
 </html>

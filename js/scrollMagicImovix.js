@@ -1,4 +1,4 @@
-export function scrollMagicImovix() {
+function scrollMagicImovix() {
   const pathImac = {
     curviness: 1.25,
     values: [{ top: "250%", width: "5vw" }],
@@ -246,3 +246,4 @@ export function scrollMagicImovix() {
     .addTo(Controller3);
   // --------------------------------------------
 }
+scrollMagicImovix();

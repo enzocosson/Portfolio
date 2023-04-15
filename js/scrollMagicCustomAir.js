@@ -1,4 +1,4 @@
-export function scrollMagicCustomAir() {
+function scrollMagicCustomAir() {
   const pathImac = {
     curviness: 1.25,
     values: [{ top: "250%", width: "5vw" }],
@@ -53,9 +53,7 @@ export function scrollMagicCustomAir() {
   };
   const pathCustomVideo = {
     curviness: 1.25,
-    values: [
-      {top: "50%", width: "20%" },
-    ],
+    values: [{ top: "50%", width: "20%" }],
   };
 
   const pathTextInfo = {
@@ -174,7 +172,7 @@ export function scrollMagicCustomAir() {
   };
   const titre_bdd = {
     curviness: 1.25,
-    values: [{ opacity: "1" },{ opacity: "0"} ],
+    values: [{ opacity: "1" }, { opacity: "0" }],
   };
   const frontground = {
     curviness: 1.25,
@@ -182,7 +180,7 @@ export function scrollMagicCustomAir() {
   };
   const titre_bdd_bg = {
     curviness: 1.25,
-    values: [{ fontSize: "30vw", color:"transparent" }],
+    values: [{ fontSize: "30vw", color: "transparent" }],
   };
   const imovix_catalogue = {
     curviness: 1.25,
@@ -190,13 +188,13 @@ export function scrollMagicCustomAir() {
   };
 
   const bdd = new TimelineMax()
-  .add(
-    TweenMax.to(".titre_bdd_bg", 1, {
-      bezier: titre_bdd_bg,
-      ease: Power1.easeInOut,
-    }),
-    "-=1"
-  )
+    .add(
+      TweenMax.to(".titre_bdd_bg", 1, {
+        bezier: titre_bdd_bg,
+        ease: Power1.easeInOut,
+      }),
+      "-=1"
+    )
     .add(
       TweenMax.to(".container_illu", 1, {
         bezier: container_illu,
@@ -204,7 +202,7 @@ export function scrollMagicCustomAir() {
       }),
       "-=0.1"
     )
-   
+
     .add(
       TweenMax.to(".titre_bdd", 1, {
         bezier: titre_bdd,
@@ -245,3 +243,4 @@ export function scrollMagicCustomAir() {
     .addTo(Controller3);
   // --------------------------------------------
 }
+scrollMagicCustomAir();
