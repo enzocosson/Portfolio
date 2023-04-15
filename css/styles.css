@@ -3,7 +3,8 @@
   font-family: Base Neue;
   font-weight: 600;
   font-stretch: condensed;
-  src: url(/font/base_neue/BaseNeue-CondensedSemiBold-BF63bb6cbca8f3b.ttf) format("truetype");
+  src: url(/font/base_neue/BaseNeue-CondensedSemiBold-BF63bb6cbca8f3b.ttf)
+    format("truetype");
 }
 @font-face {
   font-family: SF Pro;
@@ -223,7 +224,8 @@ header .menu .li_contact:hover {
   background-color: transparent;
   color: var(--white);
 }
-header .menu .li_contact::before, header .menu .li_contact::after {
+header .menu .li_contact::before,
+header .menu .li_contact::after {
   display: none;
 }
 header .logo_li {
@@ -428,7 +430,7 @@ header .burger {
   background-color: var(--primary-color);
   overflow: hidden;
   -moz-column-gap: 0.3vw;
-       column-gap: 0.3vw;
+  column-gap: 0.3vw;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   display: flex;
   justify-content: center;
@@ -638,19 +640,69 @@ header .burger {
 .container_feedback .feedback form .notation span {
   transform: translate(0px, 0.05vh);
 }
-.container_feedback .feedback form .notation input[type=radio i] {
+.container_feedback .feedback form .notation input[type="radio" i] {
   display: none;
 }
-.container_feedback .feedback form .notation #option-1:checked:checked ~ .option-1,
-.container_feedback .feedback form .notation #option-2:checked:checked ~ .option-2,
-.container_feedback .feedback form .notation #option-3:checked:checked ~ .option-3,
-.container_feedback .feedback form .notation #option-4:checked:checked ~ .option-4,
-.container_feedback .feedback form .notation #option-5:checked:checked ~ .option-5,
-.container_feedback .feedback form .notation #option-6:checked:checked ~ .option-6,
-.container_feedback .feedback form .notation #option-7:checked:checked ~ .option-7,
-.container_feedback .feedback form .notation #option-8:checked:checked ~ .option-8,
-.container_feedback .feedback form .notation #option-9:checked:checked ~ .option-9,
-.container_feedback .feedback form .notation #option-10:checked:checked ~ .option-10 {
+.container_feedback
+  .feedback
+  form
+  .notation
+  #option-1:checked:checked
+  ~ .option-1,
+.container_feedback
+  .feedback
+  form
+  .notation
+  #option-2:checked:checked
+  ~ .option-2,
+.container_feedback
+  .feedback
+  form
+  .notation
+  #option-3:checked:checked
+  ~ .option-3,
+.container_feedback
+  .feedback
+  form
+  .notation
+  #option-4:checked:checked
+  ~ .option-4,
+.container_feedback
+  .feedback
+  form
+  .notation
+  #option-5:checked:checked
+  ~ .option-5,
+.container_feedback
+  .feedback
+  form
+  .notation
+  #option-6:checked:checked
+  ~ .option-6,
+.container_feedback
+  .feedback
+  form
+  .notation
+  #option-7:checked:checked
+  ~ .option-7,
+.container_feedback
+  .feedback
+  form
+  .notation
+  #option-8:checked:checked
+  ~ .option-8,
+.container_feedback
+  .feedback
+  form
+  .notation
+  #option-9:checked:checked
+  ~ .option-9,
+.container_feedback
+  .feedback
+  form
+  .notation
+  #option-10:checked:checked
+  ~ .option-10 {
   border: 0.1vw solid #2e2e2e;
   background-color: #2e2e2e;
   color: #fcfcfc;
@@ -809,7 +861,8 @@ header .burger {
 }
 
 .social_line {
-  animation: social_line_animation 5s 1 cubic-bezier(0.46, 0, 0.16, 0.99) forwards;
+  animation: social_line_animation 5s 1 cubic-bezier(0.46, 0, 0.16, 0.99)
+    forwards;
   animation-delay: 2s;
 }
 
@@ -822,7 +875,8 @@ header .burger {
   }
 }
 .social_img {
-  animation: social_img_animation 2s 1 cubic-bezier(0.89, 0.01, 0.58, 1) forwards;
+  animation: social_img_animation 2s 1 cubic-bezier(0.89, 0.01, 0.58, 1)
+    forwards;
   animation-delay: 2.5s;
 }
 
@@ -1122,7 +1176,8 @@ header .burger {
     background-color: transparent;
     color: var(--primary-color);
   }
-  .menu_mobile .li_contact::before, .menu_mobile .li_contact::after {
+  .menu_mobile .li_contact::before,
+  .menu_mobile .li_contact::after {
     display: none;
   }
   .menu_mobile_active {
@@ -1297,7 +1352,8 @@ header .burger {
   background-color: transparent;
   color: var(--black);
 }
-.header_galerie .menu .li_contact::before, .header_galerie .menu .li_contact::after {
+.header_galerie .menu .li_contact::before,
+.header_galerie .menu .li_contact::after {
   display: none;
 }
 
@@ -1446,7 +1502,8 @@ header .burger {
     background-color: transparent;
     color: var(--white);
   }
-  .menu_mobile_black .li_contact::before, .menu_mobile_black .li_contact::after {
+  .menu_mobile_black .li_contact::before,
+  .menu_mobile_black .li_contact::after {
     display: none;
   }
   .menu_mobile_black_active {
@@ -1656,7 +1713,8 @@ header .burger {
   --rotation: 360;
 }
 @keyframes spinner-vse6n7 {
-  0%, 100% {
+  0%,
+  100% {
     transform: rotate(calc(var(--rotation) * 1deg)) translateY(0);
   }
   50% {
@@ -3097,7 +3155,7 @@ header .burger {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .feed {
@@ -3145,7 +3203,7 @@ header .burger {
   width: 100%;
   height: 150%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .feed .container_feed_col .col1 .container_img:first-child::before,
 .feed .container_feed_col .col2 .container_img:first-child::before,
@@ -3158,7 +3216,11 @@ header .burger {
   left: 0;
   width: 100%;
   height: 30vh;
-  background: linear-gradient(to top, rgba(255, 255, 255, 0) 30%, rgba(255, 255, 255, 0.651));
+  background: linear-gradient(
+    to top,
+    rgba(255, 255, 255, 0) 30%,
+    rgba(255, 255, 255, 0.651)
+  );
   z-index: 10;
 }
 
@@ -3456,7 +3518,8 @@ header .burger {
   position: absolute;
   top: 100%;
   left: 130%;
-  transform: perspective(1000px) translate(-50%, -50%) rotateX(44deg) rotateZ(35deg) scale(0.7);
+  transform: perspective(1000px) translate(-50%, -50%) rotateX(44deg)
+    rotateZ(35deg) scale(0.7);
   font-size: 18vw;
   font-weight: bold;
   color: var(--white);
@@ -3484,7 +3547,8 @@ header .burger {
   position: absolute;
   top: 100%;
   left: -30%;
-  transform: perspective(1000px) translate(-50%, -50%) rotateX(46deg) rotateZ(327deg) scale(0.7);
+  transform: perspective(1000px) translate(-50%, -50%) rotateX(46deg)
+    rotateZ(327deg) scale(0.7);
   font-size: 18vw;
   font-weight: bold;
   color: var(--white);
@@ -3498,7 +3562,8 @@ header .burger {
   position: absolute;
   top: 50%;
   left: 150%;
-  transform: perspective(1000px) translate(-50%, -50%) rotateX(13deg) rotateY(56deg) rotateZ(-60deg) scale(0.2);
+  transform: perspective(1000px) translate(-50%, -50%) rotateX(13deg)
+    rotateY(56deg) rotateZ(-60deg) scale(0.2);
   width: 100%;
   height: 20vh;
   display: flex;
@@ -3512,7 +3577,8 @@ header .burger {
   position: absolute;
   top: 50%;
   left: 0%;
-  transform: perspective(1000px) translate(0%, -50%) rotateX(0deg) rotateX(0deg) rotateZ(0deg) scale(1);
+  transform: perspective(1000px) translate(0%, -50%) rotateX(0deg) rotateX(0deg)
+    rotateZ(0deg) scale(1);
   z-index: 0;
   display: flex;
   align-items: center;
@@ -3526,7 +3592,10 @@ header .burger {
     transform: translate(0%, -50%) translateX(-25%);
   }
 }
-.developpement_web_page .carrousel_title_stroke_next .container_slider_anim .slider {
+.developpement_web_page
+  .carrousel_title_stroke_next
+  .container_slider_anim
+  .slider {
   pointer-events: none;
   font-size: 25vw;
   color: transparent;
@@ -3538,7 +3607,8 @@ header .burger {
   position: absolute;
   top: 55%;
   left: 50%;
-  transform: perspective(1000px) translate(-50%, -50%) rotateX(0deg) rotateY(0deg) rotateZ(-5deg) scale(1);
+  transform: perspective(1000px) translate(-50%, -50%) rotateX(0deg)
+    rotateY(0deg) rotateZ(-5deg) scale(1);
   width: 100%;
   height: 20vh;
   display: flex;
@@ -3551,7 +3621,8 @@ header .burger {
   position: absolute;
   top: 50%;
   left: 0%;
-  transform: perspective(1000px) translate(0%, -50%) rotateX(0deg) rotateX(0deg) rotateZ(0deg) scale(1);
+  transform: perspective(1000px) translate(0%, -50%) rotateX(0deg) rotateX(0deg)
+    rotateZ(0deg) scale(1);
   z-index: 0;
   display: flex;
   align-items: center;
@@ -3565,7 +3636,10 @@ header .burger {
     transform: translate(0%, -50%) translateX(-25%);
   }
 }
-.developpement_web_page .carrousel_title_stroke_center .container_slider_anim .slider {
+.developpement_web_page
+  .carrousel_title_stroke_center
+  .container_slider_anim
+  .slider {
   font-size: 25vw;
   color: transparent;
   -webkit-text-stroke: 3px var(--white);
@@ -3576,7 +3650,8 @@ header .burger {
   position: absolute;
   top: 50%;
   left: -150%;
-  transform: perspective(1000px) translate(-50%, -50%) rotateX(-13deg) rotateY(-56deg) rotateZ(60deg) scale(0.2);
+  transform: perspective(1000px) translate(-50%, -50%) rotateX(-13deg)
+    rotateY(-56deg) rotateZ(60deg) scale(0.2);
   width: 100%;
   height: 20vh;
   display: flex;
@@ -3589,7 +3664,8 @@ header .burger {
   position: absolute;
   top: 50%;
   left: 0%;
-  transform: perspective(1000px) translate(0%, -50%) rotateX(0deg) rotateX(0deg) rotateZ(0deg) scale(1);
+  transform: perspective(1000px) translate(0%, -50%) rotateX(0deg) rotateX(0deg)
+    rotateZ(0deg) scale(1);
   z-index: 0;
   display: flex;
   align-items: center;
@@ -3603,7 +3679,10 @@ header .burger {
     transform: translate(0%, -50%) translateX(-25%);
   }
 }
-.developpement_web_page .carrousel_title_stroke_prev .container_slider_anim .slider {
+.developpement_web_page
+  .carrousel_title_stroke_prev
+  .container_slider_anim
+  .slider {
   font-size: 25vw;
   color: transparent;
   -webkit-text-stroke: 3px var(--white);
@@ -3612,7 +3691,8 @@ header .burger {
 }
 .developpement_web_page .imac_next {
   position: absolute;
-  transform: perspective(1000px) translate(-50%, -50%) rotateZ(21deg) rotateY(-50deg) rotateX(-50deg) scale(0.6);
+  transform: perspective(1000px) translate(-50%, -50%) rotateZ(21deg)
+    rotateY(-50deg) rotateX(-50deg) scale(0.6);
   top: 73%;
   left: 115%;
   width: 35vw;
@@ -3623,18 +3703,22 @@ header .burger {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: perspective(1000px) translate(-50%, -50%) rotateZ(0deg) rotateY(0deg) scale(1);
+  transform: perspective(1000px) translate(-50%, -50%) rotateZ(0deg)
+    rotateY(0deg) scale(1);
   width: 35vw;
   transition: 1.2s cubic-bezier(0.72, -0.18, 0.38, 1.01);
   z-index: 2;
 }
 .developpement_web_page .imac_center:hover {
-  transform: perspective(1000px) translate(-50%, -50%) rotateZ(-4deg) rotateY(-6deg) scale(1.1);
-  filter: drop-shadow(0px 0px 30px rgba(252, 252, 252, 0.4117647059)) drop-shadow(0px 0px 30px var(--primary-color));
+  transform: perspective(1000px) translate(-50%, -50%) rotateZ(-4deg)
+    rotateY(-6deg) scale(1.1);
+  filter: drop-shadow(0px 0px 30px rgba(252, 252, 252, 0.4117647059))
+    drop-shadow(0px 0px 30px var(--primary-color));
 }
 .developpement_web_page .imac_prev {
   position: absolute;
-  transform: perspective(1000px) translate(-50%, -50%) rotateZ(-60deg) rotateY(45deg) scale(0.6);
+  transform: perspective(1000px) translate(-50%, -50%) rotateZ(-60deg)
+    rotateY(45deg) scale(0.6);
   top: 73%;
   left: -15%;
   width: 35vw;
@@ -3643,11 +3727,13 @@ header .burger {
 }
 .developpement_web_page .imac_center_active {
   position: fixed;
-  transform: perspective(1000px) translate(-50%, -50%) rotateZ(0deg) rotateY(0deg) scale(3.5);
+  transform: perspective(1000px) translate(-50%, -50%) rotateZ(0deg)
+    rotateY(0deg) scale(3.5);
   top: 71%;
 }
 .developpement_web_page .imac_center_active:hover {
-  transform: perspective(1000px) translate(-50%, -50%) rotateZ(0deg) rotateY(0deg) scale(3.5);
+  transform: perspective(1000px) translate(-50%, -50%) rotateZ(0deg)
+    rotateY(0deg) scale(3.5);
 }
 .developpement_web_page .description {
   position: absolute;
@@ -3665,7 +3751,8 @@ header .burger {
   position: absolute;
   bottom: -250%;
   left: 21%;
-  transform: perspective(1000px) translate(-50%, -50%) rotateZ(21deg) rotateY(-50deg) rotateX(-50deg) scale(0.6);
+  transform: perspective(1000px) translate(-50%, -50%) rotateZ(21deg)
+    rotateY(-50deg) rotateX(-50deg) scale(0.6);
   font-size: 1.1vw;
   font-weight: 200;
   color: var(--white);
@@ -3697,7 +3784,8 @@ header .burger {
   position: absolute;
   bottom: 0%;
   left: -21%;
-  transform: perspective(1000px) translate(-50%, -50%) rotateZ(21deg) rotateY(-50deg) rotateX(-50deg) scale(0.6);
+  transform: perspective(1000px) translate(-50%, -50%) rotateZ(21deg)
+    rotateY(-50deg) rotateX(-50deg) scale(0.6);
   font-size: 1.1vw;
   font-weight: 200;
   color: var(--white);
@@ -3718,7 +3806,7 @@ header .burger {
   justify-content: center;
   align-items: center;
   -moz-column-gap: 1vw;
-       column-gap: 1vw;
+  column-gap: 1vw;
 }
 .developpement_web_page .description .interaction button {
   cursor: pointer;
@@ -3795,7 +3883,7 @@ header .burger {
   justify-content: center;
   align-items: center;
   -moz-column-gap: 1vw;
-       column-gap: 1vw;
+  column-gap: 1vw;
   margin-top: 5vh;
 }
 .tous_mes_projets .interaction .btn_techno {
@@ -3854,7 +3942,7 @@ header .burger {
 }
 .tous_mes_projets .container_cards .card .card_img {
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   width: 100%;
   height: 100%;
   position: absolute;
@@ -3980,11 +4068,13 @@ header .burger {
   }
   .developpement_web_page .imac_center_active {
     position: fixed;
-    transform: perspective(1000px) translate(-50%, -50%) rotateZ(0deg) rotateY(0deg) scale(7);
+    transform: perspective(1000px) translate(-50%, -50%) rotateZ(0deg)
+      rotateY(0deg) scale(7);
     top: 65%;
   }
   .developpement_web_page .imac_center_active:hover {
-    transform: perspective(1000px) translate(-50%, -50%) rotateZ(0deg) rotateY(0deg) scale(7);
+    transform: perspective(1000px) translate(-50%, -50%) rotateZ(0deg)
+      rotateY(0deg) scale(7);
   }
   .tous_mes_projets .interaction .btn_techno {
     cursor: pointer;
@@ -4028,11 +4118,13 @@ header .burger {
 @media screen and (max-width: 780px) {
   .developpement_web_page .imac_center_active {
     position: fixed;
-    transform: perspective(1000px) translate(-50%, -50%) rotateZ(0deg) rotateY(0deg) scale(7);
+    transform: perspective(1000px) translate(-50%, -50%) rotateZ(0deg)
+      rotateY(0deg) scale(7);
     top: 65%;
   }
   .developpement_web_page .imac_center_active:hover {
-    transform: perspective(1000px) translate(-50%, -50%) rotateZ(0deg) rotateY(0deg) scale(7);
+    transform: perspective(1000px) translate(-50%, -50%) rotateZ(0deg)
+      rotateY(0deg) scale(7);
   }
   .developpement_web_page .myProject img {
     width: 2.5vw;
@@ -4068,7 +4160,10 @@ header .burger {
   .developpement_web_page .imac_center {
     width: 71vw;
   }
-  .developpement_web_page .carrousel_title_stroke_center .container_slider_anim .slider {
+  .developpement_web_page
+    .carrousel_title_stroke_center
+    .container_slider_anim
+    .slider {
     font-size: 70vw;
   }
   .developpement_web_page .description {
@@ -4083,7 +4178,7 @@ header .burger {
   }
   .developpement_web_page .description .interaction {
     -moz-column-gap: 2vw;
-         column-gap: 2vw;
+    column-gap: 2vw;
   }
   .developpement_web_page .description .interaction button {
     cursor: pointer;
@@ -4136,7 +4231,7 @@ header .burger {
     justify-content: center;
     align-items: center;
     -moz-column-gap: 1vw;
-         column-gap: 1vw;
+    column-gap: 1vw;
     row-gap: 1vh;
     margin-top: 5vh;
     flex-direction: column;
@@ -4248,9 +4343,9 @@ header .burger {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   -o-object-position: center;
-     object-position: center;
+  object-position: center;
   opacity: 1;
   transition: opacity 0.5s ease-in-out, transform 1s ease-in-out;
   z-index: 0;
@@ -4385,7 +4480,7 @@ header .burger {
   width: 100%;
   height: 110%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   transition: opacity 0.5s ease-in-out, transform 1s ease-in-out;
   z-index: 2;
 }
@@ -4398,19 +4493,19 @@ header .burger {
   width: 100%;
   height: 110%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   transition: 0.3s ease-in-out;
   z-index: 1;
 }
 .photo_web_page .theme .mountain,
 .video_web_page .theme .mountain {
   -o-object-position: top;
-     object-position: top;
+  object-position: top;
 }
 .photo_web_page .theme .tropical,
 .video_web_page .theme .tropical {
   -o-object-position: center;
-     object-position: center;
+  object-position: center;
 }
 .photo_web_page .theme:hover,
 .video_web_page .theme:hover {
@@ -4465,7 +4560,7 @@ header .burger {
   height: 110%;
   border-radius: 1.5vw;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   border-radius: inherit; /* Ajout de cette ligne */
   overflow: hidden; /* Ajout de cette ligne */
   transition: 0.3s ease-in-out;
@@ -4483,7 +4578,7 @@ header .burger {
   height: 100%;
   opacity: 1;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   transition: 0.3s ease-in-out;
   z-index: 1;
   border-radius: 1vw;
@@ -4491,12 +4586,12 @@ header .burger {
 .photo_web_page .theme_video .mountain,
 .video_web_page .theme_video .mountain {
   -o-object-position: top;
-     object-position: top;
+  object-position: top;
 }
 .photo_web_page .theme_video .tropical,
 .video_web_page .theme_video .tropical {
   -o-object-position: center;
-     object-position: center;
+  object-position: center;
 }
 .photo_web_page .theme_video:hover,
 .video_web_page .theme_video:hover {
@@ -4657,14 +4752,19 @@ header .burger {
   border-radius: 0.5vw;
   overflow: hidden;
   margin-bottom: 3vw;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+    rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
   transition: 0.5s ease-in-out;
   display: flex;
   justify-content: space-between;
   align-items: end;
   padding: 1.5vh 1vw;
 }
-.galerie_web_page .container_galerie_top .galerie_portrait .container_img .info_photo {
+.galerie_web_page
+  .container_galerie_top
+  .galerie_portrait
+  .container_img
+  .info_photo {
   cursor: pointer;
   width: 2vw;
   height: 2vw;
@@ -4682,14 +4782,25 @@ header .burger {
   font-weight: bold;
   opacity: 0;
 }
-.galerie_web_page .container_galerie_top .galerie_portrait .container_img .info_photo:hover {
+.galerie_web_page
+  .container_galerie_top
+  .galerie_portrait
+  .container_img
+  .info_photo:hover {
   background-color: transparent;
   color: var(--primary-color);
 }
-.galerie_web_page .container_galerie_top .galerie_portrait .container_img:hover .info_photo {
+.galerie_web_page
+  .container_galerie_top
+  .galerie_portrait
+  .container_img:hover
+  .info_photo {
   opacity: 1;
 }
-.galerie_web_page .container_galerie_top .galerie_portrait .container_img::before {
+.galerie_web_page
+  .container_galerie_top
+  .galerie_portrait
+  .container_img::before {
   pointer-events: none;
   content: "";
   position: absolute;
@@ -4703,7 +4814,11 @@ header .burger {
   z-index: 1;
   transition: all 0.3s ease-in-out;
 }
-.galerie_web_page .container_galerie_top .galerie_portrait .container_img .parametres {
+.galerie_web_page
+  .container_galerie_top
+  .galerie_portrait
+  .container_img
+  .parametres {
   display: flex;
   align-items: start;
   flex-direction: column;
@@ -4712,13 +4827,22 @@ header .burger {
   row-gap: 1vh;
   transition: 0.3s ease-in-out;
 }
-.galerie_web_page .container_galerie_top .galerie_portrait .container_img .parametres p {
+.galerie_web_page
+  .container_galerie_top
+  .galerie_portrait
+  .container_img
+  .parametres
+  p {
   font-size: 0.8vw;
   font-family: "Inter", sans-serif;
   color: #fcfcfc;
   letter-spacing: 0.1vw;
 }
-.galerie_web_page .container_galerie_top .galerie_portrait .container_img .miniatures {
+.galerie_web_page
+  .container_galerie_top
+  .galerie_portrait
+  .container_img
+  .miniatures {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -4726,21 +4850,36 @@ header .burger {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   transition: 0.5s ease-in-out;
 }
-.galerie_web_page .container_galerie_top .galerie_portrait .container_img:hover {
+.galerie_web_page
+  .container_galerie_top
+  .galerie_portrait
+  .container_img:hover {
   transform: scale(1.02);
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 15px -19px, rgba(0, 0, 0, 0.06) 0px 17px 39px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 15px -19px,
+    rgba(0, 0, 0, 0.06) 0px 17px 39px;
 }
-.galerie_web_page .container_galerie_top .galerie_portrait .container_img:hover .miniatures {
+.galerie_web_page
+  .container_galerie_top
+  .galerie_portrait
+  .container_img:hover
+  .miniatures {
   transform: translate(-50%, -50%) scale(1);
 }
-.galerie_web_page .container_galerie_top .galerie_portrait .container_img_active::before {
+.galerie_web_page
+  .container_galerie_top
+  .galerie_portrait
+  .container_img_active::before {
   height: 30vh;
   opacity: 1;
 }
-.galerie_web_page .container_galerie_top .galerie_portrait .container_img_active .parametres {
+.galerie_web_page
+  .container_galerie_top
+  .galerie_portrait
+  .container_img_active
+  .parametres {
   opacity: 1;
 }
 .galerie_web_page .container_galerie_top .galerie_paysage {
@@ -4757,7 +4896,8 @@ header .burger {
   margin-bottom: 3vw;
   background-color: var(--white);
   border-radius: 0.5vw;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+    rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
   overflow: hidden;
   transition: 0.5s ease-in-out;
   display: flex;
@@ -4765,7 +4905,11 @@ header .burger {
   align-items: end;
   padding: 1.5vh 1vw;
 }
-.galerie_web_page .container_galerie_top .galerie_paysage .container_img .info_photo {
+.galerie_web_page
+  .container_galerie_top
+  .galerie_paysage
+  .container_img
+  .info_photo {
   cursor: pointer;
   width: 2vw;
   height: 2vw;
@@ -4782,13 +4926,24 @@ header .burger {
   color: var(--black);
   opacity: 0;
 }
-.galerie_web_page .container_galerie_top .galerie_paysage .container_img .info_photo:hover {
+.galerie_web_page
+  .container_galerie_top
+  .galerie_paysage
+  .container_img
+  .info_photo:hover {
   background-color: transparent;
 }
-.galerie_web_page .container_galerie_top .galerie_paysage .container_img:hover .info_photo {
+.galerie_web_page
+  .container_galerie_top
+  .galerie_paysage
+  .container_img:hover
+  .info_photo {
   opacity: 1;
 }
-.galerie_web_page .container_galerie_top .galerie_paysage .container_img::before {
+.galerie_web_page
+  .container_galerie_top
+  .galerie_paysage
+  .container_img::before {
   pointer-events: none;
   content: "";
   position: absolute;
@@ -4802,7 +4957,11 @@ header .burger {
   z-index: 1;
   transition: all 0.3s ease-in-out;
 }
-.galerie_web_page .container_galerie_top .galerie_paysage .container_img .parametres {
+.galerie_web_page
+  .container_galerie_top
+  .galerie_paysage
+  .container_img
+  .parametres {
   display: flex;
   align-items: start;
   flex-direction: column;
@@ -4812,13 +4971,22 @@ header .burger {
   z-index: 2;
   opacity: 0;
 }
-.galerie_web_page .container_galerie_top .galerie_paysage .container_img .parametres p {
+.galerie_web_page
+  .container_galerie_top
+  .galerie_paysage
+  .container_img
+  .parametres
+  p {
   font-size: 1vw;
   font-family: "Inter", sans-serif;
   color: #2e2e2e;
   letter-spacing: 0.1vw;
 }
-.galerie_web_page .container_galerie_top .galerie_paysage .container_img .miniatures {
+.galerie_web_page
+  .container_galerie_top
+  .galerie_paysage
+  .container_img
+  .miniatures {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -4826,22 +4994,34 @@ header .burger {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   transition: 0.5s ease-in-out;
   z-index: 0;
 }
 .galerie_web_page .container_galerie_top .galerie_paysage .container_img:hover {
   transform: scale(1.02);
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 15px -19px, rgba(0, 0, 0, 0.06) 0px 17px 39px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 15px -19px,
+    rgba(0, 0, 0, 0.06) 0px 17px 39px;
 }
-.galerie_web_page .container_galerie_top .galerie_paysage .container_img:hover .miniatures {
+.galerie_web_page
+  .container_galerie_top
+  .galerie_paysage
+  .container_img:hover
+  .miniatures {
   transform: translate(-50%, -50%) scale(1);
 }
-.galerie_web_page .container_galerie_top .galerie_paysage .container_img_active::before {
+.galerie_web_page
+  .container_galerie_top
+  .galerie_paysage
+  .container_img_active::before {
   height: 30vh;
   opacity: 1;
 }
-.galerie_web_page .container_galerie_top .galerie_paysage .container_img_active .parametres {
+.galerie_web_page
+  .container_galerie_top
+  .galerie_paysage
+  .container_img_active
+  .parametres {
   opacity: 1;
 }
 .galerie_web_page .container_galerie_top .texte_galerie {
@@ -4893,9 +5073,15 @@ header .burger {
   border-radius: 1vw;
   overflow: hidden;
   margin-bottom: 3vw;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+    rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
 }
-.galerie_web_page .container_galerie_top .galerie_first .col .container_img .miniatures {
+.galerie_web_page
+  .container_galerie_top
+  .galerie_first
+  .col
+  .container_img
+  .miniatures {
   position: absolute;
   bottom: 0%;
   left: 50%;
@@ -4903,7 +5089,7 @@ header .burger {
   width: 100%;
   height: 150%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .galerie_web_page .container_galerie_top .galerie_large {
   width: 100%;
@@ -4925,9 +5111,14 @@ header .burger {
   background-color: var(--white);
   border-radius: 1vw;
   overflow: hidden;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+    rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
 }
-.galerie_web_page .container_galerie_top .galerie_large .container_img_100 .miniatures {
+.galerie_web_page
+  .container_galerie_top
+  .galerie_large
+  .container_img_100
+  .miniatures {
   position: absolute;
   bottom: 0%;
   left: 50%;
@@ -4935,7 +5126,7 @@ header .burger {
   width: 100%;
   height: 150%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .galerie_web_page .container_galerie_top .galerie_large .container_img_flex {
   position: relative;
@@ -4946,16 +5137,26 @@ header .burger {
   justify-content: space-between;
   align-items: center;
 }
-.galerie_web_page .container_galerie_top .galerie_large .container_img_flex .container_img_50 {
+.galerie_web_page
+  .container_galerie_top
+  .galerie_large
+  .container_img_flex
+  .container_img_50 {
   position: relative;
   width: 49%;
   height: 100%;
   background-color: var(--white);
   border-radius: 1vw;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+    rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
   overflow: hidden;
 }
-.galerie_web_page .container_galerie_top .galerie_large .container_img_flex .container_img_50 .miniatures {
+.galerie_web_page
+  .container_galerie_top
+  .galerie_large
+  .container_img_flex
+  .container_img_50
+  .miniatures {
   position: absolute;
   bottom: 0%;
   left: 50%;
@@ -4963,7 +5164,7 @@ header .burger {
   width: 100%;
   height: 150%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .galerie_web_page .container_galerie_bottom {
   position: relative;
@@ -4988,7 +5189,7 @@ header .burger {
   width: 100%;
   height: 150%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .galerie_web_page .autres_projets {
   width: 80%;
@@ -5020,8 +5221,16 @@ header .burger {
   justify-content: space-between;
   align-items: center;
 }
-.galerie_web_page .autres_projets .suggestion .suggestion_top .container_miniatures,
-.galerie_web_page .autres_projets .suggestion .suggestion_bottom .container_miniatures {
+.galerie_web_page
+  .autres_projets
+  .suggestion
+  .suggestion_top
+  .container_miniatures,
+.galerie_web_page
+  .autres_projets
+  .suggestion
+  .suggestion_bottom
+  .container_miniatures {
   cursor: pointer;
   position: relative;
   width: 48%;
@@ -5031,8 +5240,18 @@ header .burger {
   border: 0.5vw solid transparent;
   transition: 0.3s ease-in-out;
 }
-.galerie_web_page .autres_projets .suggestion .suggestion_top .container_miniatures .titre_minia,
-.galerie_web_page .autres_projets .suggestion .suggestion_bottom .container_miniatures .titre_minia {
+.galerie_web_page
+  .autres_projets
+  .suggestion
+  .suggestion_top
+  .container_miniatures
+  .titre_minia,
+.galerie_web_page
+  .autres_projets
+  .suggestion
+  .suggestion_bottom
+  .container_miniatures
+  .titre_minia {
   position: absolute;
   bottom: 0%;
   left: 0%;
@@ -5043,8 +5262,18 @@ header .burger {
   color: #fcfcfc;
   z-index: 2;
 }
-.galerie_web_page .autres_projets .suggestion .suggestion_top .container_miniatures .miniatures,
-.galerie_web_page .autres_projets .suggestion .suggestion_bottom .container_miniatures .miniatures {
+.galerie_web_page
+  .autres_projets
+  .suggestion
+  .suggestion_top
+  .container_miniatures
+  .miniatures,
+.galerie_web_page
+  .autres_projets
+  .suggestion
+  .suggestion_bottom
+  .container_miniatures
+  .miniatures {
   position: absolute;
   bottom: 0%;
   left: 50%;
@@ -5052,16 +5281,34 @@ header .burger {
   width: 100%;
   height: 150%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   z-index: 1;
   transition: opacity 0.3s ease-in-out;
 }
-.galerie_web_page .autres_projets .suggestion .suggestion_top .container_miniatures:hover,
-.galerie_web_page .autres_projets .suggestion .suggestion_bottom .container_miniatures:hover {
+.galerie_web_page
+  .autres_projets
+  .suggestion
+  .suggestion_top
+  .container_miniatures:hover,
+.galerie_web_page
+  .autres_projets
+  .suggestion
+  .suggestion_bottom
+  .container_miniatures:hover {
   border: 0.5vw solid #fcfcfc;
 }
-.galerie_web_page .autres_projets .suggestion .suggestion_top .container_miniatures:hover img,
-.galerie_web_page .autres_projets .suggestion .suggestion_bottom .container_miniatures:hover img {
+.galerie_web_page
+  .autres_projets
+  .suggestion
+  .suggestion_top
+  .container_miniatures:hover
+  img,
+.galerie_web_page
+  .autres_projets
+  .suggestion
+  .suggestion_bottom
+  .container_miniatures:hover
+  img {
   opacity: 0.8;
 }
 .galerie_web_page .autres_projets .suggestion .suggestion_bottom {
@@ -5077,7 +5324,9 @@ header .burger {
   align-items: center;
   padding: 10vh 0;
 }
-.galerie_web_page .information_supplementaire .container_information_supplementaire {
+.galerie_web_page
+  .information_supplementaire
+  .container_information_supplementaire {
   position: relative;
   width: 80%;
   background-color: var(--black);
@@ -5086,8 +5335,14 @@ header .burger {
   justify-content: space-between;
   align-items: center;
 }
-.galerie_web_page .information_supplementaire .container_information_supplementaire .setup,
-.galerie_web_page .information_supplementaire .container_information_supplementaire .video {
+.galerie_web_page
+  .information_supplementaire
+  .container_information_supplementaire
+  .setup,
+.galerie_web_page
+  .information_supplementaire
+  .container_information_supplementaire
+  .video {
   position: relative;
   height: 50vh;
   width: 48%;
@@ -5097,53 +5352,93 @@ header .burger {
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+    rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
 }
-.galerie_web_page .information_supplementaire .container_information_supplementaire .setup {
+.galerie_web_page
+  .information_supplementaire
+  .container_information_supplementaire
+  .setup {
   background-color: var(--white);
 }
-.galerie_web_page .information_supplementaire .container_information_supplementaire .setup h4 {
+.galerie_web_page
+  .information_supplementaire
+  .container_information_supplementaire
+  .setup
+  h4 {
   font-size: 4vw;
   font-weight: 600;
   font-family: Base Neue;
   color: var(--primary-color);
   margin-bottom: 1vw;
 }
-.galerie_web_page .information_supplementaire .container_information_supplementaire .setup .specialite {
+.galerie_web_page
+  .information_supplementaire
+  .container_information_supplementaire
+  .setup
+  .specialite {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
   row-gap: 3vh;
 }
-.galerie_web_page .information_supplementaire .container_information_supplementaire .setup .specialite .spe {
+.galerie_web_page
+  .information_supplementaire
+  .container_information_supplementaire
+  .setup
+  .specialite
+  .spe {
   line-height: 0.5vh;
 }
-.galerie_web_page .information_supplementaire .container_information_supplementaire .setup .specialite .spe h5 {
+.galerie_web_page
+  .information_supplementaire
+  .container_information_supplementaire
+  .setup
+  .specialite
+  .spe
+  h5 {
   font-size: 1.1vw;
   font-weight: 600;
   font-family: "Inter", sans-serif;
   color: var(--primary-color);
   margin-bottom: 1vw;
 }
-.galerie_web_page .information_supplementaire .container_information_supplementaire .setup .specialite .spe p {
+.galerie_web_page
+  .information_supplementaire
+  .container_information_supplementaire
+  .setup
+  .specialite
+  .spe
+  p {
   font-size: 1.1vw;
   font-weight: 400;
   font-family: "Inter", sans-serif;
   color: var(--primary-color);
   margin-bottom: 1vw;
 }
-.galerie_web_page .information_supplementaire .container_information_supplementaire .video {
+.galerie_web_page
+  .information_supplementaire
+  .container_information_supplementaire
+  .video {
   background-color: var(--primary-color);
 }
-.galerie_web_page .information_supplementaire .container_information_supplementaire .video h4 {
+.galerie_web_page
+  .information_supplementaire
+  .container_information_supplementaire
+  .video
+  h4 {
   font-size: 4vw;
   font-weight: 600;
   font-family: Base Neue;
   color: var(--white);
   margin-bottom: 1vw;
 }
-.galerie_web_page .information_supplementaire .container_information_supplementaire .video a {
+.galerie_web_page
+  .information_supplementaire
+  .container_information_supplementaire
+  .video
+  a {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -5152,13 +5447,28 @@ header .burger {
   width: 10vw;
   transition: width 0.2s ease-in-out;
 }
-.galerie_web_page .information_supplementaire .container_information_supplementaire .video a:hover {
+.galerie_web_page
+  .information_supplementaire
+  .container_information_supplementaire
+  .video
+  a:hover {
   width: 11vw;
 }
-.galerie_web_page .information_supplementaire .container_information_supplementaire .video a .play {
+.galerie_web_page
+  .information_supplementaire
+  .container_information_supplementaire
+  .video
+  a
+  .play {
   width: 100%;
 }
-.galerie_web_page .information_supplementaire .container_information_supplementaire .video a .play path {
+.galerie_web_page
+  .information_supplementaire
+  .container_information_supplementaire
+  .video
+  a
+  .play
+  path {
   fill: var(--white);
 }
 
@@ -5172,13 +5482,22 @@ header .burger {
     border-radius: 1vw;
     padding: 2vh 2vw;
   }
-  .galerie_web_page .container_galerie_top .galerie_portrait .container_img .info_photo {
+  .galerie_web_page
+    .container_galerie_top
+    .galerie_portrait
+    .container_img
+    .info_photo {
     width: 3.5vw;
     height: 3.5vw;
     border: 0.2vw solid var(--primary-color);
     font-size: 1.5vw;
   }
-  .galerie_web_page .container_galerie_top .galerie_portrait .container_img .parametres p {
+  .galerie_web_page
+    .container_galerie_top
+    .galerie_portrait
+    .container_img
+    .parametres
+    p {
     font-size: 1vw;
   }
   .galerie_web_page .container_galerie_top .galerie_paysage {
@@ -5193,10 +5512,21 @@ header .burger {
     border-radius: 1vw;
     padding: 2vh 2vw;
   }
-  .galerie_web_page .container_galerie_top .galerie_paysage .container_img .parametres p {
+  .galerie_web_page
+    .container_galerie_top
+    .galerie_paysage
+    .container_img
+    .parametres
+    p {
     font-size: 1.2vw;
   }
-  .galerie_web_page .container_galerie_top .galerie_paysage .container_img .parametres p .info_photo {
+  .galerie_web_page
+    .container_galerie_top
+    .galerie_paysage
+    .container_img
+    .parametres
+    p
+    .info_photo {
     width: 3.5vw;
     height: 3.5vw;
     border: 0.2vw solid var(--primary-color);
@@ -5225,7 +5555,7 @@ header .burger {
     width: 100%;
     height: 150%;
     -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
   }
   .galerie_web_page .autres_projets {
     width: 90%;
@@ -5249,8 +5579,16 @@ header .burger {
     flex-direction: column;
     row-gap: 4vh;
   }
-  .galerie_web_page .autres_projets .suggestion .suggestion_top .container_miniatures,
-  .galerie_web_page .autres_projets .suggestion .suggestion_bottom .container_miniatures {
+  .galerie_web_page
+    .autres_projets
+    .suggestion
+    .suggestion_top
+    .container_miniatures,
+  .galerie_web_page
+    .autres_projets
+    .suggestion
+    .suggestion_bottom
+    .container_miniatures {
     cursor: pointer;
     position: relative;
     width: 100%;
@@ -5260,8 +5598,18 @@ header .burger {
     border: 0.5vw solid transparent;
     transition: 0.3s ease-in-out;
   }
-  .galerie_web_page .autres_projets .suggestion .suggestion_top .container_miniatures .titre_minia,
-  .galerie_web_page .autres_projets .suggestion .suggestion_bottom .container_miniatures .titre_minia {
+  .galerie_web_page
+    .autres_projets
+    .suggestion
+    .suggestion_top
+    .container_miniatures
+    .titre_minia,
+  .galerie_web_page
+    .autres_projets
+    .suggestion
+    .suggestion_bottom
+    .container_miniatures
+    .titre_minia {
     margin: 1vh 3vw;
     font-size: 7vw;
   }
@@ -5280,17 +5628,27 @@ header .burger {
     border-radius: 2vw;
     overflow: hidden;
     margin-bottom: 3vh;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+      rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
     transition: 0.5s ease-in-out;
     padding: 3vh 5vw;
   }
-  .galerie_web_page .container_galerie_top .galerie_portrait .container_img .info_photo {
+  .galerie_web_page
+    .container_galerie_top
+    .galerie_portrait
+    .container_img
+    .info_photo {
     width: 9vw;
     height: 9vw;
     border: 0.5vw solid var(--primary-color);
     font-size: 4vw;
   }
-  .galerie_web_page .container_galerie_top .galerie_portrait .container_img .parametres p {
+  .galerie_web_page
+    .container_galerie_top
+    .galerie_portrait
+    .container_img
+    .parametres
+    p {
     font-size: 3.5vw;
   }
   .galerie_web_page .container_galerie_top .galerie_paysage {
@@ -5305,13 +5663,22 @@ header .burger {
     border-radius: 2vw;
     padding: 3vh 5vw;
   }
-  .galerie_web_page .container_galerie_top .galerie_paysage .container_img .info_photo {
+  .galerie_web_page
+    .container_galerie_top
+    .galerie_paysage
+    .container_img
+    .info_photo {
     width: 9vw;
     height: 9vw;
     border: 0.5vw solid var(--primary-color);
     font-size: 4vw;
   }
-  .galerie_web_page .container_galerie_top .galerie_paysage .container_img .parametres p {
+  .galerie_web_page
+    .container_galerie_top
+    .galerie_paysage
+    .container_img
+    .parametres
+    p {
     font-size: 2.5vw;
   }
   .galerie_web_page .container_galerie_bottom {
@@ -5337,7 +5704,7 @@ header .burger {
     width: 100%;
     height: 150%;
     -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
   }
   .galerie_web_page .autres_projets {
     width: 90%;
@@ -5361,8 +5728,16 @@ header .burger {
     flex-direction: column;
     row-gap: 4vh;
   }
-  .galerie_web_page .autres_projets .suggestion .suggestion_top .container_miniatures,
-  .galerie_web_page .autres_projets .suggestion .suggestion_bottom .container_miniatures {
+  .galerie_web_page
+    .autres_projets
+    .suggestion
+    .suggestion_top
+    .container_miniatures,
+  .galerie_web_page
+    .autres_projets
+    .suggestion
+    .suggestion_bottom
+    .container_miniatures {
     cursor: pointer;
     position: relative;
     width: 100%;
@@ -5372,49 +5747,104 @@ header .burger {
     border: 0.5vw solid transparent;
     transition: 0.3s ease-in-out;
   }
-  .galerie_web_page .autres_projets .suggestion .suggestion_top .container_miniatures .titre_minia,
-  .galerie_web_page .autres_projets .suggestion .suggestion_bottom .container_miniatures .titre_minia {
+  .galerie_web_page
+    .autres_projets
+    .suggestion
+    .suggestion_top
+    .container_miniatures
+    .titre_minia,
+  .galerie_web_page
+    .autres_projets
+    .suggestion
+    .suggestion_bottom
+    .container_miniatures
+    .titre_minia {
     margin: 1vh 3vw;
     font-size: 9vw;
   }
-  .galerie_web_page .information_supplementaire .container_information_supplementaire {
+  .galerie_web_page
+    .information_supplementaire
+    .container_information_supplementaire {
     flex-direction: column;
     row-gap: 2vh;
   }
-  .galerie_web_page .information_supplementaire .container_information_supplementaire .setup,
-  .galerie_web_page .information_supplementaire .container_information_supplementaire .video {
+  .galerie_web_page
+    .information_supplementaire
+    .container_information_supplementaire
+    .setup,
+  .galerie_web_page
+    .information_supplementaire
+    .container_information_supplementaire
+    .video {
     height: 35vh;
     width: 100%;
     padding: 1vh 2vw 1vh 2vw;
     border-radius: 3vw;
   }
-  .galerie_web_page .information_supplementaire .container_information_supplementaire .setup h4 {
+  .galerie_web_page
+    .information_supplementaire
+    .container_information_supplementaire
+    .setup
+    h4 {
     font-size: 10vw;
   }
-  .galerie_web_page .information_supplementaire .container_information_supplementaire .setup .specialite {
+  .galerie_web_page
+    .information_supplementaire
+    .container_information_supplementaire
+    .setup
+    .specialite {
     row-gap: 2vh;
   }
-  .galerie_web_page .information_supplementaire .container_information_supplementaire .setup .specialite .spe {
+  .galerie_web_page
+    .information_supplementaire
+    .container_information_supplementaire
+    .setup
+    .specialite
+    .spe {
     line-height: 0.7vh;
   }
-  .galerie_web_page .information_supplementaire .container_information_supplementaire .setup .specialite .spe h5 {
+  .galerie_web_page
+    .information_supplementaire
+    .container_information_supplementaire
+    .setup
+    .specialite
+    .spe
+    h5 {
     font-size: 3.5vw;
     margin-bottom: 1.3vh;
   }
-  .galerie_web_page .information_supplementaire .container_information_supplementaire .setup .specialite .spe p {
+  .galerie_web_page
+    .information_supplementaire
+    .container_information_supplementaire
+    .setup
+    .specialite
+    .spe
+    p {
     font-size: 2.5vw;
     font-weight: 400;
     font-family: "Inter", sans-serif;
     color: var(--black);
     margin-bottom: 1.2vh;
   }
-  .galerie_web_page .information_supplementaire .container_information_supplementaire .video h4 {
+  .galerie_web_page
+    .information_supplementaire
+    .container_information_supplementaire
+    .video
+    h4 {
     font-size: 10vw;
   }
-  .galerie_web_page .information_supplementaire .container_information_supplementaire .video a {
+  .galerie_web_page
+    .information_supplementaire
+    .container_information_supplementaire
+    .video
+    a {
     width: 24vw;
   }
-  .galerie_web_page .information_supplementaire .container_information_supplementaire .video a:hover {
+  .galerie_web_page
+    .information_supplementaire
+    .container_information_supplementaire
+    .video
+    a:hover {
     width: 25vw;
   }
 }
@@ -5482,8 +5912,16 @@ header .burger {
   z-index: 1;
   overflow: hidden;
 }
-.guadeloupe_web_page .container_video_100vh .video_container .couverture .couverture_img,
-.auvergne_web_page .container_video_100vh .video_container .couverture .couverture_img {
+.guadeloupe_web_page
+  .container_video_100vh
+  .video_container
+  .couverture
+  .couverture_img,
+.auvergne_web_page
+  .container_video_100vh
+  .video_container
+  .couverture
+  .couverture_img {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -5491,7 +5929,7 @@ header .burger {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   z-index: 0;
   transition: 0.2s ease-in-out;
 }
@@ -5508,14 +5946,27 @@ header .burger {
   align-items: center;
   transition: 0.2s ease-in-out;
 }
-.guadeloupe_web_page .container_video_100vh .video_container .couverture .play p,
+.guadeloupe_web_page
+  .container_video_100vh
+  .video_container
+  .couverture
+  .play
+  p,
 .auvergne_web_page .container_video_100vh .video_container .couverture .play p {
   font-family: Base Neue;
   font-size: 2vw;
   margin-top: 0.3vh;
 }
-.guadeloupe_web_page .container_video_100vh .video_container .couverture .play:hover,
-.auvergne_web_page .container_video_100vh .video_container .couverture .play:hover {
+.guadeloupe_web_page
+  .container_video_100vh
+  .video_container
+  .couverture
+  .play:hover,
+.auvergne_web_page
+  .container_video_100vh
+  .video_container
+  .couverture
+  .play:hover {
   background-color: var(--white);
   color: var(--primary-color);
 }
@@ -5606,10 +6057,26 @@ header .burger {
   justify-content: space-between;
   align-items: center;
 }
-.guadeloupe_web_page .autres_projets .suggestion .suggestion_top .container_miniatures,
-.guadeloupe_web_page .autres_projets .suggestion .suggestion_bottom .container_miniatures,
-.auvergne_web_page .autres_projets .suggestion .suggestion_top .container_miniatures,
-.auvergne_web_page .autres_projets .suggestion .suggestion_bottom .container_miniatures {
+.guadeloupe_web_page
+  .autres_projets
+  .suggestion
+  .suggestion_top
+  .container_miniatures,
+.guadeloupe_web_page
+  .autres_projets
+  .suggestion
+  .suggestion_bottom
+  .container_miniatures,
+.auvergne_web_page
+  .autres_projets
+  .suggestion
+  .suggestion_top
+  .container_miniatures,
+.auvergne_web_page
+  .autres_projets
+  .suggestion
+  .suggestion_bottom
+  .container_miniatures {
   cursor: pointer;
   position: relative;
   width: 48%;
@@ -5619,10 +6086,30 @@ header .burger {
   border: 0.5vw solid transparent;
   transition: 0.3s ease-in-out;
 }
-.guadeloupe_web_page .autres_projets .suggestion .suggestion_top .container_miniatures .titre_minia,
-.guadeloupe_web_page .autres_projets .suggestion .suggestion_bottom .container_miniatures .titre_minia,
-.auvergne_web_page .autres_projets .suggestion .suggestion_top .container_miniatures .titre_minia,
-.auvergne_web_page .autres_projets .suggestion .suggestion_bottom .container_miniatures .titre_minia {
+.guadeloupe_web_page
+  .autres_projets
+  .suggestion
+  .suggestion_top
+  .container_miniatures
+  .titre_minia,
+.guadeloupe_web_page
+  .autres_projets
+  .suggestion
+  .suggestion_bottom
+  .container_miniatures
+  .titre_minia,
+.auvergne_web_page
+  .autres_projets
+  .suggestion
+  .suggestion_top
+  .container_miniatures
+  .titre_minia,
+.auvergne_web_page
+  .autres_projets
+  .suggestion
+  .suggestion_bottom
+  .container_miniatures
+  .titre_minia {
   position: absolute;
   bottom: 0%;
   left: 0%;
@@ -5633,10 +6120,30 @@ header .burger {
   color: #fcfcfc;
   z-index: 2;
 }
-.guadeloupe_web_page .autres_projets .suggestion .suggestion_top .container_miniatures .miniatures,
-.guadeloupe_web_page .autres_projets .suggestion .suggestion_bottom .container_miniatures .miniatures,
-.auvergne_web_page .autres_projets .suggestion .suggestion_top .container_miniatures .miniatures,
-.auvergne_web_page .autres_projets .suggestion .suggestion_bottom .container_miniatures .miniatures {
+.guadeloupe_web_page
+  .autres_projets
+  .suggestion
+  .suggestion_top
+  .container_miniatures
+  .miniatures,
+.guadeloupe_web_page
+  .autres_projets
+  .suggestion
+  .suggestion_bottom
+  .container_miniatures
+  .miniatures,
+.auvergne_web_page
+  .autres_projets
+  .suggestion
+  .suggestion_top
+  .container_miniatures
+  .miniatures,
+.auvergne_web_page
+  .autres_projets
+  .suggestion
+  .suggestion_bottom
+  .container_miniatures
+  .miniatures {
   position: absolute;
   bottom: 0%;
   left: 50%;
@@ -5644,20 +6151,56 @@ header .burger {
   width: 100%;
   height: 150%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   z-index: 1;
   transition: opacity 0.3s ease-in-out;
 }
-.guadeloupe_web_page .autres_projets .suggestion .suggestion_top .container_miniatures:hover,
-.guadeloupe_web_page .autres_projets .suggestion .suggestion_bottom .container_miniatures:hover,
-.auvergne_web_page .autres_projets .suggestion .suggestion_top .container_miniatures:hover,
-.auvergne_web_page .autres_projets .suggestion .suggestion_bottom .container_miniatures:hover {
+.guadeloupe_web_page
+  .autres_projets
+  .suggestion
+  .suggestion_top
+  .container_miniatures:hover,
+.guadeloupe_web_page
+  .autres_projets
+  .suggestion
+  .suggestion_bottom
+  .container_miniatures:hover,
+.auvergne_web_page
+  .autres_projets
+  .suggestion
+  .suggestion_top
+  .container_miniatures:hover,
+.auvergne_web_page
+  .autres_projets
+  .suggestion
+  .suggestion_bottom
+  .container_miniatures:hover {
   border: 0.5vw solid #fcfcfc;
 }
-.guadeloupe_web_page .autres_projets .suggestion .suggestion_top .container_miniatures:hover img,
-.guadeloupe_web_page .autres_projets .suggestion .suggestion_bottom .container_miniatures:hover img,
-.auvergne_web_page .autres_projets .suggestion .suggestion_top .container_miniatures:hover img,
-.auvergne_web_page .autres_projets .suggestion .suggestion_bottom .container_miniatures:hover img {
+.guadeloupe_web_page
+  .autres_projets
+  .suggestion
+  .suggestion_top
+  .container_miniatures:hover
+  img,
+.guadeloupe_web_page
+  .autres_projets
+  .suggestion
+  .suggestion_bottom
+  .container_miniatures:hover
+  img,
+.auvergne_web_page
+  .autres_projets
+  .suggestion
+  .suggestion_top
+  .container_miniatures:hover
+  img,
+.auvergne_web_page
+  .autres_projets
+  .suggestion
+  .suggestion_bottom
+  .container_miniatures:hover
+  img {
   opacity: 0.8;
 }
 .guadeloupe_web_page .information_supplementaire,
@@ -5671,8 +6214,12 @@ header .burger {
   align-items: center;
   padding: 10vh 0;
 }
-.guadeloupe_web_page .information_supplementaire .container_information_supplementaire,
-.auvergne_web_page .information_supplementaire .container_information_supplementaire {
+.guadeloupe_web_page
+  .information_supplementaire
+  .container_information_supplementaire,
+.auvergne_web_page
+  .information_supplementaire
+  .container_information_supplementaire {
   position: relative;
   width: 80%;
   background-color: var(--black);
@@ -5681,10 +6228,22 @@ header .burger {
   justify-content: space-between;
   align-items: center;
 }
-.guadeloupe_web_page .information_supplementaire .container_information_supplementaire .setup,
-.guadeloupe_web_page .information_supplementaire .container_information_supplementaire .photo,
-.auvergne_web_page .information_supplementaire .container_information_supplementaire .setup,
-.auvergne_web_page .information_supplementaire .container_information_supplementaire .photo {
+.guadeloupe_web_page
+  .information_supplementaire
+  .container_information_supplementaire
+  .setup,
+.guadeloupe_web_page
+  .information_supplementaire
+  .container_information_supplementaire
+  .photo,
+.auvergne_web_page
+  .information_supplementaire
+  .container_information_supplementaire
+  .setup,
+.auvergne_web_page
+  .information_supplementaire
+  .container_information_supplementaire
+  .photo {
   position: relative;
   height: 50vh;
   width: 48%;
@@ -5694,62 +6253,141 @@ header .burger {
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+    rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
 }
-.guadeloupe_web_page .information_supplementaire .container_information_supplementaire .setup,
-.auvergne_web_page .information_supplementaire .container_information_supplementaire .setup {
+.guadeloupe_web_page
+  .information_supplementaire
+  .container_information_supplementaire
+  .setup,
+.auvergne_web_page
+  .information_supplementaire
+  .container_information_supplementaire
+  .setup {
   background-color: var(--white);
 }
-.guadeloupe_web_page .information_supplementaire .container_information_supplementaire .setup h4,
-.auvergne_web_page .information_supplementaire .container_information_supplementaire .setup h4 {
+.guadeloupe_web_page
+  .information_supplementaire
+  .container_information_supplementaire
+  .setup
+  h4,
+.auvergne_web_page
+  .information_supplementaire
+  .container_information_supplementaire
+  .setup
+  h4 {
   font-size: 4vw;
   font-weight: 600;
   font-family: Base Neue;
   color: var(--primary-color);
   margin-bottom: 1vw;
 }
-.guadeloupe_web_page .information_supplementaire .container_information_supplementaire .setup .specialite,
-.auvergne_web_page .information_supplementaire .container_information_supplementaire .setup .specialite {
+.guadeloupe_web_page
+  .information_supplementaire
+  .container_information_supplementaire
+  .setup
+  .specialite,
+.auvergne_web_page
+  .information_supplementaire
+  .container_information_supplementaire
+  .setup
+  .specialite {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
   row-gap: 3vh;
 }
-.guadeloupe_web_page .information_supplementaire .container_information_supplementaire .setup .specialite .spe,
-.auvergne_web_page .information_supplementaire .container_information_supplementaire .setup .specialite .spe {
+.guadeloupe_web_page
+  .information_supplementaire
+  .container_information_supplementaire
+  .setup
+  .specialite
+  .spe,
+.auvergne_web_page
+  .information_supplementaire
+  .container_information_supplementaire
+  .setup
+  .specialite
+  .spe {
   line-height: 0.5vh;
 }
-.guadeloupe_web_page .information_supplementaire .container_information_supplementaire .setup .specialite .spe h5,
-.auvergne_web_page .information_supplementaire .container_information_supplementaire .setup .specialite .spe h5 {
+.guadeloupe_web_page
+  .information_supplementaire
+  .container_information_supplementaire
+  .setup
+  .specialite
+  .spe
+  h5,
+.auvergne_web_page
+  .information_supplementaire
+  .container_information_supplementaire
+  .setup
+  .specialite
+  .spe
+  h5 {
   font-size: 1.1vw;
   font-weight: 600;
   font-family: "Inter", sans-serif;
   color: var(--primary-color);
   margin-bottom: 1vw;
 }
-.guadeloupe_web_page .information_supplementaire .container_information_supplementaire .setup .specialite .spe p,
-.auvergne_web_page .information_supplementaire .container_information_supplementaire .setup .specialite .spe p {
+.guadeloupe_web_page
+  .information_supplementaire
+  .container_information_supplementaire
+  .setup
+  .specialite
+  .spe
+  p,
+.auvergne_web_page
+  .information_supplementaire
+  .container_information_supplementaire
+  .setup
+  .specialite
+  .spe
+  p {
   font-size: 1.1vw;
   font-weight: 400;
   font-family: "Inter", sans-serif;
   color: var(--primary-color);
   margin-bottom: 1vw;
 }
-.guadeloupe_web_page .information_supplementaire .container_information_supplementaire .photo,
-.auvergne_web_page .information_supplementaire .container_information_supplementaire .photo {
+.guadeloupe_web_page
+  .information_supplementaire
+  .container_information_supplementaire
+  .photo,
+.auvergne_web_page
+  .information_supplementaire
+  .container_information_supplementaire
+  .photo {
   background-color: var(--primary-color);
 }
-.guadeloupe_web_page .information_supplementaire .container_information_supplementaire .photo h4,
-.auvergne_web_page .information_supplementaire .container_information_supplementaire .photo h4 {
+.guadeloupe_web_page
+  .information_supplementaire
+  .container_information_supplementaire
+  .photo
+  h4,
+.auvergne_web_page
+  .information_supplementaire
+  .container_information_supplementaire
+  .photo
+  h4 {
   font-size: 4vw;
   font-weight: 600;
   font-family: Base Neue;
   color: var(--white);
   margin-bottom: 1vw;
 }
-.guadeloupe_web_page .information_supplementaire .container_information_supplementaire .photo a,
-.auvergne_web_page .information_supplementaire .container_information_supplementaire .photo a {
+.guadeloupe_web_page
+  .information_supplementaire
+  .container_information_supplementaire
+  .photo
+  a,
+.auvergne_web_page
+  .information_supplementaire
+  .container_information_supplementaire
+  .photo
+  a {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -5758,16 +6396,46 @@ header .burger {
   width: 9vw;
   transition: width 0.2s ease-in-out;
 }
-.guadeloupe_web_page .information_supplementaire .container_information_supplementaire .photo a:hover,
-.auvergne_web_page .information_supplementaire .container_information_supplementaire .photo a:hover {
+.guadeloupe_web_page
+  .information_supplementaire
+  .container_information_supplementaire
+  .photo
+  a:hover,
+.auvergne_web_page
+  .information_supplementaire
+  .container_information_supplementaire
+  .photo
+  a:hover {
   width: 10vw;
 }
-.guadeloupe_web_page .information_supplementaire .container_information_supplementaire .photo a .illu_photo,
-.auvergne_web_page .information_supplementaire .container_information_supplementaire .photo a .illu_photo {
+.guadeloupe_web_page
+  .information_supplementaire
+  .container_information_supplementaire
+  .photo
+  a
+  .illu_photo,
+.auvergne_web_page
+  .information_supplementaire
+  .container_information_supplementaire
+  .photo
+  a
+  .illu_photo {
   width: 100%;
 }
-.guadeloupe_web_page .information_supplementaire .container_information_supplementaire .photo a .illu_photo path,
-.auvergne_web_page .information_supplementaire .container_information_supplementaire .photo a .illu_photo path {
+.guadeloupe_web_page
+  .information_supplementaire
+  .container_information_supplementaire
+  .photo
+  a
+  .illu_photo
+  path,
+.auvergne_web_page
+  .information_supplementaire
+  .container_information_supplementaire
+  .photo
+  a
+  .illu_photo
+  path {
   width: 100%;
   fill: var(--white);
 }
@@ -5778,7 +6446,11 @@ header .burger {
     width: 90%;
     height: 60%;
   }
-  .guadeloupe_web_page .container_video_100vh .video_container .couverture .play,
+  .guadeloupe_web_page
+    .container_video_100vh
+    .video_container
+    .couverture
+    .play,
   .auvergne_web_page .container_video_100vh .video_container .couverture .play {
     cursor: pointer;
     background-color: var(--primary-color);
@@ -5791,14 +6463,32 @@ header .burger {
     align-items: center;
     transition: 0.2s ease-in-out;
   }
-  .guadeloupe_web_page .container_video_100vh .video_container .couverture .play p,
-  .auvergne_web_page .container_video_100vh .video_container .couverture .play p {
+  .guadeloupe_web_page
+    .container_video_100vh
+    .video_container
+    .couverture
+    .play
+    p,
+  .auvergne_web_page
+    .container_video_100vh
+    .video_container
+    .couverture
+    .play
+    p {
     font-family: Base Neue;
     font-size: 3vw;
     margin-top: 0.3vh;
   }
-  .guadeloupe_web_page .container_video_100vh .video_container .couverture .play:hover,
-  .auvergne_web_page .container_video_100vh .video_container .couverture .play:hover {
+  .guadeloupe_web_page
+    .container_video_100vh
+    .video_container
+    .couverture
+    .play:hover,
+  .auvergne_web_page
+    .container_video_100vh
+    .video_container
+    .couverture
+    .play:hover {
     background-color: var(--white);
     color: var(--primary-color);
   }
@@ -5831,7 +6521,11 @@ header .burger {
     width: 95%;
     height: 65%;
   }
-  .guadeloupe_web_page .container_video_100vh .video_container .couverture .play,
+  .guadeloupe_web_page
+    .container_video_100vh
+    .video_container
+    .couverture
+    .play,
   .auvergne_web_page .container_video_100vh .video_container .couverture .play {
     cursor: pointer;
     background-color: var(--primary-color);
@@ -5844,14 +6538,32 @@ header .burger {
     align-items: center;
     transition: 0.2s ease-in-out;
   }
-  .guadeloupe_web_page .container_video_100vh .video_container .couverture .play p,
-  .auvergne_web_page .container_video_100vh .video_container .couverture .play p {
+  .guadeloupe_web_page
+    .container_video_100vh
+    .video_container
+    .couverture
+    .play
+    p,
+  .auvergne_web_page
+    .container_video_100vh
+    .video_container
+    .couverture
+    .play
+    p {
     font-family: Base Neue;
     font-size: 5vw;
     margin-top: 0.3vh;
   }
-  .guadeloupe_web_page .container_video_100vh .video_container .couverture .play:hover,
-  .auvergne_web_page .container_video_100vh .video_container .couverture .play:hover {
+  .guadeloupe_web_page
+    .container_video_100vh
+    .video_container
+    .couverture
+    .play:hover,
+  .auvergne_web_page
+    .container_video_100vh
+    .video_container
+    .couverture
+    .play:hover {
     background-color: var(--white);
     color: var(--primary-color);
   }
@@ -5887,8 +6599,16 @@ header .burger {
     flex-direction: column;
     row-gap: 4vh;
   }
-  .guadeloupe_web_page .autres_projets .suggestion .suggestion_top .container_miniatures,
-  .guadeloupe_web_page .autres_projets .suggestion .suggestion_bottom .container_miniatures {
+  .guadeloupe_web_page
+    .autres_projets
+    .suggestion
+    .suggestion_top
+    .container_miniatures,
+  .guadeloupe_web_page
+    .autres_projets
+    .suggestion
+    .suggestion_bottom
+    .container_miniatures {
     cursor: pointer;
     position: relative;
     width: 100%;
@@ -5898,49 +6618,104 @@ header .burger {
     border: 0.5vw solid transparent;
     transition: 0.3s ease-in-out;
   }
-  .guadeloupe_web_page .autres_projets .suggestion .suggestion_top .container_miniatures .titre_minia,
-  .guadeloupe_web_page .autres_projets .suggestion .suggestion_bottom .container_miniatures .titre_minia {
+  .guadeloupe_web_page
+    .autres_projets
+    .suggestion
+    .suggestion_top
+    .container_miniatures
+    .titre_minia,
+  .guadeloupe_web_page
+    .autres_projets
+    .suggestion
+    .suggestion_bottom
+    .container_miniatures
+    .titre_minia {
     margin: 1vh 3vw;
     font-size: 9vw;
   }
-  .guadeloupe_web_page .information_supplementaire .container_information_supplementaire {
+  .guadeloupe_web_page
+    .information_supplementaire
+    .container_information_supplementaire {
     flex-direction: column;
     row-gap: 2vh;
   }
-  .guadeloupe_web_page .information_supplementaire .container_information_supplementaire .setup,
-  .guadeloupe_web_page .information_supplementaire .container_information_supplementaire .photo {
+  .guadeloupe_web_page
+    .information_supplementaire
+    .container_information_supplementaire
+    .setup,
+  .guadeloupe_web_page
+    .information_supplementaire
+    .container_information_supplementaire
+    .photo {
     height: 35vh;
     width: 100%;
     padding: 1vh 2vw 1vh 2vw;
     border-radius: 3vw;
   }
-  .guadeloupe_web_page .information_supplementaire .container_information_supplementaire .setup h4 {
+  .guadeloupe_web_page
+    .information_supplementaire
+    .container_information_supplementaire
+    .setup
+    h4 {
     font-size: 10vw;
   }
-  .guadeloupe_web_page .information_supplementaire .container_information_supplementaire .setup .specialite {
+  .guadeloupe_web_page
+    .information_supplementaire
+    .container_information_supplementaire
+    .setup
+    .specialite {
     row-gap: 2vh;
   }
-  .guadeloupe_web_page .information_supplementaire .container_information_supplementaire .setup .specialite .spe {
+  .guadeloupe_web_page
+    .information_supplementaire
+    .container_information_supplementaire
+    .setup
+    .specialite
+    .spe {
     line-height: 0.7vh;
   }
-  .guadeloupe_web_page .information_supplementaire .container_information_supplementaire .setup .specialite .spe h5 {
+  .guadeloupe_web_page
+    .information_supplementaire
+    .container_information_supplementaire
+    .setup
+    .specialite
+    .spe
+    h5 {
     font-size: 3.5vw;
     margin-bottom: 1.3vh;
   }
-  .guadeloupe_web_page .information_supplementaire .container_information_supplementaire .setup .specialite .spe p {
+  .guadeloupe_web_page
+    .information_supplementaire
+    .container_information_supplementaire
+    .setup
+    .specialite
+    .spe
+    p {
     font-size: 2.5vw;
     font-weight: 400;
     font-family: "Inter", sans-serif;
     color: var(--black);
     margin-bottom: 1.2vh;
   }
-  .guadeloupe_web_page .information_supplementaire .container_information_supplementaire .photo h4 {
+  .guadeloupe_web_page
+    .information_supplementaire
+    .container_information_supplementaire
+    .photo
+    h4 {
     font-size: 10vw;
   }
-  .guadeloupe_web_page .information_supplementaire .container_information_supplementaire .photo a {
+  .guadeloupe_web_page
+    .information_supplementaire
+    .container_information_supplementaire
+    .photo
+    a {
     width: 24vw;
   }
-  .guadeloupe_web_page .information_supplementaire .container_information_supplementaire .photo a:hover {
+  .guadeloupe_web_page
+    .information_supplementaire
+    .container_information_supplementaire
+    .photo
+    a:hover {
     width: 25vw;
   }
 }
@@ -5950,7 +6725,8 @@ header .burger {
   position: fixed;
   top: 0%;
   left: 0%;
-  transform: perspective(1000px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(1);
+  transform: perspective(1000px) rotateX(0deg) rotateY(0deg) rotateZ(0deg)
+    scale(1);
   background-color: var(--primary-color);
   z-index: 100000000000000000000000;
   transform-origin: bottom;
@@ -5960,12 +6736,14 @@ header .burger {
   0% {
     height: 100vh;
     background-color: var(--primary-color);
-    transform: perspective(1000px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(1);
+    transform: perspective(1000px) rotateX(0deg) rotateY(0deg) rotateZ(0deg)
+      scale(1);
   }
   100% {
     height: 0vh;
     background-color: var(--black);
-    transform: perspective(1000px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(1);
+    transform: perspective(1000px) rotateX(0deg) rotateY(0deg) rotateZ(0deg)
+      scale(1);
   }
 }
 
@@ -6101,7 +6879,7 @@ header .burger {
   width: 0vw;
   height: 100vh;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   opacity: 1;
   border-radius: 0vw;
   z-index: 3;
@@ -6367,7 +7145,7 @@ header .burger {
   width: 110%;
   height: 110%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   z-index: 1;
 }
 .bdd .titre_bdd_bg {
@@ -6483,7 +7261,7 @@ header .burger {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 @media screen and (max-width: 1124px) {
@@ -6998,11 +7776,21 @@ header .burger {
   align-items: center;
   transition: 0.2s ease-in-out;
 }
-.contact_page .container_formulaire form .theme input[type=radio i] {
+.contact_page .container_formulaire form .theme input[type="radio" i] {
   display: none;
 }
-.contact_page .container_formulaire form .theme #option-1_contact:checked:checked ~ .option-1_contact,
-.contact_page .container_formulaire form .theme #option-2_contact:checked:checked ~ .option-2_contact {
+.contact_page
+  .container_formulaire
+  form
+  .theme
+  #option-1_contact:checked:checked
+  ~ .option-1_contact,
+.contact_page
+  .container_formulaire
+  form
+  .theme
+  #option-2_contact:checked:checked
+  ~ .option-2_contact {
   border: 0.25vw solid #232323;
   background-color: #232323;
   color: #fcfcfc;
@@ -7188,8 +7976,18 @@ header .burger {
     font-size: 3.5vw;
     height: 9vw;
   }
-  .contact_page .container_formulaire form .theme #option-1_contact:checked:checked ~ .option-1_contact,
-  .contact_page .container_formulaire form .theme #option-2_contact:checked:checked ~ .option-2_contact {
+  .contact_page
+    .container_formulaire
+    form
+    .theme
+    #option-1_contact:checked:checked
+    ~ .option-1_contact,
+  .contact_page
+    .container_formulaire
+    form
+    .theme
+    #option-2_contact:checked:checked
+    ~ .option-2_contact {
     border: 0.8vw solid var(--white);
     background-color: var(--white);
     color: #232323;
@@ -7635,9 +8433,9 @@ header .burger {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   -o-object-position: center;
-     object-position: center;
+  object-position: center;
   transition: opacity 0.5s ease-in-out, transform 1s ease-in-out;
 }
 .administration section .theme_photo .card_photo .theme_titre {
@@ -7720,7 +8518,7 @@ header .burger {
 }
 .administration .spe {
   -moz-column-gap: 2vw;
-       column-gap: 2vw;
+  column-gap: 2vw;
   justify-content: center;
 }
 .administration .retour {
@@ -7843,7 +8641,7 @@ header .burger {
   justify-content: center;
   align-items: center;
   -moz-column-gap: 2vw;
-       column-gap: 2vw;
+  column-gap: 2vw;
 }
 .container_cards_admin .confirmation .pupUp .interaction .oui,
 .container_cards_admin .confirmation .pupUp .interaction .non {
@@ -7886,7 +8684,8 @@ header .burger {
   width: 30%;
   height: 30vh;
   border-radius: 1vw;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+    rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -7900,7 +8699,11 @@ header .burger {
   align-items: center;
   justify-content: center;
 }
-.container_cards_admin .container_cards .cards .information_photo .container_img {
+.container_cards_admin
+  .container_cards
+  .cards
+  .information_photo
+  .container_img {
   width: 35%;
   height: 100%;
   display: flex;
@@ -7911,16 +8714,25 @@ header .burger {
   border: 0.5vw solid transparent;
   transition: all 0.5s ease;
 }
-.container_cards_admin .container_cards .cards .information_photo .container_img .img {
+.container_cards_admin
+  .container_cards
+  .cards
+  .information_photo
+  .container_img
+  .img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   -o-object-position: center;
-     object-position: center;
+  object-position: center;
   transition: opacity 0.5s ease-in-out, transform 1s ease-in-out;
 }
-.container_cards_admin .container_cards .cards .information_photo .container_settings {
+.container_cards_admin
+  .container_cards
+  .cards
+  .information_photo
+  .container_settings {
   width: 65%;
   height: 80%;
   padding: 0.5vw;
@@ -7929,7 +8741,12 @@ header .burger {
   justify-content: space-between;
   align-items: center;
 }
-.container_cards_admin .container_cards .cards .information_photo .container_settings .setting_alt {
+.container_cards_admin
+  .container_cards
+  .cards
+  .information_photo
+  .container_settings
+  .setting_alt {
   width: 100%;
   font-family: Base Neue;
   font-size: 1.2vw;
@@ -7938,10 +8755,30 @@ header .burger {
   text-transform: uppercase;
   transition: color 0.2s ease-in-out;
 }
-.container_cards_admin .container_cards .cards .information_photo .container_settings .setting_iso,
-.container_cards_admin .container_cards .cards .information_photo .container_settings .setting_ouverture,
-.container_cards_admin .container_cards .cards .information_photo .container_settings .setting_duree,
-.container_cards_admin .container_cards .cards .information_photo .container_settings .setting_focale {
+.container_cards_admin
+  .container_cards
+  .cards
+  .information_photo
+  .container_settings
+  .setting_iso,
+.container_cards_admin
+  .container_cards
+  .cards
+  .information_photo
+  .container_settings
+  .setting_ouverture,
+.container_cards_admin
+  .container_cards
+  .cards
+  .information_photo
+  .container_settings
+  .setting_duree,
+.container_cards_admin
+  .container_cards
+  .cards
+  .information_photo
+  .container_settings
+  .setting_focale {
   width: 100%;
   font-family: "Inter", sans-serif;
   font-size: 1vw;
@@ -7957,7 +8794,7 @@ header .burger {
   justify-content: center;
   align-items: center;
   -moz-column-gap: 2vw;
-       column-gap: 2vw;
+  column-gap: 2vw;
 }
 .container_cards_admin .container_cards .cards .interaction_photo .modifier,
 .container_cards_admin .container_cards .cards .interaction_photo .supprimer {
@@ -7978,8 +8815,16 @@ header .burger {
   justify-content: center;
   align-items: center;
 }
-.container_cards_admin .container_cards .cards .interaction_photo .modifier:hover,
-.container_cards_admin .container_cards .cards .interaction_photo .supprimer:hover {
+.container_cards_admin
+  .container_cards
+  .cards
+  .interaction_photo
+  .modifier:hover,
+.container_cards_admin
+  .container_cards
+  .cards
+  .interaction_photo
+  .supprimer:hover {
   background-color: transparent;
   color: var(--primary-color);
 }
@@ -7988,7 +8833,11 @@ header .burger {
   color: var(--white);
   border: 0.2vw solid var(--red);
 }
-.container_cards_admin .container_cards .cards .interaction_photo .supprimer:hover {
+.container_cards_admin
+  .container_cards
+  .cards
+  .interaction_photo
+  .supprimer:hover {
   background-color: transparent;
   color: var(--red);
 }
@@ -8034,13 +8883,38 @@ header .burger {
     width: 49%;
     height: 25vh;
   }
-  .container_cards_admin .container_cards .cards .information_photo .container_settings .setting_alt {
+  .container_cards_admin
+    .container_cards
+    .cards
+    .information_photo
+    .container_settings
+    .setting_alt {
     font-size: 2vw;
   }
-  .container_cards_admin .container_cards .cards .information_photo .container_settings .setting_iso,
-  .container_cards_admin .container_cards .cards .information_photo .container_settings .setting_ouverture,
-  .container_cards_admin .container_cards .cards .information_photo .container_settings .setting_duree,
-  .container_cards_admin .container_cards .cards .information_photo .container_settings .setting_focale {
+  .container_cards_admin
+    .container_cards
+    .cards
+    .information_photo
+    .container_settings
+    .setting_iso,
+  .container_cards_admin
+    .container_cards
+    .cards
+    .information_photo
+    .container_settings
+    .setting_ouverture,
+  .container_cards_admin
+    .container_cards
+    .cards
+    .information_photo
+    .container_settings
+    .setting_duree,
+  .container_cards_admin
+    .container_cards
+    .cards
+    .information_photo
+    .container_settings
+    .setting_focale {
     font-size: 1.5vw;
   }
   .container_cards_admin .container_cards .cards .interaction_photo button {
@@ -8060,13 +8934,38 @@ header .burger {
     width: 100%;
     height: 25vh;
   }
-  .container_cards_admin .container_cards .cards .information_photo .container_settings .setting_alt {
+  .container_cards_admin
+    .container_cards
+    .cards
+    .information_photo
+    .container_settings
+    .setting_alt {
     font-size: 4vw;
   }
-  .container_cards_admin .container_cards .cards .information_photo .container_settings .setting_iso,
-  .container_cards_admin .container_cards .cards .information_photo .container_settings .setting_ouverture,
-  .container_cards_admin .container_cards .cards .information_photo .container_settings .setting_duree,
-  .container_cards_admin .container_cards .cards .information_photo .container_settings .setting_focale {
+  .container_cards_admin
+    .container_cards
+    .cards
+    .information_photo
+    .container_settings
+    .setting_iso,
+  .container_cards_admin
+    .container_cards
+    .cards
+    .information_photo
+    .container_settings
+    .setting_ouverture,
+  .container_cards_admin
+    .container_cards
+    .cards
+    .information_photo
+    .container_settings
+    .setting_duree,
+  .container_cards_admin
+    .container_cards
+    .cards
+    .information_photo
+    .container_settings
+    .setting_focale {
     font-size: 2.5vw;
   }
   .container_cards_admin .container_cards .cards .interaction_photo button {
@@ -8131,7 +9030,7 @@ header .burger {
   justify-content: center;
   align-items: center;
   -moz-column-gap: 2vw;
-       column-gap: 2vw;
+  column-gap: 2vw;
 }
 .container_formulaire .confirmation .pupUp .interaction .oui,
 .container_formulaire .confirmation .pupUp .interaction .non {
@@ -8180,7 +9079,7 @@ header .burger {
   height: 100%;
   border-radius: 1vw;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .container_formulaire .information_photo form {
   width: 50%;
@@ -8227,7 +9126,7 @@ header .burger {
   justify-content: space-between;
   align-items: center;
   -moz-column-gap: 2vw;
-       column-gap: 2vw;
+  column-gap: 2vw;
 }
 .container_formulaire .information_photo form .interaction .retour,
 .container_formulaire .information_photo form .interaction .envoyer {
@@ -8571,7 +9470,7 @@ footer .copyright p {
   }
   footer .info .reseaux .logo_reseaux {
     -moz-column-gap: 4vw;
-         column-gap: 4vw;
+    column-gap: 4vw;
   }
   footer .info .reseaux .logo_reseaux a {
     margin-right: 0;
@@ -8591,4 +9490,4 @@ footer .copyright p {
   footer .copyright p {
     font-size: 2vw;
   }
-}/*# sourceMappingURL=styles.css.map */
+} /*# sourceMappingURL=styles.css.map */

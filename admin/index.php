@@ -149,6 +149,6 @@ require '../lib.inc.php';
     </section>
 </body>
 
-<?php require '../footer.php'; ?>
+<?php require 'footer.php'; ?>
 
 </html>

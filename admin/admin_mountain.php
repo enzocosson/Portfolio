@@ -21,11 +21,11 @@ require '../lib.inc.php';
 
 <body>
   <div class="cursor_follow"></div>
-  <?php require 'loader.php'; ?>
+  <?php require '../loader.php'; ?>
 
-  <?php require 'container_colors.php'; ?>
+  <?php require '../container_colors.php'; ?>
 
-  <?php require 'feedback.php'; ?>
+  <?php require '../feedback.php'; ?>
 
   <header class="header header_galerie" id="rth">
     <a href="../accueil" class="pagelink">
@@ -94,19 +94,21 @@ require '../lib.inc.php';
     </button>
   </div>
   <section class="administration">
-    <h1>Mountain</h1>
-    <div class="theme_photo spe">
-      <a href="admin_mountain_portrait.php" class="card_photo spe">
-        <h3 class="theme_titre">Portrait</h3>
-      </a>
-      <a href="admin_mountain_paysage.php" class="card_photo spe">
-        <h3 class="theme_titre">Paysage</h3>
-      </a>
-      <a href="admin_mountain_fullimage.php" class="card_photo spe">
-        <h3 class="theme_titre">Fullimage</h3>
-      </a>
-    </div>
-    <a class="retour" href="./index.php">Retour</a>
+    <section class="container">
+      <h1>Mountain</h1>
+      <div class="theme_photo">
+        <a href="admin_mountain_portrait.php" class="card_photo spe">
+          <h3 class="theme_titre">Portrait</h3>
+        </a>
+        <a href="admin_mountain_paysage.php" class="card_photo spe">
+          <h3 class="theme_titre">Paysage</h3>
+        </a>
+        <a href="admin_mountain_fullimage.php" class="card_photo spe">
+          <h3 class="theme_titre">Fullimage</h3>
+        </a>
+      </div>
+      <a class="retour" href="./index.php">Retour</a>
+    </section>
   </section>
 </body>
 <?php require '../footer.php'; ?>
