@@ -17,6 +17,18 @@
   <script src="https://unpkg.com/scrollreveal"></script>
   <link rel="stylesheet" href="./css/styles.css" />
 </head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-99XN6JZP88"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag('js', new Date());
+
+  gtag('config', 'G-99XN6JZP88');
+</script>
 
 <body>
   <div class="cursor_follow"></div>

@@ -18,6 +18,18 @@ require '../lib.inc.php';
     <meta name="theme-color" content="#ffffff" />
     <link rel="stylesheet" href="../css/styles.css" />
 </head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-99XN6JZP88"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'G-99XN6JZP88');
+</script>
 
 <body>
     <div class="cursor_follow"></div>
@@ -112,21 +124,23 @@ require '../lib.inc.php';
         </button>
     </div>
     <section class="administration">
-        <h1>Gold</h1>
-        <div class="theme_photo spe">
-            <a href="admin_gold_portrait.php" class="card_photo spe">
-                <h3 class="theme_titre">Portrait</h3>
-            </a>
-            <a href="admin_gold_paysage.php" class="card_photo spe">
-                <h3 class="theme_titre">Paysage</h3>
-            </a>
-            <a href="admin_gold_fullimage.php" class="card_photo spe">
-                <h3 class="theme_titre">Fullimage</h3>
-            </a>
-        </div>
-        <a class="retour" href="./index.php">Retour</a>
+        <section class="container">
+            <h1>Gold</h1>
+            <div class="theme_photo">
+                <a href="admin_gold_portrait.php" class="card_photo spe">
+                    <h3 class="theme_titre">Portrait</h3>
+                </a>
+                <a href="admin_gold_paysage.php" class="card_photo spe">
+                    <h3 class="theme_titre">Paysage</h3>
+                </a>
+                <a href="admin_gold_fullimage.php" class="card_photo spe">
+                    <h3 class="theme_titre">Fullimage</h3>
+                </a>
+            </div>
+            <a class="retour" href="./index.php">Retour</a>
+        </section>
     </section>
 </body>
-<?php require '../footer.php'; ?>
+<?php require 'footer.php'; ?>
 
 </html>

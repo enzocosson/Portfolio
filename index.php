@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <script src="https://unpkg.com/scrollreveal"></script>
+  <meta name="google-site-verification" content="YrjbhvZlj2rBnpIumzKGCCq0i70RVf9Ykh_6vNgxJgI" />
   <title>Portfolio | Enzo Cosson</title>
   <meta name="description" content="Explorez le portfolio en ligne d'Enzo Cosson et découvrez ses projets créatifs captivants. Laissez-vous inspirer en passant de développement web à la photographie et vidéo.">
   <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/apple-touch-icon.png" />
@@ -15,9 +16,32 @@
   <link rel="mask-icon" href="./img/favicon/safari-pinned-tab.svg" color="#5bbad5" />
   <meta name="msapplication-TileColor" content="#00aba9" />
   <meta name="theme-color" content="#ffffff" />
-
   <link rel="stylesheet" href="css/styles.css" />
 </head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-99XN6JZP88"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag('js', new Date());
+
+  gtag('config', 'G-99XN6JZP88');
+</script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-99XN6JZP88"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag('js', new Date());
+
+  gtag('config', 'G-99XN6JZP88');
+</script>
 
 <body>
   <div class="cursor_follow"></div>

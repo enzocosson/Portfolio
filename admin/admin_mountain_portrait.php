@@ -18,14 +18,26 @@ require '../lib.inc.php';
   <meta name="theme-color" content="#ffffff" />
   <link rel="stylesheet" href="../css/styles.css" />
 </head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-99XN6JZP88"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag('js', new Date());
+
+  gtag('config', 'G-99XN6JZP88');
+</script>
 
 <body>
   <div class="cursor_follow"></div>
-  <?php require 'loader.php'; ?>
+  <?php require '../loader.php'; ?>
 
-  <?php require 'container_colors.php'; ?>
+  <?php require '../container_colors.php'; ?>
 
-  <?php require 'feedback.php'; ?>
+  <?php require '../feedback.php'; ?>
 
   <header class="header header_galerie" id="rth">
     <a href="../accueil" class="pagelink">
@@ -170,6 +182,6 @@ require '../lib.inc.php';
     <a class="retour" href="./admin_/photo/mountain">Retour</a>
   </section>
 </body>
-<?php require '../footer.php'; ?>
+<?php require 'footer.php'; ?>
 
 </html>
