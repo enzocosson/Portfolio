@@ -1,0 +1,25 @@
+User-agent: *
+Disallow: /admin/
+Allow: /404
+Allow: /a_propos
+Allow: /auvergne
+Allow: /book
+Allow: /by-night
+Allow: /contact
+Allow: /custom-air
+Allow: /developpement-web
+Allow: /dream-by-kenzo
+Allow: /gold
+Allow: /guadeloupe
+Allow: /imovix
+Allow: /accueil
+Allow: /mountain
+Allow: /photo-video
+Allow: /photo
+Allow: /school
+Allow: /soda
+Allow: /galerie-art
+Allow: /spider-man-threejs
+Allow: /tropical
+Allow: /video
+
