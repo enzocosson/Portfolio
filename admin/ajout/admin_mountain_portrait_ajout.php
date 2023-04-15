@@ -23,15 +23,6 @@ require '../../lib.inc.php';
         })(window, document, 'script', 'dataLayer', 'GTM-K5PXVFM');
     </script>
     <!-- End Google Tag Manager -->
-    window.dataLayer = window.dataLayer || [];
-
-    function gtag() {
-    dataLayer.push(arguments);
-    }
-    gtag('js', new Date());
-
-    gtag('config', 'G-99XN6JZP88');
-    </script>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
