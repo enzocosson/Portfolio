@@ -24,6 +24,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="canonical" href="https://www.enzo-cosson.fr/contact/" />
     <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
     <title>Portfolio | Contact</title>
     <meta name="description" content="Contactez Enzo Cosson pour discuter de votre prochain projet créatif. Avec des compétences en programmation web, photographie et vidéo, cet artiste multidisciplinaire est prêt à collaborer avec vous pour réaliser vos idées. Remplissez le formulaire de contact en ligne pour commencer votre projet dès aujourd'hui">

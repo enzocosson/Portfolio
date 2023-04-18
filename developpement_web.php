@@ -23,6 +23,7 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="canonical" href="https://www.enzo-cosson.fr/developpement-web/" />
   <title>Portfolio | Développement web</title>
   <meta name="description" content="Découvrez mes projets de développement web passionnants dans mon portfolio en ligne. Explorez mes réalisations en matière de conception de sites web.">
   <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/apple-touch-icon.png" />

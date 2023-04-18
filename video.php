@@ -23,6 +23,7 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="canonical" href="https://www.enzo-cosson.fr/video/" />
   <title>Portfolio | Vidéo</title>
   <meta name="description" content="Découvrez une sélection de vidéos captivantes dans mon portfolio en ligne. Explorez des univers visuels variés, allant des vidéos de voyage aux vidéos promotionnelles. Laissez-vous inspirer par mes réalisations et découvrez de nouvelles idées pour votre prochain projet vidéo.">
   <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/apple-touch-icon.png" />

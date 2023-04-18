@@ -23,6 +23,7 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="canonical" href="https://www.enzo-cosson.fr/dream-by-kenzo/" />
   <title>Portfolio | Vidéo - Dream By Kenzo</title>
   <meta name="description" content="Découvrez mon projet publicitaire fictif pour le parfum Dream by Kenzo.">
   <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/apple-touch-icon.png" />

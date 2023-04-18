@@ -10252,6 +10252,11 @@ header .burger {
   font-size: 0.8vw;
   font-weight: normal;
   border-radius: 0.3vw;
+  margin-bottom: 1vh;
+}
+
+.administration section .boites_messages .boite .message:last-child {
+  margin-bottom: 0;
 }
 
 .administration section .boites_messages .boite .message p {

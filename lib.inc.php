@@ -120,7 +120,7 @@ function sendFeedback($co, $prenom, $nom, $email, $note, $commentaire)
         header('location:validation_feedback.php');
     } else {
         echo "<h1>Une erreur est survenue</h1>";
-        header('location:/accueil');
+        header('location:/');
         die();
     }
 }

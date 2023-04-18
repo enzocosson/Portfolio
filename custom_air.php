@@ -23,6 +23,7 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="canonical" href="https://www.enzo-cosson.fr/custom-air/" />
   <title>Portfolio | Site - Custom Air</title>
   <meta name="description" content="Découvrez mon projet de site web pour la compagnie aérienne fictive Custom Air. Ce site offre une bonne expérience utilisateur, des fonctionnalités innovantes et un design moderne pour aider les clients à réserver leurs vols plus facilement.">
   <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/apple-touch-icon.png" />

@@ -143,6 +143,11 @@
           font-size: 0.8vw;
           font-weight: normal;
           border-radius: 0.3vw;
+          margin-bottom: 1vh;
+
+          &:last-child {
+            margin-bottom: 0;
+          }
 
           p {
             font-family: $font_sf;

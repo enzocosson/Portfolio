@@ -23,6 +23,7 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="canonical" href="https://www.enzo-cosson.fr/auvergne/" />
   <title>Portfolio | Vidéo Auvergne</title>
   <meta name="description" content="Je suis heureux de partager ma vidéo de mon séjour en Auvergne avec vous. Découvrez les magnifiques paysages que j'ai capturés lors de mes explorations, des montagnes verdoyantes aux volcans emblématiques. Cette vidéo est le fruit de ma passion pour la vidéographie et je suis fier de pouvoir la partager avec vous dans mon portfolio en ligne.">
   <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/apple-touch-icon.png" />

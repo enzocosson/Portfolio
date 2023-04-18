@@ -1,5 +1,6 @@
 User-agent: *
 Disallow: /admin/
+Allow: /
 Allow: /404
 Allow: /a_propos
 Allow: /auvergne
@@ -12,7 +13,6 @@ Allow: /dream-by-kenzo
 Allow: /gold
 Allow: /guadeloupe
 Allow: /imovix
-Allow: /accueil
 Allow: /mountain
 Allow: /photo-video
 Allow: /photo

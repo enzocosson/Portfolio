@@ -55,13 +55,13 @@ require '../lib.inc.php';
   <!-- End Google Tag Manager (noscript) -->
 
   <header class="header header_galerie" id="rth">
-    <a href="../accueil" class="pagelink">
+    <a href="../" class="pagelink">
       <img class="logo logo_white_galerie" src="../img/white_logo.png" alt="logo du site" />
       <img class="logo logo_black_galerie" src="../img/black_logo.png" alt="logo du site" />
     </a>
 
     <ul class="menu">
-      <li><a class="links" href="../accueil">Accueil</a></li>
+      <li><a class="links" href="../">Accueil</a></li>
       <li>
         <a class="links" href="../developpement-web">Développement web | Design</a>
       </li>
@@ -78,7 +78,7 @@ require '../lib.inc.php';
   </header>
 
   <ul class="menu_mobile_black">
-    <li><a class="links " href="../accueil">Accueil</a></li>
+    <li><a class="links " href="../">Accueil</a></li>
     <li>
       <a class="links " href="../developpement-web">Développement web | Design</a>
     </li>

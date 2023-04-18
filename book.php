@@ -23,6 +23,7 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="canonical" href="https://www.enzo-cosson.fr/book/" />
   <title>Portfolio | Site - Book</title>
   <meta name="description" content="Découvrez mes réalisations créatives et variées à travers mon book de projets personnels. De la conception graphique à la photographie, en passant par la vidéographie et la création de sites web, explorez mes compétences et mon style artistique unique. Laissez-vous inspirer et découvrez comment mes projets peuvent répondre à vos besoins créatifs">
   <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/apple-touch-icon.png" />

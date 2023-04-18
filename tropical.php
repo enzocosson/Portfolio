@@ -26,6 +26,7 @@ require 'lib.inc.php';
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="canonical" href="https://www.enzo-cosson.fr/tropical/" />
   <title>Portfolio | Photo - Tropical</title>
   <meta name="description" content="Découvrez des photos exotiques et envoûtantes de paysages tropicaux de ma collection. Plongez dans un univers de couleurs vives, de textures luxuriantes et d'atmosphères enivrantes. Explorez ces merveilles naturelles et laissez-vous transporter dans des destinations de rêve.">
   <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/apple-touch-icon.png" />

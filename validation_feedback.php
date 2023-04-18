@@ -2,7 +2,7 @@
 <html lang="en">
 <?php
 session_start();
-header("Refresh: 2;URL=/accueil");
+header("Refresh: 2;URL=/");
 ?>
 
 <head>

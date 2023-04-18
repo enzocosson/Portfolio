@@ -80,13 +80,13 @@ require '../lib.inc.php';
     </section>
 
     <header class="header header_galerie" id="rth">
-        <a href="../accueil" class="pagelink">
+        <a href="../" class="pagelink">
             <img class="logo logo_white_galerie" src="../img/white_logo.png" alt="logo du site" />
             <img class="logo logo_black_galerie" src="../img/black_logo.png" alt="logo du site" />
         </a>
 
         <ul class="menu">
-            <li><a class="links" href="../accueil">Accueil</a></li>
+            <li><a class="links" href="../">Accueil</a></li>
             <li>
                 <a class="links" href="../developpement-web">Développement web | Design</a>
             </li>
@@ -103,7 +103,7 @@ require '../lib.inc.php';
     </header>
 
     <ul class="menu_mobile_black">
-        <li><a class="links " href="../accueil">Accueil</a></li>
+        <li><a class="links " href="../">Accueil</a></li>
         <li>
             <a class="links " href="../developpement-web">Développement web | Design</a>
         </li>
@@ -143,41 +143,52 @@ require '../lib.inc.php';
 
             $co = connexionBD();
 
+            // Récupération des données de la table 'contact'
             $requete = $co->prepare("SELECT nom, prenom, email, theme, message, date, heure FROM contact");
             $requete->execute();
-            $donnees = $requete->fetch(PDO::FETCH_ASSOC);
 
             echo '<div class="boites_messages">';
             echo '  <div class="boite">';
             echo '    <h3>Contact</h3>';
-            echo '    <div class="message">';
-            echo '      <p>' . $donnees['prenom'] . '</p>';
-            echo '      <p>' . $donnees['nom'] . '</p>';
-            echo '      <p>' . $donnees['email'] . '</p>';
-            echo '      <p>' . $donnees['theme'] . '</p>';
-            echo '      <p class="container_message">' . $donnees['message'] . '</p>';
-            echo '      <p>' . $donnees['date'] . '</p>';
-            echo '      <p>' . $donnees['heure'] . '</p>';
-            echo '    </div>';
+
+            while ($donnees = $requete->fetch(PDO::FETCH_ASSOC)) {
+                echo '    <div class="message">';
+                echo '      <p>' . $donnees['prenom'] . '</p>';
+                echo '      <p>' . $donnees['nom'] . '</p>';
+                echo '      <p>' . $donnees['email'] . '</p>';
+                echo '      <p>' . $donnees['theme'] . '</p>';
+                echo '      <p class="container_message">' . $donnees['message'] . '</p>';
+                echo '      <p>' . $donnees['date'] . '</p>';
+                echo '      <p>' . $donnees['heure'] . '</p>';
+                echo '    </div>';
+            }
+
             echo '  </div>';
 
+            // Récupération des données de la table 'feedback'
             $requete2 = $co->prepare("SELECT prenom, nom, email, commentaire, note FROM feedback");
             $requete2->execute();
-            $resultats = $requete2->fetch(PDO::FETCH_ASSOC);
 
             echo '  <div class="boite">';
             echo '    <h3>Feedback</h3>';
-            echo '    <div class="message">';
-            echo '      <p>' . $resultats['prenom'] . '</p>';
-            echo '      <p>' . $resultats['nom'] . '</p>';
-            echo '      <p>' . $resultats['email'] . '</p>';
-            echo '      <p class="container_message">' . $resultats['commentaire'] . '</p>';
-            echo '      <p>' . $resultats['note'] . '/10' . '</p>';
-            echo '    </div>';
+
+            while ($resultats = $requete2->fetch(PDO::FETCH_ASSOC)) {
+                echo '    <div class="message">';
+                echo '      <p>' . $resultats['prenom'] . '</p>';
+                echo '      <p>' . $resultats['nom'] . '</p>';
+                echo '      <p>' . $resultats['email'] . '</p>';
+                echo '      <p class="container_message">' . $resultats['commentaire'] . '</p>';
+                echo '      <p>' . $resultats['note'] . '/10' . '</p>';
+                echo '    </div>';
+            }
+
             echo '  </div>';
             echo '</div>';
+
             deconnexionBD($co);
+
             ?>
+
         </section>
     </section>
 </body>
