@@ -497,7 +497,7 @@
     } else if (slideIndex === "5") {
       url = "/soda";
     } else if (slideIndex === "6") {
-      url = "/art";
+      url = "/galerie-art";
     } else if (slideIndex === "7") {
       url = "flashfood.html";
     } else if (slideIndex === "8") {
