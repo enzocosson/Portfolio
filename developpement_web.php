@@ -78,13 +78,17 @@
           <span class="pages_number pages_number_next">04</span>
           <span class="pages_number pages_number_next">05</span>
           <span class="pages_number pages_number_next">06</span>
-          / 06
+          <span class="pages_number pages_number_next">06</span>
+          <span class="pages_number pages_number_next">07</span>
+          / 08
         </p>
       </div>
 
       <div class="container_title">
         <h1 class="title title_center title_imovix">IMOVIX</h1>
         <h1 class="title title_next title_book">BOOK</h1>
+        <h1 class="title title_next title_ferrari">FERRARI</h1>
+        <h1 class="title title_next title_flexbank">FLEXBANK</h1>
         <h1 class="title title_next title_dji">SPIDER-JS</h1>
         <h1 class="title title_next title_soda">SCHOOL</h1>
         <h1 class="title title_next title_dior">SODA</h1>
@@ -102,6 +106,20 @@
         <div class="container_slider_anim">
           <h2 class="slider">BOOKBOOKBOOKBOOK</h2>
           <h2 class="slider">BOOKBOOKBOOKBOOK</h2>
+        </div>
+      </div>
+
+      <div class="carrousel_container carrousel_title_stroke_next">
+        <div class="container_slider_anim">
+          <h2 class="slider">FERRARIFERRARI</h2>
+          <h2 class="slider">FERRARIFERRARI</h2>
+        </div>
+      </div>
+
+      <div class="carrousel_container carrousel_title_stroke_next">
+        <div class="container_slider_anim">
+          <h2 class="slider">FLEXBANKFLEXBANK</h2>
+          <h2 class="slider">FLEXBANKFLEXBANK</h2>
         </div>
       </div>
 
@@ -135,6 +153,8 @@
 
       <img class="imac imac_center imac_imovix" src="./img/mockup/imac_imovix2.webp" alt="imac sur le site imovix" />
       <img class="imac imac_next imac_book" src="./img/mockup/imac_book.webp" alt="imac sur le site book" />
+      <img class="imac imac_next imac_ferrari" src="./img/mockup/imac_ferrari.webp" alt="imac sur le site ferrari" />
+      <img class="imac imac_next imac_flexbank" src="./img/mockup/imac_flexbank.webp" alt="imac sur le site flexbank" />
       <img class="imac imac_next imac_dji" src="./img/mockup/imac_spiderThreeJs.webp" alt="imac sur le site dji" />
       <img class="imac imac_next imac_soda2" src="./img/mockup/school.webp" alt="imac sur le site school" />
       <img class="imac imac_next imac_dior" src="./img/mockup/imac_soda.webp" alt="imac sur le site soda" />
@@ -150,6 +170,8 @@
         <div>
           <small class="techno techno_center techno_imovix"><span>TECHNOLOGIE</span> : HTML, SCSS, JS, PHP</small>
           <small class="techno techno_next techno_book"><span>TECHNOLOGIE</span> : HTML, SCSS, JS</small>
+          <small class="techno techno_next techno_dji"><span>TECHNOLOGIE</span> : THREE JS</small>
+          <small class="techno techno_next techno_dji"><span>TECHNOLOGIE</span> : REACT THREE FIBER</small>
           <small class="techno techno_next techno_dji"><span>TECHNOLOGIE</span> : THREE JS</small>
           <small class="techno techno_next techno_soda"><span>TECHNOLOGIE</span> : HTML, SCSS, JS</small>
           <small class="techno techno_next techno_dior"><span>TECHNOLOGIE</span> : HTML, SCSS</small>
@@ -200,10 +222,25 @@
           </div>
         </a>
         <a href="/book">
-          <div class="card html">
+          <div class="card threejs">
             <img class="card_img" src="./img/cards/cards_book.webp" alt="site book" />
             <span class="hover_bg"></span>
             <h3>BOOK</h3>
+          </div>
+        </a>
+        <a href="/ferrari/index.html">
+          <div class="card html">
+            <img class="card_img" src="./img/cards/cards_ferrari.webp" alt="site ferrari" />
+            <span class="hover_bg"></span>
+            <h3>FERRARI</h3>
+          </div>
+        </a>
+
+        <a href="/flexbank/index.html">
+          <div class="card threejs">
+            <img class="card_img" src="./img/cards/cards_flexbank.webp" alt="site flexbank" />
+            <span class="hover_bg"></span>
+            <h3>FLEXBANK</h3>
           </div>
         </a>
         <a href="/spider-man-threejs">
@@ -234,17 +271,6 @@
             <h3>CUSTOM AIR</h3>
           </div>
         </a>
-        <!-- <a href="https://mmi21e03.mmi-troyes.fr/tech">
-            <div class="card html">
-              <img
-                class="card_img"
-                src="./img/cards/cards_dji.webp"
-                alt="site dji"
-              />
-              <span class="hover_bg"></span>
-              <h3>DJI</h3>
-            </div>
-          </a> -->
         <a href="/soda">
           <div class="card html">
             <img class="card_img" src="./img/cards/cards_soda.webp" alt="site soda" />
@@ -252,28 +278,7 @@
             <h3>SODA</h3>
           </div>
         </a>
-        <!-- <a href="https://mmi21e03.mmi-troyes.fr/dior">
-            <div class="card html">
-              <img
-                class="card_img"
-                src="./img/cards/cards_dior.webp"
-                alt="site dior"
-              />
-              <span class="hover_bg"></span>
-              <h3>DIOR</h3>
-            </div>
-          </a> -->
-        <!-- <a href="https://mmi21e03.mmi-troyes.fr/drugOptimal">
-            <div class="card html">
-              <img
-                class="card_img"
-                src="./img/cards/cards_drugoptimal.webp"
-                alt="site drug optimal"
-              />
-              <span class="hover_bg"></span>
-              <h3>DRUGOPTIMAL</h3>
-            </div>
-          </a> -->
+
         <a href="https://mmi21e03.mmi-troyes.fr/flashfood" class="flashfood" target="_blank">
           <div class="card html">
             <img class="card_img" src="./img/cards/cards_flashfood.webp" alt="site flashfood" />
@@ -281,17 +286,7 @@
             <h3>FLASHFOOD</h3>
           </div>
         </a>
-        <!-- <a href="https://mmi21e03.mmi-troyes.fr/tech">
-            <div class="card html">
-              <img
-                class="card_img"
-                src="./img/cards/cards_gopro.webp"
-                alt="site gopro"
-              />
-              <span class="hover_bg"></span>
-              <h3>GOPRO</h3>
-            </div>
-          </a> -->
+
       </div>
     </section>
     <section class="maj">
@@ -491,16 +486,20 @@
     } else if (slideIndex === "2") {
       url = "/book";
     } else if (slideIndex === "3") {
-      url = "/spider-man-threejs";
+      url = "/ferrari/index.html";
     } else if (slideIndex === "4") {
-      url = "/school";
+      url = "/flexbank/index.html";
     } else if (slideIndex === "5") {
-      url = "/soda";
+      url = "/spider-man-threejs";
     } else if (slideIndex === "6") {
-      url = "/galerie-art";
+      url = "/school";
     } else if (slideIndex === "7") {
-      url = "flashfood.html";
+      url = "/soda";
     } else if (slideIndex === "8") {
+      url = "/galerie-art";
+    } else if (slideIndex === "9") {
+      url = "flashfood.html";
+    } else if (slideIndex === "10") {
       url = "gopro.html";
     }
 

@@ -134,7 +134,7 @@
       <a href="#works" class="home_arrow"></a>
     </section>
 
-    <section id="works" class="works">
+    <!-- <section id="works" class="works">
       <h1>About My <span>Works</span></h1>
       <img class="iphone iphone1" src="./img/mockup/phone1.webp" alt="iphone" />
       <img class="iphone iphone2" src="./img/mockup/phone2.webp" alt="iphone" />
@@ -145,7 +145,7 @@
       <h3 class="h3_text">DESIGN</h3>
 
       <p class="right_text_absolute">WEB DEVELOPPEMENT</p>
-    </section>
+    </section> -->
 
     <section class="soda">
       <h4 class="first_translate">
