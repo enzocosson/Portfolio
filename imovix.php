@@ -26,15 +26,15 @@
   <link rel="canonical" href="https://www.enzo-cosson.fr/imovix/" />
   <title>Portfolio | Site - imovix</title>
   <meta name="description" content="Je suis fier de présenter mon projet de site de streaming fictif Imovix. Découvrez une expérience immersive et passionnante de streaming vidéo en ligne, avec une interface utilisateur élégante et facile à naviguer.">
-  <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/apple-touch-icon.png" />
-  <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png" />
-  <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png" />
-  <link rel="manifest" href="./img/favicon/site.webmanifest" />
-  <link rel="mask-icon" href="./img/favicon/safari-pinned-tab.svg" color="#5bbad5" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon/favicon-16x16.png" />
+  <link rel="manifest" href="/img/favicon/site.webmanifest" />
+  <link rel="mask-icon" href="/img/favicon/safari-pinned-tab.svg" color="#5bbad5" />
   <meta name="msapplication-TileColor" content="#00aba9" />
   <meta name="theme-color" content="#ffffff" />
   <script src="https://unpkg.com/scrollreveal"></script>
-  <link rel="stylesheet" href="./css/styles.css" />
+  <link rel="stylesheet" href="/css/styles.css" />
 </head>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-99XN6JZP88"></script>
@@ -67,7 +67,7 @@
   <main>
     <section class="presentation_site" data-namespace="imovix">
       <h1 class="bg_title">IMOVIX</h1>
-      <img class="imac" src="./img/mockup/imac_imovix2.webp" alt="imac sur le site imovix" />
+      <img class="imac" src="/img/mockup/imac_imovix2.webp" alt="imac sur le site imovix" />
 
       <a class="bdd_redirection_top" href="https://mmi21e03.mmi-troyes.fr/imovix" target="_blank">Y accéder</a>
     </section>
@@ -75,7 +75,7 @@
     <div class="more_info">
       <h1>SITE DE STREAMING</h1>
       <div class="green_rect"></div>
-      <img src="./img/mockup/ipad_spiderman.webp" alt="ipad sur le site imovix" class="mockup_spiderman" />
+      <img src="/img/mockup/ipad_spiderman.webp" alt="ipad sur le site imovix" class="mockup_spiderman" />
       <div class="description">
         <h2 class="more_info_titre">POURQUOI CE SITE ?</h2>
         <p class="description_paragraphe">
@@ -85,7 +85,7 @@
           site complet avec une interface conviviale pour les utilisateurs.
         </p>
       </div>
-      <img src="./img/spiderman2.png" alt="spiderman_cartoon" class="spiderman_illu" />
+      <img src="/img/spiderman2.png" alt="spiderman_cartoon" class="spiderman_illu" />
       <div class="white_circle_bottom">
         <h2 class="front_end_title">UI</h2>
       </div>
@@ -104,7 +104,7 @@
           </p> -->
 
         <video class="imovix_catalogue" autoplay muted loop>
-          <source src="./mp4/demo_imovix.mp4" type="video/mp4" />
+          <source src="/mp4/demo_imovix.mp4" type="video/mp4" />
         </video>
 
         <div class="title">
@@ -130,41 +130,41 @@
       </div>
       <div class="autres_sites">
         <a href="/book" class="autres_sites_cards">
-          <img class="autres_sites_cards_img" src="./img/cards/cards_book.png" alt="site book" />
+          <img class="autres_sites_cards_img" src="/img/cards/cards_book.png" alt="site book" />
         </a>
 
         <a href="/spider-man-threejs" class="autres_sites_cards">
-          <img class="autres_sites_cards_img" src="./img/cards/spider_js.png" alt="site spider-man three js" />
+          <img class="autres_sites_cards_img" src="/img/cards/spider_js.png" alt="site spider-man three js" />
         </a>
 
         <a href="/school" class="autres_sites_cards">
-          <img class="autres_sites_cards_img" src="./img/cards/school.png" alt="site school" />
+          <img class="autres_sites_cards_img" src="/img/cards/school.png" alt="site school" />
         </a>
 
         <a href="/galerie-art" class="autres_sites_cards">
-          <img class="autres_sites_cards_img" src="./img/cards/cards_art.png" alt="site de galerie d'art" />
+          <img class="autres_sites_cards_img" src="/img/cards/cards_art.png" alt="site de galerie d'art" />
         </a>
 
         <a href="/custom-air" class="autres_sites_cards">
-          <img class="autres_sites_cards_img" src="./img/cards/cards_custom_air.png" alt="site custom air" />
+          <img class="autres_sites_cards_img" src="/img/cards/cards_custom_air.png" alt="site custom air" />
         </a>
 
         <!--  <a href="" class="autres_sites_cards">
             <img
               class="autres_sites_cards_img"
-              src="./img/cards/cards_dji.png"
+              src="/img/cards/cards_dji.png"
               alt="site dji"
             />
           </a> -->
 
         <a href="/soda" class="autres_sites_cards">
-          <img class="autres_sites_cards_img" src="./img/cards/cards_soda.png" alt="site soda" />
+          <img class="autres_sites_cards_img" src="/img/cards/cards_soda.png" alt="site soda" />
         </a>
 
         <!--    <a href="" class="autres_sites_cards">
             <img
               class="autres_sites_cards_img"
-              src="./img/cards/cards_dior.png"
+              src="/img/cards/cards_dior.png"
               alt="site dior"
             />
           </a> -->
@@ -172,19 +172,19 @@
         <!--   <a href="" class="autres_sites_cards">
             <img
               class="autres_sites_cards_img"
-              src="./img/cards/cards_drugoptimal.png"
+              src="/img/cards/cards_drugoptimal.png"
               alt="site drug optimal"
             />
           </a> -->
 
         <a href="" class="autres_sites_cards">
-          <img class="autres_sites_cards_img" src="./img/cards/cards_flashfood.png" alt="site flashfood" />
+          <img class="autres_sites_cards_img" src="/img/cards/cards_flashfood.png" alt="site flashfood" />
         </a>
 
         <!--   <a href="" class="autres_sites_cards">
             <img
               class="autres_sites_cards_img"
-              src="./img/cards/cards_gopro.png"
+              src="/img/cards/cards_gopro.png"
               alt="site gopro"
             />
           </a> -->
@@ -213,6 +213,6 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/debug.addIndicators.min.js" integrity="sha512-RvUydNGlqYJapy0t4AH8hDv/It+zKsv4wOQGb+iOnEfa6NnF2fzjXgRy+FDjSpMfC3sjokNUzsfYZaZ8QAwIxg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/animation.gsap.js" integrity="sha512-judXDFLnOTJsUwd55lhbrX3uSoSQSOZR6vNrsll+4ViUFv+XOIr/xaIK96soMj6s5jVszd7I97a0H+WhgFwTEg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-<script src="./js/scrollMagicImovix.js"></script>
+<script src="/js/scrollMagicImovix.js"></script>
 
 </html>

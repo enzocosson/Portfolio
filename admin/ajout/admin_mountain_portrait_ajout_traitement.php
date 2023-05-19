@@ -1,5 +1,5 @@
 <?php
-require '../../lib.inc.php';
+require '././lib.inc.php';
 
 $co = connexionBD();
 
@@ -16,7 +16,7 @@ $duree = $_POST['duree'];
 $focale = $_POST['focale'];
 
 $new_filename = uniqid('', true) . '.' . $file_ext;
-$destination = '../../img/photo/mountain/portrait/' . $new_filename;
+$destination = '././img/photo/mountain/portrait/' . $new_filename;
 
 if (move_uploaded_file($file_tmp, $destination)) {
     $req = 'INSERT INTO mountain_portrait (photo_src, photo_alt, photo_iso, photo_ouverture, photo_duree, photo_focale) VALUES (:src, :alt, :iso, :ouverture, :duree, :focale)';

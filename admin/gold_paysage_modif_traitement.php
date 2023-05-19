@@ -1,6 +1,6 @@
 <?php
 
-require '../lib.inc.php';
+require './lib.inc.php';
 
 if (isset($_POST['id'])) {
 

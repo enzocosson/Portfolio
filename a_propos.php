@@ -23,18 +23,21 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="canonical" href="https://www.enzo-cosson.fr/a_propos/" />
+  <link rel="canonical" href="https://www.enzo-cosson.fr/a-propos/" />
   <title>Portfolio | À Propos</title>
   <meta name="description" content="Découvrez qui se cache derrière le portfolio en ligne d'Enzo Cosson. Avec une passion pour la conception créative, l'art et la programmation, Enzo Cosson vous présente son parcours et ses compétences en tant qu'artiste multidisciplinaire. Explorez cette page pour en savoir plus sur son histoire, ses projets et sa philosophie de création.">
-  <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/apple-touch-icon.png" />
-  <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png" />
-  <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png" />
-  <link rel="manifest" href="./img/favicon/site.webmanifest" />
-  <link rel="mask-icon" href="./img/favicon/safari-pinned-tab.svg" color="#5bbad5" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon/favicon-16x16.png" />
+  <link rel="manifest" href="/img/favicon/site.webmanifest" />
+  <link rel="mask-icon" href="/img/favicon/safari-pinned-tab.svg" color="#5bbad5" />
   <meta name="msapplication-TileColor" content="#00aba9" />
   <meta name="theme-color" content="#ffffff" />
-  <link rel="stylesheet" href="./css/styles.css" />
+  <link rel="stylesheet" href="/css/styles.css" />
   <script src="https://unpkg.com/scrollreveal"></script>
+
+
+
 </head>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-99XN6JZP88"></script>
@@ -64,7 +67,7 @@
   <section class="a_propos_web_page">
     <span class="circle">
       <h1 class="title_back">A PROPOS</h1>
-      <img class="pp" src="./img/a_propos/me.png" alt="photo de profil d'Enzo Cosson" />
+      <img class="pp" src="/img/a_propos/me.png" alt="photo de profil d'Enzo Cosson" />
       <h1 class="title_front">A PROPOS</h1>
     </span>
     <a href="#presentation" class="home_arrow"></a>

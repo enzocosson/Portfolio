@@ -49,7 +49,7 @@
     </div>
 </footer>
 
-<script src="../js/loader.js"></script>
-<script src="../js/cursorFollow.js"></script>
-<script src="../js/burgerMenu.js"></script>
-<script src="../js/transitionPages.js"></script>
+<script src="./js/loader.js"></script>
+<script src="./js/cursorFollow.js"></script>
+<script src="./js/burgerMenu.js"></script>
+<script src="./js/transitionPages.js"></script>

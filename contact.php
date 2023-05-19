@@ -28,14 +28,14 @@
     <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
     <title>Portfolio | Contact</title>
     <meta name="description" content="Contactez Enzo Cosson pour discuter de votre prochain projet créatif. Avec des compétences en programmation web, photographie et vidéo, cet artiste multidisciplinaire est prêt à collaborer avec vous pour réaliser vos idées. Remplissez le formulaire de contact en ligne pour commencer votre projet dès aujourd'hui">
-    <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png">
-    <link rel="manifest" href="./img/favicon/site.webmanifest">
-    <link rel="mask-icon" href="./img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/img/favicon/site.webmanifest">
+    <link rel="mask-icon" href="/img/favicon/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#00aba9">
     <meta name="theme-color" content="#ffffff">
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="/css/styles.css" />
 </head>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-99XN6JZP88"></script>
@@ -259,11 +259,11 @@
     });
 </script>
 
-<script src="./js/loader.js"></script>
-<script src="./js/cursorFollow.js"></script>
-<script src="./js/burgerMenu.js"></script>
-<script src="./js/transitionPages.js"></script>
-<script src="./js/generateColor.js"></script>
-<script src="./js/feedback.js"></script>
+<script src="/js/loader.js"></script>
+<script src="/js/cursorFollow.js"></script>
+<script src="/js/burgerMenu.js"></script>
+<script src="/js/transitionPages.js"></script>
+<script src="/js/generateColor.js"></script>
+<script src="/js/feedback.js"></script>
 
 </html>

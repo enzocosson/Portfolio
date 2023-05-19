@@ -26,14 +26,14 @@
   <link rel="canonical" href="https://www.enzo-cosson.fr/photo-video/" />
   <title>Portfolio | Photo & Vidéo</title>
   <meta name="description" content="Découvrez mes réalisations photographiques et vidéographiques dans mon portfolio en ligne. De la photographie de paysage aux portraits en passant par la production vidéo, explorez mon travail créatif et laissez-vous inspirer par mes compétences techniques et artistiques">
-  <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/apple-touch-icon.png" />
-  <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png" />
-  <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png" />
-  <link rel="manifest" href="./img/favicon/site.webmanifest" />
-  <link rel="mask-icon" href="./img/favicon/safari-pinned-tab.svg" color="#5bbad5" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon/favicon-16x16.png" />
+  <link rel="manifest" href="/img/favicon/site.webmanifest" />
+  <link rel="mask-icon" href="/img/favicon/safari-pinned-tab.svg" color="#5bbad5" />
   <meta name="msapplication-TileColor" content="#00aba9" />
   <meta name="theme-color" content="#ffffff" />
-  <link rel="stylesheet" href="./css/styles.css" />
+  <link rel="stylesheet" href="/css/styles.css" />
 </head>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-99XN6JZP88"></script>
@@ -63,13 +63,13 @@
     <div class="container_photo">
       <a class="couverture" href="/photo">
         <h2 class="couverture_titre">PHOTO</h2>
-        <img src="./img/photo_video/photo_couverture.webp" alt="couverture de la thématique photo" />
+        <img src="/img/photo_video/photo_couverture.webp" alt="couverture de la thématique photo" />
       </a>
     </div>
     <div class="container_video">
       <a class="couverture" href="/video">
         <h2 class="couverture_titre">VIDEO</h2>
-        <img src="./img/photo_video/video_couverture2.webp" alt="couverture de la thématique video" />
+        <img src="/img/photo_video/video_couverture2.webp" alt="couverture de la thématique video" />
       </a>
     </div>
   </section>
@@ -82,6 +82,6 @@
   });
 </script>
 
-<script type="module" src="./js/app.js"></script>
+<script type="module" src="/js/app.js"></script>
 
 </html>

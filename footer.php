@@ -1,6 +1,6 @@
 <div class="contact">
     <h1>Un projet en tête ?</h1>
-    <a href="/contact" class="lien_contact">ME CONTACTER</a>
+    <a href="/contact/" class="lien_contact">ME CONTACTER</a>
 </div>
 <footer>
     <div class="info">
@@ -49,9 +49,9 @@
     </div>
 </footer>
 
-<script src="./js/loader.js"></script>
-<script src="./js/cursorFollow.js"></script>
-<script src="./js/burgerMenu.js"></script>
-<script src="./js/transitionPages.js"></script>
-<script src="./js/generateColor.js"></script>
-<script src="./js/feedback.js"></script>
+<script src="/js/loader.js"></script>
+<script src="/js/cursorFollow.js"></script>
+<script src="/js/burgerMenu.js"></script>
+<script src="/js/transitionPages.js"></script>
+<script src="/js/generateColor.js"></script>
+<script src="/js/feedback.js"></script>

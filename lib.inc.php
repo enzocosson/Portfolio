@@ -154,7 +154,7 @@ function mountainPortrait($co)
 
 
             $output .= '<div class="container_img">';
-            $output .= '<img class="miniatures" src="./img/photo/mountain/portrait/' . $filename . '" alt="' . $alt . '"/>';
+            $output .= '<img class="miniatures" src="/img/photo/mountain/portrait/' . $filename . '" alt="' . $alt . '"/>';
             $output .= '<div class="parametres">';
             $output .= '<p>ISO ' . $iso . '</p>';
             $output .= '<p>' . $f_stop . '</p>';
@@ -195,7 +195,7 @@ function mountainPaysage($co)
 
 
             $output .= '<div class="container_img">';
-            $output .= '<img class="miniatures" src="./img/photo/mountain/paysage/' . $filename . '" alt="' . $alt . '"/>';
+            $output .= '<img class="miniatures" src="/img/photo/mountain/paysage/' . $filename . '" alt="' . $alt . '"/>';
             $output .= '<div class="parametres">';
             $output .= '<p>ISO ' . $iso . '</p>';
             $output .= '<p>' . $f_stop . '</p>';
@@ -231,7 +231,7 @@ function mountainFullImage($co)
 
 
             $output .= '<div class="container_img">';
-            $output .= '<img class="miniatures" src="./img/photo/mountain/fullimage/' . $filename . '" alt="' . $alt . '"/>';
+            $output .= '<img class="miniatures" src="/img/photo/mountain/fullimage/' . $filename . '" alt="' . $alt . '"/>';
             $output .= '</div>';
         }
         return $output;
@@ -267,7 +267,7 @@ function tropicalPortrait($co)
 
 
             $output .= '<div class="container_img">';
-            $output .= '<img class="miniatures" src="./img/photo/tropical/portrait/' . $filename . '" alt="' . $alt . '"/>';
+            $output .= '<img class="miniatures" src="/img/photo/tropical/portrait/' . $filename . '" alt="' . $alt . '"/>';
             $output .= '<div class="parametres">';
             $output .= '<p>ISO ' . $iso . '</p>';
             $output .= '<p>' . $f_stop . '</p>';
@@ -308,7 +308,7 @@ function tropicalPaysage($co)
 
 
             $output .= '<div class="container_img">';
-            $output .= '<img class="miniatures" src="./img/photo/tropical/paysage/' . $filename . '" alt="' . $alt . '"/>';
+            $output .= '<img class="miniatures" src="/img/photo/tropical/paysage/' . $filename . '" alt="' . $alt . '"/>';
             $output .= '<div class="parametres">';
             $output .= '<p>ISO ' . $iso . '</p>';
             $output .= '<p>' . $f_stop . '</p>';
@@ -344,7 +344,7 @@ function tropicalFullImage($co)
 
 
             $output .= '<div class="container_img">';
-            $output .= '<img class="miniatures" src="./img/photo/tropical/fullimage/' . $filename . '" alt="' . $alt . '"/>';
+            $output .= '<img class="miniatures" src="/img/photo/tropical/fullimage/' . $filename . '" alt="' . $alt . '"/>';
             $output .= '</div>';
         }
         return $output;
@@ -387,7 +387,7 @@ function goldPortrait($co)
 
 
             $output .= '<div class="container_img">';
-            $output .= '<img class="miniatures" src="./img/photo/gold/portrait/' . $filename . '" alt="' . $alt . '"/>';
+            $output .= '<img class="miniatures" src="/img/photo/gold/portrait/' . $filename . '" alt="' . $alt . '"/>';
             $output .= '<div class="parametres">';
             $output .= '<p>' . $iso . '</p>';
             $output .= '<p>' . $f_stop . '</p>';
@@ -428,7 +428,7 @@ function goldPaysage($co)
 
 
             $output .= '<div class="container_img">';
-            $output .= '<img class="miniatures" src="./img/photo/gold/paysage/' . $filename . '" alt="' . $alt . '"/>';
+            $output .= '<img class="miniatures" src="/img/photo/gold/paysage/' . $filename . '" alt="' . $alt . '"/>';
             $output .= '<div class="parametres">';
             $output .= '<p>ISO ' . $iso . '</p>';
             $output .= '<p>' . $f_stop . '</p>';
@@ -464,7 +464,7 @@ function goldFullImage($co)
 
 
             $output .= '<div class="container_img">';
-            $output .= '<img class="miniatures" src="./img/photo/gold/fullimage/' . $filename . '" alt="' . $alt . '"/>';
+            $output .= '<img class="miniatures" src="/img/photo/gold/fullimage/' . $filename . '" alt="' . $alt . '"/>';
             $output .= '</div>';
         }
         return $output;
@@ -500,7 +500,7 @@ function nightPortrait($co)
 
 
             $output .= '<div class="container_img">';
-            $output .= '<img class="miniatures" src="./img/photo/by_night/portrait/' . $filename . '" alt="' . $alt . '"/>';
+            $output .= '<img class="miniatures" src="/img/photo/by_night/portrait/' . $filename . '" alt="' . $alt . '"/>';
             $output .= '<div class="parametres">';
             $output .= '<p>ISO ' . $iso . '</p>';
             $output .= '<p>' . $f_stop . '</p>';
@@ -541,7 +541,7 @@ function nightPaysage($co)
 
 
             $output .= '<div class="container_img">';
-            $output .= '<img class="miniatures" src="./img/photo/by_night/paysage/' . $filename . '" alt="' . $alt . '"/>';
+            $output .= '<img class="miniatures" src="/img/photo/by_night/paysage/' . $filename . '" alt="' . $alt . '"/>';
             $output .= '<div class="parametres">';
             $output .= '<p>ISO ' . $iso . '</p>';
             $output .= '<p>' . $f_stop . '</p>';
@@ -577,7 +577,7 @@ function nightFullImage($co)
 
 
             $output .= '<div class="container_img">';
-            $output .= '<img class="miniatures" src="./img/photo/by_night/fullimage/' . $filename . '" alt="' . $alt . '"/>';
+            $output .= '<img class="miniatures" src="/img/photo/by_night/fullimage/' . $filename . '" alt="' . $alt . '"/>';
             $output .= '</div>';
         }
         return $output;
@@ -613,7 +613,7 @@ function adminCards_mountainPaysage($co)
             echo '<div class="cards">';
             echo '<div class="information_photo">';
             echo '<div class="container_img">';
-            echo '<img src="../img/photo/mountain/paysage/' . $filename . '" alt="' . $alt . '" class="img" />';
+            echo '<img src="./img/photo/mountain/paysage/' . $filename . '" alt="' . $alt . '" class="img" />';
             echo '</div>';
             echo '<div class="container_settings">';
             echo '<p class="setting_alt">' . $alt . '</p>';
@@ -652,7 +652,7 @@ function adminCards_mountainFullimage($co)
             echo '<div class="cards">';
             echo '<div class="information_photo">';
             echo '<div class="container_img">';
-            echo '<img src="../img/photo/mountain/fullimage/' . $filename . '" alt="' . $alt . '" class="img" />';
+            echo '<img src="./img/photo/mountain/fullimage/' . $filename . '" alt="' . $alt . '" class="img" />';
             echo '</div>';
             echo '<div class="container_settings">';
             echo '<p class="setting_alt">' . $alt . '</p>';
@@ -691,7 +691,7 @@ function adminCards_tropicalPortrait($co)
             echo '<div class="cards">';
             echo '<div class="information_photo">';
             echo '<div class="container_img">';
-            echo '<img src="../img/photo/tropical/portrait/' . $filename . '" alt="' . $alt . '" class="img" />';
+            echo '<img src="./img/photo/tropical/portrait/' . $filename . '" alt="' . $alt . '" class="img" />';
             echo '</div>';
             echo '<div class="container_settings">';
             echo '<p class="setting_alt">' . $alt . '</p>';
@@ -733,7 +733,7 @@ function adminCards_tropicalPaysage($co)
             echo '<div class="cards">';
             echo '<div class="information_photo">';
             echo '<div class="container_img">';
-            echo '<img src="../img/photo/tropical/paysage/' . $filename . '" alt="' . $alt . '" class="img" />';
+            echo '<img src="./img/photo/tropical/paysage/' . $filename . '" alt="' . $alt . '" class="img" />';
             echo '</div>';
             echo '<div class="container_settings">';
             echo '<p class="setting_alt">' . $alt . '</p>';
@@ -772,7 +772,7 @@ function adminCards_tropicalFullimage($co)
             echo '<div class="cards">';
             echo '<div class="information_photo">';
             echo '<div class="container_img">';
-            echo '<img src="../img/photo/tropical/fullimage/' . $filename . '" alt="' . $alt . '" class="img" />';
+            echo '<img src="./img/photo/tropical/fullimage/' . $filename . '" alt="' . $alt . '" class="img" />';
             echo '</div>';
             echo '<div class="container_settings">';
             echo '<p class="setting_alt">' . $alt . '</p>';
@@ -818,7 +818,7 @@ function adminCards_goldPortrait($co)
             echo '<div class="cards">';
             echo '<div class="information_photo">';
             echo '<div class="container_img">';
-            echo '<img src="../img/photo/gold/portrait/' . $filename . '" alt="' . $alt . '" class="img" />';
+            echo '<img src="./img/photo/gold/portrait/' . $filename . '" alt="' . $alt . '" class="img" />';
             echo '</div>';
             echo '<div class="container_settings">';
             echo '<p class="setting_alt">' . $alt . '</p>';
@@ -860,7 +860,7 @@ function adminCards_goldPaysage($co)
             echo '<div class="cards">';
             echo '<div class="information_photo">';
             echo '<div class="container_img">';
-            echo '<img src="../img/photo/gold/paysage/' . $filename . '" alt="' . $alt . '" class="img" />';
+            echo '<img src="./img/photo/gold/paysage/' . $filename . '" alt="' . $alt . '" class="img" />';
             echo '</div>';
             echo '<div class="container_settings">';
             echo '<p class="setting_alt">' . $alt . '</p>';
@@ -899,7 +899,7 @@ function adminCards_goldFullimage($co)
             echo '<div class="cards">';
             echo '<div class="information_photo">';
             echo '<div class="container_img">';
-            echo '<img src="../img/photo/gold/fullimage/' . $filename . '" alt="' . $alt . '" class="img" />';
+            echo '<img src="./img/photo/gold/fullimage/' . $filename . '" alt="' . $alt . '" class="img" />';
             echo '</div>';
             echo '<div class="container_settings">';
             echo '<p class="setting_alt">' . $alt . '</p>';
@@ -938,7 +938,7 @@ function adminCards_by_nightPortrait($co)
             echo '<div class="cards">';
             echo '<div class="information_photo">';
             echo '<div class="container_img">';
-            echo '<img src="../img/photo/by_night/portrait/' . $filename . '" alt="' . $alt . '" class="img" />';
+            echo '<img src="./img/photo/by_night/portrait/' . $filename . '" alt="' . $alt . '" class="img" />';
             echo '</div>';
             echo '<div class="container_settings">';
             echo '<p class="setting_alt">' . $alt . '</p>';
@@ -981,7 +981,7 @@ function adminCards_by_nightPaysage($co)
             echo '<div class="cards">';
             echo '<div class="information_photo">';
             echo '<div class="container_img">';
-            echo '<img src="../img/photo/by_night/paysage/' . $filename . '" alt="' . $alt . '" class="img" />';
+            echo '<img src="./img/photo/by_night/paysage/' . $filename . '" alt="' . $alt . '" class="img" />';
             echo '</div>';
             echo '<div class="container_settings">';
             echo '<p class="setting_alt">' . $alt . '</p>';
@@ -1020,7 +1020,7 @@ function adminCards_by_nightFullimage($co)
             echo '<div class="cards">';
             echo '<div class="information_photo">';
             echo '<div class="container_img">';
-            echo '<img src="../img/photo/by_night/fullimage/' . $filename . '" alt="' . $alt . '" class="img" />';
+            echo '<img src="./img/photo/by_night/fullimage/' . $filename . '" alt="' . $alt . '" class="img" />';
             echo '</div>';
             echo '<div class="container_settings">';
             echo '<p class="setting_alt">' . $alt . '</p>';

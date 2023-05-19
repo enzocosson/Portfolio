@@ -26,14 +26,14 @@
   <link rel="canonical" href="https://www.enzo-cosson.fr/guadeloupe/" />
   <title>Portfolio | Vidéo - Guadeloupe</title>
   <meta name="description" content="Découvrez mon voyage inoubliable en Guadeloupe à travers cette vidéo captivante. Explorez les merveilles naturelles de cette île paradisiaque, ses plages immaculées, ses forêts luxuriantes et ses montagnes majestueuses. Suivez-moi dans cette aventure incroyable et laissez-vous emporter par la beauté de la Guadeloupe.">
-  <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/apple-touch-icon.png" />
-  <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png" />
-  <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png" />
-  <link rel="manifest" href="./img/favicon/site.webmanifest" />
-  <link rel="mask-icon" href="./img/favicon/safari-pinned-tab.svg" color="#5bbad5" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon/favicon-16x16.png" />
+  <link rel="manifest" href="/img/favicon/site.webmanifest" />
+  <link rel="mask-icon" href="/img/favicon/safari-pinned-tab.svg" color="#5bbad5" />
   <meta name="msapplication-TileColor" content="#00aba9" />
   <meta name="theme-color" content="#ffffff" />
-  <link rel="stylesheet" href="./css/styles.css" />
+  <link rel="stylesheet" href="/css/styles.css" />
 </head>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-99XN6JZP88"></script>
@@ -63,7 +63,7 @@
     <div class="container_video_100vh">
       <div class="video_container">
         <div class="couverture">
-          <img src="./img/video/miniature.webp" class="couverture_img" alt="photo flou d'une cascade" />
+          <img src="/img/video/miniature.webp" class="couverture_img" alt="photo flou d'une cascade" />
           <div class="play play_guadeloupe">
             <p>PLAY</p>
           </div>
@@ -93,11 +93,11 @@
         <div class="suggestion_top">
           <a href="/auvergne" class="container_miniatures">
             <h3 class="titre_minia">AUVERGNE</h3>
-            <img src="./img/video/auvergne.webp" alt="paysage d'auverge" class="miniatures" />
+            <img src="/img/video/auvergne.webp" alt="paysage d'auverge" class="miniatures" />
           </a>
           <a href="/dream-by-kenzo" class="container_miniatures">
             <h3 class="titre_minia">DREAM BY KENZO</h3>
-            <img src="./img/video/kenzo.webp" alt="packshot d'une pub de parfum" class="miniatures" />
+            <img src="/img/video/kenzo.webp" alt="packshot d'une pub de parfum" class="miniatures" />
           </a>
         </div>
       </div>
@@ -150,6 +150,6 @@
     document.body.classList.add("body_loaded");
   });
 </script>
-<script src="./js/onPlayButtonGuadeloupe.js"></script>
+<script src="/js/onPlayButtonGuadeloupe.js"></script>
 
 </html>

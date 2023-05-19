@@ -1,5 +1,5 @@
 <?php
-require '../lib.inc.php';
+require './lib.inc.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -27,14 +27,14 @@ require '../lib.inc.php';
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio | Photo - Tropical</title>
-    <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png" />
-    <link rel="manifest" href="./img/favicon/site.webmanifest" />
-    <link rel="mask-icon" href="./img/favicon/safari-pinned-tab.svg" color="#5bbad5" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon/favicon-16x16.png" />
+    <link rel="manifest" href="/img/favicon/site.webmanifest" />
+    <link rel="mask-icon" href="/img/favicon/safari-pinned-tab.svg" color="#5bbad5" />
     <meta name="msapplication-TileColor" content="#00aba9" />
     <meta name="theme-color" content="#ffffff" />
-    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
 </head>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-99XN6JZP88"></script>
@@ -80,20 +80,20 @@ require '../lib.inc.php';
     </section>
 
     <header class="header header_galerie" id="rth">
-        <a href="../" class="pagelink">
-            <img class="logo logo_white_galerie" src="../img/white_logo.png" alt="logo du site" />
-            <img class="logo logo_black_galerie" src="../img/black_logo.png" alt="logo du site" />
+        <a href="./" class="pagelink">
+            <img class="logo logo_white_galerie" src="./img/white_logo.png" alt="logo du site" />
+            <img class="logo logo_black_galerie" src="./img/black_logo.png" alt="logo du site" />
         </a>
 
         <ul class="menu">
-            <li><a class="links" href="../">Accueil</a></li>
+            <li><a class="links" href="./">Accueil</a></li>
             <li>
-                <a class="links" href="../developpement-web">Développement web | Design</a>
+                <a class="links" href="./developpement-web">Développement web | Design</a>
             </li>
-            <li><a class="links" href="../photo-video">Photos | Videos</a></li>
-            <li><a class="links" href="../a-propos">À propos</a></li>
+            <li><a class="links" href="./photo-video">Photos | Videos</a></li>
+            <li><a class="links" href="./a-propos">À propos</a></li>
             <li class="li_contact">
-                <a class="links" id="contact" href="../contact">Contact</a>
+                <a class="links" id="contact" href="./contact">Contact</a>
             </li>
         </ul>
         <div class="burger">
@@ -103,14 +103,14 @@ require '../lib.inc.php';
     </header>
 
     <ul class="menu_mobile_black">
-        <li><a class="links " href="../">Accueil</a></li>
+        <li><a class="links " href="./">Accueil</a></li>
         <li>
-            <a class="links " href="../developpement-web">Développement web | Design</a>
+            <a class="links " href="./developpement-web">Développement web | Design</a>
         </li>
-        <li><a class="links" href="../photo-video">Photos | Videos</a></li>
-        <li><a class="links" href="../a-propos">À propos</a></li>
+        <li><a class="links" href="./photo-video">Photos | Videos</a></li>
+        <li><a class="links" href="./a-propos">À propos</a></li>
         <li class="li_contact">
-            <a class="links" id="contact" href="../contact">Contact</a>
+            <a class="links" id="contact" href="./contact">Contact</a>
         </li>
     </ul>
 
@@ -123,19 +123,19 @@ require '../lib.inc.php';
             <div class="theme_photo">
                 <a href="admin_mountain.php" class="card_photo">
                     <h3 class="theme_titre">Mountain</h3>
-                    <img src="../img/photo/theme/resize/mountain.webp" class="theme_img" alt="couvertrue de la thématique gold" />
+                    <img src="./img/photo/theme/resize/mountain.webp" class="theme_img" alt="couvertrue de la thématique gold" />
                 </a>
                 <a href="admin_tropical.php" class="card_photo">
                     <h3 class="theme_titre">Tropical</h3>
-                    <img src="../img/photo/theme/resize/waterwall.webp" class="theme_img" alt="couvertrue de la thématique gold" />
+                    <img src="./img/photo/theme/resize/waterwall.webp" class="theme_img" alt="couvertrue de la thématique gold" />
                 </a>
                 <a href="admin_gold.php" class="card_photo">
                     <h3 class="theme_titre">Gold</h3>
-                    <img src="../img/photo/theme/resize/gold.webp" class="theme_img" alt="couvertrue de la thématique gold" />
+                    <img src="./img/photo/theme/resize/gold.webp" class="theme_img" alt="couvertrue de la thématique gold" />
                 </a>
                 <a href="admin_by_night.php" class="card_photo">
                     <h3 class="theme_titre">By Night</h3>
-                    <img src="../img/photo/theme/resize/stars.webp" class="theme_img" alt="couverture de la thématique gold" />
+                    <img src="./img/photo/theme/resize/stars.webp" class="theme_img" alt="couverture de la thématique gold" />
                 </a>
             </div>
 

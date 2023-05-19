@@ -1,5 +1,5 @@
 <?php
-require '../lib.inc.php';
+require './lib.inc.php';
 $co = connexionBD();
 if (isset($_GET['id']) && !empty($_GET['id'])) {
 

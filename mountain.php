@@ -30,14 +30,14 @@ require 'lib.inc.php';
   <title>Portfolio | Photo - Mountain</title>
   <meta name="description" content="Découvrez la beauté de la montagne à travers les yeux d'un photographe passionné. Explorez ma collection de photos, capturant la majesté de la nature et l'essence de l'aventure en montagne. Laissez-vous inspirer par ma passion pour la photographie et notre amour de la nature sauvage.">
 
-  <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/apple-touch-icon.png" />
-  <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png" />
-  <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png" />
-  <link rel="manifest" href="./img/favicon/site.webmanifest" />
-  <link rel="mask-icon" href="./img/favicon/safari-pinned-tab.svg" color="#5bbad5" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon/favicon-16x16.png" />
+  <link rel="manifest" href="/img/favicon/site.webmanifest" />
+  <link rel="mask-icon" href="/img/favicon/safari-pinned-tab.svg" color="#5bbad5" />
   <meta name="msapplication-TileColor" content="#00aba9" />
   <meta name="theme-color" content="#ffffff" />
-  <link rel="stylesheet" href="./css/styles.css" />
+  <link rel="stylesheet" href="/css/styles.css" />
   <script src="https://unpkg.com/scrollreveal"></script>
 </head>
 <!-- Google tag (gtag.js) -->
@@ -76,7 +76,7 @@ require 'lib.inc.php';
     </div>
   </div>
 
-  <audio class="sound mountain_sound" autoplay loop src="./audio/mountain_sound.mp3"></audio>
+  <audio class="sound mountain_sound" autoplay loop src="/audio/mountain_sound.mp3"></audio>
 
   <section class="galerie_web_page">
     <h1>Mountain</h1>
@@ -122,23 +122,23 @@ require 'lib.inc.php';
         <div class="suggestion_top">
           <a href="/tropical" class="container_miniatures">
             <h3 class="titre_minia">TROPICAL</h3>
-            <img src="./img/photo/theme/resize75/waterwall.jpg" alt="paysage tropical" class="miniatures" />
+            <img src="/img/photo/theme/resize75/waterwall.jpg" alt="paysage tropical" class="miniatures" />
           </a>
           <a href="/gold" class="container_miniatures">
             <h3 class="titre_minia">GOLD</h3>
-            <img src="./img/photo/theme/resize75/gold.jpg" alt="couché de soleil avec un jeune dans la forêt" class="miniatures" />
+            <img src="/img/photo/theme/resize75/gold.jpg" alt="couché de soleil avec un jeune dans la forêt" class="miniatures" />
           </a>
         </div>
 
         <div class="suggestion_bottom">
           <a href="/by-night" class="container_miniatures">
             <h3 class="titre_minia">BY NIGHT</h3>
-            <img src="./img/photo/theme/resize75/stars.jpg" alt="ciel étoilé sous un palmier" class="miniatures" />
+            <img src="/img/photo/theme/resize75/stars.jpg" alt="ciel étoilé sous un palmier" class="miniatures" />
           </a>
           <!-- <a href="my_dog.html" class="container_miniatures">
               <h3 class="titre_minia">MY DOG</h3>
               <img
-                src="./img/photo/theme/resize75/tipsy.jpg"
+                src="/img/photo/theme/resize75/tipsy.jpg"
                 alt="mon chien"
                 class="miniatures"
               />
@@ -197,8 +197,8 @@ require 'lib.inc.php';
 <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/debug.addIndicators.min.js" integrity="sha512-RvUydNGlqYJapy0t4AH8hDv/It+zKsv4wOQGb+iOnEfa6NnF2fzjXgRy+FDjSpMfC3sjokNUzsfYZaZ8QAwIxg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/animation.gsap.js" integrity="sha512-judXDFLnOTJsUwd55lhbrX3uSoSQSOZR6vNrsll+4ViUFv+XOIr/xaIK96soMj6s5jVszd7I97a0H+WhgFwTEg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-<script src="./js/scrollMagicGalerie.js"></script>
-<script src="./js/infoPhoto.js"></script>
-<script src="./js/soundButtonMountain.js"></script>
+<script src="/js/scrollMagicGalerie.js"></script>
+<script src="/js/infoPhoto.js"></script>
+<script src="/js/soundButtonMountain.js"></script>
 
 </html>

@@ -1,6 +1,6 @@
 "use strict";
 
-import { loader } from "./loader.js";
+import { loader } from "/loader.js";
 function getURL() {
   return console.log(window.location.href);
 }

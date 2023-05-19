@@ -27,14 +27,14 @@
   <meta name="google-site-verification" content="YrjbhvZlj2rBnpIumzKGCCq0i70RVf9Ykh_6vNgxJgI" />
   <title>Portfolio | Enzo Cosson</title>
   <meta name="description" content="Explorez le portfolio en ligne d'Enzo Cosson et découvrez ses projets créatifs captivants. Laissez-vous inspirer en passant de développement web à la photographie et vidéo.">
-  <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/apple-touch-icon.png" />
-  <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png" />
-  <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png" />
-  <link rel="manifest" href="./img/favicon/site.webmanifest" />
-  <link rel="mask-icon" href="./img/favicon/safari-pinned-tab.svg" color="#5bbad5" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon/favicon-16x16.png" />
+  <link rel="manifest" href="/img/favicon/site.webmanifest" />
+  <link rel="mask-icon" href="/img/favicon/safari-pinned-tab.svg" color="#5bbad5" />
   <meta name="msapplication-TileColor" content="#00aba9" />
   <meta name="theme-color" content="#ffffff" />
-  <link rel="stylesheet" href="./css/styles.css" />
+  <link rel="stylesheet" href="/css/styles.css" />
 </head>
 <script src="https://unpkg.com/scrollreveal"></script>
 <!-- Google tag (gtag.js) -->
@@ -71,7 +71,7 @@
         <h1 class="title_dev_web_front">DEV WEB</h1>
         <h1 class="title_photo_video_front">PHOTO & VIDEO</h1>
 
-        <img class="me" src="./img/me3.png" alt="photo d'Enzo Cosson" />
+        <img class="me" src="/img/me3.png" alt="photo d'Enzo Cosson" />
 
         <h1 class="title_name_back">ENZO COSSON</h1>
         <h1 class="title_dev_web_back">DEV WEB</h1>
@@ -136,9 +136,9 @@
 
     <!-- <section id="works" class="works">
       <h1>About My <span>Works</span></h1>
-      <img class="iphone iphone1" src="./img/mockup/phone1.webp" alt="iphone" />
-      <img class="iphone iphone2" src="./img/mockup/phone2.webp" alt="iphone" />
-      <img class="iphone iphone3" src="./img/mockup/phone3.webp" alt="iphone" />
+      <img class="iphone iphone1" src="/img/mockup/phone1.webp" alt="iphone" />
+      <img class="iphone iphone2" src="/img/mockup/phone2.webp" alt="iphone" />
+      <img class="iphone iphone3" src="/img/mockup/phone3.webp" alt="iphone" />
       <span class="green_circle"></span>
       <span class="white_circle"></span>
 
@@ -153,7 +153,7 @@
         <span>DIGITAL DESIGN EXPERIENCE</span> DIGITAL DESIGN EXPERIENCE
       </h4>
 
-      <img class="imac_soda" src="./img/mockup/soda_black.webp" alt="imac sur le site soda" />
+      <img class="imac_soda" src="/img/mockup/soda_black.webp" alt="imac sur le site soda" />
 
       <h4 class="last_translate">
         DIGITAL DESIGN EXPERIENCE <span>DIGITAL DESIGN EXPERIENCE</span>
@@ -163,10 +163,10 @@
     <div class="concept">
       <h1>DISCOVER MY <span>CONCEPTS</span></h1>
       <span class="rectangle_green"></span>
-      <img class="ipad_imovix" src="./img/mockup/ipad_imovix.webp" alt="ipad sur le site imovix" />
-      <img class="ipad_spiderman" src="./img/mockup/ipad_spiderman.webp" alt="ipad sur le site imovix" />
-      <img class="ipad_myList" src="./img/mockup/ipad_myList.webp" alt="ipad sur le site imovix" />
-      <img class="ipad_log" src="./img/mockup/ipad_log.webp" alt="ipad sur le site imovix" />
+      <img class="ipad_imovix" src="/img/mockup/ipad_imovix.webp" alt="ipad sur le site imovix" />
+      <img class="ipad_spiderman" src="/img/mockup/ipad_spiderman.webp" alt="ipad sur le site imovix" />
+      <img class="ipad_myList" src="/img/mockup/ipad_myList.webp" alt="ipad sur le site imovix" />
+      <img class="ipad_log" src="/img/mockup/ipad_log.webp" alt="ipad sur le site imovix" />
       <div class="whiteRectangle">
         <h1 class="titre_skills">MY SKILLS</h1>
         <h2 class="bg_titre_skills">MY SKILLS</h2>
@@ -224,7 +224,7 @@
         PHOTOGRAPHY<br />&<br />VIDEO
       </h1>
       <div class="container_photoVideoTop_img">
-        <img src="./img/photo_video/galerie_accueil/bg_photo.webp" alt="rivière exotique dans la jungle" class="photoVideoTop_img" />
+        <img src="/img/photo_video/galerie_accueil/bg_photo.webp" alt="rivière exotique dans la jungle" class="photoVideoTop_img" />
       </div>
       <h1 class="photoVideoTop__title">PHOTOGRAPHY<br />&<br />VIDEO</h1>
     </section>
@@ -233,73 +233,73 @@
       <div class="container_feed_col">
         <div class="col col1">
           <div class="container_img">
-            <img class="miniatures" src="./img/photo_video/galerie_accueil/DSC_0483 1.webp" alt="feuille avec des gouttes d'eau" />
+            <img class="miniatures" src="/img/photo_video/galerie_accueil/DSC_0483 1.webp" alt="feuille avec des gouttes d'eau" />
           </div>
           <div class="container_img">
-            <img class="miniatures" src="./img/photo_video/galerie_accueil/DSC_0523 1.webp" alt="feuille de palmier" />
+            <img class="miniatures" src="/img/photo_video/galerie_accueil/DSC_0523 1.webp" alt="feuille de palmier" />
           </div>
           <div class="container_img">
-            <img class="miniatures" src="./img/photo_video/galerie_accueil/DSC_0067 1.webp" alt="pente enneigé d'une montagne" />
+            <img class="miniatures" src="/img/photo_video/galerie_accueil/DSC_0067 1.webp" alt="pente enneigé d'une montagne" />
           </div>
         </div>
 
         <div class="col col2">
           <div class="container_img">
-            <img class="miniatures" src="./img/photo_video/galerie_accueil/DSC_0515 1.webp" alt="fleure tropicale violette" />
+            <img class="miniatures" src="/img/photo_video/galerie_accueil/DSC_0515 1.webp" alt="fleure tropicale violette" />
           </div>
           <div class="container_img">
-            <img class="miniatures" src="./img/photo_video/galerie_accueil/DSC_0215 1.webp" alt="feuille tropicale verte" />
+            <img class="miniatures" src="/img/photo_video/galerie_accueil/DSC_0215 1.webp" alt="feuille tropicale verte" />
           </div>
           <div class="container_img">
-            <img class="miniatures" src="./img/photo_video/galerie_accueil/DSC_0021 1.webp" alt="cabane en bois au sommet d'une montagne" />
+            <img class="miniatures" src="/img/photo_video/galerie_accueil/DSC_0021 1.webp" alt="cabane en bois au sommet d'une montagne" />
           </div>
           <div class="container_img">
-            <img class="miniatures" src="./img/photo_video/galerie_accueil/DSC_0030 1.webp" alt="plaine enneigée" />
+            <img class="miniatures" src="/img/photo_video/galerie_accueil/DSC_0030 1.webp" alt="plaine enneigée" />
           </div>
         </div>
 
         <div class="col col3">
           <div class="container_img">
-            <img class="miniatures" src="./img/photo_video/galerie_accueil/DSC_0089 1.webp" alt="végétation tropicale" />
+            <img class="miniatures" src="/img/photo_video/galerie_accueil/DSC_0089 1.webp" alt="végétation tropicale" />
           </div>
           <div class="container_img">
-            <img class="miniatures" src="./img/photo_video/galerie_accueil/DSC_0241-2.webp" alt="rivière turquoise tropicale" />
+            <img class="miniatures" src="/img/photo_video/galerie_accueil/DSC_0241-2.webp" alt="rivière turquoise tropicale" />
           </div>
           <div class="container_img">
-            <img class="miniatures" src="./img/photo_video/galerie_accueil/DSC_0533 1.webp" alt="gouttes sur de l'herbe" />
+            <img class="miniatures" src="/img/photo_video/galerie_accueil/DSC_0533 1.webp" alt="gouttes sur de l'herbe" />
           </div>
           <div class="container_img">
-            <img class="miniatures" src="./img/photo_video/galerie_accueil/DSC_0052 2.webp" alt="montagne enneigé au sommet pointu" />
+            <img class="miniatures" src="/img/photo_video/galerie_accueil/DSC_0052 2.webp" alt="montagne enneigé au sommet pointu" />
           </div>
           <div class="container_img">
-            <img class="miniatures" src="./img/photo_video/galerie_accueil/DSC_0023 1.webp" alt="télésièges dans la montagne" />
+            <img class="miniatures" src="/img/photo_video/galerie_accueil/DSC_0023 1.webp" alt="télésièges dans la montagne" />
           </div>
         </div>
 
         <div class="col col4">
           <div class="container_img">
-            <img class="miniatures" src="./img/photo_video/galerie_accueil/DSC_0450 2.webp" alt="feuille tropicale" />
+            <img class="miniatures" src="/img/photo_video/galerie_accueil/DSC_0450 2.webp" alt="feuille tropicale" />
           </div>
           <div class="container_img">
-            <img class="miniatures" src="./img/photo_video/galerie_accueil/DSC_0254.webp" alt="cascade dans la jungle" />
+            <img class="miniatures" src="/img/photo_video/galerie_accueil/DSC_0254.webp" alt="cascade dans la jungle" />
           </div>
           <div class="container_img">
-            <img class="miniatures" src="./img/photo_video/galerie_accueil/DSC_0022 1.webp" alt="sommet d'une' la montagne enneigé" />
+            <img class="miniatures" src="/img/photo_video/galerie_accueil/DSC_0022 1.webp" alt="sommet d'une' la montagne enneigé" />
           </div>
           <div class="container_img">
-            <img class="miniatures" src="./img/photo_video/galerie_accueil/DSC_0031 1.webp" alt="flanc d'une montagne enneigé" />
+            <img class="miniatures" src="/img/photo_video/galerie_accueil/DSC_0031 1.webp" alt="flanc d'une montagne enneigé" />
           </div>
         </div>
 
         <div class="col col5">
           <div class="container_img">
-            <img class="miniatures" src="./img/photo_video/galerie_accueil/DSC_0145 1.webp" alt="feuille verte exotique" />
+            <img class="miniatures" src="/img/photo_video/galerie_accueil/DSC_0145 1.webp" alt="feuille verte exotique" />
           </div>
           <div class="container_img">
-            <img class="miniatures" src="./img/photo_video/galerie_accueil/DSC_0321 1.webp" alt="feuille tropicale" />
+            <img class="miniatures" src="/img/photo_video/galerie_accueil/DSC_0321 1.webp" alt="feuille tropicale" />
           </div>
           <div class="container_img">
-            <img class="miniatures" src="./img/photo_video/galerie_accueil/DSC_0081 1.webp" alt="montagne enneigé" />
+            <img class="miniatures" src="/img/photo_video/galerie_accueil/DSC_0081 1.webp" alt="montagne enneigé" />
           </div>
         </div>
       </div>
@@ -496,6 +496,6 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/debug.addIndicators.min.js" integrity="sha512-RvUydNGlqYJapy0t4AH8hDv/It+zKsv4wOQGb+iOnEfa6NnF2fzjXgRy+FDjSpMfC3sjokNUzsfYZaZ8QAwIxg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/animation.gsap.js" integrity="sha512-judXDFLnOTJsUwd55lhbrX3uSoSQSOZR6vNrsll+4ViUFv+XOIr/xaIK96soMj6s5jVszd7I97a0H+WhgFwTEg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-<script src="./js/libScrollMagic.js"></script>
+<script src="/js/libScrollMagic.js"></script>
 
 </html>

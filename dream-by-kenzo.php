@@ -26,14 +26,14 @@
   <link rel="canonical" href="https://www.enzo-cosson.fr/dream-by-kenzo/" />
   <title>Portfolio | Vidéo - Dream By Kenzo</title>
   <meta name="description" content="Découvrez mon projet publicitaire fictif pour le parfum Dream by Kenzo.">
-  <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/apple-touch-icon.png" />
-  <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png" />
-  <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png" />
-  <link rel="manifest" href="./img/favicon/site.webmanifest" />
-  <link rel="mask-icon" href="./img/favicon/safari-pinned-tab.svg" color="#5bbad5" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon/favicon-16x16.png" />
+  <link rel="manifest" href="/img/favicon/site.webmanifest" />
+  <link rel="mask-icon" href="/img/favicon/safari-pinned-tab.svg" color="#5bbad5" />
   <meta name="msapplication-TileColor" content="#00aba9" />
   <meta name="theme-color" content="#ffffff" />
-  <link rel="stylesheet" href="./css/styles.css" />
+  <link rel="stylesheet" href="/css/styles.css" />
 </head>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-99XN6JZP88"></script>
@@ -63,7 +63,7 @@
     <div class="container_video_100vh">
       <div class="video_container">
         <div class="couverture">
-          <img src="./img/video/kenzo.webp" class="couverture_img" alt="photo flou du packshot d'un pub de parfum" />
+          <img src="/img/video/kenzo.webp" class="couverture_img" alt="photo flou du packshot d'un pub de parfum" />
           <div class="play play_kenzo">
             <p>PLAY</p>
           </div>
@@ -105,11 +105,11 @@
         <div class="suggestion_top">
           <a href="/guadeloupe" class="container_miniatures">
             <h3 class="titre_minia">GUADELOUPE</h3>
-            <img src="./img/video/guadeloupe.webp" alt="paysage de guadeloupe" class="miniatures" />
+            <img src="/img/video/guadeloupe.webp" alt="paysage de guadeloupe" class="miniatures" />
           </a>
           <a href="/auvergne" class="container_miniatures">
             <h3 class="titre_minia">AUVERGNE</h3>
-            <img src="./img/video/auvergne.webp" alt="paysage d'auverge" class="miniatures" />
+            <img src="/img/video/auvergne.webp" alt="paysage d'auverge" class="miniatures" />
           </a>
         </div>
       </div>
@@ -162,6 +162,6 @@
   });
 </script>
 
-<script src="./js/onPlayButtonKenzo.js"></script>
+<script src="/js/onPlayButtonKenzo.js"></script>
 
 </html>

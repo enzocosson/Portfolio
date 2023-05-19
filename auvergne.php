@@ -26,14 +26,14 @@
   <link rel="canonical" href="https://www.enzo-cosson.fr/auvergne/" />
   <title>Portfolio | Vidéo Auvergne</title>
   <meta name="description" content="Je suis heureux de partager ma vidéo de mon séjour en Auvergne avec vous. Découvrez les magnifiques paysages que j'ai capturés lors de mes explorations, des montagnes verdoyantes aux volcans emblématiques. Cette vidéo est le fruit de ma passion pour la vidéographie et je suis fier de pouvoir la partager avec vous dans mon portfolio en ligne.">
-  <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/apple-touch-icon.png" />
-  <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png" />
-  <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png" />
-  <link rel="manifest" href="./img/favicon/site.webmanifest" />
-  <link rel="mask-icon" href="./img/favicon/safari-pinned-tab.svg" color="#5bbad5" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon/favicon-16x16.png" />
+  <link rel="manifest" href="/img/favicon/site.webmanifest" />
+  <link rel="mask-icon" href="/img/favicon/safari-pinned-tab.svg" color="#5bbad5" />
   <meta name="msapplication-TileColor" content="#00aba9" />
   <meta name="theme-color" content="#ffffff" />
-  <link rel="stylesheet" href="./css/styles.css" />
+  <link rel="stylesheet" href="/css/styles.css" />
 </head>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-99XN6JZP88"></script>
@@ -64,7 +64,7 @@
     <div class="container_video_100vh">
       <div class="video_container">
         <div class="couverture">
-          <img src="./img/video/auvergne.webp" class="couverture_img" alt="photo flou d'un paysage d'auvergne" />
+          <img src="/img/video/auvergne.webp" class="couverture_img" alt="photo flou d'un paysage d'auvergne" />
           <div class="play play_auvergne">
             <p>PLAY</p>
           </div>
@@ -93,11 +93,11 @@
         <div class="suggestion_top">
           <a href="/guadeloupe" class="container_miniatures">
             <h3 class="titre_minia">GUADELOUPE</h3>
-            <img src="./img/video/guadeloupe.webp" alt="paysage de guadeloupe" class="miniatures" />
+            <img src="/img/video/guadeloupe.webp" alt="paysage de guadeloupe" class="miniatures" />
           </a>
           <a href="/dream-by-kenzo" class="container_miniatures">
             <h3 class="titre_minia">DREAM BY KENZO</h3>
-            <img src="./img/video/kenzo.webp" alt="packshot d'une pub de parfum" class="miniatures" />
+            <img src="/img/video/kenzo.webp" alt="packshot d'une pub de parfum" class="miniatures" />
           </a>
         </div>
       </div>
@@ -151,6 +151,6 @@
   });
 </script>
 
-<script src="./js/onPlayButtonAuvergne.js"></script>
+<script src="/js/onPlayButtonAuvergne.js"></script>
 
 </html>

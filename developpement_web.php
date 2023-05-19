@@ -26,16 +26,16 @@
   <link rel="canonical" href="https://www.enzo-cosson.fr/developpement-web/" />
   <title>Portfolio | Développement web</title>
   <meta name="description" content="Découvrez mes projets de développement web passionnants dans mon portfolio en ligne. Explorez mes réalisations en matière de conception de sites web.">
-  <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/apple-touch-icon.png" />
-  <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png" />
-  <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png" />
-  <link rel="manifest" href="./img/favicon/site.webmanifest" />
-  <link rel="mask-icon" href="./img/favicon/safari-pinned-tab.svg" color="#5bbad5" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon/favicon-16x16.png" />
+  <link rel="manifest" href="/img/favicon/site.webmanifest" />
+  <link rel="mask-icon" href="/img/favicon/safari-pinned-tab.svg" color="#5bbad5" />
   <meta name="msapplication-TileColor" content="#00aba9" />
   <meta name="theme-color" content="#ffffff" />
   <script src="https://unpkg.com/scrollreveal"></script>
 
-  <link rel="stylesheet" href="./css/styles.css" />
+  <link rel="stylesheet" href="/css/styles.css" />
 </head>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-99XN6JZP88"></script>
@@ -66,8 +66,8 @@
     <div class="transition_slide"></div>
     <section class="developpement_web_page">
       <div class="myProject">
-        <img class="myProject_img_white" src="./img/myProject_absolute.svg" alt="texte de décoration" />
-        <img class="myProject_img_black" src="./img/myProject_absolute_black.svg" alt="texte de décoration" />
+        <img class="myProject_img_white" src="/img/myProject_absolute.svg" alt="texte de décoration" />
+        <img class="myProject_img_black" src="/img/myProject_absolute_black.svg" alt="texte de décoration" />
       </div>
 
       <div class="home_side_right">
@@ -151,14 +151,14 @@
         </div>
       </div>
 
-      <img class="imac imac_center imac_imovix" src="./img/mockup/imac_imovix2.webp" alt="imac sur le site imovix" />
-      <img class="imac imac_next imac_book" src="./img/mockup/imac_book.webp" alt="imac sur le site book" />
-      <img class="imac imac_next imac_ferrari" src="./img/mockup/imac_ferrari.webp" alt="imac sur le site ferrari" />
-      <img class="imac imac_next imac_flexbank" src="./img/mockup/imac_flexbank.webp" alt="imac sur le site flexbank" />
-      <img class="imac imac_next imac_dji" src="./img/mockup/imac_spiderThreeJs.webp" alt="imac sur le site dji" />
-      <img class="imac imac_next imac_soda2" src="./img/mockup/school.webp" alt="imac sur le site school" />
-      <img class="imac imac_next imac_dior" src="./img/mockup/imac_soda.webp" alt="imac sur le site soda" />
-      <img class="imac imac_next imac_drugOptimal" src="./img/mockup/imac_art.webp" alt="imac sur le site art" />
+      <img class="imac imac_center imac_imovix" src="/img/mockup/imac_imovix2.webp" alt="imac sur le site imovix" />
+      <img class="imac imac_next imac_book" src="/img/mockup/imac_book.webp" alt="imac sur le site book" />
+      <img class="imac imac_next imac_ferrari" src="/img/mockup/imac_ferrari.webp" alt="imac sur le site ferrari" />
+      <img class="imac imac_next imac_flexbank" src="/img/mockup/imac_flexbank.webp" alt="imac sur le site flexbank" />
+      <img class="imac imac_next imac_dji" src="/img/mockup/imac_spiderThreeJs.webp" alt="imac sur le site dji" />
+      <img class="imac imac_next imac_soda2" src="/img/mockup/school.webp" alt="imac sur le site school" />
+      <img class="imac imac_next imac_dior" src="/img/mockup/imac_soda.webp" alt="imac sur le site soda" />
+      <img class="imac imac_next imac_drugOptimal" src="/img/mockup/imac_art.webp" alt="imac sur le site art" />
 
       <div class="description">
         <div class="presentation_site slide">
@@ -216,21 +216,21 @@
       <div class="container_cards">
         <a href="/imovix">
           <div class="card php">
-            <img class="card_img" src="./img/cards/card_imovix.webp" alt="site imovix" />
+            <img class="card_img" src="/img/cards/card_imovix.webp" alt="site imovix" />
             <span class="hover_bg"></span>
             <h3>IMOVIX</h3>
           </div>
         </a>
         <a href="/book">
           <div class="card threejs">
-            <img class="card_img" src="./img/cards/cards_book.webp" alt="site book" />
+            <img class="card_img" src="/img/cards/cards_book.webp" alt="site book" />
             <span class="hover_bg"></span>
             <h3>BOOK</h3>
           </div>
         </a>
         <a href="/ferrari/index.html">
           <div class="card html">
-            <img class="card_img" src="./img/cards/cards_ferrari.webp" alt="site ferrari" />
+            <img class="card_img" src="/img/cards/cards_ferrari.webp" alt="site ferrari" />
             <span class="hover_bg"></span>
             <h3>FERRARI</h3>
           </div>
@@ -238,42 +238,42 @@
 
         <a href="/flexbank/index.html">
           <div class="card threejs">
-            <img class="card_img" src="./img/cards/cards_flexbank.webp" alt="site flexbank" />
+            <img class="card_img" src="/img/cards/cards_flexbank.webp" alt="site flexbank" />
             <span class="hover_bg"></span>
             <h3>FLEXBANK</h3>
           </div>
         </a>
         <a href="/spider-man-threejs">
           <div class="card threejs">
-            <img class="card_img" src="./img/cards/spider_js.webp" alt="site spider-man three js" />
+            <img class="card_img" src="/img/cards/spider_js.webp" alt="site spider-man three js" />
             <span class="hover_bg"></span>
             <h3>SPIDER-JS</h3>
           </div>
         </a>
         <a href="/galerie-art">
           <div class="card html">
-            <img class="card_img" src="./img/cards/school.webp" alt="site school" />
+            <img class="card_img" src="/img/cards/school.webp" alt="site school" />
             <span class="hover_bg"></span>
             <h3>SCHOOL</h3>
           </div>
         </a>
         <a href="/galerie-art">
           <div class="card html">
-            <img class="card_img" src="./img/cards/cards_art3.webp" alt="site galerie d'art" />
+            <img class="card_img" src="/img/cards/cards_art3.webp" alt="site galerie d'art" />
             <span class="hover_bg"></span>
             <h3>ART</h3>
           </div>
         </a>
         <a href="/custom-air">
           <div class="card html">
-            <img class="card_img" src="./img/cards/cards_custom_air.webp" alt="site custom air" />
+            <img class="card_img" src="/img/cards/cards_custom_air.webp" alt="site custom air" />
             <span class="hover_bg"></span>
             <h3>CUSTOM AIR</h3>
           </div>
         </a>
         <a href="/soda">
           <div class="card html">
-            <img class="card_img" src="./img/cards/cards_soda.webp" alt="site soda" />
+            <img class="card_img" src="/img/cards/cards_soda.webp" alt="site soda" />
             <span class="hover_bg"></span>
             <h3>SODA</h3>
           </div>
@@ -281,7 +281,7 @@
 
         <a href="https://mmi21e03.mmi-troyes.fr/flashfood" class="flashfood" target="_blank">
           <div class="card html">
-            <img class="card_img" src="./img/cards/cards_flashfood.webp" alt="site flashfood" />
+            <img class="card_img" src="/img/cards/cards_flashfood.webp" alt="site flashfood" />
             <span class="hover_bg"></span>
             <h3>FLASHFOOD</h3>
           </div>
@@ -328,8 +328,8 @@
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js" integrity="sha512-f8mwTB+Bs8a5c46DEm7HQLcJuHMBaH/UFlcgyetMqqkvTcYg4g5VXsYR71b3qC82lZytjNYvBj2pf0VekA9/FQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <?php require 'footer.php'; ?>
-<script src="./js/filter.js"></script>
-<script src="./js/dev_scrollreveal.js"></script>
+<script src="/js/filter.js"></script>
+<script src="/js/dev_scrollreveal.js"></script>
 <!-- --------------page-script------------------ -->
 
 <script>
@@ -482,25 +482,25 @@
 
     let url = "";
     if (slideIndex === "1") {
-      url = "/imovix";
+      url = "/imovix/";
     } else if (slideIndex === "2") {
-      url = "/book";
+      url = "/book/";
     } else if (slideIndex === "3") {
       url = "/ferrari/index.html";
     } else if (slideIndex === "4") {
-      url = "/flexbank/index.html";
+      url = "https://flexbank.vercel.app/";
     } else if (slideIndex === "5") {
-      url = "/spider-man-threejs";
+      url = "/spider-man-threejs/";
     } else if (slideIndex === "6") {
-      url = "/school";
+      url = "/school/";
     } else if (slideIndex === "7") {
-      url = "/soda";
+      url = "/soda/";
     } else if (slideIndex === "8") {
-      url = "/galerie-art";
+      url = "/galerie-art/";
     } else if (slideIndex === "9") {
-      url = "flashfood.html";
+      url = "flashfood.html/";
     } else if (slideIndex === "10") {
-      url = "gopro.html";
+      url = "gopro.html/";
     }
 
     setTimeout(function() {

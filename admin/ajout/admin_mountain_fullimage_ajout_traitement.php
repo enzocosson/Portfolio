@@ -1,5 +1,5 @@
 <?php
-require '../../lib.inc.php';
+require '././lib.inc.php';
 
 $co = connexionBD();
 
@@ -13,7 +13,7 @@ $alt = $_POST['alt'];
 
 
 $new_filename = uniqid('', true) . '.' . $file_ext;
-$destination = '../../img/photo/mountain/fullimage/' . $new_filename;
+$destination = '././img/photo/mountain/fullimage/' . $new_filename;
 
 if (move_uploaded_file($file_tmp, $destination)) {
     $req = 'INSERT INTO mountain_fullimage (photo_src, photo_alt) VALUES (:src, :alt)';

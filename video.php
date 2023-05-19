@@ -26,14 +26,14 @@
   <link rel="canonical" href="https://www.enzo-cosson.fr/video/" />
   <title>Portfolio | Vidéo</title>
   <meta name="description" content="Découvrez une sélection de vidéos captivantes dans mon portfolio en ligne. Explorez des univers visuels variés, allant des vidéos de voyage aux vidéos promotionnelles. Laissez-vous inspirer par mes réalisations et découvrez de nouvelles idées pour votre prochain projet vidéo.">
-  <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/apple-touch-icon.png" />
-  <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png" />
-  <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png" />
-  <link rel="manifest" href="./img/favicon/site.webmanifest" />
-  <link rel="mask-icon" href="./img/favicon/safari-pinned-tab.svg" color="#5bbad5" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon/favicon-16x16.png" />
+  <link rel="manifest" href="/img/favicon/site.webmanifest" />
+  <link rel="mask-icon" href="/img/favicon/safari-pinned-tab.svg" color="#5bbad5" />
   <meta name="msapplication-TileColor" content="#00aba9" />
   <meta name="theme-color" content="#ffffff" />
-  <link rel="stylesheet" href="./css/styles.css" />
+  <link rel="stylesheet" href="/css/styles.css" />
   <script src="https://unpkg.com/scrollreveal"></script>
 </head>
 <!-- Google tag (gtag.js) -->
@@ -65,23 +65,23 @@
 
     <a href="/guadeloupe" class="theme_video">
       <h2 class="theme_titre">GUADELOUPE</h2>
-      <img src="./img/video/guadeloupe.webp" class="theme_img" alt="cascade" />
+      <img src="/img/video/guadeloupe.webp" class="theme_img" alt="cascade" />
       <video class="guadeloupe_video_hover" autoplay loop muted playsinline>
-        <source src="./mp4/hover/guadeloupe_hover.mp4" type="video/mp4" />
+        <source src="/mp4/hover/guadeloupe_hover.mp4" type="video/mp4" />
       </video>
     </a>
     <a href="/dream-by-kenzo" class="theme_video">
       <h2 class="theme_titre">DREAM BY KENZO</h2>
-      <img src="./img/video/kenzo.webp" class="theme_img" alt="packshot pub parfum" />
+      <img src="/img/video/kenzo.webp" class="theme_img" alt="packshot pub parfum" />
       <video class="auvergne_video_hover" autoplay loop muted playsinline>
-        <source src="./mp4/hover/kenzo_hover.mp4" type="video/mp4" />
+        <source src="/mp4/hover/kenzo_hover.mp4" type="video/mp4" />
       </video>
     </a>
     <a href="/auvergne" class="theme_video">
       <h2 class="theme_titre">AUVERGNE</h2>
-      <img src="./img/video/auvergne.webp" class="theme_img" alt="paysage d'auvergne" />
+      <img src="/img/video/auvergne.webp" class="theme_img" alt="paysage d'auvergne" />
       <video class="auvergne_video_hover" autoplay loop muted playsinline>
-        <source src="./mp4/hover/auvergne_hover.mp4" type="video/mp4" />
+        <source src="/mp4/hover/auvergne_hover.mp4" type="video/mp4" />
       </video>
     </a>
   </section>

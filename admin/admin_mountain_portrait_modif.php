@@ -1,5 +1,5 @@
 <?php
-require '../lib.inc.php';
+require './lib.inc.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -27,14 +27,14 @@ require '../lib.inc.php';
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Portfolio | Photo - Mountain</title>
-  <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/apple-touch-icon.png" />
-  <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png" />
-  <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png" />
-  <link rel="manifest" href="./img/favicon/site.webmanifest" />
-  <link rel="mask-icon" href="./img/favicon/safari-pinned-tab.svg" color="#5bbad5" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon/favicon-16x16.png" />
+  <link rel="manifest" href="/img/favicon/site.webmanifest" />
+  <link rel="mask-icon" href="/img/favicon/safari-pinned-tab.svg" color="#5bbad5" />
   <meta name="msapplication-TileColor" content="#00aba9" />
   <meta name="theme-color" content="#ffffff" />
-  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="./css/styles.css" />
 </head>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-99XN6JZP88"></script>
@@ -55,20 +55,20 @@ require '../lib.inc.php';
   <!-- End Google Tag Manager (noscript) -->
 
   <header class="header header_galerie" id="rth">
-    <a href="../" class="pagelink">
-      <img class="logo logo_white_galerie" src="../img/white_logo.png" alt="logo du site" />
-      <img class="logo logo_black_galerie" src="../img/black_logo.png" alt="logo du site" />
+    <a href="./" class="pagelink">
+      <img class="logo logo_white_galerie" src="./img/white_logo.png" alt="logo du site" />
+      <img class="logo logo_black_galerie" src="./img/black_logo.png" alt="logo du site" />
     </a>
 
     <ul class="menu">
-      <li><a class="links" href="../">Accueil</a></li>
+      <li><a class="links" href="./">Accueil</a></li>
       <li>
-        <a class="links" href="../developpement-web">Développement web | Design</a>
+        <a class="links" href="./developpement-web">Développement web | Design</a>
       </li>
-      <li><a class="links" href="../photo-video">Photos | Videos</a></li>
-      <li><a class="links" href="../a-propos">À propos</a></li>
+      <li><a class="links" href="./photo-video">Photos | Videos</a></li>
+      <li><a class="links" href="./a-propos">À propos</a></li>
       <li class="li_contact">
-        <a class="links" id="contact" href="../contact">Contact</a>
+        <a class="links" id="contact" href="./contact">Contact</a>
       </li>
     </ul>
     <div class="burger">
@@ -78,14 +78,14 @@ require '../lib.inc.php';
   </header>
 
   <ul class="menu_mobile_black">
-    <li><a class="links " href="../">Accueil</a></li>
+    <li><a class="links " href="./">Accueil</a></li>
     <li>
-      <a class="links " href="../developpement-web">Développement web | Design</a>
+      <a class="links " href="./developpement-web">Développement web | Design</a>
     </li>
-    <li><a class="links" href="../photo-video">Photos | Videos</a></li>
-    <li><a class="links" href="../a-propos">À propos</a></li>
+    <li><a class="links" href="./photo-video">Photos | Videos</a></li>
+    <li><a class="links" href="./a-propos">À propos</a></li>
     <li class="li_contact">
-      <a class="links" id="contact" href="../contact">Contact</a>
+      <a class="links" id="contact" href="./contact">Contact</a>
     </li>
   </ul>
 
@@ -175,7 +175,7 @@ require '../lib.inc.php';
           echo '<br />';
 
           echo '<div class="interaction">';
-          echo '<a class="retour" href="./admin_mountain_portrait.php">Retour</a>';
+          echo '<a class="retour" href="/admin_mountain_portrait.php">Retour</a>';
           echo '<input class="envoyer" type="submit" value="Modifier"/>';
 
           echo '</div>';
@@ -191,7 +191,7 @@ require '../lib.inc.php';
       }
       ?>
       <div class="container_photo">
-        <img src="../img/photo/mountain/portrait/<?php echo $filename; ?>" alt="<?php echo $alt; ?>" />
+        <img src="./img/photo/mountain/portrait/<?php echo $filename; ?>" alt="<?php echo $alt; ?>" />
       </div>
 
       <?php

@@ -29,14 +29,14 @@ require 'lib.inc.php';
   <link rel="canonical" href="https://www.enzo-cosson.fr/by-night/" />
   <title>Portfolio | Photo - By Night</title>
   <meta name="description" content="Découvrez mon portfolio de photographies nocturnes, mettant en lumière des merveilles célestes comme la Voie lactée et les étoiles. Plongez dans un monde captivant et mystique, où la beauté de la nuit est mise en valeur par la magie de la photographie. Explorez mes projets et laissez-vous inspirer par ces moments éphémères capturés pour l'éternité.">
-  <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/apple-touch-icon.png" />
-  <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png" />
-  <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png" />
-  <link rel="manifest" href="./img/favicon/site.webmanifest" />
-  <link rel="mask-icon" href="./img/favicon/safari-pinned-tab.svg" color="#5bbad5" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon/favicon-16x16.png" />
+  <link rel="manifest" href="/img/favicon/site.webmanifest" />
+  <link rel="mask-icon" href="/img/favicon/safari-pinned-tab.svg" color="#5bbad5" />
   <meta name="msapplication-TileColor" content="#00aba9" />
   <meta name="theme-color" content="#ffffff" />
-  <link rel="stylesheet" href="./css/styles.css" />
+  <link rel="stylesheet" href="/css/styles.css" />
   <script src="https://unpkg.com/scrollreveal"></script>
 </head>
 <!-- Google tag (gtag.js) -->
@@ -77,7 +77,7 @@ require 'lib.inc.php';
     </div>
   </div>
 
-  <audio class="sound night_sound" autoplay loop src="./audio/night_sound.mp3"></audio>
+  <audio class="sound night_sound" autoplay loop src="/audio/night_sound.mp3"></audio>
 
   <section class="galerie_web_page">
     <h1>By Night</h1>
@@ -123,23 +123,23 @@ require 'lib.inc.php';
         <div class="suggestion_top">
           <a href="/mountain" class="container_miniatures">
             <h3 class="titre_minia">MOUNTAIN</h3>
-            <img src="./img/photo/theme/resize75/mountain.png" alt="paysage de montagne" class="miniatures" />
+            <img src="/img/photo/theme/resize75/mountain.png" alt="paysage de montagne" class="miniatures" />
           </a>
           <a href="/tropical" class="container_miniatures">
             <h3 class="titre_minia">TROPICAL</h3>
-            <img src="./img/photo/theme/resize75/waterwall.jpg" alt="paysage tropical" class="miniatures" />
+            <img src="/img/photo/theme/resize75/waterwall.jpg" alt="paysage tropical" class="miniatures" />
           </a>
         </div>
 
         <div class="suggestion_bottom">
           <a href="/gold" class="container_miniatures">
             <h3 class="titre_minia">GOLD</h3>
-            <img src="./img/photo/theme/resize75/gold.jpg" alt="couché de soleil avec un jeune dans la forêt" class="miniatures" />
+            <img src="/img/photo/theme/resize75/gold.jpg" alt="couché de soleil avec un jeune dans la forêt" class="miniatures" />
           </a>
           <!-- <a href="my_dog.html" class="container_miniatures">
               <h3 class="titre_minia">MY DOG</h3>
               <img
-                src="./img/photo/theme/resize75/tipsy.webp"
+                src="/img/photo/theme/resize75/tipsy.webp"
                 alt="mon chien"
                 class="miniatures"
               />
@@ -198,8 +198,8 @@ require 'lib.inc.php';
 <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/debug.addIndicators.min.js" integrity="sha512-RvUydNGlqYJapy0t4AH8hDv/It+zKsv4wOQGb+iOnEfa6NnF2fzjXgRy+FDjSpMfC3sjokNUzsfYZaZ8QAwIxg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/animation.gsap.js" integrity="sha512-judXDFLnOTJsUwd55lhbrX3uSoSQSOZR6vNrsll+4ViUFv+XOIr/xaIK96soMj6s5jVszd7I97a0H+WhgFwTEg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-<script src="./js/scrollMagicGalerie.js"></script>
-<script src="./js/infoPhoto.js"></script>
-<script src="./js/soundButtonNight.js"></script>
+<script src="/js/scrollMagicGalerie.js"></script>
+<script src="/js/infoPhoto.js"></script>
+<script src="/js/soundButtonNight.js"></script>
 
 </html>

@@ -13,14 +13,14 @@
             <a class="links" href="/">Accueil</a>
         </li>
         <li style="--i: 2">
-            <a class="links" href="/developpement-web">Développement web | Design</a>
+            <a class="links" href="/developpement-web/">Développement web | Design</a>
         </li>
         <li style="--i: 3">
-            <a class="links" href="/photo-video">Photos | Videos</a>
+            <a class="links" href="/photo-video/">Photos | Videos</a>
         </li>
-        <li style="--i: 4"><a class="links" href="/a-propos">À propos</a></li>
+        <li style="--i: 4"><a class="links" href="/a-propos/">À propos</a></li>
         <li style="--i: 5" class="li_contact">
-            <a class="links" id="contact" href="/contact">Contact</a>
+            <a class="links" id="contact" href="/contact/">Contact</a>
         </li>
     </ul>
 
@@ -33,22 +33,22 @@
 <ul class="menu_mobile">
     <li><a class="links" href="/">Accueil</a></li>
     <li>
-        <a class="links" href="/developpement-web">Développement web | Design</a>
+        <a class="links" href="/developpement-web/">Développement web | Design</a>
     </li>
-    <li><a class="links" href="/photo-video">Photos | Videos</a></li>
-    <li><a class="links" href="/a-propos">À propos</a></li>
+    <li><a class="links" href="/photo-video/">Photos | Videos</a></li>
+    <li><a class="links" href="/a-propos/">À propos</a></li>
     <li class="li_contact">
-        <a class="links" id="contact" href="/contact">Contact</a>
+        <a class="links" id="contact" href="/contact/">Contact</a>
     </li>
 </ul>
 
 <div class="home_footer">
-    <audio class="rth_sound" src="./audio/click/rth-sound.mp3"></audio>
+    <audio class="rth_sound" src="/audio/click/rth-sound.mp3"></audio>
 
-    <audio class="sound_click_feedback" src="./audio/click/click-sound.mp3"></audio>
+    <audio class="sound_click_feedback" src="/audio/click/click-sound.mp3"></audio>
 
-    <audio class="sound_click_colors" src="./audio/click/click-sound.mp3"></audio>
-    <audio class="select_colors_sound" src="./audio/click/select-colors-sound.mp3"></audio>
+    <audio class="sound_click_colors" src="/audio/click/click-sound.mp3"></audio>
+    <audio class="select_colors_sound" src="/audio/click/select-colors-sound.mp3"></audio>
     <a class="rth" href="#rth">
         <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M0 32L5.64 37.64L28 15.32V64H36V15.32L58.32 37.68L64 32L32 0L0 32Z" fill="#FCFCFC" />
