@@ -34,7 +34,7 @@
   <meta name="msapplication-TileColor" content="#00aba9" />
   <meta name="theme-color" content="#ffffff" />
   <script src="https://unpkg.com/scrollreveal"></script>
-
+  <!-- rectification styles error -->
   <link rel="stylesheet" href="/css/styles.css" />
 </head>
 <!-- Google tag (gtag.js) -->
