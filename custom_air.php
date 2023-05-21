@@ -69,7 +69,7 @@
       <h1 class="bg_title">AIR</h1>
       <img class="imac" src="/img/mockup/imac_customAir.webp" alt="imac sur le site custom air" />
 
-      <a class="bdd_redirection_top" href="https://mmi21e03.mmi-troyes.fr/custom-air" target="_blank">Y accéder</a>
+      <a class="bdd_redirection_top" href="https://mmi21e03.mmi-troyes.fr/custom-air/" target="_blank">Y accéder</a>
     </section>
 
     <div class="more_info">

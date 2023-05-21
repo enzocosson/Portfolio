@@ -78,9 +78,11 @@
           <span class="pages_number pages_number_next">04</span>
           <span class="pages_number pages_number_next">05</span>
           <span class="pages_number pages_number_next">06</span>
-          <span class="pages_number pages_number_next">06</span>
           <span class="pages_number pages_number_next">07</span>
-          / 08
+          <span class="pages_number pages_number_next">08</span>
+          <span class="pages_number pages_number_next">09</span>
+          <span class="pages_number pages_number_next">10</span>
+          / 10
         </p>
       </div>
 
@@ -89,6 +91,8 @@
         <h1 class="title title_next title_book">BOOK</h1>
         <h1 class="title title_next title_ferrari">FERRARI</h1>
         <h1 class="title title_next title_flexbank">FLEXBANK</h1>
+        <h1 class="title title_next title_rick_and_morty">RICK API</h1>
+        <h1 class="title title_next title_ocean">OCEAN 3D</h1>
         <h1 class="title title_next title_dji">SPIDER-JS</h1>
         <h1 class="title title_next title_soda">SCHOOL</h1>
         <h1 class="title title_next title_dior">SODA</h1>
@@ -125,6 +129,20 @@
 
       <div class="carrousel_container carrousel_title_stroke_next">
         <div class="container_slider_anim">
+          <h2 class="slider">RICKANDMORTYRICKANDMORTY</h2>
+          <h2 class="slider">RICKANDMORTYRICKANDMORTY</h2>
+        </div>
+      </div>
+
+      <div class="carrousel_container carrousel_title_stroke_next">
+        <div class="container_slider_anim">
+          <h2 class="slider">OCEAN3DOCEAN3DOCEAN3DOCEAN3D</h2>
+          <h2 class="slider">OCEAN3DOCEAN3DOCEAN3DOCEAN3D</h2>
+        </div>
+      </div>
+
+      <div class="carrousel_container carrousel_title_stroke_next">
+        <div class="container_slider_anim">
           <h2 class="slider">SPIDERTHREEJSSPIDERTHREEJS</h2>
           <h2 class="slider">SPIDERTHREEJSSPIDERTHREEJS</h2>
         </div>
@@ -155,6 +173,8 @@
       <img class="imac imac_next imac_book" src="/img/mockup/imac_book.webp" alt="imac sur le site book" />
       <img class="imac imac_next imac_ferrari" src="/img/mockup/imac_ferrari.webp" alt="imac sur le site ferrari" />
       <img class="imac imac_next imac_flexbank" src="/img/mockup/imac_flexbank.webp" alt="imac sur le site flexbank" />
+      <img class="imac imac_next imac_flexbank" src="/img/mockup/rick_and_morty.webp" alt="imac sur le site Rick et Morty Api" />
+      <img class="imac imac_next imac_flexbank" src="/img/mockup/ocean.webp" alt="imac sur le site ocean 3D" />
       <img class="imac imac_next imac_dji" src="/img/mockup/imac_spiderThreeJs.webp" alt="imac sur le site dji" />
       <img class="imac imac_next imac_soda2" src="/img/mockup/school.webp" alt="imac sur le site school" />
       <img class="imac imac_next imac_dior" src="/img/mockup/imac_soda.webp" alt="imac sur le site soda" />
@@ -171,6 +191,8 @@
           <small class="techno techno_center techno_imovix"><span>TECHNOLOGIE</span> : HTML, SCSS, JS, PHP</small>
           <small class="techno techno_next techno_book"><span>TECHNOLOGIE</span> : HTML, SCSS, JS</small>
           <small class="techno techno_next techno_dji"><span>TECHNOLOGIE</span> : THREE JS</small>
+          <small class="techno techno_next techno_dji"><span>TECHNOLOGIE</span> : REACT THREE FIBER</small>
+          <small class="techno techno_next techno_dji"><span>TECHNOLOGIE</span> : VUE JS</small>
           <small class="techno techno_next techno_dji"><span>TECHNOLOGIE</span> : REACT THREE FIBER</small>
           <small class="techno techno_next techno_dji"><span>TECHNOLOGIE</span> : THREE JS</small>
           <small class="techno techno_next techno_soda"><span>TECHNOLOGIE</span> : HTML, SCSS, JS</small>
@@ -205,23 +227,31 @@
         </button>
 
         <button type="button" class="btn_techno btn_threejs" data-filter="threejs">
-          THREE JS
+          THREE JS / R3F
         </button>
 
         <button type="button" class="btn_techno btn_php" data-filter="php">
           PHP / MYSQL
         </button>
+
+        <button type="button" class="btn_techno btn_react" data-filter="reactjs">
+          REACT JS
+        </button>
+
+        <button type="button" class="btn_techno btn_vue" data-filter="vuejs">
+          VUE JS
+        </button>
       </div>
 
       <div class="container_cards">
-        <a href="/imovix">
+        <a href="/imovix/">
           <div class="card php">
             <img class="card_img" src="/img/cards/card_imovix.webp" alt="site imovix" />
             <span class="hover_bg"></span>
             <h3>IMOVIX</h3>
           </div>
         </a>
-        <a href="/book">
+        <a href="/book/">
           <div class="card threejs">
             <img class="card_img" src="/img/cards/cards_book.webp" alt="site book" />
             <span class="hover_bg"></span>
@@ -236,42 +266,59 @@
           </div>
         </a>
 
-        <a href="/flexbank/index.html">
-          <div class="card threejs">
+        <a href="https://flexbank.vercel.app/">
+          <div class="card threejs reactjs">
             <img class="card_img" src="/img/cards/cards_flexbank.webp" alt="site flexbank" />
             <span class="hover_bg"></span>
             <h3>FLEXBANK</h3>
           </div>
         </a>
-        <a href="/spider-man-threejs">
+
+        <a href="https://ocean-3d.vercel.app/">
+          <div class="card threejs reactjs">
+            <img class="card_img" src="/img/cards/cards_ocean.webp" alt="site ocean" />
+            <span class="hover_bg"></span>
+            <h3>OCEAN</h3>
+          </div>
+        </a>
+
+        <a href="https://tp-note-vuejs.vercel.app/">
+          <div class="card vuejs">
+            <img class="card_img" src="/img/cards/card_rick_and_morty.webp" alt="site rick_and_morty" />
+            <span class="hover_bg"></span>
+            <h3>RICK AND MORTY API</h3>
+          </div>
+        </a>
+
+        <a href="/spider-man-threejs/">
           <div class="card threejs">
             <img class="card_img" src="/img/cards/spider_js.webp" alt="site spider-man three js" />
             <span class="hover_bg"></span>
             <h3>SPIDER-JS</h3>
           </div>
         </a>
-        <a href="/galerie-art">
+        <a href="/school/">
           <div class="card html">
             <img class="card_img" src="/img/cards/school.webp" alt="site school" />
             <span class="hover_bg"></span>
             <h3>SCHOOL</h3>
           </div>
         </a>
-        <a href="/galerie-art">
+        <a href="/galerie-art/">
           <div class="card html">
             <img class="card_img" src="/img/cards/cards_art3.webp" alt="site galerie d'art" />
             <span class="hover_bg"></span>
             <h3>ART</h3>
           </div>
         </a>
-        <a href="/custom-air">
+        <a href="/custom-air/">
           <div class="card html">
             <img class="card_img" src="/img/cards/cards_custom_air.webp" alt="site custom air" />
             <span class="hover_bg"></span>
             <h3>CUSTOM AIR</h3>
           </div>
         </a>
-        <a href="/soda">
+        <a href="/soda/">
           <div class="card html">
             <img class="card_img" src="/img/cards/cards_soda.webp" alt="site soda" />
             <span class="hover_bg"></span>
@@ -279,7 +326,7 @@
           </div>
         </a>
 
-        <a href="https://mmi21e03.mmi-troyes.fr/flashfood" class="flashfood" target="_blank">
+        <a href="https://mmi21e03.mmi-troyes.fr/flashfood/" class="flashfood" target="_blank">
           <div class="card html">
             <img class="card_img" src="/img/cards/cards_flashfood.webp" alt="site flashfood" />
             <span class="hover_bg"></span>
@@ -490,16 +537,20 @@
     } else if (slideIndex === "4") {
       url = "https://flexbank.vercel.app/";
     } else if (slideIndex === "5") {
-      url = "/spider-man-threejs/";
+      url = "https://tp-note-vuejs.vercel.app/";
     } else if (slideIndex === "6") {
-      url = "/school/";
+      url = "https://ocean-3d.vercel.app/";
     } else if (slideIndex === "7") {
-      url = "/soda/";
+      url = "/spider-man-threejs/";
     } else if (slideIndex === "8") {
-      url = "/galerie-art/";
+      url = "/school/";
     } else if (slideIndex === "9") {
-      url = "flashfood.html/";
+      url = "/soda/";
     } else if (slideIndex === "10") {
+      url = "/galerie-art/";
+    } else if (slideIndex === "11") {
+      url = "flashfood.html/";
+    } else if (slideIndex === "12") {
       url = "gopro.html/";
     }
 

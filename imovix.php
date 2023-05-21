@@ -69,7 +69,7 @@
       <h1 class="bg_title">IMOVIX</h1>
       <img class="imac" src="/img/mockup/imac_imovix2.webp" alt="imac sur le site imovix" />
 
-      <a class="bdd_redirection_top" href="https://mmi21e03.mmi-troyes.fr/imovix" target="_blank">Y accéder</a>
+      <a class="bdd_redirection_top" href="https://mmi21e03.mmi-troyes.fr/imovix/" target="_blank">Y accéder</a>
     </section>
 
     <div class="more_info">
@@ -121,7 +121,7 @@
         plusieurs domaines que ce soit en front-end, en back-end ou encore en
         développant mes compétences en matière de design.”
       </p>
-      <a class="bdd_redirection" href="https://mmi21e03.mmi-troyes.fr/imovix" target="_blank">Y accéder</a>
+      <a class="bdd_redirection" href="https://mmi21e03.mmi-troyes.fr/imovix/" target="_blank">Y accéder</a>
     </div>
 
     <div class="container_autres_sites">

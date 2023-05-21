@@ -67,7 +67,7 @@
     <section class="presentation_site">
       <h1 class="bg_title">BOOK</h1>
       <img class="imac" src="/img/mockup/imac_book.webp" alt="imac sur le site book" />
-      <a class="bdd_redirection_top" href="https://mmi21e03.mmi-troyes.fr/book" target="_blank">Y accéder</a>
+      <a class="bdd_redirection_top" href="https://mmi21e03.mmi-troyes.fr/book/" target="_blank">Y accéder</a>
     </section>
 
     <div class="more_info">
